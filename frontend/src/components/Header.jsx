@@ -108,6 +108,12 @@ const Header = ({ data, onEdit, onNavigate }) => {
                 Testimonials
               </button>
               <button 
+                onClick={() => handleNavigate('blog')}
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+              >
+                Blog
+              </button>
+              <button 
                 onClick={() => handleNavigate('contact')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
