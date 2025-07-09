@@ -231,29 +231,7 @@ const Contact = ({ data, editableContent }) => {
               ))}
             </div>
 
-            {/* Free Guide Download */}
-            <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-xl p-8 text-white">
-              <h4 className="text-xl font-bold mb-4">
-                {editableContent.contact.title}
-              </h4>
-              <p className="text-blue-100 mb-6">
-                {editableContent.contact.description}
-              </p>
-              <Button
-                className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold transition-all duration-300"
-                onClick={() => {
-                  // Mock download
-                  toast({
-                    title: "Download Started",
-                    description: "Your free legal guide is being downloaded.",
-                    duration: 3000,
-                  });
-                }}
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download Free Guide
-              </Button>
-            </div>
+            {/* Free Guide Download - REMOVED */}
           </div>
         </div>
       </div>
