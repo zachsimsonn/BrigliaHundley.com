@@ -85,6 +85,8 @@ export const siteData = {
       position: "Partner",
       experience: "Jim Hundley has over 30 years of experience litigating complex criminal and civil cases. He regularly represents individuals and corporations before state and federal courts in Virginia, Washington, D.C., and Maryland.",
       image: "/api/placeholder/300/400",
+      phone: "703.883.0204",
+      email: "jhundley@brigliahundley.com",
       education: [
         {
           degree: "Juris Doctor",
