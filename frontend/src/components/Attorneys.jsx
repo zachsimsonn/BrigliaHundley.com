@@ -1,0 +1,116 @@
+import React from 'react';
+import { Star, Award, MapPin } from 'lucide-react';
+
+const Attorneys = ({ data }) => {
+  return (
+    <section id="attorneys" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Our Legal Team
+          </h2>
+          <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Meet our experienced attorneys who have been recognized by Best Lawyers® and Super Lawyers for their outstanding legal expertise and client service.
+          </p>
+        </div>
+
+        {/* Attorneys Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {data.attorneys.map((attorney, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+            >
+              {/* Attorney Image */}
+              <div className="relative h-64 bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center">
+                <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-white text-3xl font-bold">
+                    {attorney.name.split(' ').map(n => n[0]).join('')}
+                  </span>
+                </div>
+                {/* Rating Badge */}
+                <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full flex items-center space-x-1">
+                  <Star className="h-4 w-4 fill-current" />
+                  <span className="text-sm font-semibold">5.0</span>
+                </div>
+              </div>
+
+              {/* Attorney Info */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {attorney.name}
+                </h3>
+                
+                <div className="flex items-center space-x-2 mb-4">
+                  <Award className="h-4 w-4 text-blue-900" />
+                  <span className="text-blue-900 font-semibold text-sm">
+                    {attorney.position}
+                  </span>
+                </div>
+
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  {attorney.experience}
+                </p>
+
+                {/* Specialties */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {index < 2 && (
+                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">
+                      Litigation
+                    </span>
+                  )}
+                  {attorney.name.includes('Teresa') && (
+                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
+                      Family Law
+                    </span>
+                  )}
+                  {attorney.name.includes('Brian') && (
+                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">
+                      Real Estate
+                    </span>
+                  )}
+                  {attorney.name.includes('Amy') && (
+                    <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-medium">
+                      Employment
+                    </span>
+                  )}
+                </div>
+
+                {/* Contact Button */}
+                <button className="w-full bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Team Stats */}
+        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-900 mb-2">7</div>
+              <div className="text-gray-600">Best Lawyers® 2025</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-900 mb-2">Multiple</div>
+              <div className="text-gray-600">Super Lawyers</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-900 mb-2">30+</div>
+              <div className="text-gray-600">Years Combined</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-900 mb-2">15+</div>
+              <div className="text-gray-600">Expert Attorneys</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Attorneys;
