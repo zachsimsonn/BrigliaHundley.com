@@ -79,7 +79,10 @@ const Attorneys = ({ data, onNavigate }) => {
                 </div>
 
                 {/* Contact Button */}
-                <button className="w-full bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium">
+                <button 
+                  className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium"
+                  onClick={() => onNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
+                >
                   View Profile
                 </button>
               </div>
