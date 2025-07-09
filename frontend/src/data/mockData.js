@@ -80,6 +80,60 @@ export const siteData = {
       position: "Partner",
       experience: "Practicing family law attorney since 1993.",
       image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Mary \"Molly\" Peacock",
+      position: "Partner",
+      experience: "Nearly 20 years of experience serving as legal counsel for community associations and corporations.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Michael C. May",
+      position: "Partner",
+      experience: "Litigator with experience in civil and criminal matters.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "William T. DeVinney",
+      position: "Of Counsel",
+      experience: "Broad litigation practice including antitrust, intellectual property, and complex commercial litigation.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Kaley Duncan Ward",
+      position: "Senior Associate",
+      experience: "Practicing in eminent domain, civil litigation, and estate planning.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Madison A. Beatty",
+      position: "Associate",
+      experience: "Supporting criminal defense and civil litigation practices.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Raymond Starks-Taylor",
+      position: "Associate",
+      experience: "Supporting business litigation and municipal law practices.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Lauren L. Gill",
+      position: "Associate",
+      experience: "Supporting family law practice.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Hannah C. Merrill",
+      position: "Associate",
+      experience: "Supporting family law and eminent domain practices.",
+      image: "/api/placeholder/300/400"
+    },
+    {
+      name: "Jacob C. DeRue",
+      position: "Associate",
+      experience: "Supporting community association department.",
+      image: "/api/placeholder/300/400"
     }
   ],
 
