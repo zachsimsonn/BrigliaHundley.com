@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Scale, Building, Heart, Car, FileText, Home } from 'lucide-react';
 import { Button } from './ui/button';
 
-const PracticeAreas = ({ data }) => {
+const PracticeAreas = ({ data, onNavigate }) => {
   const iconMap = {
     'Family Law': <Heart className="h-8 w-8" />,
     'Commercial Litigation': <Scale className="h-8 w-8" />,
