@@ -110,6 +110,40 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
     }));
   };
 
+  const handleAttorneyUpdate = (index, field, value) => {
+    const newAttorneys = [...editingData.attorneys];
+    newAttorneys[index] = {
+      ...newAttorneys[index],
+      [field]: value
+    };
+    setEditingData(prev => ({
+      ...prev,
+      attorneys: newAttorneys
+    }));
+  };
+
+  const addAttorney = () => {
+    setEditingData(prev => ({
+      ...prev,
+      attorneys: [
+        ...prev.attorneys,
+        {
+          name: "New Attorney",
+          position: "Associate",
+          experience: "Description of experience",
+          image: "/api/placeholder/300/400"
+        }
+      ]
+    }));
+  };
+
+  const removeAttorney = (index) => {
+    setEditingData(prev => ({
+      ...prev,
+      attorneys: prev.attorneys.filter((_, i) => i !== index)
+    }));
+  };
+
   if (!isVisible) {
     return (
       <Button
