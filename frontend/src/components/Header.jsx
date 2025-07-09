@@ -22,26 +22,10 @@ const Header = ({ data, onEdit, onNavigate }) => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <div className="h-16 w-16 flex items-center justify-center cursor-pointer"
-                 onClick={() => handleNavigate('home')}>
-              <div className="w-14 h-14 rounded-full bg-gray-900 flex items-center justify-center relative">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="18" fill="#1a2332" stroke="white" strokeWidth="2"/>
-                  <rect x="8" y="12" width="24" height="2" fill="white"/>
-                  <rect x="8" y="16" width="16" height="2" fill="white"/>
-                  <rect x="10" y="20" width="2" height="12" fill="white"/>
-                  <rect x="14" y="20" width="2" height="12" fill="white"/>
-                  <rect x="18" y="20" width="2" height="12" fill="white"/>
-                  <rect x="22" y="20" width="2" height="12" fill="white"/>
-                  <rect x="26" y="20" width="2" height="12" fill="white"/>
-                  <rect x="30" y="20" width="2" height="12" fill="white"/>
-                </svg>
-              </div>
-            </div>
-            <div className="text-gray-900 font-serif">
-              <div className="text-lg font-bold leading-tight">BRIGLIA</div>
-              <div className="text-lg font-bold leading-tight">HUNDLEY</div>
-              <div className="text-xs font-normal">PC</div>
+            <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
+              <div className="text-2xl font-bold leading-tight">BRIGLIA</div>
+              <div className="text-2xl font-bold leading-tight">HUNDLEY</div>
+              <div className="text-lg font-normal">PC</div>
             </div>
           </div>
 
