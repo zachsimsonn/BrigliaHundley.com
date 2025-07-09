@@ -46,13 +46,32 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
   const handleImageUpload = (field, event) => {
     const file = event.target.files[0];
     if (file) {
+      // Check file size (max 2MB)
+      if (file.size > 2 * 1024 * 1024) {
+        toast({
+          title: "File too large",
+          description: "Please select an image smaller than 2MB.",
+          duration: 3000,
+        });
+        return;
+      }
+
       const reader = new FileReader();
       reader.onload = (e) => {
         const base64 = e.target.result;
+        console.log('Image uploaded successfully:', file.name);
         handleBusinessUpdate(field, base64);
         toast({
           title: "Image Uploaded!",
-          description: "Your image has been uploaded successfully.",
+          description: `${file.name} has been uploaded successfully.`,
+          duration: 3000,
+        });
+      };
+      reader.onerror = (error) => {
+        console.error('Error reading file:', error);
+        toast({
+          title: "Upload Failed",
+          description: "There was an error uploading the image.",
           duration: 3000,
         });
       };
@@ -63,13 +82,32 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
   const handleAttorneyImageUpload = (index, event) => {
     const file = event.target.files[0];
     if (file) {
+      // Check file size (max 2MB)
+      if (file.size > 2 * 1024 * 1024) {
+        toast({
+          title: "File too large",
+          description: "Please select an image smaller than 2MB.",
+          duration: 3000,
+        });
+        return;
+      }
+
       const reader = new FileReader();
       reader.onload = (e) => {
         const base64 = e.target.result;
+        console.log('Attorney photo uploaded successfully:', file.name);
         handleAttorneyUpdate(index, 'image', base64);
         toast({
           title: "Attorney Photo Uploaded!",
-          description: "The photo has been uploaded successfully.",
+          description: `Photo for ${editingData.attorneys[index].name} has been uploaded successfully.`,
+          duration: 3000,
+        });
+      };
+      reader.onerror = (error) => {
+        console.error('Error reading file:', error);
+        toast({
+          title: "Upload Failed",
+          description: "There was an error uploading the photo.",
           duration: 3000,
         });
       };
