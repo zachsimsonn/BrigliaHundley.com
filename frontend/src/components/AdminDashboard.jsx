@@ -11,7 +11,9 @@ import {
   EyeOff,
   Building,
   Users,
-  FileText
+  FileText,
+  Upload,
+  Image
 } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
 
