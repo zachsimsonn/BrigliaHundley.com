@@ -215,7 +215,41 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
             {/* Business Info Tab */}
             {activeTab === 'business' && (
               <div className="space-y-6">
-                <h3 className="text-lg font-semibold">Business Information</h3>
+                <h3 className="text-lg font-semibold">Business Information & Logo</h3>
+                
+                {/* Logo Upload */}
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                  <h4 className="text-md font-medium mb-4">Company Logo</h4>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">
+                      {editingData.business.logo ? (
+                        <img src={editingData.business.logo} alt="Logo" className="max-w-full max-h-full object-contain" />
+                      ) : (
+                        <span className="text-gray-500 text-sm">No logo</span>
+                      )}
+                    </div>
+                    <div>
+                      <input
+                        type="file"
+                        accept="image/*"
+                        onChange={(e) => handleImageUpload('logo', e)}
+                        className="hidden"
+                        id="logo-upload"
+                      />
+                      <label htmlFor="logo-upload">
+                        <Button
+                          as="span"
+                          variant="outline"
+                          className="cursor-pointer"
+                        >
+                          <Upload className="h-4 w-4 mr-2" />
+                          Upload Logo
+                        </Button>
+                      </label>
+                      <p className="text-xs text-gray-500 mt-1">PNG, JPG up to 2MB</p>
+                    </div>
+                  </div>
+                </div>
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
