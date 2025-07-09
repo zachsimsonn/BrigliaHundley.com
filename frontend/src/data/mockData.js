@@ -83,8 +83,52 @@ export const siteData = {
     {
       name: "James W. Hundley",
       position: "Partner",
-      experience: "Over 30 years of experience litigating complex criminal and civil cases.",
-      image: "/api/placeholder/300/400"
+      experience: "Jim Hundley has over 30 years of experience litigating complex criminal and civil cases. He regularly represents individuals and corporations before state and federal courts in Virginia, Washington, D.C., and Maryland. He has defended clients involved in a broad range of criminal matters including bank fraud, bid rigging, bribery, embezzlement, tax evasion, and computer fraud. On the civil side, Mr. Hundley has successfully handled cases involving a wide variety of issues including breach of contract, tortious interference with business, theft of trade secrets, personal injury, and violations of civil rights.",
+      image: "/api/placeholder/300/400",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "Georgetown University Law Center",
+          year: 1989
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "Virginia Polytechnic Institute and State University",
+          year: 1985
+        }
+      ],
+      admissions: [
+        "Virginia",
+        "United States District Court for the Eastern District of Virginia",
+        "United States District Court for the Western District of Virginia",
+        "United States District Court for the District of Columbia",
+        "United States Court of Appeals for the Fourth Circuit",
+        "United States Court of Appeals for the District of Columbia Circuit",
+        "United States Supreme Court"
+      ],
+      professionalAssociations: [
+        "Past Chairman and Member, Committee on Lawyer Discipline, Virginia State Bar",
+        "Past Chairman and Member, Disciplinary Sub-Committee, Virginia State Bar",
+        "Past Member, Judicial Screening Committee, Fairfax Bar Association",
+        "Past Chairman and Member, Legislative Committee, Fairfax Bar Association",
+        "Past Chairman and Member, Election Committee, Fairfax Bar Association",
+        "Past Member, Circuit Court Committee, Fairfax Bar Association",
+        "Member, American Bar Association",
+        "Member, Federal Bar Association"
+      ],
+      certifications: [
+        "Rated AV Preeminent by Martindale-Hubbell 2004 to present",
+        "Listed in Super Lawyers 2006 to present",
+        "Listed in Best Lawyers 2010 to present",
+        "Recognized as a Top Attorney of Washington DC in the Washington Post Magazine",
+        "Recognized as a Top Attorney of Virginia in the Richmond Magazine",
+        "Recognized as one of the Best Lawyers of Northern Virginia in the Northern Virginia Magazine"
+      ],
+      practiceAreas: [
+        "Criminal Defense",
+        "Commercial and Business Litigation",
+        "Personal Injury"
+      ]
     },
     {
       name: "Steven D. Briglia",
