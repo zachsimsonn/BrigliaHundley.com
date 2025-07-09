@@ -1,5 +1,6 @@
-<svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="25" font-family="serif" font-size="24" font-weight="bold" fill="#111111">BRIGLIA</text>
-  <text x="10" y="55" font-family="serif" font-size="24" font-weight="bold" fill="#111111">HUNDLEY</text>
-  <text x="330" y="55" font-family="serif" font-size="16" font-weight="normal" fill="#111111">PC</text>
+<svg width="300" height="60" viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="5" y="20" font-family="serif" font-size="20" font-weight="bold" fill="#1a1a1a">BRIGLIA</text>
+  <text x="5" y="42" font-family="serif" font-size="20" font-weight="bold" fill="#1a1a1a">HUNDLEY</text>
+  <text x="220" y="42" font-family="serif" font-size="14" font-weight="normal" fill="#1a1a1a">PC</text>
+  <circle cx="205" cy="37" r="1" fill="#1a1a1a"/>
 </svg>
