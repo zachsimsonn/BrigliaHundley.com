@@ -46,8 +46,8 @@ const Header = ({ data, onEdit, onNavigate }) => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
-            <nav className="flex space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
+            <nav className="flex space-x-6">
               <button 
                 onClick={() => handleNavigate('home')}
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
@@ -138,7 +138,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
               </button>
             </nav>
             
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-3">
               <Button 
                 variant="outline" 
                 className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
