@@ -133,8 +133,48 @@ export const siteData = {
     {
       name: "Steven D. Briglia",
       position: "Partner",
-      experience: "Over 30 years of extensive trial experience in both civil and criminal law matters.",
-      image: "/api/placeholder/300/400"
+      experience: "Steve Briglia has over 30 years of extensive trial experience in both civil and criminal law matters. He has tried hundreds of cases before judges and juries in both state and federal court. He also regularly represents clients in administrative hearings, arbitrations, and mediations, and he serves as outside general counsel to numerous corporate clients. Mr. Briglia's clients include national and regional businesses, municipalities, elected officials, and individuals involved in business disputes and criminal investigations. Mr. Briglia is a founding member of Briglia Hundley®.",
+      image: "/api/placeholder/300/400",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "George Mason University School of Law",
+          year: 1988
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "University of Virginia",
+          year: 1985
+        }
+      ],
+      admissions: [
+        "Virginia",
+        "United States District Court for the Eastern District of Virginia",
+        "United States Bankruptcy Court for the Eastern District of Virginia",
+        "United States Court of Appeals for the Fourth Circuit",
+        "United States Supreme Court"
+      ],
+      professionalAssociations: [
+        "President, Fairfax Bar Association, July 1, 2025 to June 30, 2026",
+        "Director, Fairfax Bar Association Board of Directors, 2019 to present",
+        "Member, Fairfax Bar Association",
+        "Member, Virginia Bar Association",
+        "Trustee and President, Vienna Baseball Foundation"
+      ],
+      certifications: [
+        "Rated AV Preeminent by Martindale-Hubbell 1998 to present",
+        "Listed in Best Lawyers 2013 to present",
+        "Listed in Top Lawyers of Virginia, Northern Virginia Magazine",
+        "Received the Fairfax Bar Association President's Award 2015"
+      ],
+      practiceAreas: [
+        "Civil Litigation",
+        "Municipal Law",
+        "Corporate Law/General Counsel Representation",
+        "Administrative Hearings",
+        "Arbitration/Mediation",
+        "Criminal Investigations and Defense"
+      ]
     },
     {
       name: "Brian J. Lubkeman",
