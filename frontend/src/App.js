@@ -11,6 +11,7 @@ import PracticeAreas from "./components/PracticeAreas";
 import Attorneys from "./components/Attorneys";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
+import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AdminDashboard from "./components/AdminDashboard";
