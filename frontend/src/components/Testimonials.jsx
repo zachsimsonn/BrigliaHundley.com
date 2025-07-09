@@ -29,7 +29,7 @@ const Testimonials = ({ data }) => {
 
         {/* Testimonial Slider */}
         <div className="relative">
-          <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl p-12 text-white">
+          <div className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-2xl p-12 text-white">
             <div className="flex items-center justify-center mb-8">
               <Quote className="h-12 w-12 text-yellow-400" />
             </div>
