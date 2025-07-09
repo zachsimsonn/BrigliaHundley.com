@@ -43,6 +43,40 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
     }));
   };
 
+  const handleImageUpload = (field, event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const base64 = e.target.result;
+        handleBusinessUpdate(field, base64);
+        toast({
+          title: "Image Uploaded!",
+          description: "Your image has been uploaded successfully.",
+          duration: 3000,
+        });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleAttorneyImageUpload = (index, event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const base64 = e.target.result;
+        handleAttorneyUpdate(index, 'image', base64);
+        toast({
+          title: "Attorney Photo Uploaded!",
+          description: "The photo has been uploaded successfully.",
+          duration: 3000,
+        });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handlePracticeAreaUpdate = (index, field, value) => {
     const newPracticeAreas = [...editingData.practiceAreas];
     newPracticeAreas[index] = {
