@@ -159,8 +159,8 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg w-full max-w-6xl h-[90vh] flex flex-col">
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-[9999] flex items-center justify-center p-4" style={{ zIndex: 9999 }}>
+      <div className="bg-white rounded-lg w-full max-w-6xl h-[90vh] flex flex-col" style={{ zIndex: 10000 }}>
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b">
           <h2 className="text-2xl font-bold text-gray-900">Website Editor - No Coding Required!</h2>
