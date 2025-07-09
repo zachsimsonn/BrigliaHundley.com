@@ -76,27 +76,27 @@ const Hero = ({ data, editableContent }) => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-3">
-                    <Shield className="h-8 w-8 text-yellow-400" />
+                    <Shield className="h-8 w-8 text-gray-300" />
                     <div>
                       <h3 className="text-xl font-semibold">Trusted Legal Experts</h3>
-                      <p className="text-blue-100">Serving the Mid-Atlantic region</p>
+                      <p className="text-gray-100">Serving the Mid-Atlantic region</p>
                     </div>
                   </div>
                   
-                  <div className="border-l-4 border-yellow-400 pl-6">
-                    <blockquote className="text-lg italic text-blue-100">
+                  <div className="border-l-4 border-gray-300 pl-6">
+                    <blockquote className="text-lg italic text-gray-100">
                       "Delivering superior client service and innovative legal strategies since 1993"
                     </blockquote>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4 pt-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-yellow-400">Multiple</div>
-                      <div className="text-sm text-blue-100">Practice Areas</div>
+                      <div className="text-2xl font-bold text-gray-300">Multiple</div>
+                      <div className="text-sm text-gray-100">Practice Areas</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-yellow-400">15+</div>
-                      <div className="text-sm text-blue-100">Expert Attorneys</div>
+                      <div className="text-2xl font-bold text-gray-300">15+</div>
+                      <div className="text-sm text-gray-100">Expert Attorneys</div>
                     </div>
                   </div>
                 </div>
