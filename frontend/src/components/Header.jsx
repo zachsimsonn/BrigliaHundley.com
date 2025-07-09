@@ -239,7 +239,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
                 onClick={() => window.location.href = `tel:${data.business.phone}`}
               >
                 <Phone className="mr-2 h-4 w-4" />
-                Call Now
+                <span className="text-white">Call Now</span>
               </Button>
             </div>
           </div>
