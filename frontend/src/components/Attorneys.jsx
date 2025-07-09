@@ -24,14 +24,18 @@ const Attorneys = ({ data, onNavigate }) => {
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
             >
               {/* Attorney Image */}
-              <div className="relative h-64 bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center">
-                <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-white text-3xl font-bold">
-                    {attorney.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
+              <div className="relative h-64 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center overflow-hidden">
+                {attorney.image && attorney.image.startsWith('data:') ? (
+                  <img src={attorney.image} alt={attorney.name} className="w-full h-full object-cover" />
+                ) : (
+                  <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
+                    <span className="text-white text-3xl font-bold">
+                      {attorney.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
+                )}
                 {/* Rating Badge */}
-                <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full flex items-center space-x-1">
+                <div className="absolute top-4 right-4 bg-gray-300 text-black px-3 py-1 rounded-full flex items-center space-x-1">
                   <Star className="h-4 w-4 fill-current" />
                   <span className="text-sm font-semibold">5.0</span>
                 </div>
