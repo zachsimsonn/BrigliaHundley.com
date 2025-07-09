@@ -436,17 +436,14 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
                               className="hidden"
                               id={`attorney-photo-${index}`}
                             />
-                            <label htmlFor={`attorney-photo-${index}`}>
-                              <Button
-                                as="span"
-                                variant="outline"
-                                size="sm"
-                                className="cursor-pointer"
-                              >
-                                <Upload className="h-4 w-4 mr-2" />
-                                Upload Photo
-                              </Button>
-                            </label>
+                            <button
+                              type="button"
+                              onClick={() => document.getElementById(`attorney-photo-${index}`).click()}
+                              className="inline-flex items-center px-3 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                            >
+                              <Upload className="h-4 w-4 mr-2" />
+                              Upload Photo
+                            </button>
                             <p className="text-xs text-gray-500 mt-1">Professional headshot recommended</p>
                           </div>
                         </div>
