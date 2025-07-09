@@ -346,8 +346,92 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
             {/* Attorneys Tab */}
             {activeTab === 'attorneys' && (
               <div className="space-y-6">
-                <h3 className="text-lg font-semibold">Attorneys</h3>
-                <p className="text-gray-600">Attorney management coming soon!</p>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold">Attorneys & Photos</h3>
+                  <Button onClick={addAttorney} className="bg-green-600 hover:bg-green-700">
+                    <Plus className="h-4 w-4 mr-2" />
+                    Add Attorney
+                  </Button>
+                </div>
+
+                <div className="space-y-4">
+                  {editingData.attorneys.map((attorney, index) => (
+                    <div key={index} className="bg-gray-50 p-4 rounded-lg">
+                      <div className="flex items-center justify-between mb-4">
+                        <h4 className="font-medium">{attorney.name}</h4>
+                        <Button
+                          onClick={() => removeAttorney(index)}
+                          variant="outline"
+                          size="sm"
+                          className="text-red-600 hover:text-red-700"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </Button>
+                      </div>
+
+                      {/* Photo Upload */}
+                      <div className="mb-4 p-4 bg-white rounded border">
+                        <label className="block text-sm font-medium mb-2">Attorney Photo</label>
+                        <div className="flex items-center space-x-4">
+                          <div className="w-24 h-24 bg-gray-200 rounded flex items-center justify-center overflow-hidden">
+                            {attorney.image && attorney.image.startsWith('data:') ? (
+                              <img src={attorney.image} alt={attorney.name} className="w-full h-full object-cover" />
+                            ) : (
+                              <Image className="h-8 w-8 text-gray-400" />
+                            )}
+                          </div>
+                          <div>
+                            <input
+                              type="file"
+                              accept="image/*"
+                              onChange={(e) => handleAttorneyImageUpload(index, e)}
+                              className="hidden"
+                              id={`attorney-photo-${index}`}
+                            />
+                            <label htmlFor={`attorney-photo-${index}`}>
+                              <Button
+                                as="span"
+                                variant="outline"
+                                size="sm"
+                                className="cursor-pointer"
+                              >
+                                <Upload className="h-4 w-4 mr-2" />
+                                Upload Photo
+                              </Button>
+                            </label>
+                            <p className="text-xs text-gray-500 mt-1">Professional headshot recommended</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                          <label className="block text-sm font-medium mb-2">Name</label>
+                          <Input
+                            value={attorney.name}
+                            onChange={(e) => handleAttorneyUpdate(index, 'name', e.target.value)}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium mb-2">Position</label>
+                          <Input
+                            value={attorney.position}
+                            onChange={(e) => handleAttorneyUpdate(index, 'position', e.target.value)}
+                          />
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <label className="block text-sm font-medium mb-2">Experience Description</label>
+                        <Textarea
+                          value={attorney.experience}
+                          onChange={(e) => handleAttorneyUpdate(index, 'experience', e.target.value)}
+                          rows={2}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
