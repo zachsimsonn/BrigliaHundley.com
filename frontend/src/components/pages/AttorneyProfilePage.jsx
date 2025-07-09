@@ -82,7 +82,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
               
               <div className="text-center mb-8">
                 <p className="text-gray-600 leading-relaxed">
-                  {attorney.experience}
+                  {attorney.fullExperience || attorney.experience}
                 </p>
               </div>
 
