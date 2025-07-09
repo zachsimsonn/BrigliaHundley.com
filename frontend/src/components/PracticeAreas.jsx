@@ -48,11 +48,8 @@ const PracticeAreas = ({ data, onNavigate }) => {
               
               <Button 
                 variant="ghost" 
-                className="group-hover:bg-blue-900 group-hover:text-white transition-all duration-300 p-0"
-                onClick={() => {
-                  // Mock navigation - in real app would navigate to specific page
-                  console.log(`Navigate to ${area.title}`);
-                }}
+                className="group-hover:bg-gray-900 group-hover:text-white transition-all duration-300 p-0"
+                onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
               >
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
