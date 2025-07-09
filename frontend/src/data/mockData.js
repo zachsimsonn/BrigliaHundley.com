@@ -84,6 +84,7 @@ export const siteData = {
       name: "James W. Hundley",
       position: "Partner",
       experience: "Jim Hundley has over 30 years of experience litigating complex criminal and civil cases. He regularly represents individuals and corporations before state and federal courts in Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Jim Hundley has over 30 years of experience litigating complex criminal and civil cases. He regularly represents individuals and corporations before state and federal courts in Virginia, Washington, D.C., and Maryland. He has defended clients involved in a broad range of criminal matters including bank fraud, bid rigging, bribery, embezzlement, tax evasion, and computer fraud. On the civil side, Mr. Hundley has successfully handled cases involving a wide variety of issues including breach of contract, tortious interference with business, theft of trade secrets, personal injury, and violations of civil rights.",
       image: "/api/placeholder/300/400",
       phone: "703.883.0204",
       email: "jhundley@brigliahundley.com",
