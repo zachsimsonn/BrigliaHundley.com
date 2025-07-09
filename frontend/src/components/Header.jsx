@@ -25,9 +25,10 @@ const Header = ({ data, onEdit, onNavigate }) => {
             <div className="h-16 w-60 flex items-center justify-center cursor-pointer"
                  onClick={() => handleNavigate('home')}>
               <img 
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDYwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMCA4MEg1OTBWMjBIMTBWODBaIiBmaWxsPSJ3aGl0ZSIvPgo8dGV4dCB4PSIzMCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMxMTExMTEiPkJSSUdMSUFIVU5ETEVZPC90ZXh0Pgo8dGV4dCB4PSI1MjAiIHk9IjU1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZpbGw9IiMxMTExMTEiPlBDPC90ZXh0Pgo8L3N2Zz4="
+                src="/briglia-hundley-logo.svg"
                 alt="Briglia Hundley PC Logo" 
                 className="h-12 w-auto object-contain"
+                style={{ filter: 'none' }}
               />
             </div>
           </div>
