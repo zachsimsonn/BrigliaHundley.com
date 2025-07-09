@@ -34,6 +34,7 @@ const Home = ({ data, editableData, onNavigate }) => {
       <Attorneys data={data} onNavigate={onNavigate} />
       <Testimonials data={data} />
       <FAQ data={data} />
+      <Blog data={data} onNavigate={onNavigate} />
       <Contact data={data} editableContent={editableData} />
     </div>
   );
