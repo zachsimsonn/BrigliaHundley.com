@@ -72,60 +72,84 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Main Content */}
-          <div className="lg:col-span-2">
+          <div className="grid lg:grid-cols-1 gap-12">
+          {/* Main Content - Centered */}
+          <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">About {attorney.name}</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">About {attorney.name}</h2>
               
-              <p className="text-gray-600 mb-8">
-                {attorney.experience}
-              </p>
-
-              <div className="bg-gray-50 rounded-lg p-8 mb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Professional Background</h3>
-                <p className="text-gray-600 mb-4">
-                  {attorney.name} brings extensive experience and a commitment to excellence in legal representation. 
-                  As a {attorney.position} at Briglia Hundley®, {attorney.name.split(' ')[0]} has successfully handled 
-                  numerous complex cases and has established a reputation for delivering superior results for clients.
+              <div className="text-center mb-8">
+                <p className="text-gray-600 leading-relaxed">
+                  {attorney.experience}
                 </p>
-                
-                <div className="grid md:grid-cols-2 gap-6 mt-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Education</h4>
-                    <p className="text-gray-600">Law degree from accredited institution</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Bar Admissions</h4>
-                    <p className="text-gray-600">Virginia State Bar</p>
-                  </div>
-                </div>
               </div>
 
-              {relatedPracticeAreas.length > 0 && (
-                <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Practice Areas</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    {relatedPracticeAreas.map((area, index) => (
-                      <button
-                        key={index}
-                        onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                        className="text-left p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200"
-                      >
-                        <h4 className="font-semibold text-gray-900 mb-2">{area.title}</h4>
-                        <p className="text-sm text-gray-600">{area.description}</p>
-                      </button>
+              {attorney.education && (
+                <div className="bg-gray-50 rounded-lg p-8 mb-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Education</h3>
+                  <div className="space-y-3">
+                    {attorney.education.map((edu, index) => (
+                      <div key={index} className="text-center">
+                        <div className="font-medium text-gray-900">{edu.degree}</div>
+                        <div className="text-gray-600">{edu.institution} ({edu.year})</div>
+                      </div>
                     ))}
                   </div>
                 </div>
               )}
 
-              <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8">
+              {attorney.admissions && (
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Bar Admissions</h3>
+                  <div className="grid md:grid-cols-2 gap-2 text-center">
+                    {attorney.admissions.map((admission, index) => (
+                      <div key={index} className="text-gray-600">• {admission}</div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {attorney.professionalAssociations && (
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Professional Associations</h3>
+                  <div className="space-y-2 text-center">
+                    {attorney.professionalAssociations.map((association, index) => (
+                      <div key={index} className="text-gray-600">• {association}</div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {attorney.certifications && (
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Certifications, Honors & Awards</h3>
+                  <div className="space-y-2 text-center">
+                    {attorney.certifications.map((cert, index) => (
+                      <div key={index} className="text-gray-600">• {cert}</div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {attorney.practiceAreas && (
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Areas of Practice</h3>
+                  <div className="flex flex-wrap justify-center gap-3">
+                    {attorney.practiceAreas.map((area, index) => (
+                      <span key={index} className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm">
+                        {area}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8 text-center">
                 <h3 className="text-xl font-semibold mb-4">Schedule a Consultation</h3>
                 <p className="text-gray-300 mb-6">
                   Ready to discuss your legal needs with {attorney.name}? Contact our office today to schedule your consultation.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     onClick={() => onNavigate('contact')}
                     className="bg-gray-600 hover:bg-gray-500 text-white"
@@ -145,46 +169,26 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="bg-gray-50 rounded-lg p-6 mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact {attorney.name}</h3>
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-600">
-                  <Phone className="h-5 w-5 mr-3" />
-                  <span>{data.business.phone}</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Mail className="h-5 w-5 mr-3" />
-                  <span>{data.business.email}</span>
-                </div>
-                <div className="flex items-start text-gray-600">
-                  <svg className="h-5 w-5 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  <span>{data.business.address}</span>
-                </div>
+        {/* Contact Info Section - Centered */}
+        <div className="max-w-4xl mx-auto mt-16">
+          <div className="bg-gray-50 rounded-lg p-8 text-center">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="flex flex-col items-center">
+                <Phone className="h-8 w-8 text-gray-900 mb-2" />
+                <span className="text-gray-600">{data.business.phone}</span>
               </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Professional Highlights</h3>
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-600">
-                  <Award className="h-5 w-5 mr-3 text-gray-600" />
-                  <span>{attorney.position} at Briglia Hundley®</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Star className="h-5 w-5 mr-3 text-gray-600" />
-                  <span>Excellent client reviews</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <svg className="h-5 w-5 mr-3 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>Proven track record</span>
-                </div>
+              <div className="flex flex-col items-center">
+                <Mail className="h-8 w-8 text-gray-900 mb-2" />
+                <span className="text-gray-600">{data.business.email}</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <svg className="h-8 w-8 text-gray-900 mb-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-600 text-center">{data.business.address}</span>
               </div>
             </div>
           </div>
