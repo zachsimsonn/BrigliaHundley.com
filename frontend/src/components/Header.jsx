@@ -23,9 +23,15 @@ const Header = ({ data, onEdit, onNavigate }) => {
           {/* Logo */}
           <div className="flex items-center space-x-4">
             <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
-              <div className="text-2xl font-bold leading-tight">BRIGLIA</div>
-              <div className="text-2xl font-bold leading-tight">HUNDLEY</div>
-              <div className="text-lg font-normal">PC</div>
+              {data.business.logo ? (
+                <img src={data.business.logo} alt="Company Logo" className="h-12 w-auto object-contain" />
+              ) : (
+                <div>
+                  <div className="text-2xl font-bold leading-tight">BRIGLIA</div>
+                  <div className="text-2xl font-bold leading-tight">HUNDLEY</div>
+                  <div className="text-lg font-normal">PC</div>
+                </div>
+              )}
             </div>
           </div>
 
