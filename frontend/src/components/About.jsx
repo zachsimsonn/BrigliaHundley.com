@@ -87,7 +87,7 @@ const About = ({ data, editableContent }) => {
               <div className="text-gray-600">Established</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">7</div>
+              <div className="text-3xl font-bold text-blue-900 mb-2">13</div>
               <div className="text-gray-600">Practice Areas</div>
             </div>
             <div className="text-center">
