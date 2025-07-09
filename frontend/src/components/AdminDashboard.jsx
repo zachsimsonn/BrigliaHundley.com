@@ -468,6 +468,44 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
                 </div>
               </div>
             )}
+
+            {/* Content Tab */}
+            {activeTab === 'content' && (
+              <div className="space-y-6">
+                <h3 className="text-lg font-semibold">Website Content & Text</h3>
+                
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h4 className="font-medium mb-2">💡 How to Edit Text on Your Website</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Use the "Business Info" tab to edit main content</li>
+                    <li>• Use "Practice Areas" tab to edit your services</li>
+                    <li>• Use "Attorneys" tab to edit team information</li>
+                    <li>• Click "Save Changes" to update your live website</li>
+                  </ul>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <h4 className="font-medium mb-2">📸 How to Add Pictures</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Go to "Business Info" tab to upload your company logo</li>
+                    <li>• Go to "Attorneys" tab to upload attorney photos</li>
+                    <li>• Click the "Upload" buttons and select your images</li>
+                    <li>• Images should be JPG or PNG format, under 2MB</li>
+                    <li>• Professional headshots work best for attorneys</li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-medium mb-2">✅ Tips for Best Results</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Keep descriptions clear and professional</li>
+                    <li>• Use high-quality images for best appearance</li>
+                    <li>• Test your changes on both desktop and mobile</li>
+                    <li>• Save your changes regularly</li>
+                  </ul>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
