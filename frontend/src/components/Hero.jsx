@@ -26,24 +26,24 @@ const Hero = ({ data, editableContent }) => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
+            <p className="text-xl lg:text-2xl text-gray-100 leading-relaxed">
               {editableContent.hero.subtitle}
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8 py-6">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-yellow-400">30+</div>
-                <div className="text-blue-100">Years of Experience</div>
+                <div className="text-3xl font-bold text-gray-300">30+</div>
+                <div className="text-gray-100">Years of Experience</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-yellow-400">7</div>
-                <div className="text-blue-100">Best Lawyers® 2025</div>
+                <div className="text-3xl font-bold text-gray-300">7</div>
+                <div className="text-gray-100">Best Lawyers® 2025</div>
               </div>
             </div>
 
             {/* Location */}
-            <div className="flex items-center space-x-2 text-blue-100">
+            <div className="flex items-center space-x-2 text-gray-100">
               <MapPin className="h-5 w-5" />
               <span>{data.business.location}</span>
             </div>
@@ -52,7 +52,7 @@ const Hero = ({ data, editableContent }) => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-gray-600 hover:bg-gray-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
               >
                 {editableContent.hero.buttonText}
@@ -62,7 +62,7 @@ const Hero = ({ data, editableContent }) => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
+                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
                 onClick={() => window.location.href = `tel:${data.business.phone}`}
               >
                 {editableContent.hero.buttonPhone}
