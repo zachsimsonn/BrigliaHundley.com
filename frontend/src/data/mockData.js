@@ -214,6 +214,69 @@ export const siteData = {
     "Briglia Hundley® congratulates its attorneys recognized by Super Lawyers in 2025.",
     "Briglia Hundley® has been ranked by Best Lawyers® in their Best Law Firms United States for 2025.",
     "Briglia Hundley, P.C.® is proud to have 7 lawyers recognized by Best Lawyers® in 2025 in America."
+  ],
+
+  blogs: [
+    {
+      id: 1,
+      title: "Understanding Virginia Family Law: A Comprehensive Guide",
+      excerpt: "Navigate the complexities of Virginia family law with expert insights from our experienced attorneys.",
+      author: "Teresa S. Cole",
+      date: "January 15, 2025",
+      category: "Family Law",
+      image: "/api/placeholder/400/250",
+      slug: "understanding-virginia-family-law"
+    },
+    {
+      id: 2,
+      title: "Corporate Mergers and Acquisitions: What Business Owners Need to Know",
+      excerpt: "Essential considerations for business owners planning mergers, acquisitions, or corporate restructuring.",
+      author: "Brian J. Lubkeman",
+      date: "January 10, 2025",
+      category: "Corporate Law",
+      image: "/api/placeholder/400/250",
+      slug: "corporate-mergers-acquisitions-guide"
+    },
+    {
+      id: 3,
+      title: "Estate Planning Essentials for Virginia Residents",
+      excerpt: "Protect your assets and family's future with proper estate planning strategies tailored to Virginia law.",
+      author: "Amy S. Owen",
+      date: "January 5, 2025",
+      category: "Estate Planning",
+      image: "/api/placeholder/400/250",
+      slug: "estate-planning-essentials-virginia"
+    },
+    {
+      id: 4,
+      title: "Commercial Litigation: Protecting Your Business Interests",
+      excerpt: "How to navigate business disputes and protect your company's interests through strategic litigation.",
+      author: "Courtney B. Harden",
+      date: "December 28, 2024",
+      category: "Commercial Litigation",
+      image: "/api/placeholder/400/250",
+      slug: "commercial-litigation-business-protection"
+    },
+    {
+      id: 5,
+      title: "Real Estate Development in Northern Virginia: Legal Considerations",
+      excerpt: "Key legal factors to consider when developing real estate projects in the Northern Virginia market.",
+      author: "Michael C. May",
+      date: "December 20, 2024",
+      category: "Real Estate",
+      image: "/api/placeholder/400/250",
+      slug: "real-estate-development-northern-virginia"
+    },
+    {
+      id: 6,
+      title: "Personal Injury Claims: Maximizing Your Recovery",
+      excerpt: "Understanding your rights and options after suffering a personal injury in Virginia.",
+      author: "Madison A. Beatty",
+      date: "December 15, 2024",
+      category: "Personal Injury",
+      image: "/api/placeholder/400/250",
+      slug: "personal-injury-claims-recovery"
+    }
   ]
 };
 
