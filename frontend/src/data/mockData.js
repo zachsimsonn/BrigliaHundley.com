@@ -223,7 +223,7 @@ export const siteData = {
       excerpt: "Navigate the complexities of Virginia family law with expert insights from our experienced attorneys.",
       author: "Teresa S. Cole",
       date: "January 15, 2025",
-      category: "Family Law",
+      category: "Family Law/Divorce",
       image: "/api/placeholder/400/250",
       slug: "understanding-virginia-family-law"
     },
@@ -243,19 +243,19 @@ export const siteData = {
       excerpt: "Protect your assets and family's future with proper estate planning strategies tailored to Virginia law.",
       author: "Amy S. Owen",
       date: "January 5, 2025",
-      category: "Estate Planning",
+      category: "Trusts & Estate Planning",
       image: "/api/placeholder/400/250",
       slug: "estate-planning-essentials-virginia"
     },
     {
       id: 4,
-      title: "Commercial Litigation: Protecting Your Business Interests",
+      title: "Business Litigation: Protecting Your Company's Interests",
       excerpt: "How to navigate business disputes and protect your company's interests through strategic litigation.",
       author: "Courtney B. Harden",
       date: "December 28, 2024",
-      category: "Commercial Litigation",
+      category: "Business Litigation",
       image: "/api/placeholder/400/250",
-      slug: "commercial-litigation-business-protection"
+      slug: "business-litigation-protection"
     },
     {
       id: 5,
@@ -276,6 +276,26 @@ export const siteData = {
       category: "Personal Injury",
       image: "/api/placeholder/400/250",
       slug: "personal-injury-claims-recovery"
+    },
+    {
+      id: 7,
+      title: "Municipal Law: Navigating Government Legal Challenges",
+      excerpt: "Expert guidance on municipal law matters and governmental legal challenges in Virginia.",
+      author: "Raymond Starks-Taylor",
+      date: "December 10, 2024",
+      category: "Municipal and Governmental Practice",
+      image: "/api/placeholder/400/250",
+      slug: "municipal-law-government-challenges"
+    },
+    {
+      id: 8,
+      title: "Community Association Law: HOA Legal Best Practices",
+      excerpt: "Essential legal considerations for homeowners associations and community organizations.",
+      author: "Jacob C. DeRue",
+      date: "December 5, 2024",
+      category: "Community Associations",
+      image: "/api/placeholder/400/250",
+      slug: "community-association-hoa-legal"
     }
   ]
 };
