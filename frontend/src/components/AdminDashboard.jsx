@@ -187,7 +187,7 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
                 }`}
               >
                 <Building className="h-4 w-4 mr-3" />
-                Business Info
+                Business Info & Logo
               </button>
               <button
                 onClick={() => setActiveTab('practice')}
@@ -205,7 +205,16 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
                 }`}
               >
                 <Users className="h-4 w-4 mr-3" />
-                Attorneys
+                Attorneys & Photos
+              </button>
+              <button
+                onClick={() => setActiveTab('content')}
+                className={`w-full flex items-center px-3 py-2 text-left rounded-lg transition-colors ${
+                  activeTab === 'content' ? 'bg-blue-100 text-blue-700' : 'hover:bg-gray-100'
+                }`}
+              >
+                <Edit className="h-4 w-4 mr-3" />
+                Website Content
               </button>
             </nav>
           </div>
