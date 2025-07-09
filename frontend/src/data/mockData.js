@@ -292,38 +292,56 @@ export const siteData = {
     {
       name: "Kaley Duncan Ward",
       position: "Senior Associate",
-      experience: "Practicing in eminent domain, civil litigation, and estate planning.",
-      image: "/api/placeholder/300/400"
+      experience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters and complex legal disputes throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters, condemnation proceedings, and complex legal disputes. Her practice includes helping property owners navigate eminent domain proceedings, civil litigation matters, and comprehensive estate planning. Ms. Ward is committed to protecting her clients' rights and providing skilled representation in challenging legal matters.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0213",
+      email: "kward@brigliahundley.com"
     },
     {
       name: "Madison A. Beatty",
       position: "Associate",
-      experience: "Supporting criminal defense and civil litigation practices.",
-      image: "/api/placeholder/300/400"
+      experience: "Madison Beatty supports criminal defense and civil litigation practices. She assists clients with legal research, case preparation, and representation in various legal matters throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Madison Beatty supports criminal defense and civil litigation practices. She assists clients with legal research, case preparation, and representation in various legal matters. Her work includes supporting complex criminal defense cases, civil litigation matters, and providing comprehensive legal research and analysis. Ms. Beatty brings dedication and attention to detail to each case, working closely with senior attorneys to ensure the best possible outcomes for clients.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0214",
+      email: "mbeatty@brigliahundley.com"
     },
     {
       name: "Raymond Starks-Taylor",
       position: "Associate",
-      experience: "Supporting business litigation and municipal law practices.",
-      image: "/api/placeholder/300/400"
+      experience: "Raymond Starks-Taylor supports business litigation and municipal law practices. He assists clients with commercial disputes and government legal matters throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Raymond Starks-Taylor supports business litigation and municipal law practices. He assists clients with commercial disputes, municipal legal matters, and government relations. His work includes supporting complex business litigation cases, municipal law matters, and providing legal research and analysis for corporate clients. Mr. Starks-Taylor is dedicated to helping businesses and government entities navigate complex legal challenges effectively.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0215",
+      email: "rstarkstaylor@brigliahundley.com"
     },
     {
       name: "Lauren L. Gill",
       position: "Associate",
-      experience: "Supporting family law practice.",
-      image: "/api/placeholder/300/400"
+      experience: "Lauren Gill supports the family law practice. She assists clients with divorce, custody, and family law matters, providing compassionate representation throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Lauren Gill supports the family law practice. She assists clients with divorce, custody, support, and other family law matters. Her work includes supporting complex family law cases, domestic relations matters, and providing legal research and case preparation for family law proceedings. Ms. Gill brings a compassionate approach to family law, understanding the sensitive nature of these matters while providing skilled legal support.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0216",
+      email: "lgill@brigliahundley.com"
     },
     {
       name: "Hannah C. Merrill",
       position: "Associate",
-      experience: "Supporting family law and eminent domain practices.",
-      image: "/api/placeholder/300/400"
+      experience: "Hannah Merrill supports family law and eminent domain practices. She assists clients with domestic relations and property rights matters throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Hannah Merrill supports family law and eminent domain practices. She assists clients with domestic relations matters, property rights cases, and condemnation proceedings. Her work includes supporting complex family law cases, eminent domain matters, and providing comprehensive legal research and analysis. Ms. Merrill is committed to helping clients navigate challenging legal situations with skill and dedication.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0217",
+      email: "hmerrill@brigliahundley.com"
     },
     {
       name: "Jacob C. DeRue",
       position: "Associate",
-      experience: "Supporting community association department.",
-      image: "/api/placeholder/300/400"
+      experience: "Jacob DeRue supports the community association department. He assists homeowners associations and community organizations with legal matters throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Jacob DeRue supports the community association department. He assists homeowners associations, condominium associations, and community organizations with legal matters including governance issues, contract disputes, and regulatory compliance. His work includes supporting community association legal matters, corporate governance issues, and providing legal research and analysis for association clients. Mr. DeRue is dedicated to helping community organizations operate effectively within legal frameworks.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0218",
+      email: "jderue@brigliahundley.com"
     }
   ],
 
