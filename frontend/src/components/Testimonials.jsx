@@ -83,7 +83,7 @@ const Testimonials = ({ data }) => {
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     index === currentTestimonial
-                      ? 'bg-yellow-400 w-8'
+                      ? 'bg-gray-300 w-8'
                       : 'bg-white/30 hover:bg-white/50'
                   }`}
                 />
