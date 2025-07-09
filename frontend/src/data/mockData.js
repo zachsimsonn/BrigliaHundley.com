@@ -238,20 +238,29 @@ export const siteData = {
     {
       name: "Courtney B. Harden",
       position: "Partner",
-      experience: "Almost 20 years of litigation experience in Virginia.",
-      image: "/api/placeholder/300/400"
+      experience: "Courtney Harden has almost 20 years of litigation experience in Virginia. She represents individuals and businesses in complex civil litigation matters before state and federal courts in Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Courtney Harden has almost 20 years of litigation experience in Virginia. She represents individuals and businesses in complex civil litigation matters before state and federal courts. Her practice focuses on commercial litigation, employment disputes, personal injury cases, and general civil litigation. Ms. Harden is committed to providing strategic legal counsel and aggressive representation to achieve the best possible outcomes for her clients.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0207",
+      email: "charden@brigliahundley.com"
     },
     {
       name: "Amy S. Owen",
       position: "Partner",
-      experience: "Specialized in commercial litigation, employment law, and estate planning.",
-      image: "/api/placeholder/300/400"
+      experience: "Amy Owen specializes in commercial litigation, employment law, and estate planning. She has extensive experience representing businesses and individuals in complex legal matters throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Amy Owen specializes in commercial litigation, employment law, and estate planning. She has extensive experience representing businesses and individuals in complex legal matters. Her practice encompasses business disputes, employment litigation, estate planning and administration, and general civil litigation. Ms. Owen brings a strategic approach to each case, working closely with clients to develop effective legal solutions tailored to their specific needs and objectives.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0208",
+      email: "aowen@brigliahundley.com"
     },
     {
       name: "Teresa S. Cole",
       position: "Partner",
-      experience: "Practicing family law attorney since 1993.",
-      image: "/api/placeholder/300/400"
+      experience: "Teresa Cole has been practicing family law since 1993. She represents clients in divorce, custody, support, and other family law matters before Virginia courts, providing compassionate yet aggressive representation.",
+      fullExperience: "Teresa Cole has been practicing family law since 1993. She represents clients in divorce, custody, support, and other family law matters before Virginia courts. Her extensive experience includes complex divorce proceedings, child custody disputes, spousal and child support matters, property division, and domestic relations cases. Ms. Cole is known for her compassionate approach while providing aggressive representation to protect her clients' interests and their families' futures.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0209",
+      email: "tcole@brigliahundley.com"
     },
     {
       name: "Mary \"Molly\" Peacock",
