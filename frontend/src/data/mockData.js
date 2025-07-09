@@ -219,8 +219,8 @@ export const siteData = {
 
 export const editableContent = {
   hero: {
-    title: "Nothing is more important than what we do for families and businesses",
-    subtitle: "Tier 1 ranked law firm serving the Mid-Atlantic region since 1993",
+    title: "Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia, serving the greater Mid-Atlantic region.",
+    subtitle: "Tier 1 ranked law firm delivering superior client service since 1993",
     buttonText: "Schedule a Free Consultation",
     buttonPhone: "Call Now"
   },
