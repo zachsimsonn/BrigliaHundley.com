@@ -27,22 +27,22 @@ const PracticeAreas = ({ data, onNavigate }) => {
         </div>
 
         {/* Practice Areas Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {data.practiceAreas.map((area, index) => (
             <div 
               key={index} 
-              className="group bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="p-3 bg-blue-50 rounded-full text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-all duration-300">
-                  {iconMap[area.title] || <Scale className="h-8 w-8" />}
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="p-2 bg-gray-50 rounded-full text-gray-900 group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                  {iconMap[area.title] || <Scale className="h-6 w-6" />}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-900 transition-colors duration-300">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-gray-900 transition-colors duration-300">
                   {area.title}
                 </h3>
               </div>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
                 {area.description}
               </p>
               
