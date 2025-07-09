@@ -13,6 +13,9 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AdminDashboard from "./components/AdminDashboard";
+import PracticeAreaPage from "./components/pages/PracticeAreaPage";
+import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import { Toaster } from "./components/ui/toaster";
 
 // Data
@@ -21,9 +24,25 @@ import { siteData, editableContent } from "./data/mockData";
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-const Home = () => {
+const Home = ({ data, editableData, onNavigate }) => {
+  return (
+    <div className="min-h-screen bg-white">
+      <Hero data={data} editableContent={editableData} />
+      <About data={data} editableContent={editableData} />
+      <PracticeAreas data={data} onNavigate={onNavigate} />
+      <Attorneys data={data} onNavigate={onNavigate} />
+      <Testimonials data={data} />
+      <FAQ data={data} />
+      <Contact data={data} editableContent={editableData} />
+    </div>
+  );
+};
+
+const App = () => {
   const [data, setData] = useState(siteData);
   const [editableData, setEditableData] = useState(editableContent);
+  const [currentPage, setCurrentPage] = useState('home');
+  const [pageParams, setPageParams] = useState({});
 
   const helloWorldApi = async () => {
     try {
@@ -39,7 +58,6 @@ const Home = () => {
   }, []);
 
   const handleContentEdit = (field, value) => {
-    // Handle nested object updates
     const fieldParts = field.split('.');
     if (fieldParts.length > 1) {
       setEditableData(prev => ({
@@ -56,46 +74,115 @@ const Home = () => {
       }));
     }
     
-    // Save to localStorage for persistence
     localStorage.setItem('editableContent', JSON.stringify(editableData));
+  };
+
+  const handleDataUpdate = (newData) => {
+    setData(newData);
+    localStorage.setItem('siteData', JSON.stringify(newData));
+  };
+
+  const handleNavigate = (page, params = {}) => {
+    setCurrentPage(page);
+    setPageParams(params);
+    window.scrollTo(0, 0);
   };
 
   // Load saved content from localStorage on component mount
   useEffect(() => {
     const savedContent = localStorage.getItem('editableContent');
+    const savedData = localStorage.getItem('siteData');
+    
     if (savedContent) {
       setEditableData(JSON.parse(savedContent));
     }
+    if (savedData) {
+      setData(JSON.parse(savedData));
+    }
   }, []);
 
-  return (
-    <div className="min-h-screen bg-white">
-      <Header data={data} />
-      <Hero data={data} editableContent={editableData} />
-      <About data={data} editableContent={editableData} />
-      <PracticeAreas data={data} />
-      <Attorneys data={data} />
-      <Testimonials data={data} />
-      <FAQ data={data} />
-      <Contact data={data} editableContent={editableData} />
-      <Footer data={data} />
-      <Toaster />
-    </div>
-  );
-};
+  const renderCurrentPage = () => {
+    switch (currentPage) {
+      case 'home':
+        return <Home data={data} editableData={editableData} onNavigate={handleNavigate} />;
+      
+      case 'about':
+        return (
+          <div className="min-h-screen bg-white pt-20">
+            <About data={data} editableContent={editableData} />
+          </div>
+        );
+      
+      case 'attorneys':
+        return (
+          <div className="min-h-screen bg-white pt-20">
+            <Attorneys data={data} onNavigate={handleNavigate} />
+          </div>
+        );
+      
+      case 'testimonials':
+        return (
+          <div className="min-h-screen bg-white pt-20">
+            <Testimonials data={data} />
+          </div>
+        );
+      
+      case 'contact':
+        return (
+          <div className="min-h-screen bg-white pt-20">
+            <Contact data={data} editableContent={editableData} />
+          </div>
+        );
+      
+      case 'practice-area':
+        return (
+          <PracticeAreaPage 
+            areaName={pageParams.area} 
+            data={data} 
+            onNavigate={handleNavigate} 
+          />
+        );
+      
+      case 'attorney-profile':
+        return (
+          <AttorneyProfilePage 
+            attorneyName={pageParams.name} 
+            data={data} 
+            onNavigate={handleNavigate} 
+          />
+        );
+      
+      default:
+        return <Home data={data} editableData={editableData} onNavigate={handleNavigate} />;
+    }
+  };
 
-function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
+          <Route path="/" element={
+            <div>
+              <Header 
+                data={data} 
+                onEdit={handleContentEdit} 
+                onNavigate={handleNavigate} 
+              />
+              {renderCurrentPage()}
+              <Footer data={data} />
+              <AdminDashboard 
+                data={data} 
+                onDataUpdate={handleDataUpdate} 
+              />
+              <Toaster />
+            </div>
+          }>
+            <Route index element={<div />} />
           </Route>
         </Routes>
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
