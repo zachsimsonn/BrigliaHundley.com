@@ -179,8 +179,54 @@ export const siteData = {
     {
       name: "Brian J. Lubkeman",
       position: "Partner",
-      experience: "Over 30 years of experience in commercial real estate, corporate matters, and Virginia local law.",
-      image: "/api/placeholder/300/400"
+      experience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing the areas of commercial real estate, corporate matters, and Virginia local and state government law. He has worked both in-house in municipal government and for small and large law firms. Since 2005, he has served as the appointed City Attorney for the City of Fairfax, Virginia.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0206",
+      email: "blubkeman@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "University of Virginia School of Law",
+          year: 1992
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "University of Virginia",
+          year: 1988
+        }
+      ],
+      admissions: [
+        "Virginia",
+        "United States District Court for the Eastern District of Virginia",
+        "United States Bankruptcy Court for the Eastern District of Virginia"
+      ],
+      professionalAssociations: [
+        "Member; Vice Chair, Board of Governors, Virginia State Bar Local Government Section, 2018-Present",
+        "Member, Fairfax Bar Association",
+        "Member; Chair of Law School Liaison Committee, Local Government Attorneys of Virginia, 1992-Present",
+        "Member; Chair, 2007-2010, Real Property Section, Fairfax Bar Association",
+        "Member; President, 2011-2012; Paul Harris Fellow, Rotary Club of Fairfax",
+        "Board of Directors, 2011-2015, Fairfax Symphony Orchestra"
+      ],
+      certifications: [
+        "Named Best Lawyers® 2017, 2020 and 2024 Municipal Law 'Lawyer of the Year' for Washington D.C. metropolitan area",
+        "Listed in Best Lawyers®: Municipal, Real Estate, and Condemnation and Eminent Domain Law 2016 – 2024",
+        "Listed in Northern Virginia Magazine Top Lawyers Listing, Real Estate Law, 2017-2020",
+        "Legal Elite, Virginia Business, 2010"
+      ],
+      practiceAreas: [
+        "Commercial Real Estate",
+        "Corporate Matters",
+        "Municipal and Local Government Law",
+        "Real Estate Development",
+        "Commercial Lending",
+        "Business Acquisitions and Mergers"
+      ],
+      languages: [
+        "Spanish",
+        "Dutch", 
+        "French"
+      ]
     },
     {
       name: "Courtney B. Harden",
