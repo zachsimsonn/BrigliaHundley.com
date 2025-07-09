@@ -136,6 +136,13 @@ const App = () => {
           </div>
         );
       
+      case 'blog':
+        return (
+          <div className="min-h-screen bg-white pt-20">
+            <Blog data={data} onNavigate={handleNavigate} />
+          </div>
+        );
+      
       case 'practice-area':
         return (
           <PracticeAreaPage 
