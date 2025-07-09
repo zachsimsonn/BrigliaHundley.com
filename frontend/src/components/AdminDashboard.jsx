@@ -146,12 +146,15 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
 
   if (!isVisible) {
     return (
-      <Button
-        onClick={() => setIsVisible(true)}
-        className="fixed bottom-4 right-4 bg-red-600 hover:bg-red-700 text-white z-50 rounded-full p-3 shadow-lg"
-      >
-        <Settings className="h-5 w-5" />
-      </Button>
+      <div className="fixed bottom-4 right-4 z-[9999]">
+        <Button
+          onClick={() => setIsVisible(true)}
+          className="bg-red-600 hover:bg-red-700 text-white rounded-full p-4 shadow-lg animate-pulse"
+          style={{ zIndex: 9999 }}
+        >
+          <Settings className="h-6 w-6" />
+        </Button>
+      </div>
     );
   }
 
