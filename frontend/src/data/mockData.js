@@ -265,20 +265,29 @@ export const siteData = {
     {
       name: "Mary \"Molly\" Peacock",
       position: "Partner",
-      experience: "Nearly 20 years of experience serving as legal counsel for community associations and corporations.",
-      image: "/api/placeholder/300/400"
+      experience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations. She represents homeowners associations and businesses in Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations. She represents homeowners associations, condominium associations, and businesses in a wide variety of legal matters. Her practice focuses on community association law, corporate governance, contract disputes, and general business litigation. Ms. Peacock is dedicated to providing practical legal solutions that help organizations operate effectively while minimizing legal risks.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0210",
+      email: "mpeacock@brigliahundley.com"
     },
     {
       name: "Michael C. May",
       position: "Partner",
-      experience: "Litigator with experience in civil and criminal matters.",
-      image: "/api/placeholder/300/400"
+      experience: "Michael May is an experienced litigator with experience in civil and criminal matters. He represents clients in complex litigation cases before state and federal courts in Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "Michael May is an experienced litigator with extensive experience in both civil and criminal matters. He represents clients in complex litigation cases before state and federal courts. His practice encompasses criminal defense, civil litigation, business disputes, and personal injury matters. Mr. May brings a strategic and aggressive approach to litigation, working tirelessly to protect his clients' rights and achieve favorable outcomes in challenging legal situations.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0211",
+      email: "mmay@brigliahundley.com"
     },
     {
       name: "William T. DeVinney",
       position: "Of Counsel",
-      experience: "Broad litigation practice including antitrust, intellectual property, and complex commercial litigation.",
-      image: "/api/placeholder/300/400"
+      experience: "William DeVinney has a broad litigation practice including antitrust, intellectual property, and complex commercial litigation. He represents clients in sophisticated legal matters throughout Virginia, Washington, D.C., and Maryland.",
+      fullExperience: "William DeVinney has a broad litigation practice including antitrust, intellectual property, and complex commercial litigation. He represents clients in sophisticated legal matters involving federal and state regulatory issues, business disputes, and intellectual property matters. Mr. DeVinney's extensive experience includes representing corporations, individuals, and government entities in high-stakes litigation and regulatory proceedings. His strategic approach and attention to detail have resulted in successful outcomes for clients across a wide range of industries.",
+      image: "/api/placeholder/300/400",
+      phone: "703.883.0212",
+      email: "wdevinney@brigliahundley.com"
     },
     {
       name: "Kaley Duncan Ward",
