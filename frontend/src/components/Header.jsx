@@ -244,8 +244,8 @@ const Header = ({ data, onEdit, onNavigate }) => {
                 className="w-full bg-gray-900 hover:bg-gray-800 text-white"
                 onClick={() => window.location.href = `tel:${data.business.phone}`}
               >
-                <Phone className="mr-2 h-4 w-4" />
-                <span className="text-white">Call Now</span>
+                <Phone className="mr-2 h-4 w-4 text-white" />
+                <span className="text-white font-medium">Call Now</span>
               </Button>
             </div>
           </div>
