@@ -61,7 +61,7 @@ const Testimonials = ({ data }) => {
                 variant="outline"
                 size="sm"
                 onClick={prevTestimonial}
-                className="border-white text-white hover:bg-white hover:text-blue-900 rounded-full w-12 h-12 p-0"
+                className="border-white text-white hover:bg-white hover:text-gray-900 rounded-full w-12 h-12 p-0"
               >
                 <ChevronLeft className="h-5 w-5" />
               </Button>
@@ -69,7 +69,7 @@ const Testimonials = ({ data }) => {
                 variant="outline"
                 size="sm"
                 onClick={nextTestimonial}
-                className="border-white text-white hover:bg-white hover:text-blue-900 rounded-full w-12 h-12 p-0"
+                className="border-white text-white hover:bg-white hover:text-gray-900 rounded-full w-12 h-12 p-0"
               >
                 <ChevronRight className="h-5 w-5" />
               </Button>
