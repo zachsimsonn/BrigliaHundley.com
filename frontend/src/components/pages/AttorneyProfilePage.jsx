@@ -176,15 +176,15 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
         {/* Contact Info Section - Centered */}
         <div className="max-w-4xl mx-auto mt-16">
           <div className="bg-gray-50 rounded-lg p-8 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact {attorney.name}</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex flex-col items-center">
                 <Phone className="h-8 w-8 text-gray-900 mb-2" />
-                <span className="text-gray-600">{data.business.phone}</span>
+                <span className="text-gray-600">{attorney.phone || data.business.phone}</span>
               </div>
               <div className="flex flex-col items-center">
                 <Mail className="h-8 w-8 text-gray-900 mb-2" />
-                <span className="text-gray-600">{data.business.email}</span>
+                <span className="text-gray-600">{attorney.email || data.business.email}</span>
               </div>
               <div className="flex flex-col items-center">
                 <svg className="h-8 w-8 text-gray-900 mb-2" fill="currentColor" viewBox="0 0 20 20">
