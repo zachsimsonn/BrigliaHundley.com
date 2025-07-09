@@ -49,23 +49,25 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
             Back to Attorneys
           </Button>
           
-          <div className="flex items-center mb-6">
-            <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mr-6">
-              <User className="h-12 w-12 text-white" />
+          <div className="text-center">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mr-6">
+                <User className="h-12 w-12 text-white" />
+              </div>
+              <div>
+                <h1 className="text-4xl lg:text-5xl font-bold mb-2">{attorney.name}</h1>
+                <p className="text-xl text-gray-300">{attorney.position}</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-2">{attorney.name}</h1>
-              <p className="text-xl text-gray-300">{attorney.position}</p>
+            
+            <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-gray-300 text-gray-300" />
+                ))}
+              </div>
+              <span className="text-gray-300">Client Rating</span>
             </div>
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 fill-gray-300 text-gray-300" />
-              ))}
-            </div>
-            <span className="text-gray-300">Client Rating</span>
           </div>
         </div>
       </div>
