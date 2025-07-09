@@ -41,6 +41,41 @@ export const siteData = {
       title: "Real Estate Development",
       description: "Legal services for real estate transactions and development projects.",
       url: "/real-estate"
+    },
+    {
+      title: "Criminal Defense",
+      description: "Aggressive criminal defense representation for all types of criminal charges.",
+      url: "/criminal-defense"
+    },
+    {
+      title: "Employment Law",
+      description: "Comprehensive employment law services for both employers and employees.",
+      url: "/employment-law"
+    },
+    {
+      title: "Business Acquisitions",
+      description: "Expert guidance through complex business acquisition and merger transactions.",
+      url: "/business-acquisitions"
+    },
+    {
+      title: "Municipal Law",
+      description: "Legal counsel and representation for local government and municipal matters.",
+      url: "/municipal-law"
+    },
+    {
+      title: "Community Association Law",
+      description: "Specialized legal services for homeowners associations and community organizations.",
+      url: "/community-association"
+    },
+    {
+      title: "Eminent Domain",
+      description: "Protecting property owners' rights in eminent domain and condemnation proceedings.",
+      url: "/eminent-domain"
+    },
+    {
+      title: "Civil Litigation",
+      description: "Comprehensive civil litigation services across multiple areas of law.",
+      url: "/civil-litigation"
     }
   ],
 
