@@ -160,7 +160,7 @@ const AdminDashboard = ({ data, onDataUpdate }) => {
       <div className="bg-white rounded-lg w-full max-w-6xl h-[90vh] flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b">
-          <h2 className="text-2xl font-bold text-gray-900">Website Admin Dashboard</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Website Editor - No Coding Required!</h2>
           <div className="flex space-x-2">
             <Button onClick={handleSave} className="bg-green-600 hover:bg-green-700">
               <Save className="h-4 w-4 mr-2" />
