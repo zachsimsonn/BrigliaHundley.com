@@ -184,7 +184,8 @@ export const siteData = {
     {
       name: "Brian J. Lubkeman",
       position: "Partner",
-      experience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing the areas of commercial real estate, corporate matters, and Virginia local and state government law. He has worked both in-house in municipal government and for small and large law firms. Since 2005, he has served as the appointed City Attorney for the City of Fairfax, Virginia.",
+      experience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing commercial real estate, corporate matters, and Virginia local government law. He has served as appointed City Attorney for the City of Fairfax, Virginia since 2005.",
+      fullExperience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing the areas of commercial real estate, corporate matters, and Virginia local and state government law. He has worked both in-house in municipal government and for small and large law firms. Since 2005, he has served as the appointed City Attorney for the City of Fairfax, Virginia.",
       image: "/api/placeholder/300/400",
       phone: "703.883.0206",
       email: "blubkeman@brigliahundley.com",
