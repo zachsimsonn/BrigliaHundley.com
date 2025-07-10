@@ -17,38 +17,52 @@ export const siteData = {
   practiceAreas: [
     {
       title: "Family Law",
-      description: "Comprehensive family law services including divorce, custody, and support matters.",
-      url: "/family-law"
+      description: "Comprehensive family law services in Northern Virginia including divorce, custody, and support matters for Fairfax, Arlington, and Prince William County residents.",
+      fullDescription: "Our experienced family law attorneys serve clients throughout Northern Virginia, including Tysons Corner, Fairfax County, Arlington County, and Prince William County. We handle divorce proceedings, child custody disputes, spousal support, property division, and domestic relations matters in Virginia state courts.",
+      url: "/family-law",
+      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County"
     },
     {
       title: "Commercial Litigation",
-      description: "Experienced representation in complex business disputes and litigation matters.",
-      url: "/commercial-litigation"
+      description: "Strategic business litigation services for Northern Virginia companies in Fairfax, Arlington, and surrounding areas.",
+      fullDescription: "Our commercial litigation team represents businesses throughout Northern Virginia in complex disputes. We serve clients in Tysons Corner, McLean, Vienna, Arlington, and Fairfax County in state and federal courts including the Eastern District of Virginia.",
+      url: "/commercial-litigation",
+      localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Tysons Corner"
     },
     {
-      title: "Corporate Law",
-      description: "Business formation, mergers, acquisitions, and ongoing corporate counsel.",
-      url: "/corporate-law"
+      title: "Corporate Law", 
+      description: "Complete corporate legal services for Northern Virginia businesses in Fairfax County, Arlington, and Prince William County.",
+      fullDescription: "We provide comprehensive corporate legal services to businesses throughout Northern Virginia. Our attorneys assist companies in Tysons Corner, Fairfax, Arlington, McLean, and surrounding areas with business formation, contracts, mergers and acquisitions, and ongoing corporate compliance.",
+      url: "/corporate-law",
+      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Tysons Corner"
     },
     {
       title: "Personal Injury",
-      description: "Dedicated advocacy for personal injury victims and their families.",
-      url: "/personal-injury"
+      description: "Dedicated personal injury representation for accident victims throughout Northern Virginia and the greater Washington DC area.",
+      fullDescription: "Our personal injury attorneys represent accident victims throughout Northern Virginia, including Fairfax County, Arlington County, Prince William County, and surrounding areas. We handle car accidents, slip and falls, medical malpractice, and wrongful death cases in Virginia courts.",
+      url: "/personal-injury",
+      localKeywords: "personal injury lawyer Fairfax VA, car accident attorney Northern Virginia, injury lawyer Arlington VA, accident attorney Prince William County"
     },
     {
       title: "Estate Planning",
-      description: "Comprehensive estate planning, wills, trusts, and probate services.",
-      url: "/estate-planning"
+      description: "Comprehensive estate planning services for Northern Virginia families in Fairfax, Arlington, and Prince William County.",
+      fullDescription: "Our estate planning attorneys help Northern Virginia families protect their assets and plan for the future. We serve clients in Tysons Corner, McLean, Vienna, Arlington, Fairfax County, and Prince William County with wills, trusts, estate administration, and probate matters.",
+      url: "/estate-planning",
+      localKeywords: "estate planning attorney Fairfax VA, will and trust lawyer Northern Virginia, probate attorney Arlington VA, estate lawyer Prince William County"
     },
     {
       title: "Real Estate Development",
-      description: "Legal services for real estate transactions and development projects.",
-      url: "/real-estate"
+      description: "Expert real estate legal services for Northern Virginia property development and transactions.",
+      fullDescription: "Our real estate attorneys assist with property transactions and development projects throughout Northern Virginia. We represent clients in Fairfax County, Arlington County, Prince William County, and surrounding areas in residential and commercial real estate matters.",
+      url: "/real-estate-development",
+      localKeywords: "real estate attorney Fairfax VA, property lawyer Northern Virginia, real estate closing Arlington VA, development lawyer Tysons Corner"
     },
     {
       title: "Criminal Defense",
-      description: "Aggressive criminal defense representation for all types of criminal charges.",
-      url: "/criminal-defense"
+      description: "Experienced criminal defense representation in Northern Virginia courts including Fairfax, Arlington, and Prince William County.",
+      fullDescription: "Our criminal defense attorneys provide aggressive representation for clients facing criminal charges throughout Northern Virginia. We appear in courts in Fairfax County, Arlington County, Prince William County, and federal courts in the Eastern District of Virginia.",
+      url: "/criminal-defense",
+      localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County"
     },
     {
       title: "Employment Law",
