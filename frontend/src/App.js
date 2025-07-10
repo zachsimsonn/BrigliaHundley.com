@@ -157,6 +157,7 @@ const Home = ({ data, editableData, onNavigate }) => {
       />
       <Hero data={data} editableContent={editableData} />
       <About data={data} editableContent={editableData} />
+      <ServiceAreas data={data} />
       <PracticeAreas data={data} onNavigate={onNavigate} />
       <Attorneys data={data} onNavigate={onNavigate} />
       <Testimonials data={data} />
