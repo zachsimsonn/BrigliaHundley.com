@@ -4,8 +4,8 @@ import { MapPin, Building, Users, Scale } from 'lucide-react';
 const ServiceAreas = ({ data }) => {
   const primaryAreas = [
     {
-      name: "Tysons Corner",
-      description: "Our headquarters location serving the heart of Northern Virginia",
+      name: "Loudoun County",
+      description: "Serving one of Virginia's fastest-growing counties with comprehensive legal services",
       icon: <Building className="h-6 w-6 text-blue-900" />
     },
     {
