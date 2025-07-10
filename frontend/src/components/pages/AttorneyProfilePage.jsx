@@ -148,12 +148,52 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
             <div className="max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 text-left">About {attorney.name}</h2>
               
+              {/* Full Biography */}
               <div className="mb-8 text-left">
-                <p className="text-gray-600 leading-relaxed text-base text-left">
-                  {attorney.fullExperience || attorney.experience}
-                </p>
+                {attorney.fullBio ? (
+                  <div className="space-y-4">
+                    {attorney.fullBio.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className="text-gray-600 leading-relaxed text-base text-left">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-gray-600 leading-relaxed text-base text-left">
+                    {attorney.experience}
+                  </p>
+                )}
               </div>
 
+              {/* Significant Representations */}
+              {attorney.significantRepresentations && (
+                <div className="mb-8 text-left">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 text-left">Significant Representations</h3>
+                  <div className="space-y-4">
+                    {attorney.significantRepresentations.split('\n\n').map((paragraph, index) => (
+                      <p key={index} className="text-gray-600 leading-relaxed text-base text-left">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Areas of Practice */}
+              {attorney.practiceAreas && (
+                <div className="mb-8 text-left">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Areas of Practice</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {attorney.practiceAreas.map((area, index) => (
+                      <span key={index} className="bg-gray-900 text-white px-3 py-1 rounded-full text-sm">
+                        {area}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Education */}
               {attorney.education && (
                 <div className="mb-8 text-left">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Education</h3>
@@ -168,10 +208,11 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 </div>
               )}
 
+              {/* Bar Admissions */}
               {attorney.admissions && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Bar Admissions</h3>
-                  <div className="grid md:grid-cols-2 gap-2 text-left">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Admissions</h3>
+                  <div className="space-y-2 text-left">
                     {attorney.admissions.map((admission, index) => (
                       <div key={index} className="flex items-start text-left">
                         <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
@@ -182,9 +223,10 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 </div>
               )}
 
+              {/* Professional Associations */}
               {attorney.professionalAssociations && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Professional Associations</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Professional Associations and Memberships</h3>
                   <div className="space-y-2 text-left">
                     {attorney.professionalAssociations.map((association, index) => (
                       <div key={index} className="flex items-start text-left">
@@ -196,8 +238,80 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 </div>
               )}
 
+              {/* Certifications, Honors & Awards */}
               {attorney.certifications && (
                 <div className="mb-8 text-left">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Certifications, Honors, and Awards</h3>
+                  <div className="space-y-2 text-left">
+                    {attorney.certifications.map((cert, index) => (
+                      <div key={index} className="flex items-start text-left">
+                        <Award className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
+                        <span className="text-gray-600 text-base text-left">{cert}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Publications & Speaking Engagements */}
+              {attorney.publicationsAndSpeaking && (
+                <div className="mb-8 text-left">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Publications & Speaking Engagements</h3>
+                  <div className="space-y-2 text-left">
+                    {attorney.publicationsAndSpeaking.map((item, index) => (
+                      <div key={index} className="flex items-start text-left">
+                        <BookOpen className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
+                        <span className="text-gray-600 text-base text-left">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Past Employment */}
+              {attorney.pastEmployment && (
+                <div className="mb-8 text-left">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Past Employment Positions</h3>
+                  <div className="space-y-2 text-left">
+                    {attorney.pastEmployment.map((employment, index) => (
+                      <div key={index} className="flex items-start text-left">
+                        <User className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
+                        <span className="text-gray-600 text-base text-left">{employment}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Blog Posts */}
+              {attorney.blogPosts && attorney.blogPosts.length > 0 && (
+                <div className="mb-8 text-left">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left flex items-center">
+                    <BookOpen className="h-5 w-5 mr-2 text-gray-900" />
+                    Blog Posts
+                  </h3>
+                  <div className="space-y-4">
+                    {attorney.blogPosts.map((post, index) => (
+                      <div key={index} className="border-l-4 border-gray-900 pl-6 py-4 bg-gray-50 rounded-r-lg text-left">
+                        <h4 className="text-lg font-semibold text-gray-900 mb-2 text-left">{post.title}</h4>
+                        <p className="text-gray-600 mb-2 text-left">{post.date}</p>
+                        {post.coAuthor && (
+                          <p className="text-gray-600 mb-2 text-left">Co-authored with {post.coAuthor}</p>
+                        )}
+                        <a 
+                          href={post.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-gray-900 hover:text-gray-700 font-medium text-left"
+                        >
+                          Read More
+                          <ExternalLink className="h-4 w-4 ml-1" />
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
                   <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Certifications, Honors & Awards</h3>
                   <div className="space-y-2 text-left">
                     {attorney.certifications.map((cert, index) => (
