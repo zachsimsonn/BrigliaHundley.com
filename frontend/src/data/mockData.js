@@ -713,6 +713,96 @@ export const siteData = {
         "Principal, Associate, Miles & Stockbridge, P.C.",
         "Principal, Richards McGettigan Reilly & West, P.C."
       ]
+    },
+    {
+      name: "Teresa S. Cole",
+      position: "Partner",
+      experience: "Since 1993, Teresa Cole has been a practicing family law attorney handling complex divorce cases, custody determinations, and all other domestic law matters.",
+      fullBio: "Since 1993, Teresa Cole has been a practicing family law attorney handling complex divorce cases, custody determinations, and all other domestic law matters. Based on her experience and proven track record, she has been appointed as a Neutral Case Evaluator for Fairfax County, Virginia. In this role, she provides case evaluations and non-binding arbitration services for other divorce attorneys. In addition, Ms. Cole was appointed to the Divorce and Family Law Attorney Resource Panel as an adviser on family law issues to Virginia legislators.\n\nIn addition to litigating family law matters in Virginia's courts, Ms. Cole has developed a robust practice employing the alternative dispute resolution methods of Collaborative Divorce and Mediation. Ms. Cole is a Past-Chair of the statewide Collaborative Divorce Association, the Virginia Collaborative Professionals (VaCP), and the committee responsible for passage of Virginia's Uniform Collaborative Law Act.\n\nMs. Cole is an Alexandria, Virginia native, having graduated from the Thomas Jefferson High School for Science and Technology and the University of Virginia. She received her law degree from UC Hastings College of the Law in San Francisco. Ms. Cole is married to a veteran of the Gulf War and often handles divorce cases involving government or military personnel on overseas assignments. She has mastered navigation of the applicable federal regulations and has a keen understanding of the complicated jurisdictional issues which apply in such cases.\n\nIn addition, one of Ms. Cole's children has an Individualized Education Plan (IEP), so she has first-hand experience with the programs and issues involving special needs children that can play a significant role in custody determinations.\n\nMs. Cole has been named by her peers to Super Lawyers' list of top Family Law attorneys, and she maintains the highest available 10.0 rating on Avvo.com.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-teresa-cole-u800ds.jpg",
+      phone: "703.883.0209",
+      email: "tcole@brigliahundley.com",
+      blogPosts: [
+        {
+          title: "Uncovering Hidden Cash and Assets in Divorce: An Attorney's Perspective",
+          date: "3/4/2025",
+          url: "https://brigliahundley.com/blog/uncovering-hidden-cash-assets-divorce"
+        }
+      ]
+    },
+    {
+      name: "Mary \"Molly\" Peacock",
+      position: "Partner",
+      experience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations in Washington, D.C. and Northern Virginia.",
+      fullBio: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations in Washington, D.C. and Northern Virginia. She focuses on providing timely and effective solutions to legal problems facing her clients.\n\nMs. Peacock is a leading expert in her field and was asked to be a member of task force to draft new legislation governing homeowners associations in Washington, D.C. Her years of experience and knowledge and commitment to superior service will help craft the first ever legislation of its kind in our Nation's Capital. This is one of many examples of Ms. Peacock's commitment to serving her community.\n\nMs. Peacock is a graduate of The College of William and Mary, receiving her J.D. from the University of Richmond School of Law.",
+      significantRepresentations: "Successfully resolving an adversarial and damaging covenants violation dispute that had been existing for years prior to Molly's arrival as counsel for this community association; the Fairfax Circuit Court awarded judgment for the association for money damages, injunctive relief and all attorney's fees;\n\nThis judgment was not complied with by the defendant, and so Molly then led the association through post-judgment legal action, the outcome of which led to remediation of all of the covenants violations at issue, a foreclosure of the property, and a full reimbursement of legal fees and money damages to the association from the foreclosure sale.\n\nWorking with a client to accomplish a whole-sale change of all violations letters (approximately 500 letters sent per month generally addressing approximately seven categories of violations); this association comprises approximately 850 acres so that the letters invite compliance in a manner that puts the homeowner and the association on the same team. The tone of the letters went from punitive to collaborative which benefited increased voluntary compliance by homeowners, and decreased enforcement costs for the association.\n\nPrevailing in Loudoun Circuit Court on three of three counts against defendants who damaged Molly's client's property.\n\nDrafting and enacting new, fully restated Bylaws for several condominiums and property owners associations in Virginia and Washington, DC.\n\nAssisting associations resolve potential hostile environment claims achieving full compliance with Federal law, fairness to the membership, and swiftness in reaching resolution.\n\nAssisting associations transition from declarant to association control in a fair, economical, and effective manner.\n\nProsecuting and defending litigation of any type involving the community association, including disputes with the local government, the declarant, adverse homeowners, other parties, and debtors.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-molly-peacock-u800ds.jpg",
+      phone: "703.883.0210",
+      email: "mpeacock@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctorate",
+          institution: "University of Richmond School of Law"
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "William and Mary"
+        }
+      ],
+      admissions: [
+        "Virginia (2002)",
+        "Washington D.C. (2008)"
+      ],
+      practiceAreas: [
+        "Community Associations",
+        "Representation of corporations and other business entities",
+        "Dispute resolution",
+        "Litigation",
+        "Collections"
+      ],
+      professionalAssociations: [
+        "Virginia State Bar, Member",
+        "Washington D.C. Bar, Member",
+        "Co-Chair, District of Columbia Legislative Action Committee of WMCCAI, 2025 – 2027",
+        "District of Columbia Legislative Action Committee of WMCCAI, Member 2015-present",
+        "Co-Chair, the Law Practice Management Section of the Fairfax Bar Association, 2017-2021"
+      ],
+      certifications: [
+        "2024, District of Columbia Public Advocate of the Year awarded by the Washington Metropolitan Chapter of the Community Association Institute",
+        "Peer nominated and selected as a Virginia Super Lawyer in 2018 and 2019, and 2025 in the area of Real Estate",
+        "Recipient in 2014 of the Community Service Award from the Greater McLean Chamber of Commerce for work done for the greater McLean community"
+      ],
+      speakingEngagements: [
+        "Speaker at the CAI Annual Conference May 2025 in Orlando, Florida about overcoming hostile communications and preventing fair housing discrimination claims",
+        "Speaker at the CAI Law Seminar January 2025 in San Antonio, Texas about the role of the community association lawyer",
+        "Speaker at the CAI Annual Conference May 2024 in Las Vegas, Nevada about the hard insurance market for condominiums, and how to overcome its challenges",
+        "Speaker at the WMCCAI Conference and Expo March 2024 in Washington, DC about Legislative Updates in DC Law pertaining to community associations, specifically updates around energy conservation laws",
+        "Speaker at the WMCCAI Conference and Expo in February 2023 Washington, DC about Legislative Updates in DC Law pertaining to community associations",
+        "Speaker at the Virginia Law Conference July 2022 in Hot Springs, Virginia about \"Toxic Neighbors, What is the Association's Role when Hostility Strikes?\"",
+        "Speaker at WMCCAI Conference & Exposition June 2021 in Washington, DC about Federal Fair Housing Accommodation Act and Social Media Liability, Part 2",
+        "Speaker at Continuing Legal Education with the Fairfax Bar Association, April 2021, about Combating Toxicity in the Practice of Law",
+        "Speaker at the WMCCAI Conference & Exposition March 2020 in Washington, DC about the nexus between Federal law, insurance, Social Media Liability, Part 1",
+        "Speaker at the Annual Law and Technology CLE, Fairfax County, Virginia (2015, 2016, 2017, 2019, 2020, 2021)",
+        "Speaker at the CAI Annual Conference May 2019 in Orlando, Florida about How To Keep Your Legal Fees Down, Property Values Up",
+        "Speaker at the WMCCAI Conference & Exposition February 2019 in Washington, DC about Security and Technology in community associations",
+        "Speaker at the 2014 National Conference of the Community Associations Institute about Xeriscaping in Community Associations",
+        "Keynote Speaker at the University of Richmond Law Technology Seminar in 2014",
+        "Speaker at Condominium Essentials Class in collaboration with WMCCAI and the Alexandria and Arlington Housing Divisions, April 2013"
+      ],
+      pastEmployment: [
+        "Rees Broome, Counsel, 2015-2025",
+        "Peacock Law Firm; Founder and lead attorney, 2011-2015",
+        "Chadwick Washington, Associate Attorney, 2006 – 2011",
+        "Law clerk, Alexandria Circuit Court, 2002 – 2004"
+      ],
+      publications: [
+        "Author of article about \"Protecting Our Resources,\" Quorum Magazine, October 2024",
+        "Author of article about security as community associations, Quorum Magazine June 2022",
+        "Author of Article \"How To Use Your Association's Lawyer Wisely,\" Quorum Magazine, January 2020",
+        "Author of \"Parking Space Assignments and Reassignments in D.C., Maryland, and Virginia,\" Quorum Magazine, October 2017",
+        "Author of a Chapter about Community Associations and Success in Best-Selling Book: Stand Apart, Edited by Dan Kennedy, 2013",
+        "Author of \"Brambleton Community Association v. Than: Are Bankruptcy Filers Receiving Bad Advice to Vacate Their Homes?\", published in The Fee Simple, a publication of the Virginia State Bar, May 2010; Molly Peacock litigated the Than case, lost, appealed to Circuit Court for a trial de novo, prevailed on the merits and won 100% of requested attorney's fees."
+      ]
     }
   ],
 
