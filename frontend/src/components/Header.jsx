@@ -19,9 +19,9 @@ const Header = ({ data, onEdit, onNavigate }) => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center">
             <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
               {data.business.logo ? (
                 <img src={data.business.logo} alt="Briglia Hundley® Law Firm Logo" className="h-12 w-auto object-contain" />
@@ -35,8 +35,8 @@ const Header = ({ data, onEdit, onNavigate }) => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Centered Navigation */}
+          <div className="hidden md:flex items-center justify-center flex-1">
             <nav className="flex space-x-8">
               <button 
                 onClick={() => handleNavigate('home')}
@@ -127,24 +127,25 @@ const Header = ({ data, onEdit, onNavigate }) => {
                 Contact
               </button>
             </nav>
+          </div>
             
-            <div className="flex items-center space-x-4">
-              <Button 
-                variant="outline" 
-                className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
-                onClick={() => handleNavigate('contact')}
-              >
-                Schedule a Free Consultation
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
-                onClick={() => window.location.href = `tel:${data.business.phone}`}
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                <span className="font-medium">Call Now</span>
-              </Button>
-            </div>
+          {/* Right Side Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button 
+              variant="outline" 
+              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
+              onClick={() => handleNavigate('contact')}
+            >
+              Schedule a Free Consultation
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
+              onClick={() => window.location.href = `tel:${data.business.phone}`}
+            >
+              <Phone className="mr-2 h-4 w-4" />
+              <span className="font-medium">Call Now</span>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
