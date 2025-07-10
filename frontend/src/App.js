@@ -310,6 +310,19 @@ const App = () => {
           />
         );
       
+      case 'practice-areas':
+        return (
+          <div className="min-h-screen bg-white pt-20">
+            <SEO 
+              title="Practice Areas"
+              description="Briglia Hundley Practice Areas - Comprehensive legal services across 12 practice areas serving Northern Virginia, Washington DC, and Maryland."
+              keywords="practice areas, legal services, Virginia attorneys, Washington DC lawyers, Maryland law firm"
+              canonical="https://brigliahundley.com/practice-areas"
+            />
+            <PracticeAreasPage data={data} onNavigate={handleNavigate} />
+          </div>
+        );
+      
       case 'practice-area':
         const practiceArea = data.practiceAreas.find(area => 
           area.title.toLowerCase().replace(/\s+/g, '-') === pageParams.area
