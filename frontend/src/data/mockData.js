@@ -803,6 +803,85 @@ export const siteData = {
         "Author of a Chapter about Community Associations and Success in Best-Selling Book: Stand Apart, Edited by Dan Kennedy, 2013",
         "Author of \"Brambleton Community Association v. Than: Are Bankruptcy Filers Receiving Bad Advice to Vacate Their Homes?\", published in The Fee Simple, a publication of the Virginia State Bar, May 2010; Molly Peacock litigated the Than case, lost, appealed to Circuit Court for a trial de novo, prevailed on the merits and won 100% of requested attorney's fees."
       ]
+    },
+    {
+      name: "Michael C. May",
+      position: "Partner",
+      experience: "Michael C. May is a litigator who has represented clients in courts throughout the Commonwealth of Virginia in civil and criminal matters. He has experience in all manner of litigation, having represented both businesses and individuals as plaintiffs and defendants.",
+      fullBio: "Michael C. May is a litigator who has represented clients in courts throughout the Commonwealth of Virginia in civil and criminal matters. He has experience in all manner of litigation, having represented both businesses and individuals as plaintiffs and defendants.\n\nMr. May is equally comfortable in the practice of business litigation, employment law, domestic relations/family law, and criminal law. He is licensed to practice in all courts in the Commonwealth of Virginia and is also admitted to practice before the United States District Court for the Eastern District of Virginia. Mr. May is fluent in Spanish and has assisted the Firm in numerous litigation matters where such fluency has been required.\n\nNot only is Mr. May a courtroom litigator, but he also handles numerous transactional matters, including advising businesses on corporate and employment best practices as well as government contracts and procurement issues. He has represented companies in bid protests adverse to the government and in negotiating employment contracts, leases, intellectual property matters, and purchase and sale agreements.\n\nIn addition to his work as an attorney, Mr. May spent nine years (2007-2016) serving his home community as an elected member of the Board of County Supervisors in Prince William County, Virginia. In both 2010 and 2014, he was selected by his fellow supervisors as Vice Chairman of the county-wide board. While on the Board of County Supervisors, Mr. May helped oversee the budget for Virginia's second largest county of almost 450,000 residents.\n\nMr. May has dedicated countless hours to public service as a member of the Lake Ridge Lions Club, Knights of Columbus, Prince William Regional Chamber of Commerce, and appointed representative to his county's Social Services Board. He served on the Prince William Boys and Girls Club Board of Directors (Vice-Chairman, Program and Ex-Officio Director) and as At-Large Planning Commissioner in Prince William County, advising the Board of Supervisors on land use planning and zoning law. He also spent seven years as Chairman of the Potomac Rappahannock Transportation Commission.\n\nDuring his tenure in public service, Mr. May has been regarded as a tireless advocate for his constituents, and he brings this same passion to representing his clients, no matter how big or small their case.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-michael-may-u800ds.jpg",
+      phone: "703.883.0211",
+      email: "mmay@brigliahundley.com",
+      education: [
+        {
+          degree: "JD",
+          institution: "George Mason University Law School"
+        },
+        {
+          degree: "BA (Government and Spanish)",
+          institution: "College of William and Mary"
+        }
+      ],
+      admissions: [
+        "Virginia",
+        "United States District Court for the Eastern District of Virginia"
+      ],
+      practiceAreas: [
+        "Criminal Law",
+        "Family Law", 
+        "Civil Litigation",
+        "Employment Law"
+      ],
+      professionalAssociations: [
+        "Fairfax Bar Association",
+        "Prince William Bar Association"
+      ],
+      certifications: [
+        "Virginia Business Magazine's Legal Elite (2012 to present)",
+        "Northern Virginia Magazine's Top Lawyers (2021)",
+        "Washingtonian Magazine's Top Lawyers (2024)",
+        "Former Member of Prince William Board of County Supervisors, Occoquan District (2006 to 2016)"
+      ]
+    },
+    {
+      name: "Kaley Duncan Ward",
+      position: "Associate",
+      experience: "Kaley Duncan Ward is a senior associate attorney practicing in the areas of eminent domain, civil litigation, and estate planning. Ward primarily represents condemning authorities throughout the Northern Virginia area and is well-versed in Virginia eminent domain law and property valuation issues.",
+      fullBio: "Kaley Duncan Ward is a senior associate attorney practicing in the areas of eminent domain, civil litigation, and estate planning. Ward primarily represents condemning authorities throughout the Northern Virginia area and is well-versed in Virginia eminent domain law and property valuation issues.\n\nSince starting practice in 2018, Ms. Ward has assisted numerous clients through the estate planning process. She has also represented clients in multiple areas of civil litigation including contract disputes, personal injury, and domestic relations.\n\nMs. Ward received her undergraduate degree from Virginia Tech where she double majored in Psychology and Public Relations. She went on to earn her law degree from the University of Richmond School of Law, where she served as Managing Editor of the Richmond Journal of Law and Technology, Vice President of Richmond Women's Law, and member of the Trial Advocacy Board. After law school, Ms. Ward served as law clerk to the Honorable Grace Burke Carroll of the Fairfax County Circuit Court.\n\nMs. Ward is an active member of the Fairfax Bar Association (FBA) and currently serves as President of the Board of Directors of the FBA Young Lawyers Section.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-kaley-ward-u800ds.jpg",
+      phone: "703.883.0212",
+      email: "kward@brigliahundley.com",
+      education: [
+        {
+          degree: "Cum Laude",
+          institution: "University of Richmond School of Law",
+          year: 2018
+        },
+        {
+          degree: "Cum Laude",
+          institution: "Virginia Tech",
+          year: 2015
+        }
+      ],
+      admissions: [
+        "Virginia, 2018"
+      ],
+      practiceAreas: [
+        "Eminent Domain",
+        "Civil Litigation",
+        "Estate Planning"
+      ],
+      professionalAssociations: [
+        "Virginia Bar Association",
+        "Fairfax Bar Association – Young Lawyers President",
+        "Fairfax Bar Association – Young Lawyers Section Board Member",
+        "Virginia Trial Lawyers Association",
+        "Northern Virginia Women Attorneys Association"
+      ],
+      pastEmployment: [
+        "Associate Attorney, Surovell Isaacs & Levy PLC",
+        "Law Clerk, Fairfax County Circuit Court"
+      ]
     }
   ],
 
