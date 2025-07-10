@@ -1,18 +1,7 @@
-import React, { useState } from 'react';
-import { Award, Users, MapPin, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Button } from './ui/button';
+import React from 'react';
+import { Award, Users, MapPin, Calendar } from 'lucide-react';
 
 const About = ({ data, editableContent }) => {
-  const [currentAnnouncement, setCurrentAnnouncement] = useState(0);
-
-  const nextAnnouncement = () => {
-    setCurrentAnnouncement((prev) => (prev + 1) % data.announcements.length);
-  };
-
-  const prevAnnouncement = () => {
-    setCurrentAnnouncement((prev) => (prev - 1 + data.announcements.length) % data.announcements.length);
-  };
-
   const highlights = [
     {
       icon: <Award className="h-8 w-8 text-blue-900" />,
@@ -36,6 +25,9 @@ const About = ({ data, editableContent }) => {
     }
   ];
 
+  // Split content into paragraphs
+  const paragraphs = editableContent.about.content.split('\n\n');
+
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,72 +41,12 @@ const About = ({ data, editableContent }) => {
               <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full"></div>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              {editableContent.about.content}
-            </p>
-
-            {/* Announcements with Arrow Navigation */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Announcements</h3>
-              <div className="relative">
-                <div className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-2xl p-8 text-white h-[240px] flex items-center">
-                  <div className="w-full text-center">
-                    <h4 className="text-xl lg:text-2xl font-bold mb-3 leading-tight">
-                      {data.announcements[currentAnnouncement].title}
-                    </h4>
-                    {data.announcements[currentAnnouncement].content && (
-                      <p className="text-base text-gray-100 mb-4 max-w-2xl mx-auto leading-relaxed">
-                        {data.announcements[currentAnnouncement].content}
-                      </p>
-                    )}
-                    {data.announcements[currentAnnouncement].link && (
-                      <a 
-                        href={data.announcements[currentAnnouncement].link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-gray-300 hover:text-white underline transition-colors duration-300"
-                      >
-                        Learn More
-                      </a>
-                    )}
-                  </div>
-                </div>
-
-                {/* Navigation Arrows */}
-                <div className="flex justify-center space-x-4 mt-6">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={prevAnnouncement}
-                    className="border-white text-white hover:bg-white hover:text-gray-900 rounded-full w-12 h-12 p-0 bg-gray-700/50 backdrop-blur-sm"
-                  >
-                    <ChevronLeft className="h-5 w-5" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={nextAnnouncement}
-                    className="border-white text-white hover:bg-white hover:text-gray-900 rounded-full w-12 h-12 p-0 bg-gray-700/50 backdrop-blur-sm"
-                  >
-                    <ChevronRight className="h-5 w-5" />
-                  </Button>
-                </div>
-
-                {/* Dots Indicator */}
-                <div className="flex justify-center space-x-2 mt-4">
-                  {data.announcements.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentAnnouncement(index)}
-                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentAnnouncement
-                          ? 'bg-white w-8'
-                          : 'bg-white/30 hover:bg-white/50'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
+            <div className="space-y-6">
+              {paragraphs.map((paragraph, index) => (
+                <p key={index} className="text-lg text-gray-600 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
 
