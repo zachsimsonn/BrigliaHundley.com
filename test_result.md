@@ -232,14 +232,14 @@ test_plan:
   - task: "Standardize Call Now button styling"
     implemented: true
     working: true
-    file: "frontend/src/components/Header.jsx, frontend/src/components/pages/AttorneyProfilePage.jsx, frontend/src/components/pages/PracticeAreaPage.jsx, frontend/src/components/PracticeAreas.jsx"
+    file: "frontend/src/components/Header.jsx, frontend/src/components/pages/AttorneyProfilePage.jsx, frontend/src/components/pages/PracticeAreaPage.jsx, frontend/src/components/PracticeAreas.jsx, frontend/src/components/Hero.jsx"
     stuck_count: 0
     priority: "medium"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Changed all 'Call Now' buttons to use outline variant with consistent styling to match 'Schedule a Free Consultation' buttons across all components"
+        comment: "Changed all 'Call Now' buttons to use outline variant with consistent styling to match 'Schedule a Free Consultation' buttons across all components. Updated Hero component to use outline style for both consultation and call buttons."
 
 agent_communication:
   - agent: "main"
