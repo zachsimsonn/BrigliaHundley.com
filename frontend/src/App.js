@@ -8,6 +8,7 @@ import axios from "axios";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import ServiceAreas from "./components/ServiceAreas";
 import PracticeAreas from "./components/PracticeAreas";
 import Attorneys from "./components/Attorneys";
 import Testimonials from "./components/Testimonials";
