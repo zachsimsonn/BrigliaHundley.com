@@ -32,7 +32,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center flex-shrink-0">
             <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
               {data.business.logo ? (
                 <img src={data.business.logo} alt="Briglia Hundley® Law Firm Logo" className="h-12 w-auto object-contain" />
@@ -47,19 +47,19 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
           </div>
 
           {/* Centered Navigation */}
-          <div className="hidden md:flex items-center justify-center flex-1">
+          <div className="hidden md:flex items-center justify-center flex-1 px-8">
             <nav className="flex space-x-6">
               <button 
                 onClick={() => handleNavigate('home')}
                 className={getNavItemClass('home')}
-                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 HOME
               </button>
               <button 
                 onClick={() => handleNavigate('about')}
                 className={getNavItemClass('about')}
-                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 THE FIRM
               </button>
@@ -71,7 +71,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                   className={`flex items-center transition-colors duration-200 ${
                     currentPage === 'practice-area' ? 'text-gray-900 font-black' : 'text-gray-700 hover:text-gray-900'
                   }`}
-                  style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
+                  style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
                 >
                   PRACTICE AREAS <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
