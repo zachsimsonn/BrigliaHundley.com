@@ -223,6 +223,15 @@ const App = () => {
           </div>
         );
       
+      case 'blog-post':
+        return (
+          <BlogPostPage 
+            slug={pageParams.slug} 
+            data={data} 
+            onNavigate={handleNavigate} 
+          />
+        );
+      
       case 'practice-area':
         const practiceArea = data.practiceAreas.find(area => 
           area.title.toLowerCase().replace(/\s+/g, '-') === pageParams.area
