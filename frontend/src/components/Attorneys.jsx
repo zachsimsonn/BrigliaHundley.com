@@ -24,9 +24,9 @@ const Attorneys = ({ data, onNavigate }) => {
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
             >
               {/* Attorney Image */}
-              <div className="relative h-80 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center overflow-hidden">
+              <div className="relative h-80 bg-gradient-to-br from-gray-900 to-gray-700 flex items-end justify-center overflow-hidden">
                 {attorney.image && (attorney.image.startsWith('data:') || attorney.image.startsWith('http')) ? (
-                  <img src={attorney.image} alt={`${attorney.name} - ${attorney.position} at Briglia Hundley®`} className="w-full h-full object-cover" />
+                  <img src={attorney.image} alt={`${attorney.name} - ${attorney.position} at Briglia Hundley®`} className="w-full h-full object-cover object-top" />
                 ) : (
                   <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
                     <span className="text-white text-3xl font-bold">
