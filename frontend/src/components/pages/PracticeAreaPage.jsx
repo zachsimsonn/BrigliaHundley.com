@@ -74,7 +74,7 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            <div className="prose prose-lg max-w-none">
+            <div className="max-w-none">
               {/* Hero Image */}
               {practiceArea.image && (
                 <div className="mb-8 rounded-lg overflow-hidden bg-gray-200">
@@ -97,17 +97,17 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
                 </div>
               )}
 
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">
                 {practiceArea.title}
               </h2>
               
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed text-left">
                 {practiceArea.fullDescription || practiceArea.description}
               </p>
 
               {/* Detailed Content Sections */}
               {practiceArea.detailedContent && practiceArea.detailedContent.sections && (
-                <div className="space-y-8 mb-8">
+                <div className="space-y-8 mb-8 text-left">
                   {practiceArea.detailedContent.sections.map((section, index) => (
                     <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4">
                       <h3 className="text-2xl font-semibold text-gray-900 mb-4">{section.title}</h3>
