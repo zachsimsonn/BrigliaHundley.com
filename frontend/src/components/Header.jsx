@@ -95,7 +95,9 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <div className="relative">
                 <button 
                   onClick={() => handleDropdownToggle('attorneys')}
-                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                  className={`flex items-center transition-colors duration-200 font-bold ${
+                    (currentPage === 'attorneys' || currentPage === 'attorney-profile') ? 'text-gray-900 font-black' : 'text-gray-700 hover:text-gray-900'
+                  }`}
                 >
                   Attorneys <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
