@@ -739,7 +739,7 @@ export const siteData = {
       position: "Partner",
       experience: "Teresa Cole has been practicing family law since 1993. She represents clients in divorce, custody, support, and other family law matters before Virginia courts, providing compassionate yet aggressive representation.",
       fullExperience: "Teresa Cole has been practicing family law since 1993. She represents clients in divorce, custody, support, and other family law matters before Virginia courts. Her extensive experience includes complex divorce proceedings, child custody disputes, spousal and child support matters, property division, and domestic relations cases. Ms. Cole is known for her compassionate approach while providing aggressive representation to protect her clients' interests and their families' futures.",
-      image: "https://images.pexels.com/photos/32907707/pexels-photo-32907707.jpeg",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-teresa-cole-800L.jpg",
       phone: "703.883.0209",
       email: "tcole@brigliahundley.com"
     },
