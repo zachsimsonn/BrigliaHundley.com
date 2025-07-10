@@ -870,7 +870,7 @@ export const editableContent = {
   },
   about: {
     title: "About Briglia Hundley®",
-    content: "At Briglia Hundley®, we deliver superior client service and innovative legal strategies throughout Northern Virginia. Since 1993, our award-winning team has been dedicated to achieving the best possible outcomes for clients in Fairfax County, Arlington County, Prince William County, and the greater Washington DC metropolitan area."
+    content: "At Briglia Hundley®, we deliver superior client service and innovative legal strategies throughout Northern Virginia. Since 1993, our award-winning team has been dedicated to achieving the best possible outcomes for clients in Fairfax County, Arlington County, Prince William County, and the greater Washington DC metropolitan area.\n\nAt Briglia Hundley®, our seasoned attorneys are committed to providing superior service on every matter entrusted to our care. Briglia Hundley® is nationally recognized by Best Lawyers as a Tier 1 top firm and is ranked AV Preeminent by Martindale-Hubbell—the highest peer review rating for Legal Excellence and Ethics.\n\nThe attorneys at Briglia Hundley® are skilled litigators and transactional attorneys. Among our ranks are former prosecutors, former federal and state court law clerks, and attorneys who have practiced at some of the largest law firms in the region. Our attorneys employ their extensive experience to provide innovative legal service across several practice areas, including business and commercial law, criminal defense, personal injury, family law, estate planning and administration, municipal law, land use, and real estate law."
   },
   contact: {
     title: "Get Your Free Legal Guide",
