@@ -260,7 +260,7 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
     },
     {
-      title: "Estate Planning",
+      title: "Estate Planning and Administration",
       description: "Comprehensive estate planning services for Northern Virginia families including wills, trusts, and asset protection strategies.",
       fullDescription: "At Briglia Hundley, P.C.®, we help clients throughout Virginia, Maryland, and Washington, D.C., establish comprehensive estate plans that provide greater peace of mind and keep loved ones secure.",
       detailedContent: {
@@ -289,7 +289,7 @@ export const siteData = {
         "Advance Medical Directives",
         "Business Succession Planning"
       ],
-      url: "/estate-planning",
+      url: "/estate-planning-administration",
       localKeywords: "estate planning attorney Fairfax VA, will and trust lawyer Northern Virginia, probate attorney Arlington VA, estate lawyer Prince William County",
       attorneys: ["Teresa S. Cole", "Amy S. Owen"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
