@@ -223,12 +223,24 @@ const App = () => {
         );
       
       case 'practice-area':
+        const practiceArea = data.practiceAreas.find(area => 
+          area.title.toLowerCase().replace(/\s+/g, '-') === pageParams.area
+        );
+        const areaTitle = practiceArea ? practiceArea.title : 'Practice Area';
         return (
-          <PracticeAreaPage 
-            areaName={pageParams.area} 
-            data={data} 
-            onNavigate={handleNavigate} 
-          />
+          <>
+            <SEO 
+              title={areaTitle}
+              description={`Expert ${areaTitle.toLowerCase()} legal services from Briglia Hundley®. Experienced attorneys serving Virginia, Washington DC, and Maryland.`}
+              keywords={`${areaTitle.toLowerCase()}, Virginia ${areaTitle.toLowerCase()}, ${areaTitle.toLowerCase()} attorney, Briglia Hundley`}
+              canonical={`https://brigliahundley.com/practice-area/${pageParams.area}`}
+            />
+            <PracticeAreaPage 
+              areaName={pageParams.area} 
+              data={data} 
+              onNavigate={handleNavigate} 
+            />
+          </>
         );
       
       case 'attorney-profile':
