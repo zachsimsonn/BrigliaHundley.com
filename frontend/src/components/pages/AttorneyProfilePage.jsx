@@ -146,22 +146,22 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">About {attorney.name}</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 text-left">About {attorney.name}</h2>
               
               <div className="mb-8 text-left">
-                <p className="text-gray-600 leading-relaxed text-lg text-left">
+                <p className="text-gray-600 leading-relaxed text-base text-left">
                   {attorney.fullExperience || attorney.experience}
                 </p>
               </div>
 
               {attorney.education && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Education</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Education</h3>
                   <div className="space-y-3 text-left">
                     {attorney.education.map((edu, index) => (
                       <div key={index} className="border-l-4 border-gray-900 pl-4 text-left">
-                        <div className="font-medium text-gray-900 text-left">{edu.degree}</div>
-                        <div className="text-gray-600 text-left">{edu.institution} ({edu.year})</div>
+                        <div className="font-medium text-gray-900 text-base text-left">{edu.degree}</div>
+                        <div className="text-gray-600 text-base text-left">{edu.institution} ({edu.year})</div>
                       </div>
                     ))}
                   </div>
@@ -170,12 +170,12 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.admissions && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Bar Admissions</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Bar Admissions</h3>
                   <div className="grid md:grid-cols-2 gap-2 text-left">
                     {attorney.admissions.map((admission, index) => (
                       <div key={index} className="flex items-start text-left">
                         <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                        <span className="text-gray-600 text-left">{admission}</span>
+                        <span className="text-gray-600 text-base text-left">{admission}</span>
                       </div>
                     ))}
                   </div>
@@ -184,12 +184,12 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.professionalAssociations && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Professional Associations</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Professional Associations</h3>
                   <div className="space-y-2 text-left">
                     {attorney.professionalAssociations.map((association, index) => (
                       <div key={index} className="flex items-start text-left">
                         <Award className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                        <span className="text-gray-600 text-left">{association}</span>
+                        <span className="text-gray-600 text-base text-left">{association}</span>
                       </div>
                     ))}
                   </div>
@@ -198,12 +198,12 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.certifications && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Certifications, Honors & Awards</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Certifications, Honors & Awards</h3>
                   <div className="space-y-2 text-left">
                     {attorney.certifications.map((cert, index) => (
                       <div key={index} className="flex items-start text-left">
                         <Award className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                        <span className="text-gray-600 text-left">{cert}</span>
+                        <span className="text-gray-600 text-base text-left">{cert}</span>
                       </div>
                     ))}
                   </div>
@@ -212,10 +212,10 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.languages && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Languages</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Languages</h3>
                   <div className="flex flex-wrap gap-3 text-left">
                     {attorney.languages.map((language, index) => (
-                      <span key={index} className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">
+                      <span key={index} className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base">
                         {language}
                       </span>
                     ))}
@@ -225,7 +225,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.practiceAreas && (
                 <div className="mb-8 text-left">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Areas of Practice</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Areas of Practice</h3>
                   <div className="flex flex-wrap gap-3 text-left">
                     {attorney.practiceAreas.map((area, index) => {
                       // Find the matching practice area in data to get the URL
@@ -243,7 +243,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                               onNavigate('practice-area', { area: practiceArea.title.toLowerCase().replace(/\s+/g, '-') });
                             }
                           }}
-                          className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm hover:bg-gray-700 transition-colors duration-200 cursor-pointer text-left"
+                          className="bg-gray-900 text-white px-4 py-2 rounded-full text-base hover:bg-gray-700 transition-colors duration-200 cursor-pointer text-left"
                         >
                           {area}
                         </button>
