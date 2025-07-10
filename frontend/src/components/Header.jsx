@@ -57,7 +57,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
                   onClick={() => handleDropdownToggle('services')}
                   className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
                 >
-                  Services <ChevronDown className="ml-1 h-4 w-4" />
+                  Practice Areas <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'services' && (
                   <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
@@ -67,7 +67,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
                           <button
                             key={index}
                             onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                            className="text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200"
+                            className="text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200 font-bold"
                           >
                             {area.title}
                           </button>
