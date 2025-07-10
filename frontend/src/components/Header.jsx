@@ -51,13 +51,13 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
             <nav className="flex space-x-8">
               <button 
                 onClick={() => handleNavigate('home')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                className={getNavItemClass('home')}
               >
                 Home
               </button>
               <button 
                 onClick={() => handleNavigate('about')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                className={getNavItemClass('about')}
               >
                 About
               </button>
@@ -66,7 +66,9 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <div className="relative">
                 <button 
                   onClick={() => handleDropdownToggle('services')}
-                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                  className={`flex items-center transition-colors duration-200 font-bold ${
+                    currentPage === 'practice-area' ? 'text-gray-900 font-black' : 'text-gray-700 hover:text-gray-900'
+                  }`}
                 >
                   Practice Areas <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
