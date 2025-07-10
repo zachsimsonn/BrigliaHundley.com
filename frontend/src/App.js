@@ -215,7 +215,7 @@ const App = () => {
           <div className="min-h-screen bg-white pt-20">
             <SEO 
               title="Blog"
-              description="Legal insights and news from Briglia Hundley®. Stay informed with articles on Virginia law, legal updates, and attorney insights."
+              description="Briglia Hundley Blogs - Stay informed with articles on Virginia law, legal updates, and attorney insights from our experienced legal team."
               keywords="legal blog, Virginia law, legal news, attorney insights, Briglia Hundley blog"
               canonical="https://brigliahundley.com/blog"
             />
