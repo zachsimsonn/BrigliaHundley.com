@@ -60,17 +60,19 @@ const Header = ({ data, onEdit, onNavigate }) => {
                   Services <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'services' && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
-                    <div className="py-2">
-                      {data.practiceAreas.map((area, index) => (
-                        <button
-                          key={index}
-                          onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                          className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors duration-200"
-                        >
-                          {area.title}
-                        </button>
-                      ))}
+                  <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                    <div className="p-4">
+                      <div className="grid grid-cols-4 gap-2">
+                        {data.practiceAreas.map((area, index) => (
+                          <button
+                            key={index}
+                            onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
+                            className="text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200"
+                          >
+                            {area.title}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -85,24 +87,26 @@ const Header = ({ data, onEdit, onNavigate }) => {
                   Attorneys <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'attorneys' && (
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
-                    <div className="py-2">
+                  <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                    <div className="p-4">
                       <button
                         onClick={() => handleNavigate('attorneys')}
-                        className="block w-full text-left px-4 py-2 text-gray-900 font-medium hover:bg-gray-50 border-b border-gray-100"
+                        className="w-full text-left px-3 py-2 text-gray-900 font-medium hover:bg-gray-50 border-b border-gray-100 mb-2 rounded"
                       >
                         All Attorneys
                       </button>
-                      {data.attorneys.map((attorney, index) => (
-                        <button
-                          key={index}
-                          onClick={() => handleNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
-                          className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors duration-200"
-                        >
-                          <div className="font-medium">{attorney.name}</div>
-                          <div className="text-sm text-gray-500">{attorney.position}</div>
-                        </button>
-                      ))}
+                      <div className="grid grid-cols-4 gap-2">
+                        {data.attorneys.map((attorney, index) => (
+                          <button
+                            key={index}
+                            onClick={() => handleNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
+                            className="text-left px-3 py-2 text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200"
+                          >
+                            <div className="font-medium text-sm">{attorney.name}</div>
+                            <div className="text-xs text-gray-500">{attorney.position}</div>
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}
