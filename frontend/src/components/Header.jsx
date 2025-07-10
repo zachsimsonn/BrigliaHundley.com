@@ -111,7 +111,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                   OUR ATTORNEYS <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'attorneys' && (
-                  <div className="absolute top-full left-0 mt-2 w-[32rem] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                  <div className="absolute top-full left-0 mt-2 w-[40rem] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                     <div className="p-4">
                       <button
                         onClick={() => handleNavigate('attorneys')}
@@ -119,7 +119,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                       >
                         All Attorneys
                       </button>
-                      <div className="grid grid-cols-3 gap-2">
+                      <div className="grid grid-cols-4 gap-2">
                         {data.attorneys.map((attorney, index) => (
                           <button
                             key={index}
