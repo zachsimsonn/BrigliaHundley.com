@@ -17,82 +17,179 @@ export const siteData = {
   practiceAreas: [
     {
       title: "Family Law",
-      description: "Comprehensive family law services in Northern Virginia including divorce, custody, and support matters for Fairfax, Arlington, and Prince William County residents.",
-      fullDescription: "Our experienced family law attorneys serve clients throughout Northern Virginia, including Tysons Corner, Fairfax County, Arlington County, and Prince William County. We handle divorce proceedings, child custody disputes, spousal support, property division, and domestic relations matters in Virginia state courts.",
+      description: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children.",
+      fullDescription: "At Briglia Hundley, P.C.®, we understand that family law matters can be emotionally charged and complex. Our experienced attorneys are dedicated to providing compassionate and effective legal representation in a variety of family law issues, including divorce, child custody, child support, and property division. We strive to protect your rights and help you navigate through these challenging times with confidence.",
+      services: [
+        "Divorce",
+        "Child Custody", 
+        "Child Support",
+        "Property Division",
+        "Adoption",
+        "Spousal Support"
+      ],
       url: "/family-law",
-      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County"
+      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
+      attorneys: ["James W. Hundley", "Steven D. Briglia", "Courtney B. Harden", "Amy S. Owen", "Teresa S. Cole"]
     },
     {
-      title: "Commercial Litigation",
-      description: "Strategic business litigation services for Northern Virginia companies in Fairfax, Arlington, and surrounding areas.",
-      fullDescription: "Our commercial litigation team represents businesses throughout Northern Virginia in complex disputes. We serve clients in Tysons Corner, McLean, Vienna, Arlington, and Fairfax County in state and federal courts including the Eastern District of Virginia.",
-      url: "/commercial-litigation",
-      localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Tysons Corner"
+      title: "Criminal Law",
+      description: "For every criminal offense, there is a defense. You want a lawyer who will fight for you. With a comprehensive criminal law practice, our attorneys are equipped to defend you in state and federal courts from all manner of misdemeanor and felony charges, ranging from traffic infractions to serious felonies.",
+      fullDescription: "Our criminal defense attorneys have extensive experience protecting clients' rights in both state and federal courts. We understand that criminal charges can have life-altering consequences, and we fight aggressively to protect your freedom, reputation, and future. Whether you're facing misdemeanor charges or serious felonies, we provide comprehensive defense strategies tailored to your specific situation.",
+      services: [
+        "White Collar Crimes (Fraud, Embezzlement, Computer Crimes, Money Laundering)",
+        "Drug Charges (Possession, Distribution, Conspiracy, Manufacturing)",
+        "DUI & DWI Defense",
+        "Juvenile Offenses (Underage Drinking, Traffic Offenses, Theft, Assault)",
+        "Larcenies (Shoplifting, Credit Card Theft, Burglary, Robbery)",
+        "Traffic Offenses (Speeding, Reckless Driving, Suspended License, Hit-and-Run)"
+      ],
+      url: "/criminal-law",
+      localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County",
+      attorneys: ["James W. Hundley", "Steven D. Briglia"]
+    },
+    {
+      title: "Business Litigation",
+      description: "Briglia Hundley® represents a wide range of businesses and individuals in the state and federal courts in Virginia, Maryland, and the District of Columbia.",
+      fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
+      services: [
+        "Employment Law Disputes",
+        "Real Estate Litigation",
+        "Breach of Contract and Resulting Torts",
+        "Uniform Commercial Code Issues",
+        "Insurance Coverage Challenges",
+        "Fiduciary Litigation",
+        "Fraud Investigations and Workouts",
+        "Failed Transaction Disputes"
+      ],
+      url: "/business-litigation",
+      localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Tysons Corner",
+      attorneys: ["Steven D. Briglia", "James W. Hundley"]
     },
     {
       title: "Corporate Law", 
-      description: "Complete corporate legal services for Northern Virginia businesses in Fairfax County, Arlington, and Prince William County.",
-      fullDescription: "We provide comprehensive corporate legal services to businesses throughout Northern Virginia. Our attorneys assist companies in Tysons Corner, Fairfax, Arlington, McLean, and surrounding areas with business formation, contracts, mergers and acquisitions, and ongoing corporate compliance.",
+      description: "We provide customized and tailored advice to our clients, of all sizes and in all stages of growth, regarding corporate governance matters, entity formation and structural issues.",
+      fullDescription: "Our corporate law practice serves businesses of all sizes and stages of development. We provide comprehensive legal counsel on corporate governance, entity formation, mergers and acquisitions, contract negotiations, and ongoing corporate compliance matters. Our attorneys understand the unique challenges facing businesses today and provide practical, results-oriented legal solutions.",
+      services: [
+        "Entity Formation and Structure",
+        "Corporate Governance",
+        "Mergers and Acquisitions",
+        "Contract Drafting and Negotiation",
+        "Corporate Compliance",
+        "General Counsel Services",
+        "Business Transactions",
+        "Securities Law Compliance"
+      ],
       url: "/corporate-law",
-      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Tysons Corner"
+      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Tysons Corner",
+      attorneys: ["Steven D. Briglia"]
     },
     {
       title: "Personal Injury",
-      description: "Dedicated personal injury representation for accident victims throughout Northern Virginia and the greater Washington DC area.",
-      fullDescription: "Our personal injury attorneys represent accident victims throughout Northern Virginia, including Fairfax County, Arlington County, Prince William County, and surrounding areas. We handle car accidents, slip and falls, medical malpractice, and wrongful death cases in Virginia courts.",
+      description: "A personal injury can change your life in an instant. You want an attorney who can help you on the path to recovery. At the Fairfax County law offices of Briglia Hundley, P.C.®, we protect the rights of individuals who have been seriously injured due to the negligence of others.",
+      fullDescription: "When you're seriously injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you recover the compensation you deserve. Our personal injury attorneys have a proven track record of success in handling complex injury cases, from car accidents to medical malpractice. We work on a contingency fee basis, meaning you don't pay unless we win your case.",
+      services: [
+        "Car Accidents",
+        "Truck Accidents",
+        "Motorcycle Accidents",
+        "Slip and Fall Accidents",
+        "Medical Malpractice",
+        "Wrongful Death",
+        "Product Liability",
+        "Premises Liability"
+      ],
       url: "/personal-injury",
-      localKeywords: "personal injury lawyer Fairfax VA, car accident attorney Northern Virginia, injury lawyer Arlington VA, accident attorney Prince William County"
+      localKeywords: "personal injury lawyer Fairfax VA, car accident attorney Northern Virginia, injury lawyer Arlington VA, accident attorney Prince William County",
+      attorneys: ["James W. Hundley"]
     },
     {
       title: "Estate Planning",
-      description: "Comprehensive estate planning services for Northern Virginia families in Fairfax, Arlington, and Prince William County.",
-      fullDescription: "Our estate planning attorneys help Northern Virginia families protect their assets and plan for the future. We serve clients in Tysons Corner, McLean, Vienna, Arlington, Fairfax County, and Prince William County with wills, trusts, estate administration, and probate matters.",
+      description: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for your dependents throughout their lives.",
+      fullDescription: "At Briglia Hundley, P.C.®, we help clients throughout Virginia, Maryland, and Washington, D.C., establish comprehensive estate plans that provide greater peace of mind and keep loved ones secure. Our estate planning services are designed to protect your assets, minimize tax liability, and ensure your wishes are carried out according to your specific instructions.",
+      services: [
+        "Wills and Trusts",
+        "Estate Administration",
+        "Probate Proceedings",
+        "Tax Planning",
+        "Asset Protection",
+        "Powers of Attorney",
+        "Advance Medical Directives",
+        "Business Succession Planning"
+      ],
       url: "/estate-planning",
-      localKeywords: "estate planning attorney Fairfax VA, will and trust lawyer Northern Virginia, probate attorney Arlington VA, estate lawyer Prince William County"
+      localKeywords: "estate planning attorney Fairfax VA, will and trust lawyer Northern Virginia, probate attorney Arlington VA, estate lawyer Prince William County",
+      attorneys: ["Teresa S. Cole", "Amy S. Owen"]
     },
     {
-      title: "Real Estate Development",
-      description: "Expert real estate legal services for Northern Virginia property development and transactions.",
-      fullDescription: "Our real estate attorneys assist with property transactions and development projects throughout Northern Virginia. We represent clients in Fairfax County, Arlington County, Prince William County, and surrounding areas in residential and commercial real estate matters.",
-      url: "/real-estate-development",
-      localKeywords: "real estate attorney Fairfax VA, property lawyer Northern Virginia, real estate closing Arlington VA, development lawyer Tysons Corner"
-    },
-    {
-      title: "Criminal Defense",
-      description: "Experienced criminal defense representation in Northern Virginia courts including Fairfax, Arlington, and Prince William County.",
-      fullDescription: "Our criminal defense attorneys provide aggressive representation for clients facing criminal charges throughout Northern Virginia. We appear in courts in Fairfax County, Arlington County, Prince William County, and federal courts in the Eastern District of Virginia.",
-      url: "/criminal-defense",
-      localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County"
+      title: "Real Estate Law",
+      description: "Our real estate practice focuses on real estate transactions involving homeowners, builders, developers, real estate brokers, mortgage originators and lenders, title insurers, and other members of the real estate community.",
+      fullDescription: "Our real estate attorneys provide comprehensive legal services for all types of real estate transactions and disputes. Whether you're buying your first home, developing commercial property, or involved in a real estate dispute, we have the experience and knowledge to guide you through the complex legal issues that can arise in real estate matters.",
+      services: [
+        "Residential Real Estate Transactions",
+        "Commercial Real Estate",
+        "Real Estate Development",
+        "Title Insurance Issues",
+        "Real Estate Litigation",
+        "Landlord-Tenant Disputes",
+        "Zoning and Land Use",
+        "Construction Law"
+      ],
+      url: "/real-estate-law",
+      localKeywords: "real estate attorney Fairfax VA, property lawyer Northern Virginia, real estate closing Arlington VA, development lawyer Tysons Corner",
+      attorneys: ["Steven D. Briglia"]
     },
     {
       title: "Employment Law",
-      description: "Comprehensive employment law services for both employers and employees.",
-      url: "/employment-law"
-    },
-    {
-      title: "Business Acquisitions",
-      description: "Expert guidance through complex business acquisition and merger transactions.",
-      url: "/business-acquisitions"
+      description: "Our employment practice involves both advising employers on employment issues that arise in the workplace and litigating a variety of legal issues arising from the employer-employee relationship.",
+      fullDescription: "We have significant experience handling discrimination and retaliation claims filed in federal and state courts in Virginia, Maryland, and the District of Columbia, as well as before the Equal Employment Opportunity Commission and local state and county agencies. We also regularly handle employment contract disputes, including claims for wrongful discharge and violation of non-compete and confidentiality agreements.",
+      services: [
+        "Discrimination Claims",
+        "Retaliation Claims",
+        "Wrongful Termination",
+        "Non-Compete Agreements",
+        "Confidentiality Agreements",
+        "Employment Contract Disputes",
+        "Workplace Harassment",
+        "Wage and Hour Issues"
+      ],
+      url: "/employment-law",
+      localKeywords: "employment lawyer Fairfax VA, discrimination attorney Northern Virginia, wrongful termination Arlington VA, workplace attorney Tysons Corner",
+      attorneys: ["Steven D. Briglia"]
     },
     {
       title: "Municipal Law",
-      description: "Legal counsel and representation for local government and municipal matters.",
-      url: "/municipal-law"
+      description: "Businesses and individuals face a variety of municipal law problems. We represent local municipalities, businesses, and individuals involved in municipal law disputes throughout Virginia.",
+      fullDescription: "From zoning issues to disputes over eminent domain, we protect our clients' rights and help them reach a fair solution. Whether your request for licenses and permits has been denied or you have a land dispute with your town, it is important to determine your options and protect your rights. Our municipal law practice serves both municipalities and private parties in navigating complex local government issues.",
+      services: [
+        "Zoning and Land Use",
+        "Eminent Domain",
+        "Municipal Litigation",
+        "Permits and Licensing",
+        "Municipal Governance",
+        "Public-Private Partnerships",
+        "Administrative Law",
+        "Local Government Representation"
+      ],
+      url: "/municipal-law",
+      localKeywords: "municipal law attorney Fairfax VA, zoning lawyer Northern Virginia, eminent domain Arlington VA, local government attorney Tysons Corner",
+      attorneys: ["Steven D. Briglia"]
     },
     {
-      title: "Community Association Law",
-      description: "Specialized legal services for homeowners associations and community organizations.",
-      url: "/community-association"
-    },
-    {
-      title: "Eminent Domain",
-      description: "Protecting property owners' rights in eminent domain and condemnation proceedings.",
-      url: "/eminent-domain"
-    },
-    {
-      title: "Civil Litigation",
-      description: "Comprehensive civil litigation services across multiple areas of law.",
-      url: "/civil-litigation"
+      title: "Appellate Litigation",
+      description: "The conclusion of a trial is not always the end of a case. Both civil litigants and criminal defendants often continue pursuing their rights on appeal.",
+      fullDescription: "Our attorneys have experience handling both civil and criminal cases at all levels of the state and federal courts in the mid-Atlantic, including the Fourth Circuit, D.C. Circuit, and Supreme Court of the United States. We understand the unique challenges of appellate practice and work diligently to present compelling arguments that can overturn unfavorable trial court decisions.",
+      services: [
+        "Civil Appeals",
+        "Criminal Appeals",
+        "Federal Court Appeals",
+        "State Court Appeals",
+        "Supreme Court Practice",
+        "Appellate Brief Writing",
+        "Oral Argument",
+        "Post-Conviction Relief"
+      ],
+      url: "/appellate-litigation",
+      localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, Supreme Court attorney Arlington VA, appellate litigation Tysons Corner",
+      attorneys: ["James W. Hundley", "Steven D. Briglia"]
     }
   ],
 
