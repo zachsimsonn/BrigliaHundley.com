@@ -101,7 +101,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                   className={`flex items-center transition-colors duration-200 ${
                     (currentPage === 'attorneys' || currentPage === 'attorney-profile') ? 'text-gray-900 font-black' : 'text-gray-700 hover:text-gray-900'
                   }`}
-                  style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
+                  style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
                 >
                   OUR ATTORNEYS <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
