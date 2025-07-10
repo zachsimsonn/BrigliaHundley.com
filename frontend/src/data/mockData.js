@@ -468,7 +468,7 @@ export const siteData = {
       localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, Supreme Court attorney Arlington VA, appellate litigation Tysons Corner",
       attorneys: ["James W. Hundley", "Steven D. Briglia"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg"
-    },
+    }
     {
       title: "Eminent Domain",
       description: "Protecting property owners' rights in eminent domain and condemnation proceedings throughout Virginia.",
