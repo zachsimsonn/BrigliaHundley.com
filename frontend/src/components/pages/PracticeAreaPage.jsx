@@ -80,32 +80,48 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
               </h2>
               
               <p className="text-gray-600 mb-8">
-                At Briglia Hundley®, our experienced {practiceArea.title.toLowerCase()} attorneys provide comprehensive legal services 
-                tailored to meet your specific needs. With decades of combined experience, we understand the complexities involved 
-                in {practiceArea.title.toLowerCase()} matters and are committed to achieving the best possible outcomes for our clients.
+                {practiceArea.fullDescription || practiceArea.description}
               </p>
+
+              {practiceArea.services && (
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Services Include:</h3>
+                  <ul className="space-y-3 text-gray-600">
+                    {practiceArea.services.map((service, index) => (
+                      <li key={index} className="flex items-start">
+                        <Scale className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                        <span>{service}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Approach</h3>
               <p className="text-gray-600 mb-8">
-                We believe in providing personalized attention to each client, ensuring that you understand your options and 
+                At Briglia Hundley®, we believe in providing personalized attention to each client, ensuring that you understand your options and 
                 feel confident in the legal strategy we develop together. Our team combines innovative legal strategies with 
-                time-tested approaches to deliver superior results.
+                time-tested approaches to deliver superior results in {practiceArea.title.toLowerCase()} matters.
               </p>
 
               <div className="bg-gray-50 rounded-lg p-8 mb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Briglia Hundley®?</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Briglia Hundley® for {practiceArea.title}?</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <Award className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                    <span>Tier 1 ranked law firm with proven track record</span>
+                    <span>Tier 1 ranked law firm with proven track record in {practiceArea.title.toLowerCase()}</span>
                   </li>
                   <li className="flex items-start">
                     <Users className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                    <span>Experienced attorneys with specialized expertise</span>
+                    <span>Experienced attorneys with specialized expertise in {practiceArea.title.toLowerCase()}</span>
                   </li>
                   <li className="flex items-start">
                     <Scale className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                     <span>Comprehensive legal strategies and personalized service</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Phone className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                    <span>Serving Northern Virginia, Washington D.C., and Maryland</span>
                   </li>
                 </ul>
               </div>
