@@ -289,6 +289,18 @@ test_plan:
         agent: "main"
         comment: "Fixed blog post navigation error and updated with most recent content from brigliahundley.com (April-June 2025). Added articles: 'Arrested at a Protest', 'Crawford v. Washington', 'Business Attorney Pros/Cons', 'Hidden Assets in Divorce', 'See Doctor After Car Accident', 'Social Media in Family Law'. Fixed blog images to show actual photos instead of placeholders. Created BlogPostPage component with professional layout and proper routing."
 
+  - task: "Update logo to new bhlogo.png"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js, frontend/src/components/SEO.jsx, frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Updated logo references from null to bhlogo.png with cache busting parameter. Updated SEO component and structured data to use new logo. Frontend service restarted to clear cache."
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
