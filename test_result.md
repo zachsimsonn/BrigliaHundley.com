@@ -277,6 +277,18 @@ test_plan:
         agent: "main"
         comment: "Added SEO component with dynamic titles to all pages. Now each page shows proper title in browser tab: Home, About Us, Attorneys, Testimonials, Contact Us, Blog, plus dynamic titles for attorney profiles and practice areas."
 
+  - task: "Fix blog navigation and add real content"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js, frontend/src/components/pages/BlogPostPage.jsx, frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Fixed blog post navigation that was redirecting to home page. Added real blog content from brigliahundley.com including Virginia Supreme Court case analysis, PCAOB enforcement article, DWI arrest guide, social media litigation, business formation, and estate planning. Created BlogPostPage component with full article view, author bios, related articles, and CTA sections. Added blog-post route to App.js."
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
@@ -292,3 +304,5 @@ agent_communication:
     message: "Enhanced navigation styling and dropdown layout: Made all 7 main navigation pages bold for better prominence. Converted both Practice Areas and Attorneys dropdown menus from single column to 4x4 and 3x5 grid layouts respectively for better space utilization and more organized presentation."
   - agent: "main"
     message: "Implemented dynamic page titles: Each page now displays appropriate titles in the browser tab - 'About Us - Briglia Hundley®', 'Attorneys - Briglia Hundley®', etc. Attorney profiles show 'Attorney Name - Position - Briglia Hundley®' and practice areas show 'Practice Area - Briglia Hundley®'. This improves SEO and user experience with clear page identification."
+  - agent: "main"
+    message: "Fixed blog functionality: Blog posts now navigate to individual article pages instead of redirecting to home page. Updated blog content with real articles from brigliahundley.com including recent Virginia Supreme Court ruling analysis, PCAOB enforcement insights, DWI arrest guidance, and more. Created comprehensive BlogPostPage component with professional layout, author bios, related articles, sharing functionality, and consultation CTAs."
