@@ -967,6 +967,146 @@ export const siteData = {
       professionalAssociations: [
         "Fairfax Bar Association – Young Lawyers Section"
       ]
+    },
+    {
+      name: "Lauren L. Gill",
+      position: "Associate",
+      experience: "Lauren L. Gill is an associate attorney supporting the firm's family law practice.",
+      fullBio: "Lauren L. Gill is an associate attorney supporting the firm's family law practice.\n\nSince her admission to the Virginia State Bar in October 2022, Ms. Gill's legal practice has focused exclusively on family law matters. She has experience handling divorce cases, custody determinations, child support issues, prenuptial agreements, and other domestic law matters.\n\nMs. Gill received her undergraduate degree in Political Economy from Hillsdale College in Michigan. She was a delegate on Hillsdale College's Student Federation and a member of Pi Beta Phi women's fraternity. Ms. Gill spent her weekends volunteering at the local domestic violence shelter and assisting with her sorority's philanthropic events.\n\nShe began her legal education at Concordia University Law School in Idaho, where she was a member of the Concordia Law Review and the Treasurer for the Idaho Women's Legal Society. Due to the strength of her academic performance at Concordia, Ms. Gill was able to transfer to George Mason University's Antonin Scalia Law School where she received the school's Highest Achievement Award for Trial Advocacy. She graduated in 2022.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-lauren-gill-u800ds.jpg",
+      phone: "703.883.0215",
+      email: "lgill@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "George Mason Antonin Scalia Law School",
+          year: 2022
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "Hillsdale College",
+          year: 2017
+        }
+      ],
+      admissions: [
+        "Virginia, 2022"
+      ],
+      practiceAreas: [
+        "Family Law"
+      ],
+      professionalAssociations: [
+        "Fairfax Bar Association",
+        "Fairfax Bar Association – Young Lawyers Section",
+        "Virginia Trial Lawyers Association",
+        "Virginia Bar Association"
+      ],
+      blogPosts: [
+        {
+          title: "Social Media and Its Impact on Family Law Litigation",
+          date: "2/13/2025",
+          url: "https://brigliahundley.com/blog/social-media-impact-family-law-litigation"
+        },
+        {
+          title: "The How-to Guide to Living Separate and Apart Under the Same Roof",
+          date: "11/13/2024",
+          url: "https://brigliahundley.com/blog/living-separate-apart-same-roof-guide"
+        },
+        {
+          title: "What Type of Divorce is the Right Fit for You?",
+          date: "8/14/2024",
+          url: "https://brigliahundley.com/blog/what-type-divorce-right-fit"
+        }
+      ]
+    },
+    {
+      name: "Hannah Merrill",
+      position: "Associate",
+      experience: "Hannah Merrill is an associate attorney supporting the firm's family law and eminent domain practices. She joined the firm after serving as a law clerk for the Honorable Penney S. Azcarate at Fairfax County Circuit Court and the Honorable Sookyoung Shin at the Massachusetts Appeals Court.",
+      fullBio: "Hannah Merrill is an associate attorney supporting the firm's family law and eminent domain practices. She joined the firm after serving as a law clerk for the Honorable Penney S. Azcarate at Fairfax County Circuit Court and the Honorable Sookyoung Shin at the Massachusetts Appeals Court.\n\nMs. Merrill received her undergraduate degree from Boston College and her law degree from William & Mary Law School. While in law school, she was a Notes Editor for the Journal of Race, Gender, and Social Justice, where her note on employment discrimination was published, and served as Development Justice for the William & Mary Moot Court team. In her role with the Moot Court team, she won the Herbert Wechsler National Criminal Moot Court Competition, was a semi-finalist in the New York City Bar's National Moot Court Competition and was inducted into the Order of the Barristers. Ms. Merrill was also a teaching assistant for William & Mary's Advanced Brief Writing and Employment Law courses.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-hannah-merrill-u800ds.jpg",
+      phone: "703.883.0216",
+      email: "hmerrill@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "William & Mary School of Law",
+          year: 2022
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "Boston College",
+          year: 2019
+        }
+      ],
+      admissions: [
+        "Virginia, 2023",
+        "Massachusetts, 2022"
+      ],
+      practiceAreas: [
+        "Family Law",
+        "Eminent Domain"
+      ],
+      professionalAssociations: [
+        "Fairfax Bar Association",
+        "Virginia Bar Association",
+        "Massachusetts Bar Association"
+      ]
+    },
+    {
+      name: "Jacob C. DeRue",
+      position: "Associate",
+      experience: "Jacob DeRue is an associate attorney supporting the firm's community association department, handling all manner of such needs, including general litigation, advice regarding governance and dispute resolution, rules enforcement, and collections. He also works in the business litigation and corporate law practice groups.",
+      fullBio: "Jacob DeRue is an associate attorney supporting the firm's community association department, handling all manner of such needs, including general litigation, advice regarding governance and dispute resolution, rules enforcement, and collections. He also works in the business litigation and corporate law practice groups.\n\nMr. DeRue received his undergraduate degree in Political Science, Psychology, Criminal Justice, and Sociology, summa cum laude, from Thiel College and his law degree from George Mason University Antonin Scalia Law School. During his undergraduate studies, Mr. DeRue interned for the Honorable Charles J. Siragusa of the Western District of New York. While in law school, Mr. DeRue was a member of the Journal of Law, Economics, and Policy. He also served as the Pro Bono Pledge Coordinator for the George Mason Pro Bono Society, promoting pro bono work for law students. Further, he was a member of the Judges Committee in the Alternative Dispute Resolution Society and the Vice President of Media Relations for the Scalia Law Trial Advocacy Association.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jacob-derue-u800ds.jpg",
+      phone: "703.883.0217",
+      email: "jderue@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "George Mason University Antonin Scalia Law School",
+          year: 2024
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "Thiel College",
+          year: 2020
+        }
+      ],
+      admissions: [
+        "United States District Court, Eastern District of Virginia, 2025",
+        "United States District Court, Western District of Virginia, 2025",
+        "Virginia, 2024"
+      ],
+      practiceAreas: [
+        "Corporate Law",
+        "Commercial and Business Litigation",
+        "Civil Litigation",
+        "Employment Law"
+      ],
+      professionalAssociations: [
+        "Virginia Bar Association",
+        "Fairfax Bar Association",
+        "American Bar Association",
+        "Virginia Trial Lawyers Association"
+      ],
+      blogPosts: [
+        {
+          title: "The Different Business Entities – Which is Best for Your Business",
+          date: "11/27/2023",
+          url: "https://brigliahundley.com/blog/business-entities-guide",
+          coAuthor: "Jim Hundley"
+        },
+        {
+          title: "The Slippery Roads Defense in Virginia",
+          date: "2/4/2023",
+          url: "https://brigliahundley.com/blog/slippery-roads-defense-virginia"
+        },
+        {
+          title: "Tortious Interference With Business",
+          date: "11/30/2022",
+          url: "https://brigliahundley.com/blog/tortious-interference-business"
+        }
+      ]
     }
   ],
 
