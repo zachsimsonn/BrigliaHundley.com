@@ -62,7 +62,7 @@ const Hero = ({ data, editableContent }) => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 font-semibold"
+                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 font-semibold"
                 onClick={() => window.location.href = `tel:${data.business.phone}`}
               >
                 {editableContent.hero.buttonPhone}
