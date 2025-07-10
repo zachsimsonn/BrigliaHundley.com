@@ -296,7 +296,7 @@ export const siteData = {
     },
     {
       title: "Real Estate Law",
-      description: "Our real estate practice focuses on real estate transactions involving homeowners, builders, developers, real estate brokers, mortgage originators and lenders, title insurers, and other members of the real estate community.",
+      description: "Expert real estate legal services for property transactions, development, and litigation throughout Northern Virginia.",
       fullDescription: "Our real estate attorneys provide comprehensive legal services for all types of real estate transactions and disputes. Whether you're buying your first home, developing commercial property, or involved in a real estate dispute, we have the experience and knowledge to guide you through the complex legal issues.",
       detailedContent: {
         sections: [
