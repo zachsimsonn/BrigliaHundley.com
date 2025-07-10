@@ -52,8 +52,8 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
           </div>
 
           {/* Centered Navigation */}
-          <div className="hidden md:flex items-center justify-center flex-1 px-8">
-            <nav className="flex space-x-6">
+          <div className="hidden md:flex items-center justify-center flex-1 px-4">
+            <nav className="flex space-x-4">
               <button 
                 onClick={() => handleNavigate('home')}
                 className={getNavItemClass('home')}
@@ -153,8 +153,8 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
             </nav>
           </div>
             
-          {/* Right Side Buttons - Moved further right */}
-          <div className="hidden md:flex items-center space-x-4 flex-shrink-0 ml-8">
+          {/* Right Side Buttons - Compact spacing */}
+          <div className="hidden md:flex items-center space-x-2 flex-shrink-0 ml-4">
             <Button 
               variant="outline" 
               className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
