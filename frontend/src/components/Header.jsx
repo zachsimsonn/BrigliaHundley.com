@@ -6,6 +6,17 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
+  // Function to determine if a page is active and return appropriate classes
+  const getNavItemClass = (page) => {
+    const baseClass = "transition-colors duration-200 font-bold";
+    const isActive = currentPage === page;
+    
+    if (isActive) {
+      return `${baseClass} text-gray-900 font-black`; // Darker and bolder when active
+    }
+    return `${baseClass} text-gray-700 hover:text-gray-900`;
+  };
+
   const handleDropdownToggle = (dropdown) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
