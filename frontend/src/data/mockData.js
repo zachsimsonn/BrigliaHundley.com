@@ -882,6 +882,91 @@ export const siteData = {
         "Associate Attorney, Surovell Isaacs & Levy PLC",
         "Law Clerk, Fairfax County Circuit Court"
       ]
+    },
+    {
+      name: "Madison A. Beatty",
+      position: "Associate",
+      experience: "Madison Beatty is an associate attorney supporting the firm's criminal defense and civil litigation practices. She is also a Deputy Town Attorney for the Town of Vienna, Virginia, a role which includes prosecuting criminal and traffic charges on behalf of the Town.",
+      fullBio: "Madison Beatty is an associate attorney supporting the firm's criminal defense and civil litigation practices. She is also a Deputy Town Attorney for the Town of Vienna, Virginia, a role which includes prosecuting criminal and traffic charges on behalf of the Town. Prior to becoming an attorney, Ms. Beatty was a paralegal for four years, providing legal support on matters that involved contract disputes, civil litigation, and trusts and estates.\n\nMs. Beatty received her undergraduate degree in Legal Studies, summa cum laude, from the University of Central Florida and her law degree from William & Mary Law School. While in law school, she was a member of the Law Journal of Race, Gender, and Social Justice, she served as Vice President of the Virginia Bar Law School Council, and she was a Board Member of the Public Service Fund. Ms. Beatty was also a teaching assistant for William & Mary's Elder & Disability Law Clinic where she worked on a variety of cases, including guardianship and adoption matters.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-madison-beatty-u800ds.jpg",
+      phone: "703.883.0213",
+      email: "mbeatty@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "William & Mary School of Law",
+          year: 2022
+        },
+        {
+          degree: "Bachelor of Science",
+          institution: "University of Central Florida",
+          year: 2018
+        }
+      ],
+      admissions: [
+        "Virginia, 2022",
+        "Eastern District of Virginia, 2023"
+      ],
+      practiceAreas: [
+        "Criminal",
+        "Corporate and Business Litigation",
+        "Civil Litigation",
+        "Personal Injury"
+      ],
+      professionalAssociations: [
+        "Virginia Bar Association",
+        "Fairfax Bar Association – Young Lawyers Section",
+        "Northern Virginia Women Attorneys Association – Board Member"
+      ],
+      blogPosts: [
+        {
+          title: "Should You See a Doctor After a Car Accident?",
+          date: "3/3/2025",
+          url: "https://brigliahundley.com/blog/see-doctor-after-car-accident"
+        },
+        {
+          title: "A Guide to Fighting a DWI in Virginia",
+          date: "12/29/2024",
+          url: "https://brigliahundley.com/blog/fighting-dwi-virginia-guide"
+        }
+      ]
+    },
+    {
+      name: "Raymond Starks-Taylor",
+      position: "Associate",
+      experience: "Raymond Starks-Taylor is an associate attorney supporting the firm's business litigation, corporate law, and municipal and governmental practice groups. He is also a Deputy Town Attorney for the Town of Herndon, Virginia, a role which includes prosecuting criminal and traffic charges on behalf of the Town.",
+      fullBio: "Raymond Starks-Taylor is an associate attorney supporting the firm's business litigation, corporate law, and municipal and governmental practice groups. He is also a Deputy Town Attorney for the Town of Herndon, Virginia, a role which includes prosecuting criminal and traffic charges on behalf of the Town.\n\nMr. Starks-Taylor has practiced law since 2019 and has extensive legal experience. Prior to joining Briglia Hundley®, he was an Assistant Commonwealth's Attorney in Fairfax County where he prosecuted numerous criminal cases and gained invaluable courtroom experience, including trying several jury trials. Before joining the Commonwealth's Attorney's Office, Mr. Starks-Taylor was an attorney adviser for the U.S. Small Business Administration where he managed COVID-19 Economic Injury Disaster Loans and other programs designed to help small businesses overcome disasters. Mr. Starks-Taylor began his legal career as an associate attorney at a law firm in Iowa where he advised small business owners, litigated civil matters, and defended clients facing criminal charges.\n\nMr. Starks-Taylor received his undergraduate degree from Drake University in 2016. He then graduated from Drake University Law School in 2019. While at Drake University Law School, he served as a student attorney in the Drake Legal Clinic where he represented indigent clients. He was also the research editor for the Drake Journal of Agricultural Law.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-raymond-starks-taylor-u800ds.jpg",
+      phone: "703.883.0214",
+      email: "rstarkstaylor@brigliahundley.com",
+      education: [
+        {
+          degree: "Law Degree",
+          institution: "Drake University Law School",
+          year: 2019
+        },
+        {
+          degree: "Undergraduate Degree",
+          institution: "Drake University",
+          year: 2016
+        }
+      ],
+      admissions: [
+        "Iowa 2019",
+        "Virginia 2022"
+      ],
+      practiceAreas: [
+        "Civil Litigation",
+        "Corporate and Business Litigation"
+      ],
+      pastEmployment: [
+        "Associate Attorney, Moore, McKibben, Goodman & Lorenz LLP",
+        "Attorney Advisor, United States Small Business Administration",
+        "Assistant Commonwealth's Attorney, Office of the Fairfax Commonwealth's Attorney"
+      ],
+      professionalAssociations: [
+        "Fairfax Bar Association – Young Lawyers Section"
+      ]
     }
   ],
 
