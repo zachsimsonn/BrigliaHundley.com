@@ -784,7 +784,7 @@ export const siteData = {
       position: "Associate",
       experience: "Madison Beatty supports criminal defense and civil litigation practices. She assists clients with legal research, case preparation, and representation in various legal matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Madison Beatty supports criminal defense and civil litigation practices. She assists clients with legal research, case preparation, and representation in various legal matters. Her work includes supporting complex criminal defense cases, civil litigation matters, and providing comprehensive legal research and analysis. Ms. Beatty brings dedication and attention to detail to each case, working closely with senior attorneys to ensure the best possible outcomes for clients.",
-      image: "/api/placeholder/300/400",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-madison-beatty-800rrsa.jpg",
       phone: "703.883.0214",
       email: "mbeatty@brigliahundley.com"
     },
