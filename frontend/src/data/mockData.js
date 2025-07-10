@@ -52,7 +52,7 @@ export const siteData = {
     },
     {
       title: "Criminal Law",
-      description: "For every criminal offense, there is a defense. You want a lawyer who will fight for you. With a comprehensive criminal law practice, our attorneys are equipped to defend you in state and federal courts from all manner of misdemeanor and felony charges, ranging from traffic infractions to serious felonies.",
+      description: "Experienced criminal defense representation for all manner of misdemeanor and felony charges in state and federal courts.",
       fullDescription: "Our criminal defense attorneys have extensive experience protecting clients' rights in both state and federal courts. We understand that criminal charges can have life-altering consequences, and we fight aggressively to protect your freedom, reputation, and future.",
       detailedContent: {
         sections: [
