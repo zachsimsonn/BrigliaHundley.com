@@ -220,7 +220,7 @@ export const siteData = {
         "Securities Law Compliance"
       ],
       url: "/corporate-law",
-      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Tysons Corner",
+      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Loudoun County",
       attorneys: ["Steven D. Briglia"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg"
     },
