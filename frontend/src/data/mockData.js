@@ -226,7 +226,7 @@ export const siteData = {
     },
     {
       title: "Personal Injury",
-      description: "A personal injury can change your life in an instant. You want an attorney who can help you on the path to recovery. At the Fairfax County law offices of Briglia Hundley, P.C.®, we protect the rights of individuals who have been seriously injured due to the negligence of others.",
+      description: "Dedicated personal injury representation for accident victims throughout Northern Virginia and the greater Washington DC area.",
       fullDescription: "When you're seriously injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you recover the compensation you deserve. Our personal injury attorneys have a proven track record of success in handling complex injury cases.",
       detailedContent: {
         sections: [
