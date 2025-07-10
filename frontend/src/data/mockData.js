@@ -331,6 +331,181 @@ export const siteData = {
     },
     {
       title: "Employment Law",
+      description: "Comprehensive employment law services for both employers and employees including discrimination claims and workplace disputes.",
+      fullDescription: "Our employment practice involves both advising employers on employment issues that arise in the workplace and litigating a variety of legal issues arising from the employer-employee relationship. We have significant experience handling discrimination and retaliation claims filed in federal and state courts in Virginia, Maryland, and the District of Columbia, as well as before the Equal Employment Opportunity Commission and local state and county agencies.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Discrimination and Retaliation Claims",
+            content: "We represent both employers and employees in discrimination and retaliation cases involving claims based on race, gender, age, disability, religion, and other protected characteristics. Our attorneys have extensive experience in federal and state courts as well as before administrative agencies."
+          },
+          {
+            title: "Employment Contract Disputes",
+            content: "We regularly handle employment contract disputes, including claims for wrongful discharge and violation of non-compete and confidentiality agreements. Our attorneys help both employers and employees understand their rights and obligations under employment agreements."
+          },
+          {
+            title: "Workplace Issues",
+            content: "We advise employers on a wide range of workplace issues including hiring practices, employee handbooks, workplace policies, wage and hour compliance, and preventive measures to minimize legal risks."
+          }
+        ]
+      },
+      services: [
+        "Discrimination Claims",
+        "Retaliation Claims", 
+        "Wrongful Termination",
+        "Non-Compete Agreements",
+        "Confidentiality Agreements",
+        "Employment Contract Disputes",
+        "Workplace Harassment",
+        "Wage and Hour Issues"
+      ],
+      url: "/employment-law",
+      localKeywords: "employment lawyer Fairfax VA, discrimination attorney Northern Virginia, wrongful termination Arlington VA, workplace attorney Tysons Corner",
+      attorneys: ["Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25.jpg"
+    },
+    {
+      title: "Municipal and Governmental Practice",
+      description: "Legal counsel and representation for local governments, municipalities, and private parties in municipal law matters.",
+      fullDescription: "Businesses and individuals face a variety of municipal law problems. We represent local municipalities, businesses, and individuals involved in municipal law disputes throughout Virginia. From zoning issues to disputes over eminent domain, we protect our clients' rights and help them reach a fair solution.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Municipal Representation",
+            content: "We serve as legal counsel to local municipalities, providing advice on governance issues, regulatory compliance, municipal ordinances, and legal proceedings. Our attorneys understand the unique challenges facing local governments."
+          },
+          {
+            title: "Zoning and Land Use",
+            content: "We assist clients with zoning applications, special use permits, variances, and appeals of zoning decisions. Whether you're a developer seeking approvals or a neighbor concerned about a proposed development, we provide skilled representation."
+          },
+          {
+            title: "Permits and Licensing",
+            content: "When requests for licenses and permits are denied or you face regulatory challenges, we help determine your options and protect your rights. We represent clients in administrative proceedings and appeals."
+          }
+        ]
+      },
+      services: [
+        "Municipal Legal Counsel",
+        "Zoning and Land Use",
+        "Permits and Licensing",
+        "Municipal Litigation",
+        "Regulatory Compliance",
+        "Administrative Proceedings",
+        "Public-Private Partnerships",
+        "Municipal Ordinances"
+      ],
+      url: "/municipal-governmental-practice",
+      localKeywords: "municipal law attorney Fairfax VA, zoning lawyer Northern Virginia, local government attorney Arlington VA, municipal counsel Tysons Corner",
+      attorneys: ["Steven D. Briglia", "Brian J. Lubkeman"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg"
+    },
+    {
+      title: "Community Associations",
+      description: "Specialized legal services for homeowners associations, condominium associations, and community organizations.",
+      fullDescription: "We provide comprehensive legal services to community associations, helping them navigate the complex legal and regulatory environment while serving their members effectively. Our attorneys understand the unique challenges facing community associations.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Governance and Compliance",
+            content: "We assist community associations with governance issues, including board operations, meeting requirements, election procedures, and compliance with state and local regulations. Our attorneys help ensure associations operate within legal frameworks."
+          },
+          {
+            title: "Enforcement and Collections",
+            content: "We help associations enforce their governing documents, including architectural guidelines, use restrictions, and assessment collection. Our attorneys handle enforcement actions and collection proceedings when necessary."
+          },
+          {
+            title: "Contract and Vendor Management",
+            content: "We assist associations with contract negotiations, vendor agreements, construction contracts, and dispute resolution. Our goal is to protect the association's interests while ensuring quality services for the community."
+          }
+        ]
+      },
+      services: [
+        "Association Governance",
+        "Document Enforcement",
+        "Assessment Collections",
+        "Contract Negotiations",
+        "Architectural Review",
+        "Election Procedures",
+        "Compliance Issues",
+        "Dispute Resolution"
+      ],
+      url: "/community-associations",
+      localKeywords: "HOA lawyer Fairfax VA, community association attorney Northern Virginia, condo association lawyer Arlington VA, homeowners association attorney Tysons Corner",
+      attorneys: ["Mary \"Molly\" Peacock", "Jacob C. DeRue"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-community-associations-hero-25.jpg"
+    },
+    {
+      title: "Appellate Litigation",
+      description: "Experienced appellate representation in state and federal courts including the Fourth Circuit and Supreme Court.",
+      fullDescription: "The conclusion of a trial is not always the end of a case. Both civil litigants and criminal defendants often continue pursuing their rights on appeal. Our attorneys have experience handling both civil and criminal cases at all levels of the state and federal courts in the mid-Atlantic, including the Fourth Circuit, D.C. Circuit, and Supreme Court of the United States.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Civil Appeals",
+            content: "We represent clients in civil appeals at all levels of state and federal courts. Our attorneys have extensive experience crafting persuasive appellate briefs and presenting oral arguments before appellate panels."
+          },
+          {
+            title: "Criminal Appeals",
+            content: "We handle criminal appeals and post-conviction proceedings, working to overturn wrongful convictions and reduce sentences. Our attorneys understand the complex procedural requirements of criminal appellate practice."
+          },
+          {
+            title: "Supreme Court Practice",
+            content: "Our attorneys have argued cases before the Supreme Court of the United States and state supreme courts. We have the experience and knowledge necessary to handle the most complex appellate matters."
+          }
+        ]
+      },
+      services: [
+        "Civil Appeals",
+        "Criminal Appeals",
+        "Federal Court Appeals",
+        "State Court Appeals",
+        "Supreme Court Practice",
+        "Appellate Brief Writing",
+        "Oral Argument",
+        "Post-Conviction Relief"
+      ],
+      url: "/appellate-litigation",
+      localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, Supreme Court attorney Arlington VA, appellate litigation Tysons Corner",
+      attorneys: ["James W. Hundley", "Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg"
+    },
+    {
+      title: "Eminent Domain",
+      description: "Protecting property owners' rights in eminent domain and condemnation proceedings throughout Virginia.",
+      fullDescription: "When government entities seek to take private property for public use, property owners have important rights that must be protected. Our attorneys represent property owners in eminent domain and condemnation proceedings, ensuring they receive fair compensation for their property.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Condemnation Proceedings",
+            content: "We represent property owners in condemnation proceedings, challenging both the government's right to take property and the amount of compensation offered. Our attorneys work to ensure property owners receive the maximum compensation allowed by law."
+          },
+          {
+            title: "Valuation and Compensation",
+            content: "Determining fair market value in eminent domain cases requires specialized knowledge and experience. We work with qualified appraisers and experts to establish the true value of condemned property, including business losses and relocation costs."
+          },
+          {
+            title: "Negotiation and Settlement",
+            content: "Many eminent domain cases can be resolved through negotiation without the need for lengthy court proceedings. Our attorneys are skilled negotiators who work to achieve fair settlements for our clients."
+          }
+        ]
+      },
+      services: [
+        "Condemnation Defense",
+        "Property Valuation",
+        "Compensation Disputes",
+        "Business Relocation Claims",
+        "Inverse Condemnation",
+        "Regulatory Takings",
+        "Settlement Negotiations",
+        "Eminent Domain Appeals"
+      ],
+      url: "/eminent-domain",
+      localKeywords: "eminent domain attorney Fairfax VA, condemnation lawyer Northern Virginia, property rights attorney Arlington VA, takings lawyer Tysons Corner",
+      attorneys: ["Kaley Duncan Ward", "Brian J. Lubkeman"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-eminent-domain-hero-25.jpg"
+    },
+    {
+      title: "Employment Law",
       description: "Our employment practice involves both advising employers on employment issues that arise in the workplace and litigating a variety of legal issues arising from the employer-employee relationship.",
       fullDescription: "We have significant experience handling discrimination and retaliation claims filed in federal and state courts in Virginia, Maryland, and the District of Columbia, as well as before the Equal Employment Opportunity Commission and local state and county agencies. We also regularly handle employment contract disputes, including claims for wrongful discharge and violation of non-compete and confidentiality agreements.",
       services: [
