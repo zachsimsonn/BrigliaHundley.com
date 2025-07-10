@@ -241,7 +241,7 @@ export const siteData = {
       position: "Partner",
       experience: "Courtney Harden has almost 20 years of litigation experience in Virginia. She represents individuals and businesses in complex civil litigation matters before state and federal courts in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Courtney Harden has almost 20 years of litigation experience in Virginia. She represents individuals and businesses in complex civil litigation matters before state and federal courts. Her practice focuses on commercial litigation, employment disputes, personal injury cases, and general civil litigation. Ms. Harden is committed to providing strategic legal counsel and aggressive representation to achieve the best possible outcomes for her clients.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.unsplash.com/photo-1736939666660-d4c776e0532c",
       phone: "703.883.0207",
       email: "charden@brigliahundley.com"
     },
@@ -250,7 +250,7 @@ export const siteData = {
       position: "Partner",
       experience: "Amy Owen specializes in commercial litigation, employment law, and estate planning. She has extensive experience representing businesses and individuals in complex legal matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Amy Owen specializes in commercial litigation, employment law, and estate planning. She has extensive experience representing businesses and individuals in complex legal matters. Her practice encompasses business disputes, employment litigation, estate planning and administration, and general civil litigation. Ms. Owen brings a strategic approach to each case, working closely with clients to develop effective legal solutions tailored to their specific needs and objectives.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/14634929/pexels-photo-14634929.jpeg",
       phone: "703.883.0208",
       email: "aowen@brigliahundley.com"
     },
@@ -259,7 +259,7 @@ export const siteData = {
       position: "Partner",
       experience: "Teresa Cole has been practicing family law since 1993. She represents clients in divorce, custody, support, and other family law matters before Virginia courts, providing compassionate yet aggressive representation.",
       fullExperience: "Teresa Cole has been practicing family law since 1993. She represents clients in divorce, custody, support, and other family law matters before Virginia courts. Her extensive experience includes complex divorce proceedings, child custody disputes, spousal and child support matters, property division, and domestic relations cases. Ms. Cole is known for her compassionate approach while providing aggressive representation to protect her clients' interests and their families' futures.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/32907707/pexels-photo-32907707.jpeg",
       phone: "703.883.0209",
       email: "tcole@brigliahundley.com"
     },
@@ -268,7 +268,7 @@ export const siteData = {
       position: "Partner",
       experience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations. She represents homeowners associations and businesses in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations. She represents homeowners associations, condominium associations, and businesses in a wide variety of legal matters. Her practice focuses on community association law, corporate governance, contract disputes, and general business litigation. Ms. Peacock is dedicated to providing practical legal solutions that help organizations operate effectively while minimizing legal risks.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/32907704/pexels-photo-32907704.jpeg",
       phone: "703.883.0210",
       email: "mpeacock@brigliahundley.com"
     },
@@ -277,7 +277,7 @@ export const siteData = {
       position: "Partner",
       experience: "Michael May is an experienced litigator with experience in civil and criminal matters. He represents clients in complex litigation cases before state and federal courts in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Michael May is an experienced litigator with extensive experience in both civil and criminal matters. He represents clients in complex litigation cases before state and federal courts. His practice encompasses criminal defense, civil litigation, business disputes, and personal injury matters. Mr. May brings a strategic and aggressive approach to litigation, working tirelessly to protect his clients' rights and achieve favorable outcomes in challenging legal situations.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/32907709/pexels-photo-32907709.jpeg",
       phone: "703.883.0211",
       email: "mmay@brigliahundley.com"
     },
@@ -286,7 +286,7 @@ export const siteData = {
       position: "Of Counsel",
       experience: "William DeVinney has a broad litigation practice including antitrust, intellectual property, and complex commercial litigation. He represents clients in sophisticated legal matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "William DeVinney has a broad litigation practice including antitrust, intellectual property, and complex commercial litigation. He represents clients in sophisticated legal matters involving federal and state regulatory issues, business disputes, and intellectual property matters. Mr. DeVinney's extensive experience includes representing corporations, individuals, and government entities in high-stakes litigation and regulatory proceedings. His strategic approach and attention to detail have resulted in successful outcomes for clients across a wide range of industries.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/14634936/pexels-photo-14634936.jpeg",
       phone: "703.883.0212",
       email: "wdevinney@brigliahundley.com"
     },
@@ -295,7 +295,7 @@ export const siteData = {
       position: "Senior Associate",
       experience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters and complex legal disputes throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters, condemnation proceedings, and complex legal disputes. Her practice includes helping property owners navigate eminent domain proceedings, civil litigation matters, and comprehensive estate planning. Ms. Ward is committed to protecting her clients' rights and providing skilled representation in challenging legal matters.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.unsplash.com/photo-1736939678218-bd648b5ef3bb",
       phone: "703.883.0213",
       email: "kward@brigliahundley.com"
     },
