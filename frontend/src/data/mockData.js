@@ -365,7 +365,7 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25.jpg"
     },
     {
-      title: "Municipal and Governmental Practice",
+      title: "Municipal Law",
       description: "Legal counsel and representation for local governments, municipalities, and private parties in municipal law matters.",
       fullDescription: "Businesses and individuals face a variety of municipal law problems. We represent local municipalities, businesses, and individuals involved in municipal law disputes throughout Virginia. From zoning issues to disputes over eminent domain, we protect our clients' rights and help them reach a fair solution.",
       detailedContent: {
@@ -394,7 +394,7 @@ export const siteData = {
         "Public-Private Partnerships",
         "Municipal Ordinances"
       ],
-      url: "/municipal-governmental-practice",
+      url: "/municipal-law",
       localKeywords: "municipal law attorney Fairfax VA, zoning lawyer Northern Virginia, local government attorney Arlington VA, municipal counsel Tysons Corner",
       attorneys: ["Steven D. Briglia", "Brian J. Lubkeman"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg"
