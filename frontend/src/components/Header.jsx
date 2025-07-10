@@ -134,14 +134,14 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <button 
                 onClick={() => handleNavigate('blog')}
                 className={getNavItemClass('blog')}
-                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 RESOURCES
               </button>
               <button 
                 onClick={() => handleNavigate('contact')}
                 className={getNavItemClass('contact')}
-                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 CONTACT US
               </button>
