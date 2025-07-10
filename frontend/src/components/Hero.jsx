@@ -21,7 +21,7 @@ const Hero = ({ data, editableContent }) => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
               {editableContent.hero.title}
             </h1>
 
