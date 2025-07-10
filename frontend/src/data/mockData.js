@@ -891,6 +891,33 @@ export const siteData = {
     }
   ],
 
+  faq: [
+    {
+      question: "How do I know if I need a lawyer?",
+      answer: "If you're facing legal challenges that could affect your rights, finances, family, or freedom, it's wise to consult with an attorney. Our experienced lawyers can help assess your situation during a free consultation and advise you on the best course of action."
+    },
+    {
+      question: "What should I expect during my first consultation?",
+      answer: "During your initial consultation, we'll discuss your legal matter in detail, review any relevant documents, explain your options, and provide an assessment of your case. This is also an opportunity for you to ask questions about our experience, approach, and fees."
+    },
+    {
+      question: "How are legal fees structured?",
+      answer: "Our fee structure varies depending on the type of case and complexity. We offer different arrangements including hourly rates, flat fees for certain services, and contingency fees for personal injury cases. We'll discuss all costs upfront during your consultation."
+    },
+    {
+      question: "How long will my case take?",
+      answer: "The timeline for legal matters varies significantly based on the complexity of the case, court schedules, and other factors. We'll provide you with a realistic timeframe estimate based on our experience with similar cases and keep you updated throughout the process."
+    },
+    {
+      question: "Do I need to come to your office for meetings?",
+      answer: "While we prefer in-person meetings when possible, we understand that circumstances may require alternative arrangements. We offer virtual consultations and can accommodate your scheduling needs to ensure effective communication throughout your case."
+    },
+    {
+      question: "What areas of law does Briglia Hundley® practice?",
+      answer: "We provide comprehensive legal services including criminal defense, family law, business litigation, corporate law, personal injury, estate planning, real estate law, employment law, municipal law, and community association representation."
+    }
+  ],
+
   announcements: [
     {
       title: "Tier 1 Ranking by Best Lawyers® Best Law Firms",
