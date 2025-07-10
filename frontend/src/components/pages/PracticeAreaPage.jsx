@@ -75,34 +75,63 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
           {/* Main Content */}
           <div className="lg:col-span-2">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Comprehensive {practiceArea.title} Services
-              </h2>
-              
-              <p className="text-gray-600 mb-8">
-                {practiceArea.fullDescription || practiceArea.description}
-              </p>
-
-              {practiceArea.services && (
-                <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Services Include:</h3>
-                  <ul className="space-y-3 text-gray-600">
-                    {practiceArea.services.map((service, index) => (
-                      <li key={index} className="flex items-start">
-                        <Scale className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
+              {/* Hero Image */}
+              {practiceArea.image && (
+                <div className="mb-8 rounded-lg overflow-hidden">
+                  <img 
+                    src={practiceArea.image} 
+                    alt={practiceArea.title}
+                    className="w-full h-64 object-cover"
+                  />
                 </div>
               )}
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Approach</h3>
-              <p className="text-gray-600 mb-8">
-                At Briglia Hundley®, we believe in providing personalized attention to each client, ensuring that you understand your options and 
-                feel confident in the legal strategy we develop together. Our team combines innovative legal strategies with 
-                time-tested approaches to deliver superior results in {practiceArea.title.toLowerCase()} matters.
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                {practiceArea.title}
+              </h2>
+              
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                {practiceArea.fullDescription || practiceArea.description}
               </p>
+
+              {/* Detailed Content Sections */}
+              {practiceArea.detailedContent && practiceArea.detailedContent.sections && (
+                <div className="space-y-8 mb-8">
+                  {practiceArea.detailedContent.sections.map((section, index) => (
+                    <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4">
+                      <h3 className="text-2xl font-semibold text-gray-900 mb-4">{section.title}</h3>
+                      <div className="text-gray-600 whitespace-pre-line mb-4">
+                        {section.content}
+                      </div>
+                      {section.subServices && (
+                        <ul className="space-y-2 text-gray-600 ml-4">
+                          {section.subServices.map((service, serviceIndex) => (
+                            <li key={serviceIndex} className="flex items-start">
+                              <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
+                              <span>{service}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Services List */}
+              {practiceArea.services && (
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Services Include:</h3>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {practiceArea.services.map((service, index) => (
+                      <div key={index} className="flex items-start">
+                        <Scale className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-gray-600">{service}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <div className="bg-gray-50 rounded-lg p-8 mb-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Briglia Hundley® for {practiceArea.title}?</h3>
