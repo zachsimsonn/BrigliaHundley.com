@@ -137,11 +137,12 @@ const Header = ({ data, onEdit, onNavigate }) => {
                 Schedule a Free Consultation
               </Button>
               <Button 
-                className="bg-gray-900 hover:bg-gray-800 text-white transition-all duration-300 transform hover:scale-105"
+                variant="outline" 
+                className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
                 onClick={() => window.location.href = `tel:${data.business.phone}`}
               >
-                <Phone className="mr-2 h-4 w-4 text-white" />
-                <span className="text-white font-medium">Call Now</span>
+                <Phone className="mr-2 h-4 w-4" />
+                <span className="font-medium">Call Now</span>
               </Button>
             </div>
           </div>
