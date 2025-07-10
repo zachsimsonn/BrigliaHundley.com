@@ -36,7 +36,7 @@ const Home = ({ data, editableData, onNavigate }) => {
     "name": "Briglia Hundley PC",
     "alternateName": "Briglia Hundley®",
     "url": "https://brigliahundley.com",
-    "logo": "https://brigliahundley.com/briglia-hundley-logo.svg",
+    "logo": "https://brigliahundley.com/bhlogo.png",
     "description": data.business.description,
     "address": {
       "@type": "PostalAddress",
