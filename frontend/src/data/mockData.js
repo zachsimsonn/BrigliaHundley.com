@@ -835,6 +835,29 @@ export const siteData = {
       slug: "estate-planning-life-transitions",
       content: "Life is full of transitions, and each major change should prompt a review and potential update of your estate plan. This article examines how events such as marriage, divorce, the birth of children, career changes, and retirement affect your estate planning needs. We discuss the importance of updating beneficiary designations, revising will provisions, and adjusting trust arrangements to reflect your current circumstances and goals. The article also addresses common mistakes people make when life changes occur, such as failing to update their estate plan after a divorce or neglecting to plan for new family members. Virginia estate planning laws provide specific guidance for many of these situations, and understanding these requirements is crucial for ensuring your wishes are properly documented and legally enforceable."
     }
+  ],
+
+  announcements: [
+    {
+      title: "Tier 1 Ranking by Best Lawyers® Best Law Firms",
+      content: "Briglia Hundley has been recognized as a Tier 1 ranked law firm by Best Lawyers® Best Law Firms in multiple practice areas including Business Litigation, Family Law, and Criminal Defense.",
+      link: "https://www.bestlawyers.com"
+    },
+    {
+      title: "New Location - Enhanced Client Services",
+      content: "Our expanded office at 1921 Gallows Road in Tysons Corner provides improved client meeting facilities and enhanced privacy for sensitive legal matters.",
+      link: null
+    },
+    {
+      title: "Virginia Super Lawyers Recognition",
+      content: "Multiple attorneys at Briglia Hundley have been selected to the Virginia Super Lawyers list for 2024, recognizing outstanding legal achievement and professional excellence.",
+      link: "https://www.superlawyers.com"
+    },
+    {
+      title: "COVID-19 Client Safety Protocols",
+      content: "We have implemented comprehensive safety measures while maintaining full legal services. Virtual consultations available for all practice areas.",
+      link: null
+    }
   ]
 };
 
