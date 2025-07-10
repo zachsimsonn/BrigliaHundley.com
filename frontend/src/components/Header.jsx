@@ -129,19 +129,19 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
 
               <button 
                 onClick={() => handleNavigate('testimonials')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                className={getNavItemClass('testimonials')}
               >
                 Testimonials
               </button>
               <button 
                 onClick={() => handleNavigate('blog')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                className={getNavItemClass('blog')}
               >
                 Blog
               </button>
               <button 
                 onClick={() => handleNavigate('contact')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
+                className={getNavItemClass('contact')}
               >
                 Contact
               </button>
