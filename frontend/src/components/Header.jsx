@@ -87,7 +87,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
                   Attorneys <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'attorneys' && (
-                  <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                  <div className="absolute top-full left-0 mt-2 w-[32rem] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                     <div className="p-4">
                       <button
                         onClick={() => handleNavigate('attorneys')}
