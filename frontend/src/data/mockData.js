@@ -457,30 +457,6 @@ export const siteData = {
       slug: "estate-planning-life-transitions",
       content: "Life is full of transitions, and each major change should prompt a review and potential update of your estate plan. This article examines how events such as marriage, divorce, the birth of children, career changes, and retirement affect your estate planning needs. We discuss the importance of updating beneficiary designations, revising will provisions, and adjusting trust arrangements to reflect your current circumstances and goals. The article also addresses common mistakes people make when life changes occur, such as failing to update their estate plan after a divorce or neglecting to plan for new family members. Virginia estate planning laws provide specific guidance for many of these situations, and understanding these requirements is crucial for ensuring your wishes are properly documented and legally enforceable."
     }
-  ],
-      image: "/api/placeholder/400/250",
-      slug: "personal-injury-claims-recovery"
-    },
-    {
-      id: 7,
-      title: "Municipal Law: Navigating Government Legal Challenges",
-      excerpt: "Expert guidance on municipal law matters and governmental legal challenges in Virginia.",
-      author: "Raymond Starks-Taylor",
-      date: "December 10, 2024",
-      category: "Municipal and Governmental Practice",
-      image: "/api/placeholder/400/250",
-      slug: "municipal-law-government-challenges"
-    },
-    {
-      id: 8,
-      title: "Community Association Law: HOA Legal Best Practices",
-      excerpt: "Essential legal considerations for homeowners associations and community organizations.",
-      author: "Jacob C. DeRue",
-      date: "December 5, 2024",
-      category: "Community Associations",
-      image: "/api/placeholder/400/250",
-      slug: "community-association-hoa-legal"
-    }
   ]
 };
 
