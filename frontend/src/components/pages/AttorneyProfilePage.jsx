@@ -147,10 +147,10 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">About {attorney.name}</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">About {attorney.name}</h2>
               
-              <div className="mb-8">
-                <p className="text-gray-600 leading-relaxed text-lg">
+              <div className="mb-8 text-left">
+                <p className="text-gray-600 leading-relaxed text-lg text-left">
                   {attorney.fullExperience || attorney.experience}
                 </p>
               </div>
