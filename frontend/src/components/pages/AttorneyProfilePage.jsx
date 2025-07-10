@@ -78,7 +78,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           <div className="lg:col-span-1">
             {/* Large Square Portrait */}
             <div className="mb-8">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '350px'}}>
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '400px'}}>
                 {attorney.image ? (
                   <img 
                     src={attorney.image} 
