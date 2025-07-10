@@ -801,8 +801,7 @@ export const siteData = {
       position: "Associate",
       experience: "Lauren Gill supports the family law practice. She assists clients with divorce, custody, and family law matters, providing compassionate representation throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Lauren Gill supports the family law practice. She assists clients with divorce, custody, support, and other family law matters. Her work includes supporting complex family law cases, domestic relations matters, and providing legal research and case preparation for family law proceedings. Ms. Gill brings a compassionate approach to family law, understanding the sensitive nature of these matters while providing skilled legal support.",
-      image: "/api/placeholder/300/400",
-      phone: "703.883.0216",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-lauren-renslow-800.jpg",
       email: "lgill@brigliahundley.com"
     },
     {
