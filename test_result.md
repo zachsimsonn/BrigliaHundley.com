@@ -241,6 +241,18 @@ test_plan:
         agent: "main"
         comment: "Changed all 'Call Now' buttons to use outline variant with consistent styling to match 'Schedule a Free Consultation' buttons across all components. Updated Hero component to use outline style for both consultation and call buttons."
 
+  - task: "Center navigation menu and move buttons to right"
+    implemented: true
+    working: true
+    file: "frontend/src/components/Header.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Restructured header layout to center the 7 navigation menu items (Home, About, Services, Attorneys, Testimonials, Blog, Contact) and moved the Call Now and Schedule a Free Consultation buttons to the right side"
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
@@ -250,3 +262,5 @@ agent_communication:
     message: "Removed 5-star ratings and client rating text from individual attorney profile pages. The attorney profile pages now have a cleaner header with just the attorney name and position, removing the generic star rating display."
   - agent: "main"
     message: "Standardized all 'Call Now' buttons to use the same outline style as 'Schedule a Free Consultation' buttons. All buttons now have consistent styling: outline variant with border and text color that matches on hover for unified visual design across the website."
+  - agent: "main"
+    message: "Restructured header layout for better organization: Logo remains on the left, navigation menu (7 pages) is now centered using flex-1 and justify-center, and both Call Now and Schedule a Free Consultation buttons are positioned on the right side. This creates a balanced, professional header layout."
