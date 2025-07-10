@@ -261,7 +261,7 @@ export const siteData = {
     },
     {
       title: "Estate Planning",
-      description: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for your dependents throughout their lives.",
+      description: "Comprehensive estate planning services for Northern Virginia families including wills, trusts, and asset protection strategies.",
       fullDescription: "At Briglia Hundley, P.C.®, we help clients throughout Virginia, Maryland, and Washington, D.C., establish comprehensive estate plans that provide greater peace of mind and keep loved ones secure.",
       detailedContent: {
         sections: [
