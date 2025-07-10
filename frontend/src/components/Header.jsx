@@ -24,7 +24,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
           <div className="flex items-center space-x-4">
             <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
               {data.business.logo ? (
-                <img src={data.business.logo} alt="Company Logo" className="h-12 w-auto object-contain" />
+                <img src={data.business.logo} alt="Briglia Hundley® Law Firm Logo" className="h-12 w-auto object-contain" />
               ) : (
                 <div>
                   <div className="text-2xl font-bold leading-tight">BRIGLIA</div>
