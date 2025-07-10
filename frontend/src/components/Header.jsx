@@ -8,11 +8,11 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
 
   // Function to determine if a page is active and return appropriate classes
   const getNavItemClass = (page) => {
-    const baseClass = "transition-colors duration-200 font-bold";
+    const baseClass = "transition-colors duration-200";
     const isActive = currentPage === page;
     
     if (isActive) {
-      return `${baseClass} text-gray-900 font-black`; // Darker and bolder when active
+      return `${baseClass} text-gray-900`; // Darker when active
     }
     return `${baseClass} text-gray-700 hover:text-gray-900`;
   };
