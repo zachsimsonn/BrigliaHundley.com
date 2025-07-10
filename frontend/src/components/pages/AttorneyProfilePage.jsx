@@ -78,7 +78,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           <div className="lg:col-span-1">
             {/* Large Square Portrait */}
             <div className="mb-8">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '400px'}}>
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '500px'}}>
                 {attorney.image ? (
                   <img 
                     src={attorney.image} 
@@ -101,21 +101,21 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                   <Phone className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                   <div className="text-left">
                     <div className="text-sm text-gray-500">Phone</div>
-                    <div className="text-gray-900 font-medium">{attorney.phone || data.business.phone}</div>
+                    <div className="text-gray-900 font-medium text-sm">{attorney.phone || data.business.phone}</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                  <div className="text-left">
+                  <div className="text-left min-w-0 flex-1">
                     <div className="text-sm text-gray-500">Email</div>
-                    <div className="text-gray-900 font-medium">{attorney.email || data.business.email}</div>
+                    <div className="text-gray-900 font-medium text-sm break-words">{attorney.email || data.business.email}</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                   <div className="text-left">
                     <div className="text-sm text-gray-500">Office</div>
-                    <div className="text-gray-900 font-medium">
+                    <div className="text-gray-900 font-medium text-sm">
                       {data.business.address}<br />
                       {data.business.city}, {data.business.state} {data.business.zip}
                     </div>
