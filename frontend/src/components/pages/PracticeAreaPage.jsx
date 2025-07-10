@@ -21,19 +21,28 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
     );
   }
 
+  // Get attorneys for this practice area
   const relatedAttorneys = data.attorneys.filter(attorney => {
+    if (practiceArea.attorneys) {
+      return practiceArea.attorneys.includes(attorney.name);
+    }
+    
+    // Fallback to current logic if no specific attorneys listed
     const areaLower = practiceArea.title.toLowerCase();
     const experienceLower = attorney.experience.toLowerCase();
     
     if (areaLower.includes('family')) return experienceLower.includes('family');
-    if (areaLower.includes('commercial') || areaLower.includes('litigation')) return experienceLower.includes('litigation') || experienceLower.includes('commercial');
+    if (areaLower.includes('commercial') || areaLower.includes('litigation') || areaLower.includes('business')) return experienceLower.includes('litigation') || experienceLower.includes('commercial');
     if (areaLower.includes('corporate')) return experienceLower.includes('corporate') || experienceLower.includes('business');
     if (areaLower.includes('personal injury')) return experienceLower.includes('personal injury') || experienceLower.includes('civil');
     if (areaLower.includes('estate')) return experienceLower.includes('estate');
     if (areaLower.includes('real estate')) return experienceLower.includes('real estate');
+    if (areaLower.includes('criminal')) return experienceLower.includes('criminal');
+    if (areaLower.includes('employment')) return experienceLower.includes('employment');
+    if (areaLower.includes('municipal')) return experienceLower.includes('municipal');
     
     return false;
-  }).slice(0, 3);
+  });
 
   return (
     <div className="min-h-screen bg-white">
