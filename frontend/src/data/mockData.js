@@ -17,7 +17,7 @@ export const siteData = {
   practiceAreas: [
     {
       title: "Family Law",
-      description: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children.",
+      description: "Comprehensive family law services including divorce, custody, and support matters for families throughout Northern Virginia.",
       fullDescription: "At Briglia Hundley, P.C.®, we understand that family law matters can be emotionally charged and complex. Our experienced attorneys are dedicated to providing compassionate and effective legal representation in a variety of family law issues, including divorce, child custody, child support, and property division. We strive to protect your rights and help you navigate through these challenging times with confidence.",
       detailedContent: {
         sections: [
