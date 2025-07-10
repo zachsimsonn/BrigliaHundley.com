@@ -190,9 +190,60 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-securities-hero-25.jpg"
     },
     {
+      title: "Corporate Law", 
+      description: "We provide customized and tailored advice to our clients, of all sizes and in all stages of growth, regarding corporate governance matters, entity formation and structural issues.",
+      fullDescription: "Our corporate law practice serves businesses of all sizes and stages of development. We provide comprehensive legal counsel on corporate governance, entity formation, mergers and acquisitions, contract negotiations, and ongoing corporate compliance matters.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Entity Formation and Structure",
+            content: "We assist clients in selecting the appropriate business entity structure, including corporations, limited liability companies, partnerships, and other business forms. Our attorneys provide guidance on the advantages and disadvantages of each structure based on the client's specific business goals and circumstances."
+          },
+          {
+            title: "Corporate Governance",
+            content: "We advise clients on corporate governance matters, including board of directors' responsibilities, shareholder rights, corporate compliance, and fiduciary duties. Our attorneys help ensure that clients maintain proper corporate governance practices to minimize legal risks."
+          },
+          {
+            title: "Mergers and Acquisitions",
+            content: "Our attorneys have extensive experience in mergers and acquisitions transactions, representing both buyers and sellers in complex business transactions. We provide strategic counsel throughout the entire process, from initial negotiations to closing."
+          }
+        ]
+      },
+      services: [
+        "Entity Formation and Structure",
+        "Corporate Governance",
+        "Mergers and Acquisitions",
+        "Contract Drafting and Negotiation",
+        "Corporate Compliance",
+        "General Counsel Services",
+        "Business Transactions",
+        "Securities Law Compliance"
+      ],
+      url: "/corporate-law",
+      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Tysons Corner",
+      attorneys: ["Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg"
+    },
+    {
       title: "Personal Injury",
       description: "A personal injury can change your life in an instant. You want an attorney who can help you on the path to recovery. At the Fairfax County law offices of Briglia Hundley, P.C.®, we protect the rights of individuals who have been seriously injured due to the negligence of others.",
-      fullDescription: "When you're seriously injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you recover the compensation you deserve. Our personal injury attorneys have a proven track record of success in handling complex injury cases, from car accidents to medical malpractice. We work on a contingency fee basis, meaning you don't pay unless we win your case.",
+      fullDescription: "When you're seriously injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you recover the compensation you deserve. Our personal injury attorneys have a proven track record of success in handling complex injury cases.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Motor Vehicle Accidents",
+            content: "We represent victims of car accidents, truck accidents, motorcycle accidents, and other motor vehicle collisions. Our attorneys work with accident reconstruction experts, medical professionals, and other specialists to build strong cases for our clients."
+          },
+          {
+            title: "Premises Liability",
+            content: "Property owners have a legal duty to maintain their premises in a reasonably safe condition. When they fail to do so and someone is injured as a result, they may be held liable for damages. We handle slip and fall cases, inadequate security cases, and other premises liability matters."
+          },
+          {
+            title: "Medical Malpractice",
+            content: "Medical malpractice occurs when a healthcare provider fails to provide the appropriate standard of care, resulting in injury or harm to the patient. Our attorneys have experience handling complex medical malpractice cases involving surgical errors, misdiagnosis, and other forms of medical negligence."
+          }
+        ]
+      },
       services: [
         "Car Accidents",
         "Truck Accidents",
@@ -205,12 +256,29 @@ export const siteData = {
       ],
       url: "/personal-injury",
       localKeywords: "personal injury lawyer Fairfax VA, car accident attorney Northern Virginia, injury lawyer Arlington VA, accident attorney Prince William County",
-      attorneys: ["James W. Hundley"]
+      attorneys: ["James W. Hundley"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
     },
     {
       title: "Estate Planning",
       description: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for your dependents throughout their lives.",
-      fullDescription: "At Briglia Hundley, P.C.®, we help clients throughout Virginia, Maryland, and Washington, D.C., establish comprehensive estate plans that provide greater peace of mind and keep loved ones secure. Our estate planning services are designed to protect your assets, minimize tax liability, and ensure your wishes are carried out according to your specific instructions.",
+      fullDescription: "At Briglia Hundley, P.C.®, we help clients throughout Virginia, Maryland, and Washington, D.C., establish comprehensive estate plans that provide greater peace of mind and keep loved ones secure.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Wills and Trusts",
+            content: "We help clients create comprehensive wills and establish various types of trusts to protect assets and provide for beneficiaries. Our attorneys explain the benefits of different trust structures and help clients choose the options that best meet their needs."
+          },
+          {
+            title: "Estate Administration",
+            content: "When a loved one passes away, the estate administration process can be complex and emotionally challenging. Our attorneys guide executors and administrators through the probate process, helping to ensure that the deceased's wishes are carried out properly."
+          },
+          {
+            title: "Tax Planning",
+            content: "Estate planning involves careful consideration of tax implications. Our attorneys work with clients and their financial advisors to develop strategies that minimize estate and gift taxes while achieving the client's estate planning goals."
+          }
+        ]
+      },
       services: [
         "Wills and Trusts",
         "Estate Administration",
@@ -223,12 +291,29 @@ export const siteData = {
       ],
       url: "/estate-planning",
       localKeywords: "estate planning attorney Fairfax VA, will and trust lawyer Northern Virginia, probate attorney Arlington VA, estate lawyer Prince William County",
-      attorneys: ["Teresa S. Cole", "Amy S. Owen"]
+      attorneys: ["Teresa S. Cole", "Amy S. Owen"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
     },
     {
       title: "Real Estate Law",
       description: "Our real estate practice focuses on real estate transactions involving homeowners, builders, developers, real estate brokers, mortgage originators and lenders, title insurers, and other members of the real estate community.",
-      fullDescription: "Our real estate attorneys provide comprehensive legal services for all types of real estate transactions and disputes. Whether you're buying your first home, developing commercial property, or involved in a real estate dispute, we have the experience and knowledge to guide you through the complex legal issues that can arise in real estate matters.",
+      fullDescription: "Our real estate attorneys provide comprehensive legal services for all types of real estate transactions and disputes. Whether you're buying your first home, developing commercial property, or involved in a real estate dispute, we have the experience and knowledge to guide you through the complex legal issues.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Residential Real Estate",
+            content: "We assist homebuyers and sellers with all aspects of residential real estate transactions, including contract review, title examination, closing coordination, and dispute resolution. Our goal is to ensure that our clients' interests are protected throughout the transaction process."
+          },
+          {
+            title: "Commercial Real Estate",
+            content: "Our commercial real estate practice includes representation of buyers, sellers, landlords, tenants, developers, and lenders in complex commercial transactions. We handle acquisitions, dispositions, leasing, development, and financing matters."
+          },
+          {
+            title: "Real Estate Litigation",
+            content: "When real estate disputes arise, our attorneys provide skilled representation in litigation matters. We handle boundary disputes, title issues, contract disputes, landlord-tenant conflicts, and other real estate-related litigation."
+          }
+        ]
+      },
       services: [
         "Residential Real Estate Transactions",
         "Commercial Real Estate",
@@ -241,7 +326,8 @@ export const siteData = {
       ],
       url: "/real-estate-law",
       localKeywords: "real estate attorney Fairfax VA, property lawyer Northern Virginia, real estate closing Arlington VA, development lawyer Tysons Corner",
-      attorneys: ["Steven D. Briglia"]
+      attorneys: ["Steven D. Briglia", "Brian J. Lubkeman"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-real-estate-hero-25.jpg"
     },
     {
       title: "Employment Law",
