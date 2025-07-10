@@ -265,6 +265,18 @@ test_plan:
         agent: "main"
         comment: "Changed both Practice Areas and Attorneys dropdown menus from single column layout to 4x4 grid layout for better space utilization and organization. Increased dropdown width to w-96 to accommodate the grid layout."
 
+  - task: "Add dynamic page titles for all pages"
+    implemented: true
+    working: true
+    file: "frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Added SEO component with dynamic titles to all pages. Now each page shows proper title in browser tab: Home, About Us, Attorneys, Testimonials, Contact Us, Blog, plus dynamic titles for attorney profiles and practice areas."
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
@@ -277,4 +289,6 @@ agent_communication:
   - agent: "main"
     message: "Restructured header layout for better organization: Logo remains on the left, navigation menu (7 pages) is now centered using flex-1 and justify-center, and both Call Now and Schedule a Free Consultation buttons are positioned on the right side. This creates a balanced, professional header layout."
   - agent: "main"
-    message: "Enhanced navigation styling and dropdown layout: Made all 7 main navigation pages bold for better prominence. Converted both Practice Areas and Attorneys dropdown menus from single column to 4x4 grid layout for better space utilization and more organized presentation. Both dropdowns now show all items without scrolling in a clean grid format."
+    message: "Enhanced navigation styling and dropdown layout: Made all 7 main navigation pages bold for better prominence. Converted both Practice Areas and Attorneys dropdown menus from single column to 4x4 and 3x5 grid layouts respectively for better space utilization and more organized presentation."
+  - agent: "main"
+    message: "Implemented dynamic page titles: Each page now displays appropriate titles in the browser tab - 'About Us - Briglia Hundley®', 'Attorneys - Briglia Hundley®', etc. Attorney profiles show 'Attorney Name - Position - Briglia Hundley®' and practice areas show 'Practice Area - Briglia Hundley®'. This improves SEO and user experience with clear page identification."
