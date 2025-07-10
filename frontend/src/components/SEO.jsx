@@ -18,7 +18,7 @@ const SEO = ({
   const siteDescription = description || defaultDescription;
   const siteKeywords = keywords || defaultKeywords;
   const siteCanonical = canonical || "https://brigliahundley.com/";
-  const siteOgImage = ogImage || "/briglia-hundley-logo.svg";
+  const siteOgImage = ogImage || "/bhlogo.png";
 
   return (
     <Helmet>
