@@ -730,7 +730,7 @@ export const siteData = {
       position: "Partner",
       experience: "Amy Owen specializes in commercial litigation, employment law, and estate planning. She has extensive experience representing businesses and individuals in complex legal matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Amy Owen specializes in commercial litigation, employment law, and estate planning. She has extensive experience representing businesses and individuals in complex legal matters. Her practice encompasses business disputes, employment litigation, estate planning and administration, and general civil litigation. Ms. Owen brings a strategic approach to each case, working closely with clients to develop effective legal solutions tailored to their specific needs and objectives.",
-      image: "https://images.pexels.com/photos/14634929/pexels-photo-14634929.jpeg",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-amy-owen-u800ds.jpg",
       phone: "703.883.0208",
       email: "aowen@brigliahundley.com"
     },
