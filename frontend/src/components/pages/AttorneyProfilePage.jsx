@@ -37,46 +37,26 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
+      {/* Back Button */}
+      <div className="bg-gray-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button 
             onClick={() => onNavigate('attorneys')}
             variant="ghost"
-            className="text-white hover:bg-white/10 mb-6"
+            className="text-gray-600 hover:text-gray-900"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Attorneys
+            Back to All Attorneys
           </Button>
-          
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-6">
-              <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mr-6 overflow-hidden">
-                {attorney.image ? (
-                  <img 
-                    src={attorney.image} 
-                    alt={attorney.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <User className="h-12 w-12 text-white" />
-                )}
-              </div>
-              <div>
-                <h1 className="text-4xl lg:text-5xl font-bold mb-2">{attorney.name}</h1>
-                <p className="text-xl text-gray-300">{attorney.position}</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-12">
-          {/* Left Sidebar - Attorney Photo and Contact */}
+      {/* Attorney Profile Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Sidebar */}
           <div className="lg:col-span-1">
-            {/* Large Square Portrait - Matching brigliahundley.com size */}
+            {/* Attorney Photo */}
             <div className="mb-8">
               <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '300px'}}>
                 {attorney.image ? (
@@ -121,11 +101,11 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                   </div>
                 </div>
               </div>
-              
-              {/* Action Buttons */}
+
               <div className="mt-6 space-y-3">
                 <Button 
                   onClick={() => onNavigate('contact')}
+                  size="lg"
                   className="w-full bg-gray-900 hover:bg-gray-800 text-white"
                 >
                   <Calendar className="mr-2 h-4 w-4" />
@@ -133,6 +113,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 </Button>
                 <Button 
                   variant="outline"
+                  size="lg"
                   className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
                   onClick={() => window.location.href = `tel:${attorney.phone || data.business.phone}`}
                 >
@@ -146,10 +127,15 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="max-w-none">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 text-left">About {attorney.name}</h2>
-              
+              {/* Header */}
+              <div className="mb-8">
+                <h1 className="text-3xl font-bold text-gray-900 mb-2 text-left">{attorney.name}</h1>
+                <p className="text-xl text-gray-600 text-left">{attorney.position}</p>
+              </div>
+
               {/* Full Biography */}
               <div className="mb-8 text-left">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 text-left">Biography</h2>
                 {attorney.fullBio ? (
                   <div className="space-y-4">
                     {attorney.fullBio.split('\n\n').map((paragraph, index) => (
@@ -304,7 +290,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                           rel="noopener noreferrer"
                           className="inline-flex items-center text-gray-900 hover:text-gray-700 font-medium text-left"
                         >
-                          Read More
+                          Read More on brigliahundley.com
                           <ExternalLink className="h-4 w-4 ml-1" />
                         </a>
                       </div>
@@ -312,64 +298,31 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                   </div>
                 </div>
               )}
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Certifications, Honors & Awards</h3>
-                  <div className="space-y-2 text-left">
-                    {attorney.certifications.map((cert, index) => (
-                      <div key={index} className="flex items-start text-left">
-                        <Award className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                        <span className="text-gray-600 text-base text-left">{cert}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {attorney.languages && (
-                <div className="mb-8 text-left">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Languages</h3>
-                  <div className="flex flex-wrap gap-3 text-left">
-                    {attorney.languages.map((language, index) => (
-                      <span key={index} className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base">
-                        {language}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {attorney.practiceAreas && (
-                <div className="mb-8 text-left">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 text-left">Areas of Practice</h3>
-                  <div className="flex flex-wrap gap-3 text-left">
-                    {attorney.practiceAreas.map((area, index) => {
-                      // Find the matching practice area in data to get the URL
-                      const practiceArea = data.practiceAreas.find(pa => 
-                        pa.title.toLowerCase() === area.toLowerCase() ||
-                        pa.title.toLowerCase().includes(area.toLowerCase()) ||
-                        area.toLowerCase().includes(pa.title.toLowerCase())
-                      );
-                      
-                      return (
-                        <button
-                          key={index}
-                          onClick={() => {
-                            if (practiceArea) {
-                              onNavigate('practice-area', { area: practiceArea.title.toLowerCase().replace(/\s+/g, '-') });
-                            }
-                          }}
-                          className="bg-gray-900 text-white px-4 py-2 rounded-full text-base hover:bg-gray-700 transition-colors duration-200 cursor-pointer text-left"
-                        >
-                          {area}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
             </div>
           </div>
         </div>
+
+        {/* Related Practice Areas */}
+        {relatedPracticeAreas.length > 0 && (
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Related Practice Areas</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedPracticeAreas.map((area, index) => (
+                <div 
+                  key={index}
+                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer"
+                  onClick={() => onNavigate('practice-area', { areaName: area.title.toLowerCase().replace(/\s+/g, '-') })}
+                >
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{area.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{area.description}</p>
+                  <div className="mt-4">
+                    <span className="text-gray-900 font-medium hover:text-gray-700">Learn More →</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
