@@ -95,7 +95,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
                       >
                         All Attorneys
                       </button>
-                      <div className="grid grid-cols-4 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {data.attorneys.map((attorney, index) => (
                           <button
                             key={index}
