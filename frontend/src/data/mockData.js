@@ -17,10 +17,10 @@ export const siteData = {
   practiceAreas: [
     {
       title: "Family Law",
-      description: "Comprehensive family law services in Northern Virginia including divorce, custody, and support matters for Fairfax, Arlington, and Washington DC residents.",
-      fullDescription: "Our experienced family law attorneys serve clients throughout Northern Virginia, including Tysons Corner, Fairfax County, Arlington County, and Washington DC. We handle divorce proceedings, child custody disputes, spousal support, property division, and domestic relations matters in Virginia state courts.",
+      description: "Comprehensive family law services in Northern Virginia including divorce, custody, and support matters for Fairfax, Arlington, and Prince William County residents.",
+      fullDescription: "Our experienced family law attorneys serve clients throughout Northern Virginia, including Tysons Corner, Fairfax County, Arlington County, and Prince William County. We handle divorce proceedings, child custody disputes, spousal support, property division, and domestic relations matters in Virginia state courts.",
       url: "/family-law",
-      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Washington DC"
+      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County"
     },
     {
       title: "Commercial Litigation",
