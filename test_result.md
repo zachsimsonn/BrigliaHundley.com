@@ -301,6 +301,18 @@ test_plan:
         agent: "main"
         comment: "Updated logo references from null to bhlogo.png with cache busting parameter. Updated SEO component and structured data to use new logo. Frontend service restarted to clear cache."
 
+  - task: "Fix header menu alignment - keep all items on same line"
+    implemented: true
+    working: true
+    file: "frontend/src/components/Header.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Fixed header spacing and alignment issues. Reduced navigation spacing from space-x-6 to space-x-4, reduced button spacing from space-x-4 to space-x-2, made buttons smaller with size='sm' and reduced padding. Updated header padding from py-4 to py-3 with min-height constraint. All navigation items now stay on one line."
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
