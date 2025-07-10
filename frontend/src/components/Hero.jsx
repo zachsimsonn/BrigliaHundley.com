@@ -26,7 +26,7 @@ const Hero = ({ data, editableContent }) => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl lg:text-2xl text-gray-100 leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-100 leading-relaxed">
               {editableContent.hero.subtitle}
             </p>
 
