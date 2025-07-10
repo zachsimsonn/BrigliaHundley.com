@@ -48,26 +48,101 @@ const Home = ({ data, editableData, onNavigate }) => {
     "telephone": data.business.phone,
     "email": data.business.email,
     "foundingDate": "1993",
-    "areaServed": {
-      "@type": "Place",
-      "name": "Mid-Atlantic region"
-    },
-    "serviceArea": [
+    "areaServed": [
       {
-        "@type": "State",
-        "name": "Virginia"
+        "@type": "Place",
+        "name": "Tysons Corner, Virginia"
       },
       {
-        "@type": "State", 
-        "name": "Washington, D.C."
+        "@type": "Place", 
+        "name": "Fairfax County, Virginia"
       },
       {
-        "@type": "State",
-        "name": "Maryland"
+        "@type": "Place",
+        "name": "Arlington County, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Prince William County, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Northern Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "McLean, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Vienna, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Falls Church, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Alexandria, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Herndon, Virginia"
+      },
+      {
+        "@type": "Place",
+        "name": "Reston, Virginia"
       }
     ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "38.9187",
+        "longitude": "-77.2411"
+      },
+      "geoRadius": "50000"
+    },
     "priceRange": "$$$$",
-    "openingHours": "Mo-Fr 09:00-18:00"
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "sameAs": [
+      "https://www.martindale.com/brigliahundley",
+      "https://www.superlawyers.com/brigliahundley",
+      "https://www.bestlawyers.com/brigliahundley"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Legal Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Family Law",
+            "description": "Comprehensive family law services in Northern Virginia including divorce, custody, and support matters"
+          },
+          "areaServed": "Northern Virginia"
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Criminal Defense",
+            "description": "Experienced criminal defense representation in Northern Virginia courts"
+          },
+          "areaServed": "Northern Virginia"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
+            "name": "Corporate Law",
+            "description": "Complete corporate legal services for Northern Virginia businesses"
+          },
+          "areaServed": "Northern Virginia"
+        }
+      ]
+    }
   };
 
   return (
