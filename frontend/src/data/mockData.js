@@ -1151,7 +1151,9 @@ export const siteData = {
       content: "The right to peaceful protest is a cornerstone of American democracy, protected by the First Amendment to the U.S. Constitution. However, many people are unaware of their specific rights when participating in demonstrations or what to do if they are arrested during a protest. This comprehensive guide examines the legal protections available to protesters, the circumstances under which arrests can occur, and the steps you should take if you find yourself in custody. We'll explore the difference between lawful assembly and unlawful conduct, discuss the concept of time, place, and manner restrictions, and provide practical advice for protecting yourself legally while exercising your constitutional rights. Understanding these principles is crucial for anyone who wishes to participate in peaceful demonstrations while avoiding unnecessary legal complications."
     },
     {
+      id: 2,
       title: "Crawford v. Washington: Impact on Criminal Defense",
+      category: "Criminal Defense",
       excerpt: "Examining how the landmark Crawford decision transformed the admissibility of testimonial evidence in criminal proceedings and its ongoing implications for defense strategy.",
       author: "James W. Hundley",
       date: "May 20, 2025",
@@ -1160,7 +1162,9 @@ export const siteData = {
       content: "The Supreme Court's decision in Crawford v. Washington fundamentally altered the landscape of criminal evidence law by redefining how testimonial statements are evaluated under the Confrontation Clause. This landmark 2004 ruling abandoned the previous reliability-based approach in favor of a more restrictive standard that requires confrontation for testimonial statements, regardless of their perceived reliability. The decision has had far-reaching implications for criminal defense practice, affecting everything from the admissibility of lab reports and 911 calls to statements made during police interrogations. Defense attorneys must now navigate a complex framework for challenging testimonial evidence while prosecutors have had to adapt their trial strategies accordingly. This analysis explores the practical applications of Crawford in various criminal contexts and provides guidance for practitioners on leveraging this constitutional protection effectively."
     },
     {
+      id: 3,
       title: "Business Attorney: Pros and Cons of In-House vs. External Counsel",
+      category: "Business Law",
       excerpt: "A comprehensive analysis of the advantages and disadvantages of hiring in-house legal counsel versus retaining external law firms for business legal needs.",
       author: "Steven D. Briglia",
       date: "April 28, 2025",
@@ -1169,7 +1173,9 @@ export const siteData = {
       content: "Every growing business eventually faces the decision of how to structure its legal support: hire an in-house attorney, rely on external counsel, or implement a hybrid approach. This decision impacts not only the company's legal costs but also its operational efficiency, risk management, and strategic planning capabilities. In-house counsel offers the advantage of intimate knowledge of the business, immediate availability, and potentially lower per-hour costs for routine matters. However, external counsel brings specialized expertise, objectivity, and the ability to handle complex matters that may be beyond the scope of a single attorney. This comprehensive analysis examines the financial implications, strategic considerations, and practical factors that should influence this critical business decision, providing frameworks for evaluating which approach best serves your company's unique needs and growth trajectory."
     },
     {
+      id: 4,
       title: "Hidden Assets in Divorce: Detection and Recovery Strategies",
+      category: "Family Law",
       excerpt: "Professional strategies for uncovering concealed assets during divorce proceedings and the legal tools available to ensure fair property division.",
       author: "Teresa S. Cole",
       date: "March 4, 2025",
@@ -1178,7 +1184,9 @@ export const siteData = {
       content: "One of the most challenging aspects of divorce proceedings involves ensuring complete financial disclosure from both parties. Unfortunately, attempts to hide assets during divorce are more common than many realize, ranging from simple cash concealments to sophisticated offshore arrangements. This article provides a comprehensive overview of detection strategies, legal remedies, and preventive measures for addressing hidden assets in divorce cases. We examine common hiding methods including cryptocurrency transfers, business manipulations, and third-party arrangements, while discussing the professional resources available for asset discovery, including forensic accountants, private investigators, and specialized legal tools. Virginia's equitable distribution laws provide specific remedies for dealing with concealed assets, and understanding these protections is crucial for achieving fair property division. The article also addresses the consequences of hiding assets and the importance of working with experienced family law counsel to protect your financial interests."
     },
     {
+      id: 5,
       title: "Should You See a Doctor After a Car Accident?",
+      category: "Personal Injury",
       excerpt: "Understanding the importance of immediate medical attention after car accidents, even when injuries aren't immediately apparent.",
       author: "Madison A. Beatty",
       date: "March 3, 2025",
@@ -1187,7 +1195,9 @@ export const siteData = {
       content: "After a car accident, many people focus primarily on vehicle damage and insurance claims while overlooking a critical factor: their health. Even seemingly minor accidents can result in injuries that don't manifest symptoms immediately, such as soft tissue damage, concussions, or internal injuries. Delayed medical treatment can not only jeopardize your health but also complicate any future insurance claims or legal proceedings. This comprehensive guide examines why prompt medical attention is crucial after any vehicle accident, regardless of how you feel immediately afterward. We discuss common delayed-onset injuries, the importance of creating a medical record, and how insurance companies evaluate medical treatment when processing claims. The article also provides practical guidance on choosing appropriate medical care, understanding the relationship between medical treatment and legal claims, and protecting both your health and legal rights following an accident."
     },
     {
+      id: 6,
       title: "Social Media and Its Impact on Family Law Litigation",
+      category: "Family Law",
       excerpt: "How social media posts can significantly affect divorce, custody, and other family law proceedings, with practical guidance for protection.",
       author: "Lauren L. Gill",
       date: "February 13, 2025",
