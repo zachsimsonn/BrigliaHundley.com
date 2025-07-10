@@ -134,22 +134,22 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <button 
                 onClick={() => handleNavigate('blog')}
                 className={getNavItemClass('blog')}
-                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 RESOURCES
               </button>
               <button 
                 onClick={() => handleNavigate('contact')}
                 className={getNavItemClass('contact')}
-                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px', fontSize: '14px' }}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 CONTACT US
               </button>
             </nav>
           </div>
             
-          {/* Right Side Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Right Side Buttons - Moved further right */}
+          <div className="hidden md:flex items-center space-x-4 flex-shrink-0 ml-8">
             <Button 
               variant="outline" 
               className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
