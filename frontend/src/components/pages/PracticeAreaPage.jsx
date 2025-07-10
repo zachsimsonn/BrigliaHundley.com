@@ -77,12 +77,23 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
             <div className="prose prose-lg max-w-none">
               {/* Hero Image */}
               {practiceArea.image && (
-                <div className="mb-8 rounded-lg overflow-hidden">
+                <div className="mb-8 rounded-lg overflow-hidden bg-gray-200">
                   <img 
                     src={practiceArea.image} 
                     alt={practiceArea.title}
                     className="w-full h-96 object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextElementSibling.style.display = 'flex';
+                    }}
                   />
+                  <div className="w-full h-96 bg-gradient-to-r from-gray-700 to-gray-900 flex items-center justify-center text-white" style={{display: 'none'}}>
+                    <div className="text-center">
+                      <Scale className="h-16 w-16 mx-auto mb-4 text-gray-300" />
+                      <h3 className="text-2xl font-bold">{practiceArea.title}</h3>
+                      <p className="text-gray-300 mt-2">Professional Legal Services</p>
+                    </div>
+                  </div>
                 </div>
               )}
 
