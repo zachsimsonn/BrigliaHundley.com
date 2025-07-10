@@ -809,8 +809,7 @@ export const siteData = {
       position: "Associate",
       experience: "Hannah Merrill supports family law and eminent domain practices. She assists clients with domestic relations and property rights matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Hannah Merrill supports family law and eminent domain practices. She assists clients with domestic relations matters, property rights cases, and condemnation proceedings. Her work includes supporting complex family law cases, eminent domain matters, and providing comprehensive legal research and analysis. Ms. Merrill is committed to helping clients navigate challenging legal situations with skill and dedication.",
-      image: "/api/placeholder/300/400",
-      phone: "703.883.0217",
+      image: "https://brigliahundley.com/wp-content/uploads/bh-hannah-merrill.jpg",
       email: "hmerrill@brigliahundley.com"
     },
     {
