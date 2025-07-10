@@ -160,6 +160,12 @@ const App = () => {
       case 'about':
         return (
           <div className="min-h-screen bg-white pt-20">
+            <SEO 
+              title="About Us"
+              description="Learn about Briglia Hundley®, a Tier 1 ranked law firm in Tysons Corner, Virginia. Our experienced attorneys have been serving clients since 1993."
+              keywords="about Briglia Hundley, law firm history, Tysons Corner attorneys, Virginia lawyers"
+              canonical="https://brigliahundley.com/about"
+            />
             <About data={data} editableContent={editableData} />
           </div>
         );
@@ -167,6 +173,12 @@ const App = () => {
       case 'attorneys':
         return (
           <div className="min-h-screen bg-white pt-20">
+            <SEO 
+              title="Attorneys"
+              description="Meet our experienced legal team at Briglia Hundley®. Our attorneys are AV rated and recognized by Best Lawyers and Super Lawyers."
+              keywords="attorneys, lawyers, legal team, Briglia Hundley, Virginia lawyers, Tysons Corner attorneys"
+              canonical="https://brigliahundley.com/attorneys"
+            />
             <Attorneys data={data} onNavigate={handleNavigate} />
           </div>
         );
@@ -174,6 +186,12 @@ const App = () => {
       case 'testimonials':
         return (
           <div className="min-h-screen bg-white pt-20">
+            <SEO 
+              title="Testimonials"
+              description="Read what our clients say about Briglia Hundley®. Client testimonials and reviews from satisfied clients in Virginia, DC, and Maryland."
+              keywords="testimonials, client reviews, Briglia Hundley reviews, law firm testimonials"
+              canonical="https://brigliahundley.com/testimonials"
+            />
             <Testimonials data={data} />
           </div>
         );
@@ -181,6 +199,12 @@ const App = () => {
       case 'contact':
         return (
           <div className="min-h-screen bg-white pt-20">
+            <SEO 
+              title="Contact Us"
+              description="Contact Briglia Hundley® for your legal needs. Located in Tysons Corner, Virginia. Schedule a free consultation today."
+              keywords="contact, Tysons Corner law firm, free consultation, Virginia attorneys"
+              canonical="https://brigliahundley.com/contact"
+            />
             <Contact data={data} editableContent={editableData} />
           </div>
         );
