@@ -19,8 +19,8 @@ const ServiceAreas = ({ data }) => {
       icon: <Users className="h-6 w-6 text-blue-900" />
     },
     {
-      name: "Prince William County",
-      description: "Dedicated legal services for Prince William County clients",
+      name: "Washington DC",
+      description: "Expert legal representation for Washington DC residents and businesses",
       icon: <MapPin className="h-6 w-6 text-blue-900" />
     }
   ];
