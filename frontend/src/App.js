@@ -290,7 +290,8 @@ const App = () => {
                 <Header 
                   data={data} 
                   onEdit={handleContentEdit} 
-                  onNavigate={handleNavigate} 
+                  onNavigate={handleNavigate}
+                  currentPage={currentPage}
                 />
                 {renderCurrentPage()}
                 <Footer data={data} />
