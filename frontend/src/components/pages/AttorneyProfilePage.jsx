@@ -51,8 +51,16 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           
           <div className="text-center">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mr-6">
-                <User className="h-12 w-12 text-white" />
+              <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mr-6 overflow-hidden">
+                {attorney.image ? (
+                  <img 
+                    src={attorney.image} 
+                    alt={attorney.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <User className="h-12 w-12 text-white" />
+                )}
               </div>
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold mb-2">{attorney.name}</h1>
