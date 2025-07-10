@@ -1,7 +1,18 @@
-import React from 'react';
-import { Award, Users, MapPin, Calendar } from 'lucide-react';
+import React, { useState } from 'react';
+import { Award, Users, MapPin, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Button } from './ui/button';
 
 const About = ({ data, editableContent }) => {
+  const [currentAnnouncement, setCurrentAnnouncement] = useState(0);
+
+  const nextAnnouncement = () => {
+    setCurrentAnnouncement((prev) => (prev + 1) % data.announcements.length);
+  };
+
+  const prevAnnouncement = () => {
+    setCurrentAnnouncement((prev) => (prev - 1 + data.announcements.length) % data.announcements.length);
+  };
+
   const highlights = [
     {
       icon: <Award className="h-8 w-8 text-blue-900" />,
@@ -42,37 +53,70 @@ const About = ({ data, editableContent }) => {
               {editableContent.about.content}
             </p>
 
-            {/* Announcements with Scroll Feature */}
+            {/* Announcements with Arrow Navigation */}
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Announcements</h3>
-              <div className="h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-                <div className="space-y-4 pr-2">
-                  {data.announcements.map((announcement, index) => (
-                    <div key={index} className="border-b border-gray-100 pb-3 last:border-b-0">
-                      <div className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-900 rounded-full mt-2.5 flex-shrink-0"></div>
-                        <div className="flex-1">
-                          <h4 className="text-sm font-medium text-gray-900 mb-1 leading-tight">
-                            {announcement.title}
-                          </h4>
-                          {announcement.content && (
-                            <p className="text-xs text-gray-600 leading-relaxed mb-2">
-                              {announcement.content}
-                            </p>
-                          )}
-                          {announcement.link && (
-                            <a 
-                              href={announcement.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-xs text-blue-900 hover:text-blue-700 underline"
-                            >
-                              Learn More
-                            </a>
-                          )}
-                        </div>
+              <div className="relative">
+                <div className="bg-blue-50 rounded-lg p-6 min-h-[140px] flex items-center">
+                  <div className="w-full">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-900 rounded-full mt-2.5 flex-shrink-0"></div>
+                      <div className="flex-1">
+                        <h4 className="text-lg font-medium text-gray-900 mb-2 leading-tight">
+                          {data.announcements[currentAnnouncement].title}
+                        </h4>
+                        {data.announcements[currentAnnouncement].content && (
+                          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                            {data.announcements[currentAnnouncement].content}
+                          </p>
+                        )}
+                        {data.announcements[currentAnnouncement].link && (
+                          <a 
+                            href={data.announcements[currentAnnouncement].link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-blue-900 hover:text-blue-700 underline"
+                          >
+                            Learn More
+                          </a>
+                        )}
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                {/* Navigation Arrows */}
+                <div className="flex justify-center space-x-4 mt-4">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={prevAnnouncement}
+                    className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white rounded-full w-10 h-10 p-0"
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={nextAnnouncement}
+                    className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white rounded-full w-10 h-10 p-0"
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </div>
+
+                {/* Dots Indicator */}
+                <div className="flex justify-center space-x-2 mt-3">
+                  {data.announcements.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentAnnouncement(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentAnnouncement
+                          ? 'bg-blue-900 w-6'
+                          : 'bg-gray-300 hover:bg-gray-400'
+                      }`}
+                    />
                   ))}
                 </div>
               </div>
