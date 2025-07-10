@@ -157,7 +157,8 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
           <div className="hidden md:flex items-center space-x-2 flex-shrink-0 ml-4">
             <Button 
               variant="outline" 
-              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
+              size="sm"
+              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 text-xs px-3 py-2"
               onClick={() => handleNavigate('contact')}
               style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}
             >
@@ -165,11 +166,12 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
+              size="sm"
+              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 text-xs px-3 py-2"
               onClick={() => window.location.href = `tel:${data.business.phone}`}
               style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}
             >
-              <Phone className="mr-2 h-4 w-4" />
+              <Phone className="mr-1 h-3 w-3" />
               <span className="font-medium">Call Now</span>
             </Button>
           </div>
