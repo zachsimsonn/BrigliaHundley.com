@@ -217,30 +217,32 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={
-            <div>
-              <Header 
-                data={data} 
-                onEdit={handleContentEdit} 
-                onNavigate={handleNavigate} 
-              />
-              {renderCurrentPage()}
-              <Footer data={data} />
-              <AdminDashboard 
-                data={data} 
-                onDataUpdate={handleDataUpdate} 
-              />
-              <Toaster />
-            </div>
-          }>
-            <Route index element={<div />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <HelmetProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate} 
+                />
+                {renderCurrentPage()}
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            }>
+              <Route index element={<div />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </HelmetProvider>
   );
 };
 
