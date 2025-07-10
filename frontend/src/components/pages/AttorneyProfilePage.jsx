@@ -76,9 +76,9 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
         <div className="grid lg:grid-cols-4 gap-12">
           {/* Left Sidebar - Attorney Photo and Contact */}
           <div className="lg:col-span-1">
-            {/* Large Square Portrait */}
+            {/* Large Square Portrait - Matching brigliahundley.com size */}
             <div className="mb-8">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '500px'}}>
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '300px'}}>
                 {attorney.image ? (
                   <img 
                     src={attorney.image} 
@@ -95,24 +95,24 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
             {/* Contact Information */}
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
+              <h3 className="text-base font-semibold text-gray-900 mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Phone className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                  <Phone className="h-4 w-4 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                   <div className="text-left">
                     <div className="text-sm text-gray-500">Phone</div>
                     <div className="text-gray-900 font-medium text-sm">{attorney.phone || data.business.phone}</div>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Mail className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                  <Mail className="h-4 w-4 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                   <div className="text-left min-w-0 flex-1">
                     <div className="text-sm text-gray-500">Email</div>
-                    <div className="text-gray-900 font-medium text-xs break-words">{attorney.email || data.business.email}</div>
+                    <div className="text-gray-900 font-medium text-sm break-words">{attorney.email || data.business.email}</div>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                  <MapPin className="h-4 w-4 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                   <div className="text-left">
                     <div className="text-sm text-gray-500">Office</div>
                     <div className="text-gray-900 font-medium text-sm">
