@@ -1023,7 +1023,7 @@ export const siteData = {
       position: "Associate",
       experience: "Hannah Merrill is an associate attorney supporting the firm's family law and eminent domain practices. She joined the firm after serving as a law clerk for the Honorable Penney S. Azcarate at Fairfax County Circuit Court and the Honorable Sookyoung Shin at the Massachusetts Appeals Court.",
       fullBio: "Hannah Merrill is an associate attorney supporting the firm's family law and eminent domain practices. She joined the firm after serving as a law clerk for the Honorable Penney S. Azcarate at Fairfax County Circuit Court and the Honorable Sookyoung Shin at the Massachusetts Appeals Court.\n\nMs. Merrill received her undergraduate degree from Boston College and her law degree from William & Mary Law School. While in law school, she was a Notes Editor for the Journal of Race, Gender, and Social Justice, where her note on employment discrimination was published, and served as Development Justice for the William & Mary Moot Court team. In her role with the Moot Court team, she won the Herbert Wechsler National Criminal Moot Court Competition, was a semi-finalist in the New York City Bar's National Moot Court Competition and was inducted into the Order of the Barristers. Ms. Merrill was also a teaching assistant for William & Mary's Advanced Brief Writing and Employment Law courses.",
-      image: "https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg",
+      image: "https://brigliahundley.com/wp-content/uploads/bh-hannah-merrill-400x300.jpg",
       phone: "703.883.0216",
       email: "hmerrill@brigliahundley.com",
       education: [
