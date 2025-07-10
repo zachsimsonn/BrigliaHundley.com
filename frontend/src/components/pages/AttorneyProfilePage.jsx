@@ -78,7 +78,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
           <div className="lg:col-span-1">
             {/* Large Square Portrait */}
             <div className="mb-8">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{maxWidth: '350px'}}>
                 {attorney.image ? (
                   <img 
                     src={attorney.image} 
@@ -99,21 +99,21 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
               <div className="space-y-4">
                 <div className="flex items-start">
                   <Phone className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                  <div>
+                  <div className="text-left">
                     <div className="text-sm text-gray-500">Phone</div>
                     <div className="text-gray-900 font-medium">{attorney.phone || data.business.phone}</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                  <div>
+                  <div className="text-left">
                     <div className="text-sm text-gray-500">Email</div>
                     <div className="text-gray-900 font-medium">{attorney.email || data.business.email}</div>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                  <div>
+                  <div className="text-left">
                     <div className="text-sm text-gray-500">Office</div>
                     <div className="text-gray-900 font-medium">
                       {data.business.address}<br />
