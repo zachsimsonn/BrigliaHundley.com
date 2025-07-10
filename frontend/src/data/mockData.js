@@ -973,7 +973,7 @@ export const siteData = {
       position: "Associate",
       experience: "Lauren L. Gill is an associate attorney supporting the firm's family law practice.",
       fullBio: "Lauren L. Gill is an associate attorney supporting the firm's family law practice.\n\nSince her admission to the Virginia State Bar in October 2022, Ms. Gill's legal practice has focused exclusively on family law matters. She has experience handling divorce cases, custody determinations, child support issues, prenuptial agreements, and other domestic law matters.\n\nMs. Gill received her undergraduate degree in Political Economy from Hillsdale College in Michigan. She was a delegate on Hillsdale College's Student Federation and a member of Pi Beta Phi women's fraternity. Ms. Gill spent her weekends volunteering at the local domestic violence shelter and assisting with her sorority's philanthropic events.\n\nShe began her legal education at Concordia University Law School in Idaho, where she was a member of the Concordia Law Review and the Treasurer for the Idaho Women's Legal Society. Due to the strength of her academic performance at Concordia, Ms. Gill was able to transfer to George Mason University's Antonin Scalia Law School where she received the school's Highest Achievement Award for Trial Advocacy. She graduated in 2022.",
-      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-lauren-gill-u800ds.jpg",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHN8ZW58MHx8fHwxNzUyMTc3MTc1fDA&ixlib=rb-4.1.0&q=85",
       phone: "703.883.0215",
       email: "lgill@brigliahundley.com",
       education: [
