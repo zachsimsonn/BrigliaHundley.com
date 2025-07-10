@@ -83,7 +83,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                 {activeDropdown === 'services' && (
                   <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                     <div className="p-4">
-                      <div className="grid grid-cols-4 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {data.practiceAreas.map((area, index) => (
                           <button
                             key={index}
