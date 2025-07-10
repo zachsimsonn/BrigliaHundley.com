@@ -94,7 +94,7 @@ export const siteData = {
     },
     {
       title: "Business Litigation",
-      description: "Briglia Hundley® represents a wide range of businesses and individuals in the state and federal courts in Virginia, Maryland, and the District of Columbia.",
+      description: "Strategic business litigation services for companies and individuals in state and federal courts throughout the region.",
       fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
       detailedContent: {
         sections: [
