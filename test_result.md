@@ -205,6 +205,20 @@ test_plan:
   test_all: false
   test_priority: "high_first"
 
+  - task: "Remove blog section from home page"
+    implemented: true
+    working: true
+    file: "frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Removed Blog component from Home component while keeping it accessible via navigation on its own dedicated page"
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
+  - agent: "main"
+    message: "Additional improvement: Removed blog section from home page to make it more focused and streamlined. Blog is still fully accessible via navigation menu on its own dedicated page. Home page now flows: Hero -> About -> Practice Areas -> Attorneys -> Testimonials -> FAQ -> Contact"
