@@ -1,3 +1,12 @@
+/* Import Georgia Pro font if available, fallback to Georgia and serif */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+/* Custom header styling with Georgia Pro / EB Garamond */
+h1, h2, h3 {
+    font-family: 'EB Garamond', 'Georgia Pro', Georgia, serif !important;
+    font-weight: 600;
+}
+
 .App {
     text-align: center;
 }
