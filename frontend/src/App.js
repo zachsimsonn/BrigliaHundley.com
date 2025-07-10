@@ -212,6 +212,12 @@ const App = () => {
       case 'blog':
         return (
           <div className="min-h-screen bg-white pt-20">
+            <SEO 
+              title="Blog"
+              description="Legal insights and news from Briglia Hundley®. Stay informed with articles on Virginia law, legal updates, and attorney insights."
+              keywords="legal blog, Virginia law, legal news, attorney insights, Briglia Hundley blog"
+              canonical="https://brigliahundley.com/blog"
+            />
             <Blog data={data} onNavigate={handleNavigate} />
           </div>
         );
