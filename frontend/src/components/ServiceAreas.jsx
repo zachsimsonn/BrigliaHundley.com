@@ -100,7 +100,7 @@ const ServiceAreas = ({ data }) => {
               Need Legal Services in Northern Virginia?
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Whether you're in Tysons Corner, Fairfax, Arlington, or anywhere in Northern Virginia, 
+              Whether you're in Loudoun County, Fairfax, Arlington, or anywhere in Northern Virginia, 
               our experienced attorneys are ready to help with your legal needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
