@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import axios from "axios";
 
 // Components
@@ -18,6 +19,7 @@ import AdminDashboard from "./components/AdminDashboard";
 import PracticeAreaPage from "./components/pages/PracticeAreaPage";
 import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import { Toaster } from "./components/ui/toaster";
+import SEO from "./components/SEO";
 
 // Data
 import { siteData, editableContent } from "./data/mockData";
