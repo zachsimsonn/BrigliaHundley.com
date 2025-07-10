@@ -748,7 +748,7 @@ export const siteData = {
       position: "Partner",
       experience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations. She represents homeowners associations and businesses in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Molly Peacock has nearly 20 years of experience serving as legal counsel for community associations and corporations. She represents homeowners associations, condominium associations, and businesses in a wide variety of legal matters. Her practice focuses on community association law, corporate governance, contract disputes, and general business litigation. Ms. Peacock is dedicated to providing practical legal solutions that help organizations operate effectively while minimizing legal risks.",
-      image: "https://images.pexels.com/photos/32907704/pexels-photo-32907704.jpeg",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-mary-molly-peacock-25.jpg",
       phone: "703.883.0210",
       email: "mpeacock@brigliahundley.com"
     },
