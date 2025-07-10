@@ -48,8 +48,8 @@ const About = ({ data, editableContent }) => {
               <div className="space-y-3">
                 {data.news.slice(0, 2).map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-600 text-sm">{item}</p>
+                    <div className="w-2 h-2 bg-blue-900 rounded-full mt-2.5 flex-shrink-0"></div>
+                    <p className="text-gray-600 text-sm leading-relaxed">{item}</p>
                   </div>
                 ))}
               </div>
