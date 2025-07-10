@@ -198,13 +198,13 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
               )}
 
               {attorney.certifications && (
-                <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Certifications, Honors & Awards</h3>
-                  <div className="space-y-2">
+                <div className="mb-8 text-left">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Certifications, Honors & Awards</h3>
+                  <div className="space-y-2 text-left">
                     {attorney.certifications.map((cert, index) => (
-                      <div key={index} className="flex items-start">
+                      <div key={index} className="flex items-start text-left">
                         <Award className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                        <span className="text-gray-600">{cert}</span>
+                        <span className="text-gray-600 text-left">{cert}</span>
                       </div>
                     ))}
                   </div>
