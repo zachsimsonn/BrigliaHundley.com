@@ -140,17 +140,17 @@ const Footer = ({ data }) => {
             </h3>
             <div className="space-y-4">
               <div className="bg-gray-800 rounded-lg p-4">
-                <div className="text-yellow-400 font-semibold mb-2">Best Lawyers® 2025</div>
+                <div className="text-white font-bold mb-2">Best Lawyers® 2025</div>
                 <div className="text-gray-300 text-sm">7 attorneys recognized</div>
               </div>
               
               <div className="bg-gray-800 rounded-lg p-4">
-                <div className="text-yellow-400 font-semibold mb-2">Super Lawyers 2025</div>
+                <div className="text-white font-bold mb-2">Super Lawyers 2025</div>
                 <div className="text-gray-300 text-sm">Multiple attorneys recognized</div>
               </div>
               
               <div className="bg-gray-800 rounded-lg p-4">
-                <div className="text-yellow-400 font-semibold mb-2">Tier 1 Ranked</div>
+                <div className="text-white font-bold mb-2">Tier 1 Ranked</div>
                 <div className="text-gray-300 text-sm">Best Law Firms</div>
               </div>
             </div>
