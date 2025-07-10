@@ -59,11 +59,11 @@ const About = ({ data, editableContent }) => {
               <div className="relative">
                 <div className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-2xl p-8 text-white h-[240px] flex items-center">
                   <div className="w-full text-center">
-                    <h4 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight">
+                    <h4 className="text-xl lg:text-2xl font-bold mb-3 leading-tight">
                       {data.announcements[currentAnnouncement].title}
                     </h4>
                     {data.announcements[currentAnnouncement].content && (
-                      <p className="text-xl text-gray-100 mb-6 max-w-2xl mx-auto leading-relaxed">
+                      <p className="text-base text-gray-100 mb-4 max-w-2xl mx-auto leading-relaxed">
                         {data.announcements[currentAnnouncement].content}
                       </p>
                     )}
@@ -72,7 +72,7 @@ const About = ({ data, editableContent }) => {
                         href={data.announcements[currentAnnouncement].link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-lg text-gray-300 hover:text-white underline transition-colors duration-300"
+                        className="text-sm text-gray-300 hover:text-white underline transition-colors duration-300"
                       >
                         Learn More
                       </a>
