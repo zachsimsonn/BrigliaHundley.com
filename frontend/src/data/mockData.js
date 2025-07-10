@@ -11,7 +11,7 @@ export const siteData = {
     serviceArea: "Northern Virginia, Fairfax County, Prince William County, Arlington County, Alexandria, McLean, Vienna, Falls Church, Herndon, Reston, Great Falls, Oakton, Burke, Springfield, Annandale, Centreville, Manassas, Woodbridge, Dale City, Dumfries",
     serviceRegions: ["Tysons Corner", "Fairfax", "Northern Virginia", "Prince William County", "Arlington", "Alexandria", "McLean", "Vienna", "Falls Church", "Herndon", "Reston", "Great Falls", "Oakton", "Burke", "Springfield", "Annandale", "Centreville", "Manassas", "Woodbridge", "Dale City", "Dumfries"],
     jurisdictions: ["Virginia State Courts", "Federal Courts in Eastern District of Virginia", "Federal Courts in Western District of Virginia", "U.S. District Court for the District of Columbia", "Fairfax County Circuit Court", "Prince William County Circuit Court", "Arlington County Circuit Court"],
-    logo: "/briglia-hundley-logo.svg?v=" + Date.now() // Fixed logo path with cache busting
+    logo: "/briglia-hundley-logo.svg" // New circular logo with classical columns
   },
   
   practiceAreas: [
