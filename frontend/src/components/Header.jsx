@@ -181,15 +181,15 @@ const Header = ({ data, onEdit, onNavigate }) => {
                 About
               </button>
               
-              {/* Mobile Services */}
+              {/* Mobile Practice Areas */}
               <div>
-                <div className="font-medium text-gray-900 mb-2">Services</div>
+                <div className="font-medium text-gray-900 mb-2">Practice Areas</div>
                 <div className="pl-4 space-y-2">
                   {data.practiceAreas.map((area, index) => (
                     <button
                       key={index}
                       onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                      className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200"
+                      className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200 font-bold"
                     >
                       {area.title}
                     </button>
