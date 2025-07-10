@@ -59,15 +59,6 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 <p className="text-xl text-gray-300">{attorney.position}</p>
               </div>
             </div>
-            
-            <div className="flex items-center justify-center space-x-4">
-              <div className="flex items-center">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-gray-300 text-gray-300" />
-                ))}
-              </div>
-              <span className="text-gray-300">Client Rating</span>
-            </div>
           </div>
         </div>
       </div>
