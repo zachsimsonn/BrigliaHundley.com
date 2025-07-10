@@ -9,7 +9,7 @@ export const siteData = {
     email: "info@brigliahundley.com", // Mock email
     description: "Briglia Hundley® is a Tier 1 ranked, award-winning law firm delivering superior client service and innovative legal strategies in various areas of law.",
     serviceArea: "Mid-Atlantic region",
-    logo: "/briglia-hundley-logo.svg?v=2025" // Static cache busting version
+    logo: "/briglia-hundley-new-logo.svg" // Updated to new circular logo
   },
   
   practiceAreas: [
