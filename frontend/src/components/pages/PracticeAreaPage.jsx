@@ -116,7 +116,7 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
                   </Button>
                   <Button 
                     variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-gray-900"
+                    className="border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white"
                     onClick={() => window.location.href = `tel:${data.business.phone}`}
                   >
                     <Phone className="mr-2 h-4 w-4" />
