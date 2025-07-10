@@ -229,6 +229,18 @@ test_plan:
         agent: "main"
         comment: "Removed 5-star rating display and 'Client Rating' text from attorney profile pages header section, also removed unused Star import"
 
+  - task: "Standardize Call Now button styling"
+    implemented: true
+    working: true
+    file: "frontend/src/components/Header.jsx, frontend/src/components/pages/AttorneyProfilePage.jsx, frontend/src/components/pages/PracticeAreaPage.jsx, frontend/src/components/PracticeAreas.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Changed all 'Call Now' buttons to use outline variant with consistent styling to match 'Schedule a Free Consultation' buttons across all components"
+
 agent_communication:
   - agent: "main"
     message: "Successfully implemented all requested improvements: 1) Fixed logo caching issue with cache busting parameter 2) Added professional attorney photos from vision expert agent 3) Implemented comprehensive SEO improvements including meta tags, structured data, sitemap, and robots.txt 4) Created dynamic SEO component for page-specific optimization 5) Enhanced image alt text for better accessibility and SEO. Frontend has been restarted to clear cache. Ready for testing."
@@ -236,3 +248,5 @@ agent_communication:
     message: "Additional improvement: Removed blog section from home page to make it more focused and streamlined. Blog is still fully accessible via navigation menu on its own dedicated page. Home page now flows: Hero -> About -> Practice Areas -> Attorneys -> Testimonials -> FAQ -> Contact"
   - agent: "main"
     message: "Removed 5-star ratings and client rating text from individual attorney profile pages. The attorney profile pages now have a cleaner header with just the attorney name and position, removing the generic star rating display."
+  - agent: "main"
+    message: "Standardized all 'Call Now' buttons to use the same outline style as 'Schedule a Free Consultation' buttons. All buttons now have consistent styling: outline variant with border and text color that matches on hover for unified visual design across the website."
