@@ -280,14 +280,14 @@ test_plan:
   - task: "Fix blog navigation and add real content"
     implemented: true
     working: true
-    file: "frontend/src/data/mockData.js, frontend/src/components/pages/BlogPostPage.jsx, frontend/src/App.js"
+    file: "frontend/src/data/mockData.js, frontend/src/components/pages/BlogPostPage.jsx, frontend/src/App.js, frontend/src/components/Blog.jsx"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Fixed blog post navigation that was redirecting to home page. Added real blog content from brigliahundley.com including Virginia Supreme Court case analysis, PCAOB enforcement article, DWI arrest guide, social media litigation, business formation, and estate planning. Created BlogPostPage component with full article view, author bios, related articles, and CTA sections. Added blog-post route to App.js."
+        comment: "Fixed blog post navigation error and updated with most recent content from brigliahundley.com (April-June 2025). Added articles: 'Arrested at a Protest', 'Crawford v. Washington', 'Business Attorney Pros/Cons', 'Hidden Assets in Divorce', 'See Doctor After Car Accident', 'Social Media in Family Law'. Fixed blog images to show actual photos instead of placeholders. Created BlogPostPage component with professional layout and proper routing."
 
 agent_communication:
   - agent: "main"
