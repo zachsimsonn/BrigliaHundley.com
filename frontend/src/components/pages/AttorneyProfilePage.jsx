@@ -213,8 +213,8 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.languages && (
                 <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Languages</h3>
-                  <div className="flex flex-wrap justify-center gap-3">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Languages</h3>
+                  <div className="flex flex-wrap gap-3">
                     {attorney.languages.map((language, index) => (
                       <span key={index} className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">
                         {language}
@@ -226,8 +226,8 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
               {attorney.practiceAreas && (
                 <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">Areas of Practice</h3>
-                  <div className="flex flex-wrap justify-center gap-3">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Areas of Practice</h3>
+                  <div className="flex flex-wrap gap-3">
                     {attorney.practiceAreas.map((area, index) => (
                       <span key={index} className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm">
                         {area}
