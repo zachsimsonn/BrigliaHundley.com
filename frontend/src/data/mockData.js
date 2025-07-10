@@ -721,7 +721,7 @@ export const siteData = {
       position: "Partner",
       experience: "Courtney Harden has almost 20 years of litigation experience in Virginia. She represents individuals and businesses in complex civil litigation matters before state and federal courts in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Courtney Harden has almost 20 years of litigation experience in Virginia. She represents individuals and businesses in complex civil litigation matters before state and federal courts. Her practice focuses on commercial litigation, employment disputes, personal injury cases, and general civil litigation. Ms. Harden is committed to providing strategic legal counsel and aggressive representation to achieve the best possible outcomes for her clients.",
-      image: "https://images.unsplash.com/photo-1736939666660-d4c776e0532c",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-courtney-harden-800rrsa.jpg",
       phone: "703.883.0207",
       email: "charden@brigliahundley.com"
     },
