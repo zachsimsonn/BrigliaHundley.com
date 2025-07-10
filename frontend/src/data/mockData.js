@@ -619,7 +619,7 @@ export const siteData = {
       position: "Partner",
       experience: "Steve Briglia has over 30 years of extensive trial experience in both civil and criminal law matters. He has tried hundreds of cases before judges and juries in both state and federal court throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Steve Briglia has over 30 years of extensive trial experience in both civil and criminal law matters. He has tried hundreds of cases before judges and juries in both state and federal court. He also regularly represents clients in administrative hearings, arbitrations, and mediations, and he serves as outside general counsel to numerous corporate clients. Mr. Briglia's clients include national and regional businesses, municipalities, elected officials, and individuals involved in business disputes and criminal investigations. Mr. Briglia is a founding member of Briglia Hundley®.",
-      image: "https://images.pexels.com/photos/14634936/pexels-photo-14634936.jpeg",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-steve-briglia-u800ds.jpg",
       phone: "703.883.0205",
       email: "sbriglia@brigliahundley.com",
       education: [
