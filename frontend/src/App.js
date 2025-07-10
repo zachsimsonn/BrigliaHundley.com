@@ -28,8 +28,56 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const Home = ({ data, editableData, onNavigate }) => {
+  const homeSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Briglia Hundley PC",
+    "alternateName": "Briglia Hundley®",
+    "url": "https://brigliahundley.com",
+    "logo": "https://brigliahundley.com/briglia-hundley-logo.svg",
+    "description": data.business.description,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1921 Gallows Road, Suite 900",
+      "addressLocality": "Tysons Corner",
+      "addressRegion": "VA",
+      "postalCode": "22182",
+      "addressCountry": "US"
+    },
+    "telephone": data.business.phone,
+    "email": data.business.email,
+    "foundingDate": "1993",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Mid-Atlantic region"
+    },
+    "serviceArea": [
+      {
+        "@type": "State",
+        "name": "Virginia"
+      },
+      {
+        "@type": "State", 
+        "name": "Washington, D.C."
+      },
+      {
+        "@type": "State",
+        "name": "Maryland"
+      }
+    ],
+    "priceRange": "$$$$",
+    "openingHours": "Mo-Fr 09:00-18:00"
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Home"
+        description="Briglia Hundley® is a Tier 1 ranked, award-winning law firm in Tysons Corner, Virginia. Expert legal services in criminal defense, civil litigation, corporate law, family law, and more since 1993."
+        keywords="law firm, attorneys, lawyers, Tysons Corner, Virginia, criminal defense, civil litigation, corporate law, family law, personal injury, real estate, estate planning"
+        canonical="https://brigliahundley.com/"
+        schemaData={homeSchemaData}
+      />
       <Hero data={data} editableContent={editableData} />
       <About data={data} editableContent={editableData} />
       <PracticeAreas data={data} onNavigate={onNavigate} />
