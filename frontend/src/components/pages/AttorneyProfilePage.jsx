@@ -228,11 +228,28 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 <div className="mb-8">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-4">Areas of Practice</h3>
                   <div className="flex flex-wrap gap-3">
-                    {attorney.practiceAreas.map((area, index) => (
-                      <span key={index} className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm">
-                        {area}
-                      </span>
-                    ))}
+                    {attorney.practiceAreas.map((area, index) => {
+                      // Find the matching practice area in data to get the URL
+                      const practiceArea = data.practiceAreas.find(pa => 
+                        pa.title.toLowerCase() === area.toLowerCase() ||
+                        pa.title.toLowerCase().includes(area.toLowerCase()) ||
+                        area.toLowerCase().includes(pa.title.toLowerCase())
+                      );
+                      
+                      return (
+                        <button
+                          key={index}
+                          onClick={() => {
+                            if (practiceArea) {
+                              onNavigate('practice-area', { area: practiceArea.title.toLowerCase().replace(/\s+/g, '-') });
+                            }
+                          }}
+                          className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
+                        >
+                          {area}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               )}
