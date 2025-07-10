@@ -41,9 +41,9 @@ const About = ({ data, editableContent }) => {
               <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full"></div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
               {paragraphs.map((paragraph, index) => (
-                <p key={index} className="text-lg text-gray-600 leading-relaxed">
+                <p key={index} className="text-lg text-gray-600 leading-relaxed text-left">
                   {paragraph}
                 </p>
               ))}
