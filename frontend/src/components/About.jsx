@@ -21,7 +21,7 @@ const About = ({ data, editableContent }) => {
     {
       icon: <MapPin className="h-8 w-8 text-blue-900" />,
       title: "Northern Virginia",
-      description: "Serving Tysons Corner, Fairfax, Arlington, Prince William County"
+      description: "Serving Loudoun County, Fairfax, Arlington, Prince William County"
     }
   ];
 
