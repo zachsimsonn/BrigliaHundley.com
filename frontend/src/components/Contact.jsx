@@ -204,7 +204,7 @@ const Contact = ({ data, editableContent }) => {
                 Get in Touch
               </h3>
               <p className="text-gray-600 mb-8">
-                Our experienced legal team is ready to help you with your legal needs. Contact us today to schedule your free consultation.
+                Located in Tysons Corner, our experienced legal team serves clients throughout Northern Virginia, including Fairfax County, Arlington County, Prince William County, and surrounding areas. Contact us today to schedule your free consultation.
               </p>
             </div>
 
