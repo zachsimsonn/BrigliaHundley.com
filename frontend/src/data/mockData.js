@@ -757,7 +757,7 @@ export const siteData = {
       position: "Partner",
       experience: "Michael May is an experienced litigator with experience in civil and criminal matters. He represents clients in complex litigation cases before state and federal courts in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Michael May is an experienced litigator with extensive experience in both civil and criminal matters. He represents clients in complex litigation cases before state and federal courts. His practice encompasses criminal defense, civil litigation, business disputes, and personal injury matters. Mr. May brings a strategic and aggressive approach to litigation, working tirelessly to protect his clients' rights and achieve favorable outcomes in challenging legal situations.",
-      image: "https://images.pexels.com/photos/32907709/pexels-photo-32907709.jpeg",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-michael-may-25.jpg",
       phone: "703.883.0211",
       email: "mmay@brigliahundley.com"
     },
