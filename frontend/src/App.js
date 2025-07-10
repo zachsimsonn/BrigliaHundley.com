@@ -18,6 +18,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AdminDashboard from "./components/AdminDashboard";
 import PracticeAreaPage from "./components/pages/PracticeAreaPage";
+import PracticeAreasPage from "./components/pages/PracticeAreasPage";
 import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import BlogPostPage from "./components/pages/BlogPostPage";
 import { Toaster } from "./components/ui/toaster";
