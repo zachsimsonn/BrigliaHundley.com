@@ -35,7 +35,12 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
           <div className="flex items-center flex-shrink-0">
             <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
               {data.business.logo ? (
-                <img src={data.business.logo} alt="Briglia Hundley® Law Firm Logo" className="h-12 w-auto object-contain" />
+                <img 
+                  src={data.business.logo} 
+                  alt="Briglia Hundley® Law Firm Logo" 
+                  className="h-16 w-16 object-contain"
+                  style={{ filter: 'none' }}
+                />
               ) : (
                 <div>
                   <div className="text-2xl font-bold leading-tight">BRIGLIA</div>
