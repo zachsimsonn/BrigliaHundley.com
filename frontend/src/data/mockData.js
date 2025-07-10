@@ -793,8 +793,7 @@ export const siteData = {
       position: "Associate",
       experience: "Raymond Starks-Taylor supports business litigation and municipal law practices. He assists clients with commercial disputes and government legal matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Raymond Starks-Taylor supports business litigation and municipal law practices. He assists clients with commercial disputes, municipal legal matters, and government relations. His work includes supporting complex business litigation cases, municipal law matters, and providing legal research and analysis for corporate clients. Mr. Starks-Taylor is dedicated to helping businesses and government entities navigate complex legal challenges effectively.",
-      image: "/api/placeholder/300/400",
-      phone: "703.883.0215",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-raymond-starks-taylor.jpg",
       email: "rstarkstaylor@brigliahundley.com"
     },
     {
