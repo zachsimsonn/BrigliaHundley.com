@@ -189,9 +189,9 @@ const Header = ({ data, onEdit, onNavigate }) => {
                     <button
                       key={index}
                       onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                      className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200 font-bold"
+                      className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200"
                     >
-                      {area.title}
+                      <div className="font-medium text-sm">{area.title}</div>
                     </button>
                   ))}
                 </div>
