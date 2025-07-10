@@ -156,13 +156,13 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
               </div>
 
               {attorney.education && (
-                <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Education</h3>
-                  <div className="space-y-3">
+                <div className="mb-8 text-left">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Education</h3>
+                  <div className="space-y-3 text-left">
                     {attorney.education.map((edu, index) => (
-                      <div key={index} className="border-l-4 border-gray-900 pl-4">
-                        <div className="font-medium text-gray-900">{edu.degree}</div>
-                        <div className="text-gray-600">{edu.institution} ({edu.year})</div>
+                      <div key={index} className="border-l-4 border-gray-900 pl-4 text-left">
+                        <div className="font-medium text-gray-900 text-left">{edu.degree}</div>
+                        <div className="text-gray-600 text-left">{edu.institution} ({edu.year})</div>
                       </div>
                     ))}
                   </div>
