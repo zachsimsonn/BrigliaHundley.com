@@ -191,7 +191,7 @@ export const siteData = {
     },
     {
       title: "Corporate Law", 
-      description: "We provide customized and tailored advice to our clients, of all sizes and in all stages of growth, regarding corporate governance matters, entity formation and structural issues.",
+      description: "Complete corporate legal services including entity formation, governance, and business transactions for all company sizes.",
       fullDescription: "Our corporate law practice serves businesses of all sizes and stages of development. We provide comprehensive legal counsel on corporate governance, entity formation, mergers and acquisitions, contract negotiations, and ongoing corporate compliance matters.",
       detailedContent: {
         sections: [
