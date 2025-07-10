@@ -888,7 +888,7 @@ export const siteData = {
       position: "Associate",
       experience: "Madison Beatty is an associate attorney supporting the firm's criminal defense and civil litigation practices. She is also a Deputy Town Attorney for the Town of Vienna, Virginia, a role which includes prosecuting criminal and traffic charges on behalf of the Town.",
       fullBio: "Madison Beatty is an associate attorney supporting the firm's criminal defense and civil litigation practices. She is also a Deputy Town Attorney for the Town of Vienna, Virginia, a role which includes prosecuting criminal and traffic charges on behalf of the Town. Prior to becoming an attorney, Ms. Beatty was a paralegal for four years, providing legal support on matters that involved contract disputes, civil litigation, and trusts and estates.\n\nMs. Beatty received her undergraduate degree in Legal Studies, summa cum laude, from the University of Central Florida and her law degree from William & Mary Law School. While in law school, she was a member of the Law Journal of Race, Gender, and Social Justice, she served as Vice President of the Virginia Bar Law School Council, and she was a Board Member of the Public Service Fund. Ms. Beatty was also a teaching assistant for William & Mary's Elder & Disability Law Clinic where she worked on a variety of cases, including guardianship and adoption matters.",
-      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-madison-beatty-u800ds.jpg",
+      image: "https://images.pexels.com/photos/31529034/pexels-photo-31529034.jpeg",
       phone: "703.883.0213",
       email: "mbeatty@brigliahundley.com",
       education: [
