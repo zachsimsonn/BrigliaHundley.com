@@ -15,7 +15,7 @@ const About = ({ data, editableContent }) => {
     },
     {
       icon: <Users className="h-8 w-8 text-blue-900" />,
-      title: "15+ Attorneys",
+      title: "14+ Attorneys",
       description: "Experienced legal professionals"
     },
     {
