@@ -52,25 +52,28 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <button 
                 onClick={() => handleNavigate('home')}
                 className={getNavItemClass('home')}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
               >
-                Home
+                HOME
               </button>
               <button 
                 onClick={() => handleNavigate('about')}
                 className={getNavItemClass('about')}
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
               >
-                About
+                THE FIRM
               </button>
               
               {/* Practice Areas Dropdown */}
               <div className="relative">
                 <button 
                   onClick={() => handleDropdownToggle('services')}
-                  className={`flex items-center transition-colors duration-200 font-bold ${
+                  className={`flex items-center transition-colors duration-200 ${
                     currentPage === 'practice-area' ? 'text-gray-900 font-black' : 'text-gray-700 hover:text-gray-900'
                   }`}
+                  style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
                 >
-                  Practice Areas <ChevronDown className="ml-1 h-4 w-4" />
+                  PRACTICE AREAS <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'services' && (
                   <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
