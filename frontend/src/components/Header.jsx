@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 
-const Header = ({ data, onEdit, onNavigate }) => {
+const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
