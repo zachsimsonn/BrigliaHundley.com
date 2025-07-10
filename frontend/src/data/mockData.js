@@ -555,6 +555,164 @@ export const siteData = {
         "Member, Virginia Bar Association",
         "Trustee and President, Vienna Baseball Foundation"
       ]
+    },
+    {
+      name: "Brian J. Lubkeman",
+      position: "Partner",
+      experience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing the areas of commercial real estate, corporate matters, and Virginia local and state government law.",
+      fullBio: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing the areas of commercial real estate, corporate matters, and Virginia local and state government law. In his career, he has worked both in-house in municipal government and for small and large law firms.\n\nMr. Lubkeman advises clients on complex real estate transactions (both developed and raw-land transactions, from acquisition through disposition); real estate development matters; commercial lending transactions (for borrowers and lenders); and commercial leasing – both landlord and tenant representations – for public and private companies, across all property types, including retail, commercial, industrial and specialty leasing. He also has assisted clients with the establishment and governance of property owner associations, with an emphasis on residential and commercial condominium projects, large residential developments, sophisticated mixed-use properties, and community development associations.\n\nHe also advises on corporate governance and structure, including entity selection, implementation of policies and procedures, and corporate best practices. Further, he represents clients in business acquisitions as well as mergers of small to mid-sized businesses of all types.\n\nMr. Lubkeman also has significant experience in local government and municipal law. Since 2005, he has served as the appointed City Attorney for the City of Fairfax, Virginia. In this position, he oversees the legal representation of all areas of City government, including legal advice and counsel to the city council, city manager, and department heads, community development and planning projects, zoning matters, public works and utility concerns, procurement issues, franchise matters, and personnel and public safety department issues, among other responsibilities. He also draws upon his corporate and real estate knowledge to provide cogent, efficient and effective legal and business advice and counsel on economic development opportunities, community development and planning projects, local government property portfolio management, tax assessment appeals and other transactional and litigation matters. He also supervises the prosecution of misdemeanor and traffic offenses within the City of Fairfax.\n\nMr. Lubkeman previously served as interim City Attorney for the City of Falls Church and as City Attorney for the City of Manassas Park, and, prior to entering private practice, he was with the Fairfax County Attorney's office where, among other duties, he served as counsel to the Fairfax County Redevelopment and Housing Authority. Finally, he works with other attorneys and legal professionals at the firm to provide outside counsel services on a variety of matters, both transactional and litigation cases, to other municipalities and authorities within the Commonwealth.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-brian-lubkeman-u800ds.jpg",
+      phone: "703.883.0206",
+      email: "blubkeman@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "University of Virginia School of Law",
+          year: 1992
+        },
+        {
+          degree: "Bachelor of Arts",
+          institution: "University of Virginia",
+          year: 1988
+        }
+      ],
+      admissions: [
+        "Virginia",
+        "United States District Court for the Eastern District of Virginia",
+        "United States Bankruptcy Court for the Eastern District of Virginia"
+      ],
+      practiceAreas: [
+        "Residential and Commercial Real Estate",
+        "Corporate Governance and Structure",
+        "Local Government and Municipal Law"
+      ],
+      certifications: [
+        "Named Best Lawyers® 2017, 2020 and 2024 Municipal Law \"Lawyer of the Year\" for Washington D.C. metropolitan area",
+        "Listed in Best Lawyers®: Municipal, Real Estate, and Condemnation and Eminent Domain Law 2016 – 2024",
+        "Listed in Northern Virginia Magazine Top Lawyers Listing, Real Estate Law, 2017-2020",
+        "Legal Elite, Virginia Business, 2010"
+      ],
+      professionalAssociations: [
+        "Member; Vice Chair, Board of Governors, Virginia State Bar Local Government Section, 2018-Present",
+        "Member, Fairfax Bar Association",
+        "Member; Chair of Law School Liaison Committee, Local Government Attorneys of Virginia, 1992-Present",
+        "Member; Chair, 2007-2010, Real Property Section, Fairfax Bar Association",
+        "Member; President, 2011-2012; Paul Harris Fellow, Rotary Club of Fairfax",
+        "Board of Directors, 2011-2015, Fairfax Symphony Orchestra"
+      ],
+      languages: [
+        "Spanish",
+        "Dutch",
+        "French"
+      ]
+    },
+    {
+      name: "Courtney B. Harden",
+      position: "Partner",
+      experience: "Courtney Harden has almost 20 years of litigation experience in the Commonwealth of Virginia. She has litigated diverse and varied topics throughout her career including eminent domain, breach of contract, medical malpractice, construction defect, and personal injury.",
+      fullBio: "Courtney Harden has almost 20 years of litigation experience in the Commonwealth of Virginia. She has litigated diverse and varied topics throughout her career including eminent domain, breach of contract, medical malpractice, construction defect, and personal injury. Ms. Harden has most recently focused her practice on real estate disputes including partition of land, establishment of prescriptive easements, community association covenant enforcement /defense of enforcement, and zoning disputes.\n\nOver half of Ms. Harden's law practice is focused on eminent domain law. Ms. Harden primarily represents condemning authorities, but she also represents landowners in both condemnation and inverse condemnation proceedings.\n\nMs. Harden has worked on cutting edge eminent domain cases following amendment of Article I, Section 11 of the Virginia Constitution on January 1, 2013. The constitutional amendment represents a groundbreaking evolution in eminent domain law which allow landowner claims for lost profits and lost profits as part of the claim for just compensation.\n\nHer years of experience litigating land use issues has provided Ms. Harden with superior knowledge regarding the use of appraisers as experts, appraisal practice generally, and land valuation issues. Ms. Harden's extensive litigation experience outside of eminent domain gives her additional relevant knowledge to provide her clients with a full and complete skill set for the analysis, valuation, risk assessment, and trial approach for each land litigation case they confront.\n\nMs. Harden also has experience with administrative proceedings in the Commonwealth, including appearances before the Virginia Worker's Compensation Commissioner, Virginia Employment Commission, and the Virginia State Corporation Commission (\"SCC\").",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-courtney-harden-u800ds.jpg",
+      phone: "703.883.0207",
+      email: "charden@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor",
+          institution: "George Mason University School of Law",
+          year: 2002
+        },
+        {
+          degree: "Bachelor of Arts, Foreign Affairs",
+          institution: "University of Virginia",
+          year: 1996
+        }
+      ],
+      admissions: [
+        "Virginia, 2003",
+        "United States District Court for the Eastern District of Virginia, 2006",
+        "District of Columbia Bar, Admitted Pro Hac Vice, two different litigation matters in 2004",
+        "Maryland, Admitted Pro Hac Vice, 2004 and 2006"
+      ],
+      professionalAssociations: [
+        "Member: Virginia State Bar Association",
+        "Member: Virginia Bar Association",
+        "Member: Fairfax Bar Association"
+      ],
+      speakingEngagements: [
+        "2023 Virginia Eminent Domain Conference: \"Breaking Down Va. Code Section 25.1-230 – When and How Can I Consider the Project in Valuation?\"",
+        "2022 Virginia Eminent Domain Conference: \"Making an Owner Whole, Interest, Reimbursement and other Remediatory Measures.\"",
+        "2021 Virginia Eminent Domain Conference: \"Ethics: Communication with Represented and Unrepresented Persons.\"",
+        "2018 Eminent Domain Conference, \"Who Bears the Burden? Examining the New Alternative Uniform Pretrial Scheduling Order\"",
+        "2017 Eminent Domain Conference, \"The Appraisal Process: The Consequences of Getting the Assignment Correct\"",
+        "2008 National Business Institute, \"Road and Access Law: Successfully Handling Disputes\""
+      ],
+      pastEmployment: [
+        "Founder, Courtney B. Harden, PLLC",
+        "Counsel, Rees Broome, PC"
+      ]
+    },
+    {
+      name: "Amy S. Owen",
+      position: "Partner",
+      experience: "Amy Owen joined Briglia Hundley® after founding a successful, woman-owned law firm that specialized in commercial litigation, employment law, and estate planning throughout the Mid-Atlantic region.",
+      fullBio: "Amy Owen joined Briglia Hundley® after founding a successful, woman-owned law firm that specialized in commercial litigation, employment law, and estate planning throughout the Mid-Atlantic region. After graduating cum laude from Wake Forest University in 1983, Ms. Owen attended law school at the University of Florida, College of Law, where she graduated with honors in 1986 and was a member of the Order of the Coif. She is admitted to practice in the state and federal courts in the Commonwealth of Virginia, Maryland, and the District of Columbia. Ms. Owen is an experienced commercial litigator. For many years, she handled complex cases involving financial institutions, fidelity issues, insurance coverage, employment matters, real estate, commercial disputes, and business torts. Today, her practice is focused primarily on employment counseling and investigations for executives and management.\n\nMs. Owen has a long history of volunteering her legal skills to support the community. She served as a Commissioner for the Fairfax Human Rights Commission from 2009-2015. She was also appointed by the Fairfax County Board of Supervisors as a representative on the Community Action Advisory Board. She is an active member of the Fairfax Bar Association where she has participated for decades in the Pro Bono Employment program in collaboration with Legal Service of Northern Virginia. She was a founding board member of the Washington Women's Leadership Institute and served on the board for Leadership Fairfax. She served on the board for Second Story and continues to provide legal support to this local organization whose mission is to help at-risk youth.\n\nShe is a member of the Virginia, Maryland, and District of Columbia Bar Associations, the District of Columbia Women's Bar Association, the Northern Virginia Women Attorneys Association, the Northern Virginia Chapter of the Federal Bar Association, and the American Bar Association TIPS/FSLC. Ms. Owen has received numerous awards for her excellence in the legal field, including being named a Legal Elite by Virginia Business magazine, being recognized by Super Lawyers, and receiving the Henry Carrico Pro Bono Award in 2012 for her outstanding commitment to community service.",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-amy-owen-u800ds.jpg",
+      phone: "703.883.0208",
+      email: "aowen@brigliahundley.com",
+      education: [
+        {
+          degree: "Juris Doctor, Order of the Coif",
+          institution: "University of Florida",
+          year: 1986
+        },
+        {
+          degree: "Bachelor of Arts cum laude",
+          institution: "Wake Forest University",
+          year: 1983
+        }
+      ],
+      admissions: [
+        "Virginia",
+        "Maryland",
+        "District of Columbia (Inactive)",
+        "United States District Court for the Eastern District of Virginia",
+        "United States District Court for the Western District of Virginia",
+        "United States Bankruptcy Court for the Eastern District of Virginia",
+        "United States Bankruptcy Court for the Western District of Virginia",
+        "United States District Court for the District of Columbia",
+        "United States Bankruptcy Court for the District of Columbia",
+        "United States District Court for the District of Maryland",
+        "United States Bankruptcy Court for the District of Maryland",
+        "United States Court of Appeals for the Fourth Circuit"
+      ],
+      practiceAreas: [
+        "Executive Contracts",
+        "Employment Law",
+        "Commercial and Business Litigation",
+        "Business Planning"
+      ],
+      professionalAssociations: [
+        "Member, Fairfax Bar Association",
+        "Member, Virginia State Bar",
+        "Member, Maryland State Bar Association",
+        "Member, District of Columbia Bar Association",
+        "Member, District of Columbia Women's Bar Association",
+        "Member, Northern Virginia Women Attorneys Association",
+        "Member, American Bar Association"
+      ],
+      certifications: [
+        "Best Lawyers, Commercial Litigation, Washington D.C.",
+        "Women in The Law Top Peer-Nominated Lawyers",
+        "Listed in Best Lawyers 2013 to Present",
+        "Listed in Super Lawyers 2012 to Present",
+        "Top Attorneys in Washington, D.C.",
+        "Legal Elite, Virginia Business",
+        "Henry Carrico Pro Bono Award, 2012"
+      ],
+      pastEmployment: [
+        "Principal, Cochran & Owen, LLC",
+        "Principal, Associate, Miles & Stockbridge, P.C.",
+        "Principal, Richards McGettigan Reilly & West, P.C."
+      ]
     }
   ],
 
