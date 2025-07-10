@@ -237,52 +237,6 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                 </div>
               )}
 
-              <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8 text-center">
-                <h3 className="text-xl font-semibold mb-4">Schedule a Consultation</h3>
-                <p className="text-gray-300 mb-6">
-                  Ready to discuss your legal needs with {attorney.name}? Contact our office today to schedule your consultation.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    onClick={() => onNavigate('contact')}
-                    className="bg-gray-600 hover:bg-gray-500 text-white"
-                  >
-                    <Calendar className="mr-2 h-4 w-4" />
-                    Schedule Consultation
-                  </Button>
-                  <Button 
-                    variant="outline"
-                    className="border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white"
-                    onClick={() => window.location.href = `tel:${data.business.phone}`}
-                  >
-                    <Phone className="mr-2 h-4 w-4" />
-                    Call Now
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Contact Info Section - Centered */}
-        <div className="max-w-4xl mx-auto mt-16">
-          <div className="bg-gray-50 rounded-lg p-8 text-center">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact {attorney.name}</h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="flex flex-col items-center">
-                <Phone className="h-8 w-8 text-gray-900 mb-2" />
-                <span className="text-gray-600">{attorney.phone || data.business.phone}</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <Mail className="h-8 w-8 text-gray-900 mb-2" />
-                <span className="text-gray-600">{attorney.email || data.business.email}</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <svg className="h-8 w-8 text-gray-900 mb-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-gray-600 text-center">{data.business.address}</span>
-              </div>
             </div>
           </div>
         </div>
