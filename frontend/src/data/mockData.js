@@ -120,7 +120,7 @@ export const siteData = {
         "Failed Transactions"
       ],
       url: "/business-litigation",
-      localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Tysons Corner",
+      localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Loudoun County",
       attorneys: ["Steven D. Briglia", "James W. Hundley", "Madison A. Beatty"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
     },
