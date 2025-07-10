@@ -73,11 +73,81 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid lg:grid-cols-1 gap-12">
-          {/* Main Content - Centered */}
-          <div className="max-w-4xl mx-auto">
+        <div className="grid lg:grid-cols-4 gap-12">
+          {/* Left Sidebar - Attorney Photo and Contact */}
+          <div className="lg:col-span-1">
+            {/* Large Square Portrait */}
+            <div className="mb-8">
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                {attorney.image ? (
+                  <img 
+                    src={attorney.image} 
+                    alt={attorney.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gray-300">
+                    <User className="h-20 w-20 text-gray-500" />
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Contact Information */}
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <Phone className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                  <div>
+                    <div className="text-sm text-gray-500">Phone</div>
+                    <div className="text-gray-900 font-medium">{attorney.phone || data.business.phone}</div>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Mail className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                  <div>
+                    <div className="text-sm text-gray-500">Email</div>
+                    <div className="text-gray-900 font-medium">{attorney.email || data.business.email}</div>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <MapPin className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                  <div>
+                    <div className="text-sm text-gray-500">Office</div>
+                    <div className="text-gray-900 font-medium">
+                      {data.business.address}<br />
+                      {data.business.city}, {data.business.state} {data.business.zip}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Action Buttons */}
+              <div className="mt-6 space-y-3">
+                <Button 
+                  onClick={() => onNavigate('contact')}
+                  className="w-full bg-gray-900 hover:bg-gray-800 text-white"
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  Schedule Consultation
+                </Button>
+                <Button 
+                  variant="outline"
+                  className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
+                  onClick={() => window.location.href = `tel:${attorney.phone || data.business.phone}`}
+                >
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call Now
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Main Content */}
+          <div className="lg:col-span-3">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">About {attorney.name}</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">About {attorney.name}</h2>
               
               <div className="text-center mb-8">
                 <p className="text-gray-600 leading-relaxed">
