@@ -37,7 +37,7 @@ const PracticeAreas = ({ data, onNavigate }) => {
                 <div className="p-2 bg-gray-50 rounded-full text-gray-900 group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
                   {iconMap[area.title] || <Scale className="h-6 w-6" />}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-gray-900 transition-colors duration-300">
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-900 transition-colors duration-300">
                   {area.title}
                 </h3>
               </div>
