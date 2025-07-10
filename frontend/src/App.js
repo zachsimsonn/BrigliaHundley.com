@@ -244,12 +244,25 @@ const App = () => {
         );
       
       case 'attorney-profile':
+        const attorney = data.attorneys.find(att => 
+          att.name.toLowerCase().replace(/\s+/g, '-') === pageParams.name
+        );
+        const attorneyName = attorney ? attorney.name : 'Attorney';
+        const attorneyPosition = attorney ? attorney.position : '';
         return (
-          <AttorneyProfilePage 
-            attorneyName={pageParams.name} 
-            data={data} 
-            onNavigate={handleNavigate} 
-          />
+          <>
+            <SEO 
+              title={`${attorneyName}${attorneyPosition ? ` - ${attorneyPosition}` : ''}`}
+              description={`${attorneyName} is ${attorneyPosition ? `a ${attorneyPosition}` : 'an attorney'} at Briglia Hundley® in Tysons Corner, Virginia. ${attorney?.experience || 'Experienced legal representation.'}`}
+              keywords={`${attorneyName}, ${attorneyPosition}, Virginia attorney, Tysons Corner lawyer, Briglia Hundley`}
+              canonical={`https://brigliahundley.com/attorney-profile/${pageParams.name}`}
+            />
+            <AttorneyProfilePage 
+              attorneyName={pageParams.name} 
+              data={data} 
+              onNavigate={handleNavigate} 
+            />
+          </>
         );
       
       default:
