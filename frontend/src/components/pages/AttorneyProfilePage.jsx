@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
-import { ArrowLeft, Phone, Mail, Calendar, Award, User } from 'lucide-react';
+import { ArrowLeft, Phone, Mail, Calendar, Award, User, MapPin, Scale } from 'lucide-react';
 
 const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
   const attorney = data.attorneys.find(att => 
