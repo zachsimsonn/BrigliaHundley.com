@@ -146,7 +146,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
           {/* Main Content */}
           <div className="lg:col-span-3">
-            <div className="prose prose-lg max-w-none">
+            <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">About {attorney.name}</h2>
               
               <div className="mb-8">
