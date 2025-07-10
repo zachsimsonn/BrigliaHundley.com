@@ -184,8 +184,22 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
                         onClick={() => onNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
                         className="text-left w-full hover:bg-gray-50 p-2 rounded transition-colors duration-200"
                       >
-                        <div className="font-medium text-gray-900">{attorney.name}</div>
-                        <div className="text-sm text-gray-600">{attorney.position}</div>
+                        <div className="flex items-center space-x-3">
+                          {attorney.image && (
+                            <img 
+                              src={attorney.image} 
+                              alt={attorney.name}
+                              className="w-12 h-12 rounded-full object-cover"
+                            />
+                          )}
+                          <div>
+                            <div className="font-medium text-gray-900">{attorney.name}</div>
+                            <div className="text-sm text-gray-600">{attorney.position}</div>
+                            {attorney.phone && (
+                              <div className="text-xs text-gray-500">{attorney.phone}</div>
+                            )}
+                          </div>
+                        </div>
                       </button>
                     </div>
                   ))}
