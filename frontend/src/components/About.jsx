@@ -42,16 +42,39 @@ const About = ({ data, editableContent }) => {
               {editableContent.about.content}
             </p>
 
-            {/* Recent News */}
+            {/* Announcements with Scroll Feature */}
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Recent Recognition</h3>
-              <div className="space-y-3">
-                {data.news.slice(0, 2).map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-900 rounded-full mt-2.5 flex-shrink-0"></div>
-                    <p className="text-gray-600 text-sm leading-relaxed">{item}</p>
-                  </div>
-                ))}
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Announcements</h3>
+              <div className="h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                <div className="space-y-4 pr-2">
+                  {data.announcements.map((announcement, index) => (
+                    <div key={index} className="border-b border-gray-100 pb-3 last:border-b-0">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-900 rounded-full mt-2.5 flex-shrink-0"></div>
+                        <div className="flex-1">
+                          <h4 className="text-sm font-medium text-gray-900 mb-1 leading-tight">
+                            {announcement.title}
+                          </h4>
+                          {announcement.content && (
+                            <p className="text-xs text-gray-600 leading-relaxed mb-2">
+                              {announcement.content}
+                            </p>
+                          )}
+                          {announcement.link && (
+                            <a 
+                              href={announcement.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-blue-900 hover:text-blue-700 underline"
+                            >
+                              Learn More
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
