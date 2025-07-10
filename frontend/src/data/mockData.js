@@ -86,7 +86,7 @@ export const siteData = {
       position: "Partner",
       experience: "Jim Hundley has over 30 years of experience litigating complex criminal and civil cases. He regularly represents individuals and corporations before state and federal courts in Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Jim Hundley has over 30 years of experience litigating complex criminal and civil cases. He regularly represents individuals and corporations before state and federal courts in Virginia, Washington, D.C., and Maryland. He has defended clients involved in a broad range of criminal matters including bank fraud, bid rigging, bribery, embezzlement, tax evasion, and computer fraud. On the civil side, Mr. Hundley has successfully handled cases involving a wide variety of issues including breach of contract, tortious interference with business, theft of trade secrets, personal injury, and violations of civil rights.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/14634935/pexels-photo-14634935.jpeg",
       phone: "703.883.0204",
       email: "jhundley@brigliahundley.com",
       education: [
@@ -139,7 +139,7 @@ export const siteData = {
       position: "Partner",
       experience: "Steve Briglia has over 30 years of extensive trial experience in both civil and criminal law matters. He has tried hundreds of cases before judges and juries in both state and federal court throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Steve Briglia has over 30 years of extensive trial experience in both civil and criminal law matters. He has tried hundreds of cases before judges and juries in both state and federal court. He also regularly represents clients in administrative hearings, arbitrations, and mediations, and he serves as outside general counsel to numerous corporate clients. Mr. Briglia's clients include national and regional businesses, municipalities, elected officials, and individuals involved in business disputes and criminal investigations. Mr. Briglia is a founding member of Briglia Hundley®.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.pexels.com/photos/14634936/pexels-photo-14634936.jpeg",
       phone: "703.883.0205",
       email: "sbriglia@brigliahundley.com",
       education: [
@@ -188,7 +188,7 @@ export const siteData = {
       position: "Partner",
       experience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing commercial real estate, corporate matters, and Virginia local government law. He has served as appointed City Attorney for the City of Fairfax, Virginia since 2005.",
       fullExperience: "Brian Lubkeman has practiced law for over 30 years, with a diverse focus encompassing the areas of commercial real estate, corporate matters, and Virginia local and state government law. He has worked both in-house in municipal government and for small and large law firms. Since 2005, he has served as the appointed City Attorney for the City of Fairfax, Virginia.",
-      image: "/api/placeholder/300/400",
+      image: "https://images.unsplash.com/photo-1736939678218-bd648b5ef3bb",
       phone: "703.883.0206",
       email: "blubkeman@brigliahundley.com",
       education: [
