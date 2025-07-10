@@ -81,7 +81,7 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
                   <img 
                     src={practiceArea.image} 
                     alt={practiceArea.title}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-80 object-cover"
                   />
                 </div>
               )}
