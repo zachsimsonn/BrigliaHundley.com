@@ -20,8 +20,8 @@ const About = ({ data, editableContent }) => {
     },
     {
       icon: <MapPin className="h-8 w-8 text-blue-900" />,
-      title: "Mid-Atlantic",
-      description: "Serving Virginia and surrounding areas"
+      title: "Northern Virginia",
+      description: "Serving Tysons Corner, Fairfax, Arlington, Prince William County"
     }
   ];
 
