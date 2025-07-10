@@ -775,7 +775,7 @@ export const siteData = {
       position: "Senior Associate",
       experience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters and complex legal disputes throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters, condemnation proceedings, and complex legal disputes. Her practice includes helping property owners navigate eminent domain proceedings, civil litigation matters, and comprehensive estate planning. Ms. Ward is committed to protecting her clients' rights and providing skilled representation in challenging legal matters.",
-      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-brian-lubkeman-u800ds.jpg",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-kaley-duncan-ward-800.jpg",
       phone: "703.883.0213",
       email: "kward@brigliahundley.com"
     },
