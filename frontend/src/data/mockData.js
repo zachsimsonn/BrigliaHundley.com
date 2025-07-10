@@ -19,69 +19,175 @@ export const siteData = {
       title: "Family Law",
       description: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children.",
       fullDescription: "At Briglia Hundley, P.C.®, we understand that family law matters can be emotionally charged and complex. Our experienced attorneys are dedicated to providing compassionate and effective legal representation in a variety of family law issues, including divorce, child custody, child support, and property division. We strive to protect your rights and help you navigate through these challenging times with confidence.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Divorce",
+            content: "Our divorce attorneys handle all aspects of divorce proceedings, from uncontested divorces to complex contested matters involving significant assets, business interests, and custody disputes. We provide strategic counsel on property division, spousal support, and child custody arrangements."
+          },
+          {
+            title: "Child Custody and Support",
+            content: "We represent parents in custody disputes, working to establish arrangements that serve the best interests of the children while protecting our clients' parental rights. Our attorneys handle child support calculations, modifications, and enforcement matters."
+          },
+          {
+            title: "Property Division",
+            content: "Virginia is an equitable distribution state, which means marital property is divided fairly but not necessarily equally. We help clients identify, value, and divide marital assets including real estate, business interests, retirement accounts, and other valuable property."
+          }
+        ]
+      },
       services: [
         "Divorce",
         "Child Custody", 
         "Child Support",
         "Property Division",
         "Adoption",
-        "Spousal Support"
+        "Spousal Support",
+        "Prenuptial Agreements",
+        "Postnuptial Agreements"
       ],
       url: "/family-law",
       localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
-      attorneys: ["James W. Hundley", "Steven D. Briglia", "Courtney B. Harden", "Amy S. Owen", "Teresa S. Cole"]
+      attorneys: ["James W. Hundley", "Steven D. Briglia", "Courtney B. Harden", "Amy S. Owen", "Teresa S. Cole"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
     },
     {
       title: "Criminal Law",
       description: "For every criminal offense, there is a defense. You want a lawyer who will fight for you. With a comprehensive criminal law practice, our attorneys are equipped to defend you in state and federal courts from all manner of misdemeanor and felony charges, ranging from traffic infractions to serious felonies.",
-      fullDescription: "Our criminal defense attorneys have extensive experience protecting clients' rights in both state and federal courts. We understand that criminal charges can have life-altering consequences, and we fight aggressively to protect your freedom, reputation, and future. Whether you're facing misdemeanor charges or serious felonies, we provide comprehensive defense strategies tailored to your specific situation.",
+      fullDescription: "Our criminal defense attorneys have extensive experience protecting clients' rights in both state and federal courts. We understand that criminal charges can have life-altering consequences, and we fight aggressively to protect your freedom, reputation, and future.",
+      detailedContent: {
+        sections: [
+          {
+            title: "White Collar Crimes",
+            content: "We have experience protecting the rights of individuals facing white collar criminal charges in Virginia's state courts and in federal courts throughout the United States. White collar cases can involve allegations of large conspiracies comprised of numerous individuals and corporations. Substantial financial losses caused by embezzlement, bid rigging, tax evasion, or other types of alleged fraud may be an issue. Our lawyers have the knowledge and ability to analyze the unique factors of your case in order to prepare an effective defense.",
+            subServices: ["Fraud", "Embezzlement", "Computer Crimes", "Money Laundering"]
+          },
+          {
+            title: "Drug Charges",
+            content: "A conviction for illegally possessing or distributing drugs carries serious consequences. If you have been charged with a drug offense, you need an experienced defense lawyer to help protect your rights. From simple possession to federal conspiracy charges, we will do everything within our powers to build the most effective defense and achieve the best possible disposition for you.",
+            subServices: ["Drug Possession", "Distribution", "Conspiracy", "Manufacturing"]
+          },
+          {
+            title: "DUI & DWI",
+            content: "If you have been charged with driving under the influence or driving while intoxicated, you need a lawyer with a firm grasp of all the legal issues that might affect your rights. These complex cases can involve constitutional issues, technical rules of evidence, the science of toxicology, and the use of expert witnesses. Our attorneys constantly monitor, research, and litigate DUI and DWI cases so that we are prepared to address this constantly changing area of law with innovative and successful criminal defense solutions."
+          },
+          {
+            title: "Traffic Offenses",
+            content: "If you have been charged with DWI, hit-and-run, driving on a suspended license, or reckless driving, then you are facing the possibility of a jail sentence, a substantial fine, and the loss of your driver's license. We appear on an almost daily basis in Virginia's state and federal traffic courts and are prepared to defend you.",
+            subServices: ["Speeding", "Reckless Driving", "Driving with a Suspended License", "Hit-and-Run"]
+          }
+        ]
+      },
       services: [
-        "White Collar Crimes (Fraud, Embezzlement, Computer Crimes, Money Laundering)",
-        "Drug Charges (Possession, Distribution, Conspiracy, Manufacturing)",
+        "White Collar Crime Defense",
+        "Drug Charges",
         "DUI & DWI Defense",
-        "Juvenile Offenses (Underage Drinking, Traffic Offenses, Theft, Assault)",
-        "Larcenies (Shoplifting, Credit Card Theft, Burglary, Robbery)",
-        "Traffic Offenses (Speeding, Reckless Driving, Suspended License, Hit-and-Run)"
+        "Juvenile Offenses",
+        "Traffic Offenses",
+        "Assault and Battery",
+        "Theft and Larceny",
+        "Federal Criminal Defense"
       ],
       url: "/criminal-law",
       localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County",
-      attorneys: ["James W. Hundley", "Steven D. Briglia"]
+      attorneys: ["James W. Hundley", "Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-criminal-law-hero-25.jpg"
     },
     {
       title: "Business Litigation",
       description: "Briglia Hundley® represents a wide range of businesses and individuals in the state and federal courts in Virginia, Maryland, and the District of Columbia.",
       fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Our Clients",
+            content: "Our clients include Fortune 500 companies, multi-national corporations, technology companies, government contractors as well as medium sized and main street businesses."
+          },
+          {
+            title: "Our Approach",
+            content: "We seek to build long-term relationships with our business clients as they grow their companies. Our nimble approach to case management was learned through years of risk management on behalf of our clients. We know how to deliver both efficiency and value to every client we serve."
+          }
+        ]
+      },
       services: [
-        "Employment Law Disputes",
+        "Employment Law",
         "Real Estate Litigation",
-        "Breach of Contract and Resulting Torts",
+        "Breach of Contract",
         "Uniform Commercial Code Issues",
         "Insurance Coverage Challenges",
         "Fiduciary Litigation",
-        "Fraud Investigations and Workouts",
-        "Failed Transaction Disputes"
+        "Fraud Investigations",
+        "Workouts",
+        "Failed Transactions"
       ],
       url: "/business-litigation",
       localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Tysons Corner",
-      attorneys: ["Steven D. Briglia", "James W. Hundley"]
+      attorneys: ["Steven D. Briglia", "James W. Hundley"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
     },
     {
-      title: "Corporate Law", 
-      description: "We provide customized and tailored advice to our clients, of all sizes and in all stages of growth, regarding corporate governance matters, entity formation and structural issues.",
-      fullDescription: "Our corporate law practice serves businesses of all sizes and stages of development. We provide comprehensive legal counsel on corporate governance, entity formation, mergers and acquisitions, contract negotiations, and ongoing corporate compliance matters. Our attorneys understand the unique challenges facing businesses today and provide practical, results-oriented legal solutions.",
+      title: "Accountants Liability and Securities Litigation",
+      description: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading.",
+      fullDescription: "Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings.",
+      detailedContent: {
+        sections: [
+          {
+            title: "SEC and PCAOB Defense Practice",
+            content: "Securities Investigations, Enforcement, and Litigation\n\nDOJ and SEC Enforcement\n\nWe have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings.",
+            subServices: [
+              "DOJ and SEC enforcement matters",
+              "Grand juries and investigations by federal and state prosecutors", 
+              "SEC and FINRA regulatory matters",
+              "Audit committees, directors, and senior management in conducting independent investigations involving derivative claims, whistleblower allegations, fraud, and potential securities law violations"
+            ]
+          },
+          {
+            title: "Accountants Liability",
+            content: "Briglia Hundley® represents accounting professionals in civil, criminal, government regulatory enforcement, and state disciplinary actions.\n\nSEC, PCAOB, and State Disciplinary Boards\n\nHeightened enforcement standards of the SEC and Public Company Accounting Oversight Board (PCAOB), new auditing standards of the PCAOB, and new FASB accounting standards have resulted in increased scrutiny of the work performed by auditors. Our attorneys represent accounting firms and individual accounting professionals, including Certified Public Accountants (CPAs), in investigations and disciplinary proceedings brought by federal regulators, such as the PCAOB and SEC.",
+            subServices: [
+              "SEC enforcement",
+              "PCAOB enforcement", 
+              "State disciplinary proceedings (i.e., state boards of accountancy such as the VBOA)",
+              "Parallel proceedings (i.e., SEC and PCAOB investigations, PCAOB and foreign audit regulator investigations, government investigation and private securities litigation, etc.)",
+              "Audits of public companies and broker-dealers",
+              "Multi-location audits",
+              "International investigations involving overseas firms and foreign affiliates of the Big Four and other global accounting network firms"
+            ]
+          },
+          {
+            title: "Malpractice",
+            content: "Accounting firms and CPAs are facing increasing professional liability litigation brought by former clients and third parties including creditors, investors, receivers, and bankruptcy trustees. We understand the relevant laws, professional standards, accounting concepts, and auditing issues at issue in accounting malpractice actions.",
+            subServices: [
+              "Revenue recognition",
+              "Inventory",
+              "Lease accounting", 
+              "Going concern considerations",
+              "Quality control",
+              "Breach of professional obligations such as conflicts of interest, independence, and confidentiality"
+            ]
+          },
+          {
+            title: "Private Securities Litigation",
+            content: "Our attorneys have represented companies and individuals in private securities class action cases, Securities and Exchange Commission (SEC) investigations, and criminal matters involving allegations of securities fraud. We aggressively pursue a quick resolution of disputes at the earliest stages of litigation by requesting dismissal on the pleadings, objecting to the class certification, or seeking full or partial summary judgment.",
+            subServices: [
+              "Private securities class action matters: Representation of companies, directors, and senior officers in complex Rule 10b-5 actions with allegations of fraud involving complex accounting and disclosure issues"
+            ]
+          }
+        ]
+      },
       services: [
-        "Entity Formation and Structure",
-        "Corporate Governance",
-        "Mergers and Acquisitions",
-        "Contract Drafting and Negotiation",
-        "Corporate Compliance",
-        "General Counsel Services",
-        "Business Transactions",
-        "Securities Law Compliance"
+        "SEC and PCAOB Defense",
+        "Securities Investigations and Enforcement",
+        "DOJ and SEC Enforcement",
+        "Accountants Liability Defense",
+        "Professional Malpractice Defense", 
+        "Private Securities Litigation",
+        "Regulatory Investigations",
+        "White Collar Criminal Defense"
       ],
-      url: "/corporate-law",
-      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, company formation Arlington VA, corporate counsel Tysons Corner",
-      attorneys: ["Steven D. Briglia"]
+      url: "/accountants-liability-securities-litigation",
+      localKeywords: "SEC defense attorney, PCAOB enforcement lawyer, accountants liability attorney, securities litigation lawyer",
+      attorneys: ["James W. Hundley", "Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-securities-hero-25.jpg"
     },
     {
       title: "Personal Injury",
