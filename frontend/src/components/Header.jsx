@@ -40,13 +40,13 @@ const Header = ({ data, onEdit, onNavigate }) => {
             <nav className="flex space-x-8">
               <button 
                 onClick={() => handleNavigate('home')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
               >
                 Home
               </button>
               <button 
                 onClick={() => handleNavigate('about')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
               >
                 About
               </button>
@@ -55,7 +55,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
               <div className="relative">
                 <button 
                   onClick={() => handleDropdownToggle('services')}
-                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
                 >
                   Services <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
@@ -80,7 +80,7 @@ const Header = ({ data, onEdit, onNavigate }) => {
               <div className="relative">
                 <button 
                   onClick={() => handleDropdownToggle('attorneys')}
-                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                  className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
                 >
                   Attorneys <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
@@ -110,19 +110,19 @@ const Header = ({ data, onEdit, onNavigate }) => {
 
               <button 
                 onClick={() => handleNavigate('testimonials')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
               >
                 Testimonials
               </button>
               <button 
                 onClick={() => handleNavigate('blog')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
               >
                 Blog
               </button>
               <button 
                 onClick={() => handleNavigate('contact')}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-bold"
               >
                 Contact
               </button>
