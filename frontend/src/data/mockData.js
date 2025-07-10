@@ -673,15 +673,6 @@ export const siteData = {
       email: "mmay@brigliahundley.com"
     },
     {
-      name: "William T. DeVinney",
-      position: "Of Counsel",
-      experience: "William DeVinney has a broad litigation practice including antitrust, intellectual property, and complex commercial litigation. He represents clients in sophisticated legal matters throughout Virginia, Washington, D.C., and Maryland.",
-      fullExperience: "William DeVinney has a broad litigation practice including antitrust, intellectual property, and complex commercial litigation. He represents clients in sophisticated legal matters involving federal and state regulatory issues, business disputes, and intellectual property matters. Mr. DeVinney's extensive experience includes representing corporations, individuals, and government entities in high-stakes litigation and regulatory proceedings. His strategic approach and attention to detail have resulted in successful outcomes for clients across a wide range of industries.",
-      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-bill-devinney-800rrsa.jpg",
-      phone: "703.883.0212",
-      email: "wdevinney@brigliahundley.com"
-    },
-    {
       name: "Kaley Duncan Ward",
       position: "Senior Associate",
       experience: "Kaley Ward practices in eminent domain, civil litigation, and estate planning. She represents clients in property rights matters and complex legal disputes throughout Virginia, Washington, D.C., and Maryland.",
