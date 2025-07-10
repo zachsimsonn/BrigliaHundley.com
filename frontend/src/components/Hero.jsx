@@ -52,7 +52,8 @@ const Hero = ({ data, editableContent }) => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-gray-600 hover:bg-gray-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                variant="outline" 
+                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 font-semibold"
                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
               >
                 {editableContent.hero.buttonText}
