@@ -126,7 +126,7 @@ export const siteData = {
     },
     {
       title: "Accountants Liability and Securities Litigation",
-      description: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading.",
+      description: "Defense representation in SEC, PCAOB enforcement matters, securities litigation, and professional liability cases.",
       fullDescription: "Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings.",
       detailedContent: {
         sections: [
