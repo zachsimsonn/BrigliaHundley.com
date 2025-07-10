@@ -121,7 +121,7 @@ export const siteData = {
       ],
       url: "/business-litigation",
       localKeywords: "business litigation attorney Fairfax VA, commercial lawyer Northern Virginia, business dispute Arlington VA, corporate litigation Tysons Corner",
-      attorneys: ["Steven D. Briglia", "James W. Hundley"],
+      attorneys: ["Steven D. Briglia", "James W. Hundley", "Madison A. Beatty"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
     },
     {
