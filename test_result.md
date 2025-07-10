@@ -288,6 +288,9 @@ test_plan:
       - working: true
         agent: "main"
         comment: "Fixed blog post navigation error and updated with most recent content from brigliahundley.com (April-June 2025). Added articles: 'Arrested at a Protest', 'Crawford v. Washington', 'Business Attorney Pros/Cons', 'Hidden Assets in Divorce', 'See Doctor After Car Accident', 'Social Media in Family Law'. Fixed blog images to show actual photos instead of placeholders. Created BlogPostPage component with professional layout and proper routing."
+      - working: true
+        agent: "main"
+        comment: "CONTINUATION FIX: Fixed critical blog data mapping issue - changed 'blogPosts' to 'blogs' in mockData.js and added proper id, category fields for each blog post. Blog page now displays correctly with all 6 blog posts showing titles, excerpts, authors, dates, categories, and working navigation. Category filtering buttons working properly."
 
   - task: "Update logo to new bhlogo.png"
     implemented: true
