@@ -817,8 +817,7 @@ export const siteData = {
       position: "Associate",
       experience: "Jacob DeRue supports the community association department. He assists homeowners associations and community organizations with legal matters throughout Virginia, Washington, D.C., and Maryland.",
       fullExperience: "Jacob DeRue supports the community association department. He assists homeowners associations, condominium associations, and community organizations with legal matters including governance issues, contract disputes, and regulatory compliance. His work includes supporting community association legal matters, corporate governance issues, and providing legal research and analysis for association clients. Mr. DeRue is dedicated to helping community organizations operate effectively within legal frameworks.",
-      image: "/api/placeholder/300/400",
-      phone: "703.883.0218",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jacob-derue-24.jpg",
       email: "jderue@brigliahundley.com"
     }
   ],
