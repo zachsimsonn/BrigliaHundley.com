@@ -167,14 +167,6 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <Phone className="mr-2 h-4 w-4" />
               <span className="font-medium">Call Now</span>
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white transition-all duration-300"
-              onClick={() => window.open('https://portal.brigliahundley.com/pay', '_blank')}
-              style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
-            >
-              PAY MY BILL
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
