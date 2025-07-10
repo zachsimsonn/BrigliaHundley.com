@@ -154,6 +154,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               variant="outline" 
               className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
               onClick={() => handleNavigate('contact')}
+              style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}
             >
               Schedule a Free Consultation
             </Button>
@@ -161,9 +162,18 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               variant="outline" 
               className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
               onClick={() => window.location.href = `tel:${data.business.phone}`}
+              style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}
             >
               <Phone className="mr-2 h-4 w-4" />
               <span className="font-medium">Call Now</span>
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white transition-all duration-300"
+              onClick={() => window.open('https://portal.brigliahundley.com/pay', '_blank')}
+              style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
+            >
+              PAY MY BILL
             </Button>
           </div>
 
