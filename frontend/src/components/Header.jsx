@@ -98,11 +98,12 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <div className="relative">
                 <button 
                   onClick={() => handleDropdownToggle('attorneys')}
-                  className={`flex items-center transition-colors duration-200 font-bold ${
+                  className={`flex items-center transition-colors duration-200 ${
                     (currentPage === 'attorneys' || currentPage === 'attorney-profile') ? 'text-gray-900 font-black' : 'text-gray-700 hover:text-gray-900'
                   }`}
+                  style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500', letterSpacing: '0.5px' }}
                 >
-                  Attorneys <ChevronDown className="ml-1 h-4 w-4" />
+                  OUR ATTORNEYS <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 {activeDropdown === 'attorneys' && (
                   <div className="absolute top-full left-0 mt-2 w-[32rem] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
