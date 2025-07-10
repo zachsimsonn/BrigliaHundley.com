@@ -51,7 +51,7 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
     },
     {
-      title: "Criminal Law",
+      title: "Criminal Defense",
       description: "Experienced criminal defense representation for all manner of misdemeanor and felony charges in state and federal courts.",
       fullDescription: "Our criminal defense attorneys have extensive experience protecting clients' rights in both state and federal courts. We understand that criminal charges can have life-altering consequences, and we fight aggressively to protect your freedom, reputation, and future.",
       detailedContent: {
@@ -87,7 +87,7 @@ export const siteData = {
         "Theft and Larceny",
         "Federal Criminal Defense"
       ],
-      url: "/criminal-law",
+      url: "/criminal-defense",
       localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County",
       attorneys: ["James W. Hundley", "Steven D. Briglia"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-criminal-law-hero-25.jpg"
