@@ -29,6 +29,11 @@ import PracticeAreaPage from "./components/pages/PracticeAreaPage";
 import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import BlogPostPage from "./components/pages/BlogPostPage";
 import { Toaster } from "react-hot-toast";
+import Hero from "./components/Hero";
+import ServiceAreas from "./components/ServiceAreas";
+import PracticeAreas from "./components/PracticeAreas";
+import FAQ from "./components/FAQ";
+import SEO from "./components/SEO";
 
 // Data
 import { siteData, editableContent } from "./data/mockData";
@@ -36,7 +41,7 @@ import { siteData, editableContent } from "./data/mockData";
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-const Home = ({ data, editableData, onNavigate }) => {
+const HomeComponent = ({ data, editableData, onNavigate }) => {
   const homeSchemaData = {
     "@context": "https://schema.org",
     "@type": "LegalService",
