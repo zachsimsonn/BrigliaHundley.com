@@ -105,7 +105,7 @@ const Hero = ({ data, editableContent }) => {
                     </div>
                   </div>
                   
-                  <div className="border-l-4 border-yellow-300 pl-6">
+                  <div className="border-l-4 border-white pl-6">
                     <blockquote className="text-lg italic text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
                       "Delivering superior client service and innovative legal strategies since 1993"
                     </blockquote>
