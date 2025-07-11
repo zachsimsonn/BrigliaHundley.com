@@ -65,7 +65,7 @@ const Contact = ({ data, editableContent }) => {
       icon: <MapPin className="h-6 w-6" />,
       title: "Address",
       value: data.business.address,
-      action: () => window.open(`https://maps.google.com/?q=${encodeURIComponent(data.business.address)}`)
+      action: () => window.open(`https://maps.app.goo.gl/Dqo1syhK2exWUfBM6`)
     },
     {
       icon: <Clock className="h-6 w-6" />,
