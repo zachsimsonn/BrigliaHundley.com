@@ -46,10 +46,10 @@ const Blog = ({ data, onNavigate }) => {
         {/* Featured Blog Posts */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {data.blogs.slice(0, 6).map((blog) => (
-            <article 
+            <Link 
               key={blog.id} 
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden cursor-pointer"
-              onClick={() => handleBlogClick(blog.slug)}
+              to={`/blog/${blog.slug}`}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden cursor-pointer block"
             >
               {/* Blog Image */}
               <div className="relative h-48 overflow-hidden">
