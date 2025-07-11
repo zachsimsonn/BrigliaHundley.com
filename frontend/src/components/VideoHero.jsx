@@ -1,34 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowRight, Shield, Award, MapPin } from 'lucide-react';
+import { Button } from './ui/button';
 
-const VideoHero = ({ data }) => {
+const VideoHero = ({ data, editableContent }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
   const slides = [
     {
       id: 1,
-      title: "Excellence in Legal Representation",
-      subtitle: "Serving the Washington D.C. Metropolitan Area Since 1993",
-      description: "Tier 1 ranked law firm delivering superior client service and innovative legal strategies throughout Northern Virginia, Washington D.C., and Maryland.",
-      cta: "Schedule a Free Consultation",
-      ctaSecondary: "Call (703) 883-0200"
+      showContent: true
     },
     {
-      id: 2,
-      title: "Founded on Excellence",
-      subtitle: "James W. Hundley & Steven D. Briglia",
-      description: "Our founding partners bring over 60 years of combined legal experience, with recognition from Best Lawyers, Super Lawyers, and Martindale-Hubbell's highest AV rating.",
-      cta: "Meet Our Team",
-      ctaSecondary: "Learn About Our Founders"
-    },
-    {
-      id: 3,
-      title: "Award-Winning Legal Team",
-      subtitle: "14+ Experienced Attorneys",
-      description: "Our attorneys are recognized leaders in their fields, with former prosecutors, federal court clerks, and attorneys from top regional firms.",
-      cta: "View All Attorneys",
-      ctaSecondary: "Our Practice Areas"
+      id: 2, 
+      showContent: true
     }
   ];
 
@@ -42,11 +26,9 @@ const VideoHero = ({ data }) => {
 
   // Auto-advance slides
   useEffect(() => {
-    const timer = setInterval(nextSlide, 6000);
+    const timer = setInterval(nextSlide, 8000);
     return () => clearInterval(timer);
   }, []);
-
-  const currentSlideData = slides[currentSlide];
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -61,7 +43,7 @@ const VideoHero = ({ data }) => {
               height: '100vh',
               minWidth: '100%',
               minHeight: '100%',
-              transform: 'scale(1.1)', // Slight zoom to ensure no black bars
+              transform: 'scale(1.1)',
             }}
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
@@ -70,62 +52,108 @@ const VideoHero = ({ data }) => {
           />
           
           {/* Video Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-800/70 to-gray-900/80"></div>
         </div>
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 h-full flex items-center">
+      <div className="relative z-10 h-full flex items-center pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Text Content */}
-            <div className="text-white space-y-6">
-              <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  {currentSlideData.title}
-                </h1>
-                <h2 className="text-xl lg:text-2xl text-gray-200 font-medium">
-                  {currentSlideData.subtitle}
-                </h2>
-                <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl">
-                  {currentSlideData.description}
-                </p>
+            {/* Left Content */}
+            <div className="space-y-8 text-white">
+              {/* Badge */}
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 space-x-2">
+                <Award className="h-5 w-5 text-gray-300" />
+                <span className="text-sm font-semibold">Tier 1 Ranked Law Firm</span>
               </div>
 
-              {/* Call to Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <button className="bg-gradient-to-r from-blue-900 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-800 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-xl">
-                  {currentSlideData.cta}
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-xl">
-                  {currentSlideData.ctaSecondary}
-                </button>
+              {/* Main Heading */}
+              <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
+                {editableContent.hero.title}
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-lg lg:text-xl text-gray-100 leading-relaxed">
+                {editableContent.hero.subtitle}
+              </p>
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 gap-8 py-6">
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl font-bold text-gray-300">30+</div>
+                  <div className="text-gray-100">Years of Experience</div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <div className="text-3xl font-bold text-gray-300">7</div>
+                  <div className="text-gray-100">Best Lawyers® 2025</div>
+                </div>
+              </div>
+
+              {/* Location */}
+              <div className="flex items-center space-x-2 text-gray-100">
+                <MapPin className="h-5 w-5" />
+                <span>{data.business.location}</span>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                >
+                  {editableContent.hero.buttonText}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  onClick={() => window.location.href = `tel:${data.business.phone}`}
+                >
+                  {editableContent.hero.buttonPhone}
+                </Button>
               </div>
             </div>
 
-            {/* Right Column - Founder Images or Stats */}
-            {currentSlide === 1 && (
-              <div className="hidden lg:block">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
-                    <div className="text-3xl font-bold text-blue-300 mb-2">30+</div>
-                    <div className="text-sm">Years of Experience</div>
-                  </div>
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
-                    <div className="text-3xl font-bold text-blue-300 mb-2">14+</div>
-                    <div className="text-sm">Expert Attorneys</div>
-                  </div>
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
-                    <div className="text-3xl font-bold text-blue-300 mb-2">1993</div>
-                    <div className="text-sm">Established</div>
-                  </div>
-                  <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
-                    <div className="text-3xl font-bold text-blue-300 mb-2">Tier 1</div>
-                    <div className="text-sm">Ranked Firm</div>
+            {/* Right Content - Trust Indicators */}
+            <div className="hidden lg:block">
+              <div className="relative">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
+                  <div className="space-y-6">
+                    <div className="flex items-center space-x-3">
+                      <Shield className="h-8 w-8 text-gray-300" />
+                      <div>
+                        <h3 className="text-xl font-semibold text-white">Trusted Legal Experts</h3>
+                        <p className="text-gray-300">AV Rated Attorneys</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center space-x-3">
+                      <Award className="h-8 w-8 text-gray-300" />
+                      <div>
+                        <h3 className="text-xl font-semibold text-white">Award Winning</h3>
+                        <p className="text-gray-300">Best Lawyers & Super Lawyers</p>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-white/20 pt-6">
+                      <div className="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                          <div className="text-2xl font-bold text-white">14+</div>
+                          <div className="text-sm text-gray-300">Attorneys</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-white">1993</div>
+                          <div className="text-sm text-gray-300">Established</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
@@ -163,26 +191,6 @@ const VideoHero = ({ data }) => {
           >
             <ChevronRight className="h-5 w-5" />
           </button>
-        </div>
-      </div>
-
-      {/* Video Controls */}
-      <div className="absolute top-8 right-8 z-20">
-        <button
-          onClick={() => setIsVideoPlaying(!isVideoPlaying)}
-          className="bg-white bg-opacity-20 backdrop-blur-sm hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300"
-        >
-          {isVideoPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
-        </button>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 right-8 z-20">
-        <div className="text-white text-sm opacity-70">
-          <div className="flex flex-col items-center space-y-2">
-            <span>Scroll</span>
-            <div className="w-px h-8 bg-white opacity-50"></div>
-          </div>
         </div>
       </div>
     </section>
