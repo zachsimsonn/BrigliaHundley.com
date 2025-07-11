@@ -442,7 +442,7 @@ const App = () => {
                 <div className="min-h-screen bg-white pt-20">
                   <SEO 
                     title="Attorneys"
-                    description="Meet our experienced legal team at Briglia Hundley®. Our attorneys are AV rated and recognized by Best Lawyers and Super Lawyers."
+                    description="Meet our AV-rated attorneys at Briglia Hundley®. Best Lawyers and Super Lawyers recognized legal team in Tysons Corner."
                     keywords="attorneys, lawyers, legal team, Briglia Hundley, Virginia lawyers, Tysons Corner attorneys"
                     canonical="https://brigliahundley.com/attorneys"
                   />
