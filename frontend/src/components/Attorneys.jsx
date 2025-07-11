@@ -7,9 +7,9 @@ const Attorneys = ({ data, onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Our Legal Team
-          </h2>
+          </h1>
           <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Our practice features prominent, highly experienced attorneys who have been named to Super Lawyers, listed in U.S. News and World Report's Best Lawyers, and achieved Martindale-Hubbell's highest "AV" rating.
