@@ -292,6 +292,7 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
                               src={attorney.image} 
                               alt={attorney.name}
                               className="w-12 h-12 rounded-full object-cover"
+                              style={{objectPosition: '50% 35%'}}
                             />
                           )}
                           <div>
