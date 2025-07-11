@@ -156,9 +156,14 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
                   <MapPin className="h-4 w-4 text-gray-600 mt-1 mr-3 flex-shrink-0" />
                   <div className="text-left">
                     <div className="text-sm text-gray-500">Office</div>
-                    <div className="text-gray-900 font-medium text-sm">
+                    <a 
+                      href="https://maps.app.goo.gl/Dqo1syhK2exWUfBM6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-900 font-medium text-sm hover:text-blue-600 transition-colors duration-200"
+                    >
                       {data.business.address}
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
