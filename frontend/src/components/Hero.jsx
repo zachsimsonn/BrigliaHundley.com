@@ -44,12 +44,12 @@ const Hero = ({ data, editableContent }) => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl lg:text-4xl font-bold leading-tight">
+            <h1 className="text-3xl lg:text-4xl font-bold leading-tight text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
               {editableContent.hero.title}
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg lg:text-xl text-gray-100 leading-relaxed">
+            <p className="text-lg lg:text-xl text-white leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
               {editableContent.hero.subtitle}
             </p>
 
