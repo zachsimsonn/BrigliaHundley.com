@@ -393,10 +393,6 @@ const App = () => {
                 />
                 <Home data={data} editableData={editableData} onNavigate={handleNavigate} />
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
-                  onDataUpdate={handleDataUpdate} 
-                />
                 <Toaster />
               </div>
             } />
