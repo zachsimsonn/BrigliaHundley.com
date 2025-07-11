@@ -76,6 +76,8 @@ const Blog = ({ data, onNavigate }) => {
                     src={blog.image} 
                     alt={blog.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
