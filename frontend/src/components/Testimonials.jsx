@@ -32,7 +32,7 @@ const Testimonials = ({ data }) => {
               <div className="p-8">
                 {/* Quote icon */}
                 <div className="flex justify-center mb-6">
-                  <div className="bg-gray-600 rounded-full p-3">
+                  <div className="bg-gray-900 rounded-full p-3">
                     <Quote className="h-6 w-6 text-white" />
                   </div>
                 </div>
