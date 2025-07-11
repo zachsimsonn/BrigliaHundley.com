@@ -265,7 +265,7 @@ const BlogPostPage = ({ data, onNavigate }) => {
                         <img 
                           src={relatedBlog.image} 
                           alt={relatedBlog.title}
-                          className="w-full h-20 object-cover rounded-t-lg"
+                          className="w-full h-22 object-cover rounded-t-lg"
                         />
                       )}
                       <div className="p-3">
