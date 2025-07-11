@@ -179,11 +179,23 @@ const BlogPostPage = ({ slug, data, onNavigate }) => {
             <div className="bg-gray-50 rounded-lg p-8 mt-12">
               <h3 className="text-xl font-semibold text-gray-900 mb-4 text-left">About the Author</h3>
               <div className="flex items-start text-left">
-                <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-gray-600 font-bold text-lg">
-                    {blog.author.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
+                {(() => {
+                  const author = data.attorneys.find(att => att.name === blog.author);
+                  return author && author.image ? (
+                    <img 
+                      src={author.image} 
+                      alt={author.name}
+                      className="w-16 h-16 rounded-full object-cover mr-4"
+                      style={{objectPosition: '50% 30%'}}
+                    />
+                  ) : (
+                    <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                      <span className="text-gray-600 font-bold text-lg">
+                        {blog.author.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  );
+                })()}
                 <div className="text-left">
                   <h4 className="font-semibold text-gray-900">{blog.author}</h4>
                   <p className="text-gray-600">
