@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "I want to continue developing my Briglia Hundley law firm website. Please help me make improvements and add new features. SEO, Coding, adding pictures for each attorney based on brigliahundley.com. Also the preview keeps showing the old logo, i have updated it to the new logo multiple times."
+user_problem_statement: "I want to continue developing my Briglia Hundley law firm website. Please help me make improvements and add new features. SEO, Coding, adding pictures for each attorney based on brigliahundley.com. Also the preview keeps showing the old logo, i have updated it to the new logo multiple times. CONTINUATION: Focus on minor details, seo, how search engines see us through the coding, working links, backlinks, pictures, things like that."
 
 backend:
   - task: "Backend API endpoints are functional"
