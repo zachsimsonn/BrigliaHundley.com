@@ -417,7 +417,7 @@ const App = () => {
                 <div className="min-h-screen bg-white pt-20">
                   <SEO 
                     title="About Us"
-                    description="Learn about Briglia Hundley®, a Tier 1 ranked law firm in Tysons Corner, Virginia. Our experienced attorneys have been serving clients since 1993."
+                    description="Learn about Briglia Hundley®, Tier 1 ranked law firm in Tysons Corner, VA. Experienced attorneys serving clients since 1993."
                     keywords="about Briglia Hundley, law firm history, Tysons Corner attorneys, Virginia lawyers"
                     canonical="https://brigliahundley.com/about"
                   />
