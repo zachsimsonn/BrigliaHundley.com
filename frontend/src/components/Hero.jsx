@@ -24,8 +24,8 @@ const Hero = ({ data, editableContent }) => {
           title="Briglia Hundley Background Video"
         />
         
-        {/* Light overlay for text readability */}
-        <div className="absolute inset-0 bg-white/20"></div>
+        {/* Very light overlay for minimal darkening */}
+        <div className="absolute inset-0 bg-black/10"></div>
       </div>
 
       {/* Background Pattern */}
