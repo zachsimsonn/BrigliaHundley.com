@@ -86,8 +86,8 @@ const Attorneys = ({ data, onNavigate }) => {
               <div className="text-gray-600">Years Combined</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">15+</div>
-              <div className="text-gray-600">Expert Attorneys</div>
+              <div className="text-3xl font-bold text-blue-900 mb-2">14</div>
+              <div className="text-gray-600">Attorneys</div>
             </div>
           </div>
         </div>
