@@ -70,7 +70,7 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
   // Breadcrumb data
   const breadcrumbItems = [
     { name: 'Practice Areas', url: '/practice-areas' },
-    { name: practiceArea.title, url: `/practice-area/${areaName}` }
+    { name: practiceArea.title, url: `/practice-area/${area}` }
   ];
 
   // Get attorneys for this practice area
