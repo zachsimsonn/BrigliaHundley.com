@@ -97,7 +97,7 @@ const FAQ = ({ data }) => {
               </button>
               <button 
                 className="border-2 border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white px-8 py-3 rounded-full transition-all duration-300 font-medium"
-                onClick={() => window.location.href = 'tel:(703) 555-0123'}
+                onClick={() => window.location.href = `tel:${data.business.phone}`}
               >
                 Call Us Today
               </button>
