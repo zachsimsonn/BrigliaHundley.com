@@ -97,19 +97,12 @@ const Blog = ({ data, onNavigate }) => {
                 </div>
 
                 {/* Read More */}
-                <Button 
-                  variant="ghost" 
-                  className="group text-gray-900 hover:text-gray-700 p-0 h-auto"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleBlogClick(blog.slug);
-                  }}
-                >
+                <div className="text-gray-900 hover:text-gray-700 p-0 h-auto group">
                   Read More
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
+                </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 
