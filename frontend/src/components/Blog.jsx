@@ -91,8 +91,8 @@ const Blog = ({ data, onNavigate }) => {
               <div className="relative h-48 overflow-hidden">
                 {blog.image ? (
                   <img 
-                    src={blog.image} 
-                    alt={blog.title}
+                    src={optimizeImageUrl(blog.image, 600, 400)} 
+                    alt={`${blog.title} - Legal insights from Briglia Hundley attorneys`}
                     className="w-full h-full object-cover"
                     loading="lazy"
                     decoding="async"
