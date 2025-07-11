@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { ArrowLeft, Calendar, User, Share2 } from 'lucide-react';
 import SEO from '../SEO';
@@ -8,6 +8,11 @@ import Breadcrumb from '../Breadcrumb';
 const BlogPostPage = ({ data, onNavigate }) => {
   const { slug } = useParams();
   const blog = data.blogs.find(post => post.slug === slug);
+
+  // Scroll to top when component mounts or slug changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!blog) {
     return (
