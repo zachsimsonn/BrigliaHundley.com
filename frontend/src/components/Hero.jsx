@@ -56,17 +56,17 @@ const Hero = ({ data, editableContent }) => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8 py-6">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-300">30+</div>
-                <div className="text-gray-100">Years of Experience</div>
+                <div className="text-3xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>30+</div>
+                <div className="text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>Years of Experience</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-300">7</div>
-                <div className="text-gray-100">Best Lawyers® 2025</div>
+                <div className="text-3xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>7</div>
+                <div className="text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>Best Lawyers® 2025</div>
               </div>
             </div>
 
             {/* Location */}
-            <div className="flex items-center space-x-2 text-gray-100">
+            <div className="flex items-center space-x-2 text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
               <MapPin className="h-5 w-5" />
               <span>{data.business.location}</span>
             </div>
