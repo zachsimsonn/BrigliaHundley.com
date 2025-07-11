@@ -492,7 +492,7 @@ const App = () => {
                 <div className="min-h-screen bg-white pt-20">
                   <SEO 
                     title="Contact Us"
-                    description="Contact Briglia Hundley® for expert legal representation in Tysons Corner, Virginia. Call (703) 522-7222 or schedule a free consultation today."
+                    description="Contact Briglia Hundley® in Tysons Corner, VA. Call (703) 522-7222 or schedule a free consultation today."
                     keywords="contact Briglia Hundley, law firm contact, Tysons Corner legal help, Virginia lawyers"
                     canonical="https://brigliahundley.com/contact"
                   />
