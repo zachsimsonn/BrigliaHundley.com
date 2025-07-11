@@ -85,21 +85,21 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                 {activeDropdown === 'services' && (
                   <div className="absolute top-full left-0 mt-2 w-96 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                     <div className="p-4">
-                      <button
-                        onClick={() => handleNavigate('practice-areas')}
-                        className="w-full text-left px-3 py-2 text-gray-900 font-medium hover:bg-gray-50 border-b border-gray-100 mb-2 rounded"
+                      <Link
+                        to="/practice-areas"
+                        className="w-full text-left px-3 py-2 text-gray-900 font-medium hover:bg-gray-50 border-b border-gray-100 mb-2 rounded block"
                       >
                         All Practice Areas
-                      </button>
+                      </Link>
                       <div className="grid grid-cols-3 gap-2">
                         {data.practiceAreas.map((area, index) => (
-                          <button
+                          <Link
                             key={index}
-                            onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
+                            to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
                             className="text-left px-3 py-2 text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200"
                           >
-                            <div className="font-medium text-sm">{area.title}</div>
-                          </button>
+                            {area.title}
+                          </Link>
                         ))}
                       </div>
                     </div>
