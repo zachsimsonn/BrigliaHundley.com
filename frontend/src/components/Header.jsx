@@ -138,7 +138,8 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                             onClick={() => setActiveDropdown(null)}
                             className="text-left px-3 py-2 text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200"
                           >
-                            {attorney.name}
+                            <div className="font-medium text-sm">{attorney.name}</div>
+                            <div className="text-xs text-gray-500">{attorney.position}</div>
                           </Link>
                         ))}
                       </div>
