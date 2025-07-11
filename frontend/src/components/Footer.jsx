@@ -88,52 +88,52 @@ const Footer = ({ data }) => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a 
-                  href="#about" 
+                <button 
+                  onClick={() => window.location.href = '/about'}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   About Us
-                </a>
+                </button>
               </li>
               <li>
-                <a 
-                  href="#attorneys" 
+                <button 
+                  onClick={() => window.location.href = '/attorneys'}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   Our Attorneys
-                </a>
+                </button>
               </li>
               <li>
-                <a 
-                  href="#testimonials" 
+                <button 
+                  onClick={() => window.location.href = '/testimonials'}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   Client Reviews
-                </a>
+                </button>
               </li>
               <li>
-                <a 
-                  href="#contact" 
+                <button 
+                  onClick={() => window.location.href = '/contact'}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   Contact Us
-                </a>
+                </button>
               </li>
               <li>
-                <a 
-                  href="#" 
+                <button 
+                  onClick={() => window.location.href = '/blog'}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   Blog
-                </a>
+                </button>
               </li>
               <li>
-                <a 
-                  href="#" 
+                <button 
+                  onClick={() => window.location.href = '/practice-areas'}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Resources
-                </a>
+                  All Practice Areas
+                </button>
               </li>
             </ul>
           </div>
