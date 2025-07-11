@@ -288,60 +288,6 @@ const BlogPostPage = ({ slug, data, onNavigate }) => {
           </div>
         </div>
       </div>
-              .slice(0, 2)
-              .map((relatedPost) => (
-                <div key={relatedPost.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-                  <img 
-                    src={relatedPost.image} 
-                    alt={relatedPost.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <span className="text-sm text-gray-600 font-medium">{relatedPost.category}</span>
-                    <h4 className="text-lg font-semibold text-gray-900 mt-2 mb-3 line-clamp-2">
-                      {relatedPost.title}
-                    </h4>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {relatedPost.excerpt}
-                    </p>
-                    <Button
-                      onClick={() => onNavigate('blog-post', { slug: relatedPost.slug })}
-                      variant="outline"
-                      size="sm"
-                      className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
-                    >
-                      Read More
-                    </Button>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8 mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-4">Need Legal Assistance?</h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            If you have questions about {blog.category.toLowerCase()} or need expert legal guidance, 
-            our experienced attorneys are here to help.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={() => onNavigate('contact')}
-              className="bg-white text-gray-900 hover:bg-gray-100"
-            >
-              Schedule Consultation
-            </Button>
-            <Button 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-gray-900"
-              onClick={() => window.location.href = `tel:${data.business.phone}`}
-            >
-              Call Now
-            </Button>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
