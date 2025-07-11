@@ -113,12 +113,12 @@ const Hero = ({ data, editableContent }) => {
                   
                   <div className="grid grid-cols-2 gap-4 pt-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>Multiple</div>
+                      <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>12</div>
                       <div className="text-sm text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Practice Areas</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>15+</div>
-                      <div className="text-sm text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Multiple attorneys recognized</div>
+                      <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>14</div>
+                      <div className="text-sm text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Attorneys</div>
                     </div>
                   </div>
                 </div>
