@@ -57,7 +57,7 @@ const Blog = ({ data, onNavigate }) => {
 
         {/* Featured Blog Posts */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {data.blogs.slice(0, 6).map((blog) => (
+          {filteredBlogs.slice(0, 6).map((blog) => (
             <Link 
               key={blog.id} 
               to={`/blog/${blog.slug}`}
