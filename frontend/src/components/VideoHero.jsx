@@ -6,14 +6,8 @@ const VideoHero = ({ data, editableContent }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    {
-      id: 1,
-      showContent: true
-    },
-    {
-      id: 2, 
-      showContent: true
-    }
+    { id: 1, showContent: true },
+    { id: 2, showContent: true }
   ];
 
   const nextSlide = () => {
