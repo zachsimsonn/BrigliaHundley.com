@@ -31,34 +31,33 @@ const VideoHero = ({ data, editableContent }) => {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden pt-20">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="relative w-full h-full">
-          <iframe
-            src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1"
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            style={{
-              width: '100vw',
-              height: '100vh',
-              minWidth: '100%',
-              minHeight: '100%',
-              transform: 'scale(1.1)',
-            }}
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            title="Briglia Hundley Background Video"
-          />
-          
-          {/* Video Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-800/70 to-gray-900/80"></div>
+        <iframe
+          src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1"
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="Briglia Hundley Background Video"
+        />
+        
+        {/* Lighter overlay for better readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/50 via-gray-800/40 to-gray-900/50"></div>
+        
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
         </div>
       </div>
 
-      {/* Content Overlay */}
-      <div className="relative z-10 h-full flex items-center pt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8 text-white">
