@@ -71,7 +71,7 @@ const Attorneys = ({ data, onNavigate }) => {
         </div>
 
         {/* Team Stats */}
-        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+        <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col h-full">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-900 mb-2">7</div>
