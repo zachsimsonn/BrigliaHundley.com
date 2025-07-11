@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 
 const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const location = useLocation();
 
   // Function to determine if a page is active and return appropriate classes
-  const getNavItemClass = (page) => {
+  const getNavItemClass = (path) => {
     const baseClass = "transition-colors duration-200";
-    const isActive = currentPage === page;
+    const isActive = location.pathname === path;
     
     if (isActive) {
       return `${baseClass} text-gray-900`; // Darker when active
