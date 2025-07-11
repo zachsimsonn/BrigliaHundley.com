@@ -1,10 +1,12 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { ArrowLeft, Calendar, User, Share2 } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumb from '../Breadcrumb';
 
-const BlogPostPage = ({ slug, data, onNavigate }) => {
+const BlogPostPage = ({ data, onNavigate }) => {
+  const { slug } = useParams();
   const blog = data.blogs.find(post => post.slug === slug);
 
   if (!blog) {
