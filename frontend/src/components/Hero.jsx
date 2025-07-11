@@ -68,7 +68,14 @@ const Hero = ({ data, editableContent }) => {
             {/* Location */}
             <div className="flex items-center space-x-2 text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
               <MapPin className="h-5 w-5" />
-              <span>{data.business.location}</span>
+              <a 
+                href="https://maps.app.goo.gl/Dqo1syhK2exWUfBM6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-200 transition-colors duration-200"
+              >
+                {data.business.location}
+              </a>
             </div>
 
             {/* CTA Buttons */}
