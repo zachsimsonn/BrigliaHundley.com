@@ -105,14 +105,14 @@ const BlogPostPage = ({ data, onNavigate }) => {
             <span className="inline-block bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
               {blog.category}
             </span>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-center">
               {blog.title}
             </h1>
             
-            <div className="flex items-center space-x-6 text-gray-600">
+            <div className="flex items-center justify-center space-x-6 text-gray-600">
               <div className="flex items-center">
                 <User className="h-5 w-5 mr-2" />
-                <span>{blog.author}</span>
+                <span className="font-medium">{blog.author}</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="h-5 w-5 mr-2" />
