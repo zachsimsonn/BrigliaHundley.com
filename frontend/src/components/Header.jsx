@@ -56,20 +56,20 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
           {/* Centered Navigation */}
           <div className="hidden md:flex items-center justify-center flex-1 px-4">
             <nav className="flex space-x-4">
-              <button 
-                onClick={() => handleNavigate('home')}
-                className={getNavItemClass('home')}
+              <Link 
+                to="/"
+                className={getNavItemClass('/')}
                 style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 HOME
-              </button>
-              <button 
-                onClick={() => handleNavigate('about')}
-                className={getNavItemClass('about')}
+              </Link>
+              <Link 
+                to="/about"
+                className={getNavItemClass('/about')}
                 style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
                 THE FIRM
-              </button>
+              </Link>
               
               {/* Practice Areas Dropdown */}
               <div className="relative">
