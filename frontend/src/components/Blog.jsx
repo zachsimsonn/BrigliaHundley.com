@@ -20,11 +20,17 @@ const Blog = ({ data, onNavigate }) => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Briglia Hundley Blogs
+            {category 
+              ? `${categories.find(cat => cat.toLowerCase().replace(/\s+/g, '-') === category)} Articles`
+              : 'Briglia Hundley Blogs'
+            }
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-gray-900 to-gray-700 rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Stay informed with the latest legal insights, industry news, and expert analysis from our experienced attorneys.
+            {category 
+              ? `Expert legal insights and analysis on ${categories.find(cat => cat.toLowerCase().replace(/\s+/g, '-') === category)?.toLowerCase()} from our experienced attorneys.`
+              : 'Stay informed with the latest legal insights, industry news, and expert analysis from our experienced attorneys.'
+            }
           </p>
         </div>
 
