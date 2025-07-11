@@ -4,9 +4,9 @@ import { ArrowRight, Shield, Award, MapPin } from 'lucide-react';
 
 const Hero = ({ data, editableContent }) => {
   return (
-    <section className="relative bg-white text-white overflow-hidden pt-20">
+    <section className="relative bg-white text-white overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full z-0">
+      <div className="absolute inset-0 w-full h-full z-0" style={{ top: '-80px', height: 'calc(100% + 80px)' }}>
         <iframe
           src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1"
           className="absolute top-0 left-0 w-full h-full"
@@ -33,7 +33,7 @@ const Hero = ({ data, editableContent }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 z-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 z-10" style={{ paddingTop: '80px' }}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
