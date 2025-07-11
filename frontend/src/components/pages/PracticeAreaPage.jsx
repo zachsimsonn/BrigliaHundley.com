@@ -102,7 +102,7 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
         title={practiceArea.title}
         description={metaDescription}
         keywords={keywords}
-        canonical={`https://brigliahundley.com/practice-area/${areaName}`}
+        canonical={`https://brigliahundley.com/practice-area/${area}`}
         ogType="article"
         schemaData={practiceAreaSchema}
         breadcrumbs={breadcrumbItems}
