@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const FAQ = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -8,8 +9,28 @@ const FAQ = ({ data }) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // FAQ structured data for better SEO
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faq.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   return (
     <section className="py-20 bg-gray-50">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+      
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
