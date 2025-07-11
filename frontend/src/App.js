@@ -385,7 +385,7 @@ const App = () => {
                   onNavigate={handleNavigate}
                   currentPage={currentPage}
                 />
-                {renderCurrentPage()}
+                <Home data={data} editableData={editableData} onNavigate={handleNavigate} />
                 <Footer data={data} />
                 <AdminDashboard 
                   data={data} 
@@ -393,9 +393,208 @@ const App = () => {
                 />
                 <Toaster />
               </div>
-            }>
-              <Route index element={<div />} />
-            </Route>
+            } />
+            <Route path="/about" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="about"
+                />
+                <div className="min-h-screen bg-white pt-20">
+                  <SEO 
+                    title="About Us"
+                    description="Learn about Briglia Hundley®, a Tier 1 ranked law firm in Tysons Corner, Virginia. Our experienced attorneys have been serving clients since 1993."
+                    keywords="about Briglia Hundley, law firm history, Tysons Corner attorneys, Virginia lawyers"
+                    canonical="https://brigliahundley.com/about"
+                  />
+                  <About data={data} editableContent={editableData} />
+                </div>
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/attorneys" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="attorneys"
+                />
+                <div className="min-h-screen bg-white pt-20">
+                  <SEO 
+                    title="Attorneys"
+                    description="Meet our experienced legal team at Briglia Hundley®. Our attorneys are AV rated and recognized by Best Lawyers and Super Lawyers."
+                    keywords="attorneys, lawyers, legal team, Briglia Hundley, Virginia lawyers, Tysons Corner attorneys"
+                    canonical="https://brigliahundley.com/attorneys"
+                  />
+                  <Attorneys data={data} onNavigate={handleNavigate} />
+                </div>
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/testimonials" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="testimonials"
+                />
+                <div className="min-h-screen bg-white pt-20">
+                  <SEO 
+                    title="Testimonials"
+                    description="Read what our clients say about Briglia Hundley®. Client testimonials and reviews from satisfied clients in Virginia, DC, and Maryland."
+                    keywords="testimonials, client reviews, Briglia Hundley reviews, law firm testimonials"
+                    canonical="https://brigliahundley.com/testimonials"
+                  />
+                  <Testimonials data={data} />
+                </div>
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/contact" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="contact"
+                />
+                <div className="min-h-screen bg-white pt-20">
+                  <SEO 
+                    title="Contact Us"
+                    description="Contact Briglia Hundley® for expert legal representation in Tysons Corner, Virginia. Call (703) 522-7222 or schedule a free consultation today."
+                    keywords="contact Briglia Hundley, law firm contact, Tysons Corner legal help, Virginia lawyers"
+                    canonical="https://brigliahundley.com/contact"
+                  />
+                  <Contact data={data} editableContent={editableData} />
+                </div>
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/blog" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="blog"
+                />
+                <div className="min-h-screen bg-white pt-20">
+                  <SEO 
+                    title="Blog"
+                    description="Read the latest legal insights and updates from Briglia Hundley® attorneys. Expert analysis on Virginia law, criminal defense, family law, and more."
+                    keywords="legal blog, law firm blog, Virginia legal news, criminal defense updates, family law insights"
+                    canonical="https://brigliahundley.com/blog"
+                  />
+                  <Blog data={data} onNavigate={handleNavigate} />
+                </div>
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/practice-areas" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="practice-areas"
+                />
+                <div className="min-h-screen bg-white pt-20">
+                  <SEO 
+                    title="Practice Areas"
+                    description="Explore our comprehensive legal services at Briglia Hundley®. Expert representation in criminal defense, family law, business litigation, and more."
+                    keywords="practice areas, legal services, criminal defense, family law, business litigation, Virginia attorneys"
+                    canonical="https://brigliahundley.com/practice-areas"
+                  />
+                  <PracticeAreasPage data={data} onNavigate={handleNavigate} />
+                </div>
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/practice-area/:area" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="practice-area"
+                />
+                <PracticeAreaPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/attorney-profile/:name" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="attorney-profile"
+                />
+                <AttorneyProfilePage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/blog/:slug" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="blog-post"
+                />
+                <BlogPostPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <AdminDashboard 
+                  data={data} 
+                  onDataUpdate={handleDataUpdate} 
+                />
+                <Toaster />
+              </div>
+            } />
           </Routes>
         </BrowserRouter>
       </div>
