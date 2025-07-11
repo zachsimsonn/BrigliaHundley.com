@@ -105,20 +105,20 @@ const Hero = ({ data, editableContent }) => {
                     </div>
                   </div>
                   
-                  <div className="border-l-4 border-gray-300 pl-6">
-                    <blockquote className="text-lg italic text-gray-100">
+                  <div className="border-l-4 border-yellow-300 pl-6">
+                    <blockquote className="text-lg italic text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
                       "Delivering superior client service and innovative legal strategies since 1993"
                     </blockquote>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4 pt-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-gray-300">Multiple</div>
-                      <div className="text-sm text-gray-100">Practice Areas</div>
+                      <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>Multiple</div>
+                      <div className="text-sm text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Practice Areas</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-gray-300">15+</div>
-                      <div className="text-sm text-gray-100">Expert Attorneys</div>
+                      <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>15+</div>
+                      <div className="text-sm text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Multiple attorneys recognized</div>
                     </div>
                   </div>
                 </div>
