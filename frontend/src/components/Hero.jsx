@@ -4,7 +4,7 @@ import { ArrowRight, Shield, Award, MapPin } from 'lucide-react';
 
 const Hero = ({ data, editableContent }) => {
   return (
-    <section className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden pt-20">
+    <section className="relative bg-white text-white overflow-hidden pt-20">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full z-0">
         <iframe
