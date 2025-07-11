@@ -69,13 +69,13 @@ const Footer = ({ data }) => {
             <ul className="space-y-3">
               {practiceAreas.map((area, index) => (
                 <li key={index}>
-                  <a 
-                    href={area.url}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center space-x-2"
+                  <button 
+                    onClick={() => window.location.href = `/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center space-x-2 text-left"
                   >
                     <ExternalLink className="h-4 w-4" />
                     <span>{area.title}</span>
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
