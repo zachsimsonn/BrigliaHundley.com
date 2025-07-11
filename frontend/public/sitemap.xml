@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages -->
     <url>
         <loc>https://brigliahundley.com/</loc>
         <lastmod>2025-01-17</lastmod>
@@ -42,6 +43,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    
     <!-- Practice Area Pages -->
     <url>
         <loc>https://brigliahundley.com/practice-area/family-law</loc>
@@ -50,7 +52,13 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://brigliahundley.com/practice-area/commercial-litigation</loc>
+        <loc>https://brigliahundley.com/practice-area/criminal-law</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/practice-area/business-litigation</loc>
         <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -74,17 +82,30 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://brigliahundley.com/practice-area/real-estate-development</loc>
+        <loc>https://brigliahundley.com/practice-area/real-estate-law</loc>
         <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://brigliahundley.com/practice-area/criminal-defense</loc>
+        <loc>https://brigliahundley.com/practice-area/employment-law</loc>
         <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://brigliahundley.com/practice-area/municipal-law</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/practice-area/appellate-litigation</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
     <!-- Attorney Profile Pages -->
     <url>
         <loc>https://brigliahundley.com/attorney-profile/james-w-hundley</loc>
@@ -146,6 +167,69 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://brigliahundley.com/attorney-profile/john-a-dexter</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/attorney-profile/remy-p-dennis</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/attorney-profile/bryan-a-booker</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/attorney-profile/stephanie-g-grana</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Blog Post Pages -->
+    <url>
+        <loc>https://brigliahundley.com/blog/arrested-at-a-protest</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/blog/crawford-v-washington</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/blog/business-attorney-pros-cons</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/blog/hidden-assets-in-divorce</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/blog/see-doctor-after-car-accident</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/blog/social-media-in-family-law</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
     <!-- Local Service Area Pages -->
     <url>
         <loc>https://brigliahundley.com/fairfax-county-attorneys</loc>
@@ -166,6 +250,12 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://brigliahundley.com/loudoun-county-attorneys</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://brigliahundley.com/tysons-corner-law-firm</loc>
         <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
@@ -179,6 +269,50 @@
     </url>
     <url>
         <loc>https://brigliahundley.com/vienna-lawyers</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/falls-church-attorneys</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/herndon-lawyers</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/reston-attorneys</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Legal Service Pages -->
+    <url>
+        <loc>https://brigliahundley.com/divorce-attorney-virginia</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/criminal-defense-lawyer-virginia</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/business-litigation-attorney</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://brigliahundley.com/personal-injury-lawyer-virginia</loc>
         <lastmod>2025-01-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
