@@ -7,6 +7,7 @@ import axios from "axios";
 // Components
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import VideoHero from "./components/VideoHero";
 import About from "./components/About";
 import ServiceAreas from "./components/ServiceAreas";
 import PracticeAreas from "./components/PracticeAreas";
