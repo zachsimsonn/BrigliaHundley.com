@@ -32,17 +32,26 @@ const Blog = ({ data, onNavigate }) => {
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           <Link
             to="/blog"
-            className="inline-flex items-center px-4 py-2 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white rounded-md transition-colors"
+            className={`inline-flex items-center px-4 py-2 border rounded-md transition-colors ${
+              !category 
+                ? 'border-gray-900 bg-gray-900 text-white' 
+                : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
+            }`}
           >
             All Posts
           </Link>
-          {categories.map((category, index) => (
-            <span
+          {categories.map((cat, index) => (
+            <Link
               key={index}
-              className="inline-flex items-center px-4 py-2 border border-gray-600 text-gray-600 rounded-md"
+              to={`/blog/category/${cat.toLowerCase().replace(/\s+/g, '-')}`}
+              className={`inline-flex items-center px-4 py-2 border rounded-md transition-colors ${
+                category === cat.toLowerCase().replace(/\s+/g, '-')
+                  ? 'border-gray-900 bg-gray-900 text-white'
+                  : 'border-gray-600 text-gray-600 hover:bg-gray-900 hover:text-white hover:border-gray-900'
+              }`}
             >
-              {category}
-            </span>
+              {cat}
+            </Link>
           ))}
         </div>
 
