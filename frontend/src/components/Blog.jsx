@@ -60,10 +60,20 @@ const Blog = ({ data, onNavigate }) => {
               onClick={() => handleBlogClick(blog.slug)}
             >
               {/* Blog Image */}
-              <div className="relative h-48 bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                  <ExternalLink className="h-8 w-8 text-white" />
-                </div>
+              <div className="relative h-48 overflow-hidden">
+                {blog.image ? (
+                  <img 
+                    src={blog.image} 
+                    alt={blog.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                      <ExternalLink className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                )}
                 {/* Category Badge */}
                 <div className="absolute top-4 right-4 bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-medium">
                   {blog.category}
