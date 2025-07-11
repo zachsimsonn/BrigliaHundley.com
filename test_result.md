@@ -203,9 +203,9 @@ metadata:
 
 test_plan:
   current_focus:
-    - "React Helmet configuration fix for dynamic SEO meta tags"
+    []
   stuck_tasks:
-    - "React Helmet configuration fix for dynamic SEO meta tags"
+    []
   test_all: false
   test_priority: "high_first"
 
