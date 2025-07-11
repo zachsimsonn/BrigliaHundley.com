@@ -1,17 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ArrowRight, Calendar, User, ExternalLink } from 'lucide-react';
-
-const Blog = ({ data, onNavigate }) => {
-  const handleBlogClick = (slug) => {
-    // Navigate to individual blog post
-    onNavigate('blog-post', { slug });
-  };
-
-  const handleCategoryClick = (category) => {
-    // Navigate to category page
-    onNavigate('blog-category', { category: category.toLowerCase().replace(/\s+/g, '-') });
-  };
 
   // Get unique categories
   const categories = [...new Set(data.blogs.map(blog => blog.category))];
