@@ -54,40 +54,16 @@ const Attorneys = ({ data, onNavigate }) => {
                   </span>
                 </div>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
                   {attorney.experience}
                 </p>
 
-                {/* Specialties */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {index < 2 && (
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">
-                      Litigation
-                    </span>
-                  )}
-                  {attorney.name.includes('Teresa') && (
-                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
-                      Family Law
-                    </span>
-                  )}
-                  {attorney.name.includes('Brian') && (
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">
-                      Real Estate
-                    </span>
-                  )}
-                  {attorney.name.includes('Amy') && (
-                    <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-medium">
-                      Employment
-                    </span>
-                  )}
-                </div>
-
                 {/* Contact Button */}
                 <button 
-                  className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium"
+                  className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium mt-auto"
                   onClick={() => onNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
                 >
-                  View Profile
+                  Read Profile
                 </button>
               </div>
             </div>
