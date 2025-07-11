@@ -542,6 +542,7 @@ const App = () => {
                 />
                 <div className="min-h-screen bg-white pt-20">
                   <SEO 
+                    description="Legal insights from Briglia Hundley® attorneys. Expert analysis on Virginia law, criminal defense, family law, and more."
                     title="Blog"
                     description="Read the latest legal insights and updates from Briglia Hundley® attorneys. Expert analysis on Virginia law, criminal defense, family law, and more."
                     keywords="legal blog, law firm blog, Virginia legal news, criminal defense updates, family law insights"
