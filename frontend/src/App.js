@@ -18,7 +18,6 @@ const ScrollToTop = () => {
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 import About from "./components/About";
 import Attorneys from "./components/Attorneys";
 import Testimonials from "./components/Testimonials";
@@ -28,7 +27,7 @@ import PracticeAreasPage from "./components/pages/PracticeAreasPage";
 import PracticeAreaPage from "./components/pages/PracticeAreaPage";
 import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import BlogPostPage from "./components/pages/BlogPostPage";
-import { Toaster } from "react-hot-toast";
+import { Toaster } from "./components/ui/toaster";
 import Hero from "./components/Hero";
 import ServiceAreas from "./components/ServiceAreas";
 import PracticeAreas from "./components/PracticeAreas";
