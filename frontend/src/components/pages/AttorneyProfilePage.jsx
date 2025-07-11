@@ -122,6 +122,7 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
                     src={attorney.image} 
                     alt={attorney.name}
                     className="w-full h-full object-cover"
+                    style={{objectPosition: '50% 35%'}}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gray-300">
