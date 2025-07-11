@@ -125,6 +125,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                     <div className="p-4">
                       <Link
                         to="/attorneys"
+                        onClick={() => setActiveDropdown(null)}
                         className="w-full text-left px-3 py-2 text-gray-900 font-medium hover:bg-gray-50 border-b border-gray-100 mb-2 rounded block"
                       >
                         All Attorneys
@@ -134,6 +135,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                           <Link
                             key={index}
                             to={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                            onClick={() => setActiveDropdown(null)}
                             className="text-left px-3 py-2 text-gray-700 hover:bg-gray-50 rounded transition-colors duration-200"
                           >
                             {attorney.name}
