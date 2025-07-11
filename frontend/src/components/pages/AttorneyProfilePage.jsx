@@ -88,7 +88,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
         title={`${attorney.name} - ${attorney.position}`}
         description={metaDescription}
         keywords={keywords}
-        canonical={`https://brigliahundley.com/attorney-profile/${attorneyName}`}
+        canonical={`https://brigliahundley.com/attorney-profile/${name}`}
         ogType="profile"
         ogImage={attorney.image}
         schemaData={attorneySchema}
