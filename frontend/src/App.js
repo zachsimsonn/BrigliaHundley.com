@@ -567,7 +567,7 @@ const App = () => {
                 <div className="min-h-screen bg-white pt-20">
                   <SEO 
                     title="Practice Areas"
-                    description="Explore our comprehensive legal services at Briglia Hundley®. Expert representation in criminal defense, family law, business litigation, and more."
+                    description="12 practice areas at Briglia Hundley®. Expert legal services in Northern Virginia, Washington DC, and Maryland."
                     keywords="practice areas, legal services, criminal defense, family law, business litigation, Virginia attorneys"
                     canonical="https://brigliahundley.com/practice-areas"
                   />
