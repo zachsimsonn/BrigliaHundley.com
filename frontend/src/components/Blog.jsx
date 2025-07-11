@@ -24,22 +24,19 @@ const Blog = ({ data, onNavigate }) => {
 
         {/* Categories */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          <Button
-            variant="outline"
-            onClick={() => onNavigate('blog')}
-            className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
+          <Link
+            to="/blog"
+            className="inline-flex items-center px-4 py-2 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white rounded-md transition-colors"
           >
             All Posts
-          </Button>
+          </Link>
           {categories.map((category, index) => (
-            <Button
+            <span
               key={index}
-              variant="outline"
-              onClick={() => handleCategoryClick(category)}
-              className="border-gray-600 text-gray-600 hover:bg-gray-900 hover:text-white"
+              className="inline-flex items-center px-4 py-2 border border-gray-600 text-gray-600 rounded-md"
             >
               {category}
-            </Button>
+            </span>
           ))}
         </div>
 
