@@ -90,13 +90,13 @@ const FAQ = ({ data }) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
-                className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
+                className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
               >
                 Schedule Free Consultation
               </button>
               <button 
-                className="border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white px-8 py-3 rounded-full transition-all duration-300 font-medium"
+                className="border-2 border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white px-8 py-3 rounded-full transition-all duration-300 font-medium"
                 onClick={() => window.location.href = 'tel:(703) 555-0123'}
               >
                 Call Us Today
