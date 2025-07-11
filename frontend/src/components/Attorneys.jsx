@@ -42,7 +42,7 @@ const Attorneys = ({ data, onNavigate }) => {
               </div>
 
               {/* Attorney Info */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {attorney.name}
                 </h3>
