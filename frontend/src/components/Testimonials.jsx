@@ -78,13 +78,13 @@ const Testimonials = ({ data }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:703-883-0200" 
-              className="bg-gradient-to-r from-blue-900 to-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-800 hover:to-blue-600 transition-all duration-300 transform hover:scale-105"
+              className="bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-all duration-300 transform hover:scale-105"
             >
               Call (703) 883-0200
             </a>
             <a 
               href="#contact" 
-              className="border-2 border-blue-900 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 hover:text-white transition-all duration-300"
+              className="border-2 border-gray-700 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 hover:text-white transition-all duration-300"
             >
               Schedule a Free Consultation
             </a>
