@@ -467,7 +467,7 @@ const App = () => {
                 <div className="min-h-screen bg-white pt-20">
                   <SEO 
                     title="Testimonials"
-                    description="Read what our clients say about Briglia Hundley®. Client testimonials and reviews from satisfied clients in Virginia, DC, and Maryland."
+                    description="Client testimonials for Briglia Hundley®. Read reviews from satisfied clients in Virginia, DC, and Maryland."
                     keywords="testimonials, client reviews, Briglia Hundley reviews, law firm testimonials"
                     canonical="https://brigliahundley.com/testimonials"
                   />
