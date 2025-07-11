@@ -1,12 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumb from '../Breadcrumb';
 
-const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
-  const practiceArea = data.practiceAreas.find(area => 
-    area.title.toLowerCase().replace(/\s+/g, '-') === areaName
+const PracticeAreaPage = ({ data, onNavigate }) => {
+  const { area } = useParams();
+  const practiceArea = data.practiceAreas.find(practiceAreaItem => 
+    practiceAreaItem.title.toLowerCase().replace(/\s+/g, '-') === area
   );
 
   if (!practiceArea) {
