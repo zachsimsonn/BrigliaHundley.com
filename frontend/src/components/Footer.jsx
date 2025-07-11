@@ -197,8 +197,8 @@ const Footer = ({ data }) => {
         </div>
 
         {/* Legal Disclaimer */}
-        <div className="border-t border-gray-800 mt-8 pt-6">
-          <div className="text-gray-500 text-xs leading-relaxed max-w-4xl ml-auto">
+        <div id="legal-disclaimer" className="border-t border-gray-800 mt-8 pt-6">
+          <div className="text-gray-500 text-xs leading-relaxed">
             <p className="mb-3">
               Briglia Hundley® represents individuals, corporations, and community associations throughout the Mid-Atlantic region, including Alexandria, Annandale, Arlington County, Ashburn, Burke, Centreville, Chantilly, Clifton, District of Columbia, Dulles, Fairfax County, Falls Church, Great Falls, Herndon, Leesburg, Loudoun County, Manassas, Manassas Park, McLean, Middleburg, Montgomery County, Oakton, Prince George's County, Prince William County, Reston, South Riding, Springfield, Sterling, Tysons Corner, Vienna, Winchester and Woodbridge.
             </p>
