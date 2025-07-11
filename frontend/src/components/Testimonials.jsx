@@ -27,7 +27,7 @@ const Testimonials = ({ data }) => {
               className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden"
             >
               {/* Gradient accent */}
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-900 to-blue-800"></div>
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-gray-900 to-gray-800"></div>
               
               <div className="p-8">
                 {/* Quote icon */}
