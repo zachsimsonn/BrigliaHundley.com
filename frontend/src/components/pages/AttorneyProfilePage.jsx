@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { ArrowLeft, Phone, Mail, Calendar, Award, User, MapPin, Scale, BookOpen, ExternalLink } from 'lucide-react';
+import SEO from '../SEO';
+import Breadcrumb from '../Breadcrumb';
 
 const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
   const attorney = data.attorneys.find(att => 
@@ -21,6 +23,49 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
     );
   }
 
+  // Enhanced SEO meta description based on attorney's expertise
+  const metaDescription = `${attorney.name} is ${attorney.position} at Briglia Hundley® in Tysons Corner, Virginia. ${attorney.experience.substring(0, 120)}. Contact our experienced legal team today.`;
+  
+  const practiceAreasText = attorney.practiceAreas ? attorney.practiceAreas.join(', ') : 'legal services';
+  const keywords = `${attorney.name}, ${attorney.position}, Virginia attorney, Tysons Corner lawyer, ${practiceAreasText}, Briglia Hundley, Northern Virginia law firm`;
+
+  // Attorney structured data
+  const attorneySchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": attorney.name,
+    "jobTitle": attorney.position,
+    "worksFor": {
+      "@type": "LegalService",
+      "name": "Briglia Hundley PC",
+      "url": "https://brigliahundley.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1921 Gallows Road, Suite 900",
+        "addressLocality": "Tysons Corner",
+        "addressRegion": "VA",
+        "postalCode": "22182",
+        "addressCountry": "US"
+      }
+    },
+    "image": attorney.image,
+    "description": attorney.experience,
+    "email": attorney.email,
+    "telephone": attorney.phone,
+    "url": `https://brigliahundley.com/attorney-profile/${attorneyName}`,
+    "knowsAbout": attorney.practiceAreas || [],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Virginia State Bar"
+    }
+  };
+
+  // Breadcrumb data
+  const breadcrumbItems = [
+    { name: 'Attorneys', url: '/attorneys' },
+    { name: attorney.name, url: `/attorney-profile/${attorneyName}` }
+  ];
+
   const relatedPracticeAreas = data.practiceAreas.filter(area => {
     const experienceLower = attorney.experience.toLowerCase();
     const areaLower = area.title.toLowerCase();
@@ -37,6 +82,19 @@ const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={`${attorney.name} - ${attorney.position}`}
+        description={metaDescription}
+        keywords={keywords}
+        canonical={`https://brigliahundley.com/attorney-profile/${attorneyName}`}
+        ogType="profile"
+        ogImage={attorney.image}
+        schemaData={attorneySchema}
+        breadcrumbs={breadcrumbItems}
+      />
+      
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Back Button */}
       <div className="bg-gray-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
