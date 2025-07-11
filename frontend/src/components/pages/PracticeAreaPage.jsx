@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale } from 'lucide-react';
+import SEO from '../SEO';
+import Breadcrumb from '../Breadcrumb';
 
 const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
   const practiceArea = data.practiceAreas.find(area => 
@@ -20,6 +22,54 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
       </div>
     );
   }
+
+  // Enhanced SEO meta description
+  const metaDescription = `Expert ${practiceArea.title} legal services from Briglia Hundley® in Tysons Corner, Virginia. ${practiceArea.description.substring(0, 120)}. Contact our experienced attorneys today.`;
+  
+  const keywords = `${practiceArea.title}, ${practiceArea.title} attorney, Virginia ${practiceArea.title} lawyer, Tysons Corner legal services, Northern Virginia law firm, ${practiceArea.localKeywords || 'legal representation'}`;
+
+  // Practice area structured data
+  const practiceAreaSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": practiceArea.title,
+    "description": practiceArea.description,
+    "provider": {
+      "@type": "LegalService",
+      "name": "Briglia Hundley PC",
+      "url": "https://brigliahundley.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1921 Gallows Road, Suite 900",
+        "addressLocality": "Tysons Corner",
+        "addressRegion": "VA",
+        "postalCode": "22182",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Northern Virginia"
+    },
+    "serviceType": practiceArea.title,
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": `${practiceArea.title} Services`,
+      "itemListElement": practiceArea.services ? practiceArea.services.map(service => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": service
+        }
+      })) : []
+    }
+  };
+
+  // Breadcrumb data
+  const breadcrumbItems = [
+    { name: 'Practice Areas', url: '/practice-areas' },
+    { name: practiceArea.title, url: `/practice-area/${areaName}` }
+  ];
 
   // Get attorneys for this practice area
   const relatedAttorneys = data.attorneys.filter(attorney => {
@@ -46,6 +96,18 @@ const PracticeAreaPage = ({ areaName, data, onNavigate }) => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title={practiceArea.title}
+        description={metaDescription}
+        keywords={keywords}
+        canonical={`https://brigliahundley.com/practice-area/${areaName}`}
+        ogType="article"
+        schemaData={practiceAreaSchema}
+        breadcrumbs={breadcrumbItems}
+      />
+      
+      <Breadcrumb items={breadcrumbItems} />
+
       {/* Header */}
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
