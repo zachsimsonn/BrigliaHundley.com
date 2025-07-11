@@ -29,7 +29,7 @@ const About = ({ data, editableContent }) => {
   const paragraphs = editableContent.about.content.split('\n\n');
 
   return (
-    <section id="about" className="py-20 bg-gray-50" style={{ marginTop: '-0.25in' }}>
+    <section id="about" className="py-20 bg-gray-50" style={{ marginTop: '-80px' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
