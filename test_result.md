@@ -203,11 +203,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Comprehensive frontend audit completed"
-    - "All critical functionality verified working"
-  stuck_tasks: []
-  test_all: true
-  test_priority: "completed"
+    - "React Helmet configuration fix for dynamic SEO meta tags"
+  stuck_tasks:
+    - "React Helmet configuration fix for dynamic SEO meta tags"
+  test_all: false
+  test_priority: "high_first"
 
   - task: "Remove blog section from home page"
     implemented: true
