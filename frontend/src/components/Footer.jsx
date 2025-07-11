@@ -23,9 +23,14 @@ const Footer = ({ data }) => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
                 <div>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <a 
+                    href="https://www.google.com/maps/place/Briglia+Hundley,+P.C./@38.9186789,-77.2433887,17z/data=!3m1!4b1!4m6!3m5!1s0x89b64b26c97b7eeb:0x93f23b5e3e77b7b2!8m2!3d38.9186747!4d-77.2408138!16s%2Fg%2F1tdmzfn8?entry=ttu&g_ep=EgoyMDI1MDExNC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm leading-relaxed"
+                  >
                     {data.business.address}
-                  </p>
+                  </a>
                 </div>
               </div>
               
