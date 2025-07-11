@@ -112,13 +112,13 @@ const Blog = ({ data, onNavigate }) => {
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               Access our complete library of legal insights, case studies, and expert commentary to stay informed about the latest developments in law.
             </p>
-            <Button 
-              onClick={() => onNavigate('blog')}
-              className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            <Link 
+              to="/blog"
+              className="inline-flex items-center bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               View All Blog Posts
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
