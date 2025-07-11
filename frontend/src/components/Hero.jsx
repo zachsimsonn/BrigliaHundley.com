@@ -101,7 +101,7 @@ const Hero = ({ data, editableContent }) => {
                     <Shield className="h-8 w-8 text-gray-300" />
                     <div>
                       <h3 className="text-xl font-semibold">Trusted Legal Experts</h3>
-                      <p className="text-gray-100">Serving the Mid-Atlantic region</p>
+                      <p className="text-gray-100">14 attorneys</p>
                     </div>
                   </div>
                   
