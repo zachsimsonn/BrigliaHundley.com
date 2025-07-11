@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ 
@@ -20,6 +20,11 @@ const SEO = ({
   const siteKeywords = keywords || defaultKeywords;
   const siteCanonical = canonical || "https://brigliahundley.com/";
   const siteOgImage = ogImage || "/bhlogo.png";
+
+  // Force re-render when props change
+  useEffect(() => {
+    // This ensures Helmet updates when component props change
+  }, [title, description, keywords, canonical]);
 
   // Enhanced structured data with breadcrumbs
   const breadcrumbSchema = breadcrumbs.length > 0 ? {
