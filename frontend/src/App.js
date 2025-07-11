@@ -414,8 +414,6 @@ const App = () => {
                   <About data={data} editableContent={editableData} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -439,8 +437,6 @@ const App = () => {
                   <Attorneys data={data} onNavigate={handleNavigate} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -464,8 +460,6 @@ const App = () => {
                   <Testimonials data={data} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -489,8 +483,6 @@ const App = () => {
                   <Contact data={data} editableContent={editableData} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -514,8 +506,6 @@ const App = () => {
                   <Blog data={data} onNavigate={handleNavigate} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -539,8 +529,6 @@ const App = () => {
                   <Blog data={data} onNavigate={handleNavigate} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -564,8 +552,6 @@ const App = () => {
                   <PracticeAreasPage data={data} onNavigate={handleNavigate} />
                 </div>
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -581,8 +567,6 @@ const App = () => {
                 />
                 <PracticeAreaPage data={data} onNavigate={handleNavigate} />
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -598,8 +582,6 @@ const App = () => {
                 />
                 <AttorneyProfilePage data={data} onNavigate={handleNavigate} />
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
@@ -615,8 +597,6 @@ const App = () => {
                 />
                 <BlogPostPage data={data} onNavigate={handleNavigate} />
                 <Footer data={data} />
-                <AdminDashboard 
-                  data={data} 
                   onDataUpdate={handleDataUpdate} 
                 />
                 <Toaster />
