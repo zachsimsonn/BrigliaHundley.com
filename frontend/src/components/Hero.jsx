@@ -38,31 +38,9 @@ const Hero = ({ data, editableContent }) => {
           {/* Left Content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-              <div className="space-y-6">
-                <div className="flex items-center space-x-3">
-                  <Shield className="h-8 w-8 text-white" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 3px' }}>Trusted Legal Experts</h3>
-                    <p className="text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 2px' }}>14 attorneys</p>
-                  </div>
-                </div>
-                <div className="border-l-4 border-white pl-6">
-                  <blockquote className="text-lg italic text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
-                    "Delivering superior client service and innovative legal strategies since 1993"
-                  </blockquote>
-                </div>
-                <div className="grid grid-cols-2 gap-4 pt-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>Multiple</div>
-                    <div className="text-sm text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 2px' }}>Practice Areas</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>15+</div>
-                    <div className="text-sm text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 2px' }}>Multiple attorneys recognized</div>
-                  </div>
-                </div>
-              </div>
+            <div className="inline-flex items-center bg-black/40 backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
+              <Award className="h-5 w-5 text-white" />
+              <span className="text-sm font-semibold text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>Tier 1 Ranked Law Firm</span>
             </div>
 
             {/* Main Heading */}
