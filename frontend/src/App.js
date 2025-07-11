@@ -163,7 +163,7 @@ const Home = ({ data, editableData, onNavigate }) => {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Home"
-        description="Briglia Hundley® is a Tier 1 ranked, award-winning law firm in Tysons Corner, Virginia. Expert legal services in criminal defense, civil litigation, corporate law, family law, and more since 1993."
+        description="Tier 1 ranked law firm in Tysons Corner, VA. Expert attorneys in criminal defense, civil litigation, corporate law since 1993."
         keywords="law firm, attorneys, lawyers, Tysons Corner, Virginia, criminal defense, civil litigation, corporate law, family law, personal injury, real estate, estate planning"
         canonical="https://brigliahundley.com/"
         schemaData={homeSchemaData}
