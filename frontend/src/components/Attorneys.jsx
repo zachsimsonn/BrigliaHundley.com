@@ -34,11 +34,6 @@ const Attorneys = ({ data, onNavigate }) => {
                     </span>
                   </div>
                 )}
-                {/* Rating Badge */}
-                <div className="absolute top-4 right-4 bg-gray-300 text-black px-3 py-1 rounded-full flex items-center space-x-1">
-                  <Star className="h-4 w-4 fill-current" />
-                  <span className="text-sm font-semibold">5.0</span>
-                </div>
               </div>
 
               {/* Attorney Info */}
