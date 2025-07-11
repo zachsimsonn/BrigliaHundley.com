@@ -128,6 +128,9 @@ const SEO = ({
   return null; // This component doesn't render anything visible
 };
 
+export default SEO;
+};
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
