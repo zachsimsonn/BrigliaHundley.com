@@ -39,7 +39,7 @@ const Hero = ({ data, editableContent }) => {
           <div className="space-y-8">
             {/* Badge */}
             <div className="inline-flex items-center bg-black/40 backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
-              <Award className="h-5 w-5 text-yellow-300" />
+              <Award className="h-5 w-5 text-white" />
               <span className="text-sm font-semibold text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>Tier 1 Ranked Law Firm</span>
             </div>
 
