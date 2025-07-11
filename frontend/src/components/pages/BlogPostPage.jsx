@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../ui/button';
 import { ArrowLeft, Calendar, User, Share2 } from 'lucide-react';
 import SEO from '../SEO';
+import Breadcrumb from '../Breadcrumb';
 
 const BlogPostPage = ({ slug, data, onNavigate }) => {
   const blog = data.blogs.find(post => post.slug === slug);
@@ -22,15 +23,64 @@ const BlogPostPage = ({ slug, data, onNavigate }) => {
 
   const shareUrl = `https://brigliahundley.com/blog/${slug}`;
 
+  // Enhanced SEO meta description
+  const metaDescription = `${blog.excerpt.substring(0, 155)}. Read more legal insights from Briglia Hundley® attorneys in Tysons Corner, Virginia.`;
+  
+  const keywords = `${blog.category.toLowerCase()}, Virginia law, legal insights, ${blog.author}, Briglia Hundley, ${blog.title.toLowerCase()}, Northern Virginia attorneys`;
+
+  // Blog post structured data
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": blog.title,
+    "description": blog.excerpt,
+    "author": {
+      "@type": "Person",
+      "name": blog.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Briglia Hundley PC",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://brigliahundley.com/bhlogo.png"
+      }
+    },
+    "datePublished": blog.date,
+    "dateModified": blog.date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://brigliahundley.com/blog/${slug}`
+    },
+    "image": blog.image || "https://brigliahundley.com/bhlogo.png",
+    "articleSection": blog.category,
+    "keywords": keywords,
+    "about": {
+      "@type": "Thing",
+      "name": "Legal Services"
+    }
+  };
+
+  // Breadcrumb data
+  const breadcrumbItems = [
+    { name: 'Blog', url: '/blog' },
+    { name: blog.title, url: `/blog/${slug}` }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <SEO 
         title={blog.title}
-        description={blog.excerpt}
-        keywords={`${blog.category.toLowerCase()}, Virginia law, legal insights, ${blog.author}, Briglia Hundley`}
+        description={metaDescription}
+        keywords={keywords}
         canonical={`https://brigliahundley.com/blog/${slug}`}
         ogType="article"
+        ogImage={blog.image}
+        schemaData={blogSchema}
+        breadcrumbs={breadcrumbItems}
       />
+      
+      <Breadcrumb items={breadcrumbItems} />
       
       {/* Header */}
       <div className="bg-gray-50 py-12">
