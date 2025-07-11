@@ -35,9 +35,9 @@ const About = ({ data, editableContent }) => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
                 {editableContent.about.title}
-              </h2>
+              </h1>
               <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full"></div>
             </div>
 
