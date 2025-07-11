@@ -54,7 +54,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
     "description": attorney.experience,
     "email": attorney.email,
     "telephone": attorney.phone,
-    "url": `https://brigliahundley.com/attorney-profile/${attorneyName}`,
+    "url": `https://brigliahundley.com/attorney-profile/${name}`,
     "knowsAbout": attorney.practiceAreas || [],
     "memberOf": {
       "@type": "Organization",
@@ -65,7 +65,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
   // Breadcrumb data
   const breadcrumbItems = [
     { name: 'Attorneys', url: '/attorneys' },
-    { name: attorney.name, url: `/attorney-profile/${attorneyName}` }
+    { name: attorney.name, url: `/attorney-profile/${name}` }
   ];
 
   const relatedPracticeAreas = data.practiceAreas.filter(area => {
