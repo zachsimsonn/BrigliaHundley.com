@@ -157,7 +157,7 @@ const Home = ({ data, editableData, onNavigate }) => {
         canonical="https://brigliahundley.com/"
         schemaData={homeSchemaData}
       />
-      <VideoHero data={data} editableContent={editableData} />
+      <Hero data={data} editableContent={editableData} />
       <About data={data} editableContent={editableData} />
       <ServiceAreas data={data} />
       <PracticeAreas data={data} onNavigate={onNavigate} />
