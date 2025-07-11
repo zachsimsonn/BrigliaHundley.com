@@ -1,12 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ArrowRight, Calendar, User, ExternalLink } from 'lucide-react';
 
 const Blog = ({ data, onNavigate }) => {
-
+  const { category } = useParams();
+  
   // Get unique categories
   const categories = [...new Set(data.blogs.map(blog => blog.category))];
+  
+  // Filter blogs based on category if one is selected
+  const filteredBlogs = category 
+    ? data.blogs.filter(blog => blog.category.toLowerCase().replace(/\s+/g, '-') === category)
+    : data.blogs;
 
   return (
     <section className="py-20 bg-gray-50">
