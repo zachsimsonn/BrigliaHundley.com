@@ -17,24 +17,18 @@ const ScrollToTop = () => {
 
 // Components
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import VideoHero from "./components/VideoHero";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 import About from "./components/About";
-import ServiceAreas from "./components/ServiceAreas";
-import PracticeAreas from "./components/PracticeAreas";
 import Attorneys from "./components/Attorneys";
 import Testimonials from "./components/Testimonials";
-import FAQ from "./components/FAQ";
-import Blog from "./components/Blog";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import AdminDashboard from "./components/AdminDashboard";
-import PracticeAreaPage from "./components/pages/PracticeAreaPage";
+import Blog from "./components/Blog";
 import PracticeAreasPage from "./components/pages/PracticeAreasPage";
+import PracticeAreaPage from "./components/pages/PracticeAreaPage";
 import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import BlogPostPage from "./components/pages/BlogPostPage";
-import { Toaster } from "./components/ui/toaster";
-import SEO from "./components/SEO";
+import { Toaster } from "react-hot-toast";
 
 // Data
 import { siteData, editableContent } from "./data/mockData";
