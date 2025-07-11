@@ -95,7 +95,7 @@ const Attorneys = ({ data, onNavigate }) => {
         </div>
 
         {/* Team Stats */}
-        <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-900 mb-2">7</div>
@@ -110,8 +110,8 @@ const Attorneys = ({ data, onNavigate }) => {
               <div className="text-gray-600">Years Combined</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">14</div>
-              <div className="text-gray-600">Attorneys</div>
+              <div className="text-3xl font-bold text-blue-900 mb-2">15+</div>
+              <div className="text-gray-600">Expert Attorneys</div>
             </div>
           </div>
         </div>
