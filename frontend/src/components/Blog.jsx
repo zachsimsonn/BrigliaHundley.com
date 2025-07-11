@@ -14,6 +14,24 @@ const Blog = ({ data, onNavigate }) => {
     ? data.blogs.filter(blog => blog.category.toLowerCase().replace(/\s+/g, '-') === category)
     : data.blogs;
 
+  // Function to optimize image URLs
+  const optimizeImageUrl = (url, width = 800, height = 600) => {
+    if (!url) return null;
+    
+    // Optimize Unsplash images
+    if (url.includes('unsplash.com')) {
+      return `${url}&w=${width}&h=${height}&fit=crop&crop=entropy&auto=format&q=75`;
+    }
+    
+    // Optimize Pexels images
+    if (url.includes('pexels.com')) {
+      return `${url}?auto=compress&cs=tinysrgb&w=${width}&h=${height}`;
+    }
+    
+    // For other images, return as-is
+    return url;
+  };
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
