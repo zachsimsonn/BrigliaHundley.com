@@ -216,39 +216,39 @@ const BlogPostPage = ({ data, onNavigate }) => {
           </div>
 
           {/* Sidebar - Related Articles */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Related Articles</h3>
+          <div className="lg:w-1/3">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Related Articles</h3>
               <div className="space-y-4">
+                {/* Same category posts first */}
                 {data.blogs
                   .filter(post => post.id !== blog.id && post.category === blog.category)
                   .slice(0, 3)
                   .map((relatedBlog, index) => (
-                    <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <Link 
+                      key={index} 
+                      to={`/blog/${relatedBlog.slug}`}
+                      className="block bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                    >
                       {relatedBlog.image && (
                         <img 
                           src={relatedBlog.image} 
                           alt={relatedBlog.title}
-                          className="w-full h-24 object-cover rounded-t-lg"
+                          className="w-full h-20 object-cover rounded-t-lg"
                         />
                       )}
                       <div className="p-3">
                         <span className="inline-block bg-gray-900 text-white px-2 py-1 rounded text-xs font-medium mb-2">
                           {relatedBlog.category}
                         </span>
-                        <h4 className="font-semibold text-gray-900 mb-2 leading-tight text-sm">
-                          <button 
-                            onClick={() => onNavigate('blog-post', { slug: relatedBlog.slug })}
-                            className="hover:text-blue-900 transition-colors duration-200 text-left line-clamp-2"
-                          >
-                            {relatedBlog.title}
-                          </button>
+                        <h4 className="font-semibold text-gray-900 mb-2 leading-tight text-sm hover:text-blue-900 transition-colors duration-200">
+                          {relatedBlog.title}
                         </h4>
                         <div className="text-xs text-gray-500">
                           By {relatedBlog.author} • {relatedBlog.date}
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 
                 {/* If same category has less than 3, show from other categories */}
@@ -256,31 +256,30 @@ const BlogPostPage = ({ data, onNavigate }) => {
                   .filter(post => post.id !== blog.id && post.category !== blog.category)
                   .slice(0, Math.max(0, 3 - data.blogs.filter(post => post.id !== blog.id && post.category === blog.category).length))
                   .map((relatedBlog, index) => (
-                    <div key={`other-${index}`} className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <Link 
+                      key={`other-${index}`} 
+                      to={`/blog/${relatedBlog.slug}`}
+                      className="block bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                    >
                       {relatedBlog.image && (
                         <img 
                           src={relatedBlog.image} 
                           alt={relatedBlog.title}
-                          className="w-full h-24 object-cover rounded-t-lg"
+                          className="w-full h-20 object-cover rounded-t-lg"
                         />
                       )}
                       <div className="p-3">
                         <span className="inline-block bg-gray-900 text-white px-2 py-1 rounded text-xs font-medium mb-2">
                           {relatedBlog.category}
                         </span>
-                        <h4 className="font-semibold text-gray-900 mb-2 leading-tight text-sm">
-                          <button 
-                            onClick={() => onNavigate('blog-post', { slug: relatedBlog.slug })}
-                            className="hover:text-blue-900 transition-colors duration-200 text-left line-clamp-2"
-                          >
-                            {relatedBlog.title}
-                          </button>
+                        <h4 className="font-semibold text-gray-900 mb-2 leading-tight text-sm hover:text-blue-900 transition-colors duration-200">
+                          {relatedBlog.title}
                         </h4>
                         <div className="text-xs text-gray-500">
                           By {relatedBlog.author} • {relatedBlog.date}
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
               </div>
 
