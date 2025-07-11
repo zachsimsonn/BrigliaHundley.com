@@ -183,8 +183,12 @@ const Footer = ({ data }) => {
                 Terms of Service
               </a>
               <a 
-                href="#" 
+                href="#legal-disclaimer" 
                 className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('legal-disclaimer')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Disclaimer
               </a>
