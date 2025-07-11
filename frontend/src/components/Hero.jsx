@@ -8,7 +8,7 @@ const Hero = ({ data, editableContent }) => {
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full z-0" style={{ top: '-80px', height: 'calc(100% + 80px)' }}>
         <iframe
-          src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1"
+          src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=720p&speed=1"
           className="absolute top-0 left-0 w-full h-full"
           style={{
             width: '100%',
@@ -21,6 +21,7 @@ const Hero = ({ data, editableContent }) => {
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
+          loading="eager"
           title="Briglia Hundley Background Video"
         />
         
