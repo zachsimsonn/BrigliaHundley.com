@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
@@ -7,6 +7,12 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
+
+  // Close dropdowns when location changes
+  useEffect(() => {
+    setActiveDropdown(null);
+    setIsMenuOpen(false);
+  }, [location.pathname]);
 
   // Function to determine if a page is active and return appropriate classes
   const getNavItemClass = (path) => {
