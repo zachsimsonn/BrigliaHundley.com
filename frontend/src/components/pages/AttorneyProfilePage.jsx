@@ -1,12 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { ArrowLeft, Phone, Mail, Calendar, Award, User, MapPin, Scale, BookOpen, ExternalLink } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumb from '../Breadcrumb';
 
-const AttorneyProfilePage = ({ attorneyName, data, onNavigate }) => {
+const AttorneyProfilePage = ({ data, onNavigate }) => {
+  const { name } = useParams();
   const attorney = data.attorneys.find(att => 
-    att.name.toLowerCase().replace(/\s+/g, '-') === attorneyName
+    att.name.toLowerCase().replace(/\s+/g, '-') === name
   );
 
   if (!attorney) {
