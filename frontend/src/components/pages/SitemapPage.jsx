@@ -225,7 +225,7 @@ const SitemapPage = () => {
         <div className="mt-12">
           <div className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-lg p-8 text-white mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <Users className="text-yellow-400" size={28} />
+              <Users className="text-gray-400" size={28} />
               <h2 className="text-2xl font-semibold">Location-Specific Legal Services</h2>
             </div>
             <p className="text-blue-100 mb-4">
