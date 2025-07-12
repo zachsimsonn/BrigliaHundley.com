@@ -123,32 +123,48 @@ const LocationPracticeAreaPage = () => {
     }
   };
 
-  // Practice area data
+  // Comprehensive practice area data with detailed content
   const practiceAreaData = {
     'criminal-defense': {
       name: 'Criminal Defense',
       displayName: 'Criminal Defense Attorney',
       description: 'Experienced criminal defense representation for all manner of charges',
+      longDescription: 'When facing criminal charges, your freedom, reputation, and future are at stake. Our criminal defense attorneys have over 30 years of experience defending clients against all types of criminal charges in Virginia courts.',
       services: [
         'DUI/DWI Defense',
-        'White Collar Crime Defense',
+        'White Collar Crime Defense', 
         'Drug Charges',
         'Assault and Battery',
         'Theft and Larceny',
         'Traffic Offenses',
         'Juvenile Offenses',
-        'Federal Criminal Defense'
+        'Federal Criminal Defense',
+        'Domestic Violence',
+        'Weapons Charges',
+        'Sex Crimes',
+        'Homicide Defense',
+        'Fraud Defense',
+        'Restraining Orders',
+        'Protective Orders'
       ],
       urgency: 'Criminal charges require immediate attention. Every moment counts in building your defense.',
-      consequences: 'Criminal convictions can result in jail time, heavy fines, and permanent criminal records that affect employment, housing, and your future.',
-      approach: 'Our criminal defense attorneys thoroughly investigate every case, challenge evidence, and fight aggressively to protect your rights and freedom.',
-      experience: 'With over 30 years of criminal defense experience, we\'ve handled thousands of cases ranging from traffic violations to serious felonies.',
-      results: 'Our track record includes dismissed charges, reduced sentences, and not guilty verdicts across all types of criminal cases.'
+      consequences: 'Criminal convictions can result in jail time, heavy fines, permanent criminal records, loss of employment, housing difficulties, and limited future opportunities.',
+      approach: 'Our criminal defense attorneys thoroughly investigate every case, challenge evidence, interview witnesses, and fight aggressively to protect your rights and freedom.',
+      experience: 'With over 30 years of criminal defense experience, we\'ve handled thousands of cases ranging from traffic violations to serious felonies, achieving dismissals, acquittals, and reduced charges.',
+      results: 'Our track record includes dismissed charges, reduced sentences, not guilty verdicts, and plea agreements that minimize consequences across all types of criminal cases.',
+      detailedServices: {
+        'DUI/DWI Defense': 'Challenging breathalyzer results, field sobriety tests, and unlawful stops',
+        'Drug Charges': 'Defending against possession, distribution, and trafficking charges',
+        'Assault and Battery': 'Protecting clients against violent crime allegations',
+        'White Collar Crimes': 'Defending professionals against fraud, embezzlement, and corporate crimes',
+        'Traffic Offenses': 'Handling reckless driving, speeding, and license suspension cases'
+      }
     },
     'family-law': {
       name: 'Family Law',
       displayName: 'Family Law Attorney',
       description: 'Compassionate family law representation for divorce, custody, and support matters',
+      longDescription: 'Family law matters are among the most emotionally challenging legal issues. Our experienced family law attorneys provide compassionate yet strategic representation to protect your interests and your children\'s welfare.',
       services: [
         'Divorce',
         'Child Custody',
@@ -157,18 +173,33 @@ const LocationPracticeAreaPage = () => {
         'Spousal Support',
         'Adoption',
         'Prenuptial Agreements',
-        'Postnuptial Agreements'
+        'Postnuptial Agreements',
+        'Domestic Violence Protection',
+        'Paternity',
+        'Guardianship',
+        'Modification of Orders',
+        'Enforcement of Orders',
+        'Mediation',
+        'Collaborative Divorce'
       ],
-      urgency: 'Family law matters affect your most important relationships and financial future. Acting quickly protects your interests.',
-      consequences: 'Poorly handled family law cases can result in unfavorable custody arrangements, inadequate support, or unfair property division.',
-      approach: 'We provide compassionate yet strategic representation, working to achieve fair outcomes while protecting your children\'s best interests.',
-      experience: 'Our family law attorneys have guided hundreds of families through difficult transitions with skill and sensitivity.',
-      results: 'We consistently achieve favorable custody arrangements, fair property settlements, and appropriate support orders for our clients.'
+      urgency: 'Family law matters affect your most important relationships and financial future. Acting quickly protects your interests and your children\'s welfare.',
+      consequences: 'Poorly handled family law cases can result in unfavorable custody arrangements, inadequate support, unfair property division, and long-term financial hardship.',
+      approach: 'We provide compassionate yet strategic representation, working to achieve fair outcomes while protecting your children\'s best interests and your financial security.',
+      experience: 'Our family law attorneys have guided hundreds of families through difficult transitions with skill, sensitivity, and successful outcomes.',
+      results: 'We consistently achieve favorable custody arrangements, fair property settlements, appropriate support orders, and protection for our clients\' interests.',
+      detailedServices: {
+        'Divorce': 'Comprehensive divorce representation including contested and uncontested divorces',
+        'Child Custody': 'Fighting for fair custody arrangements that serve children\'s best interests',
+        'Child Support': 'Ensuring appropriate support calculations and enforcement',
+        'Property Division': 'Protecting your assets and ensuring fair distribution',
+        'Spousal Support': 'Advocating for fair alimony arrangements'
+      }
     },
     'personal-injury': {
       name: 'Personal Injury',
       displayName: 'Personal Injury Attorney',
       description: 'Aggressive personal injury representation for accident victims',
+      longDescription: 'When you\'ve been injured due to someone else\'s negligence, you need experienced legal representation to ensure you receive full compensation for your injuries, lost wages, and pain and suffering.',
       services: [
         'Car Accidents',
         'Truck Accidents',
@@ -177,33 +208,97 @@ const LocationPracticeAreaPage = () => {
         'Medical Malpractice',
         'Product Liability',
         'Wrongful Death',
-        'Workers\' Compensation'
+        'Workers\' Compensation',
+        'Premises Liability',
+        'Construction Accidents',
+        'Dog Bites',
+        'Birth Injuries',
+        'Nursing Home Abuse',
+        'Brain Injuries',
+        'Spinal Cord Injuries'
       ],
-      urgency: 'Personal injury cases have strict deadlines. Evidence disappears and witnesses\' memories fade - time is critical.',
-      consequences: 'Without proper legal representation, you may receive inadequate compensation that doesn\'t cover your medical bills, lost wages, and pain and suffering.',
-      approach: 'We thoroughly investigate accidents, work with medical experts, and negotiate aggressively with insurance companies to maximize your compensation.',
-      experience: 'Our personal injury team has recovered millions of dollars for accident victims and their families throughout Virginia.',
-      results: 'We consistently achieve settlements and verdicts that fully compensate our clients for their injuries and losses.'
+      urgency: 'Personal injury cases have strict deadlines. Evidence disappears and witnesses\' memories fade - immediate action is critical to preserving your claim.',
+      consequences: 'Without proper legal representation, you may receive inadequate compensation that doesn\'t cover your medical bills, lost wages, future care needs, and pain and suffering.',
+      approach: 'We thoroughly investigate accidents, work with medical experts, reconstruct incidents, and negotiate aggressively with insurance companies to maximize your compensation.',
+      experience: 'Our personal injury team has recovered millions of dollars for accident victims and their families throughout Virginia, with a proven track record of successful settlements and verdicts.',
+      results: 'We consistently achieve settlements and verdicts that fully compensate our clients for their injuries, losses, and future needs.',
+      detailedServices: {
+        'Car Accidents': 'Handling all aspects of motor vehicle accident claims',
+        'Medical Malpractice': 'Holding healthcare providers accountable for negligent care',
+        'Slip and Fall': 'Proving liability in premises liability cases',
+        'Wrongful Death': 'Seeking justice and compensation for families who have lost loved ones',
+        'Product Liability': 'Holding manufacturers responsible for defective products'
+      }
     },
-    'dui-traffic-defense': {
-      name: 'DUI/Traffic Defense',
-      displayName: 'DUI/Traffic Defense Attorney',
-      description: 'Expert DUI and traffic defense representation',
+    'dui-defense': {
+      name: 'DUI Defense',
+      displayName: 'DUI Defense Attorney',
+      description: 'Expert DUI and impaired driving defense representation',
+      longDescription: 'DUI charges carry serious consequences including license suspension, jail time, hefty fines, and long-term impacts on your employment and insurance. Our DUI defense attorneys know how to challenge every aspect of DUI cases.',
       services: [
         'DUI/DWI Defense',
+        'Breathalyzer Challenges',
+        'Field Sobriety Test Defense',
+        'Blood Test Challenges',
+        'License Restoration',
+        'Administrative Hearings',
+        'Ignition Interlock',
+        'First Offense DUI',
+        'Multiple DUI Offenses',
+        'Felony DUI',
+        'Underage DUI',
+        'Commercial Driver DUI',
+        'Drug DUI',
+        'Prescription Drug DUI',
+        'Refusal Cases'
+      ],
+      urgency: 'DUI charges can result in immediate license suspension. You have only 7 days to request an administrative hearing to protect your driving privileges.',
+      consequences: 'DUI convictions result in license suspension, increased insurance rates, job loss, security clearance issues, and potential jail time for repeat offenses.',
+      approach: 'We challenge every aspect of DUI stops and arrests, from the initial stop to the accuracy of testing equipment, fighting to protect your driving privileges and freedom.',
+      experience: 'Our attorneys appear in Virginia DUI courts daily and have extensive knowledge of DUI science, testing procedures, and defense strategies that work.',
+      results: 'We regularly achieve reduced charges, dismissed cases, preserved driving privileges, and alternative sentencing options for our DUI clients.',
+      detailedServices: {
+        'Breathalyzer Defense': 'Challenging the accuracy and administration of breath tests',
+        'Field Sobriety Defense': 'Exposing flaws in standardized field sobriety testing',
+        'License Restoration': 'Fighting to restore your driving privileges quickly',
+        'Administrative Hearings': 'Protecting your license through DMV proceedings',
+        'Multiple Offenses': 'Minimizing penalties for repeat DUI offenders'
+      }
+    },
+    'traffic-defense': {
+      name: 'Traffic Defense',
+      displayName: 'Traffic Defense Attorney',
+      description: 'Comprehensive traffic violation and driving offense defense',
+      longDescription: 'Traffic violations may seem minor, but they can have serious consequences including license suspension, increased insurance rates, and employment issues, especially for commercial drivers.',
+      services: [
         'Reckless Driving',
         'Speeding Tickets',
         'Driving on Suspended License',
         'Hit and Run',
-        'Traffic Violations',
+        'Aggressive Driving',
+        'Following Too Closely',
+        'Improper Lane Change',
+        'Running Red Lights',
+        'Stop Sign Violations',
+        'Commercial Driver Violations',
+        'CDL Defense',
         'License Restoration',
-        'Administrative Hearings'
+        'DMV Hearings',
+        'Point Reduction',
+        'Driver Improvement'
       ],
-      urgency: 'DUI and serious traffic charges can result in immediate license suspension and jail time. Quick action is essential.',
-      consequences: 'Traffic convictions can result in license suspension, increased insurance rates, job loss, and even jail time for serious offenses.',
-      approach: 'We challenge every aspect of traffic stops and DUI arrests, from the initial stop to the accuracy of testing equipment.',
-      experience: 'Our attorneys appear in Virginia traffic courts daily and know the strategies that work to protect your driving privileges.',
-      results: 'We regularly achieve reduced charges, dismissed cases, and preserved driving privileges for our clients.'
+      urgency: 'Some traffic offenses carry immediate license suspension and jail time. Quick action can prevent conviction and protect your driving record.',
+      consequences: 'Traffic convictions can result in license suspension, increased insurance rates, points on your record, job loss for commercial drivers, and even jail time for serious offenses.',
+      approach: 'We examine every detail of your traffic stop, challenge the officer\'s observations, and negotiate with prosecutors to minimize consequences.',
+      experience: 'Our attorneys handle hundreds of traffic cases monthly and understand the strategies that work in Virginia traffic courts.',
+      results: 'We frequently achieve reduced charges, dismissed cases, driving school options, and protected driving privileges for our traffic clients.',
+      detailedServices: {
+        'Reckless Driving': 'Defending against Virginia\'s serious reckless driving charges',
+        'CDL Defense': 'Protecting commercial drivers\' livelihoods',
+        'License Restoration': 'Helping clients regain their driving privileges',
+        'Point Reduction': 'Minimizing impact on driving records',
+        'DMV Hearings': 'Representing clients in administrative proceedings'
+      }
     }
   };
 
