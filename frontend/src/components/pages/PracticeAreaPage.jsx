@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale } from 'lucide-react';
 import SEO from '../SEO';
