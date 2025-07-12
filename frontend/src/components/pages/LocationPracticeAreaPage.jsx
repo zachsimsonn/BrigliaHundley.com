@@ -57,42 +57,66 @@ const LocationPracticeAreaPage = () => {
           }
         }
         
-        // If no exact match, try known patterns
+        // If no exact match, try known patterns with aliases
+        const practiceAreaAliases = {
+          'divorce': 'divorce',
+          'dui': 'dui-defense', 
+          'child-custody': 'child-custody',
+          'traffic': 'traffic-defense',
+          'reckless-driving': 'reckless-driving',
+          'domestic-violence': 'domestic-violence',
+          'assault': 'assault',
+          'protective-order': 'protective-order',
+          'drug-crime': 'drug-crime',
+          'criminal-defense': 'criminal-defense',
+          'family-law': 'family-law',
+          'personal-injury': 'personal-injury'
+        };
+        
         if (pathParts.startsWith('tysons-corner-')) {
           const remaining = pathParts.replace('tysons-corner-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'tysons-corner', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'tysons-corner', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('fairfax-county-')) {
           const remaining = pathParts.replace('fairfax-county-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'fairfax-county', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'fairfax-county', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('arlington-')) {
           const remaining = pathParts.replace('arlington-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'arlington', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'arlington', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('mclean-')) {
           const remaining = pathParts.replace('mclean-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'mclean', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'mclean', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('vienna-')) {
           const remaining = pathParts.replace('vienna-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'vienna', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'vienna', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('falls-church-')) {
           const remaining = pathParts.replace('falls-church-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'falls-church', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'falls-church', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('herndon-')) {
           const remaining = pathParts.replace('herndon-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'herndon', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'herndon', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('reston-')) {
           const remaining = pathParts.replace('reston-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
-          return { location: 'reston', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'reston', practiceArea: mappedPracticeArea };
         }
         if (pathParts.startsWith('virginia-')) {
           const remaining = pathParts.replace('virginia-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '').replace('-law-firm', '');
-          return { location: 'virginia', practiceArea: remaining };
+          const mappedPracticeArea = practiceAreaAliases[remaining] || remaining;
+          return { location: 'virginia', practiceArea: mappedPracticeArea };
         }
       }
     }
