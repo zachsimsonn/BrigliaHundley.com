@@ -129,11 +129,11 @@ const Blog = ({ data, onNavigate }) => {
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
                     <div className="flex items-center">
                       <User className="h-4 w-4 mr-1" />
-                      <span>{blog.author}</span>
+                      <span>{blog.author || 'No Author'}</span>
                     </div>
                     <div className="flex items-center">
                       <Calendar className="h-4 w-4 mr-1" />
-                      <span>{blog.date}</span>
+                      <span>{blog.date || 'No Date'}</span>
                     </div>
                   </div>
 
