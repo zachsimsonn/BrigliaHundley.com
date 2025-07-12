@@ -334,8 +334,8 @@ const App = () => {
                 <Toaster />
               </div>
             } />
-            {/* Hidden SEO Pages - Use catch-all route for flexible URL parsing */}
-            <Route path="/*" element={
+            {/* Hidden SEO Pages - Must be last to catch remaining URLs */}
+            <Route path="*" element={
               <div>
                 <Header 
                   data={data} 
