@@ -58,8 +58,8 @@ const PracticeAreas = ({ data, onNavigate }) => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <a
-            href="/practice-areas"
+          <Link
+            to="/practice-areas"
             className="inline-flex items-center bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             View All Practice Areas
