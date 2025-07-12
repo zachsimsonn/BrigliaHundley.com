@@ -117,8 +117,8 @@ const VideoHero = ({ data, editableContent }) => {
           <div className="hidden lg:block">
             <div className="relative">
               <div className="bg-white/15 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-white/20">
-                <div className="space-y-8">
-                  <div className="flex items-center space-x-4">
+                <div className="space-y-8 flex flex-col justify-center items-center text-center">
+                  <div className="flex flex-col items-center space-y-3 mt-4">
                     <Shield className="h-10 w-10 text-yellow-300" />
                     <div>
                       <h3 className="text-2xl font-bold text-white">Trusted Legal Experts</h3>
@@ -126,7 +126,7 @@ const VideoHero = ({ data, editableContent }) => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4">
+                  <div className="flex flex-col items-center space-y-3">
                     <Award className="h-10 w-10 text-yellow-300" />
                     <div>
                       <h3 className="text-2xl font-bold text-white">Award Winning</h3>
