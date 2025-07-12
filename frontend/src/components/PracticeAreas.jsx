@@ -55,6 +55,17 @@ const PracticeAreas = ({ data, onNavigate }) => {
           ))}
         </div>
 
+        {/* View All Button */}
+        <div className="text-center mt-12">
+          <a
+            href="/practice-areas"
+            className="inline-flex items-center bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+          >
+            View All Practice Areas
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
+        </div>
+
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-2xl p-12 text-white">
