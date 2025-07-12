@@ -511,22 +511,23 @@ const LocationPracticeAreaPage = () => {
               </div>
             </section>
 
-            {/* Services Section */}
+            {/* Detailed Services Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Our {pageData.practiceArea.name} Services in {pageData.location.displayName}
               </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                {pageData.practiceArea.services.map((service, index) => (
-                  <div key={index} className="bg-gray-50 rounded-lg p-6">
-                    <div className="flex items-center gap-3 mb-3">
-                      <Scale className="text-blue-600" size={20} />
-                      <h3 className="text-xl font-semibold text-gray-900">{service}</h3>
+              <div className="space-y-6">
+                {Object.entries(pageData.practiceArea.detailedServices || {}).map(([service, description], index) => (
+                  <div key={index} className="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-blue-600 rounded-lg p-2 flex-shrink-0">
+                        <Briefcase className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-3">{service}</h3>
+                        <p className="text-gray-700">{description}</p>
+                      </div>
                     </div>
-                    <p className="text-gray-600">
-                      Expert legal representation for {service.toLowerCase()} cases in {pageData.location.displayName} 
-                      and throughout {pageData.location.courtInfo.jurisdiction}.
-                    </p>
                   </div>
                 ))}
               </div>
