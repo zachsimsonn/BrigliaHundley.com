@@ -147,7 +147,8 @@ const Blog = ({ data, onNavigate }) => {
                 </div>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
 
         {/* View All Blogs CTA */}
