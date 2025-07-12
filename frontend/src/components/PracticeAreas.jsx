@@ -77,7 +77,10 @@ const PracticeAreas = ({ data, onNavigate }) => {
               Contact our experienced legal team today for a free consultation. We're here to help you navigate your legal challenges.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
+              <Link 
+                to="/contact"
+                state={{ consultation: true, message: "I would like to schedule a free consultation to discuss my legal needs." }}
+              >
                 <Button 
                   size="lg" 
                   className="bg-gray-600 hover:bg-gray-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
