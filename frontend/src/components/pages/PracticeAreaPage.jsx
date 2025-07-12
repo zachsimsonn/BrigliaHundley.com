@@ -115,14 +115,15 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
       {/* Header */}
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Button 
-            onClick={() => onNavigate('home')}
-            variant="ghost"
-            className="text-white hover:bg-white/10 mb-6"
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Button>
+          <Link to="/">
+            <Button 
+              variant="ghost"
+              className="text-white hover:bg-white/10 mb-6"
+            >
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
           
           <div className="flex items-center mb-6">
             <Scale className="h-12 w-12 text-gray-300 mr-4" />
