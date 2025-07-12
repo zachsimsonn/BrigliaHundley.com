@@ -352,7 +352,7 @@ const LocationPracticeAreaPage = () => {
         title={pageData.urlFriendlyTitle}
         description={pageData.metaDescription}
         keywords={pageData.keywords}
-        canonical={`https://brigliahundley.com/${location}-${practiceArea}-lawyer`}
+        canonical={`https://brigliahundley.com${window.location.pathname}`}
       />
       
       {/* Hero Section */}
@@ -361,10 +361,15 @@ const LocationPracticeAreaPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                {pageData.title}
+                {pageData.pageType === 'best' ? 
+                  `Best ${pageData.practiceArea.displayName}s in ${pageData.location.displayName}` :
+                  pageData.title
+                }
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                {pageData.practiceArea.description} in {pageData.location.displayName}. 
+                {pageData.practiceArea.longDescription}
+              </p>
+              <p className="text-lg mb-8 text-blue-200">
                 {pageData.practiceArea.urgency}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
