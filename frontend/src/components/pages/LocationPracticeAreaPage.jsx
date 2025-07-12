@@ -641,21 +641,21 @@ const LocationPracticeAreaPage = () => {
               <h3 className="text-2xl font-bold mb-6">Get Legal Help Today</h3>
               <div className="space-y-4 mb-6">
                 <div className="flex items-center gap-3">
-                  <Phone size={20} className="text-yellow-400" />
+                  <Phone size={20} className="text-yellow-400 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">(703) 522-7222</p>
                     <p className="text-sm text-blue-100">Free Consultation</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <MapPin size={20} className="text-yellow-400" />
+                  <MapPin size={20} className="text-yellow-400 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Tysons Corner Office</p>
                     <p className="text-sm text-blue-100">1921 Gallows Road, Suite 900</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock size={20} className="text-yellow-400" />
+                  <Clock size={20} className="text-yellow-400 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Available 24/7</p>
                     <p className="text-sm text-blue-100">Emergency consultations</p>
@@ -685,19 +685,19 @@ const LocationPracticeAreaPage = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Awards & Recognition</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <Award className="text-yellow-500" size={20} />
+                  <Award className="text-yellow-500 flex-shrink-0" size={20} />
                   <span className="text-gray-700">AV Rated - Martindale-Hubbell</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Star className="text-yellow-500" size={20} />
+                  <Star className="text-yellow-500 flex-shrink-0" size={20} />
                   <span className="text-gray-700">Best Lawyers Recognition</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Users className="text-yellow-500" size={20} />
+                  <Users className="text-yellow-500 flex-shrink-0" size={20} />
                   <span className="text-gray-700">Super Lawyers Selection</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Scale className="text-yellow-500" size={20} />
+                  <Scale className="text-yellow-500 flex-shrink-0" size={20} />
                   <span className="text-gray-700">30+ Years Experience</span>
                 </div>
               </div>
