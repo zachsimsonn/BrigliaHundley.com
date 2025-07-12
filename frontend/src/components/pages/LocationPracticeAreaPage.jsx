@@ -98,9 +98,6 @@ const LocationPracticeAreaPage = () => {
       }
     }
     
-    console.log('Parsed location:', parsedLocation); // Debug log
-    console.log('Parsed practice area:', parsedPracticeArea); // Debug log
-
     // Location data
     const locationData = {
       'tysons-corner': {
