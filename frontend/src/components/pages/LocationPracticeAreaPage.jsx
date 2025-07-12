@@ -28,14 +28,32 @@ const LocationPracticeAreaPage = () => {
         // Remove the suffix
         const withoutSuffix = parts.slice(0, -1);
         
-        // Find location and practice area
+    // Find location and practice area
         // Try different combinations to find matches
         for (let i = 1; i < withoutSuffix.length; i++) {
           const locationPart = withoutSuffix.slice(0, i).join('-');
           const practiceAreaPart = withoutSuffix.slice(i).join('-');
           
-          if (locationData[locationPart] && practiceAreaData[practiceAreaPart]) {
-            return { location: locationPart, practiceArea: practiceAreaPart };
+          // Create aliases for practice areas
+          const practiceAreaAliases = {
+            'divorce': 'divorce',
+            'dui': 'dui-defense',
+            'child-custody': 'child-custody',
+            'traffic': 'traffic-defense',
+            'reckless-driving': 'reckless-driving',
+            'domestic-violence': 'domestic-violence',
+            'assault': 'assault',
+            'protective-order': 'protective-order',
+            'drug-crime': 'drug-crime',
+            'criminal-defense': 'criminal-defense',
+            'family-law': 'family-law',
+            'personal-injury': 'personal-injury'
+          };
+          
+          const mappedPracticeArea = practiceAreaAliases[practiceAreaPart] || practiceAreaPart;
+          
+          if (locationData[locationPart] && practiceAreaData[mappedPracticeArea]) {
+            return { location: locationPart, practiceArea: mappedPracticeArea };
           }
         }
         
