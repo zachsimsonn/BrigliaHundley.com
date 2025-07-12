@@ -320,6 +320,59 @@ const App = () => {
                 <Toaster />
               </div>
             } />
+            {/* Hidden SEO Pages - Location + Practice Area Combinations */}
+            <Route path="/:location-:practiceArea-lawyer" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="hidden-seo"
+                />
+                <LocationPracticeAreaPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/:location-:practiceArea-attorney" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="hidden-seo"
+                />
+                <LocationPracticeAreaPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/:location-:practiceArea-law-firm" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="hidden-seo"
+                />
+                <LocationPracticeAreaPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <Toaster />
+              </div>
+            } />
+            <Route path="/best-:location-:practiceArea-attorneys" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="hidden-seo"
+                />
+                <LocationPracticeAreaPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <Toaster />
+              </div>
+            } />
           </Routes>
         </BrowserRouter>
       </div>
