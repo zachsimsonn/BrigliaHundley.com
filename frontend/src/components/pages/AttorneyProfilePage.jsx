@@ -13,6 +13,12 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
   console.log('Looking for attorney slug:', name);
   console.log('Available attorney names:', data?.attorneys?.map(att => att.name));
   
+  // Debug: Check the slug conversion for each attorney
+  data?.attorneys?.forEach(att => {
+    const slug = att.name.toLowerCase().replace(/\s+/g, '-');
+    console.log(`"${att.name}" converts to slug: "${slug}"`);
+  });
+  
   const attorney = data.attorneys.find(att => 
     att.name.toLowerCase().replace(/\s+/g, '-') === name
   );
