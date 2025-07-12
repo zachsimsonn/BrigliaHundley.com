@@ -52,7 +52,7 @@ const PracticeAreas = ({ data, onNavigate }) => {
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 
