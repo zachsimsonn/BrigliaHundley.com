@@ -635,14 +635,24 @@ const LocationPracticeAreaPage = () => {
   };
 
   useEffect(() => {
-    // Simple URL parsing for our hidden SEO pages
+    // Always use manual URL parsing for our hidden SEO pages
     const currentPath = window.location.pathname.substring(1); // Remove leading slash
     
-    let parsedLocation = location;
-    let parsedPracticeArea = practiceArea;
+    console.log('Parsing URL:', currentPath); // Debug log
     
-    // Check if we need to parse the URL manually for hidden pages
-    if (!location || !practiceArea) {
+    let parsedLocation = null;
+    let parsedPracticeArea = null;
+    
+    // Check if this is a hidden SEO page by looking for known patterns
+    const isHiddenSEOPage = currentPath.includes('-lawyer') || 
+                           currentPath.includes('-attorney') || 
+                           currentPath.includes('-law-firm') ||
+                           currentPath.includes('-attorneys');
+    
+    if (!isHiddenSEOPage) {
+      // Not a hidden SEO page, don't render anything
+      return;
+    }
       // Practice area aliases
       const practiceAreaAliases = {
         'divorce': 'divorce',
