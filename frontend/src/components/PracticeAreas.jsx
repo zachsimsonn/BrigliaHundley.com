@@ -64,7 +64,7 @@ const PracticeAreas = ({ data, onNavigate }) => {
           >
             View All Practice Areas
             <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
+          </Link>
         </div>
 
         {/* Call to Action */}
