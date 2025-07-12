@@ -520,6 +520,9 @@ const LocationPracticeAreaPage = () => {
       });
     } else {
       console.log('No matching data found for:', parsedLocation, parsedPracticeArea); // Debug log
+      // If no valid hidden SEO page data found, redirect to home
+      navigate('/', { replace: true });
+      return;
     }
   }, []);
 
