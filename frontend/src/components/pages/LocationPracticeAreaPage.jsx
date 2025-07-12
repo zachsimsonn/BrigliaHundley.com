@@ -99,6 +99,94 @@ const LocationPracticeAreaPage = () => {
       proximityText: 'ideally positioned to serve McLean\'s affluent community',
       keyStats: 'Trusted by McLean\'s most prominent families and business leaders'
     },
+    'vienna': {
+      name: 'Vienna',
+      displayName: 'Vienna, VA',
+      description: 'Professional legal services for Vienna residents and businesses',
+      courtInfo: {
+        primary: 'Fairfax County Circuit Court',
+        address: '4110 Chain Bridge Road, Fairfax, VA 22030',
+        judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
+      },
+      localAdvantages: [
+        'Close proximity to Vienna community',
+        'Understanding of Vienna legal landscape',
+        'Experience with local business and family matters',
+        'Quick response time for Vienna clients',
+        'Knowledge of local court procedures'
+      ],
+      demographics: 'Vienna is a thriving suburban community with families and professionals who value quality legal representation.',
+      proximityText: 'conveniently located to serve Vienna residents',
+      keyStats: 'Proudly serving Vienna clients with dedicated legal representation'
+    },
+    'falls-church': {
+      name: 'Falls Church',
+      displayName: 'Falls Church, VA',
+      description: 'Trusted legal services for Falls Church community',
+      courtInfo: {
+        primary: 'Fairfax County Circuit Court',
+        address: '4110 Chain Bridge Road, Fairfax, VA 22030',
+        judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
+      },
+      localAdvantages: [
+        'Established presence in Falls Church area',
+        'Understanding of local legal needs',
+        'Experience with community-specific matters',
+        'Accessible location for Falls Church clients',
+        'Personalized service for local families'
+      ],
+      demographics: 'Falls Church is a close-knit community where residents value personalized, professional legal services.',
+      proximityText: 'easily accessible to Falls Church residents',
+      keyStats: 'Committed to serving Falls Church with excellence and integrity'
+    },
+    'herndon': {
+      name: 'Herndon',
+      displayName: 'Herndon, VA',
+      description: 'Comprehensive legal representation for Herndon residents',
+      courtInfo: {
+        primary: 'Fairfax County Circuit Court',
+        address: '4110 Chain Bridge Road, Fairfax, VA 22030',
+        judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
+      },
+      localAdvantages: [
+        'Understanding of Herndon community needs',
+        'Experience with local legal matters',
+        'Quick access to Herndon clients',
+        'Knowledge of local business environment',
+        'Commitment to Herndon community'
+      ],
+      demographics: 'Herndon is a diverse community with growing families and businesses requiring skilled legal representation.',
+      proximityText: 'strategically positioned to serve Herndon residents',
+      keyStats: 'Dedicated to providing Herndon with top-quality legal services'
+    },
+    'reston': {
+      name: 'Reston',
+      displayName: 'Reston, VA',
+      description: 'Professional legal services for the Reston community',
+      courtInfo: {
+        primary: 'Fairfax County Circuit Court',
+        address: '4110 Chain Bridge Road, Fairfax, VA 22030',
+        judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
+      },
+      localAdvantages: [
+        'Convenient access for Reston residents',
+        'Understanding of Reston\'s unique community',
+        'Experience with local legal challenges',
+        'Responsive service for Reston clients',
+        'Knowledge of area-specific legal issues'
+      ],
+      demographics: 'Reston is a planned community with educated professionals and families who expect quality legal representation.',
+      proximityText: 'well-positioned to serve the Reston community',
+      keyStats: 'Committed to excellence in serving Reston residents and businesses'
+    },
     'virginia': {
       name: 'Virginia',
       displayName: 'Virginia',
