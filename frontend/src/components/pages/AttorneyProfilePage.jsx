@@ -16,10 +16,12 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Attorney Not Found</h1>
-          <Button onClick={() => onNavigate('home')}>
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Button>
+          <Link to="/">
+            <Button>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
         </div>
       </div>
     );
