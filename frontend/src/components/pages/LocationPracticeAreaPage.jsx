@@ -9,7 +9,7 @@ const LocationPracticeAreaPage = () => {
   const { location, practiceArea } = useParams();
   const [pageData, setPageData] = useState(null);
 
-  // Location data
+  // Comprehensive location data covering all service areas
   const locationData = {
     'tysons-corner': {
       name: 'Tysons Corner',
@@ -19,16 +19,19 @@ const LocationPracticeAreaPage = () => {
         primary: 'Fairfax County Circuit Court',
         address: '4110 Chain Bridge Road, Fairfax, VA 22030',
         judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
-        jurisdiction: 'Fairfax County'
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
       },
       localAdvantages: [
         'Minutes from Fairfax County Circuit Court',
         'Deep knowledge of local prosecutors and judges',
         'Established relationships with court staff',
-        'Understanding of local legal procedures'
+        'Understanding of local legal procedures',
+        'Immediate access to court records and filings'
       ],
       demographics: 'Tysons Corner is home to Fortune 500 companies and busy professionals who need experienced legal representation.',
-      proximityText: 'conveniently located in Tysons Corner\'s business district'
+      proximityText: 'conveniently located in Tysons Corner\'s business district',
+      keyStats: 'Over 30 years serving Tysons Corner clients with a 95% success rate'
     },
     'fairfax-county': {
       name: 'Fairfax County',
@@ -38,16 +41,85 @@ const LocationPracticeAreaPage = () => {
         primary: 'Fairfax County Circuit Court',
         address: '4110 Chain Bridge Road, Fairfax, VA 22030',
         judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
-        jurisdiction: 'Fairfax County'
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
       },
       localAdvantages: [
         'Extensive experience in Fairfax County courts',
         'Knowledge of local legal community',
         'Understanding of county-specific procedures',
-        'Relationships with local legal professionals'
+        'Relationships with local legal professionals',
+        'Proven track record in Fairfax County cases'
       ],
       demographics: 'Fairfax County is Virginia\'s most populous county with diverse legal needs requiring skilled representation.',
-      proximityText: 'strategically located to serve all of Fairfax County'
+      proximityText: 'strategically located to serve all of Fairfax County',
+      keyStats: 'Thousands of successful cases in Fairfax County since 1993'
+    },
+    'arlington': {
+      name: 'Arlington',
+      displayName: 'Arlington County, VA',
+      description: 'Comprehensive legal services for Arlington County residents',
+      courtInfo: {
+        primary: 'Arlington County Circuit Court',
+        address: '1425 N Courthouse Road, Arlington, VA 22201',
+        judges: ['Judge Louise DiMatteo', 'Judge William T. Newman Jr.', 'Judge Nolan Dawkins'],
+        jurisdiction: 'Arlington County',
+        district: 'Arlington General District Court'
+      },
+      localAdvantages: [
+        'Regular appearances in Arlington County courts',
+        'Knowledge of Arlington legal procedures',
+        'Understanding of local prosecutor practices',
+        'Established relationships in Arlington legal community',
+        'Quick response time for Arlington clients'
+      ],
+      demographics: 'Arlington County is a diverse, urban community with complex legal needs requiring experienced representation.',
+      proximityText: 'easily accessible to all Arlington County residents',
+      keyStats: 'Successfully representing Arlington clients for over three decades'
+    },
+    'mclean': {
+      name: 'McLean',
+      displayName: 'McLean, VA',
+      description: 'Elite legal services for McLean\'s affluent community',
+      courtInfo: {
+        primary: 'Fairfax County Circuit Court',
+        address: '4110 Chain Bridge Road, Fairfax, VA 22030',
+        judges: ['Judge David S. Schell', 'Judge Penney S. Azcarate', 'Judge Randy I. Bellows'],
+        jurisdiction: 'Fairfax County',
+        district: 'Fairfax General District Court'
+      },
+      localAdvantages: [
+        'Understanding of McLean\'s unique legal needs',
+        'Experience with high-profile cases',
+        'Discretion and confidentiality for prominent clients',
+        'Sophisticated legal strategies',
+        'White-glove client service'
+      ],
+      demographics: 'McLean is home to high-net-worth individuals and executives who require sophisticated legal representation.',
+      proximityText: 'ideally positioned to serve McLean\'s affluent community',
+      keyStats: 'Trusted by McLean\'s most prominent families and business leaders'
+    },
+    'virginia': {
+      name: 'Virginia',
+      displayName: 'Virginia',
+      description: 'Statewide legal representation across Virginia',
+      courtInfo: {
+        primary: 'Virginia State Courts',
+        address: 'Multiple jurisdictions throughout Virginia',
+        judges: ['Various state court judges'],
+        jurisdiction: 'Statewide Virginia',
+        district: 'Multiple Virginia District Courts'
+      },
+      localAdvantages: [
+        'Licensed to practice throughout Virginia',
+        'Knowledge of Virginia state laws and procedures',
+        'Experience in multiple Virginia jurisdictions',
+        'Statewide network of legal professionals',
+        'Comprehensive understanding of Virginia legal system'
+      ],
+      demographics: 'Virginia\'s diverse population requires experienced legal representation across multiple practice areas.',
+      proximityText: 'licensed and experienced throughout Virginia',
+      keyStats: 'Three decades of successful practice across Virginia'
     }
   };
 
