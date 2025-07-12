@@ -30,9 +30,9 @@ const PracticeAreas = ({ data, onNavigate }) => {
         {/* Practice Areas Grid */}
         <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
           {data.practiceAreas.map((area, index) => (
-            <a 
+            <Link 
               key={index} 
-              href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+              to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
               className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 block"
             >
               <div className="flex items-center space-x-3 mb-4">
