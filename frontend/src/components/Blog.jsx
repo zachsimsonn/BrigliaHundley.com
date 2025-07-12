@@ -135,7 +135,7 @@ const Blog = ({ data, onNavigate }) => {
                 </div>
 
                 {/* Read More */}
-                <div className="text-blue-900 hover:text-blue-700 flex items-center text-sm font-medium group">
+                <div className="text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium group">
                   Read More
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
