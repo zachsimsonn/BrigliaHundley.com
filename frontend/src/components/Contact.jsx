@@ -112,7 +112,7 @@ const Contact = ({ data, editableContent }) => {
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <div id="consultation-form" className="bg-gray-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Schedule Your Free Consultation
             </h3>
