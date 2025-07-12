@@ -596,12 +596,13 @@ const LocationPracticeAreaPage = () => {
                   <p className="text-gray-600">
                     Local attorneys understand the specific procedures, judges, and legal community in {pageData.location.displayName}. 
                     This knowledge can be crucial to achieving the best possible outcome in your case. Our attorneys have appeared 
-                    regularly in {pageData.location.courtInfo.jurisdiction} courts for over 30 years.
+                    regularly in {pageData.location.courtInfo.jurisdiction} courts for over 30 years and have developed relationships 
+                    that benefit our clients.
                   </p>
                 </div>
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    How much does a {pageData.practiceArea.name.toLowerCase()} attorney cost?
+                    How much does a {pageData.practiceArea.name.toLowerCase()} attorney cost in {pageData.location.displayName}?
                   </h3>
                   <p className="text-gray-600">
                     Legal fees vary depending on the complexity of your case. We offer free consultations where we can discuss 
@@ -611,12 +612,22 @@ const LocationPracticeAreaPage = () => {
                 </div>
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    How long will my {pageData.practiceArea.name.toLowerCase()} case take?
+                    How long will my {pageData.practiceArea.name.toLowerCase()} case take in {pageData.location.displayName}?
                   </h3>
                   <p className="text-gray-600">
                     The timeline for {pageData.practiceArea.name.toLowerCase()} cases varies significantly based on complexity, 
                     court schedules, and other factors. During your free consultation, we can provide a realistic timeline 
                     based on the specifics of your case and current court schedules in {pageData.location.displayName}.
+                  </p>
+                </div>
+                <div className="bg-white border border-gray-200 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    What should I bring to my consultation?
+                  </h3>
+                  <p className="text-gray-600">
+                    Bring any relevant documents, court papers, police reports, contracts, or correspondence related to your case. 
+                    The more information you can provide, the better we can assess your situation and provide accurate advice 
+                    during your free consultation.
                   </p>
                 </div>
               </div>
