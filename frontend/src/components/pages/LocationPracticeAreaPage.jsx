@@ -544,12 +544,21 @@ const LocationPracticeAreaPage = () => {
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">Primary Court</h3>
                     <div className="space-y-3">
                       <div className="flex items-start gap-3">
-                        <MapPin className="text-blue-600 mt-1" size={18} />
+                        <MapPin className="text-blue-600 mt-1 flex-shrink-0" size={18} />
                         <div>
                           <p className="font-medium text-gray-900">{pageData.location.courtInfo.primary}</p>
                           <p className="text-gray-600">{pageData.location.courtInfo.address}</p>
                         </div>
                       </div>
+                      {pageData.location.courtInfo.district && (
+                        <div className="flex items-start gap-3">
+                          <Scale className="text-blue-600 mt-1 flex-shrink-0" size={18} />
+                          <div>
+                            <p className="font-medium text-gray-900">{pageData.location.courtInfo.district}</p>
+                            <p className="text-gray-600">General District Court</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div>
@@ -557,7 +566,7 @@ const LocationPracticeAreaPage = () => {
                     <ul className="space-y-2">
                       {pageData.location.courtInfo.judges.map((judge, index) => (
                         <li key={index} className="flex items-center gap-2">
-                          <CheckCircle className="text-blue-600" size={16} />
+                          <CheckCircle className="text-blue-600 flex-shrink-0" size={16} />
                           <span className="text-gray-700">{judge}</span>
                         </li>
                       ))}
@@ -567,7 +576,8 @@ const LocationPracticeAreaPage = () => {
                 <div className="mt-6 pt-6 border-t border-blue-200">
                   <p className="text-gray-600">
                     Our attorneys regularly appear before these judges and understand their preferences, 
-                    procedures, and expectations. This familiarity helps us present your case more effectively.
+                    procedures, and expectations. This familiarity helps us present your case more effectively 
+                    and achieve better outcomes for our clients in {pageData.location.displayName}.
                   </p>
                 </div>
               </div>
