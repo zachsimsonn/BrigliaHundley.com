@@ -116,14 +116,15 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
       {/* Back Button */}
       <div className="bg-gray-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Button 
-            onClick={() => onNavigate('attorneys')}
-            variant="ghost"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to All Attorneys
-          </Button>
+          <Link to="/attorneys">
+            <Button 
+              variant="ghost"
+              className="text-gray-600 hover:text-gray-900"
+            >
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to All Attorneys
+            </Button>
+          </Link>
         </div>
       </div>
 
