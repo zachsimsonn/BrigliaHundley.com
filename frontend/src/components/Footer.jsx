@@ -7,156 +7,108 @@ const Footer = ({ data }) => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-1">
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                {data.business.name}
-              </h3>
-              <p className="text-gray-300 text-sm">
-                Tier 1 ranked law firm serving the Mid-Atlantic region since 1993
-              </p>
+        {/* Links Section */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          {/* Practice Areas */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Practice Areas</h3>
+            <div className="space-y-2">
+              {data.practiceAreas.slice(0, 6).map((area, index) => (
+                <a
+                  key={index}
+                  href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                >
+                  {area.title}
+                </a>
+              ))}
+              <a
+                href="/practice-areas"
+                className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+              >
+                View All Practice Areas →
+              </a>
             </div>
-            
+          </div>
+
+          {/* Our Attorneys */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Our Attorneys</h3>
+            <div className="space-y-2">
+              {data.attorneys.slice(0, 5).map((attorney, index) => (
+                <a
+                  key={index}
+                  href={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                >
+                  {attorney.name}
+                </a>
+              ))}
+              <a
+                href="/attorneys"
+                className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+              >
+                Meet All Attorneys →
+              </a>
+            </div>
+          </div>
+
+          {/* Areas We Serve */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Areas We Serve</h3>
+            <div className="space-y-2">
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Tysons Corner, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Fairfax County, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Arlington County, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Prince William County, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Loudoun County, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">McLean, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Vienna, VA</a>
+              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Falls Church, VA</a>
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Contact Information</h3>
             <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
-                <div>
+              <div>
+                <div className="text-white font-medium text-sm mb-1">Address</div>
+                <div className="text-gray-300 text-sm leading-relaxed">
                   <a 
                     href="https://maps.app.goo.gl/Dqo1syhK2exWUfBM6"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm leading-relaxed"
+                    className="hover:text-white transition-colors duration-200"
                   >
                     {data.business.address}
                   </a>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-blue-400" />
+              <div>
+                <div className="text-white font-medium text-sm mb-1">Phone</div>
                 <a 
                   href={`tel:${data.business.phone}`} 
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
                   {data.business.phone}
                 </a>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-blue-400" />
+              <div>
+                <div className="text-white font-medium text-sm mb-1">Email</div>
                 <a 
                   href={`mailto:${data.business.email}`} 
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
                   {data.business.email}
                 </a>
               </div>
-              
-              <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300 text-sm">Mon-Fri: 9AM-5PM</span>
-              </div>
-            </div>
-          </div>
 
-          {/* Practice Areas */}
-          <div className="lg:col-span-1">
-            <h3 className="text-lg font-semibold text-white mb-6">
-              Practice Areas
-            </h3>
-            <ul className="space-y-3">
-              {practiceAreas.map((area, index) => (
-                <li key={index}>
-                  <button 
-                    onClick={() => window.location.href = `/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center space-x-2 text-left"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    <span>{area.title}</span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div className="lg:col-span-1">
-            <h3 className="text-lg font-semibold text-white mb-6">
-              Quick Links
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <button 
-                  onClick={() => window.location.href = '/about'}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => window.location.href = '/attorneys'}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Our Attorneys
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => window.location.href = '/testimonials'}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Client Reviews
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => window.location.href = '/contact'}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Contact Us
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => window.location.href = '/blog'}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Blog
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => window.location.href = '/practice-areas'}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  All Practice Areas
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          {/* Recognition */}
-          <div className="lg:col-span-1">
-            <h3 className="text-lg font-semibold text-white mb-6">
-              Recognition
-            </h3>
-            <div className="space-y-4">
-              <div className="bg-gray-800 rounded-lg p-4">
-                <div className="text-white font-bold mb-2">Best Lawyers® 2025</div>
-                <div className="text-gray-300 text-sm">7 attorneys recognized</div>
-              </div>
-              
-              <div className="bg-gray-800 rounded-lg p-4">
-                <div className="text-white font-bold mb-2">Super Lawyers 2025</div>
-                <div className="text-gray-300 text-sm">Multiple attorneys recognized</div>
-              </div>
-              
-              <div className="bg-gray-800 rounded-lg p-4">
-                <div className="text-white font-bold mb-2">Tier 1 Ranked</div>
-                <div className="text-gray-300 text-sm">Best Law Firms</div>
+              <div>
+                <div className="text-white font-medium text-sm mb-1">Hours</div>
+                <div className="text-gray-300 text-sm">Mon-Fri: 9AM-5PM</div>
               </div>
             </div>
           </div>
