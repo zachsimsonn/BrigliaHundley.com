@@ -173,15 +173,19 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
             
           {/* Right Side Buttons - Compact spacing */}
           <div className="hidden md:flex items-center space-x-2 flex-shrink-0 ml-4">
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 text-xs px-3 py-2"
-              onClick={() => handleNavigate('contact')}
-              style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}
+            <Link 
+              to="/contact"
+              state={{ consultation: true, message: "I would like to schedule a free consultation to discuss my legal needs." }}
             >
-              Schedule a Free Consultation
-            </Button>
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 text-xs px-3 py-2"
+                style={{ fontFamily: 'Arial, sans-serif', fontWeight: '500' }}
+              >
+                Schedule a Free Consultation
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               size="sm"
