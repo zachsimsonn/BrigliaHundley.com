@@ -358,12 +358,13 @@ const BlogPostPage = ({ data, onNavigate }) => {
                 <p className="text-gray-300 mb-4 text-sm">
                   Our experienced attorneys are ready to help with your legal matter.
                 </p>
-                <Button 
-                  onClick={() => onNavigate('contact')}
-                  className="w-full bg-white text-gray-900 hover:bg-gray-100"
-                >
-                  Schedule Consultation
-                </Button>
+                <Link to="/contact">
+                  <Button 
+                    className="w-full bg-white text-gray-900 hover:bg-gray-100"
+                  >
+                    Schedule Consultation
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
