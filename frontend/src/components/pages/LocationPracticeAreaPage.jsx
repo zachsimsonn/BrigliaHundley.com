@@ -20,8 +20,6 @@ const LocationPracticeAreaPage = () => {
     // Always use manual URL parsing for our hidden SEO pages
     const currentPath = window.location.pathname.substring(1); // Remove leading slash
     
-    console.log('Parsing URL:', currentPath); // Debug log
-    
     let parsedLocation = null;
     let parsedPracticeArea = null;
     
