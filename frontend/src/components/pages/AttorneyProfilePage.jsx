@@ -371,21 +371,46 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
         {/* Related Practice Areas */}
         {relatedPracticeAreas.length > 0 && (
           <div className="mt-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Related Practice Areas</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{attorney.name}'s Practice Areas</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedPracticeAreas.map((area, index) => (
-                <div 
+                <a 
                   key={index}
-                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer"
-                  onClick={() => onNavigate('practice-area', { areaName: area.title.toLowerCase().replace(/\s+/g, '-') })}
+                  href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-1 block"
                 >
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{area.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{area.description}</p>
-                  <div className="mt-4">
-                    <span className="text-gray-900 font-medium hover:text-gray-700">Learn More →</span>
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0">
+                      <Scale className="h-6 w-6 text-gray-700 mt-1" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors duration-200">
+                        {area.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                        {area.description?.substring(0, 120)}...
+                      </p>
+                      <div className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm">
+                        Learn More About {area.title}
+                        <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               ))}
+            </div>
+            <div className="text-center mt-8">
+              <a 
+                href="/practice-areas"
+                className="inline-flex items-center bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-lg transition-colors duration-200"
+              >
+                View All Practice Areas
+                <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
         )}
