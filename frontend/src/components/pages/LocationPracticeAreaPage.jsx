@@ -6,7 +6,6 @@ import { siteData } from '../../data/mockData';
 import { MapPin, Phone, Calendar, Star, Award, Users, Scale, Clock, CheckCircle, Shield, Briefcase } from 'lucide-react';
 
 const LocationPracticeAreaPage = () => {
-  const { location, practiceArea } = useParams();
   const [pageData, setPageData] = useState(null);
 
   // Comprehensive location data covering all service areas
