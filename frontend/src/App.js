@@ -219,6 +219,19 @@ const App = () => {
                 <Toaster />
               </div>
             } />
+            <Route path="/sitemap" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="sitemap"
+                />
+                <SitemapPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <Toaster />
+              </div>
+            } />
             <Route path="/blog" element={
               <div>
                 <Header 
