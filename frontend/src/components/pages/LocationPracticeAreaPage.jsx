@@ -523,7 +523,6 @@ const LocationPracticeAreaPage = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
     alert('Thank you for your message. We will contact you soon.');
     setFormData({
       name: '',
