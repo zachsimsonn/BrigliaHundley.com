@@ -85,7 +85,7 @@ const Blog = ({ data, onNavigate }) => {
             <Link 
               key={blog.id} 
               to={`/blog/${blog.slug}`}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden cursor-pointer block"
+              className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden block h-full"
             >
               {/* Blog Image */}
               <div className="relative h-48 overflow-hidden">
@@ -93,7 +93,7 @@ const Blog = ({ data, onNavigate }) => {
                   <img 
                     src={optimizeImageUrl(blog.image, 600, 400)} 
                     alt={`${blog.title} - Legal insights from Briglia Hundley attorneys`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     decoding="async"
                   />
@@ -105,39 +105,43 @@ const Blog = ({ data, onNavigate }) => {
                   </div>
                 )}
                 {/* Category Badge */}
-                <div className="absolute top-4 right-4 bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-medium">
-                  {blog.category}
+                <div className="absolute top-4 left-4">
+                  <span className="bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-xs font-medium">
+                    {blog.category}
+                  </span>
                 </div>
               </div>
 
-              {/* Blog Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-gray-700 transition-colors duration-200">
+              {/* Blog Content - Use flex column to distribute space */}
+              <div className="p-6 flex flex-col h-full">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-gray-700 transition-colors duration-200 line-clamp-2">
                   {blog.title}
                 </h3>
                 
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
                   {blog.excerpt}
                 </p>
 
-                {/* Meta Information */}
-                <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                  <div className="flex items-center space-x-3">
+                {/* Meta Information - Fixed to bottom */}
+                <div className="mt-auto">
+                  <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="flex items-center">
+                        <User className="h-4 w-4 mr-1" />
+                        <span>{blog.author}</span>
+                      </div>
+                    </div>
                     <div className="flex items-center">
-                      <User className="h-4 w-4 mr-1" />
-                      <span>{blog.author}</span>
+                      <Calendar className="h-4 w-4 mr-1" />
+                      <span>{blog.date}</span>
                     </div>
                   </div>
-                  <div className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    <span>{blog.date}</span>
-                  </div>
-                </div>
 
-                {/* Read More */}
-                <div className="text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium group">
-                  Read More
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  {/* Read More */}
+                  <div className="text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium group">
+                    Read More
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
                 </div>
               </div>
             </Link>
