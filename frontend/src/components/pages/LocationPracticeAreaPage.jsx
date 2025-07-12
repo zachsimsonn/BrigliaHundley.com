@@ -710,8 +710,9 @@ const LocationPracticeAreaPage = () => {
   };
 
   useEffect(() => {
-    const locationInfo = locationData[location];
-    const practiceInfo = practiceAreaData[practiceArea];
+    const { location: parsedLocation, practiceArea: parsedPracticeArea } = parseURL();
+    const locationInfo = locationData[parsedLocation];
+    const practiceInfo = practiceAreaData[parsedPracticeArea];
 
     if (locationInfo && practiceInfo) {
       // Determine page type based on URL pattern
