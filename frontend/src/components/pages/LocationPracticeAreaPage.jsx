@@ -307,13 +307,27 @@ const LocationPracticeAreaPage = () => {
     const practiceInfo = practiceAreaData[practiceArea];
 
     if (locationInfo && practiceInfo) {
+      // Determine page type based on URL pattern
+      const currentPath = window.location.pathname;
+      let pageType = 'lawyer';
+      if (currentPath.includes('-attorney')) pageType = 'attorney';
+      if (currentPath.includes('-law-firm')) pageType = 'law-firm';
+      if (currentPath.includes('best-')) pageType = 'best';
+
+      const titleSuffix = pageType === 'attorney' ? 'Attorney' : 
+                         pageType === 'law-firm' ? 'Law Firm' : 
+                         pageType === 'best' ? 'Attorneys' : 'Lawyer';
+
       setPageData({
         location: locationInfo,
         practiceArea: practiceInfo,
+        pageType,
         title: `${practiceInfo.displayName} in ${locationInfo.displayName}`,
-        urlFriendlyTitle: `${locationInfo.name} ${practiceInfo.displayName}`,
-        metaDescription: `Expert ${practiceInfo.name.toLowerCase()} attorney in ${locationInfo.displayName}. 30+ years experience in ${locationInfo.courtInfo.jurisdiction} courts. Free consultation. Call (703) 522-7222.`,
-        keywords: `${practiceInfo.name.toLowerCase()} attorney ${locationInfo.displayName}, ${practiceInfo.name.toLowerCase()} lawyer ${locationInfo.name}, ${locationInfo.courtInfo.jurisdiction} ${practiceInfo.name.toLowerCase()}, ${locationInfo.name} legal help`
+        urlFriendlyTitle: pageType === 'best' ? 
+          `Best ${locationInfo.name} ${practiceInfo.displayName}s` :
+          `${locationInfo.name} ${practiceInfo.displayName}`,
+        metaDescription: `Expert ${practiceInfo.name.toLowerCase()} ${pageType} in ${locationInfo.displayName}. 30+ years experience in ${locationInfo.courtInfo.jurisdiction} courts. Free consultation. Call (703) 522-7222.`,
+        keywords: `${practiceInfo.name.toLowerCase()} ${pageType} ${locationInfo.displayName}, ${practiceInfo.name.toLowerCase()} lawyer ${locationInfo.name}, ${locationInfo.courtInfo.jurisdiction} ${practiceInfo.name.toLowerCase()}, ${locationInfo.name} legal help, best ${locationInfo.name} ${practiceInfo.name.toLowerCase()} ${pageType}`
       });
     }
   }, [location, practiceArea]);
