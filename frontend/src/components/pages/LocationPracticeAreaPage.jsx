@@ -22,22 +22,22 @@ const LocationPracticeAreaPage = () => {
     
     console.log('Parsing URL:', currentPath); // Debug log
     
-    // Skip URLs that should be handled by other routes
-    if (currentPath.startsWith('blog/') || 
-        currentPath.startsWith('practice-area/') || 
-        currentPath.startsWith('attorney-profile/') ||
-        currentPath === 'blog' ||
-        currentPath === 'practice-areas' ||
-        currentPath === 'attorneys' ||
-        currentPath === 'about' ||
-        currentPath === 'contact' ||
-        currentPath === 'testimonials' ||
-        currentPath === 'sitemap' ||
-        currentPath === '') {
-      // Redirect to home for non-hidden SEO URLs
-      navigate('/', { replace: true });
-      return;
-    }
+    // TEMPORARILY COMMENTED OUT - Skip URLs that should be handled by other routes
+    // if (currentPath.startsWith('blog/') || 
+    //     currentPath.startsWith('practice-area/') || 
+    //     currentPath.startsWith('attorney-profile/') ||
+    //     currentPath === 'blog' ||
+    //     currentPath === 'practice-areas' ||
+    //     currentPath === 'attorneys' ||
+    //     currentPath === 'about' ||
+    //     currentPath === 'contact' ||
+    //     currentPath === 'testimonials' ||
+    //     currentPath === 'sitemap' ||
+    //     currentPath === '') {
+    //   // Redirect to home for non-hidden SEO URLs
+    //   navigate('/', { replace: true });
+    //   return;
+    // }
     
     let parsedLocation = null;
     let parsedPracticeArea = null;
