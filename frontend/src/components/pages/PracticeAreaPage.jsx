@@ -290,39 +290,59 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Our {practiceArea.title} Attorneys</h3>
                 <div className="space-y-4">
                   {relatedAttorneys.map((attorney, index) => (
-                    <div key={index} className="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
-                      <button
-                        onClick={() => onNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
-                        className="text-left w-full hover:bg-gray-50 p-2 rounded transition-colors duration-200"
+                    <div key={index} className="border-b border-gray-100 pb-4 last:border-b-0 last:pb-0">
+                      <a 
+                        href={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                        className="block hover:bg-gray-50 rounded-lg p-3 transition-colors duration-200 -m-3"
                       >
-                        <div className="flex items-center space-x-3">
-                          {attorney.image && (
-                            <img 
-                              src={attorney.image} 
-                              alt={attorney.name}
-                              className="w-12 h-12 rounded-full object-cover"
-                              style={{objectPosition: '50% 35%'}}
-                            />
-                          )}
-                          <div>
-                            <div className="font-medium text-gray-900">{attorney.name}</div>
-                            <div className="text-sm text-gray-600">{attorney.position}</div>
-                            {attorney.phone && (
-                              <div className="text-xs text-gray-500">{attorney.phone}</div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0">
+                            {attorney.image && (attorney.image.startsWith('data:') || attorney.image.startsWith('http')) ? (
+                              <img 
+                                src={attorney.image} 
+                                alt={`${attorney.name} - ${attorney.position}`}
+                                className="w-16 h-16 rounded-lg object-cover"
+                                style={{objectPosition: '50% 30%'}}
+                              />
+                            ) : (
+                              <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
+                                <User className="h-8 w-8 text-gray-400" />
+                              </div>
                             )}
                           </div>
+                          <div className="flex-1 min-w-0">
+                            <h4 className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                              {attorney.name}
+                            </h4>
+                            <p className="text-sm text-gray-600 mb-2">{attorney.position}</p>
+                            {attorney.experience && (
+                              <p className="text-sm text-gray-700 line-clamp-2">
+                                {attorney.experience.substring(0, 120)}...
+                              </p>
+                            )}
+                            <div className="mt-2 text-sm text-blue-600 font-medium flex items-center">
+                              View Profile
+                              <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </div>
+                          </div>
                         </div>
-                      </button>
+                      </a>
                     </div>
                   ))}
                 </div>
-                <Button 
-                  onClick={() => onNavigate('attorneys')}
-                  variant="outline"
-                  className="w-full mt-4"
-                >
-                  View All Attorneys
-                </Button>
+                <div className="mt-6 pt-4 border-t border-gray-200">
+                  <a 
+                    href="/attorneys"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
+                  >
+                    View All Attorneys
+                    <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             )}
           </div>
