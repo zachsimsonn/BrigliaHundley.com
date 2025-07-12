@@ -27,6 +27,7 @@ import PracticeAreasPage from "./components/pages/PracticeAreasPage";
 import PracticeAreaPage from "./components/pages/PracticeAreaPage";
 import AttorneyProfilePage from "./components/pages/AttorneyProfilePage";
 import BlogPostPage from "./components/pages/BlogPostPage";
+import LocationPracticeAreaPage from "./components/pages/LocationPracticeAreaPage";
 import { Toaster } from "./components/ui/toaster";
 import Hero from "./components/Hero";
 import ServiceAreas from "./components/ServiceAreas";
