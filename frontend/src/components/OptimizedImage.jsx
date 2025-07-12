@@ -127,3 +127,5 @@ const OptimizedImage = ({
     </div>
   );
 };
+
+export default OptimizedImage;
