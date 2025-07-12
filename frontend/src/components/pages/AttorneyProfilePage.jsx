@@ -7,6 +7,12 @@ import Breadcrumb from '../Breadcrumb';
 
 const AttorneyProfilePage = ({ data, onNavigate }) => {
   const { name } = useParams();
+  
+  // Debug: Check what data we have
+  console.log('Attorney profile data:', data?.attorneys?.length ? `${data.attorneys.length} attorneys` : 'No attorneys');
+  console.log('Looking for attorney slug:', name);
+  console.log('Available attorney names:', data?.attorneys?.map(att => att.name));
+  
   const attorney = data.attorneys.find(att => 
     att.name.toLowerCase().replace(/\s+/g, '-') === name
   );
