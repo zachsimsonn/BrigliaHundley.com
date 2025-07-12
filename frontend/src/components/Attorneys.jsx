@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Star, Award, MapPin } from 'lucide-react';
 
 const Attorneys = ({ data, onNavigate }) => {
