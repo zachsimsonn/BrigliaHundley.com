@@ -137,7 +137,6 @@ const VideoHero = ({ data, editableContent }) => {
                   <div className="border-t border-white/30 pt-8">
                     <div className="grid grid-cols-2 gap-6 text-center">
                       <div>
-                        <div className="text-3xl font-black text-yellow-300">14+</div>
                         <div className="text-base text-gray-200 font-medium">Attorneys</div>
                       </div>
                       <div>
