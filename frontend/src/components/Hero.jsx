@@ -110,7 +110,6 @@ const Hero = ({ data, editableContent }) => {
                     <Shield className="h-8 w-8 text-white" />
                     <div>
                       <h3 className="text-xl font-semibold text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>Trusted Legal Experts</h3>
-                      <p className="text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>14 attorneys</p>
                     </div>
                   </div>
                   
