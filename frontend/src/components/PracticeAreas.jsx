@@ -29,9 +29,10 @@ const PracticeAreas = ({ data, onNavigate }) => {
         {/* Practice Areas Grid */}
         <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
           {data.practiceAreas.map((area, index) => (
-            <div 
+            <a 
               key={index} 
-              className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+              className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 block"
             >
               <div className="flex items-center space-x-3 mb-4">
                 <div className="p-2 bg-gray-50 rounded-full text-gray-900 group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
@@ -46,15 +47,11 @@ const PracticeAreas = ({ data, onNavigate }) => {
                 {area.description}
               </p>
               
-              <Button 
-                variant="ghost" 
-                className="group-hover:bg-gray-900 group-hover:text-white transition-all duration-300 p-0"
-                onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-              >
+              <div className="group text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium">
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
-            </div>
+              </div>
+            </a>
           ))}
         </div>
 
