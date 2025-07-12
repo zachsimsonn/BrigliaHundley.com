@@ -202,22 +202,6 @@ const BlogPostPage = ({ data, onNavigate }) => {
                     </Link>
                   ) : null;
                 })()}
-                
-                {/* General Contact Link */}
-                <Link 
-                  to="/contact"
-                  className="flex items-start space-x-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200"
-                >
-                  <Calendar className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200">
-                      Free Consultation
-                    </h4>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Discuss your case with our experienced attorneys
-                    </p>
-                  </div>
-                </Link>
               </div>
             </div>
 
