@@ -433,7 +433,10 @@ const LocationPracticeAreaPage = () => {
             {/* Why Choose Us Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Why Choose Briglia Hundley for {pageData.practiceArea.name} in {pageData.location.displayName}?
+                {pageData.pageType === 'best' ? 
+                  `Why We're the Best ${pageData.practiceArea.displayName}s in ${pageData.location.displayName}` :
+                  `Why Choose Briglia Hundley for ${pageData.practiceArea.name} in ${pageData.location.displayName}?`
+                }
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="mb-6">
@@ -450,6 +453,40 @@ const LocationPracticeAreaPage = () => {
                   {pageData.practiceArea.consequences} That's why it's crucial to have experienced legal counsel 
                   who understands both the law and the local legal landscape.
                 </p>
+                <p className="mb-6">
+                  {pageData.location.keyStats}. Our commitment to excellence has earned us recognition as 
+                  one of the premier law firms in {pageData.location.displayName}.
+                </p>
+              </div>
+            </section>
+
+            {/* Types of Cases Section - Inspired by May Law */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Types of {pageData.practiceArea.name} Cases We Handle in {pageData.location.displayName}
+              </h2>
+              <div className="prose prose-lg max-w-none mb-6">
+                <p>
+                  Whether you have been charged with a misdemeanor or felony, involved in a family dispute, 
+                  or injured in an accident, our {pageData.practiceArea.name.toLowerCase()} attorneys understand 
+                  that legal issues can have a negative and lasting impact on your life and your family. 
+                  At Briglia Hundley, we are well-versed in every aspect of {pageData.practiceArea.name.toLowerCase()} 
+                  and have expertise in representing clients throughout {pageData.location.displayName}.
+                </p>
+                <p>
+                  Our attorneys have successfully represented thousands of clients in {pageData.location.courtInfo.jurisdiction}, 
+                  including cases involving the following:
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                {pageData.practiceArea.services.map((service, index) => (
+                  <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <div className="flex items-center gap-3">
+                      <Scale className="text-blue-600 flex-shrink-0" size={18} />
+                      <h3 className="font-semibold text-gray-900 text-sm">{service}</h3>
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
 
