@@ -112,24 +112,24 @@ const Blog = ({ data, onNavigate }) => {
                 </div>
               </div>
 
-              {/* Blog Content - Use flex column to distribute space */}
-              <div className="p-6 flex flex-col h-full">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-gray-700 transition-colors duration-200">
-                  {blog.title}
-                </h3>
-                
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
-                  {blog.excerpt}
-                </p>
+              {/* Blog Content */}
+              <div className="p-6 flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-gray-700 transition-colors duration-200">
+                    {blog.title}
+                  </h3>
+                  
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    {blog.excerpt}
+                  </p>
+                </div>
 
-                {/* Meta Information - Fixed to bottom */}
-                <div className="mt-auto">
+                <div>
+                  {/* Meta Information */}
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="flex items-center">
-                        <User className="h-4 w-4 mr-1" />
-                        <span>{blog.author}</span>
-                      </div>
+                    <div className="flex items-center">
+                      <User className="h-4 w-4 mr-1" />
+                      <span>{blog.author}</span>
                     </div>
                     <div className="flex items-center">
                       <Calendar className="h-4 w-4 mr-1" />
