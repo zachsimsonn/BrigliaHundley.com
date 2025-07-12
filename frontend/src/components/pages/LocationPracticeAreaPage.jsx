@@ -636,7 +636,70 @@ const LocationPracticeAreaPage = () => {
   };
 
   useEffect(() => {
-    const { location: parsedLocation, practiceArea: parsedPracticeArea } = parseURL();
+    // Simple URL parsing for our hidden SEO pages
+    const currentPath = window.location.pathname.substring(1); // Remove leading slash
+    
+    let parsedLocation = location;
+    let parsedPracticeArea = practiceArea;
+    
+    // Check if we need to parse the URL manually for hidden pages
+    if (!location || !practiceArea) {
+      // Practice area aliases
+      const practiceAreaAliases = {
+        'divorce': 'divorce',
+        'dui': 'dui-defense',
+        'child-custody': 'child-custody',
+        'traffic': 'traffic-defense',
+        'reckless-driving': 'reckless-driving',
+        'domestic-violence': 'domestic-violence',
+        'assault': 'assault',
+        'protective-order': 'protective-order',
+        'drug-crime': 'drug-crime',
+        'criminal-defense': 'criminal-defense',
+        'family-law': 'family-law',
+        'personal-injury': 'personal-injury'
+      };
+      
+      // Parse different URL patterns
+      if (currentPath.startsWith('tysons-corner-')) {
+        parsedLocation = 'tysons-corner';
+        const remaining = currentPath.replace('tysons-corner-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('fairfax-county-')) {
+        parsedLocation = 'fairfax-county';
+        const remaining = currentPath.replace('fairfax-county-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('arlington-')) {
+        parsedLocation = 'arlington';
+        const remaining = currentPath.replace('arlington-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('mclean-')) {
+        parsedLocation = 'mclean';
+        const remaining = currentPath.replace('mclean-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('vienna-')) {
+        parsedLocation = 'vienna';
+        const remaining = currentPath.replace('vienna-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('falls-church-')) {
+        parsedLocation = 'falls-church';
+        const remaining = currentPath.replace('falls-church-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('herndon-')) {
+        parsedLocation = 'herndon';
+        const remaining = currentPath.replace('herndon-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('reston-')) {
+        parsedLocation = 'reston';
+        const remaining = currentPath.replace('reston-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      } else if (currentPath.startsWith('virginia-')) {
+        parsedLocation = 'virginia';
+        const remaining = currentPath.replace('virginia-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '').replace('-law-firm', '');
+        parsedPracticeArea = practiceAreaAliases[remaining] || remaining;
+      }
+    }
+    
     const locationInfo = locationData[parsedLocation];
     const practiceInfo = practiceAreaData[parsedPracticeArea];
 
