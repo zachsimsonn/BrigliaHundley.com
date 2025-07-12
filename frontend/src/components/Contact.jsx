@@ -7,6 +7,7 @@ import { Phone, Mail, MapPin, Clock, Send, Download } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
 
 const Contact = ({ data, editableContent }) => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,6 +17,25 @@ const Contact = ({ data, editableContent }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+
+  // Handle consultation auto-population and scroll
+  useEffect(() => {
+    if (location.state?.consultation) {
+      // Auto-populate the message field
+      setFormData(prev => ({
+        ...prev,
+        message: location.state.message || "I would like to schedule a free consultation to discuss my legal needs."
+      }));
+      
+      // Scroll to the form after a short delay
+      setTimeout(() => {
+        const formElement = document.querySelector('#consultation-form');
+        if (formElement) {
+          formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, [location.state]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
