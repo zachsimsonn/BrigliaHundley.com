@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import SEO from '../SEO';
 import OptimizedImage from '../OptimizedImage';
 import { siteData } from '../../data/mockData';
-import { MapPin, Phone, Calendar, Star, Award, Users, Scale, Clock, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Calendar, Star, Award, Users, Scale, Clock, CheckCircle, Shield, Briefcase } from 'lucide-react';
 
 const LocationPracticeAreaPage = () => {
   const { location, practiceArea } = useParams();
