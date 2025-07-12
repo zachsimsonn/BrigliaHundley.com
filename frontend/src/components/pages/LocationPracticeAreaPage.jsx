@@ -9,6 +9,80 @@ const LocationPracticeAreaPage = () => {
   const { location, practiceArea } = useParams();
   const [pageData, setPageData] = useState(null);
 
+  // Function to parse URL and extract location and practice area
+  const parseURL = () => {
+    const currentPath = window.location.pathname;
+    
+    // Remove leading slash
+    const pathParts = currentPath.substring(1);
+    
+    // Handle different URL patterns
+    if (pathParts.includes('-')) {
+      const parts = pathParts.split('-');
+      
+      // For URLs like "tysons-corner-criminal-defense-lawyer"
+      // Find the suffix (lawyer, attorney, etc.)
+      const suffix = parts[parts.length - 1];
+      
+      if (['lawyer', 'attorney', 'attorneys'].includes(suffix)) {
+        // Remove the suffix
+        const withoutSuffix = parts.slice(0, -1);
+        
+        // Find location and practice area
+        // Try different combinations to find matches
+        for (let i = 1; i < withoutSuffix.length; i++) {
+          const locationPart = withoutSuffix.slice(0, i).join('-');
+          const practiceAreaPart = withoutSuffix.slice(i).join('-');
+          
+          if (locationData[locationPart] && practiceAreaData[practiceAreaPart]) {
+            return { location: locationPart, practiceArea: practiceAreaPart };
+          }
+        }
+        
+        // If no exact match, try known patterns
+        if (pathParts.startsWith('tysons-corner-')) {
+          const remaining = pathParts.replace('tysons-corner-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'tysons-corner', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('fairfax-county-')) {
+          const remaining = pathParts.replace('fairfax-county-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'fairfax-county', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('arlington-')) {
+          const remaining = pathParts.replace('arlington-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'arlington', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('mclean-')) {
+          const remaining = pathParts.replace('mclean-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'mclean', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('vienna-')) {
+          const remaining = pathParts.replace('vienna-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'vienna', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('falls-church-')) {
+          const remaining = pathParts.replace('falls-church-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'falls-church', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('herndon-')) {
+          const remaining = pathParts.replace('herndon-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'herndon', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('reston-')) {
+          const remaining = pathParts.replace('reston-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '');
+          return { location: 'reston', practiceArea: remaining };
+        }
+        if (pathParts.startsWith('virginia-')) {
+          const remaining = pathParts.replace('virginia-', '').replace('-lawyer', '').replace('-attorney', '').replace('-attorneys', '').replace('-law-firm', '');
+          return { location: 'virginia', practiceArea: remaining };
+        }
+      }
+    }
+    
+    // Fallback to original params if available
+    return { location, practiceArea };
+  };
+
   // Comprehensive location data covering all service areas
   const locationData = {
     'tysons-corner': {
