@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Scale, Building, Heart, Car, FileText, Home } from 'lucide-react';
 import { Button } from './ui/button';
 
