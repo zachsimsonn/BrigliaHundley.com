@@ -6,6 +6,7 @@ import { siteData } from '../../data/mockData';
 import { MapPin, Phone, Calendar, Star, Award, Users, Scale, Clock, CheckCircle, Shield, Briefcase, Send } from 'lucide-react';
 
 const LocationPracticeAreaPage = () => {
+  const navigate = useNavigate();
   const [pageData, setPageData] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -34,7 +35,7 @@ const LocationPracticeAreaPage = () => {
         currentPath === 'sitemap' ||
         currentPath === '') {
       // Redirect to home for non-hidden SEO URLs
-      window.location.href = '/';
+      navigate('/', { replace: true });
       return;
     }
     
