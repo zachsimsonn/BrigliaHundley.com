@@ -285,13 +285,18 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               </button>
             </nav>
             <div className="mt-4 space-y-2">
-              <Button 
-                variant="outline" 
-                className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
-                onClick={() => handleNavigate('contact')}
+              <Link 
+                to="/contact"
+                state={{ consultation: true, message: "I would like to schedule a free consultation to discuss my legal needs." }}
               >
-                Schedule a Free Consultation
-              </Button>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
+                >
+                  Schedule a Free Consultation
+                </Button>
+              </Link>
               <Button 
                 variant="outline" 
                 className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
