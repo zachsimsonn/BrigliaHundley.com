@@ -514,7 +514,6 @@ const LocationPracticeAreaPage = () => {
         keywords: `${practiceInfo.name.toLowerCase()} ${pageType} ${locationInfo.displayName}, ${practiceInfo.name.toLowerCase()} lawyer ${locationInfo.name}, ${locationInfo.courtInfo.jurisdiction} ${practiceInfo.name.toLowerCase()}, ${locationInfo.name} legal help, best ${locationInfo.name} ${practiceInfo.name.toLowerCase()} ${pageType}`
       });
     } else {
-      console.log('No matching data found for:', parsedLocation, parsedPracticeArea); // Debug log
       // If no valid hidden SEO page data found, redirect to home
       navigate('/', { replace: true });
       return;
