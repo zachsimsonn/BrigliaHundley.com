@@ -153,6 +153,72 @@ const BlogPostPage = ({ data, onNavigate }) => {
               </div>
             </div>
 
+            {/* Related Content Links */}
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Related Legal Services</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                {/* Practice Area Links */}
+                {data.practiceAreas.filter(area => 
+                  blog.category.toLowerCase().includes(area.title.toLowerCase().split(' ')[0]) || 
+                  blog.title.toLowerCase().includes(area.title.toLowerCase().split(' ')[0]) ||
+                  blog.content.toLowerCase().includes(area.title.toLowerCase().split(' ')[0])
+                ).slice(0, 2).map((area, index) => (
+                  <Link 
+                    key={index}
+                    to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="flex items-start space-x-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200"
+                  >
+                    <Scale className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                        {area.title} Legal Services
+                      </h4>
+                      <p className="text-sm text-gray-600 mt-1">
+                        Expert representation in {area.title.toLowerCase()} matters
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+                
+                {/* Author Link */}
+                {(() => {
+                  const author = data.attorneys.find(att => att.name === blog.author);
+                  return author ? (
+                    <Link 
+                      to={`/attorney-profile/${author.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="flex items-start space-x-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200"
+                    >
+                      <User className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                          About {author.name}
+                        </h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          {author.position} at Briglia Hundley®
+                        </p>
+                      </div>
+                    </Link>
+                  ) : null;
+                })()}
+                
+                {/* General Contact Link */}
+                <Link 
+                  to="/contact"
+                  className="flex items-start space-x-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200"
+                >
+                  <Calendar className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-medium text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                      Free Consultation
+                    </h4>
+                    <p className="text-sm text-gray-600 mt-1">
+                      Discuss your case with our experienced attorneys
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
             {/* Share Section */}
             <div className="border-t border-gray-200 pt-8 mt-12">
               <div className="flex items-center justify-between">
