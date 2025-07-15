@@ -52,8 +52,8 @@ const About = ({ data, editableContent }) => {
 
           {/* Right Content - Badges and Highlights Grid */}
           <div className="space-y-8">
-            {/* Best Law Firms and Bar Register Badges */}
-            <div className="flex justify-center space-x-6">
+            {/* Best Law Firms and Bar Register Badges - Stacked Vertically */}
+            <div className="flex flex-col items-center space-y-6">
               <img 
                 title="Best Law Firms - 2024" 
                 src="https://brigliahundley.com/wp-content/uploads/briglia-hundley-best-lawyers-badge-2025-400.png" 
