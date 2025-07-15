@@ -46,15 +46,15 @@ const About = ({ data, editableContent }) => {
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                <h1 className="text-4xl lg:text-5xl font-bold text-white">
                   {editableContent.about.title}
                 </h1>
-                <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full"></div>
+                <div className="h-1 w-24 bg-gradient-to-r from-blue-300 to-blue-100 rounded-full"></div>
               </div>
 
               <div className="space-y-8">
                 {paragraphs.map((paragraph, index) => (
-                  <p key={index} className="text-lg text-gray-600 leading-relaxed text-left">
+                  <p key={index} className="text-lg text-white leading-relaxed text-left">
                     {paragraph}
                   </p>
                 ))}
