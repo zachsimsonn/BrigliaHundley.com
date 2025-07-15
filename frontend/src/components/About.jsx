@@ -72,28 +72,6 @@ const About = ({ data, editableContent }) => {
             ))}
           </div>
         </div>
-
-        {/* Bottom Stats */}
-        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">1993</div>
-              <div className="text-gray-600">Established</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">12</div>
-              <div className="text-gray-600">Practice Areas</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">14</div>
-              <div className="text-gray-600">Attorneys</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">30+</div>
-              <div className="text-gray-600">Years Experience</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
