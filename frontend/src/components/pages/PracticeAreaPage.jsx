@@ -113,8 +113,14 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16" style={{
+        backgroundImage: 'url(https://images.pexels.com/photos/6077797/pexels-photo-6077797.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="gdlr-page-title-overlay absolute inset-0 bg-black opacity-40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link to="/">
             <Button 
               variant="ghost"
