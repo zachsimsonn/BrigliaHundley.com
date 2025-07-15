@@ -58,7 +58,7 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
             Experienced Legal Representation Across Multiple Practice Areas
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed text-left max-w-4xl">
+          <p className="text-gray-600 text-lg leading-relaxed text-center max-w-4xl mx-auto">
             At Briglia Hundley, P.C.®, our experienced attorneys provide comprehensive legal services 
             across 12 specialized practice areas. We are committed to delivering exceptional results 
             for our clients throughout Northern Virginia, Washington D.C., and Maryland.
