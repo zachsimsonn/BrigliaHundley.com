@@ -50,26 +50,42 @@ const About = ({ data, editableContent }) => {
             </div>
           </div>
 
-          {/* Right Content - Highlights Grid */}
-          <div className="grid grid-cols-2 gap-6">
-            {highlights.map((highlight, index) => (
-              <div 
-                key={index} 
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-              >
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="p-3 bg-blue-50 rounded-full">
-                    {highlight.icon}
+          {/* Right Content - Badge and Highlights Grid */}
+          <div className="space-y-8">
+            {/* Best Law Firms Badge */}
+            <div className="flex justify-center">
+              <img 
+                title="Best Law Firms - 2024" 
+                src="https://brigliahundley.com/wp-content/uploads/briglia-hundley-best-lawyers-badge-2025-400.png" 
+                alt="Best Law Firms - 2024 Badge" 
+                width="200" 
+                height="200" 
+                style={{opacity: 1}}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+
+            {/* Highlights Grid */}
+            <div className="grid grid-cols-2 gap-6">
+              {highlights.map((highlight, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="p-3 bg-blue-50 rounded-full">
+                      {highlight.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {highlight.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {highlight.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {highlight.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {highlight.description}
-                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
