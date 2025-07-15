@@ -6,10 +6,10 @@ const Hero = ({ data, editableContent }) => {
   return (
     <section className="relative text-white overflow-hidden min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full z-0">
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <iframe
           src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=480p&speed=1&controls=0&autopause=0&dnt=1"
-          className="absolute top-0 left-0 w-full h-full"
+          className="absolute"
           style={{
             width: '100vw',
             height: '100vh',
@@ -19,6 +19,9 @@ const Hero = ({ data, editableContent }) => {
             objectFit: 'cover',
             margin: 0,
             padding: 0,
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%) scale(1.2)',
           }}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
@@ -39,7 +42,7 @@ const Hero = ({ data, editableContent }) => {
       
       <div className="relative z-10 h-full flex items-center justify-center min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
         <div className="w-full" style={{ margin: 0, padding: 0 }}>
-          <div className="grid lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', width: '100%' }}>
+          <div className="grid lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
             <div className="space-y-8">
               <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
                 <Award className="h-5 w-5 text-white" />
