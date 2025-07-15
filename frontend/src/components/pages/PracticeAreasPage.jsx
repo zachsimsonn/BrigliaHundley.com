@@ -67,30 +67,29 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
         {/* Practice Areas Grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {data.practiceAreas.map((area, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              {/* Image Thumbnail */}
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={getImageForPracticeArea(area.title)} 
-                  alt={area.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="gdlr-practice-thumbnail-overlay"></div>
-                
-                {/* Title Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="flex items-center">
-                      <Scale className="h-6 w-6 text-white mr-3 flex-shrink-0" />
-                      <h3 className="text-xl font-semibold text-white drop-shadow-lg">{area.title}</h3>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-white/80" />
-                  </div>
-                </div>
-              </div>
+            <div 
+              key={index} 
+              className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300 relative"
+              style={{
+                backgroundImage: `url(${getImageForPracticeArea(area.title)})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            >
+              {/* Translucent overlay */}
+              <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
               
               {/* Content */}
-              <div className="p-6">
+              <div className="relative z-10 p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center">
+                    <Scale className="h-6 w-6 text-gray-900 mr-3 flex-shrink-0" />
+                    <h3 className="text-xl font-semibold text-gray-900 text-left">{area.title}</h3>
+                  </div>
+                  <ArrowRight className="h-5 w-5 text-gray-400" />
+                </div>
+                
                 <p className="text-gray-600 text-base leading-relaxed mb-6 text-left">
                   {area.description}
                 </p>
