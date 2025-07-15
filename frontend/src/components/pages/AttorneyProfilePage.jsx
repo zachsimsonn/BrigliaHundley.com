@@ -11,6 +11,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
   // Function to get background image based on attorney's practice areas
   const getAttorneyHeaderBackground = (attorney) => {
     const practiceAreas = attorney.practiceAreas || [];
+    const attorneyName = attorney.name || '';
     
     // All law-related backgrounds - courthouse, legal buildings, courtrooms, etc.
     if (practiceAreas.some(area => area.toLowerCase().includes('criminal'))) {
@@ -27,12 +28,25 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
       return 'url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Civil litigation - courthouse columns
     } else if (practiceAreas.some(area => area.toLowerCase().includes('employment'))) {
       return 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Employment law - law library
-    } else if (practiceAreas.some(area => area.toLowerCase().includes('estate'))) {
+    } else if (practiceAreas.some(area => area.toLowerCase().includes('estate')) || practiceAreas.some(area => area.toLowerCase().includes('eminent domain'))) {
       return 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Estate planning - law office with books
     } else if (practiceAreas.some(area => area.toLowerCase().includes('community')) || practiceAreas.some(area => area.toLowerCase().includes('association'))) {
       return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Community associations - courthouse exterior
+    } 
+    // Specific overrides for attorneys who need law-related backgrounds
+    else if (attorneyName.includes('Lauren') || attorneyName.includes('Raymond') || attorneyName.includes('Jacob') || attorneyName.includes('Hannah')) {
+      // All these attorneys practice law, so give them law-related backgrounds
+      if (attorneyName.includes('Lauren')) {
+        return 'url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Family law courtroom
+      } else if (attorneyName.includes('Raymond')) {
+        return 'url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Corporate law office
+      } else if (attorneyName.includes('Jacob')) {
+        return 'url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Litigation courthouse
+      } else if (attorneyName.includes('Hannah')) {
+        return 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Law office with books
+      }
     } else {
-      // Default background - law office/courthouse
+      // Default background - law office/courthouse for all attorneys
       return 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // General law office
     }
   };
