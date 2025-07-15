@@ -21,6 +21,55 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
+/* Briglia Hundley Banner Styles */
+.gdlr-page-title-wrapper {
+    position: relative;
+    text-align: center;
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gdlr-page-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.gdlr-page-title-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gdlr-page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .gdlr-page-title {
+        font-size: 2rem;
+    }
+}
+
 .App {
     text-align: center;
     margin: 0;
