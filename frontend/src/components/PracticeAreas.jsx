@@ -29,7 +29,7 @@ const PracticeAreas = ({ data, onNavigate }) => {
       case 'Estate Planning':
         return 'https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR-750x380.jpg';
       case 'Real Estate Law':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-real-estate-hero-25.jpg';
+        return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-real-estate.jpg';
       case 'Employment Law':
         return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25-750x380.jpg';
       case 'Municipal Law':
