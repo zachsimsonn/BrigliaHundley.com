@@ -148,7 +148,34 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                   />
                   <div className="w-full h-96 bg-gradient-to-r from-gray-700 to-gray-900 flex items-center justify-center text-white" style={{display: 'none'}}>
                     <img 
-                      src="https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg" 
+                      src={(() => {
+                        switch(practiceArea.title) {
+                          case 'Family Law':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
+                          case 'Criminal Defense':
+                            return 'https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24-750x380.jpg';
+                          case 'Business Litigation':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg';
+                          case 'Corporate Law':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg';
+                          case 'Personal Injury':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg';
+                          case 'Estate Planning':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg';
+                          case 'Real Estate Law':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-real-estate-hero-25.jpg';
+                          case 'Employment Law':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25.jpg';
+                          case 'Municipal Law':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg';
+                          case 'Appellate Litigation':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg';
+                          case 'Community Associations':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-community-associations-hero-25.jpg';
+                          default:
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
+                        }
+                      })()} 
                       alt={practiceArea.title}
                       className="w-full h-full object-cover"
                       onError={(e) => {
