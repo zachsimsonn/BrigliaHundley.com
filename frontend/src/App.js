@@ -115,14 +115,14 @@ const App = () => {
                   onNavigate={handleNavigate}
                   currentPage="home"
                 />
+                <SEO 
+                  title="Home"
+                  description="Tier 1 ranked law firm in Tysons Corner, VA. Expert attorneys in criminal defense, civil litigation, corporate law since 1993."
+                  keywords="law firm, attorneys, lawyers, Tysons Corner, Virginia, criminal defense, civil litigation, corporate law, family law, personal injury, real estate, estate planning"
+                  canonical="https://brigliahundley.com/"
+                />
+                <Hero data={data} editableContent={editableData} />
                 <div className="min-h-screen bg-white">
-                  <SEO 
-                    title="Home"
-                    description="Tier 1 ranked law firm in Tysons Corner, VA. Expert attorneys in criminal defense, civil litigation, corporate law since 1993."
-                    keywords="law firm, attorneys, lawyers, Tysons Corner, Virginia, criminal defense, civil litigation, corporate law, family law, personal injury, real estate, estate planning"
-                    canonical="https://brigliahundley.com/"
-                  />
-                  <Hero data={data} editableContent={editableData} />
                   <About data={data} editableContent={editableData} />
                   <ServiceAreas data={data} />
                   <PracticeAreas data={data} onNavigate={handleNavigate} />
