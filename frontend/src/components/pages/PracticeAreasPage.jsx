@@ -65,64 +65,96 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
         </div>
 
         {/* Practice Areas Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {data.practiceAreas.map((area, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300 relative"
-              style={{
-                backgroundImage: `url(${getImageForPracticeArea(area.title)})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              {/* Less translucent overlay */}
-              <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center">
-                    <Scale className="h-6 w-6 text-gray-900 mr-3 flex-shrink-0" />
-                    <h3 className="text-xl font-semibold text-gray-900 text-left">{area.title}</h3>
-                  </div>
-                  <ArrowRight className="h-5 w-5 text-gray-400" />
+            <div key={index} className="gdlr-item gdlr-modern-practice">
+              <div className="gdlr-ux gdlr-modern-practice-ux">
+                <div className="gdlr-practice-thumbnail group cursor-pointer" onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}>
+                  <img 
+                    src={getImageForPracticeArea(area.title)} 
+                    alt={area.title}
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="gdlr-practice-thumbnail-overlay"></div>
+                  <h3 className="practice-title absolute bottom-0 left-0 right-0 p-6 text-white text-xl font-bold z-10 drop-shadow-lg">
+                    <a href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-white hover:text-gray-200 transition-colors duration-200">
+                      {area.title}
+                    </a>
+                  </h3>
                 </div>
-                
-                <p className="text-gray-600 text-base leading-relaxed mb-6 text-left">
-                  {area.description}
-                </p>
-
-                {/* Attorneys for this practice area */}
-                {area.attorneys && area.attorneys.length > 0 && (
-                  <div className="mb-4">
-                    <div className="text-sm text-gray-500 mb-2 text-left">Our {area.title} Attorneys:</div>
-                    <div className="flex flex-wrap gap-2">
-                      {area.attorneys.slice(0, 3).map((attorneyName, attorneyIndex) => (
-                        <span key={attorneyIndex} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-                          {attorneyName}
-                        </span>
-                      ))}
-                      {area.attorneys.length > 3 && (
-                        <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-                          +{area.attorneys.length - 3} more
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                <Button 
-                  onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                  variant="outline"
-                  className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200 text-left"
-                >
-                  Learn More About {area.title}
-                </Button>
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* Additional Info Section */}
+        <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Why Choose Briglia Hundley?
+            </h2>
+            <p className="text-gray-600 text-lg max-w-4xl mx-auto">
+              Our experienced attorneys provide personalized attention and strategic legal solutions 
+              tailored to your specific needs. Contact us today to discuss your case.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Practice Area Attorneys</h3>
+              <div className="space-y-4">
+                {data.practiceAreas.slice(0, 6).map((area, index) => (
+                  <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                    <div>
+                      <h4 className="font-semibold text-gray-900">{area.title}</h4>
+                      {area.attorneys && area.attorneys.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {area.attorneys.slice(0, 2).map((attorneyName, attorneyIndex) => (
+                            <span key={attorneyIndex} className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">
+                              {attorneyName}
+                            </span>
+                          ))}
+                          {area.attorneys.length > 2 && (
+                            <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">
+                              +{area.attorneys.length - 2} more
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-gray-400" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Our Commitment</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <Scale className="h-6 w-6 text-gray-900 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Expert Legal Representation</h4>
+                    <p className="text-gray-600 text-sm">Experienced attorneys with proven track records in their respective practice areas.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Users className="h-6 w-6 text-gray-900 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Personalized Service</h4>
+                    <p className="text-gray-600 text-sm">Tailored legal strategies designed specifically for your unique situation.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Award className="h-6 w-6 text-gray-900 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Award-Winning Firm</h4>
+                    <p className="text-gray-600 text-sm">Recognized by Best Lawyers® and other prestigious legal organizations.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Contact CTA */}
