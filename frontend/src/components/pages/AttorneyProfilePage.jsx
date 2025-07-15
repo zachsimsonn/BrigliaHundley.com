@@ -131,17 +131,40 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
 
       {/* Attorney Banner */}
       <div className="gdlr-page-title-wrapper" style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxsYXclMjBvZmZpY2V8ZW58MHx8fHwxNzUyNTk5NjE4fDA&ixlib=rb-4.1.0&q=85)',
+        backgroundImage: getAttorneyHeaderBackground(attorney),
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         padding: '100px 0',
         position: 'relative'
       }}>
-        <div className="gdlr-page-title-overlay"></div>
-        <div className="gdlr-page-title-container container">
-          <h1 className="gdlr-page-title">{attorney.name}</h1>
-          <p className="text-xl lg:text-2xl text-gray-200 font-medium">
+        <div className="gdlr-page-title-overlay" style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
+          zIndex: 1
+        }}></div>
+        <div className="gdlr-page-title-container container" style={{
+          position: 'relative',
+          zIndex: 2,
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 1rem',
+          textAlign: 'center'
+        }}>
+          <h1 className="gdlr-page-title" style={{
+            fontSize: '3rem',
+            fontWeight: 'bold',
+            color: 'white',
+            marginBottom: '0.5rem',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
+          }}>{attorney.name}</h1>
+          <p className="text-xl lg:text-2xl text-gray-200 font-medium" style={{
+            textShadow: '1px 1px 2px rgba(0,0,0,0.5)'
+          }}>
             {attorney.position}
           </p>
         </div>
