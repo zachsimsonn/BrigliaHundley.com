@@ -71,28 +71,16 @@ const Hero = ({ data, editableContent }) => {
                 </a>
               </div>
 
-              {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button 
-                  size="lg" 
-                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
-                  onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-                >
-                  {editableContent.hero.buttonText}
+                <button className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                  Schedule a Free Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                
-                <Button 
-                  size="lg" 
-                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
-                  onClick={() => window.location.href = `tel:${data.business.phone}`}
-                >
-                  {editableContent.hero.buttonPhone}
-                </Button>
+                </button>
+                <button className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                  Call Now
+                </button>
               </div>
             </div>
-
-            {/* Right Content - Trust Indicators */}
             <div className="hidden lg:block">
               <div className="relative">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
@@ -100,24 +88,22 @@ const Hero = ({ data, editableContent }) => {
                     <div className="flex items-center space-x-3">
                       <Shield className="h-8 w-8 text-white" />
                       <div>
-                        <h3 className="text-2xl font-semibold text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>Trusted Legal Experts</h3>
+                        <h3 className="text-2xl font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 3px' }}>Trusted Legal Experts</h3>
                       </div>
                     </div>
-                    
                     <div className="border-l-4 border-white pl-6">
-                      <blockquote className="text-xl italic text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
+                      <blockquote className="text-xl italic text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
                         "Delivering superior client service and innovative legal strategies since 1993"
                       </blockquote>
                     </div>
-                    
                     <div className="grid grid-cols-2 gap-4 pt-4">
                       <div className="text-center">
-                        <div className="text-3xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>12</div>
-                        <div className="text-base text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Practice Areas</div>
+                        <div className="text-3xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>12</div>
+                        <div className="text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 2px' }}>Practice Areas</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-3xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>14</div>
-                        <div className="text-base text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>Attorneys</div>
+                        <div className="text-3xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>14</div>
+                        <div className="text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 2px' }}>Attorneys</div>
                       </div>
                     </div>
                   </div>
