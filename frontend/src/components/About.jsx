@@ -31,14 +31,39 @@ const About = ({ data, editableContent }) => {
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                {editableContent.about.title}
-              </h1>
-              <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full"></div>
+            <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
+              {/* Title and Text */}
+              <div className="flex-1 space-y-4">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                  {editableContent.about.title}
+                </h1>
+                <div className="h-1 w-24 bg-gradient-to-r from-blue-900 to-blue-700 rounded-full"></div>
+              </div>
+              
+              {/* Badges */}
+              <div className="flex flex-col items-center space-y-4 lg:space-y-6 mt-8 lg:mt-0">
+                <img 
+                  title="Best Law Firms - 2024" 
+                  src="https://brigliahundley.com/wp-content/uploads/briglia-hundley-best-lawyers-badge-2025-400.png" 
+                  alt="Best Law Firms - 2024 Badge" 
+                  width="150" 
+                  height="150" 
+                  style={{opacity: 1}}
+                  className="rounded-lg shadow-lg"
+                />
+                <img 
+                  title="Bar Register - 2018" 
+                  src="https://brigliahundley.com/wp-content/uploads/Bar-Register-2018.jpg" 
+                  alt="Bar Register - 2018 Badge" 
+                  width="150" 
+                  height="150" 
+                  style={{opacity: 1}}
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
             </div>
 
             <div className="space-y-8">
@@ -50,51 +75,26 @@ const About = ({ data, editableContent }) => {
             </div>
           </div>
 
-          {/* Right Content - Badges and Highlights Grid */}
-          <div className="space-y-8">
-            {/* Best Law Firms and Bar Register Badges - Stacked Vertically */}
-            <div className="flex flex-col items-center space-y-6">
-              <img 
-                title="Best Law Firms - 2024" 
-                src="https://brigliahundley.com/wp-content/uploads/briglia-hundley-best-lawyers-badge-2025-400.png" 
-                alt="Best Law Firms - 2024 Badge" 
-                width="200" 
-                height="200" 
-                style={{opacity: 1}}
-                className="rounded-lg shadow-lg"
-              />
-              <img 
-                title="Bar Register - 2018" 
-                src="https://brigliahundley.com/wp-content/uploads/Bar-Register-2018.jpg" 
-                alt="Bar Register - 2018 Badge" 
-                width="200" 
-                height="200" 
-                style={{opacity: 1}}
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-
-            {/* Highlights Grid */}
-            <div className="grid grid-cols-2 gap-6">
-              {highlights.map((highlight, index) => (
-                <div 
-                  key={index} 
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="p-3 bg-blue-50 rounded-full">
-                      {highlight.icon}
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900">
-                      {highlight.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {highlight.description}
-                    </p>
+          {/* Right Content - Highlights Grid */}
+          <div className="grid grid-cols-2 gap-6">
+            {highlights.map((highlight, index) => (
+              <div 
+                key={index} 
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="p-3 bg-blue-50 rounded-full">
+                    {highlight.icon}
                   </div>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {highlight.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {highlight.description}
+                  </p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
