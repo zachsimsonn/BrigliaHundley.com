@@ -6,7 +6,7 @@ const Hero = ({ data, editableContent }) => {
   return (
     <section className="relative bg-white text-white overflow-hidden min-h-screen">
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full z-0" style={{ top: '-80px', height: 'calc(100% + 80px)' }}>
+      <div className="absolute inset-0 w-full h-full z-0">
         <iframe
           src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=480p&speed=1&controls=0&autopause=0&dnt=1"
           className="absolute top-0 left-0 w-full h-full"
@@ -38,38 +38,28 @@ const Hero = ({ data, editableContent }) => {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
             <div className="space-y-8">
-              {/* Badge */}
               <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
                 <Award className="h-5 w-5 text-white" />
-                <span className="text-base font-semibold text-white drop-shadow-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>Tier 1 Ranked Law Firm</span>
+                <span className="text-base font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 2px' }}>Tier 1 Ranked Law Firm</span>
               </div>
-
-              {/* Main Heading */}
-              <h1 className="text-4xl lg:text-5xl font-bold leading-none text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)', lineHeight: '1.1' }}>
-                {editableContent.hero.title}
+              <h1 className="text-4xl lg:text-5xl font-bold leading-none text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px', lineHeight: '1.1' }}>
+                Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.
               </h1>
-
-              {/* Subtitle */}
-              <p className="text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
-                {editableContent.hero.subtitle}
+              <p className="text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
+                Our seasoned attorneys are committed to providing superior service on every matter entrusted to our care.
               </p>
-
-              {/* Stats */}
               <div className="grid grid-cols-2 gap-8 py-6">
                 <div className="text-center lg:text-left">
-                  <div className="text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>30+</div>
-                  <div className="text-base text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>Years of Experience</div>
+                  <div className="text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>30+</div>
+                  <div className="text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>Years of Experience</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>7</div>
-                  <div className="text-base text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>Best Lawyers® 2025</div>
+                  <div className="text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>7</div>
+                  <div className="text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>Best Lawyers® 2025</div>
                 </div>
               </div>
-
-              {/* Location */}
-              <div className="flex items-center space-x-2 text-base text-white drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
+              <div className="flex items-center space-x-2 text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
                 <MapPin className="h-5 w-5" />
                 <a 
                   href="https://maps.app.goo.gl/Dqo1syhK2exWUfBM6"
@@ -77,7 +67,7 @@ const Hero = ({ data, editableContent }) => {
                   rel="noopener noreferrer"
                   className="hover:text-blue-200 transition-colors duration-200"
                 >
-                  {data.business.location}
+                  Tysons Corner, Fairfax County, Virginia
                 </a>
               </div>
 
