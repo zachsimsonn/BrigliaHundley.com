@@ -171,5 +171,6 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
     </div>
   );
 };
+};
 
 export default PracticeAreasPage;
