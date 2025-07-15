@@ -4,19 +4,21 @@ import { ArrowRight, Shield, Award, MapPin } from 'lucide-react';
 
 const Hero = ({ data, editableContent }) => {
   return (
-    <section className="relative bg-white text-white overflow-hidden min-h-screen">
+    <section className="relative text-white overflow-hidden min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full z-0">
         <iframe
           src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=480p&speed=1&controls=0&autopause=0&dnt=1"
           className="absolute top-0 left-0 w-full h-full"
           style={{
-            width: '100%',
-            height: '100%',
-            minWidth: '100%',
-            minHeight: '100%',
+            width: '100vw',
+            height: '100vh',
+            minWidth: '100vw',
+            minHeight: '100vh',
             border: 'none',
             objectFit: 'cover',
+            margin: 0,
+            padding: 0,
           }}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
@@ -27,7 +29,7 @@ const Hero = ({ data, editableContent }) => {
         />
         
         {/* Very light overlay for minimal darkening */}
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 bg-black/10" style={{ margin: 0, padding: 0 }}></div>
       </div>
 
       {/* Background Pattern */}
@@ -35,8 +37,8 @@ const Hero = ({ data, editableContent }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
       </div>
       
-      <div className="relative z-10 h-full flex items-center justify-center min-h-screen">
-        <div className="w-full">
+      <div className="relative z-10 h-full flex items-center justify-center min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
+        <div className="w-full" style={{ margin: 0, padding: 0 }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
             <div className="space-y-8">
               <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
