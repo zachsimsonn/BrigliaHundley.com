@@ -85,9 +85,7 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
               </div>
             </div>
           ))}
-        </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
+        </div>>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Practice Area Attorneys</h3>
               <div className="space-y-4">
