@@ -66,25 +66,36 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
         </div>
 
         {/* Practice Areas Grid */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
           {data.practiceAreas.map((area, index) => (
-            <div key={index} className="gdlr-item gdlr-modern-practice">
-              <div className="gdlr-ux gdlr-modern-practice-ux">
-                <div className="gdlr-practice-thumbnail group cursor-pointer" onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}>
-                  <img 
-                    src={getImageForPracticeArea(area.title)} 
-                    alt={area.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="gdlr-practice-thumbnail-overlay"></div>
-                  <h3 className="practice-title absolute bottom-0 left-0 right-0 p-6 text-white text-xl font-bold z-10 drop-shadow-lg">
-                    <a href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-white hover:text-gray-200 transition-colors duration-200">
-                      {area.title}
-                    </a>
+            <Link
+              key={index}
+              to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+              className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 block overflow-hidden"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={getImageForPracticeArea(area.title)} 
+                  alt={area.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="gdlr-practice-thumbnail-overlay absolute inset-0 bg-black opacity-40"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">
+                    {area.title}
                   </h3>
                 </div>
               </div>
-            </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                  {area.description}
+                </p>
+                <div className="group text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
