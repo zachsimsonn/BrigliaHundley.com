@@ -157,7 +157,7 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                           case 'Business Litigation':
                             return 'https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg';
                           case 'Corporate Law':
-                            return 'https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg';
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25-750x380.jpg';
                           case 'Personal Injury':
                             return 'https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-a.jpg';
                           case 'Estate Planning':
