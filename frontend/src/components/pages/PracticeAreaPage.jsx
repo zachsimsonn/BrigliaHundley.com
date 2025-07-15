@@ -113,30 +113,16 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Header */}
-      <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16" style={{
+      <div className="gdlr-page-title-wrapper" style={{
         backgroundImage: 'url(https://images.pexels.com/photos/6077797/pexels-photo-6077797.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}>
-        <div className="gdlr-page-title-overlay absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/">
-            <Button 
-              variant="ghost"
-              className="text-white hover:bg-white/10 mb-6"
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-          
-          <div className="flex items-center mb-6">
-            <Scale className="h-12 w-12 text-gray-300 mr-4" />
-            <h1 className="text-4xl lg:text-5xl font-bold">{practiceArea.title}</h1>
-          </div>
-          
-          <p className="text-xl text-gray-300 max-w-3xl">
+        <div className="gdlr-page-title-overlay"></div>
+        <div className="gdlr-page-title-container container">
+          <h1 className="gdlr-page-title">{practiceArea.title}</h1>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             {practiceArea.description}
           </p>
         </div>
