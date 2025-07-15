@@ -6,7 +6,7 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16" style={{
+      <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16" style={{
         backgroundImage: 'url(https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjb3VydGhvdXNlfGVufDB8fHx8MTc1MjU5OTYyNXww&ixlib=rb-4.1.0&q=85)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
