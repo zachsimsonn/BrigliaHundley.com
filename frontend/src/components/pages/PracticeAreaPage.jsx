@@ -148,7 +148,28 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                   />
                   <div className="w-full h-96 bg-gradient-to-r from-gray-700 to-gray-900 flex items-center justify-center text-white" style={{display: 'none'}}>
                     <div className="text-center">
-                      <Scale className="h-16 w-16 mx-auto mb-4 text-gray-300" />
+                      <div className="flex items-center justify-center mb-4">
+                        <div className="grid grid-cols-3 gap-2">
+                          <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
+                            <User className="h-6 w-6 text-white" />
+                          </div>
+                          <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
+                            <User className="h-6 w-6 text-white" />
+                          </div>
+                          <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
+                            <User className="h-6 w-6 text-white" />
+                          </div>
+                          <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
+                            <User className="h-6 w-6 text-white" />
+                          </div>
+                          <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
+                            <User className="h-6 w-6 text-white" />
+                          </div>
+                          <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
+                            <User className="h-6 w-6 text-white" />
+                          </div>
+                        </div>
+                      </div>
                       <h3 className="text-2xl font-bold">{practiceArea.title}</h3>
                       <p className="text-gray-300 mt-2">Professional Legal Services</p>
                     </div>
