@@ -86,18 +86,6 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
             </div>
           ))}
         </div>
-        
-        {/* Additional Info Section */}
-        <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Briglia Hundley?
-            </h2>
-            <p className="text-gray-600 text-lg max-w-4xl mx-auto">
-              Our experienced attorneys provide personalized attention and strategic legal solutions 
-              tailored to your specific needs. Contact us today to discuss your case.
-            </p>
-          </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
