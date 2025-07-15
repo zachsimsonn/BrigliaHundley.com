@@ -26,10 +26,11 @@ h1, h2, h3 {
     position: relative;
     text-align: center;
     color: white;
-    min-height: 400px;
+    min-height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 60px 0;
 }
 
 .gdlr-page-title-overlay {
@@ -51,7 +52,7 @@ h1, h2, h3 {
 }
 
 .gdlr-page-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: white;
     margin-bottom: 0.5rem;
@@ -65,8 +66,12 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+    .gdlr-page-title-wrapper {
+        min-height: 200px;
+        padding: 40px 0;
+    }
     .gdlr-page-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
