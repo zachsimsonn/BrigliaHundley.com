@@ -12,27 +12,27 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
   const getAttorneyHeaderBackground = (attorney) => {
     const practiceAreas = attorney.practiceAreas || [];
     
-    // Check for specific practice areas and return appropriate background
+    // All law-related backgrounds - courthouse, legal buildings, courtrooms, etc.
     if (practiceAreas.some(area => area.toLowerCase().includes('criminal'))) {
-      return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Criminal defense - courthouse/gavel
+      return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Criminal defense - courthouse steps
     } else if (practiceAreas.some(area => area.toLowerCase().includes('family'))) {
-      return 'url(https://images.unsplash.com/photo-1450101215322-bf5cd27b63aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Family law - scales of justice
+      return 'url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Family law - courtroom interior
     } else if (practiceAreas.some(area => area.toLowerCase().includes('real estate')) || practiceAreas.some(area => area.toLowerCase().includes('corporate'))) {
-      return 'url(https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Real estate/corporate - business buildings
+      return 'url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Real estate/corporate - law firm office
     } else if (practiceAreas.some(area => area.toLowerCase().includes('personal injury'))) {
-      return 'url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Personal injury - medical/hospital
+      return 'url(https://images.unsplash.com/photo-1450101215322-bf5cd27b63aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Personal injury - scales of justice
     } else if (practiceAreas.some(area => area.toLowerCase().includes('municipal')) || practiceAreas.some(area => area.toLowerCase().includes('government'))) {
-      return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Municipal - government building
+      return 'url(https://images.unsplash.com/photo-1541872703-74c5e44368f9?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Municipal - government courthouse
     } else if (practiceAreas.some(area => area.toLowerCase().includes('litigation')) || practiceAreas.some(area => area.toLowerCase().includes('civil'))) {
-      return 'url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Civil litigation - courtroom
+      return 'url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Civil litigation - courthouse columns
     } else if (practiceAreas.some(area => area.toLowerCase().includes('employment'))) {
-      return 'url(https://images.unsplash.com/photo-1450101215322-bf5cd27b63aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Employment law - office environment
+      return 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Employment law - law library
     } else if (practiceAreas.some(area => area.toLowerCase().includes('estate'))) {
-      return 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Estate planning - law office
+      return 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Estate planning - law office with books
     } else if (practiceAreas.some(area => area.toLowerCase().includes('community')) || practiceAreas.some(area => area.toLowerCase().includes('association'))) {
-      return 'url(https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Community associations - residential buildings
+      return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Community associations - courthouse exterior
     } else {
-      // Default background for attorneys without specific practice areas
+      // Default background - law office/courthouse
       return 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // General law office
     }
   };
