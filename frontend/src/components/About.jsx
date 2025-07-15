@@ -30,12 +30,12 @@ const About = ({ data, editableContent }) => {
 
   return (
     <section id="about" className="py-20 bg-gray-50 relative">
-      {/* Background Image with 90% opacity */}
+      {/* Background Image with 100% opacity */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('https://brigliahundley.com/wp-content/uploads/courthouse-header-500h.jpg')",
-          opacity: 0.9
+          opacity: 1.0
         }}
       ></div>
       
