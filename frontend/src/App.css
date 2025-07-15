@@ -43,19 +43,69 @@ h1, h2, h3 {
     z-index: 1;
 }
 
+/* Briglia Hundley Practice Areas Styles */
+.gdlr-practice-thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gdlr-practice-thumbnail img {
+    transition: transform 0.3s ease;
+}
+
+.gdlr-practice-thumbnail:hover img {
+    transform: scale(1.05);
+}
+
 .gdlr-practice-thumbnail-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
     z-index: 1;
     transition: opacity 0.3s ease;
 }
 
-.gdlr-practice-thumbnail-overlay:hover {
-    opacity: 0.6;
+.gdlr-practice-thumbnail:hover .gdlr-practice-thumbnail-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.practice-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.practice-title a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.practice-title a:hover {
+    color: #e5e7eb;
+}
+
+.gdlr-item.gdlr-modern-practice {
+    margin-bottom: 2rem;
+}
+
+.gdlr-modern-practice-ux {
+    opacity: 1;
+    padding-top: 0px;
+    margin-bottom: 0px;
 }
 
 .gdlr-page-title-container {
