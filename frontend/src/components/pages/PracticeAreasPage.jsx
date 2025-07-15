@@ -3,6 +3,36 @@ import { Button } from '../ui/button';
 import { ArrowLeft, Scale, ArrowRight } from 'lucide-react';
 
 const PracticeAreasPage = ({ data, onNavigate }) => {
+  // Function to get the correct image for each practice area
+  const getImageForPracticeArea = (title) => {
+    switch(title) {
+      case 'Family Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
+      case 'Criminal Defense':
+        return 'https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24-750x380.jpg';
+      case 'Business Litigation':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg';
+      case 'Corporate Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25-750x380.jpg';
+      case 'Personal Injury':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-a.jpg';
+      case 'Estate Planning':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR-750x380.jpg';
+      case 'Real Estate Law':
+        return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-real-estate.jpg';
+      case 'Employment Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25-750x380.jpg';
+      case 'Municipal Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-fairfax-municipal-hero-24-750x380.jpg';
+      case 'Appellate Litigation':
+        return 'https://brigliahundley.com/wp-content/uploads/FA1-Appellate-Litigation-drawing-730x380.jpg';
+      case 'Community Associations':
+        return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-community-assoc-hero-750x380.jpg';
+      default:
+        return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -37,45 +67,61 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
         {/* Practice Areas Grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {data.practiceAreas.map((area, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center">
-                  <Scale className="h-6 w-6 text-gray-900 mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900 text-left">{area.title}</h3>
-                </div>
-                <ArrowRight className="h-5 w-5 text-gray-400" />
-              </div>
-              
-              <p className="text-gray-600 text-base leading-relaxed mb-6 text-left">
-                {area.description}
-              </p>
-
-              {/* Attorneys for this practice area */}
-              {area.attorneys && area.attorneys.length > 0 && (
-                <div className="mb-4">
-                  <div className="text-sm text-gray-500 mb-2 text-left">Our {area.title} Attorneys:</div>
-                  <div className="flex flex-wrap gap-2">
-                    {area.attorneys.slice(0, 3).map((attorneyName, attorneyIndex) => (
-                      <span key={attorneyIndex} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-                        {attorneyName}
-                      </span>
-                    ))}
-                    {area.attorneys.length > 3 && (
-                      <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-                        +{area.attorneys.length - 3} more
-                      </span>
-                    )}
+            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {/* Image Thumbnail */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={getImageForPracticeArea(area.title)} 
+                  alt={area.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="gdlr-practice-thumbnail-overlay"></div>
+                
+                {/* Title Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex items-center">
+                      <Scale className="h-6 w-6 text-white mr-3 flex-shrink-0" />
+                      <h3 className="text-xl font-semibold text-white drop-shadow-lg">{area.title}</h3>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-white/80" />
                   </div>
                 </div>
-              )}
+              </div>
+              
+              {/* Content */}
+              <div className="p-6">
+                <p className="text-gray-600 text-base leading-relaxed mb-6 text-left">
+                  {area.description}
+                </p>
 
-              <Button 
-                onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
-                variant="outline"
-                className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200 text-left"
-              >
-                Learn More About {area.title}
-              </Button>
+                {/* Attorneys for this practice area */}
+                {area.attorneys && area.attorneys.length > 0 && (
+                  <div className="mb-4">
+                    <div className="text-sm text-gray-500 mb-2 text-left">Our {area.title} Attorneys:</div>
+                    <div className="flex flex-wrap gap-2">
+                      {area.attorneys.slice(0, 3).map((attorneyName, attorneyIndex) => (
+                        <span key={attorneyIndex} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
+                          {attorneyName}
+                        </span>
+                      ))}
+                      {area.attorneys.length > 3 && (
+                        <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
+                          +{area.attorneys.length - 3} more
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                <Button 
+                  onClick={() => onNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
+                  variant="outline"
+                  className="w-full border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200 text-left"
+                >
+                  Learn More About {area.title}
+                </Button>
+              </div>
             </div>
           ))}
         </div>
