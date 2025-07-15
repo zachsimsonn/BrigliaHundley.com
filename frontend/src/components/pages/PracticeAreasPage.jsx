@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
-import { ArrowLeft, Scale, ArrowRight } from 'lucide-react';
+import { Scale, ArrowRight, Users, Award } from 'lucide-react';
 
 const PracticeAreasPage = ({ data, onNavigate }) => {
   // Function to get the correct image for each practice area
