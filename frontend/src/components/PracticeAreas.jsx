@@ -66,39 +66,6 @@ const PracticeAreas = ({ data, onNavigate }) => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
-
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-2xl p-12 text-white">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Need Legal Assistance?
-            </h3>
-            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-              Contact our experienced legal team today for a free consultation. We're here to help you navigate your legal challenges.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/contact"
-                state={{ consultation: true, message: "I would like to schedule a free consultation to discuss my legal needs." }}
-              >
-                <Button 
-                  size="lg" 
-                  className="bg-gray-600 hover:bg-gray-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
-                >
-                  Schedule Free Consultation
-                </Button>
-              </Link>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-4 rounded-full transition-all duration-300 font-semibold"
-                onClick={() => window.location.href = `tel:${data.business.phone}`}
-              >
-                Call Now
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
