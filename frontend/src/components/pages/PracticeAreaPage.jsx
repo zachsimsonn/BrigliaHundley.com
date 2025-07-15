@@ -165,13 +165,13 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                           case 'Real Estate Law':
                             return 'https://brigliahundley.com/wp-content/uploads/bh-real-estate-hero-25.jpg';
                           case 'Employment Law':
-                            return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25.jpg';
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25-750x380.jpg';
                           case 'Municipal Law':
-                            return 'https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg';
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-fairfax-municipal-hero-24-750x380.jpg';
                           case 'Appellate Litigation':
-                            return 'https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg';
+                            return 'https://brigliahundley.com/wp-content/uploads/FA1-Appellate-Litigation-drawing-730x380.jpg';
                           case 'Community Associations':
-                            return 'https://brigliahundley.com/wp-content/uploads/bh-community-associations-hero-25.jpg';
+                            return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-community-assoc-hero-750x380.jpg';
                           default:
                             return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
                         }
