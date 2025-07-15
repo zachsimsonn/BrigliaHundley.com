@@ -55,7 +55,7 @@ const About = ({ data, editableContent }) => {
             {highlights.map((highlight, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-900"
               >
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="p-3 bg-blue-50 rounded-full">
