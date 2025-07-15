@@ -72,28 +72,6 @@ const Attorneys = ({ data, onNavigate }) => {
             </div>
           ))}
         </div>
-
-        {/* Team Stats */}
-        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">7</div>
-              <div className="text-gray-600">Best Lawyers® 2025</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">Multiple</div>
-              <div className="text-gray-600">Super Lawyers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">30+</div>
-              <div className="text-gray-600">Years Combined</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-900 mb-2">14</div>
-              <div className="text-gray-600">Expert Attorneys</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
