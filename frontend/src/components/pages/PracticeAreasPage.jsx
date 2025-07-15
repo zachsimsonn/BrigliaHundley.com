@@ -77,8 +77,8 @@ const PracticeAreasPage = ({ data, onNavigate }) => {
                 backgroundRepeat: 'no-repeat'
               }}
             >
-              {/* Translucent overlay */}
-              <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
+              {/* Less translucent overlay */}
+              <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
               
               {/* Content */}
               <div className="relative z-10 p-6">
