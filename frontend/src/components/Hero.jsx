@@ -39,7 +39,7 @@ const Hero = ({ data, editableContent }) => {
       
       <div className="relative z-10 h-full flex items-center justify-center min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
         <div className="w-full" style={{ margin: 0, padding: 0 }}>
-          <div className="grid lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
+          <div className="grid lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', width: '100%' }}>
             <div className="space-y-8">
               <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
                 <Award className="h-5 w-5 text-white" />
