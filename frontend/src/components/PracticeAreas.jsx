@@ -13,6 +13,36 @@ const PracticeAreas = ({ data, onNavigate }) => {
     'Real Estate Development': <Home className="h-8 w-8" />
   };
 
+  // Function to get the correct image for each practice area
+  const getImageForPracticeArea = (title) => {
+    switch(title) {
+      case 'Family Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
+      case 'Criminal Defense':
+        return 'https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24-750x380.jpg';
+      case 'Business Litigation':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg';
+      case 'Corporate Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25-750x380.jpg';
+      case 'Personal Injury':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-a.jpg';
+      case 'Estate Planning':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR-750x380.jpg';
+      case 'Real Estate Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-real-estate-hero-25.jpg';
+      case 'Employment Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25-750x380.jpg';
+      case 'Municipal Law':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-fairfax-municipal-hero-24-750x380.jpg';
+      case 'Appellate Litigation':
+        return 'https://brigliahundley.com/wp-content/uploads/FA1-Appellate-Litigation-drawing-730x380.jpg';
+      case 'Community Associations':
+        return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-community-assoc-hero-750x380.jpg';
+      default:
+        return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
+    }
+  };
+
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,24 +63,35 @@ const PracticeAreas = ({ data, onNavigate }) => {
             <Link 
               key={index} 
               to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
-              className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 block"
+              className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 block overflow-hidden"
             >
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="p-2 bg-gray-50 rounded-full text-gray-900 group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
-                  {iconMap[area.title] || <Scale className="h-6 w-6" />}
+              {/* Image Thumbnail */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={getImageForPracticeArea(area.title)} 
+                  alt={area.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="gdlr-practice-thumbnail-overlay absolute inset-0 bg-black opacity-40"></div>
+                
+                {/* Title Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">
+                    {area.title}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-900 transition-colors duration-300">
-                  {area.title}
-                </h3>
               </div>
               
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                {area.description}
-              </p>
-              
-              <div className="group text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+              {/* Content */}
+              <div className="p-6">
+                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                  {area.description}
+                </p>
+                
+                <div className="group text-gray-900 hover:text-gray-700 flex items-center text-sm font-medium">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </div>
               </div>
             </Link>
           ))}
