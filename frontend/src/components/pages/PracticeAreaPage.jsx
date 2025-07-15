@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '../ui/button';
-import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale } from 'lucide-react';
+import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale, User } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumb from '../Breadcrumb';
 
