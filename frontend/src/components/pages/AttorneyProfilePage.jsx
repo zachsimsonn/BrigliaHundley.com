@@ -101,7 +101,12 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Attorney Banner */}
-      <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 py-16 lg:py-20">
+      <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 py-16 lg:py-20" style={{
+        backgroundImage: 'url(https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxsYXclMjBvZmZpY2V8ZW58MHx8fHwxNzUyNTk5NjE4fDA&ixlib=rb-4.1.0&q=85)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="gdlr-page-title-overlay absolute inset-0 bg-black opacity-40"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-2">
