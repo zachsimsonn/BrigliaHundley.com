@@ -67,9 +67,17 @@ const Testimonials = ({ data }) => {
                 </div>
 
                 {/* Testimonial text */}
-                <blockquote className="text-gray-700 text-center leading-relaxed mb-6 italic">
-                  "{testimonial.text}"
-                </blockquote>
+                <div className="text-gray-700 text-center leading-relaxed mb-6 italic">
+                  "{expandedTestimonials[index] ? testimonial.text : truncateText(testimonial.text)}"
+                  {testimonial.text.length > 150 && (
+                    <button
+                      onClick={(e) => toggleExpansion(index, e)}
+                      className="text-blue-600 hover:text-blue-800 ml-2 font-medium underline"
+                    >
+                      {expandedTestimonials[index] ? 'Show less' : 'more...'}
+                    </button>
+                  )}
+                </div>
 
                 {/* Author info */}
                 <div className="text-center border-t border-gray-200 pt-6">
