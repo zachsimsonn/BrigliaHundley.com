@@ -123,7 +123,7 @@ const App = () => {
                 />
                 <Hero data={data} editableContent={editableData} />
                 <div className="min-h-screen bg-white">
-                  <About data={data} editableContent={editableData} />
+                  <About data={data} editableContent={editableData} showStaff={false} />
                   <ServiceAreas data={data} />
                   <PracticeAreas data={data} onNavigate={handleNavigate} />
                   <Attorneys data={data} onNavigate={handleNavigate} />
