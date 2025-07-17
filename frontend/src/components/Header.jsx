@@ -46,7 +46,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                 <img 
                   src={data.business.logo} 
                   alt="Briglia Hundley® Law Firm Logo" 
-                  className="h-16 w-16 object-contain"
+                  className="h-24 w-24 object-contain"
                   style={{ filter: 'none' }}
                 />
               ) : (
