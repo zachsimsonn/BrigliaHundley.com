@@ -1,7 +1,7 @@
 import React from 'react';
 import { Award, Users, MapPin, Calendar } from 'lucide-react';
 
-const About = ({ data, editableContent }) => {
+const About = ({ data, editableContent, showStaff = true }) => {
   const highlights = [
     {
       icon: <Award className="h-8 w-8 text-blue-900" />,
