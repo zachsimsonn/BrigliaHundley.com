@@ -84,11 +84,6 @@ const Testimonials = ({ data }) => {
                   <div className="font-semibold text-gray-900 text-lg">
                     {testimonial.author}
                   </div>
-                  {testimonial.case && (
-                    <div className="text-gray-600 text-sm mt-1">
-                      {testimonial.case}
-                    </div>
-                  )}
                 </div>
               </div>
             </a>
