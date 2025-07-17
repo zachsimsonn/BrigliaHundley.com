@@ -1112,29 +1112,19 @@ export const siteData = {
 
   testimonials: [
     {
-      text: "Briglia Hundley provided exceptional legal representation during our complex business dispute. Their strategic approach and attention to detail resulted in a favorable outcome that exceeded our expectations.",
-      author: "Robert Johnson",
-      case: "Business Litigation"
+      text: "From the moment Briglia Hundley law firm responded to my message, the service was personal. They connected me with one of their lawyers, Madison Beatty. I had never been involved with the legal system before. Madison guided me through the various legal proceedings we could expect, up to and ultimately including trial. She successfully won the case at trial. She is smart and has heart. I highly recommend Madison Beatty, attorney, and Briglia Hundley law firm.",
+      author: "Mary Ann Turjanica",
+      case: "Trial Representation"
     },
     {
-      text: "I was facing serious criminal charges and felt overwhelmed by the legal process. The attorneys at Briglia Hundley fought tirelessly for my rights and achieved an outcome I never thought possible.",
-      author: "Sarah Williams",
-      case: "Criminal Defense"
+      text: "Teresa Cole achieved for me a fulfilling life post divorce by ensuring my financial stability in negotiations with my ex husband and his attorney. She was conscientious of how we spent our time so that I wasn't wasting my funds on unnecessary talk and issues. She was professional, effective, and completed my complicated federal employee divorce in just 18 months. She knew the best mediators who helped get the job done. She helped in advising me for my future life plans. I highly recommend Teresa.",
+      author: "Lisa Eaton",
+      case: "Federal Employee Divorce"
     },
     {
-      text: "During our family's difficult divorce proceedings, Briglia Hundley provided compassionate guidance while aggressively protecting our interests. Their expertise in family law was evident throughout the process.",
-      author: "Michael Davis",
-      case: "Family Law"
-    },
-    {
-      text: "The personal injury team at Briglia Hundley secured a substantial settlement for our family after a devastating car accident. Their dedication and professionalism made all the difference.",
-      author: "Jennifer Martinez",
-      case: "Personal Injury"
-    },
-    {
-      text: "Briglia Hundley's corporate law expertise helped us navigate a complex merger successfully. Their business acumen and legal knowledge were invaluable to our company's growth.",
-      author: "David Thompson",
-      case: "Corporate Law"
+      text: "We used Kaley Duncan Ward to prepare some personal legal documents for us. She was thorough, efficient, patient and reasonably priced. The whole team at Briglia Hundley, PC were a pleasure to work with.",
+      author: "Julie G",
+      case: "Personal Legal Documents"
     }
   ],
 
