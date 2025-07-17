@@ -57,14 +57,9 @@ const Testimonials = ({ data }) => {
                   <div className="font-semibold text-gray-900 text-lg">
                     {testimonial.author}
                   </div>
-                  {testimonial.title && (
+                  {testimonial.case && (
                     <div className="text-gray-600 text-sm mt-1">
-                      {testimonial.title}
-                    </div>
-                  )}
-                  {testimonial.location && (
-                    <div className="text-gray-500 text-sm mt-1">
-                      {testimonial.location}
+                      {testimonial.case}
                     </div>
                   )}
                 </div>
