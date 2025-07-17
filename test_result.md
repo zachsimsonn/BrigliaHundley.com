@@ -383,7 +383,29 @@ test_plan:
         agent: "main"
         comment: "Enhanced SEO component with breadcrumb structured data, geo-location meta tags, and additional SEO meta properties. Created new Breadcrumb component for better navigation UX and SEO benefits. Added proper breadcrumb schema markup for search engines."
 
-  - task: "Comprehensive page-specific meta descriptions for Briglia Hundley"
+  - task: "Logo file path fix and size/positioning updates"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js, frontend/src/components/Header.jsx, frontend/src/components/SEO.jsx, frontend/public/index.html"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Fixed logo file path from bhlogo.png to briglia-hundley-logo-1.png across all files. Increased logo size from h-16 w-16 to h-36 w-36 (2.25x larger). Updated logo positioning from items-center to items-end to align bottom of logo with menu bar center. Logo now displays correctly and is prominently positioned."
+
+  - task: "Real Google Reviews testimonials implementation"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js, frontend/src/components/Testimonials.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Replaced generic testimonials with real Google reviews from Mary Ann Turjanica (about Madison Beatty), Lisa Eaton (about Teresa Cole), and Julie G (about Kaley Duncan Ward). Made all testimonials clickable with links to Google Maps reviews page. Added text truncation at 150 characters with grey 'more...' buttons for expansion. Removed case descriptions for cleaner presentation. All testimonials now link to actual Google Maps page and provide authentic social proof."
     implemented: true
     working: true
     file: "frontend/src/App.js"
