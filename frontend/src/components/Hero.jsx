@@ -72,7 +72,7 @@ const Hero = ({ data, editableContent }) => {
                   rel="noopener noreferrer"
                   className="hover:text-blue-200 transition-colors duration-200"
                 >
-                  Tysons Corner, Fairfax County, Virginia
+                  Tysons Corner, Virginia
                 </a>
               </div>
 
