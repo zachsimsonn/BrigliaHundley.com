@@ -25,6 +25,34 @@ const About = ({ data, editableContent }) => {
     }
   ];
 
+  // Staff members
+  const staff = [
+    {
+      name: "Amanda Moellendick",
+      position: "Firm Administrator"
+    },
+    {
+      name: "Carmen Escalera",
+      position: "Executive Administrative Assistant"
+    },
+    {
+      name: "Abbi Marsh",
+      position: "Paralegal"
+    },
+    {
+      name: "Nini Daker",
+      position: "Legal Assistant"
+    },
+    {
+      name: "Terence Bowles",
+      position: "Senior Accounts Administrator"
+    },
+    {
+      name: "Jacob Rimland",
+      position: "Paralegal"
+    }
+  ];
+
   // Split content into paragraphs
   const paragraphs = editableContent.about.content.split('\n\n');
 
@@ -77,6 +105,37 @@ const About = ({ data, editableContent }) => {
                     </h3>
                     <p className="text-gray-600 text-sm">
                       {highlight.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Staff Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                Our Staff
+              </h2>
+              <div className="h-1 w-24 bg-gradient-to-r from-blue-300 to-blue-100 rounded-full mx-auto"></div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {staff.map((member, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-full">
+                      <Users className="h-8 w-8 text-blue-900" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {member.position}
                     </p>
                   </div>
                 </div>
