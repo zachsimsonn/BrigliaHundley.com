@@ -69,7 +69,7 @@ const Testimonials = ({ data }) => {
                   )}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
