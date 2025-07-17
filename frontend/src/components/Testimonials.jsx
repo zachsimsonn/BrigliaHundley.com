@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 
 const Testimonials = ({ data }) => {
   // Take first 3 testimonials for the new design
   const featuredTestimonials = data.testimonials.slice(0, 3);
+  
+  // State to track which testimonials are expanded
+  const [expandedTestimonials, setExpandedTestimonials] = useState({});
+  
+  // Function to toggle testimonial expansion
+  const toggleExpansion = (index, e) => {
+    e.preventDefault(); // Prevent the link from being followed
+    e.stopPropagation(); // Prevent event bubbling
+    setExpandedTestimonials(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+  
+  // Function to truncate text
+  const truncateText = (text, maxLength = 150) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+  };
 
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
