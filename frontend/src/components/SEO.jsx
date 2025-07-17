@@ -18,7 +18,7 @@ const SEO = ({
   const siteDescription = description || defaultDescription;
   const siteKeywords = keywords || defaultKeywords;
   const siteCanonical = canonical || "https://brigliahundley.com/";
-  const siteOgImage = ogImage || "/bhlogo.png";
+  const siteOgImage = ogImage || "/briglia-hundley-logo-1.png";
 
   // Update meta tags directly in the DOM
   const updateMetaTag = (name, content, property = false) => {
