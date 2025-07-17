@@ -72,7 +72,7 @@ const Testimonials = ({ data }) => {
                   {testimonial.text.length > 150 && (
                     <button
                       onClick={(e) => toggleExpansion(index, e)}
-                      className="text-blue-600 hover:text-blue-800 ml-2 font-medium underline"
+                      className="text-gray-700 hover:text-gray-900 ml-2 font-medium underline"
                     >
                       {expandedTestimonials[index] ? 'Show less' : 'more...'}
                     </button>
