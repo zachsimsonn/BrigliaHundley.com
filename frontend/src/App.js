@@ -150,7 +150,7 @@ const App = () => {
                     keywords="about Briglia Hundley, law firm history, Tysons Corner attorneys, Virginia lawyers"
                     canonical="https://brigliahundley.com/about"
                   />
-                  <About data={data} editableContent={editableData} />
+                  <About data={data} editableContent={editableData} showStaff={true} />
                 </div>
                 <Footer data={data} />
                 <Toaster />
