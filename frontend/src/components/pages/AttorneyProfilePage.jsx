@@ -17,7 +17,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
     if (attorneyName.includes('Lauren')) {
       return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Family law - courthouse steps
     } else if (attorneyName.includes('Raymond') || attorneyName.includes('Starks-Taylor')) {
-      return 'url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Corporate/Municipal - law firm office
+      return 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Law office with legal books - clearly law-related
     } else if (attorneyName.includes('Jacob')) {
       return 'url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Litigation - courthouse columns
     } else if (attorneyName.includes('Hannah')) {
