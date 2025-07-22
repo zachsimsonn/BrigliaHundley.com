@@ -1,11 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import LocationPracticeAreaPage from './pages/LocationPracticeAreaPage';
 
 const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
-  const { locationPracticeUrl } = useParams();
+  const location = useLocation();
+  const locationPracticeUrl = location.pathname.substring(1); // Remove leading slash
 
   // List of valid location-practice combinations
   const validLocationPracticeUrls = [
