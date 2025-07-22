@@ -275,11 +275,11 @@ const SitemapPage = () => {
               <Link 
                 key={index}
                 to={page.url}
-                className="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-lg hover:border-blue-300 transition-all duration-200 group"
+                className="block bg-white border border-gray-200 rounded-lg p-2 hover:shadow-md hover:border-blue-300 transition-all duration-200 group"
               >
-                <div className="flex items-start gap-3">
-                  <Scale className="text-blue-600 group-hover:text-blue-700 mt-1 flex-shrink-0" size={16} />
-                  <span className="text-gray-700 group-hover:text-blue-600 text-sm font-medium leading-relaxed">
+                <div className="flex items-start gap-2">
+                  <Scale className="text-blue-600 group-hover:text-blue-700 mt-0.5 flex-shrink-0" size={12} />
+                  <span className="text-gray-700 group-hover:text-blue-600 text-xs font-medium leading-relaxed">
                     {page.title}
                   </span>
                 </div>
