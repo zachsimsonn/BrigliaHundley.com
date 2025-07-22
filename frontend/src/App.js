@@ -296,18 +296,10 @@ const App = () => {
               </div>
             } />
 
-            {/* Location-specific practice area SEO pages */}
-            <Route path="/:location-:area-lawyer" element={
+            {/* Location-specific practice area SEO pages - Dynamic route handler */}
+            <Route path="/:locationPracticeUrl" element={
               <div>
-                <Header 
-                  data={data} 
-                  onEdit={handleContentEdit} 
-                  onNavigate={handleNavigate}
-                  currentPage="location-practice-area"
-                />
-                <LocationPracticeAreaPage data={data} />
-                <Footer data={data} />
-                <Toaster />
+                <LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />
               </div>
             } />
 
