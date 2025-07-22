@@ -9,19 +9,19 @@ const Hero = ({ data, editableContent }) => {
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <iframe
           src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=480p&speed=1&controls=0&autopause=0&dnt=1"
-          className="absolute"
+          className="absolute w-full h-full"
           style={{
-            width: '100vw',
-            height: '100vh',
-            minWidth: '100vw',
-            minHeight: '100vh',
+            width: '100%',
+            height: '100%',
+            minWidth: '100%',
+            minHeight: '100%',
             border: 'none',
             objectFit: 'cover',
             margin: 0,
             padding: 0,
             left: '50%',
             top: '50%',
-            transform: 'translate(-50%, -50%) scale(1.2)',
+            transform: 'translate(-50%, -50%) scale(1.1)',
           }}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
