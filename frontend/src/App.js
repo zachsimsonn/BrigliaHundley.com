@@ -295,6 +295,76 @@ const App = () => {
                 <Toaster />
               </div>
             } />
+
+            {/* Location-specific practice area redirects */}
+            <Route path="/alexandria-criminal-defense-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-family-law-lawyer" element={<Navigate to="/practice-area/family-law" replace />} />
+            <Route path="/alexandria-divorce-lawyer" element={<Navigate to="/practice-area/family-law" replace />} />
+            <Route path="/alexandria-dui-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-dui-attorney" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-personal-injury-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/alexandria-reckless-driving-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-drug-crime-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-domestic-violence-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-car-accident-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/alexandria-wrongful-death-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/alexandria-employment-lawyer" element={<Navigate to="/practice-area/employment-law" replace />} />
+            <Route path="/alexandria-real-estate-lawyer" element={<Navigate to="/practice-area/real-estate-law" replace />} />
+            <Route path="/alexandria-child-custody-lawyer" element={<Navigate to="/practice-area/family-law" replace />} />
+            <Route path="/alexandria-traffic-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-protective-order-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/alexandria-premises-liability-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/alexandria-contract-lawyer" element={<Navigate to="/practice-area/corporate-law" replace />} />
+
+            {/* Arlington redirects */}
+            <Route path="/arlington-criminal-defense-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-family-law-lawyer" element={<Navigate to="/practice-area/family-law" replace />} />
+            <Route path="/arlington-divorce-lawyer" element={<Navigate to="/practice-area/family-law" replace />} />
+            <Route path="/arlington-dui-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-dui-attorney" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-personal-injury-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/arlington-reckless-driving-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-drug-crime-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-domestic-violence-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-car-accident-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/arlington-wrongful-death-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/arlington-employment-lawyer" element={<Navigate to="/practice-area/employment-law" replace />} />
+            <Route path="/arlington-real-estate-lawyer" element={<Navigate to="/practice-area/real-estate-law" replace />} />
+            <Route path="/arlington-child-custody-lawyer" element={<Navigate to="/practice-area/family-law" replace />} />
+            <Route path="/arlington-traffic-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-protective-order-lawyer" element={<Navigate to="/practice-area/criminal-defense" replace />} />
+            <Route path="/arlington-premises-liability-lawyer" element={<Navigate to="/practice-area/personal-injury" replace />} />
+            <Route path="/arlington-contract-lawyer" element={<Navigate to="/practice-area/corporate-law" replace />} />
+
+            {/* All other location redirects - mapping to appropriate practice areas */}
+            {[
+              'ashburn', 'burke', 'centreville', 'chantilly', 'clifton', 'sterling', 'woodbridge', 'winchester', 'manassas',
+              'springfield', 'annandale', 'tysons-corner', 'fairfax-county', 'falls-church', 'great-falls', 'herndon',
+              'leesburg', 'loudoun-county', 'mclean', 'middleburg', 'montgomery-county', 'oakton', 'prince-georges-county',
+              'prince-william-county', 'reston', 'south-riding', 'vienna', 'dulles', 'district-of-columbia'
+            ].map(location => (
+              <>
+                <Route key={`${location}-criminal`} path={`/${location}-criminal-defense-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-family`} path={`/${location}-family-law-lawyer`} element={<Navigate to="/practice-area/family-law" replace />} />
+                <Route key={`${location}-divorce`} path={`/${location}-divorce-lawyer`} element={<Navigate to="/practice-area/family-law" replace />} />
+                <Route key={`${location}-dui`} path={`/${location}-dui-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-dui-attorney`} path={`/${location}-dui-attorney`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-personal-injury`} path={`/${location}-personal-injury-lawyer`} element={<Navigate to="/practice-area/personal-injury" replace />} />
+                <Route key={`${location}-reckless-driving`} path={`/${location}-reckless-driving-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-drug-crime`} path={`/${location}-drug-crime-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-domestic-violence`} path={`/${location}-domestic-violence-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-car-accident`} path={`/${location}-car-accident-lawyer`} element={<Navigate to="/practice-area/personal-injury" replace />} />
+                <Route key={`${location}-wrongful-death`} path={`/${location}-wrongful-death-lawyer`} element={<Navigate to="/practice-area/personal-injury" replace />} />
+                <Route key={`${location}-employment`} path={`/${location}-employment-lawyer`} element={<Navigate to="/practice-area/employment-law" replace />} />
+                <Route key={`${location}-real-estate`} path={`/${location}-real-estate-lawyer`} element={<Navigate to="/practice-area/real-estate-law" replace />} />
+                <Route key={`${location}-child-custody`} path={`/${location}-child-custody-lawyer`} element={<Navigate to="/practice-area/family-law" replace />} />
+                <Route key={`${location}-traffic`} path={`/${location}-traffic-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-protective-order`} path={`/${location}-protective-order-lawyer`} element={<Navigate to="/practice-area/criminal-defense" replace />} />
+                <Route key={`${location}-premises-liability`} path={`/${location}-premises-liability-lawyer`} element={<Navigate to="/practice-area/personal-injury" replace />} />
+                <Route key={`${location}-contract`} path={`/${location}-contract-lawyer`} element={<Navigate to="/practice-area/corporate-law" replace />} />
+              </>
+            ))}
+
             <Route path="/practice-area/:area" element={
               <div>
                 <Header 
