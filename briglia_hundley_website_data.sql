@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS business_info (
 );
 
 INSERT INTO business_info (name, address_line1, address_line2, phone, email, logo, established_year, description) VALUES 
-('Briglia Hundley, P.C.', '8180 Greensboro Dr. Suite 1050', 'McLean, VA 22102', '(703) 783-5185', 'info@brigliahundley.com', '/briglia-hundley-logo-1.png', 1993, 'Tier 1 ranked, award-winning law firm serving the Mid-Atlantic region');
+('Briglia Hundley, P.C.', '8180 Greensboro Dr. Suite 1050', 'McLean, VA 22102', '(703) 783-5185', 'info@brigliahundley.com', '/briglia-hundley-logo.png', 1993, 'Tier 1 ranked, award-winning law firm serving the Mid-Atlantic region');
 
 -- =====================================================
 -- ATTORNEYS
