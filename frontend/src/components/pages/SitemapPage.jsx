@@ -144,7 +144,132 @@ const SitemapPage = () => {
     // Chantilly Area Legal Services
     { title: 'Chantilly Criminal Defense Lawyer', url: '/chantilly-criminal-defense-lawyer' },
     { title: 'Chantilly Family Law Lawyer', url: '/chantilly-family-law-lawyer' },
-    { title: 'Chantilly Divorce Lawyer', url: '/chantilly-divorce-lawyer' }
+    { title: 'Chantilly Divorce Lawyer', url: '/chantilly-divorce-lawyer' },
+
+    // MASSIVE SEO EXPANSION - 100 MORE LOCATION + PRACTICE COMBINATIONS
+    // DUI Services across key locations
+    { title: 'Alexandria DUI Attorney', url: '/alexandria-dui-attorney' },
+    { title: 'Arlington DUI Attorney', url: '/arlington-dui-attorney' },
+    { title: 'Ashburn DUI Lawyer', url: '/ashburn-dui-lawyer' },
+    { title: 'Burke DUI Lawyer', url: '/burke-dui-lawyer' },
+    { title: 'Chantilly DUI Lawyer', url: '/chantilly-dui-lawyer' },
+    { title: 'Clifton DUI Lawyer', url: '/clifton-dui-lawyer' },
+    { title: 'Sterling DUI Lawyer', url: '/sterling-dui-lawyer' },
+    { title: 'Woodbridge DUI Lawyer', url: '/woodbridge-dui-lawyer' },
+    { title: 'Winchester DUI Lawyer', url: '/winchester-dui-lawyer' },
+    { title: 'Manassas DUI Lawyer', url: '/manassas-dui-lawyer' },
+
+    // Reckless Driving Services
+    { title: 'Alexandria Reckless Driving Lawyer', url: '/alexandria-reckless-driving-lawyer' },
+    { title: 'Arlington Reckless Driving Lawyer', url: '/arlington-reckless-driving-lawyer' },
+    { title: 'Ashburn Reckless Driving Lawyer', url: '/ashburn-reckless-driving-lawyer' },
+    { title: 'Burke Reckless Driving Lawyer', url: '/burke-reckless-driving-lawyer' },
+    { title: 'Chantilly Reckless Driving Lawyer', url: '/chantilly-reckless-driving-lawyer' },
+    { title: 'Sterling Reckless Driving Lawyer', url: '/sterling-reckless-driving-lawyer' },
+    { title: 'Woodbridge Reckless Driving Lawyer', url: '/woodbridge-reckless-driving-lawyer' },
+    { title: 'Manassas Reckless Driving Lawyer', url: '/manassas-reckless-driving-lawyer' },
+
+    // Drug Crimes Services
+    { title: 'Alexandria Drug Crime Lawyer', url: '/alexandria-drug-crime-lawyer' },
+    { title: 'Arlington Drug Crime Lawyer', url: '/arlington-drug-crime-lawyer' },
+    { title: 'Ashburn Drug Crime Lawyer', url: '/ashburn-drug-crime-lawyer' },
+    { title: 'Burke Drug Crime Lawyer', url: '/burke-drug-crime-lawyer' },
+    { title: 'Sterling Drug Crime Lawyer', url: '/sterling-drug-crime-lawyer' },
+    { title: 'Woodbridge Drug Crime Lawyer', url: '/woodbridge-drug-crime-lawyer' },
+
+    // Domestic Violence Services
+    { title: 'Alexandria Domestic Violence Lawyer', url: '/alexandria-domestic-violence-lawyer' },
+    { title: 'Arlington Domestic Violence Lawyer', url: '/arlington-domestic-violence-lawyer' },
+    { title: 'Ashburn Domestic Violence Lawyer', url: '/ashburn-domestic-violence-lawyer' },
+    { title: 'Burke Domestic Violence Lawyer', url: '/burke-domestic-violence-lawyer' },
+    { title: 'Sterling Domestic Violence Lawyer', url: '/sterling-domestic-violence-lawyer' },
+    { title: 'Woodbridge Domestic Violence Lawyer', url: '/woodbridge-domestic-violence-lawyer' },
+
+    // Motor Vehicle Accidents
+    { title: 'Alexandria Car Accident Lawyer', url: '/alexandria-car-accident-lawyer' },
+    { title: 'Arlington Car Accident Lawyer', url: '/arlington-car-accident-lawyer' },
+    { title: 'Ashburn Car Accident Lawyer', url: '/ashburn-car-accident-lawyer' },
+    { title: 'Burke Car Accident Lawyer', url: '/burke-car-accident-lawyer' },
+    { title: 'Sterling Car Accident Lawyer', url: '/sterling-car-accident-lawyer' },
+    { title: 'Woodbridge Car Accident Lawyer', url: '/woodbridge-car-accident-lawyer' },
+    { title: 'Manassas Car Accident Lawyer', url: '/manassas-car-accident-lawyer' },
+
+    // Wrongful Death Services
+    { title: 'Alexandria Wrongful Death Lawyer', url: '/alexandria-wrongful-death-lawyer' },
+    { title: 'Arlington Wrongful Death Lawyer', url: '/arlington-wrongful-death-lawyer' },
+    { title: 'Ashburn Wrongful Death Lawyer', url: '/ashburn-wrongful-death-lawyer' },
+    { title: 'Burke Wrongful Death Lawyer', url: '/burke-wrongful-death-lawyer' },
+    { title: 'Sterling Wrongful Death Lawyer', url: '/sterling-wrongful-death-lawyer' },
+
+    // Employment Law Services
+    { title: 'Alexandria Employment Lawyer', url: '/alexandria-employment-lawyer' },
+    { title: 'Arlington Employment Lawyer', url: '/arlington-employment-lawyer' },
+    { title: 'Ashburn Employment Lawyer', url: '/ashburn-employment-lawyer' },
+    { title: 'Burke Employment Lawyer', url: '/burke-employment-lawyer' },
+    { title: 'Sterling Employment Lawyer', url: '/sterling-employment-lawyer' },
+
+    // Real Estate Law Services
+    { title: 'Alexandria Real Estate Lawyer', url: '/alexandria-real-estate-lawyer' },
+    { title: 'Arlington Real Estate Lawyer', url: '/arlington-real-estate-lawyer' },
+    { title: 'Ashburn Real Estate Lawyer', url: '/ashburn-real-estate-lawyer' },
+    { title: 'Burke Real Estate Lawyer', url: '/burke-real-estate-lawyer' },
+    { title: 'Sterling Real Estate Lawyer', url: '/sterling-real-estate-lawyer' },
+
+    // Child Custody Services
+    { title: 'Alexandria Child Custody Lawyer', url: '/alexandria-child-custody-lawyer' },
+    { title: 'Arlington Child Custody Lawyer', url: '/arlington-child-custody-lawyer' },
+    { title: 'Ashburn Child Custody Lawyer', url: '/ashburn-child-custody-lawyer' },
+    { title: 'Burke Child Custody Lawyer', url: '/burke-child-custody-lawyer' },
+    { title: 'Sterling Child Custody Lawyer', url: '/sterling-child-custody-lawyer' },
+
+    // Divorce Services Extended
+    { title: 'Ashburn Divorce Lawyer', url: '/ashburn-divorce-lawyer' },
+    { title: 'Burke Divorce Lawyer', url: '/burke-divorce-lawyer' },
+    { title: 'Sterling Divorce Lawyer', url: '/sterling-divorce-lawyer' },
+    { title: 'Woodbridge Divorce Lawyer', url: '/woodbridge-divorce-lawyer' },
+    { title: 'Winchester Divorce Lawyer', url: '/winchester-divorce-lawyer' },
+    { title: 'Manassas Divorce Lawyer', url: '/manassas-divorce-lawyer' },
+
+    // Traffic Violations
+    { title: 'Alexandria Traffic Lawyer', url: '/alexandria-traffic-lawyer' },
+    { title: 'Arlington Traffic Lawyer', url: '/arlington-traffic-lawyer' },
+    { title: 'Ashburn Traffic Lawyer', url: '/ashburn-traffic-lawyer' },
+    { title: 'Burke Traffic Lawyer', url: '/burke-traffic-lawyer' },
+    { title: 'Sterling Traffic Lawyer', url: '/sterling-traffic-lawyer' },
+
+    // Protective Orders
+    { title: 'Alexandria Protective Order Lawyer', url: '/alexandria-protective-order-lawyer' },
+    { title: 'Arlington Protective Order Lawyer', url: '/arlington-protective-order-lawyer' },
+    { title: 'Ashburn Protective Order Lawyer', url: '/ashburn-protective-order-lawyer' },
+    { title: 'Burke Protective Order Lawyer', url: '/burke-protective-order-lawyer' },
+
+    // Premises Liability
+    { title: 'Alexandria Premises Liability Lawyer', url: '/alexandria-premises-liability-lawyer' },
+    { title: 'Arlington Premises Liability Lawyer', url: '/arlington-premises-liability-lawyer' },
+    { title: 'Ashburn Premises Liability Lawyer', url: '/ashburn-premises-liability-lawyer' },
+
+    // Contract Law Services
+    { title: 'Alexandria Contract Lawyer', url: '/alexandria-contract-lawyer' },
+    { title: 'Arlington Contract Lawyer', url: '/arlington-contract-lawyer' },
+    { title: 'Ashburn Contract Lawyer', url: '/ashburn-contract-lawyer' },
+
+    // Personal Injury Extended
+    { title: 'Arlington Personal Injury Lawyer', url: '/arlington-personal-injury-lawyer' },
+    { title: 'Ashburn Personal Injury Lawyer', url: '/ashburn-personal-injury-lawyer' },
+    { title: 'Burke Personal Injury Lawyer', url: '/burke-personal-injury-lawyer' },
+    { title: 'Sterling Personal Injury Lawyer', url: '/sterling-personal-injury-lawyer' },
+
+    // Criminal Defense Extended
+    { title: 'Ashburn Criminal Defense Lawyer', url: '/ashburn-criminal-defense-lawyer' },
+    { title: 'Burke Criminal Defense Lawyer', url: '/burke-criminal-defense-lawyer' },
+    { title: 'Sterling Criminal Defense Lawyer', url: '/sterling-criminal-defense-lawyer' },
+    { title: 'Woodbridge Criminal Defense Lawyer', url: '/woodbridge-criminal-defense-lawyer' },
+
+    // Family Law Extended
+    { title: 'Ashburn Family Law Lawyer', url: '/ashburn-family-law-lawyer' },
+    { title: 'Burke Family Law Lawyer', url: '/burke-family-law-lawyer' },
+    { title: 'Sterling Family Law Lawyer', url: '/sterling-family-law-lawyer' },
+    { title: 'Woodbridge Family Law Lawyer', url: '/woodbridge-family-law-lawyer' }
   ];
 
   // Service area pages
