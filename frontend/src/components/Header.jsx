@@ -41,7 +41,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
         <div className="flex items-center justify-between py-3 min-h-[72px]">
           {/* Logo */}
           <div className="flex items-end flex-shrink-0">
-            <div className="text-gray-900 font-serif cursor-pointer" onClick={() => handleNavigate('home')}>
+            <Link to="/" className="text-gray-900 font-serif">
               {data.business.logo ? (
                 <img 
                   src={data.business.logo} 
@@ -56,7 +56,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                   <div className="text-lg font-normal">PC</div>
                 </div>
               )}
-            </div>
+            </Link>
           </div>
 
           {/* Centered Navigation */}
