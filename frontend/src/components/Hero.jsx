@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ArrowRight, Shield, Award, MapPin } from 'lucide-react';
 
