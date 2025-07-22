@@ -5,8 +5,8 @@ import Footer from './Footer';
 import LocationPracticeAreaPage from './pages/LocationPracticeAreaPage';
 
 const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
-  const location = useLocation();
-  const locationPracticeUrl = location.pathname.substring(1); // Remove leading slash
+  const currentLocation = useLocation();
+  const locationPracticeUrl = currentLocation.pathname.substring(1); // Remove leading slash
 
   // List of valid location-practice combinations
   const validLocationPracticeUrls = [
