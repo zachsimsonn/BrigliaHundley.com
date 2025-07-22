@@ -297,12 +297,30 @@ const App = () => {
               </div>
             } />
 
-            {/* Location-specific practice area SEO pages - Dynamic route handler */}
-            <Route path="/:locationPracticeUrl" element={
-              <div>
-                <LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />
-              </div>
-            } />
+            {/* Location-specific practice area SEO pages - Must be before generic routes */}
+            <Route path="/alexandria-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/arlington-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/ashburn-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/burke-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/sterling-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/woodbridge-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/springfield-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/annandale-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/centreville-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/chantilly-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/tysons-corner-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/fairfax-county-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/reston-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/leesburg-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/great-falls-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/oakton-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/prince-william-county-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/loudoun-county-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/south-riding-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/clifton-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/manassas-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/winchester-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
+            <Route path="/district-of-columbia-*" element={<LocationPageRouter data={data} handleContentEdit={handleContentEdit} handleNavigate={handleNavigate} />} />
 
             <Route path="/practice-area/:area" element={
               <div>
