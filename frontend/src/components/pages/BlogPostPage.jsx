@@ -61,7 +61,7 @@ const BlogPostPage = ({ data, onNavigate }) => {
       "@type": "WebPage",
       "@id": `https://brigliahundley.com/blog/${slug}`
     },
-    "image": blog.image || "https://brigliahundley.com/briglia-hundley-logo-1.png",
+    "image": blog.image || "https://brigliahundley.com/briglia-hundley-logo.png",
     "articleSection": blog.category,
     "keywords": keywords,
     "about": {
