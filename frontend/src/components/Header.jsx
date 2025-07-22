@@ -214,31 +214,41 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
-              <button 
-                onClick={() => handleNavigate('home')}
+              <Link 
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-left text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 Home
-              </button>
-              <button 
-                onClick={() => handleNavigate('about')}
+              </Link>
+              <Link 
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-left text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 About
-              </button>
+              </Link>
               
               {/* Mobile Practice Areas */}
               <div>
                 <div className="font-medium text-gray-900 mb-2">Practice Areas</div>
                 <div className="pl-4 space-y-2">
+                  <Link
+                    to="/practice-areas"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200 font-medium"
+                  >
+                    All Practice Areas
+                  </Link>
                   {data.practiceAreas.map((area, index) => (
-                    <button
+                    <Link
                       key={index}
-                      onClick={() => handleNavigate('practice-area', { area: area.title.toLowerCase().replace(/\s+/g, '-') })}
+                      to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                      onClick={() => setIsMenuOpen(false)}
                       className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200"
                     >
                       <div className="font-medium text-sm">{area.title}</div>
-                    </button>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -247,42 +257,47 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
               <div>
                 <div className="font-medium text-gray-900 mb-2">Attorneys</div>
                 <div className="pl-4 space-y-2 max-h-40 overflow-y-auto">
-                  <button
-                    onClick={() => handleNavigate('attorneys')}
+                  <Link
+                    to="/attorneys"
+                    onClick={() => setIsMenuOpen(false)}
                     className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200 font-medium"
                   >
                     All Attorneys
-                  </button>
+                  </Link>
                   {data.attorneys.map((attorney, index) => (
-                    <button
+                    <Link
                       key={index}
-                      onClick={() => handleNavigate('attorney-profile', { name: attorney.name.toLowerCase().replace(/\s+/g, '-') })}
+                      to={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      onClick={() => setIsMenuOpen(false)}
                       className="block text-left text-gray-600 hover:text-gray-800 transition-colors duration-200 text-sm"
                     >
                       {attorney.name}
-                    </button>
+                    </Link>
                   ))}
                 </div>
               </div>
 
-              <button 
-                onClick={() => handleNavigate('testimonials')}
+              <Link 
+                to="/testimonials"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-left text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 Testimonials
-              </button>
-              <button 
-                onClick={() => handleNavigate('blog')}
+              </Link>
+              <Link 
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-left text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 Blog
-              </button>
-              <button 
-                onClick={() => handleNavigate('contact')}
+              </Link>
+              <Link 
+                to="/contact"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-left text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 Contact
-              </button>
+              </Link>
             </nav>
             <div className="mt-4 space-y-2">
               <Link 
