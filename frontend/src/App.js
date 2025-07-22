@@ -299,16 +299,23 @@ const App = () => {
 
             {/* Test route for Alexandria Criminal Defense */}
             <Route path="/alexandria-criminal-defense-lawyer" element={
-              <div>
-                <Header 
-                  data={data} 
-                  onEdit={handleContentEdit} 
-                  onNavigate={handleNavigate}
-                  currentPage="location-practice-area"
-                />
-                <LocationPracticeAreaPage data={data} location="alexandria" area="criminal-defense" />
-                <Footer data={data} />
-                <Toaster />
+              <div className="min-h-screen bg-gray-50 pt-20">
+                <div className="max-w-4xl mx-auto px-4 py-16">
+                  <h1 className="text-4xl font-bold text-gray-900 mb-8">Alexandria Criminal Defense Lawyer</h1>
+                  <p className="text-xl text-gray-700 mb-8">
+                    Experienced criminal defense representation for residents of Alexandria, Virginia. 
+                    We handle cases in Alexandria General District Court and Alexandria Circuit Court.
+                  </p>
+                  <div className="bg-blue-900 text-white p-8 rounded-lg text-center">
+                    <h2 className="text-2xl font-bold mb-4">Ready to Protect Your Rights in Alexandria?</h2>
+                    <a
+                      href="tel:(703) 783-5185"
+                      className="inline-flex items-center bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-blue-50 transition-all duration-300"
+                    >
+                      Call (703) 783-5185 Now
+                    </a>
+                  </div>
+                </div>
               </div>
             } />
 
