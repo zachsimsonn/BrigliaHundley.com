@@ -52,7 +52,7 @@ const BlogPostPage = ({ data, onNavigate }) => {
       "name": "Briglia Hundley PC",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://brigliahundley.com/briglia-hundley-logo-1.png"
+        "url": "https://brigliahundley.com/briglia-hundley-logo.png"
       }
     },
     "datePublished": blog.date,
