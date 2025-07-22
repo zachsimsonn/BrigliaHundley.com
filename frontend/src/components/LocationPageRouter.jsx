@@ -1,10 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
 import Header from './Header';
 import Footer from './Footer';
 import LocationPracticeAreaPage from './pages/LocationPracticeAreaPage';
-import NotFoundPage from './pages/NotFoundPage';
 
 const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
   const { locationPracticeUrl } = useParams();
