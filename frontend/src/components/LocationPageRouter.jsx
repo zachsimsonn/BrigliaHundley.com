@@ -255,7 +255,23 @@ const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
 
   // Check if this is a valid location-practice URL
   if (!validLocationPracticeUrls.includes(locationPracticeUrl)) {
-    return <NotFoundPage />;
+    return (
+      <div>
+        <Header 
+          data={data} 
+          onEdit={handleContentEdit} 
+          onNavigate={handleNavigate}
+          currentPage="404"
+        />
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Page Not Found</h1>
+            <p className="text-gray-600">The requested page could not be found.</p>
+          </div>
+        </div>
+        <Footer data={data} />
+      </div>
+    );
   }
 
   // Parse location and practice area from URL
