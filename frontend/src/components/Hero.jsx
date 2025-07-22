@@ -78,13 +78,20 @@ const Hero = ({ data, editableContent }) => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <Link 
+                  to="/contact"
+                  state={{ consultation: true, message: "I would like to schedule a free consultation to discuss my legal needs." }}
+                  className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Schedule a Free Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
-                <button className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                </Link>
+                <a 
+                  href={`tel:${data.business.phone}`}
+                  className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Call Now
-                </button>
+                </a>
               </div>
             </div>
             <div className="hidden lg:block">
