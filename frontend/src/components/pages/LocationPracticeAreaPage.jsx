@@ -600,7 +600,7 @@ const LocationPracticeAreaPage = () => {
             </div>
             <div className="text-center">
               <OptimizedImage
-                src="/briglia-hundley-logo-1.png"
+                src="/briglia-hundley-logo.png"
                 alt="Briglia Hundley Law Firm Logo"
                 className="w-48 h-48 mx-auto mb-6"
               />
