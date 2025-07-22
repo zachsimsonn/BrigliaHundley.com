@@ -269,7 +269,131 @@ const SitemapPage = () => {
     { title: 'Ashburn Family Law Lawyer', url: '/ashburn-family-law-lawyer' },
     { title: 'Burke Family Law Lawyer', url: '/burke-family-law-lawyer' },
     { title: 'Sterling Family Law Lawyer', url: '/sterling-family-law-lawyer' },
-    { title: 'Woodbridge Family Law Lawyer', url: '/woodbridge-family-law-lawyer' }
+    { title: 'Woodbridge Family Law Lawyer', url: '/woodbridge-family-law-lawyer' },
+
+    // PHASE 2: MORE COMPREHENSIVE LOCATION COVERAGE
+    // Leesburg Area Services
+    { title: 'Leesburg DUI Lawyer', url: '/leesburg-dui-lawyer' },
+    { title: 'Leesburg Criminal Defense Lawyer', url: '/leesburg-criminal-defense-lawyer' },
+    { title: 'Leesburg Family Law Lawyer', url: '/leesburg-family-law-lawyer' },
+    { title: 'Leesburg Divorce Lawyer', url: '/leesburg-divorce-lawyer' },
+    { title: 'Leesburg Personal Injury Lawyer', url: '/leesburg-personal-injury-lawyer' },
+
+    // Great Falls Area Services
+    { title: 'Great Falls DUI Lawyer', url: '/great-falls-dui-lawyer' },
+    { title: 'Great Falls Criminal Defense Lawyer', url: '/great-falls-criminal-defense-lawyer' },
+    { title: 'Great Falls Family Law Lawyer', url: '/great-falls-family-law-lawyer' },
+    { title: 'Great Falls Divorce Lawyer', url: '/great-falls-divorce-lawyer' },
+
+    // Oakton Area Services
+    { title: 'Oakton DUI Lawyer', url: '/oakton-dui-lawyer' },
+    { title: 'Oakton Criminal Defense Lawyer', url: '/oakton-criminal-defense-lawyer' },
+    { title: 'Oakton Family Law Lawyer', url: '/oakton-family-law-lawyer' },
+    { title: 'Oakton Divorce Lawyer', url: '/oakton-divorce-lawyer' },
+
+    // Clifton Area Services
+    { title: 'Clifton Criminal Defense Lawyer', url: '/clifton-criminal-defense-lawyer' },
+    { title: 'Clifton Family Law Lawyer', url: '/clifton-family-law-lawyer' },
+    { title: 'Clifton Divorce Lawyer', url: '/clifton-divorce-lawyer' },
+
+    // Prince William County Services
+    { title: 'Prince William County DUI Lawyer', url: '/prince-william-county-dui-lawyer' },
+    { title: 'Prince William County Criminal Defense Lawyer', url: '/prince-william-county-criminal-defense-lawyer' },
+    { title: 'Prince William County Family Law Lawyer', url: '/prince-william-county-family-law-lawyer' },
+    { title: 'Prince William County Divorce Lawyer', url: '/prince-william-county-divorce-lawyer' },
+
+    // Loudoun County Services
+    { title: 'Loudoun County DUI Lawyer', url: '/loudoun-county-dui-lawyer' },
+    { title: 'Loudoun County Criminal Defense Lawyer', url: '/loudoun-county-criminal-defense-lawyer' },
+    { title: 'Loudoun County Family Law Lawyer', url: '/loudoun-county-family-law-lawyer' },
+    { title: 'Loudoun County Divorce Lawyer', url: '/loudoun-county-divorce-lawyer' },
+
+    // South Riding Area Services
+    { title: 'South Riding DUI Lawyer', url: '/south-riding-dui-lawyer' },
+    { title: 'South Riding Criminal Defense Lawyer', url: '/south-riding-criminal-defense-lawyer' },
+    { title: 'South Riding Family Law Lawyer', url: '/south-riding-family-law-lawyer' },
+    { title: 'South Riding Divorce Lawyer', url: '/south-riding-divorce-lawyer' },
+
+    // Manassas Area Services
+    { title: 'Manassas Park DUI Lawyer', url: '/manassas-park-dui-lawyer' },
+    { title: 'Manassas Park Criminal Defense Lawyer', url: '/manassas-park-criminal-defense-lawyer' },
+    { title: 'Manassas Park Family Law Lawyer', url: '/manassas-park-family-law-lawyer' },
+
+    // Middleburg Area Services
+    { title: 'Middleburg DUI Lawyer', url: '/middleburg-dui-lawyer' },
+    { title: 'Middleburg Criminal Defense Lawyer', url: '/middleburg-criminal-defense-lawyer' },
+    { title: 'Middleburg Family Law Lawyer', url: '/middleburg-family-law-lawyer' },
+
+    // DC Metro Area Services
+    { title: 'District of Columbia DUI Lawyer', url: '/district-of-columbia-dui-lawyer' },
+    { title: 'District of Columbia Criminal Defense Lawyer', url: '/district-of-columbia-criminal-defense-lawyer' },
+    { title: 'District of Columbia Family Law Lawyer', url: '/district-of-columbia-family-law-lawyer' },
+
+    // MORE PRACTICE AREA EXPANSIONS
+    // Estate Planning across locations
+    { title: 'Alexandria Estate Planning Lawyer', url: '/alexandria-estate-planning-lawyer' },
+    { title: 'Arlington Estate Planning Lawyer', url: '/arlington-estate-planning-lawyer' },
+    { title: 'Ashburn Estate Planning Lawyer', url: '/ashburn-estate-planning-lawyer' },
+    { title: 'Burke Estate Planning Lawyer', url: '/burke-estate-planning-lawyer' },
+    { title: 'Sterling Estate Planning Lawyer', url: '/sterling-estate-planning-lawyer' },
+
+    // Business Law across locations
+    { title: 'Alexandria Business Lawyer', url: '/alexandria-business-lawyer' },
+    { title: 'Arlington Business Lawyer', url: '/arlington-business-lawyer' },
+    { title: 'Ashburn Business Lawyer', url: '/ashburn-business-lawyer' },
+    { title: 'Burke Business Lawyer', url: '/burke-business-lawyer' },
+    { title: 'Sterling Business Lawyer', url: '/sterling-business-lawyer' },
+
+    // Bankruptcy Law across locations
+    { title: 'Alexandria Bankruptcy Lawyer', url: '/alexandria-bankruptcy-lawyer' },
+    { title: 'Arlington Bankruptcy Lawyer', url: '/arlington-bankruptcy-lawyer' },
+    { title: 'Ashburn Bankruptcy Lawyer', url: '/ashburn-bankruptcy-lawyer' },
+    { title: 'Burke Bankruptcy Lawyer', url: '/burke-bankruptcy-lawyer' },
+
+    // Immigration Law across locations
+    { title: 'Alexandria Immigration Lawyer', url: '/alexandria-immigration-lawyer' },
+    { title: 'Arlington Immigration Lawyer', url: '/arlington-immigration-lawyer' },
+    { title: 'Ashburn Immigration Lawyer', url: '/ashburn-immigration-lawyer' },
+
+    // Tax Law across locations
+    { title: 'Alexandria Tax Lawyer', url: '/alexandria-tax-lawyer' },
+    { title: 'Arlington Tax Lawyer', url: '/arlington-tax-lawyer' },
+    { title: 'Ashburn Tax Lawyer', url: '/ashburn-tax-lawyer' },
+
+    // Municipal Law across locations
+    { title: 'Alexandria Municipal Lawyer', url: '/alexandria-municipal-lawyer' },
+    { title: 'Arlington Municipal Lawyer', url: '/arlington-municipal-lawyer' },
+    { title: 'Fairfax County Municipal Lawyer', url: '/fairfax-county-municipal-lawyer' },
+
+    // Appellate Law across locations
+    { title: 'Alexandria Appellate Lawyer', url: '/alexandria-appellate-lawyer' },
+    { title: 'Arlington Appellate Lawyer', url: '/arlington-appellate-lawyer' },
+    { title: 'Fairfax County Appellate Lawyer', url: '/fairfax-county-appellate-lawyer' },
+
+    // Specialized Services
+    { title: 'Alexandria Probate Lawyer', url: '/alexandria-probate-lawyer' },
+    { title: 'Arlington Probate Lawyer', url: '/arlington-probate-lawyer' },
+    { title: 'Alexandria Wills Lawyer', url: '/alexandria-wills-lawyer' },
+    { title: 'Arlington Wills Lawyer', url: '/arlington-wills-lawyer' },
+    { title: 'Alexandria Trust Lawyer', url: '/alexandria-trust-lawyer' },
+    { title: 'Arlington Trust Lawyer', url: '/arlington-trust-lawyer' },
+
+    // Commercial Litigation
+    { title: 'Alexandria Commercial Litigation Lawyer', url: '/alexandria-commercial-litigation-lawyer' },
+    { title: 'Arlington Commercial Litigation Lawyer', url: '/arlington-commercial-litigation-lawyer' },
+    { title: 'Fairfax County Commercial Litigation Lawyer', url: '/fairfax-county-commercial-litigation-lawyer' },
+
+    // Workers Compensation
+    { title: 'Alexandria Workers Compensation Lawyer', url: '/alexandria-workers-compensation-lawyer' },
+    { title: 'Arlington Workers Compensation Lawyer', url: '/arlington-workers-compensation-lawyer' },
+
+    // Medical Malpractice  
+    { title: 'Alexandria Medical Malpractice Lawyer', url: '/alexandria-medical-malpractice-lawyer' },
+    { title: 'Arlington Medical Malpractice Lawyer', url: '/arlington-medical-malpractice-lawyer' },
+
+    // Social Security Disability
+    { title: 'Alexandria Social Security Disability Lawyer', url: '/alexandria-social-security-disability-lawyer' },
+    { title: 'Arlington Social Security Disability Lawyer', url: '/arlington-social-security-disability-lawyer' }
   ];
 
   // Service area pages
