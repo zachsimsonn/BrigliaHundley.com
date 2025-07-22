@@ -19,7 +19,7 @@ db.business_info.insertOne({
   },
   phone: "(703) 783-5185",
   email: "info@brigliahundley.com",
-  logo: "/briglia-hundley-logo-1.png",
+  logo: "/briglia-hundley-logo.png",
   establishedYear: 1993,
   description: "Tier 1 ranked, award-winning law firm serving the Mid-Atlantic region",
   socialMedia: {
