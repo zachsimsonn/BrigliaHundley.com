@@ -2,7 +2,6 @@
   "name": "BrigliaHundley",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://zachsimsonn.github.io/BrigliaHundley.com",
   "dependencies": {
     "@radix-ui/react-toast": "^1.2.14",
     "axios": "^1.8.4",
