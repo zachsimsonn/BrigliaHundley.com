@@ -335,7 +335,6 @@ const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
       />
       <LocationPracticeAreaPage data={data} location={location} area={area} />
       <Footer data={data} />
-      <Toaster />
     </div>
   );
 };
