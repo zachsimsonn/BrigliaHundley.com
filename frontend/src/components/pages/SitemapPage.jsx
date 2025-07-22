@@ -114,7 +114,37 @@ const SitemapPage = () => {
     { title: 'Herndon DUI Lawyer', url: '/herndon-dui-lawyer' },
     { title: 'Reston Criminal Defense Lawyer', url: '/reston-criminal-defense-lawyer' },
     { title: 'Reston Family Law Lawyer', url: '/reston-family-law-lawyer' },
-    { title: 'Reston DUI Lawyer', url: '/reston-dui-lawyer' }
+    { title: 'Reston DUI Lawyer', url: '/reston-dui-lawyer' },
+
+    // Alexandria Area Legal Services
+    { title: 'Alexandria Criminal Defense Lawyer', url: '/alexandria-criminal-defense-lawyer' },
+    { title: 'Alexandria Family Law Lawyer', url: '/alexandria-family-law-lawyer' },
+    { title: 'Alexandria Divorce Lawyer', url: '/alexandria-divorce-lawyer' },
+    { title: 'Alexandria DUI Lawyer', url: '/alexandria-dui-lawyer' },
+    { title: 'Alexandria Personal Injury Lawyer', url: '/alexandria-personal-injury-lawyer' },
+
+    // Springfield Area Legal Services
+    { title: 'Springfield Criminal Defense Lawyer', url: '/springfield-criminal-defense-lawyer' },
+    { title: 'Springfield Family Law Lawyer', url: '/springfield-family-law-lawyer' },
+    { title: 'Springfield Divorce Lawyer', url: '/springfield-divorce-lawyer' },
+    { title: 'Springfield DUI Lawyer', url: '/springfield-dui-lawyer' },
+
+    // Annandale Area Legal Services
+    { title: 'Annandale Criminal Defense Lawyer', url: '/annandale-criminal-defense-lawyer' },
+    { title: 'Annandale Family Law Lawyer', url: '/annandale-family-law-lawyer' },
+    { title: 'Annandale Divorce Lawyer', url: '/annandale-divorce-lawyer' },
+    { title: 'Annandale DUI Lawyer', url: '/annandale-dui-lawyer' },
+
+    // Centreville Area Legal Services
+    { title: 'Centreville Criminal Defense Lawyer', url: '/centreville-criminal-defense-lawyer' },
+    { title: 'Centreville Family Law Lawyer', url: '/centreville-family-law-lawyer' },
+    { title: 'Centreville Divorce Lawyer', url: '/centreville-divorce-lawyer' },
+    { title: 'Centreville DUI Lawyer', url: '/centreville-dui-lawyer' },
+
+    // Chantilly Area Legal Services
+    { title: 'Chantilly Criminal Defense Lawyer', url: '/chantilly-criminal-defense-lawyer' },
+    { title: 'Chantilly Family Law Lawyer', url: '/chantilly-family-law-lawyer' },
+    { title: 'Chantilly Divorce Lawyer', url: '/chantilly-divorce-lawyer' }
   ];
 
   // Service area pages
