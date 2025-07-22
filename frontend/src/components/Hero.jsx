@@ -43,30 +43,30 @@ const Hero = ({ data, editableContent }) => {
       
       <div className="relative z-10 h-full flex items-center justify-center min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
         <div className="w-full" style={{ margin: 0, padding: 0 }}>
-          <div className="grid lg:grid-cols-2 gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
+            <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
                 <Award className="h-5 w-5 text-white" />
-                <span className="text-base font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 2px' }}>Tier 1 Ranked Law Firm</span>
+                <span className="text-sm lg:text-base font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 2px' }}>Tier 1 Ranked Law Firm</span>
               </div>
-              <h1 className="text-4xl lg:text-5xl font-bold leading-none text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px', lineHeight: '1.1' }}>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight lg:leading-none text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px', lineHeight: '1.1' }}>
                 Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.
               </h1>
-              <p className="text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
+              <p className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
                 Our seasoned attorneys are committed to providing superior service on every matter entrusted to our care.
               </p>
-              <div className="grid grid-cols-2 gap-8 py-6">
+              <div className="grid grid-cols-2 gap-4 lg:gap-8 py-4 lg:py-6 justify-items-center lg:justify-items-start">
                 <div className="text-center lg:text-left">
-                  <div className="text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>30+</div>
-                  <div className="text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>Years of Experience</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>30+</div>
+                  <div className="text-sm lg:text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>Years of Experience</div>
                 </div>
                 <div className="text-center lg:text-left">
-                  <div className="text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>7</div>
-                  <div className="text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>Best Lawyers® 2025</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px' }}>7</div>
+                  <div className="text-sm lg:text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>Best Lawyers® 2025</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-2 text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
-                <MapPin className="h-5 w-5" />
+              <div className="flex items-center justify-center lg:justify-start space-x-2 text-sm lg:text-base text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
+                <MapPin className="h-4 w-4 lg:h-5 lg:w-5" />
                 <a 
                   href="https://maps.app.goo.gl/Dqo1syhK2exWUfBM6"
                   target="_blank"
@@ -77,18 +77,18 @@ const Hero = ({ data, editableContent }) => {
                 </a>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 pt-4 items-center">
                 <Link 
                   to="/contact"
                   state={{ consultation: true, message: "I would like to schedule a free consultation to discuss my legal needs." }}
-                  className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  className="w-full sm:w-auto inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 lg:px-8 py-3 lg:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Schedule a Free Consultation
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 lg:h-5 lg:w-5" />
                 </Link>
                 <a 
                   href={`tel:${data.business.phone}`}
-                  className="inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  className="w-full sm:w-auto inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 lg:px-8 py-3 lg:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Call Now
                 </a>
