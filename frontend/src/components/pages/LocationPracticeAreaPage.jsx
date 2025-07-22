@@ -3,8 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Phone, MapPin, Clock, Star, Scale, Users, Award } from 'lucide-react';
 
-const LocationPracticeAreaPage = ({ data }) => {
-  const { location, area } = useParams();
+const LocationPracticeAreaPage = ({ data, location, area }) => {
   const navigate = useNavigate();
 
   // Location data for SEO optimization
