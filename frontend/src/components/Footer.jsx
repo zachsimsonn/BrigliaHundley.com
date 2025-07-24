@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ data }) => {
   const practiceAreas = data.practiceAreas.slice(0, 6);
