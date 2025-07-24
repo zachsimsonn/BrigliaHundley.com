@@ -91,15 +91,57 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
             {practiceArea.detailedContent && practiceArea.detailedContent.sections && (
               <div className="space-y-8 mb-8 text-left">
                 {practiceArea.detailedContent.sections.map((section, index) => (
-                  <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4 text-left">
+                  <div key={index} className="text-left">
                     <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{section.title}</h3>
-                    <div className="text-gray-600 whitespace-pre-line mb-4 text-left">
+                    <p className="text-gray-700 leading-relaxed text-left">
                       {section.content}
-                    </div>
+                    </p>
                   </div>
                 ))}
               </div>
             )}
+
+            {/* Our Services Include Section */}
+            {practiceArea.services && (
+              <div className="mb-8 text-left">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Our Services Include:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  {practiceArea.services.map((service, index) => (
+                    <div key={index} className="text-gray-700">
+                      {service}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Why Choose Briglia Hundley Section */}
+            <div className="mb-8 text-left">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for {practiceArea.title}?</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>Tier 1 ranked law firm with proven track record in securities litigation</li>
+                <li>Experienced attorneys with specialized expertise in accounting and securities law</li>
+                <li>Former regulators and prosecutors with insider knowledge of enforcement processes</li>
+                <li>Comprehensive legal strategies and personalized service</li>
+                <li>Serving Northern Virginia, Washington D.C., and Maryland</li>
+              </ul>
+            </div>
+
+            {/* Ready to Get Started Section */}
+            <div className="mb-8 text-left">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">Ready to Get Started?</h3>
+              <p className="text-gray-700 mb-6 text-left">
+                Contact our {practiceArea.title.toLowerCase()} team today to schedule your free consultation and discuss your legal needs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
+                  Schedule Consultation
+                </Button>
+                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3">
+                  Call Now
+                </Button>
+              </div>
+            </div>
 
             {/* Attorney Photos Section - Like Business Litigation */}
             {relatedAttorneys.length > 0 && (
