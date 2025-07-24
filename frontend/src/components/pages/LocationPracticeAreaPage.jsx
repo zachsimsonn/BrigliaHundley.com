@@ -338,6 +338,16 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
                 Back to Practice Areas
               </button>
             </div>
+
+            {/* Legal Disclaimer */}
+            <div className="mt-8 bg-gray-100 rounded-lg p-6">
+              <p className="text-xs text-gray-600 text-center leading-relaxed">
+                <strong>Disclaimer:</strong> This website is for informational purposes only and does not constitute legal advice. 
+                The information presented here should not be construed as forming an attorney-client relationship. 
+                Every case is unique, and past results do not guarantee future outcomes. 
+                Please consult with a qualified attorney to discuss your specific legal situation.
+              </p>
+            </div>
           </div>
         </div>
       </div>
