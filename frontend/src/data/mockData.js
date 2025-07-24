@@ -417,7 +417,7 @@ export const siteData = {
       url: "/estate-planning",
       localKeywords: "estate planning attorney Fairfax VA, wills and trusts lawyer Northern Virginia, probate attorney Arlington VA, estate planning Prince William County",
       attorneys: ["Kaley Duncan Ward"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
+      image: ""
     },
     {
       title: "Appellate Litigation",
