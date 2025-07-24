@@ -306,22 +306,22 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
             </div>
 
             {/* Contact CTA */}
-            <div className="bg-blue-900 text-white rounded-2xl p-8 text-center">
+            <div className="bg-gray-900 text-white rounded-2xl p-8 text-center">
               <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Rights in {currentLocation.name}?</h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-gray-100 mb-8">
                 Don't wait - contact our experienced {currentPracticeArea.title.toLowerCase()} attorneys today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href={`tel:${data.business?.phone}`}
-                  className="inline-flex items-center justify-center bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center justify-center bg-white text-gray-900 font-bold px-8 py-4 rounded-full hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   Call (703) 783-5185 Now
                 </a>
                 <button 
                   onClick={() => navigate('/contact')}
-                  className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300"
+                  className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300"
                 >
                   Schedule Free Consultation
                 </button>
@@ -332,7 +332,7 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
             <div className="mt-8 text-center">
               <button
                 onClick={handleBackClick}
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                className="inline-flex items-center text-gray-600 hover:text-gray-800 font-medium"
               >
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Practice Areas
