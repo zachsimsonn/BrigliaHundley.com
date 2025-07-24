@@ -64,7 +64,7 @@ const PracticeAreas = ({ data, onNavigate }) => {
 
         {/* Practice Areas Grid */}
         <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
-          {data.practiceAreas.map((area, index) => (
+          {allPracticeAreas.map((area, index) => (
             <Link 
               key={index} 
               to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
