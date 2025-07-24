@@ -16,6 +16,8 @@ const PracticeAreas = ({ data, onNavigate }) => {
   // Function to get the correct image for each practice area
   const getImageForPracticeArea = (title) => {
     switch(title) {
+      case 'Accountants Liability and Securities Litigation':
+        return 'https://brigliahundley.com/wp-content/uploads/bh-securities-litigation-hero-25-750x380.jpg';
       case 'Family Law':
         return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
       case 'Criminal Defense':
