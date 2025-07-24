@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale, User } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumb from '../Breadcrumb';
-import practiceAreasData from '../data/newPracticeArea';
+import practiceAreasData from '../../data/newPracticeArea';
 
 const AccountantsLiabilityPage = ({ data, onNavigate }) => {
   const practiceArea = practiceAreasData[0]; // Get the Accountants Liability data
