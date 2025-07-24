@@ -264,7 +264,7 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
                     <ul className="space-y-2">
                       {currentPracticeArea.services.map((service, index) => (
                         <li key={index} className="flex items-center gap-2">
-                          <Scale className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                          <Scale className="h-4 w-4 text-gray-600 flex-shrink-0" />
                           <span className="text-gray-700">{service}</span>
                         </li>
                       ))}
