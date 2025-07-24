@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Scale, Building, Heart, Car, FileText, Home } from 'lucide-react';
 import { Button } from './ui/button';
-import practiceAreasData from '../data/newPracticeArea';
 
 const PracticeAreas = ({ data, onNavigate }) => {
-  // Merge the new practice area with existing ones and sort alphabetically
-  const allPracticeAreas = [...practiceAreasData, ...data.practiceAreas].sort((a, b) => a.title.localeCompare(b.title));
+  // Use practice areas from data, already sorted alphabetically
+  const allPracticeAreas = data.practiceAreas;
   const iconMap = {
     'Family Law': <Heart className="h-8 w-8" />,
     'Commercial Litigation': <Scale className="h-8 w-8" />,
