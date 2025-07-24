@@ -348,6 +348,41 @@ export const siteData = {
       localKeywords: "estate planning attorney Fairfax VA, wills and trusts lawyer Northern Virginia, probate attorney Arlington VA, estate planning Prince William County",
       attorneys: ["Kaley Duncan Ward"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
+    },
+    {
+      title: "Appellate Litigation",
+      description: "Experienced appellate representation in state and federal courts throughout Virginia and the Mid-Atlantic region.",
+      fullDescription: "Appellate practice requires specialized skills and extensive knowledge of appellate procedures and standards of review. Our appellate attorneys have successfully represented clients in appeals before state and federal appellate courts.",
+      detailedContent: {
+        sections: [
+          {
+            title: "State Appeals",
+            content: "We handle appeals in the Virginia Court of Appeals and the Virginia Supreme Court, representing clients in civil and criminal appeals across all practice areas."
+          },
+          {
+            title: "Federal Appeals", 
+            content: "Our attorneys have experience in federal appellate courts, including the U.S. Court of Appeals for the Fourth Circuit and other federal appellate courts throughout the country."
+          },
+          {
+            title: "Appellate Strategy",
+            content: "We work closely with trial counsel to identify potential appellate issues during the trial court proceedings and develop effective appellate strategies to achieve the best possible outcomes for our clients."
+          }
+        ]
+      },
+      services: [
+        "Civil Appeals",
+        "Criminal Appeals",
+        "Appellate Brief Writing",
+        "Oral Arguments",
+        "Petition for Certiorari",
+        "Appellate Strategy",
+        "Post-Conviction Relief",
+        "Habeas Corpus"
+      ],
+      url: "/appellate-litigation",
+      localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, appellate litigation Arlington VA, appeals court Prince William County",
+      attorneys: ["Steven D. Briglia", "Brian J. Lubkeman"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg"
     }
   ],
 
