@@ -37,20 +37,20 @@ const Footer = ({ data }) => {
             <h3 className="text-lg font-semibold text-white mb-4">Our Attorneys</h3>
             <div className="space-y-2">
               {data.attorneys.slice(0, 5).map((attorney, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
                   {attorney.name}
-                </a>
+                </Link>
               ))}
-              <a
-                href="/attorneys"
+              <Link
+                to="/attorneys"
                 className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 Meet All Attorneys →
-              </a>
+              </Link>
             </div>
           </div>
 
