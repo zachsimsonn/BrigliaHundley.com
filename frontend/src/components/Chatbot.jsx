@@ -58,6 +58,11 @@ const Chatbot = ({ data }) => {
       return `We serve clients throughout Northern Virginia, including Fairfax County, Prince William County, Arlington County, Alexandria, McLean, Vienna, Falls Church, Herndon, Reston, and surrounding areas. We also handle cases in Washington, D.C. and Maryland.`;
     }
     
+    // Securities/Accounting specific
+    if (message.includes('sec') || message.includes('pcaob') || message.includes('accounting') || message.includes('securities') || message.includes('audit')) {
+      return `Yes, we have extensive experience in Accountants Liability and Securities Litigation. We represent accounting professionals in SEC enforcement, PCAOB investigations, malpractice claims, and securities litigation. Our team includes former prosecutors and a former Assistant Director of the PCAOB's Division of Enforcement and Investigations. Would you like to schedule a consultation?`;
+    }
+    
     // Awards & Recognition
     if (message.includes('award') || message.includes('recognition') || message.includes('tier') || message.includes('ranking')) {
       return `We're proud to be a Tier 1 ranked law firm with 7 attorneys recognized in Best Lawyers® 2025. We've been delivering superior client service and innovative legal strategies since 1993.`;
