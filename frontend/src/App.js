@@ -105,7 +105,7 @@ const App = () => {
   return (
     <HelmetProvider>
       <div className="App">
-        <BrowserRouter basename="/BrigliaHundley.com">
+        <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/BrigliaHundley.com' : ''}>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={
