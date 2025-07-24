@@ -50,21 +50,59 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
   const practiceAreaData = {
     'criminal-defense': {
       title: 'Criminal Defense',
-      services: ['DUI/DWI Defense', 'Reckless Driving', 'Drug Crimes', 'Domestic Violence', 'Traffic Violations', 'Assault & Battery'],
+      services: ['DUI/DWI Defense', 'Reckless Driving', 'Drug Crimes', 'Domestic Violence', 'Traffic Violations', 'Assault & Battery', 'Protective Orders'],
       urgency: 'immediate',
-      consequences: 'jail time, fines, license suspension, permanent criminal record'
+      consequences: 'jail time, fines, license suspension, permanent criminal record',
+      description: 'Experienced criminal defense representation protecting your rights and freedom.'
     },
     'family-law': {
       title: 'Family Law',
       services: ['Divorce', 'Child Custody', 'Child Support', 'Spousal Support', 'Property Division', 'Protective Orders'],
       urgency: 'time-sensitive',
-      consequences: 'custody loss, financial hardship, asset forfeiture'
+      consequences: 'custody loss, financial hardship, asset forfeiture',
+      description: 'Compassionate family law guidance through life\'s most challenging transitions.'
     },
     'personal-injury': {
       title: 'Personal Injury',
-      services: ['Car Accidents', 'Truck Accidents', 'Slip and Fall', 'Wrongful Death', 'Medical Malpractice', 'Premises Liability'],
+      services: ['Car Accidents', 'Truck Accidents', 'Slip and Fall', 'Wrongful Death', 'Medical Malpractice', 'Premises Liability', 'Workers Compensation'],
       urgency: 'statute of limitations',
-      consequences: 'lost compensation, medical debt, ongoing pain and suffering'
+      consequences: 'lost compensation, medical debt, ongoing pain and suffering',
+      description: 'Aggressive advocacy to secure maximum compensation for your injuries.'
+    },
+    'employment-law': {
+      title: 'Employment Law',
+      services: ['Wrongful Termination', 'Workplace Discrimination', 'Sexual Harassment', 'Wage & Hour Disputes', 'Employment Contracts'],
+      urgency: 'filing deadlines',
+      consequences: 'lost wages, career damage, ongoing workplace harassment',
+      description: 'Protecting employee rights and fighting workplace injustice.'
+    },
+    'real-estate-law': {
+      title: 'Real Estate Law',
+      services: ['Property Transactions', 'Real Estate Disputes', 'Landlord-Tenant Issues', 'Zoning Matters', 'Title Issues'],
+      urgency: 'closing deadlines',
+      consequences: 'financial loss, property disputes, failed transactions',
+      description: 'Comprehensive real estate legal services for buyers, sellers, and investors.'
+    },
+    'estate-planning': {
+      title: 'Estate Planning',
+      services: ['Wills', 'Trusts', 'Probate', 'Estate Administration', 'Power of Attorney', 'Healthcare Directives'],
+      urgency: 'tax deadlines',
+      consequences: 'estate taxes, family disputes, assets going to unintended beneficiaries',
+      description: 'Secure your family\'s future with comprehensive estate planning.'
+    },
+    'corporate-law': {
+      title: 'Corporate Law',
+      services: ['Business Formation', 'Contract Negotiation', 'Corporate Governance', 'Mergers & Acquisitions', 'Compliance'],
+      urgency: 'regulatory deadlines',
+      consequences: 'business liability, contract disputes, regulatory penalties',
+      description: 'Strategic business legal counsel for companies of all sizes.'
+    },
+    'business-litigation': {
+      title: 'Business Litigation',
+      services: ['Commercial Disputes', 'Contract Disputes', 'Partnership Disputes', 'Intellectual Property', 'Employment Litigation'],
+      urgency: 'statute of limitations',
+      consequences: 'financial losses, business reputation damage, court judgments',
+      description: 'Aggressive business litigation to protect your commercial interests.'
     }
   };
 
