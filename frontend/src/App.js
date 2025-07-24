@@ -360,32 +360,13 @@ const App = () => {
                 <Toaster />
               </div>
             } />
-            {/* Hidden SEO Pages - Must be last to catch remaining URLs */}
-            <Route path="/:location-:practice" element={
-              <div>
-                <Header 
-                  data={data} 
-                  onEdit={handleContentEdit} 
-                  onNavigate={handleNavigate}
-                  currentPage="hidden-seo"
-                />
-                <LocationPracticeAreaPage data={data} onNavigate={handleNavigate} />
-                <Footer data={data} />
-                <Toaster />
-              </div>
-            } />
-            <Route path="/best-:practice" element={
-              <div>
-                <Header 
-                  data={data} 
-                  onEdit={handleContentEdit} 
-                  onNavigate={handleNavigate}
-                  currentPage="hidden-seo"
-                />
-                <LocationPracticeAreaPage data={data} onNavigate={handleNavigate} />
-                <Footer data={data} />
-                <Toaster />
-              </div>
+            {/* Hidden SEO Pages - Location Practice Area Pages */}
+            <Route path="/*" element={
+              <LocationPageRouter 
+                data={data} 
+                handleContentEdit={handleContentEdit} 
+                handleNavigate={handleNavigate}
+              />
             } />
           </Routes>
         </BrowserRouter>
