@@ -300,6 +300,21 @@ const App = () => {
                 <Toaster />
               </div>
             } />
+            
+            {/* Specific Practice Area: Accountants Liability and Securities Litigation */}
+            <Route path="/practice-area/accountants-liability-and-securities-litigation" element={
+              <div>
+                <Header 
+                  data={data} 
+                  onEdit={handleContentEdit} 
+                  onNavigate={handleNavigate}
+                  currentPage="practice-area"
+                />
+                <AccountantsLiabilityPage data={data} onNavigate={handleNavigate} />
+                <Footer data={data} />
+                <Toaster />
+              </div>
+            } />
 
             {/* Test route for Alexandria Criminal Defense */}
             <Route path="/alexandria-criminal-defense-lawyer" element={
