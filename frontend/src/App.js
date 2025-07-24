@@ -105,7 +105,7 @@ const App = () => {
   return (
     <HelmetProvider>
       <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename="/BrigliaHundley.com">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={
