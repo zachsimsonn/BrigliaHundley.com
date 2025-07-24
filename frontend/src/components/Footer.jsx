@@ -28,7 +28,7 @@ const Footer = ({ data }) => {
                 className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 View All Practice Areas →
-              </a>
+              </Link>
             </div>
           </div>
 
