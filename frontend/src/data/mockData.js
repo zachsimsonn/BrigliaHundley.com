@@ -142,3 +142,5 @@ export const siteData = {
     }
   ]
 };
+
+export const editableContent = siteData.editableContent;
