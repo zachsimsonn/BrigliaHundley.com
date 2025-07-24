@@ -327,6 +327,14 @@ const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
 
   const { location, area } = parseLocationPractice(locationPracticeUrl);
 
+  // Check if this is a valid location-practice URL
+  const isValidLocationPractice = validLocationPracticeUrls.includes(locationPracticeUrl);
+
+  // If not a valid location-practice URL, show NotFoundPage  
+  if (!isValidLocationPractice) {
+    return <NotFoundPage />;
+  }
+
   return (
     <div>
       <Header 
