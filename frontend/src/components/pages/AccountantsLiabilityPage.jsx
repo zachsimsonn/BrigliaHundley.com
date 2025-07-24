@@ -128,7 +128,7 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
                 <div className="space-y-8">
                   {practiceArea.detailedContent.sections.map((section, index) => (
                     <div key={index} className="border-l-4 border-blue-600 pl-6">
-                      <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h2>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-left">{section.title}</h2>
                       <p className="text-gray-700 leading-relaxed text-left">
                         {section.content}
                       </p>
