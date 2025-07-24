@@ -1,53 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
-import { ArrowRight, Shield, Award, MapPin } from 'lucide-react';
+import { ArrowRight, Shield, Award, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = ({ data, editableContent }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = 2;
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
   return (
     <section className="relative text-white overflow-hidden min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
-      {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-        <iframe
-          src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=480p&speed=1&controls=0&autopause=0&dnt=1"
-          className="absolute w-full h-full"
-          style={{
-            width: '100%',
-            height: '100%',
-            minWidth: '100%',
-            minHeight: '100%',
-            border: 'none',
-            objectFit: 'cover',
-            margin: 0,
-            padding: 0,
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%) scale(1.1)',
-          }}
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          loading="lazy"
-          title="Briglia Hundley Background Video"
-          preload="none"
-        />
-        
-        {/* Very light overlay for minimal darkening */}
-        <div className="absolute inset-0 bg-black/10" style={{ margin: 0, padding: 0 }}></div>
-      </div>
-
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10 z-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
-      </div>
       
-      <div className="relative z-10 h-full flex items-center justify-center min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
-        <div className="w-full" style={{ margin: 0, padding: 0 }}>
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
-            <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
-              <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
-                <Award className="h-5 w-5 text-white" />
-                <span className="text-sm lg:text-base font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 2px' }}>Tier 1 Ranked Law Firm</span>
+      {/* Slide 1: Video with Content (Original) */}
+      <div className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${currentSlide === 0 ? 'opacity-100 z-20' : 'opacity-0 z-10'}`}>
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+          <iframe
+            src="https://player.vimeo.com/video/657950052?background=1&autoplay=1&loop=1&byline=0&title=0&portrait=0&muted=1&quality=480p&speed=1&controls=0&autopause=0&dnt=1"
+            className="absolute w-full h-full"
+            style={{
+              width: '100%',
+              height: '100%',
+              minWidth: '100%',
+              minHeight: '100%',
+              border: 'none',
+              objectFit: 'cover',
+              margin: 0,
+              padding: 0,
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%) scale(1.1)',
+            }}
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+            title="Briglia Hundley Background Video"
+            preload="none"
+          />
+          
+          {/* Very light overlay for minimal darkening */}
+          <div className="absolute inset-0 bg-black/10" style={{ margin: 0, padding: 0 }}></div>
+        </div>
+
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10 z-5">
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent"></div>
+        </div>
+        
+        <div className="relative z-10 h-full flex items-center justify-center min-h-screen w-full" style={{ margin: 0, padding: 0 }}>
+          <div className="w-full" style={{ margin: 0, padding: 0 }}>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-8" style={{ paddingTop: '120px', maxWidth: '1280px', margin: '0 auto' }}>
+              <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
+                <div className="inline-flex items-center bg-transparent backdrop-blur-sm rounded-full px-4 py-2 space-x-2 border border-white/30">
+                  <Award className="h-5 w-5 text-white" />
+                  <span className="text-sm lg:text-base font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 2px' }}>Tier 1 Ranked Law Firm</span>
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight lg:leading-none text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px', lineHeight: '1.1' }}>
                 Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.
