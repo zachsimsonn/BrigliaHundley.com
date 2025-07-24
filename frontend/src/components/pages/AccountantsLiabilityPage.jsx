@@ -9,6 +9,10 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
   // Find the Accountants Liability practice area from mockData
   const practiceArea = data.practiceAreas.find(area => area.title === "Accountants Liability and Securities Litigation");
 
+  if (!practiceArea) {
+    return <div>Practice area not found</div>;
+  }
+
   // Enhanced SEO meta description
   const metaDescription = `Expert ${practiceArea.title} legal services from Briglia Hundley® in Tysons Corner, Virginia. ${practiceArea.description.substring(0, 120)}. Contact our experienced attorneys today.`;
   
