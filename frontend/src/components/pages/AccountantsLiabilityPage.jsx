@@ -159,7 +159,7 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
               {/* Attorney Section */}
               {relatedAttorneys.length > 0 && (
                 <div className="border-t border-gray-200 pt-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center text-left">
                     <Users className="h-5 w-5 text-blue-600 mr-2" />
                     Our {practiceArea.title} Attorneys
                   </h4>
