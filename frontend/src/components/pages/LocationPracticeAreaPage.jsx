@@ -288,8 +288,16 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
                     <div>
                       <h3 className="text-lg font-semibold text-red-800 mb-2">Time is Critical</h3>
                       <p className="text-red-700">
-                        {currentPracticeArea.title} cases in {currentLocation.name} require {currentPracticeArea.urgency} attention. 
-                        Delays can result in {currentPracticeArea.consequences}. Contact us immediately for a free consultation.
+                        {currentPracticeArea.urgency === 'immediate' && 
+                          `Legal representation can be time-sensitive. Contact us promptly to discuss your case and understand your options.`}
+                        {currentPracticeArea.urgency === 'time-sensitive' && 
+                          `Family law matters often have filing deadlines and time constraints. Early consultation can help protect your interests.`}
+                        {currentPracticeArea.urgency === 'statute of limitations' && 
+                          `Personal injury cases have strict time limits for filing claims. Waiting too long may affect your ability to seek compensation.`}
+                        {currentPracticeArea.urgency === 'filing deadlines' && 
+                          `Employment law cases often have specific filing deadlines with government agencies. Don't delay in seeking legal guidance.`}
+                        {(currentPracticeArea.urgency === 'regulatory deadlines' || currentPracticeArea.urgency === 'tax deadlines') && 
+                          `Business and estate matters often involve regulatory compliance and tax considerations with specific deadlines.`}
                       </p>
                     </div>
                   </div>
