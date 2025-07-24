@@ -15,16 +15,16 @@ const Footer = ({ data }) => {
             <h3 className="text-lg font-semibold text-white mb-4">Practice Areas</h3>
             <div className="space-y-2">
               {data.practiceAreas.slice(0, 6).map((area, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
                   {area.title}
-                </a>
+                </Link>
               ))}
-              <a
-                href="/practice-areas"
+              <Link
+                to="/practice-areas"
                 className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 View All Practice Areas →
