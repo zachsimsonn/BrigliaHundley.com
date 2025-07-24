@@ -34,7 +34,7 @@ const Chatbot = ({ data }) => {
     
     // Practice Areas
     if (message.includes('practice') || message.includes('areas') || message.includes('services')) {
-      const practiceAreas = data.practiceAreas.slice(0, 6).map(area => area.title).join(', ');
+      const practiceAreas = [...data.practiceAreas, "Accountants Liability and Securities Litigation"].slice(0, 7).map(area => typeof area === 'string' ? area : area.title).join(', ');
       return `We practice in these key areas: ${practiceAreas}. Would you like to know more about any specific practice area or schedule a consultation?`;
     }
     
