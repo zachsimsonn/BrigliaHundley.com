@@ -203,7 +203,7 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
 
               {/* Contact Section */}
               <div className="border-t border-gray-200 pt-6 mt-6">
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Contact Us</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4 text-left">Contact Us</h4>
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <Phone className="h-4 w-4 text-blue-600 mr-2" />
