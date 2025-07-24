@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
+import practiceAreasData from '../data/newPracticeArea';
 
 const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
