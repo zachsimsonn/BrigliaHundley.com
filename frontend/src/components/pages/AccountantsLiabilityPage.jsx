@@ -143,27 +143,43 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
               </div>
             </div>
 
-            {/* Attorney Photos Section - Like Business Litigation */}
+            {/* Our Attorneys Section - Like Business Litigation */}
             {relatedAttorneys.length > 0 && (
               <div className="mt-8">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-left">Our {practiceArea.title} Attorneys</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {relatedAttorneys.map((attorney, index) => (
-                    <div key={index} className="text-center">
-                      <img 
-                        src={attorney.image || '/api/placeholder/300/300'} 
-                        alt={attorney.name}
-                        className="w-full h-80 object-cover rounded-lg mb-4"
-                      />
-                      <h4 className="text-xl font-semibold text-gray-900 mb-2">{attorney.name}</h4>
-                      <p className="text-gray-600 mb-4">{attorney.position}</p>
-                      <Link 
-                        to={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
-                        className="text-blue-600 hover:text-blue-700 font-medium"
-                      >
-                        View Profile
-                      </Link>
+                    <div key={index} className="text-left">
+                      <div className="flex items-start space-x-4">
+                        <img 
+                          src={attorney.image || '/api/placeholder/120/120'} 
+                          alt={attorney.name}
+                          className="w-20 h-20 object-cover rounded"
+                        />
+                        <div>
+                          <h4 className="text-xl font-semibold text-gray-900 mb-1">{attorney.name}</h4>
+                          <p className="text-gray-600 mb-2">{attorney.position}</p>
+                          <p className="text-gray-700 text-sm mb-3">
+                            {attorney.experience || `${attorney.name} specializes in ${practiceArea.title.toLowerCase()} with extensive experience in regulatory enforcement matters.`}
+                          </p>
+                          <Link 
+                            to={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                            className="text-blue-600 hover:text-blue-700 font-medium text-sm"
+                          >
+                            View Profile
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   ))}
+                </div>
+                <div className="mt-6 text-left">
+                  <Link 
+                    to="/attorneys"
+                    className="text-blue-600 hover:text-blue-700 font-medium"
+                  >
+                    View All Attorneys
+                  </Link>
                 </div>
               </div>
             )}
