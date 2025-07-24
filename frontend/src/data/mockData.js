@@ -16,6 +16,61 @@ export const siteData = {
   
   practiceAreas: [
     {
+      title: "Accountants Liability and Securities Litigation",
+      description: "Comprehensive defense for accounting professionals in SEC enforcement, PCAOB investigations, malpractice claims, and securities litigation.",
+      fullDescription: "Briglia Hundley® represents accounting professionals and securities industry participants in complex regulatory enforcement matters, professional liability claims, and securities litigation. Our attorneys have extensive experience defending clients in SEC and PCAOB proceedings, state disciplinary actions, and private securities litigation.",
+      detailedContent: {
+        sections: [
+          {
+            title: "SEC and PCAOB Defense Practice",
+            content: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings.",
+            subServices: ["DOJ and SEC enforcement matters", "Grand juries and investigations by federal and state prosecutors", "SEC and FINRA regulatory matters", "Audit committees, directors, and senior management in conducting independent investigations involving derivative claims, whistleblower allegations, fraud, and potential securities law violations"]
+          },
+          {
+            title: "Accountants Liability",
+            content: "Briglia Hundley® represents accounting professionals in civil, criminal, government regulatory enforcement, and state disciplinary actions. Heightened enforcement standards of the SEC and Public Company Accounting Oversight Board (PCAOB), new auditing standards of the PCAOB, and new FASB accounting standards have resulted in increased scrutiny of the work performed by auditors. Our attorneys represent accounting firms and individual accounting professionals, including Certified Public Accountants (CPAs), in investigations and disciplinary proceedings brought by federal regulators, such as the PCAOB and SEC.",
+            subServices: ["SEC enforcement", "PCAOB enforcement", "State disciplinary proceedings (i.e., state boards of accountancy such as the VBOA)", "Parallel proceedings (i.e., SEC and PCAOB investigations, PCAOB and foreign audit regulator investigations, government investigation and private securities litigation, etc.)", "Audits of public companies and broker-dealers", "Multi-location audits", "International investigations involving overseas firms and foreign affiliates of the Big Four and other global accounting network firms (i.e., Argentina, Brazil, India, Indonesia, Japan, Korea, Spain, etc.)"]
+          },
+          {
+            title: "SEC, PCAOB, and State Disciplinary Boards",
+            content: "Our attorneys have represented accounting firms and accountants in all stages of PCAOB and SEC investigations and disciplinary proceedings, including recently trying a case before the PCAOB hearing officer. In addition, our attorneys have represented CPAs before state boards of accountancy, such as the Virginia Board of Accountancy (VBOA), including representing CPAs in Informal Fact-Finding Conferences. We understand the audit process, Generally Accepted Accounting Principles (GAAP), and PCAOB auditing standards. That understanding helps us effectively defend auditors' and CPAs' conduct. Our firm includes former prosecutors and a former Assistant Director of the PCAOB's Division of Enforcement and Investigations."
+          },
+          {
+            title: "Malpractice Defense",
+            content: "Accounting firms and CPAs are facing increasing professional liability litigation brought by former clients and third parties including creditors, investors, receivers, and bankruptcy trustees. We understand the relevant laws, professional standards, accounting concepts, and auditing issues at issue in accounting malpractice actions. Briglia Hundley® works with accounting firms, CPAs, and their insurers to provide a comprehensive and coordinated defense in complex accounting and auditing matters.",
+            subServices: ["Revenue recognition", "Inventory", "Lease accounting", "Going concern considerations", "Quality control", "Breach of professional obligations such as conflicts of interest, independence, and confidentiality"]
+          },
+          {
+            title: "Private Securities Litigation",
+            content: "Our attorneys have represented companies and individuals in private securities class action cases, Securities and Exchange Commission (SEC) investigations, and criminal matters involving allegations of securities fraud. We aggressively pursue a quick resolution of disputes at the earliest stages of litigation by requesting dismissal on the pleadings, objecting to the class certification, or seeking full or partial summary judgment. When it is in our client's best interest, we will seek to end litigation through settlement on favorable terms. When necessary and appropriate, our attorneys have the knowledge and skill to successfully take a case through a full trial on the merits.",
+            subServices: ["Private securities class action matters: Representation of companies, directors, and senior officers in complex Rule 10b-5 actions with allegations of fraud involving complex accounting and disclosure issues"]
+          }
+        ]
+      },
+      services: [
+        "SEC Enforcement Defense",
+        "PCAOB Investigations",
+        "Securities Investigations",
+        "DOJ Enforcement Matters", 
+        "Grand Jury Proceedings",
+        "FINRA Regulatory Matters",
+        "State Disciplinary Boards",
+        "Accounting Malpractice Defense",
+        "Private Securities Litigation",
+        "Wells Notice Responses",
+        "Audit Committee Investigations",
+        "Whistleblower Defense",
+        "Professional Liability Claims",
+        "Quality Control Reviews",
+        "Revenue Recognition Issues",
+        "Going Concern Matters"
+      ],
+      url: "/accountants-liability-securities-litigation",
+      localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
+      attorneys: ["Madison A. Beatty"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-securities-litigation-hero-25.jpg"
+    },
+    {
       title: "Business Litigation",
       description: "Strategic business litigation services for companies and individuals in state and federal courts throughout the region.",
       fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
@@ -303,8 +358,101 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
     }
   ],
-
-  attorneys: [
+      description: "Dedicated personal injury representation for accident victims and their families throughout Northern Virginia.",
+      fullDescription: "When you've been injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you obtain the compensation you deserve. Our personal injury attorneys have successfully represented clients in a wide range of cases, from auto accidents to complex product liability claims.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Motor Vehicle Accidents",
+            content: "We represent victims of car accidents, truck accidents, motorcycle accidents, and pedestrian accidents. Our attorneys investigate the circumstances of your accident, work with accident reconstruction experts, and negotiate with insurance companies to obtain fair compensation for your injuries."
+          },
+          {
+            title: "Premises Liability",
+            content: "Property owners have a duty to maintain safe conditions for visitors. We handle slip and fall cases, inadequate security claims, and other premises liability matters where injuries occur due to dangerous conditions on someone else's property."
+          },
+          {
+            title: "Product Liability",
+            content: "When defective products cause injuries, manufacturers and distributors can be held liable for damages. We represent clients injured by defective automobiles, medical devices, pharmaceuticals, and other consumer products."
+          }
+        ]
+      },
+      services: [
+        "Auto Accidents",
+        "Truck Accidents",
+        "Motorcycle Accidents",
+        "Slip and Fall",
+        "Medical Malpractice",
+        "Product Liability",
+        "Wrongful Death",
+        "Workers' Compensation"
+      ],
+      url: "/personal-injury",
+      localKeywords: "personal injury lawyer Fairfax VA, car accident attorney Northern Virginia, slip and fall Arlington VA, injury lawyer Prince William County",
+      attorneys: ["Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
+    },
+    {
+      title: "Estate Planning",
+      description: "Comprehensive estate planning services to protect your assets and provide for your family's future throughout Northern Virginia.",
+      fullDescription: "Proper estate planning is essential for protecting your family's financial security and ensuring that your wishes are carried out after your death. Our estate planning attorneys provide personalized service to help you create a comprehensive plan that addresses your unique needs and goals.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Wills and Trusts",
+            content: "We draft wills and establish various types of trusts to help you distribute your assets according to your wishes while minimizing taxes and avoiding probate. Our attorneys explain the benefits and drawbacks of different estate planning tools to help you make informed decisions."
+          },
+          {
+            title: "Business Succession Planning",
+            content: "For business owners, proper succession planning is crucial for ensuring the continuity of your business and providing for your family's financial security. We help develop strategies for transferring business ownership while minimizing tax consequences."
+          },
+          {
+            title: "Probate and Estate Administration",
+            content: "When a loved one passes away, we guide families through the probate process and help ensure that the estate is administered efficiently and in accordance with the decedent's wishes and applicable law."
+          }
+        ]
+      },
+      services: [
+        "Wills",
+        "Trusts",
+        "Powers of Attorney",
+        "Advance Directives",
+        "Probate",
+        "Estate Administration",
+        "Tax Planning",
+        "Business Succession"
+      ],
+      url: "/estate-planning",
+      localKeywords: "estate planning attorney Fairfax VA, will and trust lawyer Northern Virginia, probate attorney Arlington VA, estate lawyer Prince William County",
+      attorneys: ["James W. Hundley"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
+    },
+    {
+      title: "Real Estate Law",
+      description: "Full-service real estate legal representation for residential and commercial transactions throughout Northern Virginia.",
+      fullDescription: "Real estate transactions involve significant financial investments and complex legal issues. Our real estate attorneys provide comprehensive legal services for buyers, sellers, developers, and investors in both residential and commercial transactions.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Residential Real Estate",
+            content: "We represent buyers and sellers in residential real estate transactions, including contract review and negotiation, title examination, closing coordination, and resolution of any issues that arise during the transaction process."
+          },
+          {
+            title: "Commercial Real Estate",
+            content: "Our commercial real estate practice includes acquisition and disposition of commercial properties, leasing, development projects, and financing transactions. We work with investors, developers, landlords, and tenants on complex commercial real estate matters."
+          },
+          {
+            title: "Real Estate Litigation",
+            content: "When real estate disputes arise, we represent clients in litigation involving breach of contract, boundary disputes, title defects, landlord-tenant issues, and other real estate-related conflicts."
+          }
+        ]
+      },
+      services: [
+        "Residential Purchases and Sales",
+        "Commercial Transactions",
+        "Real Estate Development",
+        "Leasing",
+        "Title Issues",
+        "Boundary Disputes",
         "Zoning and Land Use",
         "Real Estate Litigation"
       ],
