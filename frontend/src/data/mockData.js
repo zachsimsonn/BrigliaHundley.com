@@ -16,6 +16,53 @@ export const siteData = {
   
   practiceAreas: [
     {
+      title: "Accountants Liability and Securities Litigation",
+      description: "Comprehensive defense for accounting professionals in SEC enforcement, PCAOB investigations, malpractice claims, and securities litigation.",
+      fullDescription: "Briglia Hundley® represents accounting professionals and securities industry participants in complex regulatory enforcement matters, professional liability claims, and securities litigation. Our attorneys have extensive experience defending clients in SEC and PCAOB proceedings, state disciplinary actions, and private securities litigation.",
+      detailedContent: {
+        sections: [
+          {
+            title: "SEC and PCAOB Defense Practice",
+            content: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings."
+          },
+          {
+            title: "Accountants Liability",
+            content: "Briglia Hundley® represents accounting professionals in civil, criminal, government regulatory enforcement, and state disciplinary actions. Heightened enforcement standards of the SEC and Public Company Accounting Oversight Board (PCAOB), new auditing standards of the PCAOB, and new FASB accounting standards have resulted in increased scrutiny of the work performed by auditors."
+          },
+          {
+            title: "Malpractice Defense",
+            content: "Accounting firms and CPAs are facing increasing professional liability litigation brought by former clients and third parties including creditors, investors, receivers, and bankruptcy trustees. We understand the relevant laws, professional standards, accounting concepts, and auditing issues at issue in accounting malpractice actions."
+          },
+          {
+            title: "Private Securities Litigation",
+            content: "Our attorneys have represented companies and individuals in private securities class action cases, Securities and Exchange Commission (SEC) investigations, and criminal matters involving allegations of securities fraud. We aggressively pursue a quick resolution of disputes at the earliest stages of litigation."
+          }
+        ]
+      },
+      services: [
+        "SEC Enforcement Defense",
+        "PCAOB Investigations",
+        "Securities Investigations",
+        "DOJ Enforcement Matters", 
+        "Grand Jury Proceedings",
+        "FINRA Regulatory Matters",
+        "State Disciplinary Boards",
+        "Accounting Malpractice Defense",
+        "Private Securities Litigation",
+        "Wells Notice Responses",
+        "Audit Committee Investigations",
+        "Whistleblower Defense",
+        "Professional Liability Claims",
+        "Quality Control Reviews",
+        "Revenue Recognition Issues",
+        "Going Concern Matters"
+      ],
+      url: "/accountants-liability-securities-litigation",
+      localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
+      attorneys: ["Madison A. Beatty"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-securities-litigation-hero-25.jpg"
+    },
+    {
       title: "Business Litigation",
       description: "Strategic business litigation services for companies and individuals in state and federal courts throughout the region.",
       fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
