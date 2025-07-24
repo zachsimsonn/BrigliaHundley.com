@@ -103,7 +103,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                         All Practice Areas
                       </Link>
                       <div className="grid grid-cols-4 gap-2">
-                        {data.practiceAreas.map((area, index) => (
+                        {allPracticeAreas.map((area, index) => (
                           <Link
                             key={index}
                             to={`/practice-area/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
