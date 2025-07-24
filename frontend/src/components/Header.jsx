@@ -136,7 +136,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                       >
                         All Attorneys
                       </Link>
-                      <div className="grid grid-cols-3 gap-2">
+                      <div className="grid grid-cols-4 gap-2">
                         {data.attorneys.map((attorney, index) => (
                           <Link
                             key={index}
