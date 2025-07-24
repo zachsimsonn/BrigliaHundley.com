@@ -302,22 +302,7 @@ export const siteData = {
       attorneys: ["Kaley Duncan Ward"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
     }
-        "Entity Formation",
-        "Corporate Governance",
-        "Mergers & Acquisitions",
-        "Securities Compliance",
-        "Commercial Contracts",
-        "Employment Law Compliance",
-        "Intellectual Property Protection",
-        "Business Succession Planning"
-      ],
-      url: "/corporate-law",
-      localKeywords: "corporate lawyer Fairfax VA, business attorney Northern Virginia, corporate law Arlington VA, business formation Prince William County",
-      attorneys: ["Steven D. Briglia", "James W. Hundley"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg"
-    },
-    {
-      title: "Personal Injury",
+  ],
       description: "Dedicated personal injury representation for accident victims and their families throughout Northern Virginia.",
       fullDescription: "When you've been injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you obtain the compensation you deserve. Our personal injury attorneys have successfully represented clients in a wide range of cases, from auto accidents to complex product liability claims.",
       detailedContent: {
