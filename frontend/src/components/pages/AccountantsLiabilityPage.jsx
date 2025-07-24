@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Scale, Shield, Phone, Mail, MapPin, ArrowLeft } from 'lucide-react';
 import { Button } from '../ui/button';
+import { ArrowLeft, Phone, Mail, Calendar, Award, Users, Scale, User } from 'lucide-react';
 import SEO from '../SEO';
+import Breadcrumb from '../Breadcrumb';
+import practiceAreasData from '../data/newPracticeArea';
 
 const AccountantsLiabilityPage = ({ data, onNavigate }) => {
   const practiceArea = {
