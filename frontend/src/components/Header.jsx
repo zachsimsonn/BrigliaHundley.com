@@ -2,15 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
-import practiceAreasData from '../data/newPracticeArea';
 
 const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
 
-  // Merge the new practice area with existing ones and sort alphabetically
-  const allPracticeAreas = [...practiceAreasData, ...data.practiceAreas].sort((a, b) => a.title.localeCompare(b.title));
+  // Use practice areas from data, already sorted alphabetically
+  const allPracticeAreas = data.practiceAreas;
 
   // Close dropdowns when location changes
   useEffect(() => {
