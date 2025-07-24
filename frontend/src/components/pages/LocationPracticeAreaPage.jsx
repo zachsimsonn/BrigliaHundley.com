@@ -253,7 +253,7 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
               
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  If you're facing {currentPracticeArea.title.toLowerCase()} charges or legal issues in {currentLocation.name}, 
+                  {currentPracticeArea.description} If you're facing {currentPracticeArea.title.toLowerCase()} charges or legal issues in {currentLocation.name}, 
                   you need experienced local representation. Our attorneys at Briglia Hundley have been serving residents of 
                   {currentLocation.name} and {currentLocation.county} for over 30 years, with regular appearances in {currentLocation.courts[0]}.
                 </p>
