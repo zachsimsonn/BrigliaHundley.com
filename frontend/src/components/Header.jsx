@@ -9,6 +9,9 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
 
+  // Merge the new practice area with existing ones and sort alphabetically
+  const allPracticeAreas = [...practiceAreasData, ...data.practiceAreas].sort((a, b) => a.title.localeCompare(b.title));
+
   // Close dropdowns when location changes
   useEffect(() => {
     setActiveDropdown(null);
