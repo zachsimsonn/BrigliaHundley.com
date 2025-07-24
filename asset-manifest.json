@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/BrigliaHundley.com/static/css/main.58e9e72b.css",
-    "main.js": "/BrigliaHundley.com/static/js/main.a87c33c2.js",
-    "index.html": "/BrigliaHundley.com/index.html",
-    "main.58e9e72b.css.map": "/BrigliaHundley.com/static/css/main.58e9e72b.css.map",
-    "main.a87c33c2.js.map": "/BrigliaHundley.com/static/js/main.a87c33c2.js.map"
+    "main.css": "./static/css/main.58e9e72b.css",
+    "main.js": "./static/js/main.a87c33c2.js",
+    "index.html": "./index.html",
+    "main.58e9e72b.css.map": "./static/css/main.58e9e72b.css.map",
+    "main.a87c33c2.js.map": "./static/js/main.a87c33c2.js.map"
   },
   "entrypoints": [
     "static/css/main.58e9e72b.css",
