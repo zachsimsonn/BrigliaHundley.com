@@ -135,6 +135,7 @@ const App = () => {
                 </div>
                 <Footer data={data} />
                 <Toaster />
+                <Chatbot data={data} />
               </div>
             } />
             <Route path="/about" element={
