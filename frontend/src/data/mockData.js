@@ -60,7 +60,7 @@ export const siteData = {
       url: "/accountants-liability-securities-litigation",
       localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
       attorneys: ["Madison A. Beatty"],
-      image: "https://images.pexels.com/photos/6077797/pexels-photo-6077797.jpeg"
+      image: "/accountants-liability-and-security-litigation.jpg"
     },
     {
       title: "Business Litigation",
