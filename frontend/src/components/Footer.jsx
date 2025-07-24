@@ -58,14 +58,14 @@ const Footer = ({ data }) => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Areas We Serve</h3>
             <div className="space-y-2">
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Tysons Corner, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Fairfax County, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Arlington County, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Prince William County, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Loudoun County, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">McLean, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Vienna, VA</a>
-              <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Falls Church, VA</a>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Tysons Corner, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Fairfax County, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Arlington County, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Prince William County, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Loudoun County, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">McLean, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Vienna, VA</Link>
+              <Link to="/contact" className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm">Falls Church, VA</Link>
             </div>
           </div>
 
