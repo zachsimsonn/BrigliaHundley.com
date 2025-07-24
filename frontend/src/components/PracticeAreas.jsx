@@ -5,6 +5,8 @@ import { Button } from './ui/button';
 import practiceAreasData from '../data/newPracticeArea';
 
 const PracticeAreas = ({ data, onNavigate }) => {
+  // Merge the new practice area with existing ones and sort alphabetically
+  const allPracticeAreas = [...practiceAreasData, ...data.practiceAreas].sort((a, b) => a.title.localeCompare(b.title));
   const iconMap = {
     'Family Law': <Heart className="h-8 w-8" />,
     'Commercial Litigation': <Scale className="h-8 w-8" />,
