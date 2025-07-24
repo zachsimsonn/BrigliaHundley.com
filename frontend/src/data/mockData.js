@@ -303,7 +303,6 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
     }
   ],
-  ],
 
   attorneys: [
     {
