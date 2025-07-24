@@ -7,36 +7,63 @@ import Breadcrumb from '../Breadcrumb';
 import practiceAreasData from '../data/newPracticeArea';
 
 const AccountantsLiabilityPage = ({ data, onNavigate }) => {
-  const practiceArea = {
-    title: "Accountants Liability and Securities Litigation",
-    description: "Comprehensive defense for accounting professionals in SEC enforcement, PCAOB investigations, malpractice claims, and securities litigation.",
-    fullDescription: "Briglia Hundley® represents accounting professionals and securities industry participants in complex regulatory enforcement matters, professional liability claims, and securities litigation. Our attorneys have extensive experience defending clients in SEC and PCAOB proceedings, state disciplinary actions, and private securities litigation.",
-    attorneys: ["Madison A. Beatty"],
-    services: [
-      "SEC Enforcement Defense",
-      "PCAOB Investigations", 
-      "Securities Investigations",
-      "DOJ Enforcement Matters",
-      "Grand Jury Proceedings",
-      "FINRA Regulatory Matters",
-      "State Disciplinary Boards",
-      "Accounting Malpractice Defense",
-      "Private Securities Litigation",
-      "Wells Notice Responses",
-      "Audit Committee Investigations",
-      "Whistleblower Defense",
-      "Professional Liability Claims",
-      "Quality Control Reviews",
-      "Revenue Recognition Issues",
-      "Going Concern Matters"
-    ]
-  };
+  const practiceArea = practiceAreasData[0]; // Get the Accountants Liability data
 
-  const handleBackClick = () => {
-    if (onNavigate) {
-      onNavigate('/practice-areas');
+  // Enhanced SEO meta description
+  const metaDescription = `Expert ${practiceArea.title} legal services from Briglia Hundley® in Tysons Corner, Virginia. ${practiceArea.description.substring(0, 120)}. Contact our experienced attorneys today.`;
+  
+  const keywords = `${practiceArea.title}, ${practiceArea.title} attorney, Virginia ${practiceArea.title} lawyer, Tysons Corner legal services, Northern Virginia law firm, ${practiceArea.localKeywords || 'legal representation'}`;
+
+  // Practice area structured data
+  const practiceAreaSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": practiceArea.title,
+    "description": practiceArea.description,
+    "provider": {
+      "@type": "LegalService",
+      "name": "Briglia Hundley PC",
+      "url": "https://brigliahundley.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1921 Gallows Road, Suite 900",
+        "addressLocality": "Tysons Corner",
+        "addressRegion": "VA",
+        "postalCode": "22182",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Northern Virginia"
+    },
+    "serviceType": practiceArea.title,
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": `${practiceArea.title} Services`,
+      "itemListElement": practiceArea.services ? practiceArea.services.map(service => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": service
+        }
+      })) : []
     }
   };
+
+  // Breadcrumb data
+  const breadcrumbItems = [
+    { name: 'Practice Areas', url: '/practice-areas' },
+    { name: practiceArea.title, url: '/practice-area/accountants-liability-and-securities-litigation' }
+  ];
+
+  // Get attorneys for this practice area
+  const relatedAttorneys = data.attorneys.filter(attorney => {
+    if (practiceArea.attorneys) {
+      return practiceArea.attorneys.includes(attorney.name);
+    }
+    return false;
+  });
 
   return (
     <>
