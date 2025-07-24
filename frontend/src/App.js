@@ -37,6 +37,7 @@ import PracticeAreas from "./components/PracticeAreas";
 import FAQ from "./components/FAQ";
 import SEO from "./components/SEO";
 import Chatbot from "./components/Chatbot";
+import NotFoundPage from "./components/pages/NotFoundPage";
 
 // Data
 import { siteData, editableContent } from "./data/mockData";
