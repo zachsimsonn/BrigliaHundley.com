@@ -16,39 +16,109 @@ export const siteData = {
   
   practiceAreas: [
     {
-      title: "Family Law",
-      description: "Comprehensive family law services including divorce, custody, and support matters for families throughout Northern Virginia.",
-      fullDescription: "At Briglia Hundley, P.C.®, we understand that family law matters can be emotionally charged and complex. Our experienced attorneys are dedicated to providing compassionate and effective legal representation in a variety of family law issues, including divorce, child custody, child support, and property division. We strive to protect your rights and help you navigate through these challenging times with confidence.",
+      title: "Business Litigation",
+      description: "Strategic business litigation services for companies and individuals in state and federal courts throughout the region.",
+      fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
       detailedContent: {
         sections: [
           {
-            title: "Divorce",
-            content: "Our divorce attorneys handle all aspects of divorce proceedings, from uncontested divorces to complex contested matters involving significant assets, business interests, and custody disputes. We provide strategic counsel on property division, spousal support, and child custody arrangements."
+            title: "Contract Disputes",
+            content: "We represent clients in breach of contract claims, contract interpretation disputes, and negotiations to resolve commercial contract issues. Our attorneys have experience with purchase and sale agreements, service contracts, employment agreements, and other commercial contracts."
           },
           {
-            title: "Child Custody and Support",
-            content: "We represent parents in custody disputes, working to establish arrangements that serve the best interests of the children while protecting our clients' parental rights. Our attorneys handle child support calculations, modifications, and enforcement matters."
+            title: "Business Torts",
+            content: "Our team handles cases involving tortious interference with business relationships, theft of trade secrets, unfair competition, and other business tort claims. We work to protect our clients' business interests and seek appropriate remedies for damages."
           },
           {
-            title: "Property Division",
-            content: "Virginia is an equitable distribution state, which means marital property is divided fairly but not necessarily equally. We help clients identify, value, and divide marital assets including real estate, business interests, retirement accounts, and other valuable property."
+            title: "Partnership and Shareholder Disputes",
+            content: "We assist clients with disputes between business partners, shareholders, and members of limited liability companies. Our attorneys handle cases involving breach of fiduciary duty, oppression of minority shareholders, and dissolution proceedings."
           }
         ]
       },
       services: [
-        "Divorce",
-        "Child Custody", 
-        "Child Support",
-        "Property Division",
-        "Adoption",
-        "Spousal Support",
-        "Prenuptial Agreements",
-        "Postnuptial Agreements"
+        "Contract Disputes",
+        "Business Torts",
+        "Partnership Disputes",
+        "Shareholder Litigation",
+        "Employment Disputes",
+        "Intellectual Property Disputes",
+        "Construction Litigation",
+        "Insurance Coverage Disputes"
       ],
-      url: "/family-law",
-      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
-      attorneys: ["James W. Hundley", "Steven D. Briglia", "Courtney B. Harden", "Amy S. Owen", "Teresa S. Cole"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
+      url: "/business-litigation",
+      localKeywords: "business litigation attorney Fairfax VA, commercial litigation lawyer Northern Virginia, contract dispute Arlington VA, business lawsuit Prince William County",
+      attorneys: ["Madison A. Beatty", "James W. Hundley"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
+    },
+    {
+      title: "Community Associations",
+      description: "Comprehensive legal services for homeowners associations, condominium associations, and cooperative housing corporations.",
+      fullDescription: "Our community association practice represents homeowners associations, condominium associations, and cooperative housing corporations throughout Virginia, Maryland, and the District of Columbia. We provide counsel on all aspects of community association law, from routine operational matters to complex litigation.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Governance and Operations",
+            content: "We advise association boards on governance matters, including meeting procedures, election protocols, and compliance with state laws and governing documents. Our attorneys help ensure associations operate effectively while minimizing legal risks."
+          },
+          {
+            title: "Collections and Enforcement",
+            content: "We assist associations with collecting delinquent assessments and enforcing governing document provisions. Our team handles collection actions, lien enforcement, and foreclosure proceedings when necessary."
+          },
+          {
+            title: "Construction Defect Claims",
+            content: "Our attorneys represent community associations in construction defect litigation against developers, contractors, and design professionals. We have experience with both common element and unit-specific defect claims."
+          }
+        ]
+      },
+      services: [
+        "Board Training",
+        "Covenant Enforcement",
+        "Assessment Collections",
+        "Construction Defect Claims",
+        "Dispute Resolution",
+        "Board Training",
+        "Litigation",
+        "Regulatory Compliance"
+      ],
+      url: "/community-associations",
+      localKeywords: "HOA attorney Fairfax VA, community association lawyer Northern Virginia, condominium law Arlington VA, homeowners association Prince William County",
+      attorneys: ["Mary \"Molly\" Peacock", "Jacob C. DeRue"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-community-associations-hero-25.jpg"
+    },
+    {
+      title: "Corporate Law",
+      description: "Comprehensive corporate legal services for businesses of all sizes, from startups to established companies throughout Northern Virginia.",
+      fullDescription: "Our corporate law practice provides comprehensive legal services to businesses at every stage of development. We assist with entity formation, corporate governance, mergers and acquisitions, financing transactions, and ongoing compliance matters. Our attorneys understand the unique challenges facing businesses in today's competitive environment.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Entity Formation and Structure",
+            content: "We help entrepreneurs and established businesses choose the right corporate structure for their needs, whether it's a corporation, limited liability company, partnership, or other entity type. We handle all aspects of entity formation, including drafting organizational documents and ensuring compliance with state and federal requirements."
+          },
+          {
+            title: "Mergers and Acquisitions",
+            content: "Our M&A team represents buyers and sellers in transactions ranging from small asset purchases to complex corporate mergers. We provide strategic advice throughout the transaction process, from initial due diligence through closing and post-closing integration."
+          },
+          {
+            title: "Corporate Governance",
+            content: "We advise boards of directors and corporate officers on governance best practices, fiduciary duties, and compliance with corporate laws and regulations. Our attorneys help ensure that businesses operate in accordance with applicable legal requirements and industry standards."
+          }
+        ]
+      },
+      services: [
+        "Entity Formation",
+        "Corporate Governance",
+        "Mergers and Acquisitions",
+        "Securities Law",
+        "Business Transactions",
+        "Compliance and Regulatory",
+        "Contract Negotiation",
+        "Joint Ventures"
+      ],
+      url: "/corporate-law",
+      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, corporate law Arlington VA, business formation Prince William County",
+      attorneys: ["Brian J. Lubkeman", "Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg"
     },
     {
       title: "Criminal Defense",
@@ -89,65 +159,149 @@ export const siteData = {
       ],
       url: "/criminal-defense",
       localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County",
-      attorneys: ["James W. Hundley", "Steven D. Briglia"],
+      attorneys: ["Steven D. Briglia", "James W. Hundley", "Madison A. Beatty"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-criminal-law-hero-25.jpg"
     },
     {
-      title: "Business Litigation",
-      description: "Strategic business litigation services for companies and individuals in state and federal courts throughout the region.",
-      fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
+      title: "Employment Law",
+      description: "Comprehensive employment law services for both employers and employees in workplace disputes and compliance matters.",
+      fullDescription: "Our employment law practice represents both employers and employees in a wide range of workplace issues. We provide counsel on employment compliance, workplace policies, discrimination claims, wrongful termination, and other employment-related matters.",
       detailedContent: {
         sections: [
           {
-            title: "Contract Disputes",
-            content: "We represent clients in breach of contract claims, contract interpretation disputes, and negotiations to resolve commercial contract issues. Our attorneys have experience with purchase and sale agreements, service contracts, employment agreements, and other commercial contracts."
+            title: "Workplace Discrimination",
+            content: "We represent clients in discrimination cases based on race, gender, age, disability, religion, and other protected characteristics. Our attorneys handle cases before federal and state agencies as well as in court proceedings."
           },
           {
-            title: "Business Torts",
-            content: "Our team handles cases involving tortious interference with business relationships, theft of trade secrets, unfair competition, and other business tort claims. We work to protect our clients' business interests and seek appropriate remedies for damages."
+            title: "Wrongful Termination",
+            content: "We assist employees who have been wrongfully terminated and help employers navigate termination decisions to minimize legal risks. Our team understands both sides of employment relationships."
           },
           {
-            title: "Partnership and Shareholder Disputes",
-            content: "We assist clients with disputes between business partners, shareholders, and members of limited liability companies. Our attorneys handle cases involving breach of fiduciary duty, oppression of minority shareholders, and dissolution proceedings."
+            title: "Employment Contracts",
+            content: "We draft and review employment agreements, non-compete clauses, severance packages, and other employment-related contracts to protect our clients' interests."
           }
         ]
       },
       services: [
-        "Contract Disputes",
-        "Business Torts",
-        "Partnership Disputes",
-        "Shareholder Litigation",
-        "Employment Disputes",
-        "Intellectual Property Disputes",
-        "Construction Litigation",
-        "Insurance Coverage Disputes"
+        "Workplace Discrimination",
+        "Wrongful Termination",
+        "Employment Contracts",
+        "Wage and Hour Disputes",
+        "Sexual Harassment",
+        "Retaliation Claims",
+        "Non-Compete Agreements",
+        "Severance Negotiations"
       ],
-      url: "/business-litigation",
-      localKeywords: "business litigation attorney Fairfax VA, commercial litigation lawyer Northern Virginia, contract dispute Arlington VA, business lawsuit Prince William County",
-      attorneys: ["Steven D. Briglia", "James W. Hundley", "Madison A. Beatty"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
+      url: "/employment-law",
+      localKeywords: "employment attorney Fairfax VA, workplace lawyer Northern Virginia, employment law Arlington VA, employment disputes Prince William County",
+      attorneys: ["Jacob C. DeRue", "Amy S. Owen"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25.jpg"
     },
     {
-      title: "Corporate Law",
-      description: "Comprehensive corporate legal services for businesses of all sizes, from startups to established companies throughout Northern Virginia.",
-      fullDescription: "Our corporate law practice provides comprehensive legal services to businesses at every stage of development. We assist with entity formation, corporate governance, mergers and acquisitions, financing transactions, and ongoing compliance matters. Our attorneys understand the unique challenges facing businesses in today's competitive environment.",
+      title: "Family Law",
+      description: "Comprehensive family law services including divorce, custody, and support matters for families throughout Northern Virginia.",
+      fullDescription: "At Briglia Hundley, P.C.®, we understand that family law matters can be emotionally charged and complex. Our experienced attorneys are dedicated to providing compassionate and effective legal representation in a variety of family law issues, including divorce, child custody, child support, and property division. We strive to protect your rights and help you navigate through these challenging times with confidence.",
       detailedContent: {
         sections: [
           {
-            title: "Entity Formation and Structure",
-            content: "We help entrepreneurs and established businesses choose the right corporate structure for their needs, whether it's a corporation, limited liability company, partnership, or other entity type. We handle all aspects of entity formation, including drafting organizational documents and ensuring compliance with state and federal requirements."
+            title: "Divorce",
+            content: "Our divorce attorneys handle all aspects of divorce proceedings, from uncontested divorces to complex contested matters involving significant assets, business interests, and custody disputes. We provide strategic counsel on property division, spousal support, and child custody arrangements."
           },
           {
-            title: "Mergers and Acquisitions",
-            content: "Our M&A team represents buyers and sellers in transactions ranging from small asset purchases to complex corporate mergers. We provide strategic advice throughout the transaction process, from initial due diligence through closing and post-closing integration."
+            title: "Child Custody and Support",
+            content: "We represent parents in custody disputes, working to establish arrangements that serve the best interests of the children while protecting our clients' parental rights. Our attorneys handle child support calculations, modifications, and enforcement matters."
           },
           {
-            title: "Corporate Governance",
-            content: "We advise boards of directors and corporate officers on governance best practices, fiduciary duties, and compliance with corporate laws and regulations. Our attorneys help ensure that businesses operate in accordance with applicable legal requirements and industry standards."
+            title: "Property Division",
+            content: "Virginia is an equitable distribution state, which means marital property is divided fairly but not necessarily equally. We help clients identify, value, and divide marital assets including real estate, business interests, retirement accounts, and other valuable property."
           }
         ]
       },
       services: [
+        "Divorce",
+        "Child Custody", 
+        "Child Support",
+        "Property Division",
+        "Adoption",
+        "Spousal Support",
+        "Prenuptial Agreements",
+        "Postnuptial Agreements"
+      ],
+      url: "/family-law",
+      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
+      attorneys: ["Hannah Merrill", "Michael C. May", "Teresa S. Cole", "Lauren L. Gill"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
+    },
+    {
+      title: "Personal Injury",
+      description: "Aggressive representation for individuals injured due to the negligence of others, including car accidents, medical malpractice, and premises liability.",
+      fullDescription: "Our personal injury attorneys are dedicated to helping accident victims and their families recover the compensation they deserve. We handle all types of personal injury cases, from minor fender-benders to catastrophic injuries, and we fight to ensure our clients receive fair compensation for their medical expenses, lost wages, and pain and suffering.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Motor Vehicle Accidents",
+            content: "We represent victims of car accidents, truck accidents, motorcycle accidents, and other motor vehicle collisions. Our attorneys work with accident reconstruction experts, medical professionals, and other specialists to build strong cases for our clients."
+          },
+          {
+            title: "Medical Malpractice",
+            content: "When healthcare providers fail to meet the standard of care, patients can suffer serious injuries or even death. Our medical malpractice attorneys have the knowledge and resources to hold negligent healthcare providers accountable for their actions."
+          },
+          {
+            title: "Premises Liability",
+            content: "Property owners have a duty to maintain safe conditions for visitors. We represent clients injured in slip and fall accidents, inadequate security cases, and other premises liability matters."
+          }
+        ]
+      },
+      services: [
+        "Motor Vehicle Accidents",
+        "Medical Malpractice",
+        "Premises Liability",
+        "Product Liability",
+        "Wrongful Death",
+        "Slip and Fall",
+        "Dog Bites",
+        "Workers' Compensation"
+      ],
+      url: "/personal-injury",
+      localKeywords: "personal injury attorney Fairfax VA, car accident lawyer Northern Virginia, medical malpractice Arlington VA, personal injury Prince William County",
+      attorneys: ["Steven D. Briglia", "James W. Hundley", "Courtney B. Harden", "Madison A. Beatty"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
+    },
+    {
+      title: "Trusts and Estate Planning",
+      description: "Comprehensive estate planning services to help individuals and families protect their assets and plan for the future.",
+      fullDescription: "Our estate planning attorneys help clients create comprehensive plans to protect their assets, minimize taxes, and ensure their wishes are carried out. We assist with wills, trusts, powers of attorney, advance directives, and other estate planning tools.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Wills and Trusts",
+            content: "We draft wills and various types of trusts to help clients distribute their assets according to their wishes while minimizing taxes and avoiding probate. Our attorneys explain the benefits and drawbacks of different estate planning strategies."
+          },
+          {
+            title: "Estate Administration",
+            content: "When a loved one passes away, we guide families through the probate process and estate administration. We help executors and administrators fulfill their duties while protecting beneficiaries' interests."
+          },
+          {
+            title: "Tax Planning",
+            content: "Our attorneys work with tax professionals to develop strategies that minimize estate and gift taxes while achieving our clients' estate planning goals."
+          }
+        ]
+      },
+      services: [
+        "Wills",
+        "Trusts",
+        "Estate Administration",
+        "Probate",
+        "Powers of Attorney",
+        "Advance Directives",
+        "Tax Planning",
+        "Elder Law"
+      ],
+      url: "/estate-planning",
+      localKeywords: "estate planning attorney Fairfax VA, wills and trusts lawyer Northern Virginia, probate attorney Arlington VA, estate planning Prince William County",
+      attorneys: ["Kaley Duncan Ward"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
+    }
         "Entity Formation",
         "Corporate Governance",
         "Mergers & Acquisitions",
