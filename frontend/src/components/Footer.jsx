@@ -123,12 +123,12 @@ const Footer = ({ data }) => {
             </div>
             
             <div className="flex space-x-6">
-              <a 
-                href="/sitemap" 
+              <Link 
+                to="/sitemap" 
                 className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
               >
                 Sitemap
-              </a>
+              </Link>
               <a 
                 href="#" 
                 className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
