@@ -358,39 +358,6 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-estate-planning-hero-25.jpg"
     }
   ],
-      description: "Dedicated personal injury representation for accident victims and their families throughout Northern Virginia.",
-      fullDescription: "When you've been injured due to someone else's negligence, you need experienced legal representation to protect your rights and help you obtain the compensation you deserve. Our personal injury attorneys have successfully represented clients in a wide range of cases, from auto accidents to complex product liability claims.",
-      detailedContent: {
-        sections: [
-          {
-            title: "Motor Vehicle Accidents",
-            content: "We represent victims of car accidents, truck accidents, motorcycle accidents, and pedestrian accidents. Our attorneys investigate the circumstances of your accident, work with accident reconstruction experts, and negotiate with insurance companies to obtain fair compensation for your injuries."
-          },
-          {
-            title: "Premises Liability",
-            content: "Property owners have a duty to maintain safe conditions for visitors. We handle slip and fall cases, inadequate security claims, and other premises liability matters where injuries occur due to dangerous conditions on someone else's property."
-          },
-          {
-            title: "Product Liability",
-            content: "When defective products cause injuries, manufacturers and distributors can be held liable for damages. We represent clients injured by defective automobiles, medical devices, pharmaceuticals, and other consumer products."
-          }
-        ]
-      },
-      services: [
-        "Auto Accidents",
-        "Truck Accidents",
-        "Motorcycle Accidents",
-        "Slip and Fall",
-        "Medical Malpractice",
-        "Product Liability",
-        "Wrongful Death",
-        "Workers' Compensation"
-      ],
-      url: "/personal-injury",
-      localKeywords: "personal injury lawyer Fairfax VA, car accident attorney Northern Virginia, slip and fall Arlington VA, injury lawyer Prince William County",
-      attorneys: ["Steven D. Briglia"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
-    },
     {
       title: "Estate Planning",
       description: "Comprehensive estate planning services to protect your assets and provide for your family's future throughout Northern Virginia.",
