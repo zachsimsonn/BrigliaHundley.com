@@ -280,6 +280,41 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
     },
     {
+      title: "Municipal Law",
+      description: "Comprehensive legal counsel for local governments and municipalities throughout Northern Virginia.",
+      fullDescription: "Municipal law requires specialized knowledge of the unique legal issues facing local governments. Our municipal law attorneys provide ongoing legal counsel to cities, towns, and other local government entities on a wide range of matters.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Government Operations",
+            content: "We provide legal advice on day-to-day government operations, including compliance with the Virginia Freedom of Information Act, personnel matters, procurement, and other administrative issues."
+          },
+          {
+            title: "Land Use and Zoning",
+            content: "Our attorneys assist local governments with zoning ordinances, comprehensive plans, development approvals, and land use disputes. We help ensure that local land use decisions comply with applicable state and federal requirements."
+          },
+          {
+            title: "Public Finance",
+            content: "We provide legal counsel on municipal finance matters, including bond issuances, public-private partnerships, and other financing mechanisms for public projects."
+          }
+        ]  
+      },
+      services: [
+        "Government Counsel",
+        "Zoning and Land Use",
+        "Public Finance",
+        "FOIA Compliance",
+        "Personnel Issues",
+        "Procurement",
+        "Economic Development",
+        "Intergovernmental Agreements"
+      ],
+      url: "/municipal-law",
+      localKeywords: "municipal attorney Fairfax VA, government lawyer Northern Virginia, zoning attorney Arlington VA, municipal law Prince William County",
+      attorneys: ["Steven D. Briglia"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg"
+    },
+    {
       title: "Personal Injury",
       description: "Aggressive representation for individuals injured due to the negligence of others, including car accidents, medical malpractice, and premises liability.",
       fullDescription: "Our personal injury attorneys are dedicated to helping accident victims and their families recover the compensation they deserve. We handle all types of personal injury cases, from minor fender-benders to catastrophic injuries, and we fight to ensure our clients receive fair compensation for their medical expenses, lost wages, and pain and suffering.",
