@@ -119,5 +119,26 @@ export const siteData = {
       phone: "703.883.0204",
       email: "jhundley@brigliahundley.com"
     }
+  ],
+
+  // Mock editable content for the admin interface
+  editableContent: {
+    heroTitle: "Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.",
+    heroSubtitle: "Our seasoned attorneys are committed to providing superior service on every matter entrusted to our care."
+  },
+
+  // Blog data
+  blogs: [
+    {
+      id: 1,
+      title: "Understanding Criminal Defense Rights",
+      slug: "understanding-criminal-defense-rights",
+      excerpt: "Know your rights when facing criminal charges in Virginia.",
+      content: "Detailed content about criminal defense rights...",
+      author: "James W. Hundley",
+      date: "June 15, 2025",
+      category: "Criminal Defense",
+      image: "https://images.pexels.com/photos/8815657/pexels-photo-8815657.jpeg"
+    }
   ]
 };
