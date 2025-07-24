@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import LocationPracticeAreaPage from './pages/LocationPracticeAreaPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const LocationPageRouter = ({ data, handleContentEdit, handleNavigate }) => {
   const currentLocation = useLocation();
