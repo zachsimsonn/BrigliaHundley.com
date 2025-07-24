@@ -350,6 +350,41 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
     },
     {
+      title: "Real Estate Law",
+      description: "Full-service real estate legal representation for residential and commercial transactions throughout Northern Virginia.",
+      fullDescription: "Real estate transactions involve significant financial investments and complex legal issues. Our real estate attorneys provide comprehensive legal services for buyers, sellers, developers, and investors in both residential and commercial transactions.",
+      detailedContent: {
+        sections: [
+          {
+            title: "Residential Real Estate",
+            content: "We represent buyers and sellers in residential real estate transactions, including contract review and negotiation, title examination, closing coordination, and resolution of any issues that arise during the transaction process."
+          },
+          {
+            title: "Commercial Real Estate",
+            content: "Our commercial real estate practice includes acquisition and disposition of commercial properties, leasing, development projects, and financing transactions. We work with investors, developers, landlords, and tenants on complex commercial real estate matters."
+          },
+          {
+            title: "Real Estate Litigation",
+            content: "When real estate disputes arise, we represent clients in litigation involving breach of contract, boundary disputes, title defects, landlord-tenant issues, and other real estate-related conflicts."
+          }
+        ]
+      },
+      services: [
+        "Residential Purchases and Sales",
+        "Commercial Transactions",
+        "Real Estate Development",
+        "Leasing",
+        "Title Issues",
+        "Boundary Disputes",
+        "Zoning and Land Use",
+        "Real Estate Litigation"
+      ],
+      url: "/real-estate-law",
+      localKeywords: "real estate attorney Fairfax VA, real estate lawyer Northern Virginia, property law Arlington VA, real estate closing Prince William County",
+      attorneys: ["Teresa S. Cole", "Amy S. Owen"],
+      image: "https://brigliahundley.com/wp-content/uploads/bh-real-estate-hero-25.jpg"
+    },
+    {
       title: "Trusts and Estate Planning",
       description: "Comprehensive estate planning services to help individuals and families protect their assets and plan for the future.",
       fullDescription: "Our estate planning attorneys help clients create comprehensive plans to protect their assets, minimize taxes, and ensure their wishes are carried out. We assist with wills, trusts, powers of attorney, advance directives, and other estate planning tools.",
