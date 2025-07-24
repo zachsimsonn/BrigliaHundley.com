@@ -398,15 +398,15 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                   ))}
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200">
-                  <a 
-                    href="/attorneys"
+                  <Link 
+                    to="/attorneys"
                     className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
                   >
                     View All Attorneys
                     <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             )}
