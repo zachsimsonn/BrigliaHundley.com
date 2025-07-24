@@ -142,7 +142,7 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-gray-50 rounded-lg p-6 sticky top-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our Services</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-left">Our Services</h3>
               
               {/* Services List */}
               {practiceArea.services && (
