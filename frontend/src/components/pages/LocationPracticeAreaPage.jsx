@@ -168,20 +168,20 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section with Local Focus */}
-        <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-16">
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="h-5 w-5 text-blue-300" />
-                  <span className="text-blue-200 font-medium">Serving {currentLocation.name}, {currentLocation.county}</span>
+                  <MapPin className="h-5 w-5 text-gray-300" />
+                  <span className="text-gray-200 font-medium">Serving {currentLocation.name}, {currentLocation.county}</span>
                 </div>
                 
                 <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
                   {currentLocation.name} {currentPracticeArea.title} Lawyer
                 </h1>
                 
-                <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+                <p className="text-xl text-gray-100 mb-8 leading-relaxed">
                   Experienced {currentPracticeArea.title.toLowerCase()} representation for residents of {currentLocation.name}. 
                   We handle cases in {currentLocation.courts[0]} and throughout {currentLocation.county}.
                   <span className="block mt-2 font-semibold">
@@ -192,14 +192,14 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href={`tel:${data.business?.phone}`}
-                    className="inline-flex items-center justify-center bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    className="inline-flex items-center justify-center bg-white text-gray-900 font-bold px-8 py-4 rounded-full hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >
                     <Phone className="mr-2 h-5 w-5" />
                     Call (703) 783-5185
                   </a>
                   <button 
                     onClick={() => navigate('/contact')}
-                    className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300"
+                    className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300"
                   >
                     Free Consultation
                   </button>
@@ -213,28 +213,28 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
                     <Award className="h-6 w-6 text-yellow-400 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold">Tier 1 Ranked Law Firm</div>
-                      <div className="text-blue-100 text-sm">7 attorneys named "Best Lawyers" 2025</div>
+                      <div className="text-gray-100 text-sm">7 attorneys named "Best Lawyers" 2025</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <Users className="h-6 w-6 text-blue-300 mt-1 flex-shrink-0" />
+                    <Users className="h-6 w-6 text-gray-300 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold">Local Knowledge</div>
-                      <div className="text-blue-100 text-sm">{currentLocation.driveTime}</div>
+                      <div className="text-gray-100 text-sm">{currentLocation.driveTime}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Scale className="h-6 w-6 text-green-400 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold">Court Experience</div>
-                      <div className="text-blue-100 text-sm">Regular practice in {currentLocation.courts.join(' and ')}</div>
+                      <div className="text-gray-100 text-sm">Regular practice in {currentLocation.courts.join(' and ')}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock className="h-6 w-6 text-orange-400 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold">Immediate Response</div>
-                      <div className="text-blue-100 text-sm">This is {currentPracticeArea.urgency} - we respond quickly</div>
+                      <div className="text-gray-100 text-sm">This is {currentPracticeArea.urgency} - we respond quickly</div>
                     </div>
                   </div>
                 </div>
