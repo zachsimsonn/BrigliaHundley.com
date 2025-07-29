@@ -3,7 +3,7 @@ export const siteData = {
     name: "Briglia Hundley®",
     tagline: "Nothing is more important than what we do for families and businesses",
     established: "1993",
-    location: "Tysons Corner, Fairfax County, Virginia",
+    location: "Tysons Corner, Virginia",
     address: "1921 Gallows Road, Suite 900, Tysons Corner, Virginia 22182",
     phone: "(703) 555-0123", // Mock phone number
     email: "info@brigliahundley.com", // Mock email
@@ -68,7 +68,7 @@ export const siteData = {
       url: "/accountants-liability-and-securities-litigation",
       localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
       attorneys: ["Madison A. Beatty"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-securities-litigation-hero-25.jpg"
+      image: "bh-accountants-liability-hero-25.jpg?raw=true"
     },
     {
       title: "Business Litigation",
