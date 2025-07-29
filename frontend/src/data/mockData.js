@@ -3,7 +3,7 @@ export const siteData = {
     name: "Briglia Hundley®",
     tagline: "Nothing is more important than what we do for families and businesses",
     established: "1993",
-    location: "Tysons Corner, Fairfax County, Virginia",
+    location: "Tysons Corner, Virginia",
     address: "1921 Gallows Road, Suite 900, Tysons Corner, Virginia 22182",
     phone: "(703) 555-0123", // Mock phone number
     email: "info@brigliahundley.com", // Mock email
