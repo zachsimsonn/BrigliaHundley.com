@@ -63,7 +63,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
   const paragraphs = editableContent.about.content.split('\n\n');
 
   return (
-    <section id="about" className="py-20 bg-gray-50 relative">
+    <section id="about" className={`py-20 relative ${showStaff ? 'bg-gray-900' : 'bg-gray-50'}`}>
       {/* Background Image - only on home page (when showStaff is false) */}
       {!showStaff && (
         <div 
@@ -71,6 +71,17 @@ const About = ({ data, editableContent, showStaff = true }) => {
           style={{
             backgroundImage: "url('https://brigliahundley.com/wp-content/uploads/courthouse-header-500h.jpg')",
             opacity: 1.0
+          }}
+        ></div>
+      )}
+
+      {/* Law Firm Image - only on The Firm page (when showStaff is true) */}
+      {showStaff && (
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/briglia-hundley-tysons-virignia.jpg')",
+            opacity: 0.3
           }}
         ></div>
       )}
