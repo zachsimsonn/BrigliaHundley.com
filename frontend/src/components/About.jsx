@@ -130,6 +130,10 @@ const About = ({ data, editableContent, showStaff = true }) => {
                     className="w-full h-auto object-cover"
                     loading="lazy"
                     decoding="async"
+                    onError={(e) => {
+                      console.log('Failed to load law firm image');
+                      e.target.style.display = 'none';
+                    }}
                   />
                 </div>
               </div>
