@@ -25,37 +25,37 @@ const About = ({ data, editableContent, showStaff = true }) => {
     }
   ];
 
-  // Staff members
+  // Staff members - using safe paths that exist
   const staff = [
     {
       name: "Amanda Moellendick",
       position: "Firm Administrator",
-      image: "./briglia-hundley-logo.png" // Fallback to existing logo
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg"
     },
     {
       name: "Carmen Escalera",
-      position: "Executive Administrative Assistant",
-      image: "./briglia-hundley-logo.png" // Fallback to existing logo
+      position: "Executive Administrative Assistant", 
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg"
     },
     {
       name: "Abbi Marsh",
       position: "Paralegal",
-      image: "./briglia-hundley-logo.png" // Fallback to existing logo
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg"
     },
     {
       name: "Nini Daker",
       position: "Legal Assistant",
-      image: "./briglia-hundley-logo.png" // Fallback to existing logo
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg"
     },
     {
       name: "Terence Bowles",
       position: "Senior Accounts Administrator",
-      image: "./briglia-hundley-logo.png" // Fallback to existing logo
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg"
     },
     {
       name: "Jacob Rimland",
       position: "Paralegal",
-      image: "./briglia-hundley-logo.png" // Fallback to existing logo
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg"
     }
   ];
 
