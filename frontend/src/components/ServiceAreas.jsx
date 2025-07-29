@@ -37,7 +37,7 @@ const ServiceAreas = ({ data }) => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Serving Northern Virginia
+            serving the greater Mid-Atlantic region
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-gray-900 to-gray-700 rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
