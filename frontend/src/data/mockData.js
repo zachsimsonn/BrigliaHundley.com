@@ -421,33 +421,38 @@ export const siteData = {
     },
     {
       title: "Trusts and Estate Planning",
-      description: "Comprehensive estate planning services to help individuals and families protect their assets and plan for the future.",
-      fullDescription: "Our estate planning attorneys help clients create comprehensive plans to protect their assets, minimize taxes, and ensure their wishes are carried out. We assist with wills, trusts, powers of attorney, advance directives, and other estate planning tools.",
+      description: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for yourself and your dependents throughout your lives.",
+      fullDescription: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for yourself and your dependents throughout your lives. At Briglia Hundley, P.C.®, we help clients throughout Virginia establish estate plans that provide greater peace of mind for you and your loved ones.",
       detailedContent: {
         sections: [
           {
-            title: "Wills and Trusts",
-            content: "We draft wills and various types of trusts to help clients distribute their assets according to their wishes while minimizing taxes and avoiding probate. Our attorneys explain the benefits and drawbacks of different estate planning strategies."
+            title: "Wills",
+            content: "Wills are the backbone of estate planning, providing detailed information about how you'd like your assets and personal and business affairs handled following your death. A will can also be used to establish guidelines for the care of minor children. Having an experienced lawyer draft your will is essential to ensure that your wishes are clearly understood and implemented without any confusion or ambiguities."
           },
           {
-            title: "Estate Administration",
-            content: "When a loved one passes away, we guide families through the probate process and estate administration. We help executors and administrators fulfill their duties while protecting beneficiaries' interests."
+            title: "Trusts",
+            content: "Like wills, trusts help determine how your assets will be dispersed and managed. Unlike wills that become enforceable upon your death, trusts can be \"activated\" during your lifetime. Trusts may also provide certain advantages, such as avoiding probate. Trusts aren't just for the wealthy – even people with modest savings can realize significant benefits by placing assets in trust. Speaking with an estate planning lawyer is the first step in learning about your options and taking steps to provide you and your loved ones with superior protection and peace of mind."
           },
           {
-            title: "Tax Planning",
-            content: "Our attorneys work with tax professionals to develop strategies that minimize estate and gift taxes while achieving our clients' estate planning goals."
+            title: "Powers of Attorney",
+            content: "Powers of Attorney (POA) provide important instructions for how your affairs should be managed in the event you're unable to manage them yourself. As experienced estate attorneys, we help clients establish POAs for healthcare and personal needs, finances, legal and business decisions, and other matters. POAs are one more tool you can use to ensure your rights and wishes are protected in the event you become disabled or incapacitated by illness."
+          },
+          {
+            title: "Advanced Medical Directives",
+            content: "Also called \"living wills,\" advanced medical directives specify what medical steps should be taken when an illness renders one unable to make decisions for themselves. Few people like thinking about their own disability but having an advanced medical directive in place can help ensure your wishes are known and carried out even when you're unable to speak for yourself. Contact us today to learn how we can help."
           }
         ]
       },
       services: [
         "Wills",
         "Trusts",
+        "Powers of Attorney",
+        "Advanced Medical Directives",
         "Estate Administration",
         "Probate",
-        "Powers of Attorney",
-        "Advance Directives",
-        "Tax Planning",
-        "Elder Law"
+        "Living Wills",
+        "Healthcare Powers of Attorney",
+        "Financial Powers of Attorney"
       ],
       url: "/estate-planning",
       localKeywords: "estate planning attorney Fairfax VA, wills and trusts lawyer Northern Virginia, probate attorney Arlington VA, estate planning Prince William County",
