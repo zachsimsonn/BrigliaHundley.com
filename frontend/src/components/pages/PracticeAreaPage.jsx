@@ -7,7 +7,7 @@ import Breadcrumb from '../Breadcrumb';
 
 const PracticeAreaPage = ({ data, onNavigate }) => {
   const { area } = useParams();
-  const practiceArea = data.practiceAreas.find(practiceAreaItem => 
+  const practiceArea = data?.practiceAreas?.find(practiceAreaItem => 
     practiceAreaItem.title.toLowerCase().replace(/\s+/g, '-') === area
   );
 
