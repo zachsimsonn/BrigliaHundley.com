@@ -7,9 +7,26 @@ import Breadcrumb from '../Breadcrumb';
 
 const PracticeAreaPage = ({ data, onNavigate }) => {
   const { area } = useParams();
-  const practiceArea = data.practiceAreas.find(practiceAreaItem => 
+  
+  console.log('=== PRACTICE AREA DEBUG ===');
+  console.log('URL area parameter:', area);
+  console.log('Data exists:', !!data);
+  console.log('Practice areas count:', data?.practiceAreas?.length || 'undefined');
+  
+  if (data?.practiceAreas) {
+    console.log('All practice area titles and their conversions:');
+    data.practiceAreas.forEach((pa, i) => {
+      const converted = pa.title.toLowerCase().replace(/\s+/g, '-');
+      console.log(`${i}: "${pa.title}" -> "${converted}" (matches: ${converted === area})`);
+    });
+  }
+  
+  const practiceArea = data?.practiceAreas?.find(practiceAreaItem => 
     practiceAreaItem.title.toLowerCase().replace(/\s+/g, '-') === area
   );
+  
+  console.log('Found practice area:', practiceArea ? practiceArea.title : 'NOT FOUND');
+  console.log('=============================');
 
   if (!practiceArea) {
     return (
