@@ -32,7 +32,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd frontend
-        yarn install --frozen-lockfile
+        yarn install
         
     - name: Build React app
       run: |
