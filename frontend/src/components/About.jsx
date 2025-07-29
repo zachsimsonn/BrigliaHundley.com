@@ -30,32 +30,32 @@ const About = ({ data, editableContent, showStaff = true }) => {
     {
       name: "Amanda Moellendick",
       position: "Firm Administrator",
-      image: "./amanda-moellendick.jpg"
+      image: "/amanda-moellendick.jpg"
     },
     {
       name: "Carmen Escalera",
       position: "Executive Administrative Assistant",
-      image: "./carmen-escalera.jpg"
+      image: "/carmen-escalera.jpg"
     },
     {
       name: "Abbi Marsh",
       position: "Paralegal",
-      image: "./abbi-marsh.jpg"
+      image: "/abbi-marsh.jpg"
     },
     {
       name: "Nini Daker",
       position: "Legal Assistant",
-      image: "./nini-daker.jpg"
+      image: "/nini-daker.jpg"
     },
     {
       name: "Terence Bowles",
       position: "Senior Accounts Administrator",
-      image: "./terance-bowles.jpg"
+      image: "/terance-bowles.jpg"
     },
     {
       name: "Jacob Rimland",
       position: "Paralegal",
-      image: "./jacob-rimland.jpg"
+      image: "/jacob-rimland.jpg"
     }
   ];
 
