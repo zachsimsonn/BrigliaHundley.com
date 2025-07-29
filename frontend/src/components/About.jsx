@@ -30,32 +30,32 @@ const About = ({ data, editableContent, showStaff = true }) => {
     {
       name: "Amanda Moellendick",
       position: "Firm Administrator",
-      image: "/amanda-moellendick.jpg"
+      image: "./briglia-hundley-logo.png" // Fallback to existing logo
     },
     {
       name: "Carmen Escalera",
       position: "Executive Administrative Assistant",
-      image: "/carmen-escalera.jpg"
+      image: "./briglia-hundley-logo.png" // Fallback to existing logo
     },
     {
       name: "Abbi Marsh",
       position: "Paralegal",
-      image: "/abbi-marsh.jpg"
+      image: "./briglia-hundley-logo.png" // Fallback to existing logo
     },
     {
       name: "Nini Daker",
       position: "Legal Assistant",
-      image: "/nini-daker.jpg"
+      image: "./briglia-hundley-logo.png" // Fallback to existing logo
     },
     {
       name: "Terence Bowles",
       position: "Senior Accounts Administrator",
-      image: "/terance-bowles.jpg"
+      image: "./briglia-hundley-logo.png" // Fallback to existing logo
     },
     {
       name: "Jacob Rimland",
       position: "Paralegal",
-      image: "/jacob-rimland.jpg"
+      image: "./briglia-hundley-logo.png" // Fallback to existing logo
     }
   ];
 
