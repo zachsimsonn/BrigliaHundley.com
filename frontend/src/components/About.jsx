@@ -125,7 +125,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
               <div className="flex justify-center">
                 <div className="rounded-xl overflow-hidden shadow-2xl">
                   <img 
-                    src="/briglia-hundley-tysons-virginia.jpg" 
+                    src="./briglia-hundley-logo.png" 
                     alt="Briglia Hundley Law Firm - Tysons Corner, Virginia"
                     className="w-full h-auto object-cover"
                     loading="lazy"
