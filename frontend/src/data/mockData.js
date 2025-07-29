@@ -464,33 +464,37 @@ export const siteData = {
     },
     {
       title: "Appellate Litigation",
-      description: "Experienced appellate representation in state and federal courts throughout Virginia and the Mid-Atlantic region.",
-      fullDescription: "Appellate practice requires specialized skills and extensive knowledge of appellate procedures and standards of review. Our appellate attorneys have successfully represented clients in appeals before state and federal appellate courts.",
+      description: "The conclusion of a trial is not always the end of a case. Both civil litigants and criminal defendants often continue pursuing their rights on appeal.",
+      fullDescription: "The conclusion of a trial is not always the end of a case. Both civil litigants and criminal defendants often continue pursuing their rights on appeal. Our attorneys have experience handling both civil and criminal cases at all levels of the state and federal courts in Virginia, Maryland, and Washington, D.C., including the Fourth Circuit, D.C. Circuit, and Supreme Court of the United States. Whether you plan to pursue an appeal or work to have an appeal denied, we can help fully protect your rights. Our extensive experience in the trial and appellate courts of the Mid-Atlantic provides us with the necessary knowledge to navigate the appellate process. We conduct a thorough investigation into the details of each appeal we handle, research legal issues attendant to the appeal, craft well-written briefs for submission to the court, and persuasively present our clients' positions to the court at oral argument. Over the years, we've continued to find new ways to use our talents to assist our clients through the appeals process. While the mainstay of our practice is Virginia, Maryland and Washington, D.C., our federal litigation team monitors developments in federal law and practice and provides invaluable assistance in instances where our attorneys seek further relief through federal habeas corpus and federal civil remedies. Image: Mr. James W. Hundley arguing before the U.S. Supreme Court, April 2000.",
       detailedContent: {
         sections: [
           {
-            title: "State Appeals",
-            content: "We handle appeals in the Virginia Court of Appeals and the Virginia Supreme Court, representing clients in civil and criminal appeals across all practice areas."
+            title: "State and Federal Appeals Experience",
+            content: "Our attorneys have experience handling both civil and criminal cases at all levels of the state and federal courts in Virginia, Maryland, and Washington, D.C., including the Fourth Circuit, D.C. Circuit, and Supreme Court of the United States. Whether you plan to pursue an appeal or work to have an appeal denied, we can help fully protect your rights. Our extensive experience in the trial and appellate courts of the Mid-Atlantic provides us with the necessary knowledge to navigate the appellate process."
           },
           {
-            title: "Federal Appeals", 
-            content: "Our attorneys have experience in federal appellate courts, including the U.S. Court of Appeals for the Fourth Circuit and other federal appellate courts throughout the country."
+            title: "Comprehensive Appellate Services", 
+            content: "We conduct a thorough investigation into the details of each appeal we handle, research legal issues attendant to the appeal, craft well-written briefs for submission to the court, and persuasively present our clients' positions to the court at oral argument. Over the years, we've continued to find new ways to use our talents to assist our clients through the appeals process."
           },
           {
-            title: "Appellate Strategy",
-            content: "We work closely with trial counsel to identify potential appellate issues during the trial court proceedings and develop effective appellate strategies to achieve the best possible outcomes for our clients."
+            title: "Federal Litigation Team",
+            content: "While the mainstay of our practice is Virginia, Maryland and Washington, D.C., our federal litigation team monitors developments in federal law and practice and provides invaluable assistance in instances where our attorneys seek further relief through federal habeas corpus and federal civil remedies."
           }
         ]
       },
       services: [
         "Civil Appeals",
         "Criminal Appeals",
+        "State Court Appeals",
+        "Federal Court Appeals",
+        "Fourth Circuit Appeals",
+        "D.C. Circuit Appeals",
+        "Supreme Court Appeals",
         "Appellate Brief Writing",
         "Oral Arguments",
-        "Petition for Certiorari",
-        "Appellate Strategy",
-        "Post-Conviction Relief",
-        "Habeas Corpus"
+        "Federal Habeas Corpus",
+        "Federal Civil Remedies",
+        "Post-Conviction Relief"
       ],
       url: "/appellate-litigation",
       localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, appellate litigation Arlington VA, appeals court Prince William County",
