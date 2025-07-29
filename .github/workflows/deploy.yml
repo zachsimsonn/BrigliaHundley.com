@@ -32,7 +32,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd frontend
-        yarn install
+        yarn install --ignore-engines
         
     - name: Build React app
       run: |
