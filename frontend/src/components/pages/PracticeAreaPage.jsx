@@ -7,9 +7,21 @@ import Breadcrumb from '../Breadcrumb';
 
 const PracticeAreaPage = ({ data, onNavigate }) => {
   const { area } = useParams();
+  
+  console.log('=== DEBUG INFO ===');
+  console.log('Looking for area:', area);
+  console.log('Available practice areas:');
+  data.practiceAreas.forEach((p, i) => {
+    const converted = p.title.toLowerCase().replace(/\s+/g, '-');
+    console.log(`${i}: "${p.title}" -> "${converted}" (match: ${converted === area})`);
+  });
+  
   const practiceArea = data.practiceAreas.find(practiceAreaItem => 
     practiceAreaItem.title.toLowerCase().replace(/\s+/g, '-') === area
   );
+  
+  console.log('Found practice area:', practiceArea ? practiceArea.title : 'NOT FOUND');
+  console.log('==================');
 
   if (!practiceArea) {
     return (
