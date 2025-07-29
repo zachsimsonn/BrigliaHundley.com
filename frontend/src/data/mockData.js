@@ -165,39 +165,61 @@ export const siteData = {
     },
     {
       title: "Criminal Defense",
-      description: "Experienced criminal defense representation for all manner of misdemeanor and felony charges in state and federal courts.",
-      fullDescription: "Our criminal defense attorneys have extensive experience protecting clients' rights in both state and federal courts. We understand that criminal charges can have life-altering consequences, and we fight aggressively to protect your freedom, reputation, and future.",
+      description: "For every criminal offense, there is a defense. You want a lawyer who will fight for you.",
+      fullDescription: "For every criminal offense, there is a defense. You want a lawyer who will fight for you. With a comprehensive criminal law practice, our attorneys are equipped to defend you in state and federal courts from all manner of misdemeanor and felony charges, ranging from traffic infractions to serious felonies. Our goal is to obtain the best possible result for our clients. We achieve this goal by preparing each case as if it will go to trial. Our criminal defense practice includes the following: White Collar Crimes, Drug Offenses, Larcenies, DWI / DUI, Traffic Offenses, Domestic Assault, Sex Crimes. We also understand the sensitive concerns that criminal charges raise for many of our clients. We will work to protect your security clearance and immigration status. We recognize how much you have at stake. We are experienced attorneys who understand the criminal system. Our attorneys are familiar with the judges and prosecutors who will handle your case. If you are facing criminal charges, we will make sure the government and its prosecutors meet their high burden of proof. We will insure that your constitutional rights are protected and do all we can to achieve the most favorable disposition possible. If we are unable to achieve an acceptable settlement, we have the skill and expertise needed to fully litigate your case to its final conclusion.",
       detailedContent: {
         sections: [
           {
             title: "White Collar Crimes",
-            content: "We have experience protecting the rights of individuals facing white collar criminal charges in Virginia's state courts and in federal courts throughout the United States. White collar cases can involve allegations of large conspiracies comprised of numerous individuals and corporations. Substantial financial losses caused by embezzlement, bid rigging, tax evasion, or other types of alleged fraud may be an issue. Our lawyers have the knowledge and ability to analyze the unique factors of your case in order to prepare an effective defense.",
-            subServices: ["Fraud", "Embezzlement", "Computer Crimes", "Money Laundering"]
+            content: "We have experience protecting the rights of individuals facing white collar criminal charges in Virginia's state courts and in federal courts throughout the United States. White collar cases can involve allegations of large conspiracies comprised of numerous individuals and corporations. Substantial financial losses caused by embezzlement, bid rigging, tax evasion, or other types of alleged fraud may be an issue. Our lawyers have the knowledge and ability to analyze the unique factors of your case in order to prepare an effective defense. Whether you currently face charges or are under investigation, our lawyers are prepared to defend all manners of white collar crimes including: Fraud, Embezzlement, Computer Crimes, Money Laundering. If you believe that you are under investigation for a white collar crime or you have been asked to speak with someone from the government regarding potential charges, you should obtain proper legal counsel immediately. When possible, you should hire counsel before formal charges are filed. Our early intervention on your behalf can result in a more favorable final disposition. The government may elect to pursue less serious charges or decline to press criminal charges entirely. The media can play a substantial role in white collar criminal cases. Our lawyers are experienced in dealing with the media. As part of your defense, we will help you devise a strategy to address the publicity that may surround your case. It is important that potential judges, prosecutors, and jurors not be negatively influenced by the media's reporting. In addition, more favorable or limited publicity will better allow you to return to a normal life once your case is over."
           },
           {
             title: "Drug Charges",
-            content: "A conviction for illegally possessing or distributing drugs carries serious consequences. If you have been charged with a drug offense, you need an experienced defense lawyer to help protect your rights. From simple possession to federal conspiracy charges, we will do everything within our powers to build the most effective defense and achieve the best possible disposition for you.",
-            subServices: ["Drug Possession", "Distribution", "Conspiracy", "Manufacturing"]
+            content: "A conviction for illegally possessing or distributing drugs carries serious consequences. If you have been charged with a drug offense, you need an experienced defense lawyer to help protect your rights. From simple possession to federal conspiracy charges, we will do everything within our powers to build the most effective defense and achieve the best possible disposition for you. Drug offenses can involve complex laws, intricate investigations, and severe mandatory sentences. There are many factors you must consider before determining what legal course of action you will take following an arrest on drug charges. Our lawyers have the experience and expertise needed to reliably answer all your questions in this difficult situation. If you have been arrested on drug charges or believe that you are under criminal investigation, you need to obtain legal counsel as soon as possible. Our firm is ready to begin your defense even before any charges are filed against you. Early intervention may allow our attorneys to drastically reduce your criminal exposure. Our attorneys handle all types of drug offenses, including: Drug Possession, Distribution, Conspiracy, Manufacturing. We know how to evaluate the complex factors that arise in these cases. If you are the target of an investigation or have been charged with a drug offense, we can provide the legal counsel you will need to properly protect yourself from the serious consequences that could result."
           },
           {
             title: "DUI & DWI",
             content: "If you have been charged with driving under the influence or driving while intoxicated, you need a lawyer with a firm grasp of all the legal issues that might affect your rights. These complex cases can involve constitutional issues, technical rules of evidence, the science of toxicology, and the use of expert witnesses. Our attorneys constantly monitor, research, and litigate DUI and DWI cases so that we are prepared to address this constantly changing area of law with innovative and successful criminal defense solutions."
           },
           {
+            title: "Juvenile Offenses",
+            content: "A juvenile offense on your record will impact your future. Make sure you do everything possible to minimize the potential damage. With more options for alternative sentencing available to juveniles, we will explore the options that best protect your future, as well as your immediate interests. We thoroughly prepare for every case to protect the rights of our clients throughout the process. We are prepared to defend clients charged with: Underage Drinking, Drunk Driving, Traffic Offenses, Vandalism, Theft, Assault, Drug Offenses, Weapons Charges."
+          },
+          {
+            title: "Larcenies",
+            content: "In a criminal case, the burden of proof always lies with the government. If you have been charged with larceny, you want an attorney who understands that your rights come first. From shoplifting to burglary, we work diligently to lower the charges facing our clients while fighting for an acquittal. Our firm has the resources to handle all types of property crimes, from petit theft to million dollar white collar crimes. In our law practice, we regularly handle charges such as: Shoplifting, Credit Card Theft, Burglary, Robbery, Fraud, Embezzlement. The consequences of a conviction for larceny could be much greater than you realize, and felony charges may accompany a seemingly minor shoplifting incident. You need an experienced criminal law attorney to defend and protect your rights."
+          },
+          {
             title: "Traffic Offenses",
-            content: "If you have been charged with DWI, hit-and-run, driving on a suspended license, or reckless driving, then you are facing the possibility of a jail sentence, a substantial fine, and the loss of your driver's license. We appear on an almost daily basis in Virginia's state and federal traffic courts and are prepared to defend you.",
-            subServices: ["Speeding", "Reckless Driving", "Driving with a Suspended License", "Hit-and-Run"]
+            content: "If you have been charged with DWI, hit-and-run, driving on a suspended license, or reckless driving, then you are facing the possibility of a jail sentence, a substantial fine, and the loss of your driver's license. We appear on an almost daily basis in Virginia's state and federal traffic courts and are prepared to defend you. Even seemingly insignificant traffic infractions can add up quickly. We are prepared to take a stand on your behalf and take your case to trial if you have been charged with the following: Speeding, Reckless Driving, Driving with a Suspended License, Hit-and-Run."
           }
         ]
       },
       services: [
         "White Collar Crime Defense",
-        "Drug Charges",
+        "Fraud Defense",
+        "Embezzlement Defense",
+        "Computer Crimes Defense",
+        "Money Laundering Defense",
+        "Drug Possession Defense",
+        "Drug Distribution Defense",
+        "Drug Conspiracy Defense",
+        "Drug Manufacturing Defense",
         "DUI & DWI Defense",
-        "Juvenile Offenses",
-        "Traffic Offenses",
-        "Assault and Battery",
-        "Theft and Larceny",
+        "Juvenile Offenses Defense",
+        "Underage Drinking Defense",
+        "Traffic Offenses Defense",
+        "Speeding Defense",
+        "Reckless Driving Defense",
+        "Suspended License Defense",
+        "Hit-and-Run Defense",
+        "Larceny Defense",
+        "Shoplifting Defense",
+        "Credit Card Theft Defense",
+        "Burglary Defense",
+        "Robbery Defense",
+        "Domestic Assault Defense",
+        "Sex Crimes Defense",
         "Federal Criminal Defense"
       ],
       url: "/criminal-defense",
