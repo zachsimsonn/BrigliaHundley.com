@@ -74,17 +74,6 @@ const About = ({ data, editableContent, showStaff = true }) => {
           }}
         ></div>
       )}
-
-      {/* Law Firm Image - only on The Firm page (when showStaff is true) */}
-      {showStaff && (
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/briglia-hundley-tysons-virignia.jpg')",
-            opacity: 0.3
-          }}
-        ></div>
-      )}
       
       {/* Content overlay */}
       <div className="relative z-10">
