@@ -145,6 +145,10 @@ const About = ({ data, editableContent, showStaff = true }) => {
                           style={{objectPosition: '50% 30%'}}
                           loading="lazy"
                           decoding="async"
+                          onError={(e) => {
+                            console.log(`Failed to load image: ${member.image}`);
+                            e.target.style.display = 'none';
+                          }}
                         />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
