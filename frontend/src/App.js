@@ -385,7 +385,7 @@ const App = () => {
               />
             } />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </div>
     </HelmetProvider>
   );
