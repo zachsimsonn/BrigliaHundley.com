@@ -131,19 +131,8 @@ const About = ({ data, editableContent, showStaff = true }) => {
                     className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <div className="flex flex-col items-center text-center space-y-4">
-                      <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
-                        <img 
-                          src={member.image} 
-                          alt={`${member.name} - ${member.position} at Briglia Hundley®`}
-                          className="w-full h-full object-cover"
-                          style={{objectPosition: '50% 30%'}}
-                          loading="lazy"
-                          decoding="async"
-                          onError={(e) => {
-                            console.log(`Failed to load image: ${member.image}`);
-                            e.target.style.display = 'none';
-                          }}
-                        />
+                      <div className="p-4 bg-blue-50 rounded-full">
+                        <Users className="h-8 w-8 text-blue-900" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
                         {member.name}
