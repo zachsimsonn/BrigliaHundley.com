@@ -301,7 +301,7 @@ const App = () => {
               </div>
             } />
             
-            {/* Specific Practice Area: Accountants Liability and Securities Litigation */}
+            {/* Practice Area: Accountants Liability and Securities Litigation */}
             <Route path="/practice-area/accountants-liability-and-securities-litigation" element={
               <div>
                 <Header 
@@ -310,7 +310,7 @@ const App = () => {
                   onNavigate={handleNavigate}
                   currentPage="practice-area"
                 />
-                <AccountantsLiabilityPage data={data} onNavigate={handleNavigate} />
+                <PracticeAreaPage data={data} onNavigate={handleNavigate} />
                 <Footer data={data} />
                 <Toaster />
               </div>
