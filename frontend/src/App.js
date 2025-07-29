@@ -38,7 +38,6 @@ import FAQ from "./components/FAQ";
 import SEO from "./components/SEO";
 import Chatbot from "./components/Chatbot";
 import NotFoundPage from "./components/pages/NotFoundPage";
-import AccountantsLiabilityPage from "./components/pages/AccountantsLiabilityPage";
 
 // Data
 import { siteData, editableContent } from "./data/mockData";
