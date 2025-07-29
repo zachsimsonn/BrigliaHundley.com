@@ -91,43 +91,27 @@ const About = ({ data, editableContent, showStaff = true }) => {
               </div>
             </div>
 
-            {/* Right Content - Highlights Grid on Home Page, Law Firm Image on The Firm Page */}
-            {!showStaff ? (
-              // Home page - show highlights grid
-              <div className="grid grid-cols-2 gap-6">
-                {highlights.map((highlight, index) => (
-                  <div 
-                    key={index} 
-                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                  >
-                    <div className="flex flex-col items-center text-center space-y-4">
-                      <div className="p-3 bg-blue-50 rounded-full">
-                        {highlight.icon}
-                      </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
-                        {highlight.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm">
-                        {highlight.description}
-                      </p>
+            {/* Right Content - Highlights Grid */}
+            <div className="grid grid-cols-2 gap-6">
+              {highlights.map((highlight, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="p-3 bg-blue-50 rounded-full">
+                      {highlight.icon}
                     </div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {highlight.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {highlight.description}
+                    </p>
                   </div>
-                ))}
-              </div>
-            ) : (
-              // The Firm page - show law firm image
-              <div className="flex justify-center">
-                <div className="rounded-xl overflow-hidden shadow-2xl">
-                  <img 
-                    src="https://brigliahundley.com/wp-content/uploads/courthouse-header-500h.jpg" 
-                    alt="Briglia Hundley Law Firm - Tysons Corner, Virginia"
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
                 </div>
-              </div>
-            )}
+              ))}
+            </div>
           </div>
 
           {/* Staff Section */}
