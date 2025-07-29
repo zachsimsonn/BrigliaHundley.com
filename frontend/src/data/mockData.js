@@ -242,33 +242,50 @@ export const siteData = {
     },
     {
       title: "Family Law",
-      description: "Comprehensive family law services including divorce, custody, and support matters for families throughout Northern Virginia.",
-      fullDescription: "At Briglia Hundley, P.C.®, we understand that family law matters can be emotionally charged and complex. Our experienced attorneys are dedicated to providing compassionate and effective legal representation in a variety of family law issues, including divorce, child custody, child support, and property division. We strive to protect your rights and help you navigate through these challenging times with confidence.",
+      description: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children.",
+      fullDescription: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children. The attorneys at Briglia Hundley, P.C.®, are experienced in all family law issues, helping clients in Virginia and Washington, D.C.",
       detailedContent: {
         sections: [
           {
-            title: "Divorce",
-            content: "Our divorce attorneys handle all aspects of divorce proceedings, from uncontested divorces to complex contested matters involving significant assets, business interests, and custody disputes. We provide strategic counsel on property division, spousal support, and child custody arrangements."
+            title: "Divorce & Separation",
+            content: "Divorce and separation are not uncommon in the U.S. today, but that doesn't mean they're simple matters. In fact, even a seemingly \"friendly\" divorce or separation can be surprisingly complex. Without careful planning, unpleasant surprises and unintended consequences can occur that have a major impact on your well-being. Our skilled family law team will work with you throughout this difficult process to help you understand your rights and the impact your final agreement will have on your future."
           },
           {
-            title: "Child Custody and Support",
-            content: "We represent parents in custody disputes, working to establish arrangements that serve the best interests of the children while protecting our clients' parental rights. Our attorneys handle child support calculations, modifications, and enforcement matters."
+            title: "Military Divorce",
+            content: "Military divorces are subject to special regulations and requirements that differ from civilian (non-military) divorces. To ensure the process goes smoothly, it's essential to work with an attorney who understands these differences and how to address them in your specific situation."
           },
           {
-            title: "Property Division",
-            content: "Virginia is an equitable distribution state, which means marital property is divided fairly but not necessarily equally. We help clients identify, value, and divide marital assets including real estate, business interests, retirement accounts, and other valuable property."
+            title: "Custody",
+            content: "Custody negotiations can be the most contentious and difficult part of a divorce. Our family law attorneys will work with you to craft custody agreements that focus on your child's best interests so you can feel confident their rights and well-being are protected."
+          },
+          {
+            title: "Custody Modification",
+            content: "Sometimes, circumstances arise that require a change to an existing custody order. Our team is skilled in helping parents modify custody arrangements to ensure the child's best interests remain at the forefront."
+          },
+          {
+            title: "Premarital Agreements",
+            content: "Premarital agreements, or \"prenups,\" play an important role in protecting the assets you hold before marriage. By working with our attorneys means you can feel confident the agreement will be mutually agreeable to both parties while avoiding ambiguity and confusion."
+          },
+          {
+            title: "Child Support Issues",
+            content: "Child support plays a pivotal role in ensuring your children receive the financial support they require for material needs, education, and other expenses. Our experienced family law attorneys can help you craft support arrangements that protect your children's rights now and for their future. We help our clients with all support issues, including: Enforcement of support orders to ensure your child receives the support that's due, when it's due; Modification of support to alter original support orders when circumstances change."
+          },
+          {
+            title: "Relocation Cases",
+            content: "If you need to move for your job or any other reason, your custody arrangement may need to be changed. Relocation cases can be complex. Working with a skilled family law attorney is critical for ensuring approval of your request to amend custody. Let us show you how our experience can help you succeed."
           }
         ]
       },
       services: [
-        "Divorce",
+        "Divorce & Separation",
+        "Military Divorce",
         "Child Custody", 
+        "Custody Modification",
         "Child Support",
-        "Property Division",
-        "Adoption",
-        "Spousal Support",
-        "Prenuptial Agreements",
-        "Postnuptial Agreements"
+        "Child Support Enforcement",
+        "Child Support Modification",
+        "Premarital Agreements",
+        "Relocation Cases"
       ],
       url: "/family-law",
       localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
