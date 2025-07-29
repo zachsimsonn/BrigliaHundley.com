@@ -316,33 +316,36 @@ export const siteData = {
     },
     {
       title: "Municipal Law",
-      description: "Comprehensive legal counsel for local governments and municipalities throughout Northern Virginia.",
-      fullDescription: "Municipal law requires specialized knowledge of the unique legal issues facing local governments. Our municipal law attorneys provide ongoing legal counsel to cities, towns, and other local government entities on a wide range of matters.",
+      description: "State and local governments and quasi-governmental entities face a complex and constantly evolving landscape of legal considerations.",
+      fullDescription: "State and local governments and quasi-governmental entities face a complex and constantly evolving landscape of legal considerations. Representing such clients requires lawyers with significant legal experience and an understanding of the political and business nuances these entities face in providing services to their constituencies. The attorneys at Briglia Hundley® are uniquely positioned to counsel governmental entities, authorities, municipalities, and bodies on all their legal needs. Our attorneys have been representing state and local governments for over three decades. We are dedicated to this practice, and we stand ready to assist you. Our attorneys and professionals have the skill and experience that enable Briglia Hundley® to address governmental law issues effectively and nimbly. We have served as county, city, and town attorneys for several municipalities in Virginia. We count among our partners the current City Attorney for the City of Fairfax and the Town Attorney for the Town of Vienna, and we represent various agencies of the Commonwealth of Virginia. Equally critical, we appreciate the responsibilities governments must consider in dealing with their citizens and other stakeholders.",
       detailedContent: {
         sections: [
           {
-            title: "Government Operations",
-            content: "We provide legal advice on day-to-day government operations, including compliance with the Virginia Freedom of Information Act, personnel matters, procurement, and other administrative issues."
+            title: "Litigation and Transactional Services",
+            content: "We provide both litigation and transactional services to our governmental clients. These include counsel on governmental relations and internal governance, FOIA inquiries and responses, land use and zoning disputes, the defense of tax assessment administrative appeals and lawsuits, public works and utility issues, procurement matters, franchises, and personnel and public safety considerations. We also advise various municipalities on complex contract and real estate matters – the goal always being to secure the most cost-effective outcome for our client."
           },
           {
-            title: "Land Use and Zoning",
-            content: "Our attorneys assist local governments with zoning ordinances, comprehensive plans, development approvals, and land use disputes. We help ensure that local land use decisions comply with applicable state and federal requirements."
-          },
-          {
-            title: "Public Finance",
-            content: "We provide legal counsel on municipal finance matters, including bond issuances, public-private partnerships, and other financing mechanisms for public projects."
+            title: "Condemnation and Eminent Domain",
+            content: "Finally, we represent the Commonwealth, localities and other condemning authorities in pre-condemnation budget analysis, relocation matters, general condemnation, right of way acquisition, and condemnation litigation. We advise on the best practices for structuring condemnation projects, facilitating condemnation transactions, and negotiating resolutions. We provide guidance on the policies, procedures and protocols to meet relocation and condemnation statutory requirements. We will provide expert advice on negotiation strategies because we have successfully negotiated 100's of eminent domain settlements. We provide litigation representation in the event a condemnation must be determined by a jury or commissioners."
           }
         ]  
       },
       services: [
         "Government Counsel",
-        "Zoning and Land Use",
-        "Public Finance",
-        "FOIA Compliance",
-        "Personnel Issues",
-        "Procurement",
-        "Economic Development",
-        "Intergovernmental Agreements"
+        "FOIA Inquiries and Responses",
+        "Land Use and Zoning Disputes",
+        "Tax Assessment Appeals",
+        "Public Works and Utility Issues",
+        "Procurement Matters",
+        "Franchise Issues",
+        "Personnel and Public Safety",
+        "Contract and Real Estate Matters",
+        "Pre-condemnation Budget Analysis",
+        "Relocation Matters",
+        "General Condemnation",
+        "Right of Way Acquisition",
+        "Condemnation Litigation",
+        "Eminent Domain Settlements"
       ],
       url: "/municipal-law",
       localKeywords: "municipal attorney Fairfax VA, government lawyer Northern Virginia, zoning attorney Arlington VA, municipal law Prince William County",
