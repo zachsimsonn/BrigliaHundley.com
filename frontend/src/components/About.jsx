@@ -125,15 +125,11 @@ const About = ({ data, editableContent, showStaff = true }) => {
               <div className="flex justify-center">
                 <div className="rounded-xl overflow-hidden shadow-2xl">
                   <img 
-                    src="./briglia-hundley-logo.png" 
+                    src="https://brigliahundley.com/wp-content/uploads/courthouse-header-500h.jpg" 
                     alt="Briglia Hundley Law Firm - Tysons Corner, Virginia"
                     className="w-full h-auto object-cover"
                     loading="lazy"
                     decoding="async"
-                    onError={(e) => {
-                      console.log('Failed to load law firm image');
-                      e.target.style.display = 'none';
-                    }}
                   />
                 </div>
               </div>
