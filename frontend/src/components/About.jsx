@@ -30,7 +30,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
     {
       name: "Amanda Moellendick",
       position: "Firm Administrator",
-      image: "/test-staff.jpg"
+      image: "/amanda-moellendick.jpg"
     },
     {
       name: "Carmen Escalera",
