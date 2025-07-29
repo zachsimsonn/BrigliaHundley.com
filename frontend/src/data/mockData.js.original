@@ -65,10 +65,10 @@ export const siteData = {
         "Revenue Recognition Issues",
         "Going Concern Matters"
       ],
-      url: "/accountants-liability-securities-litigation",
+      url: "/accountants-liability-and-securities-litigation",
       localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
       attorneys: ["Madison A. Beatty"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-securities-litigation-hero-25.jpg"
+      image: "bh-accountants-liability-hero-25.jpg?raw=true"
     },
     {
       title: "Business Litigation",

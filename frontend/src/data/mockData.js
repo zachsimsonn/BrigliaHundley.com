@@ -3,7 +3,7 @@ export const siteData = {
     name: "Briglia Hundley®",
     tagline: "Nothing is more important than what we do for families and businesses",
     established: "1993",
-    location: "Tysons Corner, Fairfax County, Virginia",
+    location: "Tysons Corner, Virginia",
     address: "1921 Gallows Road, Suite 900, Tysons Corner, Virginia 22182",
     phone: "(703) 555-0123", // Mock phone number
     email: "info@brigliahundley.com", // Mock email
@@ -11,16 +11,20 @@ export const siteData = {
     serviceArea: "Northern Virginia, Fairfax County, Prince William County, Arlington County, Alexandria, McLean, Vienna, Falls Church, Herndon, Reston, Great Falls, Oakton, Burke, Springfield, Annandale, Centreville, Manassas, Woodbridge, Dale City, Dumfries",
     serviceRegions: ["Loudoun County", "Fairfax", "Northern Virginia", "Prince William County", "Arlington", "Alexandria", "McLean", "Vienna", "Falls Church", "Herndon", "Reston", "Great Falls", "Oakton", "Burke", "Springfield", "Annandale", "Centreville", "Manassas", "Woodbridge", "Dale City", "Dumfries"],
     jurisdictions: ["Virginia State Courts", "Federal Courts in Eastern District of Virginia", "Federal Courts in Western District of Virginia", "U.S. District Court for the District of Columbia", "Fairfax County Circuit Court", "Prince William County Circuit Court", "Arlington County Circuit Court"],
-    logo: `./briglia-hundley-logo.png?v=${Date.now()}`, // Cache busting to ensure new logo displays
+    logo: "./briglia-hundley-logo.png",
   },
   
   practiceAreas: [
     {
       title: "Accountants Liability and Securities Litigation",
       description: "SEC and PCAOB Defense Practice. Securities Investigations, Enforcement, and Litigation. DOJ and SEC Enforcement.",
-      fullDescription: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings. We represent clients in the following areas: DOJ and SEC enforcement matters, Grand juries and investigations by federal and state prosecutors, SEC and FINRA regulatory matters, Audit committees, directors, and senior management in conducting independent investigations involving derivative claims, whistleblower allegations, fraud, and potential securities law violations.",
+      fullDescription: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings.",
       detailedContent: {
         sections: [
+          {
+            title: "SEC and PCAOB Defense Practice",
+            content: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings. We represent clients in the following areas: DOJ and SEC enforcement matters, Grand juries and investigations by federal and state prosecutors, SEC and FINRA regulatory matters, Audit committees, directors, and senior management in conducting independent investigations involving derivative claims, whistleblower allegations, fraud, and potential securities law violations."
+          },
           {
             title: "Accountants Liability",
             content: "Briglia Hundley® represents accounting professionals in civil, criminal, government regulatory enforcement, and state disciplinary actions. SEC, PCAOB, and State Disciplinary Boards: Heightened enforcement standards of the SEC and Public Company Accounting Oversight Board (PCAOB), new auditing standards of the PCAOB, and new FASB accounting standards have resulted in increased scrutiny of the work performed by auditors. Our attorneys represent accounting firms and individual accounting professionals, including Certified Public Accountants (CPAs), in investigations and disciplinary proceedings brought by federal regulators, such as the PCAOB and SEC. Our attorneys have represented accounting firms and accountants in all stages of PCAOB and SEC investigations and disciplinary proceedings, including recently trying a case before the PCAOB hearing officer. In addition, our attorneys have represented CPAs before state boards of accountancy, such as the Virginia Board of Accountancy (\"VBOA\"), including representing CPAs in Informal Fact-Finding Conferences. We understand the audit process, Generally Accepted Accounting Principles (GAAP), and PCAOB auditing standards. That understanding helps us effectively defend auditors' and CPAs' conduct. Our firm includes former prosecutors and a former Assistant Director of the PCAOB's Division of Enforcement and Investigations. We have the following experience: SEC enforcement, PCAOB enforcement, State disciplinary proceedings (i.e., state boards of accountancy such as the VBOA), Parallel proceedings (i.e., SEC and PCAOB investigations, PCAOB and foreign audit regulator investigations, government investigation and private securities litigation, etc.), Audits of public companies and broker-dealers, Multi-location audits, International investigations involving overseas firms and foreign affiliates of the Big Four and other global accounting network firms (i.e., Argentina, Brazil, India, Indonesia, Japan, Korea, Spain, etc.)."
@@ -38,8 +42,8 @@ export const siteData = {
       services: [
         "SEC Enforcement Defense",
         "PCAOB Investigations",
-        "Securities Investigations",
-        "DOJ Enforcement Matters", 
+        "Securities Investigations", 
+        "DOJ Enforcement Matters",
         "Grand Jury Proceedings",
         "FINRA Regulatory Matters",
         "State Disciplinary Boards",
@@ -53,7 +57,7 @@ export const siteData = {
         "Revenue Recognition Issues",
         "Going Concern Matters"
       ],
-      url: "/accountants-liability-securities-litigation",
+      url: "/accountants-liability-and-securities-litigation",
       localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
       attorneys: ["Madison A. Beatty", "Raymond P. Briglia"],
       image: "./accountants-liability-and-security-litigationimage.jpg"
