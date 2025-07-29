@@ -34,10 +34,9 @@ const ServiceAreas = ({ data }) => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            serving the greater Mid-Atlantic region
+            Serving Northern Virginia
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-gray-900 to-gray-700 rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
