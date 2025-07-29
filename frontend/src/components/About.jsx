@@ -63,16 +63,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
   const paragraphs = editableContent.about.content.split('\n\n');
 
   return (
-    <section id="about" className="py-20 bg-gray-50 relative">
-      {/* Background Image with 100% opacity */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('https://brigliahundley.com/wp-content/uploads/courthouse-header-500h.jpg')",
-          opacity: 1.0
-        }}
-      ></div>
-      
+    <section id="about" className="py-20 bg-gray-50 relative">      
       {/* Content overlay */}
       <div className="relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
