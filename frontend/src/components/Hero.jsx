@@ -122,7 +122,7 @@ const Hero = ({ data, editableContent }) => {
                     rel="noopener noreferrer"
                     className="hover:text-blue-200 transition-colors duration-200"
                   >
-                    Tysons Corner, Virginia
+                    Fairfax, Virginia
                   </a>
                 </div>
 
