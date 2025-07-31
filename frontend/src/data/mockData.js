@@ -1431,7 +1431,7 @@ export const siteData = {
       excerpt: "Just about every kind of court case is moving online. Whether you are a lawyer or a party, here are a few quick tips to prepare yourself for the upcoming hearing.",
       author: "Michael C. May",
       date: "June 8, 2024",
-      image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg",
+      image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "online-court-case-hearing-tips",
       content: "Just about every kind of court case is moving online. Whether you are a lawyer or a party, here are a few quick tips to prepare yourself for the upcoming hearing: Test the program and connection in advance, ensure you have proper lighting and a professional background, prepare all documents digitally, and understand the court's virtual hearing protocols."
     }
