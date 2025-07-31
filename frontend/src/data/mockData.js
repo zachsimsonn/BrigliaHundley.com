@@ -1409,7 +1409,7 @@ export const siteData = {
       excerpt: "In an ideal free market system, open competition among suppliers ensures that the consumer receives the best quality products for the lowest possible prices. One of America's most important pieces of economic legislation is the Sherman Antitrust Act.",
       author: "Steven D. Briglia",  
       date: "August 10, 2024",
-      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg",
+      image: "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "bid-rigging-antitrust-violations",
       content: "In an ideal free market system, open competition among suppliers ensures that the consumer receives the best quality products for the lowest possible prices. One of America's most important pieces of economic legislation is the Sherman Antitrust Act. Enacted in 1890, this landmark law was designed to combat monopolies and other anti-competitive practices that could harm consumers and the economy. Bid rigging is one of the most serious violations of antitrust law, involving a conspiracy among competitors to manipulate the bidding process and eliminate genuine competition."
     },
