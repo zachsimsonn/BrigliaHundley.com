@@ -1,4 +1,7 @@
-name: Build and Deploy React App to Pages
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+  name: Build and Deploy React App to Pages
 
 on:
   push:
