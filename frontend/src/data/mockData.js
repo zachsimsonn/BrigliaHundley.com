@@ -389,7 +389,7 @@ export const siteData = {
       url: "/personal-injury",
       localKeywords: "personal injury attorney Fairfax VA, car accident lawyer Northern Virginia, medical malpractice Arlington VA, personal injury Prince William County",
       attorneys: ["Steven D. Briglia", "James W. Hundley", "Courtney B. Harden", "Madison A. Beatty"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-25.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg"
     },
     {
       title: "Real Estate Law",
