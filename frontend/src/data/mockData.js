@@ -1,7 +1,7 @@
 export const siteData = {
   business: {
     name: "Briglia Hundley®",
-    tagline: "Nothing is more important than what we do for families and businesses",
+    tagline: "Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.",
     established: "1993",
     location: "Tysons Corner, Virginia",
     address: "1921 Gallows Road, Suite 900, Tysons Corner, Virginia 22182",
@@ -57,7 +57,7 @@ export const siteData = {
         "Revenue Recognition Issues",
         "Going Concern Matters"
       ],
-      url: "/accountants-liability-and-securities-litigation",
+      url: "/practice-area/accountants-liability-and-securities-litigation",
       localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
       attorneys: ["Madison A. Beatty", "Raymond P. Briglia"],
       image: "./accountants-liability-and-security-litigationimage.jpg"
@@ -168,7 +168,7 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg"
     },
     {
-      title: "Criminal Defense",
+      title: "Criminal Law",
       description: "For every criminal offense, there is a defense. You want a lawyer who will fight for you.",
       fullDescription: "For every criminal offense, there is a defense. You want a lawyer who will fight for you. With a comprehensive criminal law practice, our attorneys are equipped to defend you in state and federal courts from all manner of misdemeanor and felony charges, ranging from traffic infractions to serious felonies. Our goal is to obtain the best possible result for our clients. We achieve this goal by preparing each case as if it will go to trial. Our criminal defense practice includes the following: White Collar Crimes, Drug Offenses, Larcenies, DWI / DUI, Traffic Offenses, Domestic Assault, Sex Crimes. We also understand the sensitive concerns that criminal charges raise for many of our clients. We will work to protect your security clearance and immigration status. We recognize how much you have at stake. We are experienced attorneys who understand the criminal system. Our attorneys are familiar with the judges and prosecutors who will handle your case. If you are facing criminal charges, we will make sure the government and its prosecutors meet their high burden of proof. We will insure that your constitutional rights are protected and do all we can to achieve the most favorable disposition possible. If we are unable to achieve an acceptable settlement, we have the skill and expertise needed to fully litigate your case to its final conclusion.",
       detailedContent: {
@@ -226,7 +226,7 @@ export const siteData = {
         "Sex Crimes Defense",
         "Federal Criminal Defense"
       ],
-      url: "/criminal-defense",
+      url: "/criminal-law",
       localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County",
       attorneys: ["Steven D. Briglia", "James W. Hundley", "Madison A. Beatty"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-criminal-law-hero-25.jpg"
