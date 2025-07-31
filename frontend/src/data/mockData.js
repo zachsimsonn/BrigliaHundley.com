@@ -1275,7 +1275,7 @@ export const siteData = {
       title: "Arrested at a Protest? Know Your Rights",
       category: "Criminal Defense",
       excerpt: "Understanding your constitutional rights during protests and demonstrations, and what to do if you're arrested while exercising your First Amendment freedoms.",
-      author: "James W. Hundley",
+      author: "Raymond Starks-Taylor",
       date: "June 15, 2025",
       image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxsYXclMjBmaXJtfGVufDB8fHx8MTc1MjI2MzkxOXww&ixlib=rb-4.1.0&q=85",
       slug: "arrested-at-protest-know-your-rights",
