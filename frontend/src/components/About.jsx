@@ -147,7 +147,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
                     className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <div className="flex flex-col items-center text-center space-y-4">
-                      <div className="w-32 h-32 rounded-full overflow-hidden">
+                      <div className="w-48 h-48 rounded-lg overflow-hidden">
                         <img 
                           src={member.image} 
                           alt={`${member.name} - ${member.position} at Briglia Hundley®`}
