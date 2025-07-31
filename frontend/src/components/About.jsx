@@ -132,7 +132,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
             zIndex: 1
           }}></div>
           <div className="gdlr-page-title-container container" style={{
@@ -140,7 +140,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
             zIndex: 2,
             maxWidth: '1200px',
             margin: '0 auto',
-            padding: '80px 1rem',
+            padding: '40px 1rem',
             textAlign: 'center'
           }}>
             <h1 className="gdlr-page-title" style={{
@@ -150,11 +150,8 @@ In addition, Briglia Hundley® understands the importance of community involveme
               marginBottom: '0.5rem',
               textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
             }}>
-              The Firm
+              Our Firm
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Award-winning legal excellence serving Northern Virginia since 1993
-            </p>
           </div>
         </div>
       )}
