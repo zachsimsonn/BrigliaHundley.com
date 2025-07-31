@@ -59,8 +59,18 @@ const About = ({ data, editableContent, showStaff = true }) => {
     }
   ];
 
-  // Split content into paragraphs
-  const paragraphs = editableContent.about.content.split('\n\n');
+  // Define different content for About page vs Home page
+  const aboutPageContent = `Briglia Hundley® was founded in 1993 and features attorneys who have been named to Super Lawyers, listed in U.S. News and World Report's Best Lawyers, and achieved Martindale-Hubbell's highest "AV" rating.
+
+We are a full-service law firm that will provide an experienced and energetic team to meet your legal needs. Our attorneys practice in state and federal courts throughout the Mid-Atlantic region. Among our ranks are former prosecutors, former federal and state law clerks, and attorneys and staff with large law firm experience. We combine our broad knowledge to vigorously pursue the best possible results for you.
+
+Providing high quality representation at boutique law firm prices, we offer a personable approach to your legal issues while maintaining our role as resourceful, results-oriented professionals. We emphasize client communication in all our cases, ensuring that you have the information needed to make sound decisions throughout the legal process.
+
+In addition, Briglia Hundley® understands the importance of community involvement. Our team gives generously of their time and talents through our pro bono work and our active support of legal organizations serving the underprivileged.`;
+
+  // Split content into paragraphs - use different content based on showStaff
+  const contentToUse = showStaff ? aboutPageContent : editableContent.about.content;
+  const paragraphs = contentToUse.split('\n\n');
 
   return (
     <section id="about" className={`py-20 relative ${showStaff ? 'bg-gray-900' : 'bg-gray-50'}`}>
