@@ -162,6 +162,8 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                             return 'https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-a.jpg';
                           case 'Estate Planning':
                             return 'https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR-750x380.jpg';
+                          case 'Trusts and Estate Planning':
+                            return 'https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR-750x380.jpg';
                           case 'Real Estate Law':
                             return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-real-estate.jpg';
                           case 'Employment Law':
