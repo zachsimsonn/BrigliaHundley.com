@@ -68,6 +68,50 @@ Providing high quality representation at boutique law firm prices, we offer a pe
 
 In addition, Briglia Hundley® understands the importance of community involvement. Our team gives generously of their time and talents through our pro bono work and our active support of legal organizations serving the underprivileged.`;
 
+  // Mock LinkedIn announcements data (replace with real API call)
+  const linkedInPosts = [
+    {
+      id: 1,
+      title: "Briglia Hundley® Attorneys Named to 2025 Super Lawyers List",
+      content: "We are proud to announce that several of our attorneys have been recognized by Super Lawyers for their outstanding legal work in 2025.",
+      date: "January 15, 2025",
+      link: "https://www.linkedin.com/company/briglia-hundley"
+    },
+    {
+      id: 2,
+      title: "New Developments in Virginia Corporate Law",
+      content: "Our corporate law team discusses recent legislative changes affecting businesses in Virginia and how they impact our clients.",
+      date: "January 8, 2025", 
+      link: "https://www.linkedin.com/company/briglia-hundley"
+    },
+    {
+      id: 3,
+      title: "Community Involvement: Supporting Local Legal Aid",
+      content: "Briglia Hundley® continues its commitment to pro bono work, providing legal services to underserved communities in Northern Virginia.",
+      date: "December 28, 2024",
+      link: "https://www.linkedin.com/company/briglia-hundley"
+    }
+  ];
+
+  // Award images with backlinks
+  const awards = [
+    {
+      image: "https://brigliahundley.com/wp-content/uploads/Best-Lawyers-2025-Law-Firm-Badge.png",
+      link: "https://www.bestlawyers.com/",
+      alt: "Best Lawyers 2025 Law Firm"
+    },
+    {
+      image: "https://brigliahundley.com/wp-content/uploads/Super-Lawyers-2025.png", 
+      link: "https://www.superlawyers.com/",
+      alt: "Super Lawyers 2025"
+    },
+    {
+      image: "https://brigliahundley.com/wp-content/uploads/Martindale-Hubbell-AV-Rating.png",
+      link: "https://www.martindale.com/",
+      alt: "Martindale-Hubbell AV Rating"
+    }
+  ];
+
   // Split content into paragraphs - use different content based on showStaff
   const contentToUse = showStaff ? aboutPageContent : editableContent.about.content;
   const paragraphs = contentToUse.split('\n\n');
