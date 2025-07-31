@@ -147,11 +147,17 @@ const ServiceAreas = ({ data }) => {
             <h3 className="text-2xl font-bold mb-4">Need Legal Services in Northern Virginia?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">Whether you're in Loudoun County, Fairfax, Arlington, or anywhere in Northern Virginia, our experienced attorneys are ready to help with your legal needs.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-colors duration-200">
-                Schedule Consultation
-              </Button>
-              <Button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all duration-200" variant="outline">
-                Call (703) 555-0123
+              <Link to="/contact">
+                <Button className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-colors duration-200">
+                  Schedule Consultation
+                </Button>
+              </Link>
+              <Button 
+                className="bg-white border-2 border-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-all duration-200" 
+                variant="outline"
+                onClick={() => window.location.href = `tel:${data.business.phone}`}
+              >
+                Call (703) 522-7222
               </Button>
             </div>
           </div>
