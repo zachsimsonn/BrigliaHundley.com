@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Award, MapPin } from 'lucide-react';
 
 const Attorneys = ({ data, onNavigate }) => {
+  // State to track which attorney descriptions are expanded
+  const [expandedAttorneys, setExpandedAttorneys] = useState({});
+  
+  // Function to toggle attorney description expansion
+  const toggleExpansion = (index, e) => {
+    e.preventDefault(); // Prevent the link from being followed
+    e.stopPropagation(); // Prevent event bubbling
+    setExpandedAttorneys(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+  
+  // Function to check if text should be truncated (4 lines max)
+  const shouldTruncate = (text) => {
+    // Estimate 4 lines at approximately 120 characters (30 chars per line average)
+    return text.length > 240;
+  };
+  
+  // Function to truncate text to approximately 4 lines
+  const truncateText = (text) => {
+    if (text.length <= 240) return text;
+    const truncated = text.substring(0, 240);
+    const lastSpace = truncated.lastIndexOf(' ');
+    return lastSpace > 200 ? truncated.substring(0, lastSpace) : truncated;
+  };
   return (
     <section id="attorneys" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
