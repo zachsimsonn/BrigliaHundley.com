@@ -1354,7 +1354,7 @@ export const siteData = {
       excerpt: "In Virginia, you can file a 'no-fault' divorce after living separate and apart for one year. Sometimes it's not feasible to live in separate residences - here's how to handle this situation.",
       author: "Teresa S. Cole",
       date: "January 14, 2025",
-      image: "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg",
+      image: "https://images.unsplash.com/photo-1450101215322-bf5cd27b63aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "living-separate-apart-same-roof",
       content: "In Virginia, you can file a 'no-fault' divorce once you and your spouse 'have lived separate and apart without any cohabitation and without interruption for one year.' But sometimes it is not feasible or practical to live in two separate residences during the separation period. Whether due to financial constraints, child custody arrangements, or housing market conditions, many couples find themselves needing to establish separate lives while sharing the same physical space. This guide provides practical and legal advice for successfully navigating this challenging situation."
     },
