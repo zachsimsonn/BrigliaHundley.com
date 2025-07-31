@@ -98,7 +98,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
     "description": attorney.experience,
     "email": attorney.email,
     "telephone": attorney.phone,
-    "url": `https://brigliahundley.com/attorney-profile/${name}`,
+    "url": `https://brigliahundley.com/attorney/${name}/`,
     "knowsAbout": attorney.practiceAreas || [],
     "memberOf": {
       "@type": "Organization",
