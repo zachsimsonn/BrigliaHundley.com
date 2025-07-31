@@ -152,7 +152,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-600">
+                <h1 className={`text-4xl lg:text-5xl font-bold ${showStaff ? 'text-gray-600' : 'text-white'}`}>
                   {editableContent.about.title}
                 </h1>
                 <div className="h-1 w-24 bg-gradient-to-r from-blue-300 to-blue-100 rounded-full"></div>
@@ -160,7 +160,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
 
               <div className="space-y-8">
                 {paragraphs.map((paragraph, index) => (
-                  <p key={index} className="text-lg text-gray-600 leading-relaxed text-left">
+                  <p key={index} className={`text-lg leading-relaxed text-left ${showStaff ? 'text-gray-600' : 'text-white'}`}>
                     {paragraph}
                   </p>
                 ))}
