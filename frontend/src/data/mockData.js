@@ -517,6 +517,18 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jim-hundley-u800ds.jpg",
       phone: "703.883.0204",
       email: "jhundley@brigliahundley.com",
+      awards: [
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Best-Lawyers-Lawyer-Logo-James-Hundley-2025.png",
+          link: "https://www.bestlawyers.com/",
+          alt: "Best Lawyers 2025 - James W. Hundley"
+        },
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Super-Lawyers-Logo-James-Hundley-2025.png",
+          link: "https://www.superlawyers.com/",
+          alt: "Super Lawyers 2025 - James W. Hundley"
+        }
+      ],
       education: [
         {
           degree: "Juris Doctor",
