@@ -424,7 +424,7 @@ export const siteData = {
       url: "/real-estate-law",
       localKeywords: "real estate attorney Fairfax VA, real estate lawyer Northern Virginia, property law Arlington VA, real estate closing Prince William County",
       attorneys: ["Teresa S. Cole", "Amy S. Owen"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-real-estate.jpg"
     },
     {
       title: "Trusts and Estate Planning",
