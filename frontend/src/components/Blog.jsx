@@ -43,7 +43,7 @@ const Blog = ({ data, onNavigate }) => {
       }}>
         <div className="gdlr-page-title-overlay"></div>
         <div className="gdlr-page-title-container container">
-          <h1 className="gdlr-page-title">Resources</h1>
+          <h1 className="gdlr-page-title">Blogs</h1>
         </div>
       </div>
 
