@@ -57,7 +57,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
   const paragraphs = editableContent.about.content.split('\n\n');
 
   return (
-    <section id="about" className="py-20 bg-gray-50 relative">
+    <section id="about" className={`py-20 relative ${showStaff ? 'bg-slate-900' : 'bg-gray-50'}`}>
       {/* Background Image - only on home page (when showStaff is false) */}
       {!showStaff && (
         <div 
