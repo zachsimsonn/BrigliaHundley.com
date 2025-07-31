@@ -178,6 +178,7 @@ const Blog = ({ data, onNavigate }) => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
