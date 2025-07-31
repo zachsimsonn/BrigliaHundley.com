@@ -208,9 +208,6 @@ In addition, Briglia Hundley® understands the importance of community involveme
                   Our Staff
                 </h2>
                 <div className="h-1 w-24 bg-gradient-to-r from-blue-300 to-blue-100 rounded-full mx-auto mb-6"></div>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Our practice features prominent, highly experienced attorneys who have been named to Super Lawyers, listed in U.S. News and World Report's Best Lawyers, and achieved Martindale-Hubbell's highest "AV" rating.
-                </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
