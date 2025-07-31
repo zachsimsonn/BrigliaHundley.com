@@ -63,7 +63,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
   const paragraphs = editableContent.about.content.split('\n\n');
 
   return (
-    <section id="about" className="py-20 bg-gray-50 relative">
+    <section id="about" className={`py-20 relative ${showStaff ? 'bg-blue-900' : 'bg-gray-50'}`}>
       {/* Background Image - only on home page (when showStaff is false) */}
       {!showStaff && (
         <div 
@@ -97,27 +97,37 @@ const About = ({ data, editableContent, showStaff = true }) => {
               </div>
             </div>
 
-            {/* Right Content - Highlights Grid */}
-            <div className="grid grid-cols-2 gap-6">
-              {highlights.map((highlight, index) => (
-                <div 
-                  key={index} 
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="p-3 bg-blue-50 rounded-full">
-                      {highlight.icon}
+            {/* Right Content - Building Image (when showStaff is true) or Grid (when on home page) */}
+            {showStaff ? (
+              <div className="flex justify-center">
+                <img 
+                  src="https://brigliahundley.com/wp-content/uploads/briglia-hundley-building.jpg" 
+                  alt="Briglia Hundley Law Firm Building" 
+                  className="w-full max-w-lg rounded-xl shadow-lg"
+                />
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 gap-6">
+                {highlights.map((highlight, index) => (
+                  <div 
+                    key={index} 
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  >
+                    <div className="flex flex-col items-center text-center space-y-4">
+                      <div className="p-3 bg-blue-50 rounded-full">
+                        {highlight.icon}
+                      </div>
+                      <h3 className="text-xl font-semibold text-gray-900">
+                        {highlight.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        {highlight.description}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900">
-                      {highlight.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {highlight.description}
-                    </p>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Staff Section */}
