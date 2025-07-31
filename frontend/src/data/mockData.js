@@ -60,7 +60,7 @@ export const siteData = {
       url: "/practice-area/accountants-liability-and-securities-litigation",
       localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
       attorneys: ["Madison A. Beatty", "Raymond P. Briglia"],
-      image: "./accountants-liability-and-security-litigationimage.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/bh-accountants-liability-hero-25.jpg"
     },
     {
       title: "Business Litigation",
@@ -464,7 +464,7 @@ export const siteData = {
       url: "/estate-planning",
       localKeywords: "estate planning attorney Fairfax VA, wills and trusts lawyer Northern Virginia, probate attorney Arlington VA, estate planning Prince William County",
       attorneys: ["Kaley Duncan Ward"],
-      image: "./trusts-and-estate-planning.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR.jpg"
     },
     {
       title: "Appellate Litigation",
