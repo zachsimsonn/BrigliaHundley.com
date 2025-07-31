@@ -503,7 +503,7 @@ export const siteData = {
       url: "/appellate-litigation",
       localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, appellate litigation Arlington VA, appeals court Prince William County",
       attorneys: ["Steven D. Briglia", "Brian J. Lubkeman"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg"
     }
   ],
 
