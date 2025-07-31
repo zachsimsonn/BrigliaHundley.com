@@ -51,7 +51,7 @@ const AccountantsLiabilityPage = ({ data, onNavigate }) => {
         title={practiceArea.title}
         description={metaDescription}
         keywords={keywords}
-        canonical="https://brigliahundley.com/practice-area/accountants-liability-and-securities-litigation"
+        canonical="https://brigliahundley.com/practice/accountants-liability-and-securities-litigation/"
         ogType="article"
         schemaData={practiceAreaSchema}
         breadcrumbs={breadcrumbItems}
