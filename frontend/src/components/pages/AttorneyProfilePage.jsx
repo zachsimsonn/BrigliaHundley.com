@@ -274,6 +274,30 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
                 </Button>
               </div>
             </div>
+
+            {/* Awards Section */}
+            {attorney.awards && attorney.awards.length > 0 && (
+              <div className="mt-6 bg-gray-50 rounded-lg p-6">
+                <h3 className="text-base font-semibold text-gray-900 mb-4">Recognition & Awards</h3>
+                <div className="space-y-3">
+                  {attorney.awards.map((award, index) => (
+                    <a 
+                      key={index}
+                      href={award.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block transition-transform hover:scale-105"
+                    >
+                      <img 
+                        src={award.image}
+                        alt={award.alt}
+                        className="w-full h-auto max-w-[200px]"
+                      />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Main Content */}
