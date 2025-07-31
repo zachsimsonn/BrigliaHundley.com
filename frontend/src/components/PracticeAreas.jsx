@@ -24,6 +24,8 @@ const PracticeAreas = ({ data, onNavigate }) => {
         return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
       case 'Criminal Defense':
         return 'https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24.jpg';
+      case 'Criminal Law':
+        return 'https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24.jpg';
       case 'Business Litigation':
         return 'https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg';
       case 'Corporate Law':
