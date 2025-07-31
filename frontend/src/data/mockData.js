@@ -1310,7 +1310,7 @@ export const siteData = {
       excerpt: "Professional strategies for uncovering concealed assets during divorce proceedings and the legal tools available to ensure fair property division.",
       author: "Teresa S. Cole",
       date: "March 4, 2025",
-      image: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg",
+      image: "https://images.unsplash.com/photo-1589216532372-3db2ca2d5c90?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "uncovering-hidden-cash-assets-divorce",
       content: "One of the most challenging aspects of divorce proceedings involves ensuring complete financial disclosure from both parties. Unfortunately, attempts to hide assets during divorce are more common than many realize, ranging from simple cash concealments to sophisticated offshore arrangements. This article provides a comprehensive overview of detection strategies, legal remedies, and preventive measures for addressing hidden assets in divorce cases. We examine common hiding methods including cryptocurrency transfers, business manipulations, and third-party arrangements, while discussing the professional resources available for asset discovery, including forensic accountants, private investigators, and specialized legal tools. Virginia's equitable distribution laws provide specific remedies for dealing with concealed assets, and understanding these protections is crucial for achieving fair property division. The article also addresses the consequences of hiding assets and the importance of working with experienced family law counsel to protect your financial interests."
     },
