@@ -63,7 +63,7 @@ const Attorneys = ({ data, onNavigate }) => {
 
                 {/* Contact Button */}
                 <Link 
-                  to={`/attorney-profile/${attorney.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/attorney-profile/${attorney.name.toLowerCase().replace(/[.\s]+/g, '-')}`}
                   className="block w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors duration-200 text-sm font-medium text-center"
                 >
                   View Profile
