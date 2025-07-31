@@ -29,27 +29,33 @@ const About = ({ data, editableContent, showStaff = true }) => {
   const staff = [
     {
       name: "Amanda Moellendick",
-      position: "Firm Administrator"
+      position: "Firm Administrator",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-amanda-moellendick-u800ds-400x400.jpg"
     },
     {
       name: "Carmen Escalera",
-      position: "Executive Administrative Assistant"
+      position: "Executive Administrative Assistant",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-carmen-escalera-u800ds-400x400.jpg"
     },
     {
       name: "Abbi Marsh",
-      position: "Paralegal"
+      position: "Paralegal",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-abbi-marsh-u800ds-400x400.jpg"
     },
     {
       name: "Nini Daker",
-      position: "Legal Assistant"
+      position: "Legal Assistant",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-nini-daker-u800ds-400x400.jpg"
     },
     {
       name: "Terence Bowles",
-      position: "Senior Accounts Administrator"
+      position: "Senior Accounts Administrator",
+      image: "https://brigliahundley.com/wp-content/uploads/bh-terence-bowles-800-400x400.jpg"
     },
     {
       name: "Jacob Rimland",
-      position: "Paralegal"
+      position: "Paralegal",
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-jacob-rimland-uc-400x400.jpg"
     }
   ];
 
