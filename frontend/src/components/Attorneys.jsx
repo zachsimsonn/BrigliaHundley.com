@@ -83,9 +83,17 @@ const Attorneys = ({ data, onNavigate }) => {
                   </span>
                 </div>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  {attorney.experience}
-                </p>
+                <div className="text-gray-600 text-sm leading-relaxed mb-4">
+                  {expandedAttorneys[index] ? attorney.experience : truncateText(attorney.experience)}
+                  {shouldTruncate(attorney.experience) && (
+                    <button
+                      onClick={(e) => toggleExpansion(index, e)}
+                      className="text-gray-700 hover:text-gray-900 ml-2 font-bold"
+                    >
+                      {expandedAttorneys[index] ? 'Show less' : 'more...'}
+                    </button>
+                  )}
+                </div>
 
                 {/* Contact Button */}
                 <Link 
