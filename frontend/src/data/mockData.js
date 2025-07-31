@@ -229,7 +229,7 @@ export const siteData = {
       url: "/criminal-defense",
       localKeywords: "criminal defense attorney Fairfax VA, criminal lawyer Northern Virginia, DWI attorney Arlington VA, criminal defense Prince William County",
       attorneys: ["Steven D. Briglia", "James W. Hundley", "Madison A. Beatty"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-criminal-law-hero-25.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24-750x380.jpg"
     },
     {
       title: "Employment Law",
