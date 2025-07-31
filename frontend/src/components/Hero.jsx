@@ -99,7 +99,7 @@ const Hero = ({ data, editableContent }) => {
                   <span className="text-sm lg:text-base font-semibold text-white drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 1px 1px 2px' }}>Tier 1 Ranked Law Firm</span>
                 </div>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight lg:leading-none text-white drop-shadow-lg" style={{ textShadow: 'rgba(0, 0, 0, 0.8) 2px 2px 4px', lineHeight: '1.1' }}>
-                  Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.
+                  Briglia Hundley is an award-winning law firm located in Tysons Corner, Virginia.
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed drop-shadow-md" style={{ textShadow: 'rgba(0, 0, 0, 0.7) 1px 1px 3px' }}>
                   Our seasoned attorneys are committed to providing superior service on every matter entrusted to our care.
