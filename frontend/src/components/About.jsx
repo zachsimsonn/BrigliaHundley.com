@@ -103,7 +103,7 @@ const About = ({ data, editableContent, showStaff = true }) => {
                 <img 
                   src="https://brigliahundley.com/wp-content/uploads/briglia-hundley-building.jpg" 
                   alt="Briglia Hundley Law Firm Building" 
-                  className="w-full max-w-lg rounded-xl shadow-lg"
+                  className="w-full max-w-2xl rounded-xl shadow-lg"
                 />
               </div>
             ) : (
