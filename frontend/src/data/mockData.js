@@ -354,7 +354,7 @@ export const siteData = {
       url: "/municipal-law",
       localKeywords: "municipal attorney Fairfax VA, government lawyer Northern Virginia, zoning attorney Arlington VA, municipal law Prince William County",
       attorneys: ["Steven D. Briglia"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
     },
     {
       title: "Personal Injury",
