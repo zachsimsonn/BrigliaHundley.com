@@ -1321,7 +1321,7 @@ export const siteData = {
       excerpt: "Understanding the importance of immediate medical attention after car accidents, even when injuries aren't immediately apparent.",
       author: "Madison A. Beatty",
       date: "March 3, 2025",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxsZWdhbHxlbnwwfHx8fDE3NTIyNjM5MjV8MA&ixlib=rb-4.1.0&q=85",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "see-doctor-after-car-accident",
       content: "After a car accident, many people focus primarily on vehicle damage and insurance claims while overlooking a critical factor: their health. Even seemingly minor accidents can result in injuries that don't manifest symptoms immediately, such as soft tissue damage, concussions, or internal injuries. Delayed medical treatment can not only jeopardize your health but also complicate any future insurance claims or legal proceedings. This comprehensive guide examines why prompt medical attention is crucial after any vehicle accident, regardless of how you feel immediately afterward. We discuss common delayed-onset injuries, the importance of creating a medical record, and how insurance companies evaluate medical treatment when processing claims. The article also provides practical guidance on choosing appropriate medical care, understanding the relationship between medical treatment and legal claims, and protecting both your health and legal rights following an accident."
     },
