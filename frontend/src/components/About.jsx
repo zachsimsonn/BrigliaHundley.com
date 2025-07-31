@@ -268,6 +268,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
         </div>
       </div>
     </section>
+    </>
   );
 };
 
