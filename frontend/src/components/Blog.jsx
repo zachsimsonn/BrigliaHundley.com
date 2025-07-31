@@ -33,7 +33,21 @@ const Blog = ({ data, onNavigate }) => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <>
+      {/* Header */}
+      <div className="gdlr-page-title-wrapper" style={{
+        backgroundImage: 'url(https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxZnxjb3VydGhvdXNlfGVufDB8fHx8MTc1MjU5OTYyNXww&ixlib=rb-4.1.0&q=85)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="gdlr-page-title-overlay"></div>
+        <div className="gdlr-page-title-container container">
+          <h1 className="gdlr-page-title">Resources</h1>
+        </div>
+      </div>
+
+      <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
