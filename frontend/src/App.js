@@ -173,7 +173,7 @@ const App = () => {
                     title="Attorneys"
                     description="Meet our AV-rated attorneys at Briglia Hundley®. Best Lawyers and Super Lawyers recognized legal team in Tysons Corner."
                     keywords="attorneys, lawyers, legal team, Briglia Hundley, Virginia lawyers, Tysons Corner attorneys"
-                    canonical="https://brigliahundley.com/attorneys"
+                    canonical="https://brigliahundley.com/attorney/"
                   />
                   <Attorneys data={data} onNavigate={handleNavigate} />
                 </div>
