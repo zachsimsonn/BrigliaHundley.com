@@ -1376,7 +1376,7 @@ export const siteData = {
       excerpt: "After a car accident, it is common that we're left with many unanswered questions about the next steps, such as one that seems simple: Should you see a doctor after the car accident? The answer is yes.",
       author: "Courtney B. Harden",
       date: "November 22, 2024",
-      image: "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "see-doctor-after-car-accident",
       content: "After a car accident, it is common that we're left with many unanswered questions about the next steps, such as one that seems simple: Should you see a doctor after the car accident? The answer is yes and here's why. Even if you feel fine immediately after an accident, adrenaline and shock can mask pain and injuries. Some injuries, particularly soft tissue injuries like whiplash, may not present symptoms for hours or even days after the accident. Seeking prompt medical attention serves multiple purposes: it ensures your health and safety, creates a medical record that documents your injuries, and establishes a clear link between the accident and any medical issues that arise."
     },
