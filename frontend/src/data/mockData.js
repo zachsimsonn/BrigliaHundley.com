@@ -1379,6 +1379,61 @@ export const siteData = {
       image: "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg",
       slug: "see-doctor-after-car-accident",
       content: "After a car accident, it is common that we're left with many unanswered questions about the next steps, such as one that seems simple: Should you see a doctor after the car accident? The answer is yes and here's why. Even if you feel fine immediately after an accident, adrenaline and shock can mask pain and injuries. Some injuries, particularly soft tissue injuries like whiplash, may not present symptoms for hours or even days after the accident. Seeking prompt medical attention serves multiple purposes: it ensures your health and safety, creates a medical record that documents your injuries, and establishes a clear link between the accident and any medical issues that arise."
+    },
+    {
+      id: 10,
+      title: "The Different Business Entities: Which Is Best for Your Business?",
+      category: "Business Law",
+      excerpt: "Ensuring you employ the right entity for your needs will help your business grow in the future. The business entities discussed include sole proprietorships, limited liability companies, partnerships, and corporations.",
+      author: "Brian J. Lubkeman",
+      date: "October 15, 2024",
+      image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
+      slug: "different-business-entities-best-for-business",
+      content: "Ensuring you employ the right entity for your needs will help your business grow in the future. The business entities discussed in this article include sole proprietorships, limited liability companies, general partnerships, various types of limited partnerships, and various types of corporations. Each entity type offers distinct advantages and disadvantages in terms of liability protection, tax implications, management structure, and operational flexibility. Understanding these differences is crucial for making an informed decision that aligns with your business goals and risk tolerance."
+    },
+    {
+      id: 11,
+      title: "The Slippery Roads Defense in Virginia",
+      category: "Personal Injury",
+      excerpt: "Motor vehicle accidents are serious matters that can result in expensive litigation. Virginia law provides a 'slippery roads defense' for individuals involved in motor vehicle accidents when the driver used care and caution.",
+      author: "Courtney B. Harden",
+      date: "September 28, 2024",
+      image: "https://images.pexels.com/photos/1123771/pexels-photo-1123771.jpeg",
+      slug: "slippery-roads-defense-virginia",
+      content: "Motor vehicle accidents are serious matters that can result in expensive litigation and other legal consequences. Virginia law provides a 'slippery roads defense' for individuals involved in motor vehicle accidents when the driver used care and caution in the operation of their vehicle under the conditions present at the time of the accident. This defense recognizes that certain weather and road conditions can create unavoidable hazards that even the most careful driver cannot prevent."
+    },
+    {
+      id: 12,
+      title: "Bid Rigging: Understanding Antitrust Violations",
+      category: "Business Law",
+      excerpt: "In an ideal free market system, open competition among suppliers ensures that the consumer receives the best quality products for the lowest possible prices. One of America's most important pieces of economic legislation is the Sherman Antitrust Act.",
+      author: "Steven D. Briglia",  
+      date: "August 10, 2024",
+      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg",
+      slug: "bid-rigging-antitrust-violations",
+      content: "In an ideal free market system, open competition among suppliers ensures that the consumer receives the best quality products for the lowest possible prices. One of America's most important pieces of economic legislation is the Sherman Antitrust Act. Enacted in 1890, this landmark law was designed to combat monopolies and other anti-competitive practices that could harm consumers and the economy. Bid rigging is one of the most serious violations of antitrust law, involving a conspiracy among competitors to manipulate the bidding process and eliminate genuine competition."
+    },
+    {
+      id: 13,
+      title: "Supreme Court Addresses Plea Agreement Negotiations",
+      category: "Criminal Defense",
+      excerpt: "The Virginia Supreme Court recently addressed the extent to which statements made as part of plea agreement negotiations are admissible at trial in Cridler-Smith v. Clarke.",
+      author: "Raymond Starks-Taylor",
+      date: "July 22, 2024", 
+      image: "https://images.unsplash.com/photo-1589216532372-a4d3-da8b3cfb6?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+      slug: "supreme-court-plea-agreement-negotiations",
+      content: "The Virginia Supreme Court recently addressed the extent to which statements made as part of plea agreement negotiations are admissible at trial. See Cridler-Smith v. Clarke, No. 230450, 2025 Va. LEXIS 3 (Jan. 16, 2025). Virginia Supreme Court Rule 3A:8 generally provides that statements made during plea negotiations are inadmissible as evidence against the defendant. However, the court addressed important exceptions and limitations to this protection."
+    },
+    {
+      id: 14,
+      title: "Online Court Case Hearing: Information and Tips",
+      category: "General Legal",
+      excerpt: "Just about every kind of court case is moving online. Whether you are a lawyer or a party, here are a few quick tips to prepare yourself for the upcoming hearing.",
+      author: "Michael C. May",
+      date: "June 8, 2024",
+      image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg",
+      slug: "online-court-case-hearing-tips",
+      content: "Just about every kind of court case is moving online. Whether you are a lawyer or a party, here are a few quick tips to prepare yourself for the upcoming hearing: Test the program and connection in advance, ensure you have proper lighting and a professional background, prepare all documents digitally, and understand the court's virtual hearing protocols."
     }
   ],
 
