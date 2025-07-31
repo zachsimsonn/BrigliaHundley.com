@@ -316,7 +316,7 @@ export const siteData = {
       url: "/family-law",
       localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
       attorneys: ["Hannah Merrill", "Michael C. May", "Teresa S. Cole", "Lauren L. Gill"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg"
     },
     {
       title: "Municipal Law",
