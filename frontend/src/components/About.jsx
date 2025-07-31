@@ -117,7 +117,49 @@ In addition, Briglia Hundley® understands the importance of community involveme
   const paragraphs = contentToUse.split('\n\n');
 
   return (
-    <section id="about" className={`py-20 relative ${showStaff ? 'bg-gray-900' : 'bg-gray-50'}`}>
+    <>
+      {/* Header - only show on About page (when showStaff is true) */}
+      {showStaff && (
+        <div className="gdlr-page-title-wrapper" style={{
+          backgroundImage: 'url(https://brigliahundley.com/wp-content/uploads/courthouse-header-500h.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}>
+          <div className="gdlr-page-title-overlay" style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            zIndex: 1
+          }}></div>
+          <div className="gdlr-page-title-container container" style={{
+            position: 'relative',
+            zIndex: 2,
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '80px 1rem',
+            textAlign: 'center'
+          }}>
+            <h1 className="gdlr-page-title" style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              color: 'white',
+              marginBottom: '0.5rem',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
+            }}>
+              The Firm
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Award-winning legal excellence serving Northern Virginia since 1993
+            </p>
+          </div>
+        </div>
+      )}
+
+      <section id="about" className={`py-20 relative ${showStaff ? 'bg-gray-900' : 'bg-gray-50'}`}>
       {/* Background Image - only on home page (when showStaff is false) */}
       {!showStaff && (
         <div 
