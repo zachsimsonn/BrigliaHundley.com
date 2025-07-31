@@ -133,7 +133,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
         </div>
       )}
 
-      <section id="about" className={`py-20 relative ${showStaff ? 'bg-gray-900' : 'bg-gray-50'}`}>
+      <section id="about" className={`py-20 relative ${showStaff ? 'bg-white' : 'bg-gray-50'}`}>
       {/* Background Image - only on home page (when showStaff is false) */}
       {!showStaff && (
         <div 
