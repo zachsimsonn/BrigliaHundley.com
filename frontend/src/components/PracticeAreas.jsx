@@ -15,38 +15,6 @@ const PracticeAreas = ({ data, onNavigate }) => {
     'Real Estate Development': <Home className="h-8 w-8" />
   };
 
-  // Function to get the correct image for each practice area
-  const getImageForPracticeArea = (title) => {
-    switch(title) {
-      case 'Accountants Liability and Securities Litigation':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-securities-litigation-hero-25-750x380.jpg';
-      case 'Family Law':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
-      case 'Criminal Defense':
-        return 'https://brigliahundley.com/wp-content/uploads/BH-Criminal-law-hero-24-750x380.jpg';
-      case 'Business Litigation':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25-750x380.jpg';
-      case 'Corporate Law':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25-750x380.jpg';
-      case 'Personal Injury':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-personal-injury-hero-a.jpg';
-      case 'Estate Planning':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-trusts-estates-hero-24RR-750x380.jpg';
-      case 'Real Estate Law':
-        return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-real-estate.jpg';
-      case 'Employment Law':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25-750x380.jpg';
-      case 'Municipal Law':
-        return 'https://brigliahundley.com/wp-content/uploads/bh-fairfax-municipal-hero-24-750x380.jpg';
-      case 'Appellate Litigation':
-        return 'https://brigliahundley.com/wp-content/uploads/FA1-Appellate-Litigation-drawing-730x380.jpg';
-      case 'Community Associations':
-        return 'https://brigliahundley.com/wp-content/uploads/briglia-hundley-community-assoc-hero-750x380.jpg';
-      default:
-        return 'https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-0725-rp-750x380.jpg';
-    }
-  };
-
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
