@@ -126,32 +126,9 @@ In addition, Briglia Hundley® understands the importance of community involveme
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}>
-          <div className="gdlr-page-title-overlay" style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.05)',
-            zIndex: 1
-          }}></div>
-          <div className="gdlr-page-title-container container" style={{
-            position: 'relative',
-            zIndex: 3,
-            maxWidth: '1200px',
-            margin: '0 auto',
-            padding: '40px 1rem',
-            textAlign: 'center'
-          }}>
-            <h1 className="gdlr-page-title" style={{
-              fontSize: '3rem',
-              fontWeight: 'bold',
-              color: 'white',
-              marginBottom: '0.5rem',
-              textShadow: '3px 3px 6px rgba(0,0,0,0.8)'
-            }}>
-              Our Firm
-            </h1>
+          <div className="gdlr-page-title-overlay"></div>
+          <div className="gdlr-page-title-container container">
+            <h1 className="gdlr-page-title">Our Firm</h1>
           </div>
         </div>
       )}
