@@ -1286,7 +1286,7 @@ export const siteData = {
       title: "Crawford v. Washington: Impact on Criminal Defense",
       category: "Criminal Defense",
       excerpt: "Examining how the landmark Crawford decision transformed the admissibility of testimonial evidence in criminal proceedings and its ongoing implications for defense strategy.",
-      author: "James W. Hundley",
+      author: "Raymond Starks-Taylor",
       date: "May 20, 2025",
       image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxsYXclMjBmaXJtfGVufDB8fHx8MTc1MjI2MzkxOXww&ixlib=rb-4.1.0&q=85",
       slug: "crawford-washington-criminal-defense-impact",
