@@ -162,7 +162,7 @@ const Blog = ({ data, onNavigate }) => {
         <div className="text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Explore All Legal Resources
+              Explore All Legal Blogs
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               Access our complete library of legal insights, case studies, and expert commentary to stay informed about the latest developments in law.
