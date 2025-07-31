@@ -125,6 +125,7 @@ const Attorneys = ({ data, onNavigate }) => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
