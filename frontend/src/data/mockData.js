@@ -1335,6 +1335,50 @@ export const siteData = {
       image: "https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg",
       slug: "social-media-impact-family-law-litigation",
       content: "In today's digital age, social media has become a double-edged sword in family law proceedings. While these platforms allow us to stay connected and share life's moments, they can also become powerful evidence in divorce, custody, and support cases. Posts that seem innocent can be interpreted differently in a legal context, potentially undermining your case or credibility. This comprehensive analysis explores how various social media platforms are used in family law litigation, from Facebook and Instagram to LinkedIn and dating apps. We examine real-world examples of how posts have influenced court decisions, discuss the discoverability of social media content, and provide practical strategies for protecting your interests during family law proceedings. The article also addresses privacy settings, the permanence of digital footprints, and the importance of digital discretion when family law matters are pending. Understanding these risks is essential for anyone involved in family law litigation in the modern era."
+    },
+    {
+      id: 6,
+      title: "A Guide to Fighting a DWI in Virginia",
+      category: "Criminal Defense",
+      excerpt: "Driving under the influence in Virginia is a serious offense that typically results in a Class 1 misdemeanor. Learn the essential steps to protect yourself after a DWI arrest.",
+      author: "Raymond Starks-Taylor",
+      date: "January 28, 2025",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+      slug: "guide-fighting-dwi-virginia",
+      content: "Driving under the influence in Virginia is a serious offense that typically results in a Class 1 misdemeanor. After a DWI arrest, it is important to consider the following steps to best protect yourself. Do Not Contact the Police When you are arrested for DWI, you may feel compelled to explain yourself or convince the officer that you are not intoxicated. However, anything you say can and will be used against you in court. It's best to remain silent and request an attorney immediately. The police are trained to gather evidence against you, and even seemingly innocent statements can be misconstrued. Exercise your right to remain silent and let your attorney handle communications with law enforcement."
+    },
+    {
+      id: 7,
+      title: "The How-To Guide to Living Separate and Apart Under the Same Roof",
+      category: "Family Law",
+      excerpt: "In Virginia, you can file a 'no-fault' divorce after living separate and apart for one year. Sometimes it's not feasible to live in separate residences - here's how to handle this situation.",
+      author: "Teresa S. Cole",
+      date: "January 14, 2025",
+      image: "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg",
+      slug: "living-separate-apart-same-roof",
+      content: "In Virginia, you can file a 'no-fault' divorce once you and your spouse 'have lived separate and apart without any cohabitation and without interruption for one year.' But sometimes it is not feasible or practical to live in two separate residences during the separation period. Whether due to financial constraints, child custody arrangements, or housing market conditions, many couples find themselves needing to establish separate lives while sharing the same physical space. This guide provides practical and legal advice for successfully navigating this challenging situation."
+    },
+    {
+      id: 8,
+      title: "What Type of Divorce Is the Right Fit for You?",
+      category: "Family Law", 
+      excerpt: "Whether it was a long time coming or a complete shock, learning the different types of divorce will help you plan your next steps. Virginia offers seven different types of divorce.",
+      author: "Teresa S. Cole",
+      date: "December 18, 2024",
+      image: "https://images.pexels.com/photos/48195/document-agreement-documents-sign-48195.jpeg",
+      slug: "types-divorce-right-fit",
+      content: "Whether it was a long time coming or a complete shock, learning the different types of divorce will help you plan your next steps. In Virginia, there are seven different types of divorce: uncontested; contested; no-fault; fault; collaborative; mediated; and default. Understanding these options can help you choose the path that best fits your circumstances, timeline, and budget. Each type has distinct advantages and requirements, and the right choice depends on factors such as the complexity of your assets, the level of cooperation between spouses, and whether children are involved."
+    },
+    {
+      id: 9,
+      title: "Should You See a Doctor After a Car Accident?",
+      category: "Personal Injury",
+      excerpt: "After a car accident, it is common that we're left with many unanswered questions about the next steps, such as one that seems simple: Should you see a doctor after the car accident? The answer is yes.",
+      author: "Courtney B. Harden",
+      date: "November 22, 2024",
+      image: "https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg",
+      slug: "see-doctor-after-car-accident",
+      content: "After a car accident, it is common that we're left with many unanswered questions about the next steps, such as one that seems simple: Should you see a doctor after the car accident? The answer is yes and here's why. Even if you feel fine immediately after an accident, adrenaline and shock can mask pain and injuries. Some injuries, particularly soft tissue injuries like whiplash, may not present symptoms for hours or even days after the accident. Seeking prompt medical attention serves multiple purposes: it ensures your health and safety, creates a medical record that documents your injuries, and establishes a clear link between the accident and any medical issues that arise."
     }
   ],
 
