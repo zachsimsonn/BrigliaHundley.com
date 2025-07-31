@@ -147,7 +147,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        padding: '100px 0',
+        padding: '80px 0',
         position: 'relative'
       }}>
         <div className="gdlr-page-title-overlay" style={{
