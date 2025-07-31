@@ -16,18 +16,18 @@ const Attorneys = ({ data, onNavigate }) => {
     }));
   };
   
-  // Function to check if text should be truncated (4 lines max)
+  // Function to check if text should be truncated (3 lines max)
   const shouldTruncate = (text) => {
-    // Estimate 4 lines at approximately 120 characters (30 chars per line average)
-    return text.length > 240;
+    // Estimate 3 lines at approximately 90 characters (30 chars per line average)
+    return text.length > 180;
   };
   
-  // Function to truncate text to approximately 4 lines
+  // Function to truncate text to approximately 3 lines
   const truncateText = (text) => {
-    if (text.length <= 240) return text;
-    const truncated = text.substring(0, 240);
+    if (text.length <= 180) return text;
+    const truncated = text.substring(0, 180);
     const lastSpace = truncated.lastIndexOf(' ');
-    return lastSpace > 200 ? truncated.substring(0, lastSpace) : truncated;
+    return lastSpace > 150 ? truncated.substring(0, lastSpace) : truncated;
   };
   return (
     <section id="attorneys" className="py-20 bg-gray-50">
