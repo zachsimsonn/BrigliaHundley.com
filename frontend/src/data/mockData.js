@@ -130,7 +130,7 @@ export const siteData = {
       url: "/community-associations",
       localKeywords: "HOA attorney Fairfax VA, community association lawyer Northern Virginia, condominium law Arlington VA, homeowners association Prince William County",
       attorneys: ["Mary \"Molly\" Peacock", "Jacob C. DeRue"],
-      image: "https://brigliahundley.com/wp-content/uploads/bh-community-associations-hero-25.jpg"
+      image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-community-assoc-hero-750x380.jpg"
     },
     {
       title: "Corporate Law",
