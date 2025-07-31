@@ -621,6 +621,18 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-steve-briglia-u800ds.jpg",
       phone: "703.883.0205",
       email: "sbriglia@brigliahundley.com",
+      awards: [
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Best-Lawyers-Lawyer-Logo-Steven-Briglia-2025.png",
+          link: "https://www.bestlawyers.com/",
+          alt: "Best Lawyers 2025 - Steven D. Briglia"
+        },
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Super-Lawyers-Logo-Steven-Briglia-2025.png",
+          link: "https://www.superlawyers.com/",
+          alt: "Super Lawyers 2025 - Steven D. Briglia"
+        }
+      ],
       education: [
         {
           degree: "Juris Doctor",
