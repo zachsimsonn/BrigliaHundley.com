@@ -41,9 +41,6 @@ const Attorneys = ({ data, onNavigate }) => {
         <div className="gdlr-page-title-overlay"></div>
         <div className="gdlr-page-title-container container">
           <h1 className="gdlr-page-title">Our Attorneys</h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            AV-rated attorneys recognized by Super Lawyers and Best Lawyers serving Northern Virginia
-          </p>
         </div>
       </div>
 
