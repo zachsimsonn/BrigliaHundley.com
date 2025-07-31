@@ -50,7 +50,7 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
   };
 
   const attorney = data.attorneys.find(att => 
-    att.name.toLowerCase().replace(/\s+/g, '-') === name
+    att.name.toLowerCase().replace(/[.\s]+/g, '-') === name
   );
 
   if (!attorney) {
