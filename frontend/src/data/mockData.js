@@ -1420,7 +1420,7 @@ export const siteData = {
       excerpt: "The Virginia Supreme Court recently addressed the extent to which statements made as part of plea agreement negotiations are admissible at trial in Cridler-Smith v. Clarke.",
       author: "Raymond Starks-Taylor",
       date: "July 22, 2024", 
-      image: "https://images.unsplash.com/photo-1589216532372-a4d3-da8b3cfb6?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+      image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "supreme-court-plea-agreement-negotiations",
       content: "The Virginia Supreme Court recently addressed the extent to which statements made as part of plea agreement negotiations are admissible at trial. See Cridler-Smith v. Clarke, No. 230450, 2025 Va. LEXIS 3 (Jan. 16, 2025). Virginia Supreme Court Rule 3A:8 generally provides that statements made during plea negotiations are inadmissible as evidence against the defendant. However, the court addressed important exceptions and limitations to this protection."
     },
