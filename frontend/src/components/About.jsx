@@ -132,12 +132,12 @@ In addition, Briglia Hundley® understands the importance of community involveme
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.15)',
+            backgroundColor: 'rgba(0, 0, 0, 0.05)',
             zIndex: 1
           }}></div>
           <div className="gdlr-page-title-container container" style={{
             position: 'relative',
-            zIndex: 2,
+            zIndex: 3,
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '40px 1rem',
@@ -148,7 +148,7 @@ In addition, Briglia Hundley® understands the importance of community involveme
               fontWeight: 'bold',
               color: 'white',
               marginBottom: '0.5rem',
-              textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
+              textShadow: '3px 3px 6px rgba(0,0,0,0.8)'
             }}>
               Our Firm
             </h1>
