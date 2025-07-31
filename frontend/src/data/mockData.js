@@ -787,6 +787,18 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-amy-owen-u800ds.jpg",
       phone: "703.883.0208",
       email: "aowen@brigliahundley.com",
+      awards: [
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Best-Lawyers-Lawyer-Logo-Amy-Owen-2025.png",
+          link: "https://www.bestlawyers.com/",
+          alt: "Best Lawyers 2025 - Amy S. Owen"
+        },
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Super-Lawyers-Logo-Amy-Owen-2025.png",
+          link: "https://www.superlawyers.com/",
+          alt: "Super Lawyers 2025 - Amy S. Owen"
+        }
+      ],
       education: [
         {
           degree: "Juris Doctor, Order of the Coif",
