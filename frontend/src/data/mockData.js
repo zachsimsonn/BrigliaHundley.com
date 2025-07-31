@@ -686,6 +686,13 @@ export const siteData = {
       image: "https://brigliahundley.com/wp-content/uploads/briglia-hundley-brian-lubkeman-u800ds.jpg",
       phone: "703.883.0206",
       email: "blubkeman@brigliahundley.com",
+      awards: [
+        {
+          image: "https://brigliahundley.com/wp-content/uploads/Best-Lawyers-Lawyer-Logo-Brian-Lubkeman-2025.png",
+          link: "https://www.bestlawyers.com/",
+          alt: "Best Lawyers 2025 - Brian J. Lubkeman"
+        }
+      ],
       education: [
         {
           degree: "Juris Doctor",
