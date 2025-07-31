@@ -147,8 +147,15 @@ const About = ({ data, editableContent, showStaff = true }) => {
                     className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <div className="flex flex-col items-center text-center space-y-4">
-                      <div className="p-4 bg-blue-50 rounded-full">
-                        <Users className="h-8 w-8 text-blue-900" />
+                      <div className="w-32 h-32 rounded-full overflow-hidden">
+                        <img 
+                          src={member.image} 
+                          alt={`${member.name} - ${member.position} at Briglia Hundley®`}
+                          className="w-full h-full object-cover" 
+                          loading="lazy" 
+                          decoding="async" 
+                          style={{objectPosition: '50% 30%'}}
+                        />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
                         {member.name}
