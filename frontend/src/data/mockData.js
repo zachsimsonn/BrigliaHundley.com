@@ -1,7 +1,7 @@
 export const siteData = {
   business: {
     name: "Briglia Hundley®",
-    tagline: "Briglia Hundley is an award-winning law firm located in Tysons Corner, Fairfax County, Virginia.",
+    tagline: "Test",
     established: "1993",
     location: "Tysons Corner, Fairfax County, Virginia",
     address: "1921 Gallows Road, Suite 900, Tysons Corner, Virginia 22182",
