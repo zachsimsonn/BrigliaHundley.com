@@ -72,7 +72,7 @@ const PracticeAreas = ({ data, onNavigate }) => {
               {/* Image Thumbnail */}
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src={getImageForPracticeArea(area.title)} 
+                  src={area.image} 
                   alt={area.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
