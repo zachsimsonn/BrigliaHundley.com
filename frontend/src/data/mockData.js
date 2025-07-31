@@ -1398,7 +1398,7 @@ export const siteData = {
       excerpt: "Motor vehicle accidents are serious matters that can result in expensive litigation. Virginia law provides a 'slippery roads defense' for individuals involved in motor vehicle accidents when the driver used care and caution.",
       author: "Courtney B. Harden",
       date: "September 28, 2024",
-      image: "https://images.pexels.com/photos/1123771/pexels-photo-1123771.jpeg",
+      image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
       slug: "slippery-roads-defense-virginia",
       content: "Motor vehicle accidents are serious matters that can result in expensive litigation and other legal consequences. Virginia law provides a 'slippery roads defense' for individuals involved in motor vehicle accidents when the driver used care and caution in the operation of their vehicle under the conditions present at the time of the accident. This defense recognizes that certain weather and road conditions can create unavoidable hazards that even the most careful driver cannot prevent."
     },
