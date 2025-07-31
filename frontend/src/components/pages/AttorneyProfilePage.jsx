@@ -17,7 +17,9 @@ const AttorneyProfilePage = ({ data, onNavigate }) => {
     if (attorneyName.includes('Lauren')) {
       return 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Family law - courthouse steps
     } else if (attorneyName.includes('Raymond') || attorneyName.includes('Starks-Taylor')) {
-      return 'url(https://images.unsplash.com/photo-1450101215322-bf5cd27b63aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Scales of justice - clearly law-related
+      return 'url(https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjb3VydGhvdXNlfGVufDB8fHx8MTc1MjU5OTYyNXww&ixlib=rb-4.1.0&q=85)'; // Practice area courthouse columns
+    } else if (attorneyName.includes('Brian') || attorneyName.includes('Lubkeman')) {
+      return 'url(https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjb3VydGhvdXNlfGVufDB8fHx8MTc1MjU5OTYyNXww&ixlib=rb-4.1.0&q=85)'; // Practice area courthouse columns
     } else if (attorneyName.includes('Jacob')) {
       return 'url(https://images.unsplash.com/photo-1436450412740-6b988f486c6b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.0.3&q=85&w=1600&h=800)'; // Litigation - courthouse columns
     } else if (attorneyName.includes('Hannah')) {
