@@ -162,7 +162,7 @@ const Header = ({ data, onEdit, onNavigate, currentPage }) => {
                 className={getNavItemClass('/blog')}
                 style={{ fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.5px', fontSize: '14px' }}
               >
-                RESOURCES
+                BLOGS
               </Link>
               <Link 
                 to="/contact"
