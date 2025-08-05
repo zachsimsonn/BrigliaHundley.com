@@ -7,19 +7,9 @@ import Breadcrumb from '../Breadcrumb';
 
 const PracticeAreaPage = ({ data, onNavigate }) => {
   const { area } = useParams();
-  
-  // Debug logging
-  console.log('PracticeAreaPage - URL parameter area:', area);
-  console.log('PracticeAreaPage - Available practice areas:', data?.practiceAreas?.map(p => ({
-    title: p.title,
-    slug: p.title.toLowerCase().replace(/\s+/g, '-')
-  })));
-  
   const practiceArea = data?.practiceAreas?.find(practiceAreaItem => 
     practiceAreaItem.title.toLowerCase().replace(/\s+/g, '-') === area
   );
-  
-  console.log('PracticeAreaPage - Found practice area:', practiceArea?.title || 'NOT FOUND');
 
   if (!practiceArea) {
     return (
