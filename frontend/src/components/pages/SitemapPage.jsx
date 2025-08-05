@@ -558,12 +558,12 @@ const SitemapPage = ({ data }) => {
           </div>
         </div>
 
-        {/* Location-Specific Practice Area Pages - THE SEO KINGDOM RESTORED! */}
+        {/* Location-Specific Practice Area Pages */}
         <div className="mt-12">
           <div className="bg-gray-900 text-white rounded-lg p-8 mb-8">
             <div className="flex items-center gap-3 mb-4">
               <Users className="text-white" size={28} />
-              <h2 className="text-2xl font-bold">Location-Specific Legal Services - The SEO Kingdom</h2>
+              <h2 className="text-2xl font-bold">Location-Specific Legal Services</h2>
             </div>
             <p className="text-gray-300 mb-6">
               Specialized legal representation for each community we serve. Our attorneys understand local courts, 
@@ -575,7 +575,7 @@ const SitemapPage = ({ data }) => {
                 Herndon, Reston, Alexandria, Springfield, Annandale, Centreville, Chantilly, and throughout Northern Virginia
               </p>
               <p className="text-xs text-gray-400 mt-2">
-                Over 300+ location-specific practice area pages for comprehensive SEO coverage
+                Comprehensive legal services across all major Virginia jurisdictions
               </p>
             </div>
           </div>
