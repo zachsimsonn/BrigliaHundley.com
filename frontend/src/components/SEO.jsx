@@ -11,8 +11,8 @@ const SEO = ({
   breadcrumbs = []
 }) => {
   const defaultTitle = "Briglia Hundley® - Premier Law Firm in Tysons Corner, Virginia";
-  const defaultDescription = "Tier 1 ranked, award-winning law firm delivering superior client service and innovative legal strategies in Virginia, DC, and Maryland. Expert attorneys since 1993.";
-  const defaultKeywords = "law firm, attorneys, lawyers, Tysons Corner, Virginia, criminal defense, civil litigation, corporate law, family law, personal injury, real estate, estate planning, Briglia Hundley";
+  const defaultDescription = "Tier 1 ranked, award-winning law firm with AV Rating delivering superior client service and innovative legal strategies in Virginia, DC, and Maryland. Expert attorneys since 1993 with Best Lawyers recognition.";
+  const defaultKeywords = "law firm, attorneys, lawyers, Tysons Corner, Virginia, criminal defense, civil litigation, corporate law, family law, personal injury, real estate, estate planning, Briglia Hundley, AV rated attorneys, Best Lawyers, Super Lawyers, Martindale Hubbell, Virginia lawyers, Fairfax County attorneys, Northern Virginia law firm";
   
   const siteTitle = title ? `${title} | Briglia Hundley®` : defaultTitle;
   const siteDescription = description || defaultDescription;
