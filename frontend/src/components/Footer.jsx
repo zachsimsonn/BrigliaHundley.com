@@ -129,28 +129,6 @@ const Footer = ({ data }) => {
               >
                 Sitemap
               </Link>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
-              >
-                Privacy Policy
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
-              >
-                Terms of Service
-              </a>
-              <a 
-                href="#legal-disclaimer" 
-                className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('legal-disclaimer')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Disclaimer
-              </a>
             </div>
           </div>
         </div>
