@@ -1343,7 +1343,7 @@ export const siteData = {
       excerpt: "Driving under the influence in Virginia is a serious offense that typically results in a Class 1 misdemeanor. Learn the essential steps to protect yourself after a DWI arrest.",
       author: "Raymond Starks-Taylor",
       date: "January 28, 2025",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+      image: "https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHw2fHxjb3VydGhvdXNlfGVufDB8fHx8MTc1MjU5OTYyNXww&ixlib=rb-4.1.0&q=85",
       slug: "guide-fighting-dwi-virginia",
       content: "Driving under the influence in Virginia is a serious offense that typically results in a Class 1 misdemeanor. After a DWI arrest, it is important to consider the following steps to best protect yourself. Do Not Contact the Police When you are arrested for DWI, you may feel compelled to explain yourself or convince the officer that you are not intoxicated. However, anything you say can and will be used against you in court. It's best to remain silent and request an attorney immediately. The police are trained to gather evidence against you, and even seemingly innocent statements can be misconstrued. Exercise your right to remain silent and let your attorney handle communications with law enforcement."
     },
