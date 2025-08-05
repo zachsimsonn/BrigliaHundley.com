@@ -7,22 +7,9 @@ import Breadcrumb from '../Breadcrumb';
 
 const PracticeAreaPage = ({ data, onNavigate }) => {
   const { area } = useParams();
-  
-  // Debug logging to help diagnose the routing issue
-  console.log('=== PRACTICE AREA PAGE DEBUG ===');
-  console.log('URL parameter area:', area);
-  console.log('Current location:', window.location);
-  console.log('Available practice areas:', data?.practiceAreas?.map(p => ({
-    title: p.title,
-    slug: p.title.toLowerCase().replace(/\s+/g, '-')
-  })));
-  
   const practiceArea = data?.practiceAreas?.find(practiceAreaItem => 
     practiceAreaItem.title.toLowerCase().replace(/\s+/g, '-') === area
   );
-  
-  console.log('Found practice area:', practiceArea?.title || 'NOT FOUND');
-  console.log('=== END DEBUG ===');
 
   if (!practiceArea) {
     return (
