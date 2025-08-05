@@ -101,31 +101,12 @@ const Blog = ({ data, onNavigate }) => {
               to={`/blog/${blog.slug}`}
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden cursor-pointer block"
             >
-              {/* Blog Image */}
-              <div className="relative h-48 overflow-hidden">
-                {blog.image ? (
-                  <img 
-                    src={optimizeImageUrl(blog.image, 600, 400)} 
-                    alt={`${blog.title} - Legal insights from Briglia Hundley attorneys`}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                      <ExternalLink className="h-8 w-8 text-white" />
-                    </div>
-                  </div>
-                )}
-                {/* Category Badge */}
-                <div className="absolute top-4 right-4 bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-medium">
-                  {blog.category}
-                </div>
-              </div>
-
               {/* Blog Content */}
               <div className="p-6">
+                {/* Category Badge */}
+                <div className="inline-block bg-gray-900 text-white px-3 py-1 rounded-full text-xs font-medium mb-4">
+                  {blog.category}
+                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-gray-700 transition-colors duration-200">
                   {blog.title}
                 </h3>
