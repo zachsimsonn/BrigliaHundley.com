@@ -1387,7 +1387,7 @@ export const siteData = {
       excerpt: "Ensuring you employ the right entity for your needs will help your business grow in the future. The business entities discussed include sole proprietorships, limited liability companies, partnerships, and corporations.",
       author: "Brian J. Lubkeman",
       date: "October 15, 2024",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxsYXclMjBmaXJtfGVufDB8fHx8MTc1MjI2MzkxOXww&ixlib=rb-4.1.0&q=85",
       slug: "different-business-entities-best-for-business",
       content: "Ensuring you employ the right entity for your needs will help your business grow in the future. The business entities discussed in this article include sole proprietorships, limited liability companies, general partnerships, various types of limited partnerships, and various types of corporations. Each entity type offers distinct advantages and disadvantages in terms of liability protection, tax implications, management structure, and operational flexibility. Understanding these differences is crucial for making an informed decision that aligns with your business goals and risk tolerance."
     },
