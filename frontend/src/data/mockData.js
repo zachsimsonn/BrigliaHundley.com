@@ -1332,7 +1332,7 @@ export const siteData = {
       excerpt: "How social media posts can significantly affect divorce, custody, and other family law proceedings, with practical guidance for protection.",
       author: "Lauren L. Gill",
       date: "February 13, 2025",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+      image: "https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxZnxjb3VydGhvdXNlfGVufDB8fHx8MTc1MjU5OTYyNXww&ixlib=rb-4.1.0&q=85",
       slug: "social-media-impact-family-law-litigation",
       content: "In today's digital age, social media has become a double-edged sword in family law proceedings. While these platforms allow us to stay connected and share life's moments, they can also become powerful evidence in divorce, custody, and support cases. Posts that seem innocent can be interpreted differently in a legal context, potentially undermining your case or credibility. This comprehensive analysis explores how various social media platforms are used in family law litigation, from Facebook and Instagram to LinkedIn and dating apps. We examine real-world examples of how posts have influenced court decisions, discuss the discoverability of social media content, and provide practical strategies for protecting your interests during family law proceedings. The article also addresses privacy settings, the permanence of digital footprints, and the importance of digital discretion when family law matters are pending. Understanding these risks is essential for anyone involved in family law litigation in the modern era."
     },
