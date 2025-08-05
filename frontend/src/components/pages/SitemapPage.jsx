@@ -558,6 +558,46 @@ const SitemapPage = ({ data }) => {
           </div>
         </div>
 
+        {/* Location-Specific Practice Area Pages - THE SEO KINGDOM RESTORED! */}
+        <div className="mt-12">
+          <div className="bg-gray-900 text-white rounded-lg p-8 mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <Users className="text-white" size={28} />
+              <h2 className="text-2xl font-bold">Location-Specific Legal Services - The SEO Kingdom</h2>
+            </div>
+            <p className="text-gray-300 mb-6">
+              Specialized legal representation for each community we serve. Our attorneys understand local courts, 
+              procedures, and legal landscape to provide the most effective representation for your case.
+            </p>
+            <div className="bg-gray-800 rounded-lg p-4">
+              <p className="text-sm text-gray-300">
+                <strong>Coverage Areas:</strong> Tysons Corner, Fairfax County, Arlington, McLean, Vienna, Falls Church, 
+                Herndon, Reston, Alexandria, Springfield, Annandale, Centreville, Chantilly, and throughout Northern Virginia
+              </p>
+              <p className="text-xs text-gray-400 mt-2">
+                Over 300+ location-specific practice area pages for comprehensive SEO coverage
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+            {locationPracticePages.map((page, index) => (
+              <Link 
+                key={index}
+                to={page.url}
+                className="block bg-white border border-gray-300 hover:border-gray-900 rounded-lg p-3 hover:shadow-md transition-all duration-200 group"
+              >
+                <div className="flex items-start gap-2">
+                  <Scale className="text-gray-600 group-hover:text-gray-900 mt-0.5 flex-shrink-0" size={14} />
+                  <span className="text-gray-700 group-hover:text-gray-900 group-hover:font-semibold text-sm leading-relaxed">
+                    {page.title}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Blog Section */}
         {blogPages.length > 0 && (
           <div className="mt-12">
