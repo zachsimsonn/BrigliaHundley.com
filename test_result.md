@@ -218,7 +218,10 @@ metadata:
 
 test_plan:
   current_focus:
-    []
+    - "Test updated practice area content - Criminal Law"
+    - "Test updated practice area content - Employment Law"
+    - "Test updated practice area content - Family Law"
+    - "Test updated practice area content - Municipal Law"
   stuck_tasks:
     []
   test_all: false
