@@ -479,21 +479,35 @@ export const siteData = {
     },
     {
       title: "Appellate Litigation",
-      description: "The conclusion of a trial is not always the end of a case. Both civil litigants and criminal defendants often continue pursuing their rights on appeal.",
-      fullDescription: "The conclusion of a trial is not always the end of a case. Both civil litigants and criminal defendants often continue pursuing their rights on appeal. Our attorneys have experience handling both civil and criminal cases at all levels of the state and federal courts in Virginia, Maryland, and Washington, D.C., including the Fourth Circuit, D.C. Circuit, and Supreme Court of the United States. Whether you plan to pursue an appeal or work to have an appeal denied, we can help fully protect your rights. Our extensive experience in the trial and appellate courts of the Mid-Atlantic provides us with the necessary knowledge to navigate the appellate process. We conduct a thorough investigation into the details of each appeal we handle, research legal issues attendant to the appeal, craft well-written briefs for submission to the court, and persuasively present our clients' positions to the court at oral argument. Over the years, we've continued to find new ways to use our talents to assist our clients through the appeals process. While the mainstay of our practice is Virginia, Maryland and Washington, D.C., our federal litigation team monitors developments in federal law and practice and provides invaluable assistance in instances where our attorneys seek further relief through federal habeas corpus and federal civil remedies. Image: Mr. James W. Hundley arguing before the U.S. Supreme Court, April 2000.",
+      metaTitle: "Appellate Litigation Attorneys | Briglia Hundley®",
+      metaDescription: "Expert appellate litigation attorneys in Virginia, Maryland & Washington, D.C. Experienced in state and federal appeals, Fourth Circuit, D.C. Circuit, and Supreme Court cases.",
+      description: "Expert Appellate Litigation in Virginia, Maryland & Washington, D.C.",
+      fullDescription: "At Briglia Hundley®, we understand that the conclusion of a trial is not always the end of the road. Many civil litigants and criminal defendants continue to pursue justice through appeals in both state and federal courts. Our experienced appellate attorneys have successfully handled appeals across Virginia, Maryland, and Washington, D.C., including the Fourth Circuit Court of Appeals, the D.C. Circuit, and the Supreme Court of the United States.",
       detailedContent: {
         sections: [
           {
-            title: "State and Federal Appeals Experience",
-            content: "Our attorneys have experience handling both civil and criminal cases at all levels of the state and federal courts in Virginia, Maryland, and Washington, D.C., including the Fourth Circuit, D.C. Circuit, and Supreme Court of the United States. Whether you plan to pursue an appeal or work to have an appeal denied, we can help fully protect your rights. Our extensive experience in the trial and appellate courts of the Mid-Atlantic provides us with the necessary knowledge to navigate the appellate process."
+            title: "Expert Appellate Litigation in Virginia, Maryland & Washington, D.C.",
+            content: "At Briglia Hundley®, we understand that the conclusion of a trial is not always the end of the road. Many civil litigants and criminal defendants continue to pursue justice through appeals in both state and federal courts. Our experienced appellate attorneys have successfully handled appeals across Virginia, Maryland, and Washington, D.C., including the Fourth Circuit Court of Appeals, the D.C. Circuit, and the Supreme Court of the United States.\n\nWhether you intend to pursue an appeal or seek to prevent one, we stand ready to fully protect your rights throughout the appellate process. Our in-depth knowledge of appellate law and procedure, combined with extensive trial experience, enables us to provide a comprehensive and strategic approach for every client."
           },
           {
-            title: "Comprehensive Appellate Services", 
-            content: "We conduct a thorough investigation into the details of each appeal we handle, research legal issues attendant to the appeal, craft well-written briefs for submission to the court, and persuasively present our clients' positions to the court at oral argument. Over the years, we've continued to find new ways to use our talents to assist our clients through the appeals process."
+            title: "Extensive Experience in State and Federal Appeals",
+            content: "Our legal team has a broad range of experience in handling both civil and criminal appeals across all levels of state and federal courts:\n\n• Appeals in Virginia, Maryland, and Washington, D.C. state courts\n• Appeals before the Fourth Circuit Court of Appeals\n• Appeals before the D.C. Circuit Court of Appeals\n• Appeals to the United States Supreme Court\n\nWe represent clients on both sides of the appeal—whether pursuing a new legal remedy or defending a judgment against appellate challenge."
+          },
+          {
+            title: "Comprehensive Appellate Services",
+            content: "Appellate litigation demands meticulous preparation, strategic insight, and skilled advocacy. Briglia Hundley® provides full-service appellate representation, including:\n\nThorough Investigation: We delve deeply into the trial record and relevant facts to identify viable appellate issues.\n\nLegal Research: Our attorneys conduct comprehensive research on complex legal questions and standards relevant to your appeal.\n\nAppellate Brief Writing: Crafting clear, persuasive, and legally sound briefs to effectively present your case to appellate courts.\n\nOral Arguments: Presenting eloquent and strategic oral arguments before appellate judges to advocate persuasively for our clients' positions.\n\nPost-Conviction Relief: Pursuing habeas corpus petitions and other post-conviction remedies in federal courts.\n\nFederal Civil Remedies: Assisting with appeals involving federal civil rights claims and other federal litigation matters."
           },
           {
             title: "Federal Litigation Team",
-            content: "While the mainstay of our practice is Virginia, Maryland and Washington, D.C., our federal litigation team monitors developments in federal law and practice and provides invaluable assistance in instances where our attorneys seek further relief through federal habeas corpus and federal civil remedies."
+            content: "While our core appellate litigation practice focuses on Virginia, Maryland, and Washington, D.C., our federal litigation team continually monitors developments in federal appellate law and practice. We provide specialized expertise in federal habeas corpus petitions and civil remedies, helping clients seek relief even after exhausting the state appellate process."
+          },
+          {
+            title: "Why Choose Briglia Hundley® for Appellate Litigation?",
+            content: "Proven Track Record: Our attorneys have argued before the highest courts in the Mid-Atlantic region, including successful appearances at the U.S. Supreme Court.\n\nExtensive Appellate and Trial Experience: Combining trial court mastery with appellate expertise helps us understand every angle of your case.\n\nPersonalized Attention: We tailor appellate strategies specifically to your case's facts, law, and goals.\n\nDeep Understanding of Mid-Atlantic Courts: Our familiarity with state and federal appellate courts in Virginia, Maryland, and D.C. ensures well-informed advocacy.\n\nComprehensive Federal Expertise: Skilled in habeas corpus and federal civil rights appeals for criminal defendants and civil litigants alike."
+          },
+          {
+            title: "Contact Briglia Hundley® — Appellate Litigation Experts",
+            content: "If you need a seasoned appellate attorney to help you navigate complex state or federal appeals, trust Briglia Hundley®. Contact us today for a confidential consultation and let our experienced appellate lawyers protect your legal rights and interests.\n\nImage: Mr. James W. Hundley arguing before the U.S. Supreme Court, April 2000."
           }
         ]
       },
@@ -502,17 +516,17 @@ export const siteData = {
         "Criminal Appeals",
         "State Court Appeals",
         "Federal Court Appeals",
-        "Fourth Circuit Appeals",
-        "D.C. Circuit Appeals",
+        "Appeals to the Fourth Circuit Court",
+        "Appeals to the D.C. Circuit Court",
         "Supreme Court Appeals",
-        "Appellate Brief Writing",
-        "Oral Arguments",
-        "Federal Habeas Corpus",
-        "Federal Civil Remedies",
-        "Post-Conviction Relief"
+        "Appellate Brief Writing & Filing",
+        "Oral Arguments & Advocacy",
+        "Federal Habeas Corpus Petitions",
+        "Federal Civil Remedies Appeals",
+        "Post-Conviction Relief Proceedings"
       ],
       url: "/appellate-litigation",
-      localKeywords: "appellate attorney Fairfax VA, appeals lawyer Northern Virginia, appellate litigation Arlington VA, appeals court Prince William County",
+      localKeywords: "appellate litigation attorney Virginia, appellate lawyer Maryland Washington DC, Fourth Circuit appeals, DC Circuit appeals, Supreme Court appeals, federal appeals attorney Northern Virginia",
       attorneys: ["Steven D. Briglia", "Brian J. Lubkeman"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-appellate-litigation-hero-25.jpg"
     }
