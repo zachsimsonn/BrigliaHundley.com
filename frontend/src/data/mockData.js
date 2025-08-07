@@ -600,23 +600,61 @@ export const siteData = {
     },
     {
       title: "Real Estate Law",
-      description: "Full-service real estate legal representation for residential and commercial transactions throughout Northern Virginia.",
-      fullDescription: "Real estate transactions involve significant financial investments and complex legal issues. Our real estate attorneys provide comprehensive legal services for buyers, sellers, developers, and investors in both residential and commercial transactions.",
+      metaTitle: "Real Estate Law Attorneys | Briglia Hundley®",
+      metaDescription: "Trusted real estate legal services in Virginia, Maryland & Washington, D.C. Comprehensive representation for property transactions, contracts, trusts, conveyances, and leasing.",
+      description: "Trusted Real Estate Legal Services in Virginia, Maryland & Washington, D.C.",
+      fullDescription: "At Briglia Hundley®, our real estate practice provides comprehensive legal support for homeowners, builders, developers, real estate brokers, mortgage originators, lenders, title insurers, and other key players in the real estate industry. Serving clients throughout Virginia, Maryland, and the District of Columbia, our attorneys bring deep experience in handling a broad range of property transactions and related legal matters.",
       detailedContent: {
+        mainServices: [
+          "Property Transactions",
+          "Contract Review", 
+          "Acquisition Structures",
+          "Trust Conveyances",
+          "Document Recording",
+          "Lease Agreements",
+          "Title Issues",
+          "Entity Formation"
+        ],
         sections: [
           {
-            title: "Residential Real Estate",
-            content: "We represent buyers and sellers in residential real estate transactions, including contract review and negotiation, title examination, closing coordination, and resolution of any issues that arise during the transaction process."
+            title: "Trusted Real Estate Legal Services in Virginia, Maryland & Washington, D.C.",
+            content: "At Briglia Hundley®, our real estate practice provides comprehensive legal support for homeowners, builders, developers, real estate brokers, mortgage originators, lenders, title insurers, and other key players in the real estate industry. Serving clients throughout Virginia, Maryland, and the District of Columbia, our attorneys bring deep experience in handling a broad range of property transactions and related legal matters."
           },
           {
-            title: "Commercial Real Estate",
-            content: "Our commercial real estate practice includes acquisition and disposition of commercial properties, leasing, development projects, and financing transactions. We work with investors, developers, landlords, and tenants on complex commercial real estate matters."
+            title: "Comprehensive Real Estate Legal Services",
+            content: "Our team assists clients with the full lifecycle of real estate matters, ensuring transactions are legally sound, risks are managed, and objectives achieved efficiently."
           },
           {
-            title: "Real Estate Litigation",
-            content: "When real estate disputes arise, we represent clients in litigation involving breach of contract, boundary disputes, title defects, landlord-tenant issues, and other real estate-related conflicts."
+            title: "Property Transactions and Contract Review",
+            content: "We guide clients through the complex process of purchasing and selling residential, commercial, and investment properties by:\n\nReviewing and preparing real estate purchase contracts to safeguard client interests\nAdvising on negotiation points and contractual terms that impact property acquisition or sales\nAssisting with due diligence and ensuring all legal contingencies are properly addressed"
+          },
+          {
+            title: "Acquisition Structures and Entity Formation",
+            content: "To help clients optimize investment and liability management, we set up acquisition vehicles such as limited liability companies (LLCs) in connection with the purchase of vacation homes, rental properties, and other real estate investments."
+          },
+          {
+            title: "Trusts, Conveyances, and Document Recording",
+            content: "Our real estate attorneys prepare and manage essential documents including:\n\nTransfers of real estate into family trusts and other business entities to protect assets and provide estate planning benefits\nDrafting and review of conveyance documents to effectuate property ownership changes\nCoordination of legal recording of deeds and related documents with local land registries and clerk offices to ensure validity and public notice"
+          },
+          {
+            title: "Lease and Rental Agreement Preparation",
+            content: "We prepare, negotiate, and review a variety of lease and rental agreements customized to client needs, including:\n\nResidential leases for homeowners and landlords\nCommercial leases for retail, office, or industrial space\nRental agreements for investment property operators\n\nOur aim is to protect clients' rights, clarify obligations, and reduce potential disputes between landlords and tenants."
+          },
+          {
+            title: "Contact Briglia Hundley® for Real Estate Legal Services",
+            content: "Whether you need assistance with a property transaction, lease negotiation, or any other real estate legal matter in Virginia, Maryland, or Washington, D.C., contact Briglia Hundley® today. Our experienced real estate attorneys are ready to protect your interests and guide you through the process."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Real Estate Law?",
+          content: [
+            "Comprehensive Real Estate Experience — Our attorneys bring deep experience in handling a broad range of property transactions and related legal matters for all types of clients.",
+            "Full-Service Representation — From homeowners to developers, brokers to lenders, we provide comprehensive legal support throughout the entire real estate process.",
+            "Strategic Entity Formation — We help clients optimize investment and liability management through proper acquisition structures and business entity formation.",
+            "Detailed Contract Review — Our thorough approach to contract review and preparation safeguards client interests and ensures all legal contingencies are properly addressed.",
+            "Multi-Jurisdictional Service — Serving clients throughout Virginia, Maryland, and the District of Columbia with knowledge of local real estate laws and procedures."
+          ]
+        }
       },
       services: [
         "Residential Purchases and Sales",
