@@ -673,27 +673,61 @@ export const siteData = {
     },
     {
       title: "Trusts and Estate Planning",
-      description: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for yourself and your dependents throughout your lives.",
-      fullDescription: "Estate planning helps you control what happens to your assets once you're gone. It can also establish a plan to better protect and provide for yourself and your dependents throughout your lives. At Briglia Hundley, P.C.®, we help clients throughout Virginia establish estate plans that provide greater peace of mind for you and your loved ones.",
+      metaTitle: "Trust and Estate Planning Attorneys | Briglia Hundley, P.C.®",
+      metaDescription: "Comprehensive estate planning services in Virginia. Experienced attorneys for wills, trusts, powers of attorney, and advanced medical directives to protect your assets and family.",
+      description: "Comprehensive Estate Planning Services in Virginia",
+      fullDescription: "At Briglia Hundley, P.C.®, we understand how important it is to have a clear plan in place to protect your assets and provide for your loved ones both during your lifetime and after. Serving clients throughout Virginia, our experienced estate planning attorneys guide you through thoughtful, personalized plans that bring peace of mind today and security for the future.",
       detailedContent: {
+        mainServices: [
+          "Wills",
+          "Trusts", 
+          "Powers of Attorney",
+          "Advanced Medical Directives",
+          "Estate Administration",
+          "Probate Services",
+          "Living Wills",
+          "Asset Protection"
+        ],
         sections: [
           {
-            title: "Wills",
-            content: "Wills are the backbone of estate planning, providing detailed information about how you'd like your assets and personal and business affairs handled following your death. A will can also be used to establish guidelines for the care of minor children. Having an experienced lawyer draft your will is essential to ensure that your wishes are clearly understood and implemented without any confusion or ambiguities."
+            title: "Comprehensive Estate Planning Services in Virginia",
+            content: "At Briglia Hundley, P.C.®, we understand how important it is to have a clear plan in place to protect your assets and provide for your loved ones both during your lifetime and after. Serving clients throughout Virginia, our experienced estate planning attorneys guide you through thoughtful, personalized plans that bring peace of mind today and security for the future."
+          },
+          {
+            title: "Why Estate Planning Matters",
+            content: "Estate planning allows you to control what happens to your assets, protect your family, maintain your business interests, and ensure your healthcare and financial decisions are honored—even if you become incapacitated. Whether you are just starting the process or need to update an existing plan, our firm offers trusted counsel and hands-on assistance tailored to your unique needs."
+          },
+          {
+            title: "Our Trust and Estate Planning Services",
+            content: "Wills: A well-crafted will is foundational to any estate plan. It clearly specifies how your assets, personal belongings, and business interests should be managed and distributed upon your death. Wills can also govern the guardianship and care of minor children, ensuring their protection and well-being.\n\nWe help draft precise, legally sound wills tailored to your wishes\nProvide guidance to avoid common pitfalls and ambiguities\nEnsure your will complies with Virginia state law to reduce disputes"
           },
           {
             title: "Trusts",
-            content: "Like wills, trusts help determine how your assets will be dispersed and managed. Unlike wills that become enforceable upon your death, trusts can be \"activated\" during your lifetime. Trusts may also provide certain advantages, such as avoiding probate. Trusts aren't just for the wealthy – even people with modest savings can realize significant benefits by placing assets in trust. Speaking with an estate planning lawyer is the first step in learning about your options and taking steps to provide you and your loved ones with superior protection and peace of mind."
+            content: "Trusts offer flexibility and control over how your assets are managed both during your lifetime and after your death. Unlike wills, trusts can take effect immediately and often help avoid the costly probate process.\n\nWe assist in setting up various types of trusts, including revocable, irrevocable, living, and special needs trusts\nAdvise clients regardless of wealth level—from modest estates to complex multi-million dollar holdings\nHelp reduce estate taxes, protect assets from creditors, and provide for long-term care or beneficiaries with special needs"
           },
           {
-            title: "Powers of Attorney",
-            content: "Powers of Attorney (POA) provide important instructions for how your affairs should be managed in the event you're unable to manage them yourself. As experienced estate attorneys, we help clients establish POAs for healthcare and personal needs, finances, legal and business decisions, and other matters. POAs are one more tool you can use to ensure your rights and wishes are protected in the event you become disabled or incapacitated by illness."
+            title: "Powers of Attorney (POA)",
+            content: "Powers of Attorney are essential legal documents that allow trusted individuals to make decisions on your behalf if you become unable to do so.\n\nWe draft comprehensive POAs for healthcare, finances, business, and personal matters\nEnsure each POA clearly outlines your wishes and grants appropriate authority\nAssist clients in establishing durable POAs that remain valid even if you become incapacitated"
           },
           {
             title: "Advanced Medical Directives",
-            content: "Also called \"living wills,\" advanced medical directives specify what medical steps should be taken when an illness renders one unable to make decisions for themselves. Few people like thinking about their own disability but having an advanced medical directive in place can help ensure your wishes are known and carried out even when you're unable to speak for yourself. Contact us today to learn how we can help."
+            content: "Also known as living wills, these directives specify your preferences for medical treatment if you become unable to communicate your decisions.\n\nWe carefully guide you through deciding and documenting your medical care preferences\nHelp prevent uncertainty and stress for family members and healthcare providers\nEnsure that your advanced medical directive complies with Virginia law for enforceability"
+          },
+          {
+            title: "Contact Briglia Hundley® for Estate Planning Services",
+            content: "Whether you need to create your first estate plan or update an existing one, contact Briglia Hundley, P.C.® today. Our experienced estate planning attorneys are ready to help you protect your assets and provide security for your family's future."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Estate Planning?",
+          content: [
+            "Personalized Estate Plans — We guide you through thoughtful, personalized plans tailored to your unique needs and family circumstances.",
+            "Comprehensive Services — From basic wills to complex trust structures, we handle all aspects of estate planning and administration.",
+            "Virginia Law Expertise — Our attorneys ensure all documents comply with Virginia state law and are structured to minimize disputes and complications.",
+            "Ongoing Support — We provide continued guidance for updates and changes as your life circumstances evolve.",
+            "Peace of Mind Focus — Our goal is to bring you peace of mind today while providing security and protection for your family's future."
+          ]
+        }
       },
       services: [
         "Wills",
