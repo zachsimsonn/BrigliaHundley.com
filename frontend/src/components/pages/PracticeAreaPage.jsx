@@ -255,9 +255,13 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                   {practiceArea.detailedContent.sections.map((section, index) => (
                     <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4 text-left">
                       <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{section.title}</h3>
-                      <div className="text-gray-600 whitespace-pre-line mb-4 text-left">
-                        {section.content}
-                      </div>
+                      {section.title.startsWith("Why Choose Briglia Hundley®") ? (
+                        <div className="text-gray-600 mb-4 text-left" dangerouslySetInnerHTML={{ __html: section.content }} />
+                      ) : (
+                        <div className="text-gray-600 whitespace-pre-line mb-4 text-left">
+                          {section.content}
+                        </div>
+                      )}
                       {section.subServices && (
                         <ul className="space-y-2 text-gray-600 ml-4 text-left">
                           {section.subServices.map((service, serviceIndex) => (
