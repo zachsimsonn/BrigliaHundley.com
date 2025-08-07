@@ -75,36 +75,46 @@ export const siteData = {
     },
     {
       title: "Business Litigation",
-      description: "Strategic business litigation services for companies and individuals in state and federal courts throughout the region.",
-      fullDescription: "Our business litigation team has extensive experience representing businesses and individuals in complex commercial disputes. We handle cases in state and federal courts throughout Virginia, Maryland, and the District of Columbia, providing strategic litigation services designed to protect our clients' interests and achieve favorable outcomes.",
+      metaTitle: "Business Litigation Attorneys | Briglia Hundley®",
+      metaDescription: "Experienced business litigation lawyers serving Virginia, Maryland & DC. Representing Fortune 500 companies to local businesses in complex commercial disputes and litigation.",
+      description: "Experienced Business Litigation Lawyers Serving Virginia, Maryland & DC",
+      fullDescription: "At Briglia Hundley®, we represent a broad spectrum of businesses and individuals in complex business litigation matters across the state and federal courts of Virginia, Maryland, and the District of Columbia. Our seasoned business litigation attorneys understand the critical nature of your disputes and the importance of protecting your company's assets, reputation, and ongoing operations.",
       detailedContent: {
         sections: [
           {
-            title: "Contract Disputes",
-            content: "We represent clients in breach of contract claims, contract interpretation disputes, and negotiations to resolve commercial contract issues. Our attorneys have experience with purchase and sale agreements, service contracts, employment agreements, and other commercial contracts."
+            title: "Experienced Business Litigation Lawyers Serving Virginia, Maryland & DC",
+            content: "At Briglia Hundley®, we represent a broad spectrum of businesses and individuals in complex business litigation matters across the state and federal courts of Virginia, Maryland, and the District of Columbia. Our seasoned business litigation attorneys understand the critical nature of your disputes and the importance of protecting your company's assets, reputation, and ongoing operations.\n\nWe serve clients ranging from Fortune 500 companies and multinational corporations to technology firms, government contractors, medium-sized businesses, financial institutions, and local \"main street\" enterprises. Our approach blends deep litigation experience with practical business acumen to efficiently resolve disputes while safeguarding your bottom line."
           },
           {
-            title: "Business Torts",
-            content: "Our team handles cases involving tortious interference with business relationships, theft of trade secrets, unfair competition, and other business tort claims. We work to protect our clients' business interests and seek appropriate remedies for damages."
+            title: "Comprehensive Business Litigation Services",
+            content: "Our business litigation practice covers a diverse set of legal issues that companies face, including but not limited to:\n\nEmployment Law Disputes: Handling wrongful termination claims, discrimination and retaliation lawsuits, wage and hour matters, non-compete and confidentiality agreement enforcement, and disputes arising from the employer-employee relationship.\n\nReal Estate Litigation: Managing landlord-tenant disputes, commercial lease disagreements, title and boundary issues, zoning and land use conflicts, and property development controversies.\n\nBreach of Contract and Related Torts: Litigating breach of contract matters, including failures to perform, fraudulent inducement claims, business torts such as interference with contracts or prospective business relations, and related damages.\n\nUniform Commercial Code (UCC) Issues: Resolving disputes involving sales transactions, secured transactions, negotiable instruments, and other UCC-governed matters.\n\nInsurance Coverage and Bad Faith Litigation: Advising and litigating insurance coverage disputes, policy interpretation matters, and claims of insurer bad faith.\n\nFiduciary Litigation: Pursuing claims and defenses involving breaches of fiduciary duty by corporate officers, directors, trustees, and partners.\n\nFraud Investigations and Workouts: Representing clients in complex fraud allegations, internal investigations, and financial restructurings or workouts resulting from business failures.\n\nFailed Business Transactions: Advising on disputes arising from mergers, acquisitions, joint ventures, licensing agreements, and other transactional breakdowns."
           },
           {
-            title: "Partnership and Shareholder Disputes",
-            content: "We assist clients with disputes between business partners, shareholders, and members of limited liability companies. Our attorneys handle cases involving breach of fiduciary duty, oppression of minority shareholders, and dissolution proceedings."
+            title: "Why Choose Briglia Hundley® for Your Business Litigation Needs?",
+            content: "Deep Business Insight — Our attorneys \"get the business\" behind business litigation. We bring a strategic, bottom-line focused approach that balances aggressive advocacy with practical risk management.\n\nProven Track Record in State and Federal Courts — We handle cases in all major Virginia, Maryland, and D.C. trial and appellate courts, as well as federal district courts and appellate courts including the Fourth Circuit.\n\nClient-Focused Efficiency and Value — We build long-term partnerships with our clients and tailor case management to deliver both efficiency and maximum value.\n\nDiverse Clientele — From national companies to local businesses, our clients trust us to protect their interests through high-stakes, mission-critical litigation."
+          },
+          {
+            title: "Representative Clients Include",
+            content: "• Fortune 500 Corporations\n• Multinational Technology Firms\n• Financial Institutions\n• Government Contractors\n• Mid-sized and Local Businesses\n• Title Companies and Real Estate Holders"
+          },
+          {
+            title: "Contact Briglia Hundley® — Your Trusted Business Litigation Counsel",
+            content: "If your company or business faces complex litigation or dispute resolution challenges in Virginia, Maryland, or Washington, D.C., trust the experienced business litigation lawyers at Briglia Hundley®. Contact us today for a confidential consultation and let us put our strategic litigation skills and business insight to work for you."
           }
         ]
       },
       services: [
-        "Contract Disputes",
-        "Business Torts",
-        "Partnership Disputes",
-        "Shareholder Litigation",
-        "Employment Disputes",
-        "Intellectual Property Disputes",
-        "Construction Litigation",
-        "Insurance Coverage Disputes"
+        "Employment Disputes and Litigation",
+        "Commercial Real Estate Litigation",
+        "Contract Breach Claims and Business Torts",
+        "UCC Disputes and Secured Transactions",
+        "Insurance Coverage and Bad Faith",
+        "Fiduciary Duty Litigation",
+        "Fraud and Financial Workouts",
+        "Transactional Dispute Resolution"
       ],
       url: "/business-litigation",
-      localKeywords: "business litigation attorney Fairfax VA, commercial litigation lawyer Northern Virginia, contract dispute Arlington VA, business lawsuit Prince William County",
+      localKeywords: "business litigation attorney Virginia, commercial litigation lawyer Maryland Washington DC, contract dispute resolution, employment litigation, real estate litigation Northern Virginia",
       attorneys: ["Madison A. Beatty", "James W. Hundley"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-business-litigation-hero-25.jpg"
     },
