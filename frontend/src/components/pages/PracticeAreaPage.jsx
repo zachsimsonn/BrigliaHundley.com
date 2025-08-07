@@ -232,6 +232,15 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                 </div>
               )}
 
+              {/* Image Caption for Appellate Litigation */}
+              {practiceArea.title === 'Appellate Litigation' && (
+                <div className="mb-6 text-center">
+                  <p className="text-sm text-gray-500 italic">
+                    Mr. James W. Hundley arguing before the U.S. Supreme Court, April 2000.
+                  </p>
+                </div>
+              )}
+
               <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">
                 {practiceArea.title}
               </h2>
