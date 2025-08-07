@@ -306,7 +306,7 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                 <p className="text-gray-300 mb-6">
                   Contact our {practiceArea.title.toLowerCase()} team today to schedule your free consultation and discuss your legal needs.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     onClick={() => onNavigate('contact')}
                     className="bg-gray-600 hover:bg-gray-500 text-white"
