@@ -654,6 +654,16 @@ export const siteData = {
       description: "Expert Appellate Litigation in Virginia, Maryland & Washington, D.C.",
       fullDescription: "At Briglia Hundley®, we understand that the conclusion of a trial is not always the end of the road. Many civil litigants and criminal defendants continue to pursue justice through appeals in both state and federal courts. Our experienced appellate attorneys have successfully handled appeals across Virginia, Maryland, and Washington, D.C., including the Fourth Circuit Court of Appeals, the D.C. Circuit, and the Supreme Court of the United States.",
       detailedContent: {
+        mainServices: [
+          "Civil Appeals",
+          "Criminal Appeals", 
+          "State Court Appeals",
+          "Federal Court Appeals",
+          "Fourth Circuit Appeals",
+          "Supreme Court Appeals",
+          "Brief Writing & Filing",
+          "Oral Arguments"
+        ],
         sections: [
           {
             title: "Expert Appellate Litigation in Virginia, Maryland & Washington, D.C.",
@@ -672,14 +682,20 @@ export const siteData = {
             content: "While our core appellate litigation practice focuses on Virginia, Maryland, and Washington, D.C., our federal litigation team continually monitors developments in federal appellate law and practice. We provide specialized expertise in federal habeas corpus petitions and civil remedies, helping clients seek relief even after exhausting the state appellate process."
           },
           {
-            title: "Why Choose Briglia Hundley® for Appellate Litigation?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for Appellate Litigation?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Tier 1 ranked law firm with proven track record in appellate litigation</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Experienced attorneys with specialized expertise in appellate litigation</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Comprehensive legal strategies and personalized service</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Serving Northern Virginia, Washington D.C., and Maryland</span></li></ul></div>`
-          },
-          {
             title: "Contact Briglia Hundley® — Appellate Litigation Experts",
             content: "If you need a seasoned appellate attorney to help you navigate complex state or federal appeals, trust Briglia Hundley®. Contact us today for a confidential consultation and let our experienced appellate lawyers protect your legal rights and interests."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Appellate Litigation?",
+          content: [
+            "Proven Track Record: Our attorneys have argued before the highest courts in the Mid-Atlantic region, including successful appearances at the U.S. Supreme Court.",
+            "Extensive Appellate and Trial Experience: Combining trial court mastery with appellate expertise helps us understand every angle of your case.",
+            "Personalized Attention: We tailor appellate strategies specifically to your case's facts, law, and goals.",
+            "Deep Understanding of Mid-Atlantic Courts: Our familiarity with state and federal appellate courts in Virginia, Maryland, and D.C. ensures well-informed advocacy.",
+            "Comprehensive Federal Expertise: Skilled in habeas corpus and federal civil rights appeals for criminal defendants and civil litigants alike."
+          ]
+        }
       },
       services: [
         "Civil Appeals",
