@@ -380,39 +380,47 @@ export const siteData = {
     },
     {
       title: "Municipal Law",
-      description: "State and local governments and quasi-governmental entities face a complex and constantly evolving landscape of legal considerations.",
-      fullDescription: "State and local governments and quasi-governmental entities face a complex and constantly evolving landscape of legal considerations. Representing such clients requires lawyers with significant legal experience and an understanding of the political and business nuances these entities face in providing services to their constituencies. The attorneys at Briglia Hundley® are uniquely positioned to counsel governmental entities, authorities, municipalities, and bodies on all their legal needs. Our attorneys have been representing state and local governments for over three decades. We are dedicated to this practice, and we stand ready to assist you. Our attorneys and professionals have the skill and experience that enable Briglia Hundley® to address governmental law issues effectively and nimbly. We have served as county, city, and town attorneys for several municipalities in Virginia. We count among our partners the current City Attorney for the City of Fairfax and the Town Attorney for the Town of Vienna, and we represent various agencies of the Commonwealth of Virginia. Equally critical, we appreciate the responsibilities governments must consider in dealing with their citizens and other stakeholders.",
+      metaTitle: "Municipal & Governmental Law Attorneys | Briglia Hundley®",
+      metaDescription: "Trusted legal counsel for state and local governments in Virginia and beyond. Municipal law, FOIA, eminent domain, and governmental practice attorneys with over 30 years experience.",
+      description: "Trusted Legal Counsel for State and Local Governments in Virginia and Beyond",
+      fullDescription: "State and local governments, as well as quasi-governmental entities, face a complex and ever-evolving legal landscape requiring experienced and knowledgeable counsel. At Briglia Hundley®, our attorneys bring over three decades of dedicated service and deep understanding of the political, business, and community dynamics that shape government operations. We are uniquely positioned to provide comprehensive legal services tailored to the distinct needs of municipalities, governmental authorities, and public agencies.",
       detailedContent: {
         sections: [
           {
-            title: "Litigation and Transactional Services",
-            content: "We provide both litigation and transactional services to our governmental clients. These include counsel on governmental relations and internal governance, FOIA inquiries and responses, land use and zoning disputes, the defense of tax assessment administrative appeals and lawsuits, public works and utility issues, procurement matters, franchises, and personnel and public safety considerations. We also advise various municipalities on complex contract and real estate matters – the goal always being to secure the most cost-effective outcome for our client."
+            title: "Trusted Legal Counsel for State and Local Governments in Virginia and Beyond",
+            content: "State and local governments, as well as quasi-governmental entities, face a complex and ever-evolving legal landscape requiring experienced and knowledgeable counsel. At Briglia Hundley®, our attorneys bring over three decades of dedicated service and deep understanding of the political, business, and community dynamics that shape government operations. We are uniquely positioned to provide comprehensive legal services tailored to the distinct needs of municipalities, governmental authorities, and public agencies.\n\nOur seasoned team has represented numerous counties, cities, and towns in Virginia, including longstanding partnerships with municipalities such as the City of Fairfax and the Town of Vienna. We also advise various agencies of the Commonwealth of Virginia, combining legal expertise with a practical appreciation for government responsibilities and constituent interests."
           },
           {
-            title: "Condemnation and Eminent Domain",
-            content: "Finally, we represent the Commonwealth, localities and other condemning authorities in pre-condemnation budget analysis, relocation matters, general condemnation, right of way acquisition, and condemnation litigation. We advise on the best practices for structuring condemnation projects, facilitating condemnation transactions, and negotiating resolutions. We provide guidance on the policies, procedures and protocols to meet relocation and condemnation statutory requirements. We will provide expert advice on negotiation strategies because we have successfully negotiated 100's of eminent domain settlements. We provide litigation representation in the event a condemnation must be determined by a jury or commissioners."
+            title: "Comprehensive Legal Services for Municipalities, Governments, and Authorities",
+            content: "Briglia Hundley's team handles the full spectrum of legal matters faced by community associations, including but not limited to:\n\nGovernmental Relations & Internal Governance: Advising on legislative matters, governance structure, compliance, and policy development to help governments operate effectively and transparently.\n\nFreedom of Information Act (FOIA) Inquiries & Responses: Counsel on compliance with FOIA requirements and assistance in responding to public records requests with accuracy and efficiency.\n\nLand Use and Zoning Disputes: Representing municipalities and quasi-governmental entities in complex zoning and land development matters, including hearings, appeals, and negotiations.\n\nTax Assessment Appeals & Litigation: Defending against tax assessment administrative appeals and lawsuits, seeking favorable outcomes for local governments and taxpayers alike.\n\nPublic Works and Utility Legal Issues: Assistance with contracts, compliance, and disputes related to public infrastructure, utilities, and service provision.\n\nProcurement and Franchise Matters: Legal support for government contract bidding processes, procurement challenges, franchise agreements, and regulatory compliance.\n\nPersonnel and Public Safety Considerations: Guidance on employment, labor, and public safety regulations affecting governmental employees and operations.\n\nComplex Contract and Real Estate Matters: Delivering strategic counsel on municipal contracts, property acquisitions, disposals, and real estate transactions to ensure cost-effective and legally sound outcomes."
+          },
+          {
+            title: "Condemnation, Eminent Domain & Relocation",
+            content: "Representing the Commonwealth, localities, and other condemning authorities in all phases of eminent domain practice, from pre-condemnation budget analysis and right-of-way acquisition to relocation and condemnation litigation. We advise on best practices for structuring and facilitating condemnation projects, meeting statutory requirements, negotiating settlements, and providing litigation representation in jury or commissioner hearings."
+          },
+          {
+            title: "Why Choose Briglia Hundley® for Municipal and Governmental Law?",
+            content: "Decades of Dedicated Government Service — Our attorneys have collectively over 30 years of representing state and local governments, municipal clients, and public agencies throughout Virginia.\n\nMunicipal Leadership Within Our Team — We count as partners the current City Attorney for the City of Fairfax and the Town Attorney for the Town of Vienna, ensuring unparalleled insider knowledge.\n\nBalanced Legal and Practical Expertise — We understand the unique political and community considerations that accompany government legal matters and bring this perspective to every case and transaction.\n\nTransaction and Litigation Proficiency — Whether you need transactional advice or effective litigation, we provide nimble, cost-conscious, and strategic legal services.\n\nProven Eminent Domain Negotiators and Litigators — With hundreds of successful eminent domain settlements negotiated and extensive courtroom experience, we are trusted advocates for condemning authorities."
+          },
+          {
+            title: "Contact Briglia Hundley® — Your Partner in Municipal and Governmental Law",
+            content: "If your government entity, municipality, or quasi-governmental organization requires skilled legal representation in Virginia or the Mid-Atlantic region, contact Briglia Hundley® today. Let us put our extensive experience and client-centered approach to work for your governmental legal needs."
           }
-        ]  
+        ]
       },
       services: [
-        "Government Counsel",
-        "FOIA Inquiries and Responses",
+        "Governmental Relations & Internal Governance",
+        "Freedom of Information Act (FOIA) Inquiries & Responses",
         "Land Use and Zoning Disputes",
-        "Tax Assessment Appeals",
-        "Public Works and Utility Issues",
-        "Procurement Matters",
-        "Franchise Issues",
-        "Personnel and Public Safety",
-        "Contract and Real Estate Matters",
-        "Pre-condemnation Budget Analysis",
-        "Relocation Matters",
-        "General Condemnation",
-        "Right of Way Acquisition",
-        "Condemnation Litigation",
-        "Eminent Domain Settlements"
+        "Tax Assessment Appeals & Litigation",
+        "Public Works and Utility Legal Issues",
+        "Procurement and Franchise Matters",
+        "Personnel and Public Safety Considerations",
+        "Complex Contract and Real Estate Matters",
+        "Condemnation, Eminent Domain & Relocation"
       ],
       url: "/municipal-law",
-      localKeywords: "municipal attorney Fairfax VA, government lawyer Northern Virginia, zoning attorney Arlington VA, municipal law Prince William County",
+      localKeywords: "municipal law attorney Virginia, government counsel, FOIA compliance, eminent domain, zoning disputes, governmental practice Northern Virginia",
       attorneys: ["Steven D. Briglia"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-municipal-law-hero-25.jpg"
     },
