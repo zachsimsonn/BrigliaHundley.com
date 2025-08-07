@@ -268,36 +268,54 @@ export const siteData = {
     },
     {
       title: "Employment Law",
-      description: "Comprehensive employment law services for both employers and employees in workplace disputes and compliance matters.",
-      fullDescription: "Our employment law practice represents both employers and employees in a wide range of workplace issues. We provide counsel on employment compliance, workplace policies, discrimination claims, wrongful termination, and other employment-related matters.",
+      metaTitle: "Employment Law Attorneys | Briglia Hundley®",
+      metaDescription: "Comprehensive employment law services in Virginia, Maryland & Washington, D.C. Representing employers and employees in workplace disputes, discrimination claims, and compliance matters.",
+      description: "Comprehensive Employment Law Services in Virginia, Maryland & Washington, D.C.",
+      fullDescription: "At Briglia Hundley®, our experienced employment law attorneys represent clients across Virginia, Maryland, and the District of Columbia in a wide variety of workplace and employment-related legal matters. Whether advising employers on complex workplace policies or litigating disputes arising from the employer-employee relationship, we provide practical, strategic counsel that protects your interests and promotes compliance.",
       detailedContent: {
         sections: [
           {
-            title: "Workplace Discrimination",
-            content: "We represent clients in discrimination cases based on race, gender, age, disability, religion, and other protected characteristics. Our attorneys handle cases before federal and state agencies as well as in court proceedings."
+            title: "Comprehensive Employment Law Services in Virginia, Maryland & Washington, D.C.",
+            content: "At Briglia Hundley®, our experienced employment law attorneys represent clients across Virginia, Maryland, and the District of Columbia in a wide variety of workplace and employment-related legal matters. Whether advising employers on complex workplace policies or litigating disputes arising from the employer-employee relationship, we provide practical, strategic counsel that protects your interests and promotes compliance."
           },
           {
-            title: "Wrongful Termination",
-            content: "We assist employees who have been wrongfully terminated and help employers navigate termination decisions to minimize legal risks. Our team understands both sides of employment relationships."
+            title: "Employment Law Advice and Litigation for Employers and Employees",
+            content: "Our employment law practice uniquely combines proactive legal counseling with aggressive litigation capabilities. We primarily represent employers, including senior management, providing counsel designed to support effective workforce management and reduce the risk of costly employment disputes. However, we also represent employees in appropriate matters, offering balanced and knowledgeable advocacy."
           },
           {
-            title: "Employment Contracts",
-            content: "We draft and review employment agreements, non-compete clauses, severance packages, and other employment-related contracts to protect our clients' interests."
+            title: "Key Employment Law Matters We Handle",
+            content: "Workplace Discrimination and Retaliation Claims: We have significant experience resolving claims of discrimination and retaliation based on race, sex, age, disability, national origin, religion, and other protected classes. Our attorneys litigate these cases in federal and state courts in Virginia, Maryland, and D.C., as well as before the Equal Employment Opportunity Commission (EEOC) and local enforcement agencies.\n\nEmployment Contract and Severance Agreement Disputes: Our firm drafts, reviews, and enforces employment contracts, independent contractor agreements, and severance arrangements. We also represent clients in disputes involving wrongful discharge, breach of non-compete clauses, and violations of confidentiality agreements.\n\nWorkplace Torts and Related Litigation: We vigorously defend and prosecute claims including tortious interference with contractual relations, fraud, defamation, and other wrongful acts harming employers or employees.\n\nManagement Counseling and Risk Avoidance: Our attorneys advise management regularly on day-to-day employment issues, workforce policies, disciplinary actions, and compliance with labor and employment laws to prevent disputes before they arise."
+          },
+          {
+            title: "Representing Employers and Senior Management with Trusted Expertise",
+            content: "With a deep understanding of both federal and state employment legislation—including laws enforced by agencies such as the EEOC, Virginia Division of Human Rights, Maryland Commission on Civil Rights, and the D.C. Office of Human Rights—Briglia Hundley® provides comprehensive legal support across all employment issues.\n\nOur client base includes private businesses, government contractors, nonprofits, and senior management professionals. We aim to build long-term relationships by delivering efficient, effective, and client-focused employment counsel and litigation services."
+          },
+          {
+            title: "Employee Representation and Pro Bono Commitment",
+            content: "Recognizing the importance of balanced representation, our employment attorneys also advocate for employees on matters where appropriate. We regularly participate in pro bono legal services through Legal Services of Northern Virginia's employment program, helping individuals understand and assert their rights in the workplace."
+          },
+          {
+            title: "Why Choose Briglia Hundley® for Your Employment Law Needs?",
+            content: "Experienced and Responsive Employment Lawyers in Virginia, Maryland, and Washington, D.C.\n\nProven Track Record resolving complex discrimination, retaliation, contract, and tort claims\n\nExpertise in Federal, State, and Local Employment Law Compliance and Litigation\n\nDedicated Client Service tailored to the unique needs of employers and employees\n\nStrategic Counsel aimed at preventing disputes and mitigating risk\n\nBalanced Representation for employers, management, and employees alike"
+          },
+          {
+            title: "Contact Briglia Hundley® for Skilled Employment Law Counsel",
+            content: "If you need trusted, results-oriented employment law representation in Virginia, Maryland, or Washington, D.C., contact Briglia Hundley® today to schedule a confidential consultation. Our legal team is prepared to protect your rights, resolve disputes, and provide sound guidance to help you navigate complex employment issues confidently."
           }
         ]
       },
       services: [
-        "Workplace Discrimination",
-        "Wrongful Termination",
-        "Employment Contracts",
-        "Wage and Hour Disputes",
-        "Sexual Harassment",
-        "Retaliation Claims",
-        "Non-Compete Agreements",
-        "Severance Negotiations"
+        "Workplace Discrimination and Retaliation Claims",
+        "Employment Contract and Severance Agreement Disputes",
+        "Workplace Torts and Related Litigation",
+        "Management Counseling and Risk Avoidance",
+        "EEOC and Agency Proceedings",
+        "Non-Compete and Confidentiality Agreements",
+        "Wrongful Discharge Defense",
+        "Employment Policy Development"
       ],
       url: "/employment-law",
-      localKeywords: "employment attorney Fairfax VA, workplace lawyer Northern Virginia, employment law Arlington VA, employment disputes Prince William County",
+      localKeywords: "employment law attorney Virginia Maryland DC, workplace discrimination lawyer, employment contract disputes, EEOC representation, management counseling",
       attorneys: ["Jacob C. DeRue", "Amy S. Owen"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-employment-law-hero-25.jpg"
     },
