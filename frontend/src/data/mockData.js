@@ -447,6 +447,16 @@ export const siteData = {
       description: "Trusted Legal Counsel for State and Local Governments in Virginia and Beyond",
       fullDescription: "State and local governments, as well as quasi-governmental entities, face a complex and ever-evolving legal landscape requiring experienced and knowledgeable counsel. At Briglia Hundley®, our attorneys bring over three decades of dedicated service and deep understanding of the political, business, and community dynamics that shape government operations. We are uniquely positioned to provide comprehensive legal services tailored to the distinct needs of municipalities, governmental authorities, and public agencies.",
       detailedContent: {
+        mainServices: [
+          "Governmental Relations",
+          "FOIA Compliance", 
+          "Land Use and Zoning",
+          "Tax Assessment Appeals",
+          "Public Works Issues",
+          "Procurement Matters",
+          "Personnel and Public Safety",
+          "Eminent Domain"
+        ],
         sections: [
           {
             title: "Trusted Legal Counsel for State and Local Governments in Virginia and Beyond",
@@ -461,14 +471,20 @@ export const siteData = {
             content: "Representing the Commonwealth, localities, and other condemning authorities in all phases of eminent domain practice, from pre-condemnation budget analysis and right-of-way acquisition to relocation and condemnation litigation. We advise on best practices for structuring and facilitating condemnation projects, meeting statutory requirements, negotiating settlements, and providing litigation representation in jury or commissioner hearings."
           },
           {
-            title: "Why Choose Briglia Hundley® for Municipal and Governmental Law?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for Municipal and Governmental Law?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Decades of Dedicated Government Service — Our attorneys have collectively over 30 years of representing state and local governments, municipal clients, and public agencies throughout Virginia.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Municipal Leadership Within Our Team — We count as partners the current City Attorney for the City of Fairfax and the Town Attorney for the Town of Vienna, ensuring unparalleled insider knowledge.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Balanced Legal and Practical Expertise — We understand the unique political and community considerations that accompany government legal matters and bring this perspective to every case and transaction.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Transaction and Litigation Proficiency — Whether you need transactional advice or effective litigation, we provide nimble, cost-conscious, and strategic legal services.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg><span class="text-left">Proven Eminent Domain Negotiators and Litigators — With hundreds of successful eminent domain settlements negotiated and extensive courtroom experience, we are trusted advocates for condemning authorities.</span></li></ul></div>`
-          },
-          {
             title: "Contact Briglia Hundley® — Your Partner in Municipal and Governmental Law",
             content: "If your government entity, municipality, or quasi-governmental organization requires skilled legal representation in Virginia or the Mid-Atlantic region, contact Briglia Hundley® today. Let us put our extensive experience and client-centered approach to work for your governmental legal needs."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Municipal and Governmental Law?",
+          content: [
+            "Decades of Dedicated Government Service — Our attorneys have collectively over 30 years of representing state and local governments, municipal clients, and public agencies throughout Virginia.",
+            "Municipal Leadership Within Our Team — We count as partners the current City Attorney for the City of Fairfax and the Town Attorney for the Town of Vienna, ensuring unparalleled insider knowledge.",
+            "Balanced Legal and Practical Expertise — We understand the unique political and community considerations that accompany government legal matters and bring this perspective to every case and transaction.",
+            "Transaction and Litigation Proficiency — Whether you need transactional advice or effective litigation, we provide nimble, cost-conscious, and strategic legal services.",
+            "Proven Eminent Domain Negotiators and Litigators — With hundreds of successful eminent domain settlements negotiated and extensive courtroom experience, we are trusted advocates for condemning authorities."
+          ]
+        }
       },
       services: [
         "Governmental Relations & Internal Governance",
