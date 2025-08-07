@@ -321,53 +321,60 @@ export const siteData = {
     },
     {
       title: "Family Law",
-      description: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children.",
-      fullDescription: "Family law issues are frequently charged with emotion. Having a skilled lawyer on your side helps ensure your interests are protected – as well as the interests of any minor children. The attorneys at Briglia Hundley, P.C.®, are experienced in all family law issues, helping clients in Virginia and Washington, D.C.",
+      metaTitle: "Family Law Attorneys | Briglia Hundley, P.C.®",
+      metaDescription: "Compassionate and skilled family law representation in Virginia & Washington, D.C. Divorce, custody, child support, premarital agreements, and relocation cases. Experienced family lawyers.",
+      description: "Compassionate and Skilled Family Law Representation in Virginia & Washington, D.C.",
+      fullDescription: "Family law matters often involve deeply personal and emotional issues. At Briglia Hundley, P.C.®, our experienced family law attorneys are committed to protecting your interests and those of your children. Serving clients throughout Virginia and the District of Columbia, we provide knowledgeable, compassionate guidance to help you navigate complex family legal challenges with confidence and care.",
       detailedContent: {
         sections: [
           {
+            title: "Compassionate and Skilled Family Law Representation in Virginia & Washington, D.C.",
+            content: "Family law matters often involve deeply personal and emotional issues. At Briglia Hundley, P.C.®, our experienced family law attorneys are committed to protecting your interests and those of your children. Serving clients throughout Virginia and the District of Columbia, we provide knowledgeable, compassionate guidance to help you navigate complex family legal challenges with confidence and care."
+          },
+          {
             title: "Divorce & Separation",
-            content: "Divorce and separation are not uncommon in the U.S. today, but that doesn't mean they're simple matters. In fact, even a seemingly \"friendly\" divorce or separation can be surprisingly complex. Without careful planning, unpleasant surprises and unintended consequences can occur that have a major impact on your well-being. Our skilled family law team will work with you throughout this difficult process to help you understand your rights and the impact your final agreement will have on your future."
+            content: "Divorce and separation can be complex—even when both parties agree amicably. Our family law team understands the potential for unexpected legal and financial consequences, and we work closely with you to:\n\n• Explain your rights and options at every stage\n• Help you understand the full impact of divorce or separation agreements\n• Safeguard your interests throughout the process\n\nWhether negotiating settlements or litigating disputes, we aim to achieve the best possible outcomes tailored to your unique circumstances."
           },
           {
             title: "Military Divorce",
-            content: "Military divorces are subject to special regulations and requirements that differ from civilian (non-military) divorces. To ensure the process goes smoothly, it's essential to work with an attorney who understands these differences and how to address them in your specific situation."
+            content: "Military divorces involve specialized federal and state rules that differ significantly from civilian cases. Our attorneys have the experience necessary to:\n\n• Navigate the complexities of military pension division\n• Address service member protections under the Uniformed Services Former Spouses' Protection Act (USFSPA)\n• Manage custody and support issues involving military families\n• Facilitate smooth proceedings that respect your specific military-related legal concerns"
           },
           {
-            title: "Custody",
-            content: "Custody negotiations can be the most contentious and difficult part of a divorce. Our family law attorneys will work with you to craft custody agreements that focus on your child's best interests so you can feel confident their rights and well-being are protected."
+            title: "Custody and Custody Modification",
+            content: "Child custody decisions can be the most contentious and emotional part of family law cases. Our dedicated family law team focuses on securing custody arrangements that serve the best interests of your child, including:\n\n• Crafting detailed custody agreements that protect your child's rights and well-being\n• Representing clients in disputes over physical and legal custody\n• Assisting with modifications to existing custody orders when family circumstances change\n• Advocating for parental rights while prioritizing children's stability and welfare"
           },
           {
-            title: "Custody Modification",
-            content: "Sometimes, circumstances arise that require a change to an existing custody order. Our team is skilled in helping parents modify custody arrangements to ensure the child's best interests remain at the forefront."
-          },
-          {
-            title: "Premarital Agreements",
-            content: "Premarital agreements, or \"prenups,\" play an important role in protecting the assets you hold before marriage. By working with our attorneys means you can feel confident the agreement will be mutually agreeable to both parties while avoiding ambiguity and confusion."
+            title: "Premarital Agreements (Prenups)",
+            content: "Premarital agreements are critical tools for protecting individual assets and clarifying financial expectations before marriage. Our attorneys assist clients by:\n\n• Drafting precise and enforceable premarital agreements\n• Ensuring agreements are fair, clear, and legally sound\n• Helping couples avoid future disputes by addressing property, debts, and spousal support upfront"
           },
           {
             title: "Child Support Issues",
-            content: "Child support plays a pivotal role in ensuring your children receive the financial support they require for material needs, education, and other expenses. Our experienced family law attorneys can help you craft support arrangements that protect your children's rights now and for their future. We help our clients with all support issues, including: Enforcement of support orders to ensure your child receives the support that's due, when it's due; Modification of support to alter original support orders when circumstances change."
+            content: "Child support is vital to ensuring your children's financial security across all stages of their development. We help clients navigate the complex aspects of support, including:\n\n• Establishing child support arrangements that fairly cover children's material needs, education, and health care\n• Enforcing support orders to guarantee timely payments\n• Modifying support agreements when significant changes in circumstances occur\n\nOur goal is to secure stable, ongoing financial support that protects your children's well-being."
           },
           {
             title: "Relocation Cases",
-            content: "If you need to move for your job or any other reason, your custody arrangement may need to be changed. Relocation cases can be complex. Working with a skilled family law attorney is critical for ensuring approval of your request to amend custody. Let us show you how our experience can help you succeed."
+            content: "Relocation matters arise when a parent needs to move due to employment, family, or other reasons, and existing custody arrangements must be amended. These cases are often complex and require strategic legal guidance. At Briglia Hundley, we:\n\n• Assist in seeking custody order modifications to accommodate relocation needs\n• Guide clients through the legal standards and requirements to gain approval for relocation\n• Advocate for solutions that balance parents' rights with the best interests of the child"
+          },
+          {
+            title: "Why Choose Briglia Hundley® for Your Family Law Case?",
+            content: "Trusted Family Law Experience in Virginia and D.C. — We deeply understand local family court systems and laws.\n\nCompassionate, Client-Focused Representation — We strive to reduce stress while protecting your rights and those of your children.\n\nStrategic Advocacy — Whether through negotiation or litigation, we pursue the best possible results tailored to your needs.\n\nComprehensive Legal Support — From divorce to custody, support, and premarital agreements, our expertise covers all family law matters.\n\nPersonalized Attention — We take the time to understand your unique situation and goals throughout the process."
+          },
+          {
+            title: "Contact Briglia Hundley® — Your Family Law Partners",
+            content: "If you are facing divorce, custody disputes, child support issues, or need guidance on any family law matter in Virginia or Washington, D.C., contact Briglia Hundley, P.C.® today for a confidential consultation. Our skilled family law attorneys are ready to help you protect your future and that of your family."
           }
         ]
       },
       services: [
         "Divorce & Separation",
         "Military Divorce",
-        "Child Custody", 
-        "Custody Modification",
-        "Child Support",
-        "Child Support Enforcement",
-        "Child Support Modification",
-        "Premarital Agreements",
+        "Custody and Custody Modification",
+        "Premarital Agreements (Prenups)",
+        "Child Support Issues",
         "Relocation Cases"
       ],
       url: "/family-law",
-      localKeywords: "family law attorney Fairfax VA, divorce lawyer Northern Virginia, child custody Arlington VA, family court Prince William County",
+      localKeywords: "family law attorney Virginia Washington DC, divorce lawyer, child custody, military divorce, premarital agreements, child support, relocation cases",
       attorneys: ["Hannah Merrill", "Michael C. May", "Teresa S. Cole", "Lauren L. Gill"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-family-law-hero-25.jpg"
     },
