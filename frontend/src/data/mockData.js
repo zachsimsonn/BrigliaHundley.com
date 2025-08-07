@@ -162,36 +162,42 @@ export const siteData = {
     },
     {
       title: "Corporate Law",
-      description: "Comprehensive corporate legal services for businesses of all sizes, from startups to established companies throughout Northern Virginia.",
-      fullDescription: "Our corporate law practice provides comprehensive legal services to businesses at every stage of development. We assist with entity formation, corporate governance, mergers and acquisitions, financing transactions, and ongoing compliance matters. Our attorneys understand the unique challenges facing businesses in today's competitive environment.",
+      metaTitle: "Corporate Law Attorneys | Briglia Hundley®",
+      metaDescription: "Trusted corporate law counsel serving Virginia, Maryland, Washington, D.C., and nationwide. Comprehensive legal services for businesses of all sizes from startups to Fortune 500 companies.",
+      description: "Trusted Corporate Law Counsel Serving Virginia, Maryland, Washington, D.C., and Nationwide",
+      fullDescription: "At Briglia Hundley®, we represent a diverse range of businesses operating throughout Virginia, Maryland, the District of Columbia, and across the United States. Our corporate law attorneys provide carefully tailored legal advice on governance, entity formation, structural issues, and all aspects of corporate operations. Whether you are a startup, a medium-sized business, a government contractor, or a Fortune 500 company, our experienced team is prepared to help you achieve your business goals and maximize growth potential.",
       detailedContent: {
         sections: [
           {
-            title: "Entity Formation and Structure",
-            content: "We help entrepreneurs and established businesses choose the right corporate structure for their needs, whether it's a corporation, limited liability company, partnership, or other entity type. We handle all aspects of entity formation, including drafting organizational documents and ensuring compliance with state and federal requirements."
+            title: "Trusted Corporate Law Counsel Serving Virginia, Maryland, Washington, D.C., and Nationwide",
+            content: "At Briglia Hundley®, we represent a diverse range of businesses operating throughout Virginia, Maryland, the District of Columbia, and across the United States. Our corporate law attorneys provide carefully tailored legal advice on governance, entity formation, structural issues, and all aspects of corporate operations. Whether you are a startup, a medium-sized business, a government contractor, or a Fortune 500 company, our experienced team is prepared to help you achieve your business goals and maximize growth potential."
           },
           {
-            title: "Mergers and Acquisitions",
-            content: "Our M&A team represents buyers and sellers in transactions ranging from small asset purchases to complex corporate mergers. We provide strategic advice throughout the transaction process, from initial due diligence through closing and post-closing integration."
+            title: "Comprehensive Corporate Law Services for Businesses of All Sizes",
+            content: "Our firm understands that the success and longevity of any business depend heavily on sound legal guidance from inception through growth and beyond. We offer a full spectrum of corporate legal services, including:\n\nEntity Formation and Structuring: Advising on the optimal legal entity type, such as corporations, limited liability companies (LLCs), partnerships, or joint ventures, tailored to your business objectives and growth plans.\n\nCorporate Governance: Assisting boards of directors, executives, and business owners with governance frameworks, compliance with fiduciary duties, bylaws drafting, shareholder relations, and corporate policies.\n\nCommercial Contracts and Agreements: Drafting, reviewing, and negotiating commercial contracts critical to your business operations, including vendor agreements, partnership contracts, licensing, and service arrangements.\n\nEmployment Law and Human Resources Guidance: Providing counsel on employment agreements, restrictive covenants, non-compete and confidentiality clauses, compliance with labor laws, and dispute resolution relating to employment matters.\n\nRegulatory Compliance and Risk Management: Helping companies navigate complex federal, state, and local regulatory requirements, mitigating legal risks and ensuring ongoing compliance.\n\nMergers, Acquisitions, and Transactions Support: Counseling clients through strategic growth opportunities, including mergers, acquisitions, divestitures, and joint ventures to achieve business objectives."
           },
           {
-            title: "Corporate Governance",
-            content: "We advise boards of directors and corporate officers on governance best practices, fiduciary duties, and compliance with corporate laws and regulations. Our attorneys help ensure that businesses operate in accordance with applicable legal requirements and industry standards."
+            title: "Why Choose Briglia Hundley® for Corporate Law?",
+            content: "Expertise Across All Business Stages: From startup entity selection to sophisticated corporate governance for multinational corporations, our attorneys provide experienced, practical advice customized to your business size and industry.\n\nDiverse Clientele: We serve a broad client base, including Fortune 500 companies, technology firms, government contractors, and local and mid-sized businesses, enabling us to bring best practices and industry insights to every engagement.\n\nStrategic, Business-Focused Legal Counsel: Our attorneys understand the nuances of the business world, allowing us to deliver legal solutions aligned with your strategic goals and commercial realities.\n\nRegional and National Reach: While we focus on the Mid-Atlantic region, our team is well-equipped to advise clients with operations nationwide, leveraging extensive experience in multiple jurisdictions."
+          },
+          {
+            title: "Contact Briglia Hundley® for Proven Corporate Law Guidance",
+            content: "If your business requires experienced, reliable corporate law counsel in Virginia, Maryland, Washington, D.C., or nationwide, contact Briglia Hundley® today. Our attorneys are ready to help you navigate complex legal challenges with confidence and efficiency."
           }
         ]
       },
       services: [
-        "Entity Formation",
-        "Corporate Governance",
-        "Mergers and Acquisitions",
-        "Securities Law",
-        "Business Transactions",
-        "Compliance and Regulatory",
-        "Contract Negotiation",
-        "Joint Ventures"
+        "Entity Formation & Legal Structuring",
+        "Corporate Governance & Compliance",
+        "Commercial Contract Drafting & Negotiation",
+        "Employment Agreements & HR Legal Advice",
+        "Regulatory & Compliance Counseling",
+        "Mergers & Acquisitions Support",
+        "Partnership & Joint Venture Agreements",
+        "Risk Management & Litigation Prevention"
       ],
       url: "/corporate-law",
-      localKeywords: "corporate attorney Fairfax VA, business lawyer Northern Virginia, corporate law Arlington VA, business formation Prince William County",
+      localKeywords: "corporate law attorney Virginia, business lawyer Maryland Washington DC, entity formation, corporate governance, commercial contracts, nationwide corporate counsel",
       attorneys: ["Brian J. Lubkeman", "Steven D. Briglia"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-corporate-law-hero-25.jpg"
     },
