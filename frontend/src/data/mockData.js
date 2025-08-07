@@ -507,7 +507,7 @@ export const siteData = {
           },
           {
             title: "Contact Briglia Hundley® — Appellate Litigation Experts",
-            content: "If you need a seasoned appellate attorney to help you navigate complex state or federal appeals, trust Briglia Hundley®. Contact us today for a confidential consultation and let our experienced appellate lawyers protect your legal rights and interests.\n\nImage: Mr. James W. Hundley arguing before the U.S. Supreme Court, April 2000."
+            content: "If you need a seasoned appellate attorney to help you navigate complex state or federal appeals, trust Briglia Hundley®. Contact us today for a confidential consultation and let our experienced appellate lawyers protect your legal rights and interests."
           }
         ]
       },
