@@ -249,31 +249,37 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                 {practiceArea.fullDescription || practiceArea.description}
               </p>
 
-              {/* Detailed Content Sections */}
-              {practiceArea.detailedContent && practiceArea.detailedContent.sections && (
-                <div className="space-y-8 mb-8 text-left">
-                  {practiceArea.detailedContent.sections.map((section, index) => (
-                    section.title.startsWith("Why Choose Briglia Hundley®") ? (
-                      <div key={index} className="mb-8" dangerouslySetInnerHTML={{ __html: section.content }} />
-                    ) : (
-                      <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4 text-left">
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{section.title}</h3>
-                        <div className="text-gray-600 whitespace-pre-line mb-4 text-left">
-                          {section.content}
-                        </div>
-                        {section.subServices && (
-                          <ul className="space-y-2 text-gray-600 ml-4 text-left">
-                            {section.subServices.map((service, serviceIndex) => (
-                              <li key={serviceIndex} className="flex items-start text-left">
-                                <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                                <span className="text-left">{service}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
+              {/* Content sections */}
+              {practiceArea.detailedContent.sections.map((section, index) => (
+                <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4 text-left">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{section.title}</h3>
+                  <div className="text-gray-600 whitespace-pre-line mb-4 text-left">
+                    {section.content}
+                  </div>
+                  {section.subServices && (
+                    <ul className="space-y-2 text-gray-600 ml-4 text-left">
+                      {section.subServices.map((service, serviceIndex) => (
+                        <li key={serviceIndex} className="flex items-start text-left">
+                          <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
+                          <span className="text-left">{service}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+              
+              {/* Main Services List (above "Our Services Include") */}
+              {practiceArea.detailedContent.mainServices && (
+                <div className="mb-8 text-left">
+                  <div className="grid md:grid-cols-2 gap-3 text-left">
+                    {practiceArea.detailedContent.mainServices.map((service, index) => (
+                      <div key={index} className="flex items-center text-left p-3 bg-gray-50 rounded-lg">
+                        <Scale className="h-5 w-5 text-gray-600 mr-3 flex-shrink-0" />
+                        <span className="text-gray-800 font-medium text-left">{service}</span>
                       </div>
-                    )
-                  ))}
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -292,30 +298,36 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                 </div>
               )}
 
-
-              <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8">
+              {/* Ready to Get Started Section */}
+              <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8 mb-8">
                 <h3 className="text-xl font-semibold mb-4">Ready to Get Started?</h3>
                 <p className="text-gray-300 mb-6">
                   Contact our {practiceArea.title.toLowerCase()} team today to schedule your free consultation and discuss your legal needs.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    onClick={() => onNavigate('contact')}
-                    className="bg-gray-600 hover:bg-gray-500 text-white"
-                  >
-                    <Calendar className="mr-2 h-4 w-4" />
+                  <button className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Schedule Consultation
-                  </Button>
-                  <Button 
-                    variant="outline"
-                    className="border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white"
-                    onClick={() => window.location.href = `tel:${data.business.phone}`}
-                  >
-                    <Phone className="mr-2 h-4 w-4" />
-                    Call Now
-                  </Button>
+                  </button>
+                  <button className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+                    Call (703) 337-3773
+                  </button>
                 </div>
               </div>
+
+              {/* Why Choose Section */}
+              {practiceArea.detailedContent.whyChoose && (
+                <div className="mb-8 text-left">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{practiceArea.detailedContent.whyChoose.title}</h3>
+                  <ul className="space-y-3 text-gray-600 text-left">
+                    {practiceArea.detailedContent.whyChoose.content.map((item, index) => (
+                      <li key={index} className="flex items-start text-left">
+                        <Scale className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-left">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
 
