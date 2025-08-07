@@ -227,7 +227,53 @@ test_plan:
   test_all: false
   test_priority: "high_first"
 
-  - task: "Remove blog section from home page"
+  - task: "Updated practice area content testing - Criminal Law"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully tested Criminal Law practice area page. Updated content is loading properly with new sections on White Collar Crimes Defense, Drug Offenses, DUI/DWI Defense, Juvenile Defense, Traffic Defense, etc. Attorney profiles (James W. Hundley, Steven D. Briglia, Madison A. Beatty) are displaying correctly. Professional layout and styling working perfectly."
+
+  - task: "Updated practice area content testing - Employment Law"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully tested Employment Law practice area page. Updated content is loading properly with new sections on Workplace Discrimination, EEOC representation, Employment Contract disputes, Management Counseling, etc. Attorney profiles (Amy S. Owen, Jacob C. DeRue) are displaying correctly. Professional layout and content structure working perfectly."
+
+  - task: "Updated practice area content testing - Family Law"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully tested Family Law practice area page. Updated content is loading properly with new sections on Divorce & Separation, Military Divorce, Custody and Custody Modification, Premarital Agreements, Child Support, Relocation Cases, etc. Attorney profiles (Teresa S. Cole, Michael C. May, Lauren L. Gill, Hannah Merrill) are displaying correctly. Professional layout working perfectly."
+
+  - task: "Updated practice area content testing - Municipal Law"
+    implemented: true
+    working: true
+    file: "frontend/src/data/mockData.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully tested Municipal Law practice area page. Updated content is loading properly with new sections on State and Local Government representation, FOIA compliance, Land Use and Zoning, Tax Assessment Appeals, Public Works, Personnel matters, Eminent Domain, etc. Attorney profile (Steven D. Briglia) displaying correctly. Professional government building image and layout working perfectly."
     implemented: true
     working: true
     file: "frontend/src/App.js"
