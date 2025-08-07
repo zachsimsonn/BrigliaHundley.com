@@ -22,36 +22,41 @@ export const siteData = {
       description: "SEC and PCAOB Defense Practice | Expert Defense Against SEC, PCAOB, DOJ, and Regulatory Enforcement Actions",
       fullDescription: "At Briglia Hundley®, we represent clients facing complex criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, insider trading, and other securities law violations. Our attorneys have deep experience as former regulators, prosecutors, and trial lawyers, giving us the insight to effectively defend clients in investigations and enforcement proceedings by the SEC, PCAOB, DOJ, and other agencies.",
       detailedContent: {
+        mainServices: [
+          "SEC Investigations Defense",
+          "PCAOB Proceedings Defense", 
+          "Wells Notice Responses",
+          "Professional Discipline",
+          "Accounting Malpractice",
+          "Private Securities Litigation",
+          "Regulatory Compliance",
+          "White Collar Defense"
+        ],
         sections: [
           {
-            title: "Expert Defense Against SEC, PCAOB, DOJ, and Regulatory Enforcement Actions",
-            content: "At Briglia Hundley®, we represent clients facing complex criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, insider trading, and other securities law violations. Our attorneys have deep experience as former regulators, prosecutors, and trial lawyers, giving us the insight to effectively defend clients in investigations and enforcement proceedings by the SEC, PCAOB, DOJ, and other agencies.\n\nWhen responding to a Wells notice or other allegations, we strive to minimize or eliminate charges through persuasive, evidence-based defense strategies rooted in an intimate understanding of securities laws and enforcement procedures."
+            title: "SEC and PCAOB Defense — Protecting Accounting Professionals, CPAs, and Public Companies",
+            content: "Defending against investigations and enforcement actions by the Securities and Exchange Commission (SEC) and the Public Company Accounting Oversight Board (PCAOB) requires specialized expertise, strategic thinking, and a deep understanding of complex regulatory environments. At Briglia Hundley®, our securities defense attorneys represent accounting professionals, certified public accountants (CPAs), and public companies throughout Virginia, Maryland, and Washington, D.C., as well as before federal regulators nationwide.\n\nOur practice focuses on the full spectrum of SEC and PCAOB matters, from initial investigations through formal enforcement proceedings, appeals, and related civil litigation. We understand that regulatory scrutiny can threaten careers, reputations, and business operations, and we are committed to providing aggressive, knowledgeable defense tailored to each client's unique circumstances."
           },
           {
             title: "Areas of Representation",
-            content: "DOJ and SEC Enforcement Matters: We defend clients in criminal and civil enforcement actions brought by the Department of Justice and Securities and Exchange Commission, including responses to investigations and grand jury proceedings.\n\nSEC and FINRA Regulatory Matters: Our lawyers guide clients through inquiries, investigations, and enforcement proceedings initiated by the SEC and Financial Industry Regulatory Authority.\n\nAudit Committee and Internal Investigations: We assist audit committees, directors, and senior management with independent investigations into derivative claims, whistleblower allegations, fraud, and other potential securities law violations."
+            content: "Professional Discipline and Regulatory Proceedings: We defend CPAs, auditors, and accounting firms in disciplinary actions and regulatory proceedings before professional licensing boards, the AICPA, and state CPA societies.\n\nAccounting Malpractice Defense: Our attorneys represent accounting professionals in malpractice lawsuits, helping to protect professional reputations and limiting financial exposure.\n\nPrivate Securities Litigation: We handle complex securities litigation matters involving allegations of financial reporting violations, auditing failures, and other securities law claims.\n\nWells Notice Responses: When clients receive Wells notices indicating potential SEC enforcement action, we craft strategic response letters designed to persuade the Commission not to pursue charges.\n\nInvestigation Defense: We guide clients through the investigative process, advising on document production, witness interviews, and strategic considerations to minimize exposure.\n\nEnforcement Action Defense: When formal charges are filed, we provide vigorous representation in administrative proceedings and federal court litigation, working to achieve the best possible outcomes.\n\nCompliance and Risk Management: We help clients develop robust compliance programs and internal controls to prevent future regulatory issues."
           },
           {
-            title: "Accountants Liability and Professional Discipline",
-            content: "Accounting professionals face heightened scrutiny due to evolving PCAOB auditing standards and increased enforcement by regulators such as the SEC and PCAOB. Briglia Hundley® represents accounting firms, CPAs, and professionals before federal regulators, state disciplinary boards (including the Virginia Board of Accountancy – VBOA), and in administrative hearings.\n\nOur experience includes:\n• Defense in PCAOB and SEC investigations and disciplinary proceedings, including trials before PCAOB hearing officers.\n• Representation in multi-location audits and international investigations involving global accounting networks.\n• Counseling on compliance with GAAP, PCAOB auditing standards, and federal securities laws.\n• Navigating complex parallel proceedings involving multiple regulatory and enforcement authorities."
+            title: "Services We Offer",
+            content: "• Strategic defense against SEC and PCAOB enforcement actions\n• Professional discipline and regulatory proceedings representation\n• Wells notice response and pre-enforcement advocacy\n• Complex securities litigation defense\n• Accounting malpractice and professional liability defense\n• Regulatory compliance and risk management counseling\n• Crisis management and media relations support\n• Appeals of adverse regulatory decisions"
           },
           {
-            title: "Accounting Malpractice and Professional Liability Defense",
-            content: "We vigorously defend accounting professionals accused of malpractice or professional liability claims brought by clients, investors, creditors, receivers, and trustees.\n\nKey defense areas include:\n• Revenue recognition, inventory valuation, lease accounting, and going concern issues.\n• Professional obligations such as conflicts of interest, independence, and confidentiality breaches.\n• Coordinated defense strategies with insurance providers and related counsel.\n• Federal and state court litigation, administrative proceedings, and arbitration."
-          },
-          {
-            title: "Private Securities Litigation",
-            content: "Our attorneys represent companies, directors, and senior officers in complex private securities class action lawsuits, including allegations under Rule 10b-5 for securities fraud, and related SEC investigations.\n\nOur litigation approach emphasizes:\n• Early resolutions through motions to dismiss, class certification challenges, and summary judgments.\n• Strategic settlement negotiations when appropriate.\n• Full-preparation for trial if necessary, leveraging decades of courtroom experience."
-          },
-          {
-            title: "Why Choose Briglia Hundley® for SEC and PCAOB Defense?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for SEC and PCAOB Defense?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Tier 1 ranked law firm with proven track record in securities defense</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Experienced attorneys with specialized expertise in SEC and PCAOB defense</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Comprehensive legal strategies and personalized service</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Serving Northern Virginia, Washington D.C., and Maryland</span></li></ul></div>`
-          },
-          {
-            title: "Contact Us for a Confidential Consultation",
-            content: "If you are facing an SEC, PCAOB, or DOJ investigation, a State Board disciplinary proceeding, or securities litigation related to accounting or auditing issues, contact Briglia Hundley® today to discuss your case with experienced defense attorneys."
+            title: "Contact Briglia Hundley® for SEC and PCAOB Defense",
+            content: "When facing SEC or PCAOB investigation or enforcement action, you need experienced counsel who understands both the law and the business implications of regulatory proceedings. Contact Briglia Hundley® today for a confidential consultation and let our securities defense team protect your interests and your future."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley for Your SEC and PCAOB Defense?",
+          content: [
+            "With former regulators and PCAOB leadership on our team, alongside seasoned trial lawyers, Briglia Hundley® offers unmatched expertise defending accounting professionals and companies against some of the most complex securities and financial regulatory challenges.",
+            "Our proven track record, strategic approach, and client-first philosophy ensure that your rights and reputation are vigorously protected."
+          ]
+        }
       },
       services: [
         "SEC Enforcement Defense",
