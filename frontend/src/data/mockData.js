@@ -539,23 +539,49 @@ export const siteData = {
     },
     {
       title: "Personal Injury",
-      description: "Aggressive representation for individuals injured due to the negligence of others, including car accidents, medical malpractice, and premises liability.",
-      fullDescription: "Our personal injury attorneys are dedicated to helping accident victims and their families recover the compensation they deserve. We handle all types of personal injury cases, from minor fender-benders to catastrophic injuries, and we fight to ensure our clients receive fair compensation for their medical expenses, lost wages, and pain and suffering.",
+      metaTitle: "Personal Injury Attorneys | Briglia Hundley, P.C.®",
+      metaDescription: "Compassionate and skilled personal injury representation in Virginia, Maryland & Washington, D.C. Experienced trial attorneys for motor vehicle accidents, premises liability, wrongful death claims.",
+      description: "Compassionate and Skilled Personal Injury Representation in Virginia, Maryland & Washington, D.C.",
+      fullDescription: "A serious personal injury can change your life in an instant. At Briglia Hundley, P.C.®, we are dedicated to protecting the rights of individuals who have been injured due to the negligence or intentional misconduct of others. Serving clients throughout Virginia, Maryland, and the District of Columbia, our experienced trial attorneys fight aggressively to secure the medical care you need and the financial compensation you deserve.",
       detailedContent: {
+        mainServices: [
+          "Motor Vehicle Accidents",
+          "Intentional Torts", 
+          "Wrongful Death Claims",
+          "Premises Liability",
+          "Slip and Fall Cases",
+          "Dog Bite Injuries",
+          "Assault Injuries",
+          "Negligent Security"
+        ],
         sections: [
           {
-            title: "Motor Vehicle Accidents",
-            content: "We represent victims of car accidents, truck accidents, motorcycle accidents, and other motor vehicle collisions. Our attorneys work with accident reconstruction experts, medical professionals, and other specialists to build strong cases for our clients."
+            title: "Compassionate and Skilled Personal Injury Representation in Virginia, Maryland & Washington, D.C.",
+            content: "A serious personal injury can change your life in an instant. At Briglia Hundley, P.C.®, we are dedicated to protecting the rights of individuals who have been injured due to the negligence or intentional misconduct of others. Serving clients throughout Virginia, Maryland, and the District of Columbia, our experienced trial attorneys fight aggressively to secure the medical care you need and the financial compensation you deserve."
           },
           {
-            title: "Medical Malpractice",
-            content: "When healthcare providers fail to meet the standard of care, patients can suffer serious injuries or even death. Our medical malpractice attorneys have the knowledge and resources to hold negligent healthcare providers accountable for their actions."
+            title: "Comprehensive Personal Injury Legal Services",
+            content: "Our personal injury lawyers bring decades of courtroom experience and deep knowledge of tort law to every case. Whether you have suffered injuries in a motor vehicle accident or due to unsafe premises, we provide personalized, thorough representation designed to achieve the best outcomes for you and your family."
           },
           {
-            title: "Premises Liability",
-            content: "Property owners have a duty to maintain safe conditions for visitors. We represent clients injured in slip and fall accidents, inadequate security cases, and other premises liability matters."
+            title: "Types of Personal Injury Cases We Handle",
+            content: "Motor Vehicle Accidents: We represent drivers, passengers, bicyclists, and pedestrians injured in a wide range of motor vehicle collisions, including car accidents, motorcycle crashes, and trucking accidents. Our attorneys have successfully recovered hundreds of thousands of dollars for clients harmed by negligent or reckless drivers.\n\nIntentional Torts and Assault Injuries: If you sustained serious injuries from an assault or intentional wrongdoing, you may have a personal injury claim against the responsible party. We advocate to ensure you receive fair compensation to aid your recovery.\n\nWrongful Death Claims: Losing a loved one due to someone else's negligence is devastating. Our wrongful death lawyers help families pursue compensation for pain and suffering as well as lost wages and support, providing compassionate guidance during this difficult time.\n\nPremises Liability: Property owners are legally obligated to maintain safe premises. If you suffered injuries from a slip and fall, dog bite, negligent security, or other hazardous conditions—whether in a public venue or private residence—you may be entitled to compensation. We have obtained significant recoveries for clients hurt in restaurant falls, animal attacks, nightclub incidents, and other premises liability cases."
+          },
+          {
+            title: "Contact Briglia Hundley® for Personal Injury Representation",
+            content: "If you or a loved one has been injured due to someone else's negligence in Virginia, Maryland, or Washington, D.C., contact Briglia Hundley, P.C.® today for a confidential consultation. Our dedicated personal injury attorneys are ready to fight for the compensation you deserve."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Personal Injury?",
+          content: [
+            "Experienced Trial Attorneys — Our personal injury lawyers bring decades of courtroom experience and deep knowledge of tort law to every case.",
+            "Proven Track Record — We have successfully recovered hundreds of thousands of dollars for clients harmed by negligent or reckless drivers and property owners.",
+            "Comprehensive Case Handling — From motor vehicle accidents to premises liability, we provide personalized, thorough representation for all types of personal injury cases.",
+            "Compassionate Advocacy — We understand the devastating impact serious injuries can have and provide compassionate guidance while fighting aggressively for your rights.",
+            "No Fee Unless We Win — We work on a contingency basis, meaning you don't pay attorney fees unless we secure compensation for your injuries."
+          ]
+        }
       },
       services: [
         "Motor Vehicle Accidents",
