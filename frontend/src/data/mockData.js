@@ -120,36 +120,43 @@ export const siteData = {
     },
     {
       title: "Community Associations",
-      description: "Comprehensive legal services for homeowners associations, condominium associations, and cooperative housing corporations.",
-      fullDescription: "Our community association practice represents homeowners associations, condominium associations, and cooperative housing corporations throughout Virginia, Maryland, and the District of Columbia. We provide counsel on all aspects of community association law, from routine operational matters to complex litigation.",
+      metaTitle: "Community Associations Law | Briglia Hundley®",
+      metaDescription: "Expert legal representation for community associations in Northern Virginia & Washington, D.C. Comprehensive services for HOAs, condominiums, cooperatives, and mixed-use developments.",
+      description: "Expert Legal Representation for Community Associations in Northern Virginia & Washington, D.C.",
+      fullDescription: "At Briglia Hundley®, our real estate, dispute resolution, litigation, and collections practice areas have expanded to provide comprehensive legal services for community associations throughout Northern Virginia and the Washington, D.C. metropolitan area. We proudly represent a wide range of homeowners associations (HOAs), condominiums, cooperatives, and mixed-use developments, guiding them through the complexities of governance, compliance, dispute resolution, and collections.",
       detailedContent: {
         sections: [
           {
-            title: "Governance and Operations",
-            content: "We advise association boards on governance matters, including meeting procedures, election protocols, and compliance with state laws and governing documents. Our attorneys help ensure associations operate effectively while minimizing legal risks."
+            title: "Expert Legal Representation for Community Associations in Northern Virginia & Washington, D.C.",
+            content: "At Briglia Hundley®, our real estate, dispute resolution, litigation, and collections practice areas have expanded to provide comprehensive legal services for community associations throughout Northern Virginia and the Washington, D.C. metropolitan area. We proudly represent a wide range of homeowners associations (HOAs), condominiums, cooperatives, and mixed-use developments, guiding them through the complexities of governance, compliance, dispute resolution, and collections.\n\nOur firm has earned the trust of community associations with varied needs, delivering prompt, practical, and focused legal counsel tailored to each client's goals and challenges."
           },
           {
-            title: "Collections and Enforcement",
-            content: "We assist associations with collecting delinquent assessments and enforcing governing document provisions. Our team handles collection actions, lien enforcement, and foreclosure proceedings when necessary."
+            title: "Comprehensive Legal Services for Community Associations",
+            content: "Briglia Hundley's team handles the full spectrum of legal matters faced by community associations, including but not limited to:\n\nGovernance and Corporate Compliance: Advising boards and management teams on structuring governance policies, bylaws, and ensuring ongoing compliance with corporate and legal requirements.\n\nLegal Compliance and Fair Housing: Assisting associations with adherence to federal, state, and local laws including Fair Housing regulations to prevent and resolve discrimination issues.\n\nDebt Collection and Enforcement: Aggressively pursuing collection of debts owed to the community, including assessments, fines, and other obligations critical to the financial health of associations.\n\nContract Review and Goal Creation: Reviewing contracts with vendors, management companies, and service providers to ensure favorable terms and alignment with association objectives.\n\nEminent Domain Matters: Representing associations in eminent domain proceedings to protect property interests and negotiate fair compensation.\n\nCreation and Termination of Easements: Advising on the establishment, modification, or termination of easements that affect community property.\n\nReciprocal Maintenance Agreements: Drafting and enforcing reciprocal maintenance and shared responsibility agreements among neighbors or adjoining properties.\n\nMixed-Use and Commercial Condominium Representation: Handling legal matters unique to mixed residential and commercial condominiums, ensuring fair treatment of all stakeholders.\n\nDispute Resolution and Litigation: Providing strategic representation in disputes involving board members, property owners, vendors, and governmental agencies, utilizing negotiation, mediation, arbitration, or litigation as appropriate."
           },
           {
-            title: "Construction Defect Claims",
-            content: "Our attorneys represent community associations in construction defect litigation against developers, contractors, and design professionals. We have experience with both common element and unit-specific defect claims."
+            title: "Why Choose Briglia Hundley for Community Association Legal Counsel?",
+            content: "Deep Local Experience — We understand the unique legal and practical challenges faced by community associations in Northern Virginia and Washington, D.C., and provide advice customized for these jurisdictions.\n\nIntegrated Services — Combining real estate law, collections, governance counseling, and litigation expertise, we provide a one-stop solution for all community association legal needs.\n\nClient-Focused and Efficient Case Management — We pride ourselves on delivering valuable, prompt, and effective representation, managing every matter with a nimble approach informed by years of risk management experience.\n\nResponsive and Proactive Partnership — We build long-term relationships with community boards and management, aiming to anticipate legal issues and help foster community harmony and financial stability."
+          },
+          {
+            title: "Contact Briglia Hundley®",
+            content: "If your community association requires skilled legal counsel for governance, collections, contract negotiation, dispute resolution, or any other association matters, contact Briglia Hundley® today for a confidential consultation. Our team of dedicated attorneys is ready to help protect your community's interests and promote its long-term success."
           }
         ]
       },
       services: [
-        "Board Training",
-        "Covenant Enforcement",
-        "Assessment Collections",
-        "Construction Defect Claims",
-        "Dispute Resolution",
-        "Board Training",
-        "Litigation",
-        "Regulatory Compliance"
+        "Governance and Corporate Compliance",
+        "Legal Compliance and Fair Housing",
+        "Debt Collection and Enforcement", 
+        "Contract Review and Goal Creation",
+        "Eminent Domain Matters",
+        "Creation and Termination of Easements",
+        "Reciprocal Maintenance Agreements",
+        "Mixed-Use and Commercial Condominium Representation",
+        "Dispute Resolution and Litigation"
       ],
       url: "/community-associations",
-      localKeywords: "HOA attorney Fairfax VA, community association lawyer Northern Virginia, condominium law Arlington VA, homeowners association Prince William County",
+      localKeywords: "community association attorney Northern Virginia, HOA lawyer Washington DC, condominium law, cooperative legal services, mixed-use development counsel",
       attorneys: ["Mary \"Molly\" Peacock", "Jacob C. DeRue"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-community-associations-hero-25.jpg"
     },
