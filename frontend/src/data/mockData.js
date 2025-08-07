@@ -374,6 +374,14 @@ export const siteData = {
       description: "Compassionate and Skilled Family Law Representation in Virginia & Washington, D.C.",
       fullDescription: "Family law matters often involve deeply personal and emotional issues. At Briglia Hundley, P.C.®, our experienced family law attorneys are committed to protecting your interests and those of your children. Serving clients throughout Virginia and the District of Columbia, we provide knowledgeable, compassionate guidance to help you navigate complex family legal challenges with confidence and care.",
       detailedContent: {
+        mainServices: [
+          "Divorce & Separation",
+          "Military Divorce", 
+          "Custody Modification",
+          "Premarital Agreements",
+          "Child Support Issues",
+          "Relocation Cases"
+        ],
         sections: [
           {
             title: "Compassionate and Skilled Family Law Representation in Virginia & Washington, D.C.",
@@ -381,19 +389,19 @@ export const siteData = {
           },
           {
             title: "Divorce & Separation",
-            content: "Divorce and separation can be complex—even when both parties agree amicably. Our family law team understands the potential for unexpected legal and financial consequences, and we work closely with you to:\n\n• Explain your rights and options at every stage\n• Help you understand the full impact of divorce or separation agreements\n• Safeguard your interests throughout the process\n\nWhether negotiating settlements or litigating disputes, we aim to achieve the best possible outcomes tailored to your unique circumstances."
+            content: "Divorce proceedings in Virginia and D.C. can vary widely depending on your unique circumstances, property ownership, children involved, and numerous other factors. Our attorneys are well-versed in both contested and uncontested divorce cases, and we work diligently to protect your financial interests and personal well-being throughout the process.\n\nWhether your divorce involves complex property division, spousal support considerations, or child-related matters, we bring skill, experience, and empathy to your case. Our goal is to achieve the best possible outcome while minimizing conflict and emotional stress for you and your family."
           },
           {
             title: "Military Divorce",
-            content: "Military divorces involve specialized federal and state rules that differ significantly from civilian cases. Our attorneys have the experience necessary to:\n\n• Navigate the complexities of military pension division\n• Address service member protections under the Uniformed Services Former Spouses' Protection Act (USFSPA)\n• Manage custody and support issues involving military families\n• Facilitate smooth proceedings that respect your specific military-related legal concerns"
+            content: "Military divorces require specialized knowledge of federal laws, military benefits, and unique procedural requirements that differ significantly from civilian divorces. Our attorneys have experience handling the complexities of military divorce, including:\n\n• Division of military pensions and retirement benefits\n• Servicemember Civil Relief Act (SCRA) compliance\n• Deployment and custody challenges\n• Base housing and relocation issues\n• Thrift Savings Plan (TSP) division\n• TRICARE and other military benefit considerations\n\nWe understand the demands of military life and work to protect the rights and interests of both service members and their spouses."
           },
           {
             title: "Custody and Custody Modification",
-            content: "Child custody decisions can be the most contentious and emotional part of family law cases. Our dedicated family law team focuses on securing custody arrangements that serve the best interests of your child, including:\n\n• Crafting detailed custody agreements that protect your child's rights and well-being\n• Representing clients in disputes over physical and legal custody\n• Assisting with modifications to existing custody orders when family circumstances change\n• Advocating for parental rights while prioritizing children's stability and welfare"
+            content: "Child custody decisions are among the most important and emotionally charged aspects of family law. Virginia and D.C. courts prioritize the best interests of the child when making custody determinations, considering factors such as:\n\n• Each parent's relationship with the child\n• The child's physical, emotional, and developmental needs\n• Each parent's ability to provide stability and support\n• The child's preferences (when age-appropriate)\n• Any history of abuse or neglect\n\nWhen circumstances change significantly, custody modifications may be necessary. We help parents navigate both initial custody determinations and subsequent modifications, always keeping the children's well-being as the primary focus."
           },
           {
             title: "Premarital Agreements (Prenups)",
-            content: "Premarital agreements are critical tools for protecting individual assets and clarifying financial expectations before marriage. Our attorneys assist clients by:\n\n• Drafting precise and enforceable premarital agreements\n• Ensuring agreements are fair, clear, and legally sound\n• Helping couples avoid future disputes by addressing property, debts, and spousal support upfront"
+            content: "Premarital agreements, commonly known as prenuptial agreements or \"prenups,\" are valuable legal tools that help couples establish clear financial expectations and protections before marriage. Our attorneys assist couples in drafting comprehensive premarital agreements that address:\n\n• Property division in case of divorce\n• Spousal support obligations\n• Inheritance rights and protections\n• Business ownership and operation\n• Debt allocation and responsibility\n• Estate planning considerations\n\nA well-crafted premarital agreement can provide peace of mind and financial security for both parties while preserving important relationships and family assets."
           },
           {
             title: "Child Support Issues",
@@ -404,14 +412,20 @@ export const siteData = {
             content: "Relocation matters arise when a parent needs to move due to employment, family, or other reasons, and existing custody arrangements must be amended. These cases are often complex and require strategic legal guidance. At Briglia Hundley, we:\n\n• Assist in seeking custody order modifications to accommodate relocation needs\n• Guide clients through the legal standards and requirements to gain approval for relocation\n• Advocate for solutions that balance parents' rights with the best interests of the child"
           },
           {
-            title: "Why Choose Briglia Hundley® for Your Family Law Case?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for Your Family Law Case?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Trusted Family Law Experience in Virginia and D.C. — We deeply understand local family court systems and laws.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Compassionate, Client-Focused Representation — We strive to reduce stress while protecting your rights and those of your children.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Strategic Advocacy — Whether through negotiation or litigation, we pursue the best possible results tailored to your needs.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Comprehensive Legal Support — From divorce to custody, support, and premarital agreements, our expertise covers all family law matters.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"></path></svg><span class="text-left">Personalized Attention — We take the time to understand your unique situation and goals throughout the process.</span></li></ul></div>`
-          },
-          {
             title: "Contact Briglia Hundley® — Your Family Law Partners",
             content: "If you are facing divorce, custody disputes, child support issues, or need guidance on any family law matter in Virginia or Washington, D.C., contact Briglia Hundley, P.C.® today for a confidential consultation. Our skilled family law attorneys are ready to help you protect your future and that of your family."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Your Family Law Case?",
+          content: [
+            "Trusted Family Law Experience in Virginia and D.C. — We deeply understand local family court systems and laws.",
+            "Compassionate, Client-Focused Representation — We strive to reduce stress while protecting your rights and those of your children.",
+            "Strategic Advocacy — Whether through negotiation or litigation, we pursue the best possible results tailored to your needs.",
+            "Comprehensive Legal Support — From divorce to custody, support, and premarital agreements, our expertise covers all family law matters.",
+            "Personalized Attention — We take the time to understand your unique situation and goals throughout the process."
+          ]
+        }
       },
       services: [
         "Divorce & Separation",
