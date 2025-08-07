@@ -202,6 +202,16 @@ export const siteData = {
       description: "Trusted Corporate Law Counsel Serving Virginia, Maryland, Washington, D.C., and Nationwide",
       fullDescription: "At Briglia Hundley®, we represent a diverse range of businesses operating throughout Virginia, Maryland, the District of Columbia, and across the United States. Our corporate law attorneys provide carefully tailored legal advice on governance, entity formation, structural issues, and all aspects of corporate operations. Whether you are a startup, a medium-sized business, a government contractor, or a Fortune 500 company, our experienced team is prepared to help you achieve your business goals and maximize growth potential.",
       detailedContent: {
+        mainServices: [
+          "Entity Formation",
+          "Corporate Governance", 
+          "Commercial Contracts",
+          "Employment Law Guidance",
+          "M&A Support",
+          "Regulatory Compliance",
+          "Business Transactions",
+          "Risk Management"
+        ],
         sections: [
           {
             title: "Trusted Corporate Law Counsel Serving Virginia, Maryland, Washington, D.C., and Nationwide",
@@ -212,14 +222,19 @@ export const siteData = {
             content: "Our firm understands that the success and longevity of any business depend heavily on sound legal guidance from inception through growth and beyond. We offer a full spectrum of corporate legal services, including:\n\nEntity Formation and Structuring: Advising on the optimal legal entity type, such as corporations, limited liability companies (LLCs), partnerships, or joint ventures, tailored to your business objectives and growth plans.\n\nCorporate Governance: Assisting boards of directors, executives, and business owners with governance frameworks, compliance with fiduciary duties, bylaws drafting, shareholder relations, and corporate policies.\n\nCommercial Contracts and Agreements: Drafting, reviewing, and negotiating commercial contracts critical to your business operations, including vendor agreements, partnership contracts, licensing, and service arrangements.\n\nEmployment Law and Human Resources Guidance: Providing counsel on employment agreements, restrictive covenants, non-compete and confidentiality clauses, compliance with labor laws, and dispute resolution relating to employment matters.\n\nRegulatory Compliance and Risk Management: Helping companies navigate complex federal, state, and local regulatory requirements, mitigating legal risks and ensuring ongoing compliance.\n\nMergers, Acquisitions, and Transactions Support: Counseling clients through strategic growth opportunities, including mergers, acquisitions, divestitures, and joint ventures to achieve business objectives."
           },
           {
-            title: "Why Choose Briglia Hundley® for Corporate Law?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for Corporate Law?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Tier 1 ranked law firm with proven track record in corporate law</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Experienced attorneys with specialized expertise in corporate law</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Comprehensive legal strategies and personalized service</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Serving Northern Virginia, Washington D.C., and Maryland</span></li></ul></div>`
-          },
-          {
             title: "Contact Briglia Hundley® for Proven Corporate Law Guidance",
             content: "If your business requires experienced, reliable corporate law counsel in Virginia, Maryland, Washington, D.C., or nationwide, contact Briglia Hundley® today. Our attorneys are ready to help you navigate complex legal challenges with confidence and efficiency."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Corporate Law?",
+          content: [
+            "Expertise Across All Business Stages: From startup entity selection to sophisticated corporate governance for multinational corporations, our attorneys provide experienced, practical advice customized to your business size and industry.",
+            "Diverse Clientele: We serve a broad client base, including Fortune 500 companies, technology firms, government contractors, and local and mid-sized businesses, enabling us to bring best practices and industry insights to every engagement.",
+            "Strategic, Business-Focused Legal Counsel: Our attorneys understand the nuances of the business world, allowing us to deliver legal solutions aligned with your strategic goals and commercial realities.",
+            "Regional and National Reach: While we focus on the Mid-Atlantic region, our team is well-equipped to advise clients with operations nationwide, leveraging extensive experience in multiple jurisdictions."
+          ]
+        }
       },
       services: [
         "Entity Formation & Legal Structuring",
