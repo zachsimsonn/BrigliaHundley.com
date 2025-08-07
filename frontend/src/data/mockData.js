@@ -80,6 +80,16 @@ export const siteData = {
       description: "Experienced Business Litigation Lawyers Serving Virginia, Maryland & DC",
       fullDescription: "At Briglia Hundley®, we represent a broad spectrum of businesses and individuals in complex business litigation matters across the state and federal courts of Virginia, Maryland, and the District of Columbia. Our seasoned business litigation attorneys understand the critical nature of your disputes and the importance of protecting your company's assets, reputation, and ongoing operations.",
       detailedContent: {
+        mainServices: [
+          "Employment Law Disputes",
+          "Real Estate Litigation", 
+          "Breach of Contract",
+          "UCC Issues",
+          "Insurance Coverage Litigation",
+          "Fiduciary Litigation",
+          "Fraud Investigations",
+          "Failed Business Transactions"
+        ],
         sections: [
           {
             title: "Experienced Business Litigation Lawyers Serving Virginia, Maryland & DC",
@@ -90,10 +100,6 @@ export const siteData = {
             content: "Our business litigation practice covers a diverse set of legal issues that companies face, including but not limited to:\n\nEmployment Law Disputes: Handling wrongful termination claims, discrimination and retaliation lawsuits, wage and hour matters, non-compete and confidentiality agreement enforcement, and disputes arising from the employer-employee relationship.\n\nReal Estate Litigation: Managing landlord-tenant disputes, commercial lease disagreements, title and boundary issues, zoning and land use conflicts, and property development controversies.\n\nBreach of Contract and Related Torts: Litigating breach of contract matters, including failures to perform, fraudulent inducement claims, business torts such as interference with contracts or prospective business relations, and related damages.\n\nUniform Commercial Code (UCC) Issues: Resolving disputes involving sales transactions, secured transactions, negotiable instruments, and other UCC-governed matters.\n\nInsurance Coverage and Bad Faith Litigation: Advising and litigating insurance coverage disputes, policy interpretation matters, and claims of insurer bad faith.\n\nFiduciary Litigation: Pursuing claims and defenses involving breaches of fiduciary duty by corporate officers, directors, trustees, and partners.\n\nFraud Investigations and Workouts: Representing clients in complex fraud allegations, internal investigations, and financial restructurings or workouts resulting from business failures.\n\nFailed Business Transactions: Advising on disputes arising from mergers, acquisitions, joint ventures, licensing agreements, and other transactional breakdowns."
           },
           {
-            title: "Why Choose Briglia Hundley® for Business Litigation?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for Business Litigation?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Tier 1 ranked law firm with proven track record in business litigation</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Experienced attorneys with specialized expertise in business litigation</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Comprehensive legal strategies and personalized service</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Serving Northern Virginia, Washington D.C., and Maryland</span></li></ul></div>`
-          },
-          {
             title: "Representative Clients Include",
             content: "• Fortune 500 Corporations\n• Multinational Technology Firms\n• Financial Institutions\n• Government Contractors\n• Mid-sized and Local Businesses\n• Title Companies and Real Estate Holders"
           },
@@ -101,7 +107,16 @@ export const siteData = {
             title: "Contact Briglia Hundley® — Your Trusted Business Litigation Counsel",
             content: "If your company or business faces complex litigation or dispute resolution challenges in Virginia, Maryland, or Washington, D.C., trust the experienced business litigation lawyers at Briglia Hundley®. Contact us today for a confidential consultation and let us put our strategic litigation skills and business insight to work for you."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Your Business Litigation Needs?",
+          content: [
+            "Deep Business Insight — Our attorneys \"get the business\" behind business litigation. We bring a strategic, bottom-line focused approach that balances aggressive advocacy with practical risk management.",
+            "Proven Track Record in State and Federal Courts — We handle cases in all major Virginia, Maryland, and D.C. trial and appellate courts, as well as federal district courts and appellate courts including the Fourth Circuit.",
+            "Client-Focused Efficiency and Value — We build long-term partnerships with our clients and tailor case management to deliver both efficiency and maximum value.",
+            "Diverse Clientele — From national companies to local businesses, our clients trust us to protect their interests through high-stakes, mission-critical litigation."
+          ]
+        }
       },
       services: [
         "Employment Disputes and Litigation",
