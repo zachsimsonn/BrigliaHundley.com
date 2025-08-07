@@ -17,48 +17,59 @@ export const siteData = {
   practiceAreas: [
     {
       title: "Accountants Liability and Securities Litigation",
-      description: "SEC and PCAOB Defense Practice. Securities Investigations, Enforcement, and Litigation. DOJ and SEC Enforcement.",
-      fullDescription: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings.",
+      metaTitle: "SEC & PCAOB Defense Lawyer | Securities Enforcement & Accountant Defense Attorneys VA, DC, MD",
+      metaDescription: "Top-ranked SEC defense lawyers and PCAOB enforcement attorneys at Briglia Hundley. Defending clients in SEC, PCAOB, DOJ, FINRA, VBOA investigations & accounting malpractice cases in Virginia, DC, Maryland, and nationwide.",
+      description: "SEC and PCAOB Defense Practice | Expert Defense Against SEC, PCAOB, DOJ, and Regulatory Enforcement Actions",
+      fullDescription: "At Briglia Hundley®, we represent clients facing complex criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, insider trading, and other securities law violations. Our attorneys have deep experience as former regulators, prosecutors, and trial lawyers, giving us the insight to effectively defend clients in investigations and enforcement proceedings by the SEC, PCAOB, DOJ, and other agencies.",
       detailedContent: {
         sections: [
           {
-            title: "SEC and PCAOB Defense Practice",
-            content: "We have represented clients in criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, and insider trading. In SEC matters, we seek to eliminate or minimize charges through persuasive responses to a Wells notice of securities law violations. Our experience as former regulators and prosecutors allows us to effectively defend our clients in regulatory and criminal investigations and proceedings. We represent clients in the following areas: DOJ and SEC enforcement matters, Grand juries and investigations by federal and state prosecutors, SEC and FINRA regulatory matters, Audit committees, directors, and senior management in conducting independent investigations involving derivative claims, whistleblower allegations, fraud, and potential securities law violations."
+            title: "Expert Defense Against SEC, PCAOB, DOJ, and Regulatory Enforcement Actions",
+            content: "At Briglia Hundley®, we represent clients facing complex criminal and regulatory matters involving accounting fraud, bank fraud, false public statements, false claims, insider trading, and other securities law violations. Our attorneys have deep experience as former regulators, prosecutors, and trial lawyers, giving us the insight to effectively defend clients in investigations and enforcement proceedings by the SEC, PCAOB, DOJ, and other agencies.\n\nWhen responding to a Wells notice or other allegations, we strive to minimize or eliminate charges through persuasive, evidence-based defense strategies rooted in an intimate understanding of securities laws and enforcement procedures."
           },
           {
-            title: "Accountants Liability",
-            content: "Briglia Hundley® represents accounting professionals in civil, criminal, government regulatory enforcement, and state disciplinary actions. SEC, PCAOB, and State Disciplinary Boards: Heightened enforcement standards of the SEC and Public Company Accounting Oversight Board (PCAOB), new auditing standards of the PCAOB, and new FASB accounting standards have resulted in increased scrutiny of the work performed by auditors. Our attorneys represent accounting firms and individual accounting professionals, including Certified Public Accountants (CPAs), in investigations and disciplinary proceedings brought by federal regulators, such as the PCAOB and SEC. Our attorneys have represented accounting firms and accountants in all stages of PCAOB and SEC investigations and disciplinary proceedings, including recently trying a case before the PCAOB hearing officer. In addition, our attorneys have represented CPAs before state boards of accountancy, such as the Virginia Board of Accountancy (\"VBOA\"), including representing CPAs in Informal Fact-Finding Conferences. We understand the audit process, Generally Accepted Accounting Principles (GAAP), and PCAOB auditing standards. That understanding helps us effectively defend auditors' and CPAs' conduct. Our firm includes former prosecutors and a former Assistant Director of the PCAOB's Division of Enforcement and Investigations. We have the following experience: SEC enforcement, PCAOB enforcement, State disciplinary proceedings (i.e., state boards of accountancy such as the VBOA), Parallel proceedings (i.e., SEC and PCAOB investigations, PCAOB and foreign audit regulator investigations, government investigation and private securities litigation, etc.), Audits of public companies and broker-dealers, Multi-location audits, International investigations involving overseas firms and foreign affiliates of the Big Four and other global accounting network firms (i.e., Argentina, Brazil, India, Indonesia, Japan, Korea, Spain, etc.)."
+            title: "Areas of Representation",
+            content: "<h3>DOJ and SEC Enforcement Matters</h3><p>We defend clients in criminal and civil enforcement actions brought by the Department of Justice and Securities and Exchange Commission, including responses to investigations and grand jury proceedings.</p><h3>SEC and FINRA Regulatory Matters</h3><p>Our lawyers guide clients through inquiries, investigations, and enforcement proceedings initiated by the SEC and Financial Industry Regulatory Authority.</p><h3>Audit Committee and Internal Investigations</h3><p>We assist audit committees, directors, and senior management with independent investigations into derivative claims, whistleblower allegations, fraud, and other potential securities law violations.</p>"
           },
           {
-            title: "Malpractice",
-            content: "Accounting firms and CPAs are facing increasing professional liability litigation brought by former clients and third parties including creditors, investors, receivers, and bankruptcy trustees. We understand the relevant laws, professional standards, accounting concepts, and auditing issues at issue in accounting malpractice actions. Briglia Hundley® works with accounting firms, CPAs, and their insurers to provide a comprehensive and coordinated defense in complex accounting and auditing matters. We defend the quality of our client's work in such areas as: Revenue recognition, Inventory, Lease accounting, Going concern considerations, Quality control, Breach of professional obligations such as conflicts of interest, independence, and confidentiality. We have tried numerous cases as prosecutors, criminal defense attorneys, and civil litigators in federal and state courts throughout the United States. While we work aggressively to defeat claims before trial, our vast experience as trial lawyers gives us the skills and knowledge needed to successfully try cases in federal or state court, administrative proceedings, or arbitrations."
+            title: "Accountants Liability and Professional Discipline",
+            content: "Accounting professionals face heightened scrutiny due to evolving PCAOB auditing standards and increased enforcement by regulators such as the SEC and PCAOB. Briglia Hundley® represents accounting firms, CPAs, and professionals before federal regulators, state disciplinary boards (including the Virginia Board of Accountancy – VBOA), and in administrative hearings.\n\n<strong>Our experience includes:</strong><ul><li>Defense in PCAOB and SEC investigations and disciplinary proceedings, including trials before PCAOB hearing officers.</li><li>Representation in multi-location audits and international investigations involving global accounting networks.</li><li>Counseling on compliance with GAAP, PCAOB auditing standards, and federal securities laws.</li><li>Navigating complex parallel proceedings involving multiple regulatory and enforcement authorities.</li></ul>"
+          },
+          {
+            title: "Accounting Malpractice and Professional Liability Defense",
+            content: "We vigorously defend accounting professionals accused of malpractice or professional liability claims brought by clients, investors, creditors, receivers, and trustees.\n\n<strong>Key defense areas include:</strong><ul><li>Revenue recognition, inventory valuation, lease accounting, and going concern issues.</li><li>Professional obligations such as conflicts of interest, independence, and confidentiality breaches.</li><li>Coordinated defense strategies with insurance providers and related counsel.</li><li>Federal and state court litigation, administrative proceedings, and arbitration.</li></ul>"
           },
           {
             title: "Private Securities Litigation",
-            content: "Our attorneys have represented companies and individuals in private securities class action cases, Securities and Exchange Commission (SEC) investigations, and criminal matters involving allegations of securities fraud. We aggressively pursue a quick resolution of disputes at the earliest stages of litigation by requesting dismissal on the pleadings, objecting to the class certification, or seeking full or partial summary judgment. When it is in our client's best interest, we will seek to end litigation through settlement on favorable terms. When necessary and appropriate, our attorneys have the knowledge and skill to successfully take a case through a full trial on the merits. Our experience includes: Private securities class action matters: Representation of companies, directors, and senior officers in complex Rule 10b-5 actions with allegations of fraud involving complex accounting and disclosure issues."
+            content: "Our attorneys represent companies, directors, and senior officers in complex private securities class action lawsuits, including allegations under Rule 10b-5 for securities fraud, and related SEC investigations.\n\n<strong>Our litigation approach emphasizes:</strong><ul><li>Early resolutions through motions to dismiss, class certification challenges, and summary judgments.</li><li>Strategic settlement negotiations when appropriate.</li><li>Full-preparation for trial if necessary, leveraging decades of courtroom experience.</li></ul>"
+          },
+          {
+            title: "Why Choose Briglia Hundley for Your SEC and PCAOB Defense?",
+            content: "With former regulators and PCAOB leadership on our team, alongside seasoned trial lawyers, Briglia Hundley® offers unmatched expertise defending accounting professionals and companies against some of the most complex securities and financial regulatory challenges. Our proven track record, strategic approach, and client-first philosophy ensure that your rights and reputation are vigorously protected."
+          },
+          {
+            title: "Contact Us for a Confidential Consultation",
+            content: "If you are facing an SEC, PCAOB, or DOJ investigation, a State Board disciplinary proceeding, or securities litigation related to accounting or auditing issues, contact Briglia Hundley® today to discuss your case with experienced defense attorneys."
           }
         ]
       },
       services: [
         "SEC Enforcement Defense",
-        "PCAOB Investigations",
-        "Securities Investigations", 
+        "PCAOB Investigations and Hearings",
         "DOJ Enforcement Matters",
         "Grand Jury Proceedings",
-        "FINRA Regulatory Matters",
-        "State Disciplinary Boards",
+        "FINRA Regulatory Actions",
+        "State Board of Accountancy Disciplinary Proceedings",
         "Accounting Malpractice Defense",
         "Private Securities Litigation",
         "Wells Notice Responses",
-        "Audit Committee Investigations",
+        "Audit Committee and Internal Investigations",
         "Whistleblower Defense",
-        "Professional Liability Claims",
-        "Quality Control Reviews",
-        "Revenue Recognition Issues",
-        "Going Concern Matters"
+        "Professional Liability and Quality Control Reviews",
+        "Specialized Litigation in Revenue Recognition, Going Concern, and Lease Accounting Matters"
       ],
       url: "/practice-area/accountants-liability-and-securities-litigation",
-      localKeywords: "accountants liability attorney Fairfax VA, SEC enforcement lawyer Northern Virginia, PCAOB defense Arlington VA, securities litigation Prince William County, accounting malpractice attorney Tysons Corner",
+      localKeywords: "SEC defense lawyer Virginia, PCAOB enforcement attorney Washington DC, securities litigation Maryland, accounting malpractice defense Tysons Corner, DOJ enforcement lawyer Northern Virginia, FINRA regulatory matters Arlington VA, VBOA disciplinary proceedings Fairfax County",
       attorneys: ["Madison A. Beatty", "Raymond P. Briglia"],
       image: "https://brigliahundley.com/wp-content/uploads/bh-accountants-liability-hero-25.jpg"
     },
