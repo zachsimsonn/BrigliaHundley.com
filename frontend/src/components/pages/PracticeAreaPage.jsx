@@ -292,27 +292,6 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
                 </div>
               )}
 
-              <div className="bg-gray-50 rounded-lg p-8 mb-8 text-left">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for {practiceArea.title}?</h3>
-                <ul className="space-y-3 text-gray-600 text-left">
-                  <li className="flex items-start text-left">
-                    <Award className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-left">Tier 1 ranked law firm with proven track record in {practiceArea.title.toLowerCase()}</span>
-                  </li>
-                  <li className="flex items-start text-left">
-                    <Users className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-left">Experienced attorneys with specialized expertise in {practiceArea.title.toLowerCase()}</span>
-                  </li>
-                  <li className="flex items-start text-left">
-                    <Scale className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-left">Comprehensive legal strategies and personalized service</span>
-                  </li>
-                  <li className="flex items-start text-left">
-                    <Phone className="h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-left">Serving Northern Virginia, Washington D.C., and Maryland</span>
-                  </li>
-                </ul>
-              </div>
 
               <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg p-8">
                 <h3 className="text-xl font-semibold mb-4">Ready to Get Started?</h3>
