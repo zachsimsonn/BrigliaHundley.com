@@ -304,6 +304,16 @@ export const siteData = {
       description: "Comprehensive Employment Law Services in Virginia, Maryland & Washington, D.C.",
       fullDescription: "At Briglia Hundley®, our experienced employment law attorneys represent clients across Virginia, Maryland, and the District of Columbia in a wide variety of workplace and employment-related legal matters. Whether advising employers on complex workplace policies or litigating disputes arising from the employer-employee relationship, we provide practical, strategic counsel that protects your interests and promotes compliance.",
       detailedContent: {
+        mainServices: [
+          "Workplace Discrimination Claims",
+          "Employment Contract Disputes", 
+          "Workplace Torts",
+          "Management Counseling",
+          "EEOC Proceedings",
+          "Non-Compete Agreements",
+          "Wrongful Discharge Defense",
+          "Employment Policy Development"
+        ],
         sections: [
           {
             title: "Comprehensive Employment Law Services in Virginia, Maryland & Washington, D.C.",
@@ -326,14 +336,21 @@ export const siteData = {
             content: "Recognizing the importance of balanced representation, our employment attorneys also advocate for employees on matters where appropriate. We regularly participate in pro bono legal services through Legal Services of Northern Virginia's employment program, helping individuals understand and assert their rights in the workplace."
           },
           {
-            title: "Why Choose Briglia Hundley® for Your Employment Law Needs?",
-            content: `<div class="bg-gray-50 rounded-lg p-8 mb-8 text-left"><h3 class="text-xl font-semibold text-gray-900 mb-4 text-left">Why Choose Briglia Hundley® for Your Employment Law Needs?</h3><ul class="space-y-3 text-gray-600 text-left"><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="text-left">Experienced and Responsive Employment Lawyers in Virginia, Maryland, and Washington, D.C.</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="text-left">Proven Track Record resolving complex discrimination, retaliation, contract, and tort claims</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg><span class="text-left">Expertise in Federal, State, and Local Employment Law Compliance and Litigation</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span class="text-left">Dedicated Client Service tailored to the unique needs of employers and employees</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"></path></svg><span class="text-left">Strategic Counsel aimed at preventing disputes and mitigating risk</span></li><li class="flex items-start text-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase h-5 w-5 text-gray-600 mt-1 mr-3 flex-shrink-0" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg><span class="text-left">Balanced Representation for employers, management, and employees alike</span></li></ul></div>`
-          },
-          {
             title: "Contact Briglia Hundley® for Skilled Employment Law Counsel",
             content: "If you need trusted, results-oriented employment law representation in Virginia, Maryland, or Washington, D.C., contact Briglia Hundley® today to schedule a confidential consultation. Our legal team is prepared to protect your rights, resolve disputes, and provide sound guidance to help you navigate complex employment issues confidently."
           }
-        ]
+        ],
+        whyChoose: {
+          title: "Why Choose Briglia Hundley® for Your Employment Law Needs?",
+          content: [
+            "Experienced and Responsive Employment Lawyers in Virginia, Maryland, and Washington, D.C.",
+            "Proven Track Record resolving complex discrimination, retaliation, contract, and tort claims",
+            "Expertise in Federal, State, and Local Employment Law Compliance and Litigation",
+            "Dedicated Client Service tailored to the unique needs of employers and employees",
+            "Strategic Counsel aimed at preventing disputes and mitigating risk",
+            "Balanced Representation for employers, management, and employees alike"
+          ]
+        }
       },
       services: [
         "Workplace Discrimination and Retaliation Claims",
