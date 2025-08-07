@@ -253,26 +253,26 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
               {practiceArea.detailedContent && practiceArea.detailedContent.sections && (
                 <div className="space-y-8 mb-8 text-left">
                   {practiceArea.detailedContent.sections.map((section, index) => (
-                    <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4 text-left">
-                      <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{section.title}</h3>
-                      {section.title.startsWith("Why Choose Briglia Hundley®") ? (
-                        <div className="text-gray-600 mb-4 text-left" dangerouslySetInnerHTML={{ __html: section.content }} />
-                      ) : (
+                    section.title.startsWith("Why Choose Briglia Hundley®") ? (
+                      <div key={index} className="mb-8" dangerouslySetInnerHTML={{ __html: section.content }} />
+                    ) : (
+                      <div key={index} className="bg-white border-l-4 border-gray-900 pl-6 py-4 text-left">
+                        <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-left">{section.title}</h3>
                         <div className="text-gray-600 whitespace-pre-line mb-4 text-left">
                           {section.content}
                         </div>
-                      )}
-                      {section.subServices && (
-                        <ul className="space-y-2 text-gray-600 ml-4 text-left">
-                          {section.subServices.map((service, serviceIndex) => (
-                            <li key={serviceIndex} className="flex items-start text-left">
-                              <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
-                              <span className="text-left">{service}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
+                        {section.subServices && (
+                          <ul className="space-y-2 text-gray-600 ml-4 text-left">
+                            {section.subServices.map((service, serviceIndex) => (
+                              <li key={serviceIndex} className="flex items-start text-left">
+                                <Scale className="h-4 w-4 text-gray-600 mt-1 mr-2 flex-shrink-0" />
+                                <span className="text-left">{service}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    )
                   ))}
                 </div>
               )}
