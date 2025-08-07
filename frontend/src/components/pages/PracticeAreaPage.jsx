@@ -330,8 +330,29 @@ const PracticeAreaPage = ({ data, onNavigate }) => {
               )}
             </div>
           </div>
+        </div>
+      </div>
+    );
+  }
 
-          {/* Sidebar */}
+  return (
+    <div className="min-h-screen bg-white pt-20">
+      <div className="container mx-auto px-6 py-12 text-left">
+        <div className="max-w-4xl mx-auto text-left">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">{practiceArea.title}</h1>
+            <p className="text-xl text-gray-600">{practiceArea.description}</p>
+          </div>
+          <div className="prose max-w-none text-left">
+            <p className="text-gray-700 whitespace-pre-line">{practiceArea.fullDescription}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PracticeAreaPage;
           <div className="lg:col-span-1">
             <div className="bg-gray-50 rounded-lg p-6 mb-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact Information</h3>
