@@ -189,7 +189,7 @@ const LocationPracticeAreaPage = ({ data, location, area }) => {
                   </span>
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href={`tel:${data.business?.phone}`}
                     className="inline-flex items-center justify-center bg-white text-gray-900 font-bold px-8 py-4 rounded-full hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
